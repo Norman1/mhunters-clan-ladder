@@ -5,6 +5,9 @@ on:
 #    - cron: '0,30 * * * *' # Run every 30 minutes
   workflow_dispatch: # Allow manual run
 
+permissions:
+  contents: write
+
 jobs:
   engine:
     runs-on: ubuntu-latest
