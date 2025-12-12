@@ -7,10 +7,15 @@ body {
 }
 
 header {
-    background-color: #24292e;
+    background-image: url('images/banner.png');
+    background-size: cover;
+    background-position: center;
     color: white;
-    padding: 1rem;
+    padding: 3rem 1rem;
+    /* Increased padding */
     text-align: center;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
+    /* readable text */
 }
 
 main {
