@@ -149,7 +149,7 @@ function renderHistory(history, players) {
     // Finished: { game_id, winner_id, loser_id, ... }
 
     const validGames = history
-        .filter(h => h.winner_id || (h.note && !h.note.includes('Timed Out') && !h.note.includes('Terminated')))
+        .filter(h => h.winner_id || (h.note === 'Draw') || (h.note && !h.note.includes('Timed Out') && !h.note.includes('Terminated')))
         .reverse() // Newest first
         .slice(0, 20); // Limit to last 20
 

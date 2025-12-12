@@ -164,7 +164,8 @@ async function runReferee() {
                     winner_id: winnerId,
                     loser_id: loserId,
                     finished_at: now.toISOString(),
-                    template_id: game.template_id
+                    template_id: game.template_id,
+                    note: winnerId ? undefined : "Draw"
                 });
 
                 keepGame = false;
