@@ -114,3 +114,20 @@ details summary h2 {
     display: inline-block;
     border-bottom: none;
 }
+
+.status-win {
+    color: #1a7f37;
+    /* GitHub Green */
+    font-weight: bold;
+}
+
+.status-loss {
+    color: #d1242f;
+    /* GitHub Red */
+}
+
+.status-draw {
+    color: #9a6700;
+    /* GitHub Orange/Yellow */
+    font-weight: bold;
+}

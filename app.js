@@ -174,68 +174,84 @@ const validGames = history
     .filter(h => h.winner_id || (h.note === 'Draw') || (h.note && !h.note.includes('Timed Out') && !h.note.includes('Terminated')))
     .reverse()
     .slice(0, 20);
+function renderHistory(history, players) {
+    const container = document.getElementById('history-list');
+    container.innerHTML = '';
 
-if (validGames.length === 0) {
-    container.innerHTML = '<p>No recent history.</p>';
-    return;
-}
+    const validGames = history
+        .filter(h => h.winner_id || (h.note === 'Draw') || (h.note && !h.note.includes('Timed Out') && !h.note.includes('Terminated')))
+        .reverse()
+        .slice(0, 20);
 
-const table = document.createElement('table');
-table.innerHTML = `
+    if (validGames.length === 0) {
+        container.innerHTML = '<p>No recent history.</p>';
+        return;
+    }
+
+    const table = document.createElement('table');
+    table.innerHTML = `
         <thead>
             <tr>
                 <th>Player 1</th>
                 <th>Player 2</th>
                 <th>Map</th>
-                <th>Result</th>
                 <th>Link</th>
             </tr>
         </thead>
         <tbody></tbody>
     `;
 
-const tbody = table.querySelector('tbody');
+    const tbody = table.querySelector('tbody');
 
-validGames.forEach(g => {
-    // Fallback for old history without p1_id/p2_id: Try to guess or show '-'
-    // If we have winner/loser, we can show them.
-    // If it's old data, it just had winner_id/loser_id.
-    // Let's map winner->P1, loser->P2 just for display if p1_id missing.
+    validGames.forEach(g => {
+        // Fallback for old history without p1_id/p2_id
+        const p1Id = g.p1_id || g.winner_id || '?';
+        const p2Id = g.p2_id || g.loser_id || '?';
 
-    const p1Id = g.p1_id || g.winner_id || '?';
-    const p2Id = g.p2_id || g.loser_id || '?';
+        const p1Name = players[p1Id] ? players[p1Id].name : p1Id;
+        const p2Name = players[p2Id] ? players[p2Id].name : p2Id;
 
-    const p1Name = players[p1Id] ? players[p1Id].name : p1Id;
-    const p2Name = players[p2Id] ? players[p2Id].name : p2Id;
+        // Map Name
+        const mapName = (window.templates && window.templates[g.template_id])
+            ? window.templates[g.template_id].name
+            : (g.template_id || '-');
 
-    // Map Name
-    // We need templates. I'll access window.templates or similar if I make it global.
-    // Let's use 'window.templates' for now and ensure loadData sets it.
-    const mapName = (window.templates && window.templates[g.template_id])
-        ? window.templates[g.template_id].name
-        : (g.template_id || '-');
+        // Determine Status
+        let p1Class = '';
+        let p2Class = '';
 
-    // Result
-    let resultText = '';
-    if (g.note === 'Draw' || !g.winner_id) {
-        resultText = 'Draw';
-    } else {
-        const winnerName = players[g.winner_id] ? players[g.winner_id].name : g.winner_id;
-        resultText = `${winnerName} Won`;
-    }
+        if (g.note === 'Draw' || !g.winner_id) {
+            p1Class = 'status-draw';
+            p2Class = 'status-draw';
+        } else {
+            // Check if P1 is the winner
+            // Note: matching IDs. g.winner_id is a string/int. JSON might mix types?
+            // Safer to use == or String() comparison.
+            if (String(g.winner_id) === String(p1Id)) {
+                p1Class = 'status-win';
+                p2Class = 'status-loss';
+            } else if (String(g.winner_id) === String(p2Id)) {
+                p1Class = 'status-loss';
+                p2Class = 'status-win';
+            } else {
+                // Winner ID isn't either P1 or P2? (Maybe removed player or alias fallback?)
+                // Just leave empty or draw?
+                console.warn('Winner ID matches neither P1 nor P2', g);
+            }
+        }
 
-    const tr = document.createElement('tr');
-    tr.innerHTML = `
-            <td>${p1Name}</td>
-            <td>${p2Name}</td>
+        const tr = document.createElement('tr');
+        tr.innerHTML = `
+            <td class="${p1Class}">${p1Name}</td>
+            <td class="${p2Class}">${p2Name}</td>
             <td>${mapName}</td>
-            <td>${resultText}</td>
             <td><a href="https://www.warzone.com/MultiPlayer?GameID=${g.game_id}" target="_blank">View</a></td>
         `;
-    tbody.appendChild(tr);
-});
+        tbody.appendChild(tr);
+    });
 
-container.appendChild(table);
+    container.appendChild(table);
+}
 
 function joinLadder() {
     const name = document.getElementById('join-name').value;
