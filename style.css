@@ -104,3 +104,13 @@ button:hover {
 .player-details p {
     margin: 0.5rem 0;
 }
+
+details summary {
+    cursor: pointer;
+    outline: none;
+}
+
+details summary h2 {
+    display: inline-block;
+    border-bottom: none;
+}
