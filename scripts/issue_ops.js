@@ -73,6 +73,20 @@ async function runIssueOps() {
         }
     }
 
+    // 3. Remove: [PlayerID]
+    else if (/^Remove:\s*(\d+)$/i.test(title)) {
+        const match = title.match(/^Remove:\s*(\d+)$/i);
+        const playerId = match[1];
+
+        if (players[playerId]) {
+            delete players[playerId];
+            console.log(`Removed player: ${playerId}`);
+            matched = true;
+        } else {
+            console.error(`Player ${playerId} not found.`);
+        }
+    }
+
     else {
         console.log('Issue title did not match any known commands.');
     }
