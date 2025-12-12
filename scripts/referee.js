@@ -123,8 +123,11 @@ async function runReferee() {
             // --- 3. FINISHED ---
             else if (status.state === 'Finished') {
                 console.log(`Game ${game.game_id} Finished.`);
+                // DEBUG: Print full status to understand why WinnerID might be missing
+                // console.log(`Debug Status: ${JSON.stringify(status)}`); 
 
                 const winnerId = status.WinnerID || status.winnerID;
+                let loserId = null;
 
                 // Explicit Draw Handling
                 if (!winnerId) {
@@ -132,7 +135,7 @@ async function runReferee() {
                     // We still proceed to cleanup the game and reset strikes.
                 }
                 else {
-                    const loserId = (winnerId == game.p1_id) ? game.p2_id : game.p1_id;
+                    loserId = (winnerId == game.p1_id) ? game.p2_id : game.p1_id;
 
                     if (players[winnerId] && players[loserId]) {
                         // Update ELO
