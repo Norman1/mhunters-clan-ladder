@@ -129,5 +129,19 @@ function updateSettings() {
     window.open(`${repo}/issues/new?title=${title}&body=${body}`, '_blank');
 }
 
+function removePlayer() {
+    const id = document.getElementById('remove-id').value;
+    if (!id) return alert('Enter Player ID');
+
+    // Confirmation
+    if (!confirm(`Are you sure you want to remove player ${id}?`)) return;
+
+    const repo = getRepoURL();
+    const title = encodeURIComponent(`Remove: ${id}`);
+    const body = encodeURIComponent(`Please remove this player from the ladder.`);
+
+    window.open(`${repo}/issues/new?title=${title}&body=${body}`, '_blank');
+}
+
 // Init
 loadData();
