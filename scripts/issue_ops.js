@@ -51,7 +51,6 @@ async function runIssueOps() {
                 name: playerName,
                 elo: 1000,
                 game_cap: 3,
-                active: true,
                 missed_games: 0
             };
             console.log(`Registered new player: ${playerId} as ${playerName}`);

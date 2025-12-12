@@ -57,9 +57,10 @@ async function runMatchmaker() {
         const currentGames = playerGameCounts[id] || 0;
 
         // Condition: Must have open slots.
-        // NOTE: We now include p.active=false players too!
         if (p.game_cap > 0 && currentGames < p.game_cap) {
-            if (p.active) {
+            // Pool A: Reliable (0-1 Strikes)
+            // Pool B: Unreliable (>= 2 Strikes)
+            if (p.missed_games < 2) {
                 activeCandidates.push({ id: id, ...p });
             } else {
                 inactiveCandidates.push({ id: id, ...p });

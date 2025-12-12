@@ -59,7 +59,7 @@ function renderLeaderboard(players) {
         row.onclick = () => toggleDetails(p.id);
         row.innerHTML = `
             <td>${index + 1}</td>
-            <td>${p.name} ${!p.active ? '<span class="status-warn">⚠️</span>' : ''}</td>
+            <td>${p.name} ${p.missed_games >= 2 ? '<span class="status-warn">⚠️</span>' : ''}</td>
             <td>${p.elo}</td>
         `;
         tbody.appendChild(row);
@@ -73,8 +73,8 @@ function renderLeaderboard(players) {
             <td colspan="3">
                 <div class="player-details">
                     <p><strong>ID:</strong> ${p.id}</p>
-                    <p><strong>Status:</strong> ${p.active ? '✅ Reliable' : '⚠️ Unreliable (High Strikes)'}</p>
-                    <p><strong>Reliability:</strong> ${p.missed_games === 0 ? 'Excellent' : `${p.missed_games} Strike(s)`}</p>
+                    <p><strong>Status:</strong> ${p.missed_games < 2 ? '✅ Reliable' : '⚠️ Unreliable (High Strikes)'}</p>
+                    <p><strong>Strikes:</strong> ${p.missed_games}</p>
                     <p><strong>Game Cap:</strong> ${p.game_cap}</p>
                 </div>
             </td>

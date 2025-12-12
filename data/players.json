@@ -3,7 +3,6 @@
     "name": "Norman",
     "elo": 1000,
     "game_cap": 3,
-    "active": true,
     "missed_games": 0
   }
 }

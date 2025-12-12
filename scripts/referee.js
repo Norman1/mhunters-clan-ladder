@@ -144,13 +144,14 @@ async function runReferee() {
                     }
                 }
 
-                // SUCCESS: Reset strikes and Auto-Reactivate
+                // SUCCESS: Reset strikes logic
+                // If you play a game, you are reliable again. Reset counts to 0.
                 [game.p1_id, game.p2_id].forEach(pid => {
                     if (players[pid]) {
-                        players[pid].missed_games = 0;
-                        if (players[pid].active === false) {
-                            console.log(`Auto-reactivating player ${players[pid].name} (Completed game).`);
-                            players[pid].active = true;
+                        if (players[pid].missed_games > 0) {
+                            console.log(`Player ${players[pid].name} played a game. Resetting strikes to 0.`);
+                            players[pid].missed_games = 0;
+                            stateChanged = true;
                         }
                     }
                 });
@@ -169,18 +170,12 @@ async function runReferee() {
 
             // --- 4. RUNNING / PLAYING ---
             else if (status.state === 'Playing') {
-                // If the game started, they joined. Reset strikes immediately? 
-                // Requirement: "The way a players gets active again is if he once joins a game properly."
-                // So yes, if it's Playing, they joined.
-
+                // If it's playing, they joined. Reset strikes.
                 [game.p1_id, game.p2_id].forEach(pid => {
                     if (players[pid]) {
-                        // Only reset if they have strikes?
-                        // User said: "active again if he once joins a game properly".
-                        // Use this moment to clear strikes/reactivate.
-                        if (players[pid].missed_games > 0 || !players[pid].active) {
+                        if (players[pid].missed_games > 0) {
+                            console.log(`Player ${players[pid].name} joined game. Resetting strikes to 0.`);
                             players[pid].missed_games = 0;
-                            players[pid].active = true;
                             stateChanged = true;
                         }
                     }
@@ -197,16 +192,9 @@ async function runReferee() {
     }
 
     // --- 5. CHECK STRIKES ---
-    // User Requirement: NEVER deactivate players. 
-    // High strikes (>2) just means they fall into the 'Inactive' pool in Matchmaker,
-    // which pairs them with other high-strike players.
-    Object.keys(players).forEach(pid => {
-        if (players[pid].missed_games >= 2 && players[pid].active) {
-            console.log(`Player ${players[pid].name} has ${players[pid].missed_games} strikes. Marking as Unreliable (active=false internally).`);
-            players[pid].active = false;
-            stateChanged = true;
-        }
-    });
+    // NO-OP. Strikes accumulation is handled in timeout/decline blocks.
+    // Pool sorting is handled in Matchmaker.
+    // No explicit 'deactivate' step needed.
 
     if (stateChanged) {
         saveJSON(ACTIVE_GAMES_FILE, remainingGames);
