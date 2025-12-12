@@ -53,21 +53,43 @@ function renderLeaderboard(players) {
         .sort((a, b) => b.elo - a.elo);
 
     list.forEach((p, index) => {
+        // Main Row
         const row = document.createElement('tr');
-        // Player ID is the key in the object, but we are iterating over values.
-        // We need to make sure 'p' has the ID or we find it. 
-        // Wait, Object.values(players) loses the key if it's not in the object.
-        // Let's refactor the sort to keep keys.
-
+        row.classList.add('player-row');
+        row.onclick = () => toggleDetails(p.id);
         row.innerHTML = `
             <td>${index + 1}</td>
-            <td><small>${p.id || '?'}</small></td> 
             <td>${p.name} ${!p.active ? '<span class="offline">(Inactive)</span>' : ''}</td>
             <td>${p.elo}</td>
-            <td>${p.missed_games > 0 ? `⚠️ ${p.missed_games} Missed` : 'OK'}</td>
         `;
         tbody.appendChild(row);
+
+        // Details Row
+        const detailsRow = document.createElement('tr');
+        detailsRow.id = `details-${p.id}`;
+        detailsRow.classList.add('details-row');
+        detailsRow.style.display = 'none';
+        detailsRow.innerHTML = `
+            <td colspan="3">
+                <div class="player-details">
+                    <p><strong>ID:</strong> ${p.id}</p>
+                    <p><strong>Status:</strong> ${p.active ? '✅ Active' : '❌ Inactive'}</p>
+                    <p><strong>Reliability:</strong> ${p.missed_games === 0 ? 'Excellent (0 Strikes)' : `⚠️ ${p.missed_games} Strike(s)`}</p>
+                    <p><strong>Game Cap:</strong> ${p.game_cap}</p>
+                </div>
+            </td>
+        `;
+        tbody.appendChild(detailsRow);
     });
+}
+
+function toggleDetails(id) {
+    const row = document.getElementById(`details-${id}`);
+    if (row.style.display === 'none') {
+        row.style.display = 'table-row';
+    } else {
+        row.style.display = 'none';
+    }
 }
 
 function renderGames(games, players) {
