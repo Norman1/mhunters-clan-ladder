@@ -150,10 +150,16 @@ async function runReferee() {
                     if (players[winnerId] && players[loserId]) {
                         // Update ELO
                         const { newWinnerElo, newLoserElo } = calculateElo(players[winnerId].elo, players[loserId].elo);
+
+                        const eloChange = newWinnerElo - players[winnerId].elo; // Positive value
+
                         players[winnerId].elo = newWinnerElo;
                         players[loserId].elo = newLoserElo;
 
                         console.log(`ELO Update: ${winnerId} (${newWinnerElo}) vs ${loserId} (${newLoserElo})`);
+
+                        // Save change for history (attach to history object later)
+                        game.elo_change = eloChange;
                     }
                 }
 
@@ -171,10 +177,13 @@ async function runReferee() {
 
                 history.push({
                     game_id: game.game_id,
+                    p1_id: game.p1_id, // Save participants for display
+                    p2_id: game.p2_id,
                     winner_id: winnerId,
                     loser_id: loserId,
                     finished_at: now.toISOString(),
                     template_id: game.template_id,
+                    elo_change: game.elo_change, // Undefined if draw
                     note: winnerId ? undefined : "Draw"
                 });
 
