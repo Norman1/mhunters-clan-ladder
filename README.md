@@ -2,7 +2,7 @@
 
 Welcome to the automated 1v1 ladder for the M'Hunters clan!
 
-**Current Leaderboard**: [Click Here to View](https://norma.github.io/Vibe-Clan-Ladder/) *(Replace with your actual Pages URL)*
+**Current Leaderboard**: [Click Here to View](https://norman1.github.io/mhunters-clan-ladder/)
 
 ## How it Works
 
