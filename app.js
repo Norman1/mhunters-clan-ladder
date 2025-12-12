@@ -48,12 +48,20 @@ function renderLeaderboard(players) {
     const tbody = document.getElementById('leaderboard-body');
     tbody.innerHTML = '';
 
-    const list = Object.values(players).sort((a, b) => b.elo - a.elo);
+    const list = Object.entries(players)
+        .map(([id, p]) => ({ ...p, id })) // Inject ID into object
+        .sort((a, b) => b.elo - a.elo);
 
     list.forEach((p, index) => {
         const row = document.createElement('tr');
+        // Player ID is the key in the object, but we are iterating over values.
+        // We need to make sure 'p' has the ID or we find it. 
+        // Wait, Object.values(players) loses the key if it's not in the object.
+        // Let's refactor the sort to keep keys.
+
         row.innerHTML = `
             <td>${index + 1}</td>
+            <td><small>${p.id || '?'}</small></td> 
             <td>${p.name} ${!p.active ? '<span class="offline">(Inactive)</span>' : ''}</td>
             <td>${p.elo}</td>
             <td>${p.clan_tag || '-'}</td>
