@@ -24,8 +24,8 @@ const P2 = process.env.TEST_P2_ID;
         console.log(`Players: ${P1} vs ${P2}`);
 
         const players = [
-            { PlayerID: P1, Team: 0 },
-            { PlayerID: P2, Team: 1 }
+            { token: P1, team: '0' },
+            { token: P2, team: '1' }
         ];
 
         const result = await createGame(TEMPLATE_ID, players, "Automated API Test Game");

@@ -34,7 +34,6 @@ async function runIssueOps() {
     // Regex Parsers
     const regexSignup = /^Signup:\s*(\d+)$/i;
     const regexUpdate = /^Update:\s*(\d+)\s+Cap:\s*(\d+)$/i;
-    const regexActivate = /^Activate:\s*(\d+)$/i;
 
     let matched = false;
 
@@ -68,21 +67,6 @@ async function runIssueOps() {
         if (players[playerId]) {
             players[playerId].game_cap = newCap;
             console.log(`Updated ${playerId} game_cap to ${newCap}`);
-            matched = true;
-        } else {
-            console.error(`Player ${playerId} not found.`);
-        }
-    }
-
-    // 3. Activate: [PlayerID]
-    else if (regexActivate.test(title)) {
-        const match = title.match(regexActivate);
-        const playerId = match[1];
-
-        if (players[playerId]) {
-            players[playerId].active = true;
-            players[playerId].missed_games = 0;
-            console.log(`Activated ${playerId}`);
             matched = true;
         } else {
             console.error(`Player ${playerId} not found.`);

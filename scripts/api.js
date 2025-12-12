@@ -18,11 +18,11 @@ async function createGame(templateId, players, gameName = 'Ladder Match') {
   }
 
   const payload = {
-    Email: email,
-    APIToken: token,
-    TemplateID: templateId,
-    GameName: gameName,
-    Players: players
+    hostEmail: email,
+    hostAPIToken: token,
+    templateID: templateId,
+    gameName: gameName,
+    players: players
   };
 
   const response = await fetch(`${BASE_URL}/CreateGame`, {
@@ -54,14 +54,49 @@ async function pollGameStatus(gameId) {
     throw new Error('Missing WZ_EMAIL or WZ_API_TOKEN in environment variables.');
   }
 
+  // Java implementation uses Form URL Encoded for GameFeed
+  const params = new URLSearchParams();
+  params.append('Email', email);
+  params.append('APIToken', token);
+  params.append('GameID', gameId);
+
+  const response = await fetch(`${BASE_URL}/GameFeed?GameID=${gameId}`, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+    body: params
+  });
+
+  const data = await response.json();
+
+  if (data.error) {
+    throw new Error(`API Error: ${data.error}`);
+  }
+
+  return data;
+}
+
+
+/**
+ * Deletes a game.
+ * @param {string} gameId - The ID of the game to delete.
+ * @returns {Promise<Object>} - API response.
+ */
+async function deleteGame(gameId) {
+  const email = process.env.WZ_EMAIL;
+  const token = process.env.WZ_API_TOKEN;
+
+  if (!email || !token) {
+    throw new Error('Missing WZ_EMAIL or WZ_API_TOKEN in environment variables.');
+  }
+
   const payload = {
     Email: email,
     APIToken: token,
     GameID: gameId
   };
 
-  const response = await fetch(`${BASE_URL}/GameFeed?GameID=${gameId}`, {
-    method: 'POST', // The documentation sometimes varies, but POST is standard for WZ API
+  const response = await fetch(`${BASE_URL}/DeleteLobbyGame`, {
+    method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify(payload)
   });
@@ -75,4 +110,4 @@ async function pollGameStatus(gameId) {
   return data;
 }
 
-module.exports = { createGame, pollGameStatus };
+module.exports = { createGame, pollGameStatus, deleteGame };
