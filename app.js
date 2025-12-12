@@ -221,8 +221,7 @@ validGames.forEach(g => {
         resultText = 'Draw';
     } else {
         const winnerName = players[g.winner_id] ? players[g.winner_id].name : g.winner_id;
-        const eloChange = g.elo_change ? `(+${g.elo_change})` : '';
-        resultText = `${winnerName} Won ${eloChange}`;
+        resultText = `${winnerName} Won`;
     }
 
     const tr = document.createElement('tr');
