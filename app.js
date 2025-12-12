@@ -28,16 +28,19 @@ function getRepoURL() {
 
 async function loadData() {
     try {
-        const [playersRes, gamesRes] = await Promise.all([
+        const [playersRes, gamesRes, historyRes] = await Promise.all([
             fetch('data/players.json'),
-            fetch('data/active_games.json')
+            fetch('data/active_games.json'),
+            fetch('data/history.json')
         ]);
 
         const players = await playersRes.json();
         const games = await gamesRes.json();
+        const history = await historyRes.json();
 
         renderLeaderboard(players);
         renderGames(games, players);
+        renderHistory(history, players);
     } catch (err) {
         console.error('Error loading data:', err);
         document.querySelector('main').innerHTML += `<p style="color:red">Error loading data. Is this hosted correctly?</p>`;
@@ -125,6 +128,60 @@ function renderGames(games, players) {
         tr.innerHTML = `
             <td>${p1}</td>
             <td>${p2}</td>
+            <td>${date}</td>
+            <td><a href="https://www.warzone.com/MultiPlayer?GameID=${g.game_id}" target="_blank">View</a></td>
+        `;
+        tbody.appendChild(tr);
+    });
+
+    container.appendChild(table);
+}
+
+function renderHistory(history, players) {
+    const container = document.getElementById('history-list');
+    container.innerHTML = '';
+
+    // Filter: Only include valid games (not Timed Out or Terminated without result)
+    // We look for games that have a winner_id OR are explicitly draws (though current logic usually sets winner_id).
+    // The safest check is: Exclude games with "Timed Out" or "Terminated" in notes, IF they don't have a result.
+    // Actually, referee props:
+    // Void/Timeout: { game_id, finished_at, note: "Timed Out..." } -> No winner_id
+    // Finished: { game_id, winner_id, loser_id, ... }
+
+    const validGames = history
+        .filter(h => h.winner_id || (h.note && !h.note.includes('Timed Out') && !h.note.includes('Terminated')))
+        .reverse() // Newest first
+        .slice(0, 20); // Limit to last 20
+
+    if (validGames.length === 0) {
+        container.innerHTML = '<p>No recent history.</p>';
+        return;
+    }
+
+    const table = document.createElement('table');
+    table.innerHTML = `
+        <thead>
+            <tr>
+                <th>Winner</th>
+                <th>Loser</th>
+                <th>Date</th>
+                <th>Link</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    `;
+
+    const tbody = table.querySelector('tbody');
+
+    validGames.forEach(g => {
+        const winner = players[g.winner_id] ? players[g.winner_id].name : (g.winner_id || 'Draw');
+        const loser = players[g.loser_id] ? players[g.loser_id].name : (g.loser_id || '-');
+        const date = new Date(g.finished_at).toLocaleDateString();
+
+        const tr = document.createElement('tr');
+        tr.innerHTML = `
+            <td><strong>${winner}</strong></td>
+            <td>${loser}</td>
             <td>${date}</td>
             <td><a href="https://www.warzone.com/MultiPlayer?GameID=${g.game_id}" target="_blank">View</a></td>
         `;
