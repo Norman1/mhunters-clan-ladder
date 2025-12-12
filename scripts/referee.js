@@ -124,7 +124,7 @@ async function runReferee() {
             else if (status.state === 'Finished') {
                 console.log(`Game ${game.game_id} Finished.`);
                 // DEBUG: Print full status to understand why WinnerID might be missing
-                // console.log(`Debug Status: ${JSON.stringify(status)}`); 
+                console.log(`Debug Status: ${JSON.stringify(status)}`);
 
                 const winnerId = status.WinnerID || status.winnerID;
                 let loserId = null;
