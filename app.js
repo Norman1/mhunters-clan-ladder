@@ -64,7 +64,6 @@ function renderLeaderboard(players) {
             <td><small>${p.id || '?'}</small></td> 
             <td>${p.name} ${!p.active ? '<span class="offline">(Inactive)</span>' : ''}</td>
             <td>${p.elo}</td>
-            <td>${p.clan_tag || '-'}</td>
             <td>${p.missed_games > 0 ? `⚠️ ${p.missed_games} Missed` : 'OK'}</td>
         `;
         tbody.appendChild(row);
