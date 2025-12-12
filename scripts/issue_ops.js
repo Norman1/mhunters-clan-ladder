@@ -50,7 +50,7 @@ async function runIssueOps() {
             players[playerId] = {
                 name: playerName,
                 elo: 1000,
-                game_cap: 3,
+                game_cap: 2,
                 missed_games: 0
             };
             console.log(`Registered new player: ${playerId} as ${playerName}`);
