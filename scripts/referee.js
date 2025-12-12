@@ -197,9 +197,12 @@ async function runReferee() {
     }
 
     // --- 5. CHECK STRIKES ---
+    // User Requirement: NEVER deactivate players. 
+    // High strikes (>2) just means they fall into the 'Inactive' pool in Matchmaker,
+    // which pairs them with other high-strike players.
     Object.keys(players).forEach(pid => {
         if (players[pid].missed_games >= 2 && players[pid].active) {
-            console.log(`Player ${players[pid].name} has ${players[pid].missed_games} strikes. Deactivating.`);
+            console.log(`Player ${players[pid].name} has ${players[pid].missed_games} strikes. Marking as Unreliable (active=false internally).`);
             players[pid].active = false;
             stateChanged = true;
         }
