@@ -100,6 +100,10 @@ async function runMatchmaker() {
 
     console.log(`Created ${pairs.length} pairs.`);
 
+    // Calculate Ranks
+    const sortedPlayers = Object.values(players).sort((a, b) => b.elo - a.elo);
+    const getRank = (id) => sortedPlayers.findIndex(p => p.id === id) + 1; // 1-based rank
+
     for (const [p1, p2] of pairs) {
         console.log(`Pairing: ${p1.name} vs ${p2.name}`);
 
@@ -108,11 +112,20 @@ async function runMatchmaker() {
 
         // 5. Create Game
         try {
-            const players = [
+            const playersPayload = [
                 { token: p1.id, team: '0' },
                 { token: p2.id, team: '1' }
             ];
-            const result = await createGame(template.id, players, `Ladder: ${p1.name} vs ${p2.name}`);
+
+            const rank1 = getRank(p1.id);
+            const rank2 = getRank(p2.id);
+
+            const description = `This is an automatically generated game from the M'Hunters clan ladder.
+Contender 1: ${p1.name}, Rank ${rank1} with ${p1.elo} Elo
+Contender 2: ${p2.name}, Rank ${rank2} with ${p2.elo} Elo
+You can change your ladder settings online via https://norman1.github.io/mhunters-clan-ladder/ or you can ask in our clans discord for someone to do it for you.`;
+
+            const result = await createGame(template.id, playersPayload, "M'Hunters Ladder", description);
 
             console.log(`Game Created! ID: ${result.gameID}`);
 

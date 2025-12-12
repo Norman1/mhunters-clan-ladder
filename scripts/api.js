@@ -9,7 +9,7 @@ const BASE_URL = 'https://www.warzone.com/API';
  * @param {string} gameName - Name of the game.
  * @returns {Promise<Object>} - API response.
  */
-async function createGame(templateId, players, gameName = 'Ladder Match') {
+async function createGame(templateId, players, gameName = 'Ladder Match', personalMessage = '') {
   const email = process.env.WZ_EMAIL;
   const token = process.env.WZ_API_TOKEN;
 
@@ -22,6 +22,7 @@ async function createGame(templateId, players, gameName = 'Ladder Match') {
     hostAPIToken: token,
     templateID: templateId,
     gameName: gameName,
+    personalMessage: personalMessage,
     players: players
   };
 
