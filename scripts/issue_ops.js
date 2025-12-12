@@ -49,7 +49,7 @@ async function runIssueOps() {
             players[playerId] = {
                 name: `Player_${playerId}`, // Default name, maybe user can update later?
                 clan_tag: "",
-                elo: 1200,
+                elo: 1000,
                 game_cap: 3,
                 active: true,
                 missed_games: 0

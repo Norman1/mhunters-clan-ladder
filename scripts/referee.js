@@ -18,7 +18,7 @@ function saveJSON(filePath, data) {
 }
 
 function calculateElo(winnerElo, loserElo) {
-    const K = 32;
+    const K = 30;
     const expectedWinner = 1 / (1 + Math.pow(10, (loserElo - winnerElo) / 400));
     const expectedLoser = 1 / (1 + Math.pow(10, (winnerElo - loserElo) / 400));
 

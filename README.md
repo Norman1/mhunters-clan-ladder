@@ -1,4 +1,4 @@
-# Vibe Clan Ladder
+# M'Hunters Clan Ladder
 
 An automated, serverless 1v1 ladder for Warzone.com clans.
 

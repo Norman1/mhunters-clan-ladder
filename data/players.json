@@ -2,7 +2,7 @@
   "1234567": {
     "name": "General_Risk",
     "clan_tag": "[RISK]",
-    "elo": 1200,
+    "elo": 1000,
     "game_cap": 3,
     "active": true,
     "missed_games": 0
