@@ -1,0 +1,12 @@
+[
+    {
+        "id": 112233,
+        "name": "Strategic 1v1",
+        "weight": 1.0
+    },
+    {
+        "id": 445566,
+        "name": "Europe 2v2",
+        "weight": 0.5
+    }
+]

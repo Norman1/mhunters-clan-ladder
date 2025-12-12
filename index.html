@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vibe Clan Ladder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Vibe Clan Ladder</h1>
+        <p>Managed by Norman (Automated 1v1)</p>
+    </header>
+
+    <main>
+        
+        <section id="leaderboard-section">
+            <h2>Leaderboard</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Rank</th>
+                        <th>Player</th>
+                        <th>ELO</th>
+                        <th>Tag</th>
+                        <th>Stats</th>
+                    </tr>
+                </thead>
+                <tbody id="leaderboard-body">
+                    <!-- JS will populate -->
+                </tbody>
+            </table>
+        </section>
+
+        <section id="games-section">
+            <h2>Live Games</h2>
+            <div id="games-list">
+                <!-- JS will populate -->
+                <p>Loading...</p>
+            </div>
+        </section>
+
+        <section id="control-panel">
+            <h2>Actions</h2>
+            <div class="actions">
+                <div class="card">
+                    <h3>Join Ladder</h3>
+                    <input type="number" id="join-id" placeholder="Your Player ID">
+                    <button onclick="joinLadder()">Join / Activate</button>
+                    <small>Opens a GitHub Issue to register.</small>
+                </div>
+
+                <div class="card">
+                    <h3>Update Settings</h3>
+                    <input type="number" id="update-id" placeholder="Your Player ID">
+                    <select id="update-cap">
+                        <option value="0">Paused (0 Games)</option>
+                        <option value="1">1 Game</option>
+                        <option value="2">2 Games</option>
+                        <option value="3" selected>3 Games (Default)</option>
+                        <option value="4">4 Games</option>
+                        <option value="5">5 Games</option>
+                    </select>
+                    <button onclick="updateSettings()">Update Cap</button>
+                    <small>Opens a GitHub Issue to changes settings.</small>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>

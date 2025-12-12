@@ -1,0 +1,10 @@
+{
+  "1234567": {
+    "name": "General_Risk",
+    "clan_tag": "[RISK]",
+    "elo": 1200,
+    "game_cap": 3,
+    "active": true,
+    "missed_games": 0
+  }
+}

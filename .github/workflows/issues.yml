@@ -1,0 +1,34 @@
+name: User Management
+
+on:
+  issues:
+    types: [opened, edited]
+
+jobs:
+  issue-ops:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      issues: write
+    
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+
+      - name: Run IssueOps Script
+        env:
+          ISSUE_TITLE: ${{ github.event.issue.title }}
+        run: node scripts/issue_ops.js
+
+      - name: Commit Changes
+        run: |
+          git config --global user.name "Norman (Bot)"
+          git config --global user.email "norman-bot@users.noreply.github.com"
+          git add data/players.json
+          git commit -m "IssueOps: User update from #${{ github.event.issue.number }}" || echo "No changes to commit"
+          git push
