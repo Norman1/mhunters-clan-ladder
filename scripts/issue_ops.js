@@ -32,28 +32,30 @@ async function runIssueOps() {
     }
 
     // Regex Parsers
-    const regexSignup = /^Signup:\s*(\d+)$/i;
+    // Signup: [PlayerID] Name: [Name] (Name is optional for backward compatibility, but preferred)
+    const regexSignup = /^Signup:\s*(\d+)(?:\s+Name:\s*(.+))?$/i;
     const regexUpdate = /^Update:\s*(\d+)\s+Cap:\s*(\d+)$/i;
 
     let matched = false;
 
-    // 1. Signup: [PlayerID]
+    // 1. Signup: [PlayerID] [Name: ... ]
     if (regexSignup.test(title)) {
         const match = title.match(regexSignup);
         const playerId = match[1];
+        const playerName = match[2] ? match[2].trim() : `Player_${playerId}`;
 
         if (players[playerId]) {
             console.log(`Player ${playerId} already exists.`);
         } else {
             players[playerId] = {
-                name: `Player_${playerId}`, // Default name, maybe user can update later?
+                name: playerName,
                 clan_tag: "",
                 elo: 1000,
                 game_cap: 3,
                 active: true,
                 missed_games: 0
             };
-            console.log(`Registered new player: ${playerId}`);
+            console.log(`Registered new player: ${playerId} as ${playerName}`);
             matched = true;
         }
     }

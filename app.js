@@ -114,11 +114,15 @@ function renderGames(games, players) {
 }
 
 function joinLadder() {
+    const name = document.getElementById('join-name').value;
     const id = document.getElementById('join-id').value;
+
     if (!id) return alert('Enter Player ID');
+    if (!name) return alert('Enter Warzone Username');
 
     const repo = getRepoURL();
-    const title = encodeURIComponent(`Signup: ${id}`);
+    // Format: "Signup: 12345 Name: MyName"
+    const title = encodeURIComponent(`Signup: ${id} Name: ${name}`);
     const body = encodeURIComponent(`I want to join the ladder!`);
 
     window.open(`${repo}/issues/new?title=${title}&body=${body}`, '_blank');
