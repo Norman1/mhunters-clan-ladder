@@ -28,15 +28,23 @@ function getRepoURL() {
 
 async function loadData() {
     try {
-        const [playersRes, gamesRes, historyRes] = await Promise.all([
+        const [playersRes, gamesRes, historyRes, templatesRes] = await Promise.all([
             fetch('data/players.json'),
             fetch('data/active_games.json'),
-            fetch('data/history.json')
+            fetch('data/history.json'),
+            fetch('data/templates.json')
         ]);
 
         const players = await playersRes.json();
         const games = await gamesRes.json();
         const history = await historyRes.json();
+        const templates = await templatesRes.json();
+
+        // Map Templates by ID for easy lookup
+        window.templates = {};
+        templates.forEach(t => {
+            window.templates[t.id] = t;
+        });
 
         renderLeaderboard(players);
         renderGames(games, players);
@@ -137,59 +145,98 @@ function renderGames(games, players) {
     container.appendChild(table);
 }
 
-function renderHistory(history, players) {
-    const container = document.getElementById('history-list');
-    container.innerHTML = '';
+// Load Templates (if present in global scope or pass it down)
+// NOTE: loadData() fetches history but not templates. We need to fetch templates too.
+// Ideally loadData should have fetched templates. Let's patch loadData first?
+// Or just fetch here if not cached. 
+// To minimize changes, I will rely on a globally available templates object or fetch it.
+// Let's assume passed as argument or I'll patch loadData to pass it. 
+// Wait, refactored loadData first.
 
-    // Filter: Only include valid games (not Timed Out or Terminated without result)
-    // We look for games that have a winner_id OR are explicitly draws (though current logic usually sets winner_id).
-    // The safest check is: Exclude games with "Timed Out" or "Terminated" in notes, IF they don't have a result.
-    // Actually, referee props:
-    // Void/Timeout: { game_id, finished_at, note: "Timed Out..." } -> No winner_id
-    // Finished: { game_id, winner_id, loser_id, ... }
+// ... Actually, let's just make loadData fetch templates.
+// But I am confined to this replacement chunk.
+// I will use a simple map ID check. Or I should update loadData first.
+// The prompt allows me to edit app.js. I'll edit loadData AND renderHistory.
+// BUT replace_file_content is single block (unless I use multi).
+// Let's use MultiReplace!!
 
-    const validGames = history
-        .filter(h => h.winner_id || (h.note === 'Draw') || (h.note && !h.note.includes('Timed Out') && !h.note.includes('Terminated')))
-        .reverse() // Newest first
-        .slice(0, 20); // Limit to last 20
+// Cancelling this tool call to use MultiReplace.
+// Wait, I can't cancel. I will just update THIS chunk to EXPECT templates,
+// and then I will use another call to update loadData.
+// Or I can do it all in one multi-replace.
+// I will output a dummy change here? No, better to ERROR and use multi?
+// No, I'll just change renderHistory signature and logic, then update loadData in next step.
 
-    if (validGames.length === 0) {
-        container.innerHTML = '<p>No recent history.</p>';
-        return;
-    }
+const container = document.getElementById('history-list');
+container.innerHTML = '';
 
-    const table = document.createElement('table');
-    table.innerHTML = `
+const validGames = history
+    .filter(h => h.winner_id || (h.note === 'Draw') || (h.note && !h.note.includes('Timed Out') && !h.note.includes('Terminated')))
+    .reverse()
+    .slice(0, 20);
+
+if (validGames.length === 0) {
+    container.innerHTML = '<p>No recent history.</p>';
+    return;
+}
+
+const table = document.createElement('table');
+table.innerHTML = `
         <thead>
             <tr>
-                <th>Winner</th>
-                <th>Loser</th>
-                <th>Date</th>
+                <th>Player 1</th>
+                <th>Player 2</th>
+                <th>Map</th>
+                <th>Result</th>
                 <th>Link</th>
             </tr>
         </thead>
         <tbody></tbody>
     `;
 
-    const tbody = table.querySelector('tbody');
+const tbody = table.querySelector('tbody');
 
-    validGames.forEach(g => {
-        const winner = players[g.winner_id] ? players[g.winner_id].name : (g.winner_id || 'Draw');
-        const loser = players[g.loser_id] ? players[g.loser_id].name : (g.loser_id || '-');
-        const date = new Date(g.finished_at).toLocaleDateString();
+validGames.forEach(g => {
+    // Fallback for old history without p1_id/p2_id: Try to guess or show '-'
+    // If we have winner/loser, we can show them.
+    // If it's old data, it just had winner_id/loser_id.
+    // Let's map winner->P1, loser->P2 just for display if p1_id missing.
 
-        const tr = document.createElement('tr');
-        tr.innerHTML = `
-            <td><strong>${winner}</strong></td>
-            <td>${loser}</td>
-            <td>${date}</td>
+    const p1Id = g.p1_id || g.winner_id || '?';
+    const p2Id = g.p2_id || g.loser_id || '?';
+
+    const p1Name = players[p1Id] ? players[p1Id].name : p1Id;
+    const p2Name = players[p2Id] ? players[p2Id].name : p2Id;
+
+    // Map Name
+    // We need templates. I'll access window.templates or similar if I make it global.
+    // Let's use 'window.templates' for now and ensure loadData sets it.
+    const mapName = (window.templates && window.templates[g.template_id])
+        ? window.templates[g.template_id].name
+        : (g.template_id || '-');
+
+    // Result
+    let resultText = '';
+    if (g.note === 'Draw' || !g.winner_id) {
+        resultText = 'Draw';
+    } else {
+        const winnerName = players[g.winner_id] ? players[g.winner_id].name : g.winner_id;
+        const eloChange = g.elo_change ? `(+${g.elo_change})` : '';
+        resultText = `${winnerName} Won ${eloChange}`;
+    }
+
+    const tr = document.createElement('tr');
+    tr.innerHTML = `
+            <td>${p1Name}</td>
+            <td>${p2Name}</td>
+            <td>${mapName}</td>
+            <td>${resultText}</td>
             <td><a href="https://www.warzone.com/MultiPlayer?GameID=${g.game_id}" target="_blank">View</a></td>
         `;
-        tbody.appendChild(tr);
-    });
+    tbody.appendChild(tr);
+});
 
-    container.appendChild(table);
-}
+container.appendChild(table);
 
 function joinLadder() {
     const name = document.getElementById('join-name').value;
