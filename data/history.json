@@ -4,5 +4,12 @@
     "loser_id": null,
     "finished_at": "2025-12-12T20:55:21.994Z",
     "template_id": 1390041
+  },
+  {
+    "game_id": "43088839",
+    "winner_id": "2323867790",
+    "loser_id": "5917719105",
+    "finished_at": "2025-12-12T21:07:44.703Z",
+    "template_id": 1431579
   }
 ]
