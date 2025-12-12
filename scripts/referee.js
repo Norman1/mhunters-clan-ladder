@@ -126,7 +126,17 @@ async function runReferee() {
                 // DEBUG: Print full status to understand why WinnerID might be missing
                 console.log(`Debug Status: ${JSON.stringify(status)}`);
 
-                const winnerId = status.WinnerID || status.winnerID;
+                let winnerId = status.WinnerID || status.winnerID;
+
+                // Fallback: Check player states if top-level winnerID is missing
+                if (!winnerId && status.players) {
+                    const winnerPlayer = status.players.find(p => p.state === 'Won' || p.State === 'Won');
+                    if (winnerPlayer) {
+                        winnerId = winnerPlayer.id || winnerPlayer.ID;
+                        console.log(`Found winner via player state: ${winnerId}`);
+                    }
+                }
+
                 let loserId = null;
 
                 // Explicit Draw Handling
