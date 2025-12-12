@@ -49,7 +49,6 @@ async function runIssueOps() {
         } else {
             players[playerId] = {
                 name: playerName,
-                clan_tag: "",
                 elo: 1000,
                 game_cap: 3,
                 active: true,
