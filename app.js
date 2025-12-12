@@ -73,8 +73,8 @@ function renderLeaderboard(players) {
             <td colspan="3">
                 <div class="player-details">
                     <p><strong>ID:</strong> ${p.id}</p>
-                    <p><strong>Status:</strong> ${p.missed_games < 2 ? '✅ Reliable' : '⚠️ Unreliable (High Strikes)'}</p>
-                    <p><strong>Strikes:</strong> ${p.missed_games}</p>
+                    <p><strong>Status:</strong> ${p.missed_games < 2 ? '✅ Reliable' : '⚠️ Unreliable (Missed >2 Games)'}</p>
+                    <p><strong>Missed Games:</strong> ${p.missed_games}</p>
                     <p><strong>Game Cap:</strong> ${p.game_cap}</p>
                 </div>
             </td>
