@@ -25,9 +25,11 @@ Signup: <Your_Warzone_ID>
 Limit how many active ladder games you can have at once (Default is 3).
 To change it, [Open a New Issue](https://github.com/norma/Vibe-Clan-Ladder/issues/new) with the title:
 ```
-Update: <Your_Warzone_ID> Cap: <Number>
+-   **Update Cap**: Issue Title `Update: [PlayerID] Cap: [GameLimit]`
+    -   Example: `Update: 1234567 Cap: 5`
+-   **Remove Player**: Issue Title `Remove: [PlayerID]`
+    -   Example: `Remove: 1234567`*
 ```
-*Example: `Update: 1234567 Cap: 5`*
 
 ---
 
