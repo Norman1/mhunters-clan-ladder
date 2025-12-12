@@ -24,17 +24,17 @@ jobs:
       - name: Install Dependencies
         run: npm install
 
-      - name: Run Matchmaker
-        env:
-          WZ_EMAIL: ${{ secrets.WZ_EMAIL }}
-          WZ_API_TOKEN: ${{ secrets.WZ_API_TOKEN }}
-        run: node scripts/matchmaker.js
-
       - name: Run Referee
         env:
           WZ_EMAIL: ${{ secrets.WZ_EMAIL }}
           WZ_API_TOKEN: ${{ secrets.WZ_API_TOKEN }}
         run: node scripts/referee.js
+
+      - name: Run Matchmaker
+        env:
+          WZ_EMAIL: ${{ secrets.WZ_EMAIL }}
+          WZ_API_TOKEN: ${{ secrets.WZ_API_TOKEN }}
+        run: node scripts/matchmaker.js
 
       - name: Commit State Changes
         run: |
