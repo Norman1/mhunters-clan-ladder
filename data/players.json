@@ -22,5 +22,11 @@
     "elo": 1000,
     "game_cap": 2,
     "missed_games": 0
+  },
+  "23154545458": {
+    "name": "Dark Magician Girl",
+    "elo": 1000,
+    "game_cap": 2,
+    "missed_games": 0
   }
 }
