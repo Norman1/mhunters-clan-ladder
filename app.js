@@ -167,13 +167,7 @@ function renderGames(games, players) {
 // I will output a dummy change here? No, better to ERROR and use multi?
 // No, I'll just change renderHistory signature and logic, then update loadData in next step.
 
-const container = document.getElementById('history-list');
-container.innerHTML = '';
 
-const validGames = history
-    .filter(h => h.winner_id || (h.note === 'Draw') || (h.note && !h.note.includes('Timed Out') && !h.note.includes('Terminated')))
-    .reverse()
-    .slice(0, 20);
 function renderHistory(history, players) {
     const container = document.getElementById('history-list');
     container.innerHTML = '';
