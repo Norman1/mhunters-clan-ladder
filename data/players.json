@@ -10,5 +10,11 @@
     "elo": 1000,
     "game_cap": 2,
     "missed_games": 0
+  },
+  "88110265403": {
+    "name": "Crouton",
+    "elo": 1000,
+    "game_cap": 2,
+    "missed_games": 0
   }
 }
