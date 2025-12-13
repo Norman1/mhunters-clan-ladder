@@ -8,19 +8,24 @@ body {
 
 header {
     background-color: #24292e;
-    /* Fallback color matching original theme */
-    color: white;
+    /* Fallback color */
     padding: 0;
     text-align: center;
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
-    /* readable text */
     border-bottom: 4px solid #1a7f37;
-    /* Clean border separator */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    /* Clean edges */
 }
 
 .banner-image {
-    width: 100%;
-    height: auto;
+    width: auto;
+    /* Maintain aspect ratio */
+    max-width: 100%;
+    /* Ensure it fits screen */
+    max-height: 250px;
+    /* Limit height so it's not huge */
     display: block;
 }
 
