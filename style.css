@@ -7,15 +7,21 @@ body {
 }
 
 header {
-    background-image: url('images/banner.png');
-    background-size: cover;
-    background-position: center;
+    background-color: #24292e;
+    /* Fallback color matching original theme */
     color: white;
-    padding: 3rem 1rem;
-    /* Increased padding */
+    padding: 0;
     text-align: center;
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
     /* readable text */
+    border-bottom: 4px solid #1a7f37;
+    /* Clean border separator */
+}
+
+.banner-image {
+    width: 100%;
+    height: auto;
+    display: block;
 }
 
 main {
