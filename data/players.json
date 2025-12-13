@@ -1,1 +1,56 @@
-{}
+{
+  "2590914675": {
+    "name": "ElDuderino",
+    "elo": 1000,
+    "game_cap": 2,
+    "missed_games": 0
+  },
+  "3346775331": {
+    "name": "Gatsu12",
+    "elo": 1000,
+    "game_cap": 2,
+    "missed_games": 0
+  },
+  "79105823914": {
+    "name": "krinid",
+    "elo": 1000,
+    "game_cap": 2,
+    "missed_games": 0
+  },
+  "88110265403": {
+    "name": "Crouton",
+    "elo": 1000,
+    "game_cap": 2,
+    "missed_games": 0
+  },
+  "84143567121": {
+    "name": "Poldi",
+    "elo": 1000,
+    "game_cap": 2,
+    "missed_games": 0
+  },
+  "23154545458": {
+    "name": "Dark Magician Girl",
+    "elo": 1000,
+    "game_cap": 2,
+    "missed_games": 0
+  },
+  "9482920905": {
+    "name": "Ethosys",
+    "elo": 1000,
+    "game_cap": 2,
+    "missed_games": 0
+  },
+  "8294358602": {
+    "name": "Wolkenstern",
+    "elo": 1000,
+    "game_cap": 2,
+    "missed_games": 0
+  },
+  "58134761580": {
+    "name": "ExFailures",
+    "elo": 1000,
+    "game_cap": 2,
+    "missed_games": 0
+  }
+}
