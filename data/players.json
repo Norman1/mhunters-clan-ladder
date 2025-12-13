@@ -4,5 +4,11 @@
     "elo": 1000,
     "game_cap": 2,
     "missed_games": 0
+  },
+  "79105823914": {
+    "name": "krinid",
+    "elo": 1000,
+    "game_cap": 2,
+    "missed_games": 0
   }
 }
