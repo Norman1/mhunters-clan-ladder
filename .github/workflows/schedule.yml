@@ -1,8 +1,8 @@
 name: Ladder Engine
 
 on:
-#  schedule:
-#    - cron: '0,30 * * * *' # Run every 30 minutes
+  schedule:
+    - cron: '0 */2 * * *' # Run every 2 hours
   workflow_dispatch: # Allow manual run
 
 permissions:
