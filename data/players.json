@@ -16,5 +16,11 @@
     "elo": 1000,
     "game_cap": 2,
     "missed_games": 0
+  },
+  "84143567121": {
+    "name": "Poldi",
+    "elo": 1000,
+    "game_cap": 2,
+    "missed_games": 0
   }
 }
