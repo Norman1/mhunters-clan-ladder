@@ -46,5 +46,11 @@
     "elo": 1000,
     "game_cap": 2,
     "missed_games": 0
+  },
+  "58134761580": {
+    "name": "ExFailures",
+    "elo": 1000,
+    "game_cap": 2,
+    "missed_games": 0
   }
 }
