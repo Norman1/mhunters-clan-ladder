@@ -58,14 +58,14 @@
                 <div class="card">
                     <h3>Join Ladder</h3>
                     <input type="text" id="join-name" placeholder="Warzone Username">
-                    <input type="number" id="join-id" placeholder="Your Player ID">
+                    <input type="number" id="join-id" placeholder="Your Player ID" min="1" step="1">
                     <button onclick="joinLadder()">Join / Activate</button>
                     <small>Opens a GitHub Issue to register.</small>
                 </div>
 
                 <div class="card">
                     <h3>Update Settings</h3>
-                    <input type="number" id="update-id" placeholder="Your Player ID">
+                    <input type="number" id="update-id" placeholder="Your Player ID" min="1" step="1">
                     <select id="update-cap">
                         <option value="0">Paused (0 Games)</option>
                         <option value="1">1 Game</option>
@@ -81,7 +81,7 @@
         <div class="card">
             <h2>Remove Player</h2>
             <div class="input-group">
-                <input type="text" id="remove-id" placeholder="Player ID">
+                <input type="number" id="remove-id" placeholder="Player ID" min="1" step="1">
                 <button class="btn btn-danger" onclick="removePlayer()">Remove</button>
             </div>
         </div>

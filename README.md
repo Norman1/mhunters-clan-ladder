@@ -6,7 +6,7 @@ Welcome to the automated 1v1 ladder for the M'Hunters clan!
 
 ## How it Works
 
-The ladder is fully automated. A bot ("Norman") runs every 30 minutes to:
+The ladder is fully automated. A bot ("Norman") runs every 2 hours to:
 1.  **Matchmake**: Find two available players and create a game on Warzone.com.
 2.  **Referee**: Check for finished games, update ELO ratings, and track missed games.
 
@@ -15,21 +15,27 @@ The ladder is fully automated. A bot ("Norman") runs every 30 minutes to:
 The ladder is controlled via **GitHub Issues**. You don't need to ask an admin to update your status; you just speak to the bot.
 
 ### 1. Join the Ladder
-To sign up, [Open a New Issue](https://github.com/norma/Vibe-Clan-Ladder/issues/new) with the title:
+To sign up, [Open a New Issue](https://github.com/Norman1/mhunters-clan-ladder/issues/new) with the title:
 ```
-Signup: <Your_Warzone_ID>
+Signup: <Your_Warzone_ID> Name: <Your_Warzone_Username>
 ```
-*Example: `Signup: 1234567`*
+*Example: `Signup: 1234567 Name: General_Risk`*
+
+If you're already registered, use **Update Your Game Cap** instead (duplicate signups are rejected).
 
 ### 2. Update Your Game Cap
-Limit how many active ladder games you can have at once (Default is 3).
-To change it, [Open a New Issue](https://github.com/norma/Vibe-Clan-Ladder/issues/new) with the title:
+Limit how many active ladder games you can have at once (Default is 2, Max is 3; set to 0 to pause).
+To change it, [Open a New Issue](https://github.com/Norman1/mhunters-clan-ladder/issues/new) with the title:
 ```
--   **Update Cap**: Issue Title `Update: [PlayerID] Cap: [GameLimit]`
-    -   Example: `Update: 1234567 Cap: 5`
--   **Remove Player**: Issue Title `Remove: [PlayerID]`
-    -   Example: `Remove: 1234567`*
+Update: <Your_Warzone_ID> Cap: <GameLimit>
 ```
+*Example: `Update: 1234567 Cap: 3`*
+
+To remove yourself, open a new issue with the title:
+```
+Remove: <Your_Warzone_ID>
+```
+*Example: `Remove: 1234567`*
 
 ---
 

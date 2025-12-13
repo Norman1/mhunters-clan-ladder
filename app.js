@@ -35,10 +35,16 @@ async function loadData() {
             fetch('data/templates.json')
         ]);
 
+        if (![playersRes, gamesRes, historyRes, templatesRes].every(r => r.ok)) {
+            throw new Error('One or more data files failed to load.');
+        }
+
         const players = await playersRes.json();
         const games = await gamesRes.json();
         const history = await historyRes.json();
         const templates = await templatesRes.json();
+
+        window.players = players;
 
         // Map Templates by ID for easy lookup
         window.templates = {};
@@ -53,6 +59,25 @@ async function loadData() {
         console.error('Error loading data:', err);
         document.querySelector('main').innerHTML += `<p style="color:red">Error loading data. Is this hosted correctly?</p>`;
     }
+}
+
+function normalizePlayerId(value) {
+    return String(value || '').trim();
+}
+
+function requireLoadedPlayers() {
+    if (!window.players || typeof window.players !== 'object') {
+        alert('Data is still loading. Please wait a moment and try again.');
+        return null;
+    }
+
+    return window.players;
+}
+
+function validatePlayerId(id) {
+    if (!id) return 'Enter Player ID';
+    if (!/^\d+$/.test(id)) return 'Player ID must be numeric';
+    return null;
 }
 
 function renderLeaderboard(players) {
@@ -275,11 +300,19 @@ function renderHistory(history, players) {
 }
 
 function joinLadder() {
-    const name = document.getElementById('join-name').value;
-    const id = document.getElementById('join-id').value;
+    const name = String(document.getElementById('join-name').value || '').trim();
+    const id = normalizePlayerId(document.getElementById('join-id').value);
 
-    if (!id) return alert('Enter Player ID');
+    const idError = validatePlayerId(id);
+    if (idError) return alert(idError);
     if (!name) return alert('Enter Warzone Username');
+
+    const players = requireLoadedPlayers();
+    if (!players) return;
+
+    if (players[id]) {
+        return alert(`Player ID ${id} is already registered as "${players[id].name}". Use "Update Settings" instead.`);
+    }
 
     const repo = getRepoURL();
     // Format: "Signup: 12345 Name: MyName"
@@ -290,10 +323,18 @@ function joinLadder() {
 }
 
 function updateSettings() {
-    const id = document.getElementById('update-id').value;
+    const id = normalizePlayerId(document.getElementById('update-id').value);
     const cap = document.getElementById('update-cap').value;
 
-    if (!id) return alert('Enter Player ID');
+    const idError = validatePlayerId(id);
+    if (idError) return alert(idError);
+
+    const players = requireLoadedPlayers();
+    if (!players) return;
+
+    if (!players[id]) {
+        return alert(`Player ID ${id} is not registered. Use "Join Ladder" first.`);
+    }
 
     const repo = getRepoURL();
     const title = encodeURIComponent(`Update: ${id} Cap: ${cap}`);
@@ -303,8 +344,17 @@ function updateSettings() {
 }
 
 function removePlayer() {
-    const id = document.getElementById('remove-id').value;
-    if (!id) return alert('Enter Player ID');
+    const id = normalizePlayerId(document.getElementById('remove-id').value);
+
+    const idError = validatePlayerId(id);
+    if (idError) return alert(idError);
+
+    const players = requireLoadedPlayers();
+    if (!players) return;
+
+    if (!players[id]) {
+        return alert(`Player ID ${id} was not found.`);
+    }
 
     // Confirmation
     if (!confirm(`Are you sure you want to remove player ${id}?`)) return;
