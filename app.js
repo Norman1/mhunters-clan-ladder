@@ -59,17 +59,44 @@ function renderLeaderboard(players) {
     const tbody = document.getElementById('leaderboard-body');
     tbody.innerHTML = '';
 
-    const list = Object.entries(players)
-        .map(([id, p]) => ({ ...p, id })) // Inject ID into object
-        .sort((a, b) => b.elo - a.elo);
+    const allPlayers = Object.entries(players).map(([id, p]) => ({ ...p, id }));
+
+    // Split into Active (Cap > 0) and Inactive (Cap == 0)
+    const active = allPlayers.filter(p => p.game_cap > 0).sort((a, b) => b.elo - a.elo);
+    const inactive = allPlayers.filter(p => p.game_cap == 0).sort((a, b) => b.elo - a.elo);
+
+    // Merge: Active first, then Inactive
+    const list = [...active, ...inactive];
 
     list.forEach((p, index) => {
+        // Determine Rank Display
+        let rankDisplay;
+        if (p.game_cap == 0) {
+            rankDisplay = '<span style="color: grey; font-style: italic;">Unranked</span>';
+        } else {
+            // Rank is index + 1 relative to ACTIVE list only? 
+            // Or relative to full list? 
+            // Usually Unranked means they don't hold a rank number.
+            // So Active players get 1..N.
+            // We need to know the index within 'active' array to give correct rank number.
+            // But we are iterating the merged list.
+
+            // Check if player is in active list
+            const activeIndex = active.indexOf(p);
+            if (activeIndex !== -1) {
+                rankDisplay = activeIndex + 1;
+            } else {
+                // Should be covered by p.game_cap == 0 check, but safe fallback
+                rankDisplay = '-';
+            }
+        }
+
         // Main Row
         const row = document.createElement('tr');
         row.classList.add('player-row');
         row.onclick = () => toggleDetails(p.id);
         row.innerHTML = `
-            <td>${index + 1}</td>
+            <td>${rankDisplay}</td>
             <td>${p.name} ${p.missed_games >= 2 ? '<span class="status-warn">⚠️</span>' : ''}</td>
             <td>${p.elo}</td>
         `;
