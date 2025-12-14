@@ -4,6 +4,17 @@ Welcome to the automated 1v1 ladder for the M'Hunters clan!
 
 **Current Leaderboard**: [Click Here to View](https://norman1.github.io/mhunters-clan-ladder/)
 
+## Branching & Deployments
+
+The `main` branch is the live site published to GitHub Pages. Use short-lived feature branches for changes, then merge them into `main` to update production. If an emergency fix is needed, you can commit directly to `main`, but prefer PRs so history stays clean.
+
+If you do not see the latest changes on GitHub, double-check that your local work has been pushed to the publish branch that Pages uses:
+
+1. Make sure a remote exists: `git remote -v` (if blank, add one with `git remote add origin git@github.com:<you>/<repo>.git`).
+2. Verify you are on the publish branch locally: `git status` should show `On branch main` (or `gh-pages`).
+3. Push the branch: `git push origin main` (or your configured publish branch).
+4. Confirm GitHub Pages is pointed at that branch in **Settings → Pages**.
+
 ## How it Works
 
 The ladder is fully automated. A bot ("Norman") runs every 2 hours to:
