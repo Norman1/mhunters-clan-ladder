@@ -28,6 +28,15 @@ function getRepoURL() {
 
 async function loadData() {
     try {
+        const needsPlayers =
+            document.getElementById('leaderboard-body') ||
+            document.getElementById('games-list') ||
+            document.getElementById('history-table') ||
+            document.getElementById('history-list') ||
+            document.getElementById('update-id') ||
+            document.getElementById('remove-id');
+        if (!needsPlayers) return;
+
         const [playersRes, gamesRes, historyRes, templatesRes] = await Promise.all([
             fetch('data/players.json'),
             fetch('data/active_games.json'),
@@ -82,6 +91,7 @@ function validatePlayerId(id) {
 
 function renderLeaderboard(players) {
     const tbody = document.getElementById('leaderboard-body');
+    if (!tbody) return;
     tbody.innerHTML = '';
 
     const allPlayers = Object.entries(players).map(([id, p]) => ({ ...p, id }));
@@ -157,6 +167,7 @@ function toggleDetails(id) {
 
 function renderGames(games, players) {
     const container = document.getElementById('games-list');
+    if (!container) return;
     container.innerHTML = '';
 
     if (games.length === 0) {
@@ -197,40 +208,15 @@ function renderGames(games, players) {
     container.appendChild(table);
 }
 
-// Load Templates (if present in global scope or pass it down)
-// NOTE: loadData() fetches history but not templates. We need to fetch templates too.
-// Ideally loadData should have fetched templates. Let's patch loadData first?
-// Or just fetch here if not cached. 
-// To minimize changes, I will rely on a globally available templates object or fetch it.
-// Let's assume passed as argument or I'll patch loadData to pass it. 
-// Wait, refactored loadData first.
-
-// ... Actually, let's just make loadData fetch templates.
-// But I am confined to this replacement chunk.
-// I will use a simple map ID check. Or I should update loadData first.
-// The prompt allows me to edit app.js. I'll edit loadData AND renderHistory.
-// BUT replace_file_content is single block (unless I use multi).
-// Let's use MultiReplace!!
-
-// Cancelling this tool call to use MultiReplace.
-// Wait, I can't cancel. I will just update THIS chunk to EXPECT templates,
-// and then I will use another call to update loadData.
-// Or I can do it all in one multi-replace.
-// I will output a dummy change here? No, better to ERROR and use multi?
-// No, I'll just change renderHistory signature and logic, then update loadData in next step.
-
-
 function renderHistory(history, players) {
-    const container = document.getElementById('history-list');
+    const container = document.getElementById('history-table') || document.getElementById('history-list');
+    if (!container) return;
     container.innerHTML = '';
 
-    const validGames = history
-        .filter(h => h.winner_id || (h.note === 'Draw') || (h.note && !h.note.includes('Timed Out') && !h.note.includes('Terminated')))
-        .reverse()
-        .slice(0, 20);
+    const validGames = history.slice().reverse();
 
     if (validGames.length === 0) {
-        container.innerHTML = '<p>No recent history.</p>';
+        container.innerHTML = '<p>No history yet.</p>';
         return;
     }
 
@@ -250,19 +236,16 @@ function renderHistory(history, players) {
     const tbody = table.querySelector('tbody');
 
     validGames.forEach(g => {
-        // Fallback for old history without p1_id/p2_id
         const p1Id = g.p1_id || g.winner_id || '?';
         const p2Id = g.p2_id || g.loser_id || '?';
 
         const p1Name = players[p1Id] ? players[p1Id].name : p1Id;
         const p2Name = players[p2Id] ? players[p2Id].name : p2Id;
 
-        // Map Name
         const mapName = (window.templates && window.templates[g.template_id])
             ? window.templates[g.template_id].name
             : (g.template_id || '-');
 
-        // Determine Status
         let p1Class = '';
         let p2Class = '';
 
@@ -270,9 +253,6 @@ function renderHistory(history, players) {
             p1Class = 'status-draw';
             p2Class = 'status-draw';
         } else {
-            // Check if P1 is the winner
-            // Note: matching IDs. g.winner_id is a string/int. JSON might mix types?
-            // Safer to use == or String() comparison.
             if (String(g.winner_id) === String(p1Id)) {
                 p1Class = 'status-win';
                 p2Class = 'status-loss';
@@ -280,8 +260,6 @@ function renderHistory(history, players) {
                 p1Class = 'status-loss';
                 p2Class = 'status-win';
             } else {
-                // Winner ID isn't either P1 or P2? (Maybe removed player or alias fallback?)
-                // Just leave empty or draw?
                 console.warn('Winner ID matches neither P1 nor P2', g);
             }
         }

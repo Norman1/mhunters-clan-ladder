@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M'Hunters Ladder - Help</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="hero">
+        <img src="images/banner.png" alt="M'Hunters Clan Ladder" class="banner-image">
+    </header>
+
+    <nav class="top-nav">
+        <div class="top-nav__brand">M'Hunters Ladder</div>
+        <div class="top-nav__links">
+            <a href="index.html">Leaderboard</a>
+            <a href="history.html">History</a>
+            <a href="actions.html">Actions</a>
+            <a href="help.html" aria-current="page">Help</a>
+        </div>
+    </nav>
+
+    <main>
+        <section class="panel">
+            <div class="panel__header">
+                <div>
+                    <p class="eyebrow">Getting started</p>
+                    <h2>How to join and stay active</h2>
+                </div>
+                <span class="chip chip--info">GitHub Issues</span>
+            </div>
+            <div class="help-grid">
+                <div class="card">
+                    <h3>Join the ladder</h3>
+                    <p>Open a new GitHub issue with the title:</p>
+                    <pre><code>Signup: &lt;Your_Warzone_ID&gt; Name: &lt;Your_Warzone_Username&gt;</code></pre>
+                    <p class="muted">Example: <code>Signup: 1234567 Name: General_Risk</code></p>
+                </div>
+                <div class="card">
+                    <h3>Update your game cap</h3>
+                    <p>Change how many active games you want (0 pauses you, 3 is max):</p>
+                    <pre><code>Update: &lt;Your_Warzone_ID&gt; Cap: &lt;GameLimit&gt;</code></pre>
+                    <p class="muted">Example: <code>Update: 1234567 Cap: 3</code></p>
+                </div>
+                <div class="card">
+                    <h3>Remove yourself</h3>
+                    <p>If you're done playing, request removal with:</p>
+                    <pre><code>Remove: &lt;Your_Warzone_ID&gt;</code></pre>
+                    <p class="muted">Example: <code>Remove: 1234567</code></p>
+                </div>
+            </div>
+        </section>
+
+        <section class="panel">
+            <div class="panel__header">
+                <div>
+                    <p class="eyebrow">What the bot does</p>
+                    <h2>Matchmaking & cleanup</h2>
+                </div>
+                <span class="chip chip--success">Automated</span>
+            </div>
+            <ul class="bullet-list">
+                <li><strong>Matchmake every 2 hours</strong>: finds two available players and creates a Warzone game.</li>
+                <li><strong>Referee completed games</strong>: records results, updates ELO, and tracks missed games.</li>
+                <li><strong>Strike rules</strong>: two missed games mark you inactive; playing again resets strikes.</li>
+                <li><strong>Lobby cleanup</strong>: games stuck in lobby &gt; 3 days are deleted; no-join players get a strike.</li>
+            </ul>
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
