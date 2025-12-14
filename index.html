@@ -10,81 +10,135 @@
 
 <body>
 
-    <header>
+    <header class="hero">
+        <div class="hero__overlay"></div>
         <img src="images/banner.png" alt="M'Hunters Clan Ladder" class="banner-image">
+        <div class="hero__content">
+            <p class="eyebrow">M'Hunters Clan</p>
+            <h1>Battle-ready ladder for the community</h1>
+            <p class="lede">Track the top performers, jump into live games, and keep your slot active with a couple clicks.</p>
+            <div class="hero__actions">
+                <a href="#control-panel" class="btn primary">Join or update</a>
+                <a href="#history-section" class="btn ghost">Recent history</a>
+            </div>
+        </div>
     </header>
 
     <main>
 
-        <section id="leaderboard-section">
-            <h2>Leaderboard</h2>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Rank</th>
-                        <th>Player</th>
-                        <th>ELO</th>
-                    </tr>
-                </thead>
-                <tbody id="leaderboard-body">
-                    <!-- JS will populate -->
-                </tbody>
-            </table>
+        <section class="panel-grid">
+            <section id="leaderboard-section" class="panel">
+                <div class="panel__header">
+                    <div>
+                        <p class="eyebrow">Standings</p>
+                        <h2>Leaderboard</h2>
+                    </div>
+                    <span class="chip chip--success">Live</span>
+                </div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Rank</th>
+                            <th>Player</th>
+                            <th>ELO</th>
+                        </tr>
+                    </thead>
+                    <tbody id="leaderboard-body">
+                        <!-- JS will populate -->
+                    </tbody>
+                </table>
+            </section>
+
+            <section id="control-panel" class="panel">
+                <div class="panel__header">
+                    <div>
+                        <p class="eyebrow">Manage</p>
+                        <h2>Actions</h2>
+                    </div>
+                    <span class="chip chip--info">Self-serve</span>
+                </div>
+                <div class="actions">
+                    <div class="card">
+                        <h3>Join Ladder</h3>
+                        <label for="join-name">Warzone username</label>
+                        <input type="text" id="join-name" placeholder="Enter your username">
+                        <label for="join-id">Player ID</label>
+                        <input type="number" id="join-id" placeholder="Your Player ID" min="1" step="1">
+                        <button onclick="joinLadder()">Join / Activate</button>
+                        <small>Opens a GitHub issue to register.</small>
+                    </div>
+
+                    <div class="card">
+                        <h3>Update Settings</h3>
+                        <label for="update-id">Player ID</label>
+                        <input type="number" id="update-id" placeholder="Your Player ID" min="1" step="1">
+                        <label for="update-cap">Game cap</label>
+                        <select id="update-cap">
+                            <option value="0">Paused (0 Games)</option>
+                            <option value="1">1 Game</option>
+                            <option value="2" selected>2 Games (Default)</option>
+                            <option value="3">3 Games (Max)</option>
+                        </select>
+                        <button onclick="updateSettings()">Update Cap</button>
+                        <small>Opens a GitHub issue to change settings.</small>
+                    </div>
+                </div>
+            </section>
         </section>
 
-        <section id="games-section">
-            <h2>Live Games</h2>
-            <div id="games-list">
-                <!-- JS will populate -->
-                <p>Loading...</p>
-            </div>
-        </section>
-
-        <section id="history-section">
-            <details>
-                <summary>
-                    <h2>Recent History</h2>
-                </summary>
-                <div id="history-list">
+        <section class="panel-grid two-up">
+            <section id="games-section" class="panel">
+                <div class="panel__header">
+                    <div>
+                        <p class="eyebrow">In progress</p>
+                        <h2>Live Games</h2>
+                    </div>
+                    <span class="chip chip--accent">Real-time</span>
+                </div>
+                <div id="games-list">
                     <!-- JS will populate -->
                     <p>Loading...</p>
                 </div>
-            </details>
+            </section>
+
+            <section id="history-section" class="panel">
+                <div class="panel__header">
+                    <div>
+                        <p class="eyebrow">Archive</p>
+                        <h2>Recent History</h2>
+                    </div>
+                    <span class="chip">Collapsible</span>
+                </div>
+                <details open>
+                    <summary>
+                        <span>Last 20 reported games</span>
+                        <span class="summary-pill">Tap to toggle</span>
+                    </summary>
+                    <div id="history-list">
+                        <!-- JS will populate -->
+                        <p>Loading...</p>
+                    </div>
+                </details>
+            </section>
         </section>
 
-        <section id="control-panel">
-            <h2>Actions</h2>
-            <div class="actions">
-                <div class="card">
-                    <h3>Join Ladder</h3>
-                    <input type="text" id="join-name" placeholder="Warzone Username">
-                    <input type="number" id="join-id" placeholder="Your Player ID" min="1" step="1">
-                    <button onclick="joinLadder()">Join / Activate</button>
-                    <small>Opens a GitHub Issue to register.</small>
+        <section class="panel">
+            <div class="panel__header">
+                <div>
+                    <p class="eyebrow">Cleanup</p>
+                    <h2>Remove Player</h2>
                 </div>
-
-                <div class="card">
-                    <h3>Update Settings</h3>
-                    <input type="number" id="update-id" placeholder="Your Player ID" min="1" step="1">
-                    <select id="update-cap">
-                        <option value="0">Paused (0 Games)</option>
-                        <option value="1">1 Game</option>
-                        <option value="2" selected>2 Games (Default)</option>
-                        <option value="3">3 Games (Max)</option>
-                    </select>
-                    <button onclick="updateSettings()">Update Cap</button>
-                    <small>Opens a GitHub Issue to changes settings.</small>
-                </div>
+                <span class="chip chip--danger">Admin</span>
             </div>
-        </section>
-
-        <div class="card">
-            <h2>Remove Player</h2>
             <div class="input-group">
-                <input type="number" id="remove-id" placeholder="Player ID" min="1" step="1">
-                <button class="btn btn-danger" onclick="removePlayer()">Remove</button>
+                <label for="remove-id">Player ID</label>
+                <div class="input-stack">
+                    <input type="number" id="remove-id" placeholder="Player ID" min="1" step="1">
+                    <button class="btn btn-danger" onclick="removePlayer()">Remove</button>
+                </div>
+                <p class="help-text">Opens a GitHub issue to request removal.</p>
             </div>
-        </div>
+        </section>
     </main>
 
     <script src="app.js"></script>
