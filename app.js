@@ -82,6 +82,7 @@ function validatePlayerId(id) {
 
 function renderLeaderboard(players) {
     const tbody = document.getElementById('leaderboard-body');
+    if (!tbody) return;
     tbody.innerHTML = '';
 
     const allPlayers = Object.entries(players).map(([id, p]) => ({ ...p, id }));
@@ -157,6 +158,7 @@ function toggleDetails(id) {
 
 function renderGames(games, players) {
     const container = document.getElementById('games-list');
+    if (!container) return;
     container.innerHTML = '';
 
     if (games.length === 0) {
@@ -197,40 +199,21 @@ function renderGames(games, players) {
     container.appendChild(table);
 }
 
-// Load Templates (if present in global scope or pass it down)
-// NOTE: loadData() fetches history but not templates. We need to fetch templates too.
-// Ideally loadData should have fetched templates. Let's patch loadData first?
-// Or just fetch here if not cached. 
-// To minimize changes, I will rely on a globally available templates object or fetch it.
-// Let's assume passed as argument or I'll patch loadData to pass it. 
-// Wait, refactored loadData first.
-
-// ... Actually, let's just make loadData fetch templates.
-// But I am confined to this replacement chunk.
-// I will use a simple map ID check. Or I should update loadData first.
-// The prompt allows me to edit app.js. I'll edit loadData AND renderHistory.
-// BUT replace_file_content is single block (unless I use multi).
-// Let's use MultiReplace!!
-
-// Cancelling this tool call to use MultiReplace.
-// Wait, I can't cancel. I will just update THIS chunk to EXPECT templates,
-// and then I will use another call to update loadData.
-// Or I can do it all in one multi-replace.
-// I will output a dummy change here? No, better to ERROR and use multi?
-// No, I'll just change renderHistory signature and logic, then update loadData in next step.
-
-
-function renderHistory(history, players) {
-    const container = document.getElementById('history-list');
+function renderHistory(history, players, { limit = null, containerId = 'history-list' } = {}) {
+    const container = document.getElementById(containerId);
+    if (!container) return;
     container.innerHTML = '';
 
-    const validGames = history
+    let validGames = history
         .filter(h => h.winner_id || (h.note === 'Draw') || (h.note && !h.note.includes('Timed Out') && !h.note.includes('Terminated')))
-        .reverse()
-        .slice(0, 20);
+        .reverse();
+
+    if (limit) {
+        validGames = validGames.slice(0, limit);
+    }
 
     if (validGames.length === 0) {
-        container.innerHTML = '<p>No recent history.</p>';
+        container.innerHTML = '<p>No history available yet.</p>';
         return;
     }
 
