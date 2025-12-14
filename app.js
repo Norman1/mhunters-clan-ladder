@@ -28,7 +28,13 @@ function getRepoURL() {
 
 async function loadData() {
     try {
-        const needsPlayers = document.getElementById('leaderboard-body') || document.getElementById('games-list') || document.getElementById('history-table') || document.getElementById('history-list') || document.getElementById('update-id') || document.getElementById('remove-id');
+        const needsPlayers =
+            document.getElementById('leaderboard-body') ||
+            document.getElementById('games-list') ||
+            document.getElementById('history-table') ||
+            document.getElementById('history-list') ||
+            document.getElementById('update-id') ||
+            document.getElementById('remove-id');
         if (!needsPlayers) return;
 
         const [playersRes, gamesRes, historyRes, templatesRes] = await Promise.all([
@@ -201,29 +207,6 @@ function renderGames(games, players) {
 
     container.appendChild(table);
 }
-
-// Load Templates (if present in global scope or pass it down)
-// NOTE: loadData() fetches history but not templates. We need to fetch templates too.
-// Ideally loadData should have fetched templates. Let's patch loadData first?
-// Or just fetch here if not cached. 
-// To minimize changes, I will rely on a globally available templates object or fetch it.
-// Let's assume passed as argument or I'll patch loadData to pass it. 
-// Wait, refactored loadData first.
-
-// ... Actually, let's just make loadData fetch templates.
-// But I am confined to this replacement chunk.
-// I will use a simple map ID check. Or I should update loadData first.
-// The prompt allows me to edit app.js. I'll edit loadData AND renderHistory.
-// BUT replace_file_content is single block (unless I use multi).
-// Let's use MultiReplace!!
-
-// Cancelling this tool call to use MultiReplace.
-// Wait, I can't cancel. I will just update THIS chunk to EXPECT templates,
-// and then I will use another call to update loadData.
-// Or I can do it all in one multi-replace.
-// I will output a dummy change here? No, better to ERROR and use multi?
-// No, I'll just change renderHistory signature and logic, then update loadData in next step.
-
 
 function renderHistory(history, players) {
     const container = document.getElementById('history-table') || document.getElementById('history-list');
