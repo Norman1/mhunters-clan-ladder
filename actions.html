@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M'Hunters Ladder - Actions</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="hero">
+        <img src="images/banner.png" alt="M'Hunters Clan Ladder" class="banner-image">
+    </header>
+
+    <nav class="top-nav">
+        <div class="top-nav__brand">M'Hunters Ladder</div>
+        <div class="top-nav__links">
+            <a href="index.html">Leaderboard</a>
+            <a href="history.html">History</a>
+            <a href="actions.html" aria-current="page">Actions</a>
+            <a href="help.html">Help</a>
+        </div>
+    </nav>
+
+    <main>
+        <section class="panel">
+            <div class="panel__header">
+                <div>
+                    <p class="eyebrow">Manage</p>
+                    <h2>Join or Update</h2>
+                </div>
+                <span class="chip chip--info">Self-serve</span>
+            </div>
+            <div class="actions">
+                <div class="card">
+                    <h3>Join Ladder</h3>
+                    <label for="join-name">Warzone username</label>
+                    <input type="text" id="join-name" placeholder="Enter your username">
+                    <label for="join-id">Player ID</label>
+                    <input type="number" id="join-id" placeholder="Your Player ID" min="1" step="1">
+                    <button onclick="joinLadder()">Join / Activate</button>
+                    <small>Opens a GitHub issue to register.</small>
+                </div>
+
+                <div class="card">
+                    <h3>Update Settings</h3>
+                    <label for="update-id">Player ID</label>
+                    <input type="number" id="update-id" placeholder="Your Player ID" min="1" step="1">
+                    <label for="update-cap">Game cap</label>
+                    <select id="update-cap">
+                        <option value="0">Paused (0 Games)</option>
+                        <option value="1">1 Game</option>
+                        <option value="2" selected>2 Games (Default)</option>
+                        <option value="3">3 Games (Max)</option>
+                    </select>
+                    <button onclick="updateSettings()">Update Cap</button>
+                    <small>Opens a GitHub issue to change settings.</small>
+                </div>
+            </div>
+        </section>
+
+        <section class="panel">
+            <div class="panel__header">
+                <div>
+                    <p class="eyebrow">Cleanup</p>
+                    <h2>Remove Player</h2>
+                </div>
+                <span class="chip chip--danger">Admin</span>
+            </div>
+            <div class="input-group">
+                <label for="remove-id">Player ID</label>
+                <div class="input-stack">
+                    <input type="number" id="remove-id" placeholder="Player ID" min="1" step="1">
+                    <button class="btn btn-danger" onclick="removePlayer()">Remove</button>
+                </div>
+                <p class="help-text">Opens a GitHub issue to request removal.</p>
+            </div>
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
