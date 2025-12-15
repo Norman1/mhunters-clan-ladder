@@ -67,6 +67,12 @@ async function runMatchmaker() {
         process.exit(1);
     }
 
+    if (templates.length === 0) {
+        console.warn('WARNING: No templates configured. Cannot create games.');
+        console.log('Add templates via GitHub issue: AddTemplate: <ID> Name: <MapName>');
+        return;
+    }
+
 
     // 2. Build Candidate Slots (Fill up to cap in one run)
     const activeSlots = [];

@@ -2,6 +2,7 @@ const fs = require('fs');
 const path = require('path');
 
 const PLAYERS_FILE = path.join(__dirname, '../data/players.json');
+const TEMPLATES_FILE = path.join(__dirname, '../data/templates.json');
 
 const MIN_GAME_CAP = 0;
 const MAX_GAME_CAP = 3;
@@ -146,13 +147,67 @@ async function runIssueOps() {
         }
     }
 
+    // 4. AddTemplate: [TemplateID] Name: [Name]
+    else if (/^AddTemplate:\s*(\d+)\s+Name:\s*(.+)$/i.test(title)) {
+        const match = title.match(/^AddTemplate:\s*(\d+)\s+Name:\s*(.+)$/i);
+        const templateId = parseInt(match[1], 10);
+        const templateName = match[2].trim();
+
+        const templates = loadJSON(TEMPLATES_FILE) || [];
+
+        const existing = templates.find(t => t.id === templateId);
+        if (existing) {
+            console.log(`Template ${templateId} already exists.`);
+            await postIssueComment(
+                `❌ AddTemplate rejected: Template ID \`${templateId}\` already exists as **${existing.name}**.`
+            );
+        } else if (!templateName) {
+            console.log(`Invalid template name for ${templateId}.`);
+            await postIssueComment(
+                `❌ AddTemplate rejected: Template name cannot be empty.`
+            );
+        } else {
+            templates.push({ id: templateId, name: templateName });
+            saveJSON(TEMPLATES_FILE, templates);
+            console.log(`Added template: ${templateId} - ${templateName}`);
+            await postIssueComment(
+                `✅ Template **${templateName}** (ID: \`${templateId}\`) has been added to the map pool.`
+            );
+        }
+    }
+
+    // 5. RemoveTemplate: [TemplateID]
+    else if (/^RemoveTemplate:\s*(\d+)$/i.test(title)) {
+        const match = title.match(/^RemoveTemplate:\s*(\d+)$/i);
+        const templateId = parseInt(match[1], 10);
+
+        const templates = loadJSON(TEMPLATES_FILE) || [];
+        const templateIndex = templates.findIndex(t => t.id === templateId);
+
+        if (templateIndex === -1) {
+            console.error(`Template ${templateId} not found.`);
+            await postIssueComment(
+                `❌ RemoveTemplate rejected: Template ID \`${templateId}\` is not in the pool.`
+            );
+        } else {
+            const removed = templates.splice(templateIndex, 1)[0];
+            saveJSON(TEMPLATES_FILE, templates);
+            console.log(`Removed template: ${templateId}`);
+            await postIssueComment(
+                `✅ Template **${removed.name}** (ID: \`${templateId}\`) has been removed from the map pool.`
+            );
+        }
+    }
+
     else {
         console.log('Issue title did not match any known commands.');
         await postIssueComment(
             `❌ Unrecognized command.\n\nUse one of:\n` +
             `- \`Signup: <PlayerID> Name: <Warzone_Username>\`\n` +
             `- \`Update: <PlayerID> Cap: ${MIN_GAME_CAP}-${MAX_GAME_CAP}\`\n` +
-            `- \`Remove: <PlayerID>\``
+            `- \`Remove: <PlayerID>\`\n` +
+            `- \`AddTemplate: <TemplateID> Name: <MapName>\`\n` +
+            `- \`RemoveTemplate: <TemplateID>\``
         );
     }
 

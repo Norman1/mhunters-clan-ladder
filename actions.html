@@ -80,6 +80,40 @@
                 <p class="help-text">Opens a GitHub issue to request removal.</p>
             </div>
         </section>
+
+        <section class="panel">
+            <div class="panel__header">
+                <div>
+                    <p class="eyebrow">Manage</p>
+                    <h2>Map Templates</h2>
+                </div>
+                <span class="chip chip--info">Admin</span>
+            </div>
+
+            <div id="templates-list" class="table-container">
+                <p>Loading templates...</p>
+            </div>
+
+            <div class="actions" style="margin-top: 1.5rem;">
+                <div class="card">
+                    <h3>Add Template</h3>
+                    <label for="template-id">Template ID</label>
+                    <input type="number" id="template-id" placeholder="Warzone Template ID" min="1" step="1">
+                    <label for="template-name">Template Name</label>
+                    <input type="text" id="template-name" placeholder="e.g. Strategic 1v1">
+                    <button onclick="addTemplate()">Add Template</button>
+                    <small>Opens a GitHub issue to add a template.</small>
+                </div>
+
+                <div class="card">
+                    <h3>Remove Template</h3>
+                    <label for="remove-template-id">Template ID</label>
+                    <input type="number" id="remove-template-id" placeholder="Template ID" min="1" step="1">
+                    <button class="btn btn-danger" onclick="removeTemplate()">Remove Template</button>
+                    <small>Opens a GitHub issue to remove a template.</small>
+                </div>
+            </div>
+        </section>
     </main>
 
     <script src="app.js"></script>

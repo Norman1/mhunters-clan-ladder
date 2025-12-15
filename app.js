@@ -48,6 +48,7 @@ async function loadData() {
 
         // Map Templates by ID for easy lookup
         window.templates = {};
+        window.templatesArray = templates; // Store array for rendering
         templates.forEach(t => {
             window.templates[t.id] = t;
         });
@@ -55,6 +56,7 @@ async function loadData() {
         renderLeaderboard(players);
         renderGames(games, players);
         renderHistory(history, players);
+        renderTemplates(templates);
     } catch (err) {
         console.error('Error loading data:', err);
         document.querySelector('main').innerHTML += `<p style="color:red">Error loading data. Is this hosted correctly?</p>`;
@@ -358,3 +360,86 @@ function removePlayer() {
 
 // Init
 loadData();
+
+// --- Template Management ---
+
+function renderTemplates(templates) {
+    const container = document.getElementById('templates-list');
+    if (!container) return;
+    container.innerHTML = '';
+
+    if (!templates || templates.length === 0) {
+        container.innerHTML = '<p>No templates configured.</p>';
+        return;
+    }
+
+    const table = document.createElement('table');
+    table.innerHTML = `
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    `;
+
+    const tbody = table.querySelector('tbody');
+
+    templates.forEach(t => {
+        const tr = document.createElement('tr');
+        tr.innerHTML = `
+            <td>${t.id}</td>
+            <td>${t.name}</td>
+        `;
+        tbody.appendChild(tr);
+    });
+
+    container.appendChild(table);
+}
+
+function addTemplate() {
+    const id = document.getElementById('template-id')?.value?.trim();
+    const name = document.getElementById('template-name')?.value?.trim();
+
+    if (!id || !/^\d+$/.test(id)) {
+        return alert('Enter a valid numeric Template ID');
+    }
+    if (!name) {
+        return alert('Enter a Template Name');
+    }
+
+    // Check if already exists
+    if (window.templates && window.templates[id]) {
+        return alert(`Template ID ${id} already exists as "${window.templates[id].name}".`);
+    }
+
+    const repo = getRepoURL();
+    const title = encodeURIComponent(`AddTemplate: ${id} Name: ${name}`);
+    const body = encodeURIComponent(`Please add this Warzone template to the ladder map pool.`);
+
+    window.open(`${repo}/issues/new?title=${title}&body=${body}`, '_blank');
+}
+
+function removeTemplate() {
+    const id = document.getElementById('remove-template-id')?.value?.trim();
+
+    if (!id || !/^\d+$/.test(id)) {
+        return alert('Enter a valid numeric Template ID');
+    }
+
+    // Check if exists
+    if (!window.templates || !window.templates[id]) {
+        return alert(`Template ID ${id} is not in the current pool.`);
+    }
+
+    if (!confirm(`Are you sure you want to remove template "${window.templates[id].name}" (${id})?`)) {
+        return;
+    }
+
+    const repo = getRepoURL();
+    const title = encodeURIComponent(`RemoveTemplate: ${id}`);
+    const body = encodeURIComponent(`Please remove this template from the ladder map pool.`);
+
+    window.open(`${repo}/issues/new?title=${title}&body=${body}`, '_blank');
+}
