@@ -25,27 +25,29 @@ function shuffle(array) {
     return array;
 }
 
-function popDistinctPair(slots) {
+function popDistinctPair(slots, players) {
     if (slots.length < 2) return null;
 
     const first = slots.pop();
-    let second = slots.pop();
 
-    if (first !== second) {
-        return [first, second];
-    }
+    // Helper to check if two players were each other's last opponent
+    const wereLastOpponents = (id1, id2) => {
+        const p1 = players[id1];
+        const p2 = players[id2];
+        return (p1 && String(p1.last_opponent) === String(id2)) ||
+            (p2 && String(p2.last_opponent) === String(id1));
+    };
 
-    // Put the duplicate back and find a different opponent.
-    slots.push(second);
-
+    // Try to find a valid opponent (not same player, not last opponent)
     for (let i = slots.length - 1; i >= 0; i--) {
-        if (slots[i] !== first) {
-            second = slots.splice(i, 1)[0];
-            return [first, second];
+        const candidate = slots[i];
+        if (candidate !== first && !wereLastOpponents(first, candidate)) {
+            slots.splice(i, 1);
+            return [first, candidate];
         }
     }
 
-    // No valid opponent; restore and stop pairing.
+    // No valid opponent found; restore first and stop pairing.
     slots.push(first);
     return null;
 }
@@ -115,21 +117,45 @@ async function runMatchmaker() {
 
     // Match Actives (fill their open slots)
     let pair = null;
-    while ((pair = popDistinctPair(activeSlots))) {
+    while ((pair = popDistinctPair(activeSlots, players))) {
         pairs.push(pair);
     }
 
     // Match Inactives (fill their open slots)
-    while ((pair = popDistinctPair(inactiveSlots))) {
+    while ((pair = popDistinctPair(inactiveSlots, players))) {
         pairs.push(pair);
     }
 
     // If we have leftovers from both, maybe match them?
     // User said: "active players don't get annoyed by geting paired too often with inactives"
     // implies it's okay sometimes.
+    // Helper to check if two players were each other's last opponent
+    const wereLastOpponents = (id1, id2) => {
+        const p1 = players[id1];
+        const p2 = players[id2];
+        return (p1 && String(p1.last_opponent) === String(id2)) ||
+            (p2 && String(p2.last_opponent) === String(id1));
+    };
+
     while (activeSlots.length > 0 && inactiveSlots.length > 0) {
-        console.log("Matching leftover Active vs Inactive...");
-        pairs.push([activeSlots.pop(), inactiveSlots.pop()]);
+        const activePlayer = activeSlots.pop();
+        // Find an inactive player who isn't the last opponent
+        let matchedIndex = -1;
+        for (let i = inactiveSlots.length - 1; i >= 0; i--) {
+            if (!wereLastOpponents(activePlayer, inactiveSlots[i])) {
+                matchedIndex = i;
+                break;
+            }
+        }
+        if (matchedIndex >= 0) {
+            const inactivePlayer = inactiveSlots.splice(matchedIndex, 1)[0];
+            console.log("Matching leftover Active vs Inactive...");
+            pairs.push([activePlayer, inactivePlayer]);
+        } else {
+            // No valid match, put active player back and stop
+            activeSlots.push(activePlayer);
+            break;
+        }
     }
 
     console.log(`Created ${pairs.length} pairs.`);
@@ -170,6 +196,9 @@ async function runMatchmaker() {
             const description = `This is an automatically generated game from the M'Hunters clan ladder.
 Contender 1: ${p1.name}, Rank ${rank1} with ${p1.elo} Elo
 Contender 2: ${p2.name}, Rank ${rank2} with ${p2.elo} Elo
+
+IMPORTANT: Please join this game even if your opponent declines! This is how the ladder knows you are active. Active players get matched against other active players.
+
 You can change your ladder settings online via https://norman1.github.io/mhunters-clan-ladder/ or you can ask in our clans discord for someone to do it for you.`;
 
             const result = await createGame(template.id, playersPayload, "M'Hunters Ladder", description);

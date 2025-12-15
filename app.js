@@ -133,6 +133,12 @@ function renderLeaderboard(players) {
         detailsRow.id = `details-${p.id}`;
         detailsRow.classList.add('details-row');
         detailsRow.style.display = 'none';
+
+        // Resolve last opponent name
+        const lastOpponentName = p.last_opponent
+            ? (players[p.last_opponent] ? players[p.last_opponent].name : p.last_opponent)
+            : 'None';
+
         detailsRow.innerHTML = `
             <td colspan="3">
                 <div class="player-details">
@@ -140,6 +146,7 @@ function renderLeaderboard(players) {
                     <p><strong>Status:</strong> ${p.missed_games < 2 ? '✅ Reliable' : '⚠️ Unreliable (Missed >2 Games)'}</p>
                     <p><strong>Missed Games:</strong> ${p.missed_games}</p>
                     <p><strong>Game Cap:</strong> ${p.game_cap}</p>
+                    <p><strong>Last Opponent:</strong> ${lastOpponentName}</p>
                 </div>
             </td>
         `;

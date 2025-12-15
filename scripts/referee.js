@@ -175,6 +175,15 @@ async function runReferee() {
                     }
                 });
 
+                // Set last_opponent to prevent immediate rematches
+                if (players[game.p1_id]) {
+                    players[game.p1_id].last_opponent = game.p2_id;
+                }
+                if (players[game.p2_id]) {
+                    players[game.p2_id].last_opponent = game.p1_id;
+                }
+                stateChanged = true;
+
                 history.push({
                     game_id: game.game_id,
                     p1_id: game.p1_id, // Save participants for display
