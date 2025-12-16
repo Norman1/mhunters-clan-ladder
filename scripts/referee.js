@@ -56,7 +56,7 @@ async function runReferee() {
             const hoursSinceCreation = (now - createdDate) / (1000 * 60 * 60);
 
             // --- 1. LOBBY TIMEOUT (3 Days) ---
-            if (status.state === 'WaitingForSignups' && hoursSinceCreation > 72) {
+            if (status.state === 'WaitingForPlayers' && hoursSinceCreation > 72) {
                 console.log(`Game ${game.game_id} timed out in lobby (>72h). Deleting...`);
 
                 // Note: API response structure assumed. Adjust if needed.
