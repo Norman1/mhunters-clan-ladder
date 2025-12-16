@@ -7,9 +7,10 @@
   },
   "3346775331": {
     "name": "Gatsu12",
-    "elo": 1000,
+    "elo": 1020,
     "game_cap": 2,
-    "missed_games": 0
+    "missed_games": 0,
+    "last_opponent": "58134761580"
   },
   "79105823914": {
     "name": "krinid",
@@ -49,9 +50,10 @@
   },
   "58134761580": {
     "name": "ExFailures",
-    "elo": 1000,
+    "elo": 980,
     "game_cap": 2,
-    "missed_games": 0
+    "missed_games": 0,
+    "last_opponent": "3346775331"
   },
   "6823726918": {
     "name": "Andr0meda",
