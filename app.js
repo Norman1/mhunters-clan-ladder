@@ -89,17 +89,17 @@ function renderLeaderboard(players) {
 
     const allPlayers = Object.entries(players).map(([id, p]) => ({ ...p, id }));
 
-    // Split into Active (Cap > 0) and Inactive (Cap == 0)
-    const active = allPlayers.filter(p => p.game_cap > 0).sort((a, b) => b.elo - a.elo);
-    const inactive = allPlayers.filter(p => p.game_cap == 0).sort((a, b) => b.elo - a.elo);
+    // Split into Active (Cap > 0 AND reliable) and Unranked (Cap == 0 OR unreliable)
+    const active = allPlayers.filter(p => p.game_cap > 0 && p.missed_games < 2).sort((a, b) => b.elo - a.elo);
+    const unranked = allPlayers.filter(p => p.game_cap == 0 || p.missed_games >= 2).sort((a, b) => b.elo - a.elo);
 
-    // Merge: Active first, then Inactive
-    const list = [...active, ...inactive];
+    // Merge: Active first, then Unranked
+    const list = [...active, ...unranked];
 
     list.forEach((p, index) => {
         // Determine Rank Display
         let rankDisplay;
-        if (p.game_cap == 0) {
+        if (p.game_cap == 0 || p.missed_games >= 2) {
             rankDisplay = '<span style="color: grey; font-style: italic;">Unranked</span>';
         } else {
             // Rank is index + 1 relative to ACTIVE list only? 
@@ -125,7 +125,7 @@ function renderLeaderboard(players) {
         row.onclick = () => toggleDetails(p.id);
         row.innerHTML = `
             <td>${rankDisplay}</td>
-            <td>${p.name} ${p.missed_games >= 2 ? '<span class="status-warn">⚠️</span>' : ''}</td>
+            <td>${p.name}</td>
             <td>${p.elo}</td>
         `;
         tbody.appendChild(row);

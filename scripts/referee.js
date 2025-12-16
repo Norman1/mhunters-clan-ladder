@@ -79,6 +79,14 @@ async function runReferee() {
                     console.warn(`Could not determine player states for timeout game ${game.game_id}`);
                 }
 
+                // Set last_opponent to prevent immediate rematch
+                if (players[game.p1_id]) {
+                    players[game.p1_id].last_opponent = game.p2_id;
+                }
+                if (players[game.p2_id]) {
+                    players[game.p2_id].last_opponent = game.p1_id;
+                }
+
                 await deleteGame(game.game_id);
 
                 // Archive as Void
