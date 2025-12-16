@@ -93,7 +93,7 @@ async function deleteGame(gameId) {
   const payload = {
     Email: email,
     APIToken: token,
-    GameID: gameId
+    gameID: gameId
   };
 
   const response = await fetch(`${BASE_URL}/DeleteLobbyGame`, {
