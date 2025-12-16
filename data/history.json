@@ -8,5 +8,15 @@
     "finished_at": "2025-12-16T01:40:32.270Z",
     "template_id": 1431579,
     "elo_change": 20
+  },
+  {
+    "game_id": "43091067",
+    "finished_at": "2025-12-16T09:57:54.598Z",
+    "note": "Timed Out (Lobby)"
+  },
+  {
+    "game_id": "43091068",
+    "finished_at": "2025-12-16T09:57:54.715Z",
+    "note": "Timed Out (Lobby)"
   }
 ]
