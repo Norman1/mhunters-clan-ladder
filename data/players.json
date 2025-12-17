@@ -3,7 +3,7 @@
     "name": "ElDuderino",
     "elo": 1000,
     "game_cap": 2,
-    "missed_games": 2
+    "missed_games": 0
   },
   "3346775331": {
     "name": "Gatsu12",
@@ -59,6 +59,6 @@
     "name": "Andr0meda",
     "elo": 1000,
     "game_cap": 2,
-    "missed_games": 2
+    "missed_games": 0
   }
 }
