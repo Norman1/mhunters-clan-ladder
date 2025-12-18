@@ -26,9 +26,10 @@
   },
   "84143567121": {
     "name": "Poldi",
-    "elo": 1000,
+    "elo": 1020,
     "game_cap": 2,
-    "missed_games": 0
+    "missed_games": 0,
+    "last_opponent": "9482920905"
   },
   "23154545458": {
     "name": "Dark Magician Girl",
@@ -38,9 +39,10 @@
   },
   "9482920905": {
     "name": "Ethosys",
-    "elo": 1000,
+    "elo": 980,
     "game_cap": 2,
-    "missed_games": 0
+    "missed_games": 0,
+    "last_opponent": "84143567121"
   },
   "8294358602": {
     "name": "Wolkenstern",
