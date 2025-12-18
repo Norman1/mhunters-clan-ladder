@@ -1,9 +1,10 @@
 {
   "2590914675": {
     "name": "ElDuderino",
-    "elo": 1000,
+    "elo": 980,
     "game_cap": 2,
-    "missed_games": 0
+    "missed_games": 0,
+    "last_opponent": "6823726918"
   },
   "3346775331": {
     "name": "Gatsu12",
@@ -59,8 +60,9 @@
   },
   "6823726918": {
     "name": "Andr0meda",
-    "elo": 1000,
+    "elo": 1020,
     "game_cap": 2,
-    "missed_games": 0
+    "missed_games": 0,
+    "last_opponent": "2590914675"
   }
 }
