@@ -3,7 +3,7 @@
     "name": "ElDuderino",
     "elo": 980,
     "game_cap": 2,
-    "missed_games": 0,
+    "missed_games": 1,
     "last_opponent": "6823726918"
   },
   "3346775331": {
@@ -62,7 +62,7 @@
     "name": "Andr0meda",
     "elo": 1020,
     "game_cap": 2,
-    "missed_games": 0,
+    "missed_games": 1,
     "last_opponent": "2590914675"
   }
 }
