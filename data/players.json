@@ -13,6 +13,12 @@
     "missed_games": 0,
     "last_opponent": "58134761580"
   },
+  "3631391841": {
+    "name": "BlackBart",
+    "elo": 1000,
+    "game_cap": 2,
+    "missed_games": 0
+  },
   "79105823914": {
     "name": "krinid",
     "elo": 1000,
