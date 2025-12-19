@@ -1,10 +1,14 @@
 [
-    {
-        "id": 1390041,
-        "name": "Strat 1v1"
-    },
-    {
-        "id": 1431579,
-        "name": "Belarus"
-    }
+  {
+    "id": 1390041,
+    "name": "Strat 1v1"
+  },
+  {
+    "id": 1431579,
+    "name": "Belarus"
+  },
+  {
+    "id": 1573495,
+    "name": "SEAD"
+  }
 ]
