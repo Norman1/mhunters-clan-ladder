@@ -65,5 +65,11 @@
     "game_cap": 2,
     "missed_games": 1,
     "last_opponent": "2590914675"
+  },
+  "9313400553": {
+    "name": "Word Walker",
+    "elo": 1000,
+    "game_cap": 2,
+    "missed_games": 0
   }
 }
