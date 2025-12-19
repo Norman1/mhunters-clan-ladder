@@ -47,16 +47,17 @@
   },
   "8294358602": {
     "name": "Wolkenstern",
-    "elo": 1000,
+    "elo": 979,
     "game_cap": 2,
-    "missed_games": 0
+    "missed_games": 0,
+    "last_opponent": "58134761580"
   },
   "58134761580": {
     "name": "ExFailures",
-    "elo": 980,
+    "elo": 1001,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "3346775331"
+    "last_opponent": "8294358602"
   },
   "6823726918": {
     "name": "Andr0meda",
