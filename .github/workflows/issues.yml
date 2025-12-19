@@ -31,6 +31,6 @@ jobs:
         run: |
           git config --global user.name "Norman (Bot)"
           git config --global user.email "norman-bot@users.noreply.github.com"
-          git add data/players.json
-          git commit -m "IssueOps: User update from #${{ github.event.issue.number }}" || echo "No changes to commit"
+          git add data/players.json data/templates.json
+          git commit -m "IssueOps: Update from #${{ github.event.issue.number }}" || echo "No changes to commit"
           git push
