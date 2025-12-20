@@ -35,9 +35,10 @@
   },
   "79105823914": {
     "name": "krinid",
-    "elo": 1000,
+    "elo": 979,
     "game_cap": 2,
-    "missed_games": 0
+    "missed_games": 0,
+    "last_opponent": "9482920905"
   },
   "88110265403": {
     "name": "Crouton",
@@ -60,10 +61,10 @@
   },
   "9482920905": {
     "name": "Ethosys",
-    "elo": 980,
+    "elo": 1001,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "84143567121"
+    "last_opponent": "79105823914"
   },
   "8294358602": {
     "name": "Wolkenstern",
