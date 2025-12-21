@@ -28,10 +28,10 @@
   },
   "3631391841": {
     "name": "BlackBart",
-    "elo": 1022,
+    "elo": 1042,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "88110265403"
+    "last_opponent": "9313400553"
   },
   "79105823914": {
     "name": "krinid",
@@ -90,9 +90,9 @@
   },
   "9313400553": {
     "name": "Word Walker",
-    "elo": 1017,
+    "elo": 997,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "9482920905"
+    "last_opponent": "3631391841"
   }
 }
