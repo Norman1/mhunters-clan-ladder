@@ -133,5 +133,35 @@
     "finished_at": "2025-12-21T01:45:01.361Z",
     "template_id": 1573498,
     "elo_change": 20
+  },
+  {
+    "game_id": "43142703",
+    "finished_at": "2025-12-21T06:29:54.503Z",
+    "note": "Declined"
+  },
+  {
+    "game_id": "43142705",
+    "finished_at": "2025-12-21T06:29:54.652Z",
+    "note": "Declined"
+  },
+  {
+    "game_id": "43148172",
+    "p1_id": "79105823914",
+    "p2_id": "9313400553",
+    "winner_id": "79105823914",
+    "loser_id": "9313400553",
+    "finished_at": "2025-12-21T06:29:54.753Z",
+    "template_id": 1573498,
+    "elo_change": 21
+  },
+  {
+    "game_id": "43152399",
+    "finished_at": "2025-12-21T06:29:54.802Z",
+    "note": "Declined"
+  },
+  {
+    "game_id": "43153299",
+    "finished_at": "2025-12-21T06:29:54.902Z",
+    "note": "Declined"
   }
 ]

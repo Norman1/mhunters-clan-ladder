@@ -3,21 +3,22 @@
     "name": "Swisster",
     "elo": 1000,
     "game_cap": 2,
-    "missed_games": 0
+    "missed_games": 1,
+    "last_opponent": "81598466"
   },
   "81598466": {
     "name": "Tim",
     "elo": 960,
     "game_cap": 2,
-    "missed_games": 0,
-    "last_opponent": "3631391841"
+    "missed_games": 2,
+    "last_opponent": "8294358602"
   },
   "2590914675": {
     "name": "ElDuderino",
     "elo": 980,
     "game_cap": 2,
     "missed_games": 1,
-    "last_opponent": "6823726918"
+    "last_opponent": "28867016"
   },
   "3346775331": {
     "name": "Gatsu12",
@@ -35,17 +36,17 @@
   },
   "79105823914": {
     "name": "krinid",
-    "elo": 979,
+    "elo": 1000,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "9482920905"
+    "last_opponent": "9313400553"
   },
   "88110265403": {
     "name": "Crouton",
     "elo": 998,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "3631391841"
+    "last_opponent": "9482920905"
   },
   "84143567121": {
     "name": "Poldi",
@@ -64,15 +65,15 @@
     "name": "Ethosys",
     "elo": 1023,
     "game_cap": 2,
-    "missed_games": 0,
-    "last_opponent": "9313400553"
+    "missed_games": 1,
+    "last_opponent": "88110265403"
   },
   "8294358602": {
     "name": "Wolkenstern",
     "elo": 960,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "88110265403"
+    "last_opponent": "81598466"
   },
   "58134761580": {
     "name": "ExFailures",
@@ -90,9 +91,9 @@
   },
   "9313400553": {
     "name": "Word Walker",
-    "elo": 997,
+    "elo": 976,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "3631391841"
+    "last_opponent": "79105823914"
   }
 }
