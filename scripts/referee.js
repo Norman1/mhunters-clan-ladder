@@ -55,49 +55,93 @@ async function runReferee() {
             const createdDate = new Date(game.created_at);
             const hoursSinceCreation = (now - createdDate) / (1000 * 60 * 60);
 
-            // --- 1. LOBBY TIMEOUT (3 Days) ---
-            if (status.state === 'WaitingForPlayers' && hoursSinceCreation > 72) {
-                console.log(`Game ${game.game_id} timed out in lobby (>72h). Deleting...`);
+            // --- 1. WAITING FOR PLAYERS (Declined OR Timeout) ---
+            if (status.state === 'WaitingForPlayers') {
+                const declinedPlayer = status.players ? status.players.find(p => (p.State || p.state) === 'Declined') : null;
 
-                // Note: API response structure assumed. Adjust if needed.
-                // Based on Java 'GamePlayerQueryResponse': { id, state, team }
-                // and 'GameQueryResponse': { state, players: [...] }
-                if (status.players) {
-                    status.players.forEach(p => {
-                        // Check for both cases just in case API varies
-                        const pState = p.State || p.state;
-                        const pId = p.ID || p.id;
+                // A) Immediate Decline Handling
+                if (declinedPlayer) {
+                    console.log(`Game ${game.game_id} has a Declined player. Deleting immediately...`);
 
-                        if (pState === 'Invited' || pState === 'Declined') {
-                            if (players[pId]) {
-                                players[pId].missed_games = (players[pId].missed_games || 0) + 1;
-                                console.log(`Strike for ${players[pId].name} (Failed to join). Strikes: ${players[pId].missed_games}`);
-                            }
-                        }
+                    const pId = declinedPlayer.ID || declinedPlayer.id; // Handle case sensitivity
+                    if (players[pId]) {
+                        players[pId].missed_games = (players[pId].missed_games || 0) + 1;
+                        console.log(`Strike for ${players[pId].name} (Declined). Strikes: ${players[pId].missed_games}`);
+                    }
+
+                    // Set last_opponent to prevent immediate rematch
+                    if (players[game.p1_id]) {
+                        players[game.p1_id].last_opponent = game.p2_id;
+                    }
+                    if (players[game.p2_id]) {
+                        players[game.p2_id].last_opponent = game.p1_id;
+                    }
+
+                    try {
+                        await deleteGame(game.game_id);
+                    } catch (e) {
+                        console.error(`Failed to delete game ${game.game_id} from API (might already be deleted):`, e.message);
+                    }
+
+                    // Archive as Void
+                    history.push({
+                        game_id: game.game_id,
+                        finished_at: now.toISOString(),
+                        note: "Declined"
                     });
-                } else {
-                    console.warn(`Could not determine player states for timeout game ${game.game_id}`);
+
+                    keepGame = false;
+                    stateChanged = true;
                 }
 
-                // Set last_opponent to prevent immediate rematch
-                if (players[game.p1_id]) {
-                    players[game.p1_id].last_opponent = game.p2_id;
+                // B) Lobby Timeout (> 72h)
+                else if (hoursSinceCreation > 72) {
+                    console.log(`Game ${game.game_id} timed out in lobby (>72h). Deleting...`);
+
+                    // Note: API response structure assumed. Adjust if needed.
+                    // Based on Java 'GamePlayerQueryResponse': { id, state, team }
+                    // and 'GameQueryResponse': { state, players: [...] }
+                    if (status.players) {
+                        status.players.forEach(p => {
+                            // Check for both cases just in case API varies
+                            const pState = p.State || p.state;
+                            const pId = p.ID || p.id;
+
+                            if (pState === 'Invited' || pState === 'Declined') {
+                                if (players[pId]) {
+                                    players[pId].missed_games = (players[pId].missed_games || 0) + 1;
+                                    console.log(`Strike for ${players[pId].name} (Failed to join). Strikes: ${players[pId].missed_games}`);
+                                }
+                            }
+                        });
+                    } else {
+                        console.warn(`Could not determine player states for timeout game ${game.game_id}`);
+                    }
+
+                    // Set last_opponent to prevent immediate rematch
+                    if (players[game.p1_id]) {
+                        players[game.p1_id].last_opponent = game.p2_id;
+                    }
+                    if (players[game.p2_id]) {
+                        players[game.p2_id].last_opponent = game.p1_id;
+                    }
+
+                    try {
+                        await deleteGame(game.game_id);
+                    } catch (e) {
+                        console.error(`Failed to delete game ${game.game_id} from API (might already be deleted):`, e.message);
+                    }
+
+                    // Archive as Void
+                    history.push({
+                        game_id: game.game_id,
+                        finished_at: now.toISOString(),
+                        note: "Timed Out (Lobby)"
+                    });
+
+                    keepGame = false;
+                    stateChanged = true;
                 }
-                if (players[game.p2_id]) {
-                    players[game.p2_id].last_opponent = game.p1_id;
-                }
-
-                await deleteGame(game.game_id);
-
-                // Archive as Void
-                history.push({
-                    game_id: game.game_id,
-                    finished_at: now.toISOString(),
-                    note: "Timed Out (Lobby)"
-                });
-
-                keepGame = false;
-                stateChanged = true;
             }
 
             // --- 2. TERMINATED (Declined/Deleted by someone else) ---
