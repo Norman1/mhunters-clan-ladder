@@ -183,5 +183,20 @@
     "game_id": "43156162",
     "finished_at": "2025-12-21T12:37:47.315Z",
     "note": "Declined"
+  },
+  {
+    "game_id": "43132287",
+    "p1_id": "58134761580",
+    "p2_id": "9482920905",
+    "winner_id": "9482920905",
+    "loser_id": "58134761580",
+    "finished_at": "2025-12-21T22:18:57.694Z",
+    "template_id": 1390041,
+    "elo_change": 19
+  },
+  {
+    "game_id": "43156160",
+    "finished_at": "2025-12-21T22:18:58.211Z",
+    "note": "Declined"
   }
 ]
