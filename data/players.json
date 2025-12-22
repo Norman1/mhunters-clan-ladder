@@ -17,8 +17,8 @@
     "name": "ElDuderino",
     "elo": 980,
     "game_cap": 2,
-    "missed_games": 1,
-    "last_opponent": "28867016"
+    "missed_games": 2,
+    "last_opponent": "8294358602"
   },
   "3346775331": {
     "name": "Gatsu12",
@@ -73,21 +73,21 @@
     "elo": 960,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "81598466"
+    "last_opponent": "2590914675"
   },
   "58134761580": {
     "name": "ExFailures",
     "elo": 982,
     "game_cap": 2,
-    "missed_games": 0,
-    "last_opponent": "9482920905"
+    "missed_games": 1,
+    "last_opponent": "6823726918"
   },
   "6823726918": {
     "name": "Andr0meda",
     "elo": 1020,
     "game_cap": 2,
     "missed_games": 1,
-    "last_opponent": "2590914675"
+    "last_opponent": "58134761580"
   },
   "9313400553": {
     "name": "Word Walker",
