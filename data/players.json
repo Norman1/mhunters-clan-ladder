@@ -3,8 +3,8 @@
     "name": "Swisster",
     "elo": 1000,
     "game_cap": 2,
-    "missed_games": 9,
-    "last_opponent": "81598466"
+    "missed_games": 10,
+    "last_opponent": "3346775331"
   },
   "81598466": {
     "name": "Tim",
@@ -25,7 +25,7 @@
     "elo": 1058,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "3631391841"
+    "last_opponent": "28867016"
   },
   "3631391841": {
     "name": "BlackBart",
