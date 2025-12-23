@@ -50,16 +50,17 @@
   },
   "84143567121": {
     "name": "Poldi",
-    "elo": 1020,
+    "elo": 1039,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "9482920905"
+    "last_opponent": "23154545458"
   },
   "23154545458": {
     "name": "Dark Magician Girl",
-    "elo": 1000,
+    "elo": 981,
     "game_cap": 2,
-    "missed_games": 0
+    "missed_games": 0,
+    "last_opponent": "84143567121"
   },
   "9482920905": {
     "name": "Ethosys",
