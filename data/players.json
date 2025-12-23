@@ -3,22 +3,22 @@
     "name": "Swisster",
     "elo": 1000,
     "game_cap": 2,
-    "missed_games": 10,
-    "last_opponent": "3346775331"
+    "missed_games": 12,
+    "last_opponent": "2590914675"
   },
   "81598466": {
     "name": "Tim",
     "elo": 960,
     "game_cap": 2,
     "missed_games": 11,
-    "last_opponent": "2590914675"
+    "last_opponent": "28867016"
   },
   "2590914675": {
     "name": "ElDuderino",
     "elo": 980,
     "game_cap": 2,
     "missed_games": 2,
-    "last_opponent": "81598466"
+    "last_opponent": "28867016"
   },
   "3346775331": {
     "name": "Gatsu12",
