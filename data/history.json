@@ -538,5 +538,25 @@
     "game_id": "43170053",
     "finished_at": "2025-12-26T03:24:11.253Z",
     "note": "Timed Out (Lobby)"
+  },
+  {
+    "game_id": "43090925",
+    "p1_id": "79105823914",
+    "p2_id": "23154545458",
+    "winner_id": "79105823914",
+    "loser_id": "23154545458",
+    "finished_at": "2025-12-26T06:31:39.995Z",
+    "template_id": 1390041,
+    "elo_change": 18
+  },
+  {
+    "game_id": "43186428",
+    "finished_at": "2025-12-26T06:31:40.394Z",
+    "note": "Declined"
+  },
+  {
+    "game_id": "43189181",
+    "finished_at": "2025-12-26T06:31:40.492Z",
+    "note": "Declined"
   }
 ]
