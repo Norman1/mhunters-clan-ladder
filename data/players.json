@@ -43,10 +43,10 @@
   },
   "88110265403": {
     "name": "Crouton",
-    "elo": 979,
+    "elo": 998,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "3346775331"
+    "last_opponent": "8294358602"
   },
   "84143567121": {
     "name": "Poldi",
@@ -71,10 +71,10 @@
   },
   "8294358602": {
     "name": "Wolkenstern",
-    "elo": 960,
+    "elo": 941,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "81598466"
+    "last_opponent": "88110265403"
   },
   "58134761580": {
     "name": "ExFailures",
