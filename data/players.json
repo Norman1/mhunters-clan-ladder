@@ -10,8 +10,8 @@
     "name": "Tim",
     "elo": 960,
     "game_cap": 2,
-    "missed_games": 36,
-    "last_opponent": "88110265403"
+    "missed_games": 38,
+    "last_opponent": "9313400553"
   },
   "2590914675": {
     "name": "ElDuderino",
@@ -81,7 +81,7 @@
     "elo": 982,
     "game_cap": 2,
     "missed_games": 4,
-    "last_opponent": "9313400553"
+    "last_opponent": "81598466"
   },
   "6823726918": {
     "name": "Andr0meda",
@@ -95,6 +95,6 @@
     "elo": 981,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "58134761580"
+    "last_opponent": "81598466"
   }
 }
