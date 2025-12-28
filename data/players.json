@@ -10,8 +10,8 @@
     "name": "Tim",
     "elo": 960,
     "game_cap": 2,
-    "missed_games": 40,
-    "last_opponent": "84143567121"
+    "missed_games": 42,
+    "last_opponent": "88110265403"
   },
   "2590914675": {
     "name": "ElDuderino",
@@ -22,10 +22,10 @@
   },
   "3346775331": {
     "name": "Gatsu12",
-    "elo": 1077,
+    "elo": 1094,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "81598466"
+    "last_opponent": "84143567121"
   },
   "3631391841": {
     "name": "BlackBart",
@@ -46,14 +46,14 @@
     "elo": 1015,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "8294358602"
+    "last_opponent": "81598466"
   },
   "84143567121": {
     "name": "Poldi",
-    "elo": 1020,
+    "elo": 1003,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "81598466"
+    "last_opponent": "3346775331"
   },
   "23154545458": {
     "name": "Dark Magician Girl",
@@ -74,7 +74,7 @@
     "elo": 924,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "88110265403"
+    "last_opponent": "81598466"
   },
   "58134761580": {
     "name": "ExFailures",
