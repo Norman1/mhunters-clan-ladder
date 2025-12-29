@@ -57,10 +57,10 @@
   },
   "23154545458": {
     "name": "Dark Magician Girl",
-    "elo": 963,
+    "elo": 946,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "2590914675"
+    "last_opponent": "6823726918"
   },
   "9482920905": {
     "name": "Ethosys",
@@ -85,10 +85,10 @@
   },
   "6823726918": {
     "name": "Andr0meda",
-    "elo": 1020,
+    "elo": 1037,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "9482920905"
+    "last_opponent": "23154545458"
   },
   "9313400553": {
     "name": "Word Walker",
