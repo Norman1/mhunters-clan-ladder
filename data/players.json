@@ -10,29 +10,29 @@
     "name": "Tim",
     "elo": 960,
     "game_cap": 2,
-    "missed_games": 50,
-    "last_opponent": "3631391841"
+    "missed_games": 52,
+    "last_opponent": "84143567121"
   },
   "2590914675": {
     "name": "ElDuderino",
     "elo": 980,
     "game_cap": 2,
-    "missed_games": 5,
-    "last_opponent": "81598466"
+    "missed_games": 6,
+    "last_opponent": "3631391841"
   },
   "3346775331": {
     "name": "Gatsu12",
     "elo": 1122,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "84143567121"
+    "last_opponent": "81598466"
   },
   "3631391841": {
     "name": "BlackBart",
     "elo": 996,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "81598466"
+    "last_opponent": "2590914675"
   },
   "79105823914": {
     "name": "krinid",
@@ -53,14 +53,14 @@
     "elo": 975,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "3346775331"
+    "last_opponent": "81598466"
   },
   "23154545458": {
     "name": "Dark Magician Girl",
-    "elo": 946,
+    "elo": 968,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "81598466"
+    "last_opponent": "9313400553"
   },
   "9482920905": {
     "name": "Ethosys",
@@ -92,9 +92,9 @@
   },
   "9313400553": {
     "name": "Word Walker",
-    "elo": 981,
+    "elo": 959,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "81598466"
+    "last_opponent": "23154545458"
   }
 }
