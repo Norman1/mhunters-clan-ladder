@@ -4,14 +4,14 @@
     "elo": 1000,
     "game_cap": 2,
     "missed_games": 30,
-    "last_opponent": "2590914675"
+    "last_opponent": "81598466"
   },
   "81598466": {
     "name": "Tim",
     "elo": 960,
     "game_cap": 2,
-    "missed_games": 60,
-    "last_opponent": "3631391841"
+    "missed_games": 62,
+    "last_opponent": "79105823914"
   },
   "2590914675": {
     "name": "ElDuderino",
@@ -39,7 +39,7 @@
     "elo": 1040,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "28867016"
+    "last_opponent": "81598466"
   },
   "88110265403": {
     "name": "Crouton",
