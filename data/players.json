@@ -39,14 +39,14 @@
     "elo": 1056,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "3631391841"
+    "last_opponent": "6823726918"
   },
   "88110265403": {
     "name": "Crouton",
-    "elo": 1051,
+    "elo": 1064,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "9313400553"
+    "last_opponent": "8294358602"
   },
   "84143567121": {
     "name": "Poldi",
@@ -71,10 +71,10 @@
   },
   "8294358602": {
     "name": "Wolkenstern",
-    "elo": 924,
+    "elo": 911,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "81598466"
+    "last_opponent": "88110265403"
   },
   "58134761580": {
     "name": "ExFailures",
@@ -87,8 +87,8 @@
     "name": "Andr0meda",
     "elo": 1051,
     "game_cap": 2,
-    "missed_games": 0,
-    "last_opponent": "81598466"
+    "missed_games": 1,
+    "last_opponent": "79105823914"
   },
   "9313400553": {
     "name": "Word Walker",
