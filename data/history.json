@@ -1188,5 +1188,10 @@
     "finished_at": "2026-01-05T20:25:06.128Z",
     "template_id": 1431579,
     "elo_change": 18
+  },
+  {
+    "game_id": "43253581",
+    "finished_at": "2026-01-05T22:20:23.775Z",
+    "note": "Timed Out (Lobby)"
   }
 ]
