@@ -4,7 +4,7 @@
     "elo": 1000,
     "game_cap": 2,
     "missed_games": 32,
-    "last_opponent": "3631391841"
+    "last_opponent": "6823726918"
   },
   "81598466": {
     "name": "Tim",
@@ -87,15 +87,15 @@
     "name": "Andr0meda",
     "elo": 1089,
     "game_cap": 2,
-    "missed_games": 3,
-    "last_opponent": "81598466"
+    "missed_games": 5,
+    "last_opponent": "9313400553"
   },
   "9313400553": {
     "name": "Word Walker",
     "elo": 863,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "81598466"
+    "last_opponent": "6823726918"
   },
   "4543063534": {
     "name": "Farah♦",
