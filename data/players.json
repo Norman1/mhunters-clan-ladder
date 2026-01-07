@@ -29,10 +29,10 @@
   },
   "3631391841": {
     "name": "BlackBart",
-    "elo": 958,
+    "elo": 921,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "6823726918"
+    "last_opponent": "84143567121"
   },
   "79105823914": {
     "name": "krinid",
@@ -50,17 +50,17 @@
   },
   "84143567121": {
     "name": "Poldi",
-    "elo": 998,
+    "elo": 1015,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "9313400553"
+    "last_opponent": "3631391841"
   },
   "23154545458": {
     "name": "Dark Magician Girl",
-    "elo": 953,
+    "elo": 973,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "6823726918"
+    "last_opponent": "3631391841"
   },
   "9482920905": {
     "name": "Ethosys",
