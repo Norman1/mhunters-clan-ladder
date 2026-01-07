@@ -22,17 +22,17 @@
   },
   "3346775331": {
     "name": "Gatsu12",
-    "elo": 1134,
+    "elo": 1143,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "9482920905"
+    "last_opponent": "3631391841"
   },
   "3631391841": {
     "name": "BlackBart",
-    "elo": 921,
+    "elo": 912,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "84143567121"
+    "last_opponent": "3346775331"
   },
   "79105823914": {
     "name": "krinid",
@@ -43,10 +43,10 @@
   },
   "88110265403": {
     "name": "Crouton",
-    "elo": 1074,
+    "elo": 1088,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "9313400553"
+    "last_opponent": "4543063534"
   },
   "84143567121": {
     "name": "Poldi",
@@ -92,15 +92,16 @@
   },
   "9313400553": {
     "name": "Word Walker",
-    "elo": 863,
+    "elo": 891,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "6823726918"
+    "last_opponent": "4543063534"
   },
   "4543063534": {
     "name": "Farah♦",
-    "elo": 1000,
+    "elo": 958,
     "game_cap": 1,
-    "missed_games": 0
+    "missed_games": 0,
+    "last_opponent": "88110265403"
   }
 }
