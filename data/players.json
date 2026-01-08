@@ -29,24 +29,24 @@
   },
   "3631391841": {
     "name": "BlackBart",
-    "elo": 901,
+    "elo": 956,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "81598466"
+    "last_opponent": "79105823914"
   },
   "79105823914": {
     "name": "krinid",
-    "elo": 1028,
+    "elo": 1003,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "8294358602"
+    "last_opponent": "3631391841"
   },
   "88110265403": {
     "name": "Crouton",
-    "elo": 1099,
+    "elo": 1069,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "81598466"
+    "last_opponent": "3631391841"
   },
   "84143567121": {
     "name": "Poldi",
