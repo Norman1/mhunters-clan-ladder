@@ -1478,5 +1478,15 @@
     "game_id": "43300618",
     "finished_at": "2026-01-08T20:24:29.438Z",
     "note": "Declined"
+  },
+  {
+    "game_id": "43302459",
+    "finished_at": "2026-01-08T22:20:31.190Z",
+    "note": "Declined"
+  },
+  {
+    "game_id": "43302460",
+    "finished_at": "2026-01-08T22:20:31.287Z",
+    "note": "Declined"
   }
 ]
