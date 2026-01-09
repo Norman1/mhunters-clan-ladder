@@ -36,17 +36,17 @@
   },
   "79105823914": {
     "name": "krinid",
-    "elo": 1003,
+    "elo": 987,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "3631391841"
+    "last_opponent": "88110265403"
   },
   "88110265403": {
     "name": "Crouton",
-    "elo": 1069,
+    "elo": 1085,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "6823726918"
+    "last_opponent": "79105823914"
   },
   "84143567121": {
     "name": "Poldi",
