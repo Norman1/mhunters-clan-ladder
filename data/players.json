@@ -22,10 +22,10 @@
   },
   "3346775331": {
     "name": "Gatsu12",
-    "elo": 1143,
+    "elo": 1114,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "3631391841"
+    "last_opponent": "23154545458"
   },
   "3631391841": {
     "name": "BlackBart",
@@ -57,10 +57,10 @@
   },
   "23154545458": {
     "name": "Dark Magician Girl",
-    "elo": 973,
+    "elo": 1002,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "81598466"
+    "last_opponent": "3346775331"
   },
   "9482920905": {
     "name": "Ethosys",
