@@ -22,10 +22,10 @@
   },
   "3346775331": {
     "name": "Gatsu12",
-    "elo": 1123,
+    "elo": 1141,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "81598466"
+    "last_opponent": "88110265403"
   },
   "3631391841": {
     "name": "BlackBart",
@@ -43,10 +43,10 @@
   },
   "88110265403": {
     "name": "Crouton",
-    "elo": 1085,
+    "elo": 1067,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "58134761580"
+    "last_opponent": "3346775331"
   },
   "84143567121": {
     "name": "Poldi",
