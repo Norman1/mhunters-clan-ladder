@@ -10,8 +10,8 @@
     "name": "Tim",
     "elo": 960,
     "game_cap": 2,
-    "missed_games": 118,
-    "last_opponent": "84143567121"
+    "missed_games": 120,
+    "last_opponent": "3631391841"
   },
   "2590914675": {
     "name": "ElDuderino",
@@ -32,7 +32,7 @@
     "elo": 963,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "6823726918"
+    "last_opponent": "81598466"
   },
   "79105823914": {
     "name": "krinid",
@@ -57,7 +57,7 @@
   },
   "23154545458": {
     "name": "Dark Magician Girl",
-    "elo": 1015,
+    "elo": 1027,
     "game_cap": 2,
     "missed_games": 0,
     "last_opponent": "9313400553"
@@ -81,21 +81,21 @@
     "elo": 982,
     "game_cap": 2,
     "missed_games": 12,
-    "last_opponent": "81598466"
+    "last_opponent": "6823726918"
   },
   "6823726918": {
     "name": "Andr0meda",
     "elo": 1089,
     "game_cap": 2,
-    "missed_games": 12,
-    "last_opponent": "3631391841"
+    "missed_games": 13,
+    "last_opponent": "81598466"
   },
   "9313400553": {
     "name": "Word Walker",
-    "elo": 869,
+    "elo": 857,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "81598466"
+    "last_opponent": "23154545458"
   },
   "4543063534": {
     "name": "Farah♦",
