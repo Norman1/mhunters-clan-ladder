@@ -80,15 +80,15 @@
     "name": "ExFailures",
     "elo": 982,
     "game_cap": 2,
-    "missed_games": 13,
-    "last_opponent": "28867016"
+    "missed_games": 14,
+    "last_opponent": "6823726918"
   },
   "6823726918": {
     "name": "Andr0meda",
     "elo": 1089,
     "game_cap": 2,
-    "missed_games": 14,
-    "last_opponent": "81598466"
+    "missed_games": 15,
+    "last_opponent": "58134761580"
   },
   "9313400553": {
     "name": "Word Walker",
