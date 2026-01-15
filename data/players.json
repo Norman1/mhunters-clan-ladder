@@ -36,10 +36,10 @@
   },
   "79105823914": {
     "name": "krinid",
-    "elo": 946,
+    "elo": 966,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "84143567121"
+    "last_opponent": "8294358602"
   },
   "88110265403": {
     "name": "Crouton",
@@ -52,8 +52,8 @@
     "name": "Poldi",
     "elo": 1042,
     "game_cap": 2,
-    "missed_games": 1,
-    "last_opponent": "6823726918"
+    "missed_games": 2,
+    "last_opponent": "9313400553"
   },
   "23154545458": {
     "name": "Dark Magician Girl",
@@ -71,10 +71,10 @@
   },
   "8294358602": {
     "name": "Wolkenstern",
-    "elo": 939,
+    "elo": 919,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "28867016"
+    "last_opponent": "79105823914"
   },
   "58134761580": {
     "name": "ExFailures",
@@ -95,7 +95,7 @@
     "elo": 857,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "28867016"
+    "last_opponent": "84143567121"
   },
   "4543063534": {
     "name": "Farah♦",
