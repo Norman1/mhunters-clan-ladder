@@ -1933,5 +1933,45 @@
     "game_id": "43359105",
     "finished_at": "2026-01-15T16:34:34.092Z",
     "note": "Declined"
+  },
+  {
+    "game_id": "43335305",
+    "finished_at": "2026-01-15T18:36:05.882Z",
+    "note": "Timed Out (Lobby)"
+  },
+  {
+    "game_id": "43344827",
+    "finished_at": "2026-01-15T18:36:06.066Z",
+    "note": "Declined"
+  },
+  {
+    "game_id": "43348656",
+    "finished_at": "2026-01-15T18:36:06.332Z",
+    "note": "Declined"
+  },
+  {
+    "game_id": "43357166",
+    "finished_at": "2026-01-15T18:36:06.480Z",
+    "note": "Declined"
+  },
+  {
+    "game_id": "43359106",
+    "finished_at": "2026-01-15T18:36:06.577Z",
+    "note": "Declined"
+  },
+  {
+    "game_id": "43360091",
+    "p1_id": "79105823914",
+    "p2_id": "9313400553",
+    "winner_id": "79105823914",
+    "loser_id": "9313400553",
+    "finished_at": "2026-01-15T18:36:06.683Z",
+    "template_id": 1574451,
+    "elo_change": 14
+  },
+  {
+    "game_id": "43360092",
+    "finished_at": "2026-01-15T18:36:06.723Z",
+    "note": "Declined"
   }
 ]
