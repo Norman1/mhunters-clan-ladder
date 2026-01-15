@@ -1903,5 +1903,15 @@
     "game_id": "43356351",
     "finished_at": "2026-01-15T06:33:26.013Z",
     "note": "Declined"
+  },
+  {
+    "game_id": "43356739",
+    "finished_at": "2026-01-15T08:30:43.988Z",
+    "note": "Declined"
+  },
+  {
+    "game_id": "43356741",
+    "finished_at": "2026-01-15T08:30:44.149Z",
+    "note": "Declined"
   }
 ]

@@ -10,8 +10,8 @@
     "name": "Tim",
     "elo": 960,
     "game_cap": 2,
-    "missed_games": 134,
-    "last_opponent": "58134761580"
+    "missed_games": 135,
+    "last_opponent": "84143567121"
   },
   "2590914675": {
     "name": "ElDuderino",
@@ -52,8 +52,8 @@
     "name": "Poldi",
     "elo": 1042,
     "game_cap": 2,
-    "missed_games": 0,
-    "last_opponent": "88110265403"
+    "missed_games": 1,
+    "last_opponent": "6823726918"
   },
   "23154545458": {
     "name": "Dark Magician Girl",
@@ -88,7 +88,7 @@
     "elo": 1089,
     "game_cap": 2,
     "missed_games": 15,
-    "last_opponent": "81598466"
+    "last_opponent": "84143567121"
   },
   "9313400553": {
     "name": "Word Walker",
