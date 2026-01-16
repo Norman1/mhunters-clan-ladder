@@ -3,15 +3,15 @@
     "name": "Swisster",
     "elo": 1000,
     "game_cap": 2,
-    "missed_games": 37,
-    "last_opponent": "84143567121"
+    "missed_games": 38,
+    "last_opponent": "3631391841"
   },
   "81598466": {
     "name": "Tim",
     "elo": 960,
     "game_cap": 2,
-    "missed_games": 144,
-    "last_opponent": "84143567121"
+    "missed_games": 145,
+    "last_opponent": "3346775331"
   },
   "2590914675": {
     "name": "ElDuderino",
@@ -25,14 +25,14 @@
     "elo": 1153,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "84143567121"
+    "last_opponent": "81598466"
   },
   "3631391841": {
     "name": "BlackBart",
     "elo": 951,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "81598466"
+    "last_opponent": "28867016"
   },
   "79105823914": {
     "name": "krinid",
