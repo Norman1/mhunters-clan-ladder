@@ -4,14 +4,14 @@
     "elo": 1000,
     "game_cap": 2,
     "missed_games": 38,
-    "last_opponent": "84143567121"
+    "last_opponent": "81598466"
   },
   "81598466": {
     "name": "Tim",
     "elo": 960,
     "game_cap": 2,
-    "missed_games": 147,
-    "last_opponent": "84143567121"
+    "missed_games": 148,
+    "last_opponent": "28867016"
   },
   "2590914675": {
     "name": "ElDuderino",
@@ -32,7 +32,7 @@
     "elo": 951,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "28867016"
+    "last_opponent": "4543063534"
   },
   "79105823914": {
     "name": "krinid",
@@ -101,7 +101,7 @@
     "name": "Farah♦",
     "elo": 958,
     "game_cap": 1,
-    "missed_games": 1,
-    "last_opponent": "79105823914"
+    "missed_games": 2,
+    "last_opponent": "3631391841"
   }
 }
