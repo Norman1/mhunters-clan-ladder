@@ -52,15 +52,15 @@
     "name": "Poldi",
     "elo": 1042,
     "game_cap": 2,
-    "missed_games": 11,
-    "last_opponent": "81598466"
+    "missed_games": 12,
+    "last_opponent": "23154545458"
   },
   "23154545458": {
     "name": "Dark Magician Girl",
     "elo": 1044,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "81598466"
+    "last_opponent": "84143567121"
   },
   "9482920905": {
     "name": "Ethosys",
@@ -71,10 +71,10 @@
   },
   "8294358602": {
     "name": "Wolkenstern",
-    "elo": 919,
+    "elo": 895,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "84143567121"
+    "last_opponent": "9313400553"
   },
   "58134761580": {
     "name": "ExFailures",
@@ -92,10 +92,10 @@
   },
   "9313400553": {
     "name": "Word Walker",
-    "elo": 843,
+    "elo": 867,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "79105823914"
+    "last_opponent": "8294358602"
   },
   "4543063534": {
     "name": "Farah♦",
