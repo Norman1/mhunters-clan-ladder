@@ -212,7 +212,7 @@ async function runMatchmaker() {
 
     // Calculate Ranks
     const rankedIds = Object.entries(players)
-        .filter(([, p]) => (Number(p.game_cap) || 0) > 0)
+        .filter(([, p]) => (Number(p.game_cap) || 0) > 0 && (Number(p.missed_games) || 0) < UNRELIABLE_STRIKE_THRESHOLD)
         .sort((a, b) => (Number(b[1].elo) || 0) - (Number(a[1].elo) || 0))
         .map(([id]) => String(id));
 
@@ -242,10 +242,12 @@ async function runMatchmaker() {
 
             const rank1 = getRank(p1Id);
             const rank2 = getRank(p2Id);
+            const rankLabel1 = rank1 > 0 ? `Rank ${rank1}` : 'Unranked';
+            const rankLabel2 = rank2 > 0 ? `Rank ${rank2}` : 'Unranked';
 
             const description = `This is an automatically generated game from the M'Hunters clan ladder.
-Contender 1: ${p1.name}, Rank ${rank1} with ${p1.elo} Elo
-Contender 2: ${p2.name}, Rank ${rank2} with ${p2.elo} Elo
+Contender 1: ${p1.name}, ${rankLabel1} with ${p1.elo} Elo
+Contender 2: ${p2.name}, ${rankLabel2} with ${p2.elo} Elo
 
 IMPORTANT: Please join this game even if your opponent declines! This is how the ladder knows you are active. Active players get matched against other active players.
 
