@@ -32,7 +32,7 @@
     "elo": 972,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "79105823914"
+    "last_opponent": "84143567121"
   },
   "79105823914": {
     "name": "krinid",
@@ -46,14 +46,14 @@
     "elo": 1074,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "84143567121"
+    "last_opponent": "58134761580"
   },
   "84143567121": {
     "name": "Poldi",
     "elo": 1042,
     "game_cap": 2,
-    "missed_games": 14,
-    "last_opponent": "81598466"
+    "missed_games": 15,
+    "last_opponent": "3631391841"
   },
   "23154545458": {
     "name": "Dark Magician Girl",
@@ -80,8 +80,8 @@
     "name": "ExFailures",
     "elo": 982,
     "game_cap": 2,
-    "missed_games": 14,
-    "last_opponent": "81598466"
+    "missed_games": 15,
+    "last_opponent": "88110265403"
   },
   "6823726918": {
     "name": "Andr0meda",
