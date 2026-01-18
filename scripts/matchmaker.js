@@ -6,6 +6,10 @@ const PLAYERS_FILE = path.join(__dirname, '../data/players.json');
 const ACTIVE_GAMES_FILE = path.join(__dirname, '../data/active_games.json');
 const TEMPLATES_FILE = path.join(__dirname, '../data/templates.json');
 
+const UNRELIABLE_STRIKE_THRESHOLD = 2;
+const UNRELIABLE_COOLDOWN_DAYS = 14;
+const UNRELIABLE_COOLDOWN_MS = UNRELIABLE_COOLDOWN_DAYS * 24 * 60 * 60 * 1000;
+
 // --- Helper Functions ---
 
 function loadJSON(filePath) {
@@ -23,6 +27,29 @@ function shuffle(array) {
         [array[i], array[j]] = [array[j], array[i]];
     }
     return array;
+}
+
+function parseDate(value) {
+    if (!value) return null;
+    const parsed = new Date(value);
+    return Number.isNaN(parsed.getTime()) ? null : parsed;
+}
+
+function getLastAssignedAt(id, players, activeGames) {
+    const stored = parseDate(players[id]?.last_assigned_at);
+    if (stored) return stored;
+
+    let latest = null;
+    activeGames.forEach(game => {
+        if (String(game.p1_id) === String(id) || String(game.p2_id) === String(id)) {
+            const createdAt = parseDate(game.created_at);
+            if (createdAt && (!latest || createdAt > latest)) {
+                latest = createdAt;
+            }
+        }
+    });
+
+    return latest;
 }
 
 function popDistinctPair(slots, players) {
@@ -61,6 +88,8 @@ async function runMatchmaker() {
     const players = loadJSON(PLAYERS_FILE);
     const activeGames = loadJSON(ACTIVE_GAMES_FILE);
     const templates = loadJSON(TEMPLATES_FILE);
+    const now = new Date();
+    let playersUpdated = false;
 
     if (!players || !activeGames || !templates) {
         console.error('CRITICAL: Missing data files.');
@@ -98,7 +127,14 @@ async function runMatchmaker() {
         // Pool A: Reliable (0-1 Strikes)
         // Pool B: Unreliable (>= 2 Strikes)
         const missedGames = Number(p.missed_games) || 0;
-        const isReliable = missedGames < 2;
+        const isReliable = missedGames < UNRELIABLE_STRIKE_THRESHOLD;
+
+        if (!isReliable) {
+            const lastAssignedAt = getLastAssignedAt(id, players, activeGames);
+            if (lastAssignedAt && (now - lastAssignedAt) < UNRELIABLE_COOLDOWN_MS) {
+                return;
+            }
+        }
 
         const slots = isReliable ? activeSlots : inactiveSlots;
         const set = isReliable ? activePlayers : inactivePlayers;
@@ -212,6 +248,11 @@ You can change your ladder settings online via https://norman1.github.io/mhunter
             console.log(`Game Created! ID: ${result.gameID}`);
 
             // 6. Update Active Games
+            const assignedAt = new Date().toISOString();
+            players[p1Id].last_assigned_at = assignedAt;
+            players[p2Id].last_assigned_at = assignedAt;
+            playersUpdated = true;
+
             activeGames.push({
                 game_id: result.gameID,
                 created_at: new Date().toISOString(),
@@ -227,6 +268,9 @@ You can change your ladder settings online via https://norman1.github.io/mhunter
 
     // 7. Save State
     saveJSON(ACTIVE_GAMES_FILE, activeGames);
+    if (playersUpdated) {
+        saveJSON(PLAYERS_FILE, players);
+    }
     console.log('Matchmaker run complete.');
 }
 
