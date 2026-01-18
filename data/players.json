@@ -10,8 +10,8 @@
     "name": "Tim",
     "elo": 960,
     "game_cap": 2,
-    "missed_games": 157,
-    "last_opponent": "84143567121",
+    "missed_games": 158,
+    "last_opponent": "3631391841",
     "last_assigned_at": "2026-01-18T16:23:54.292Z"
   },
   "266160220": {
@@ -75,8 +75,8 @@
     "elo": 998,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "88110265403",
-    "last_assigned_at": "2026-01-18T16:23:54.292Z"
+    "last_opponent": "81598466",
+    "last_assigned_at": "2026-01-18T18:27:23.843Z"
   },
   "3737155555": {
     "name": "Jumpshott",
@@ -111,15 +111,15 @@
     "elo": 1048,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "3631391841",
-    "last_assigned_at": "2026-01-18T16:23:54.958Z"
+    "last_opponent": "84143567121",
+    "last_assigned_at": "2026-01-18T18:27:23.843Z"
   },
   "84143567121": {
     "name": "Poldi",
     "elo": 1042,
     "game_cap": 2,
-    "missed_games": 16,
-    "last_opponent": "58134761580",
+    "missed_games": 17,
+    "last_opponent": "88110265403",
     "last_assigned_at": "2026-01-18T16:23:54.958Z"
   },
   "23154545458": {
