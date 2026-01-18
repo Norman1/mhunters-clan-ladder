@@ -126,17 +126,15 @@ async function runMatchmaker() {
     });
 
     Object.entries(players).forEach(([id, p]) => {
+        const missedGames = Number(p.missed_games) || 0;
+        const isReliable = missedGames < UNRELIABLE_STRIKE_THRESHOLD;
         const currentGames = playerGameCounts[id] || 0;
         const cap = Number(p.game_cap) || 0;
-        const openSlots = Math.max(0, cap - currentGames);
+        const effectiveCap = isReliable ? cap : Math.min(cap, 1);
+        const openSlots = Math.max(0, effectiveCap - currentGames);
 
         // Condition: Must have open slots.
         if (openSlots <= 0) return;
-
-        // Pool A: Reliable (0-1 Strikes)
-        // Pool B: Unreliable (>= 2 Strikes)
-        const missedGames = Number(p.missed_games) || 0;
-        const isReliable = missedGames < UNRELIABLE_STRIKE_THRESHOLD;
 
         if (!isReliable) {
             const lastAssignedAt = getLastAssignedAt(id, players, activeGames);

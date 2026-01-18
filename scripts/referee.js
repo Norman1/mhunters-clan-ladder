@@ -168,6 +168,14 @@ async function runReferee() {
                     note: "Terminated"
                 });
 
+                // Set last_opponent to prevent immediate rematch
+                if (players[game.p1_id]) {
+                    players[game.p1_id].last_opponent = game.p2_id;
+                }
+                if (players[game.p2_id]) {
+                    players[game.p2_id].last_opponent = game.p1_id;
+                }
+
                 keepGame = false;
                 stateChanged = true;
             }
