@@ -75,7 +75,7 @@ If a game is manually declined before it starts:
 ### 4. Inactivity Rules (Redemption Queue)
 The system tracks "Strikes" (Missed Games) to filter out inactive players.
 *   **Strike Limit**: A player is marked **Inactive** after accumulating **2 Consecutive Strikes**.
-*   **Cooldown**: Inactive players are matched at most once every **2 weeks**.
+*   **Cooldown**: Inactive players use a weekly backoff from **1 week** up to **8 weeks** (2 months), adding 1 week per consecutive strike after becoming inactive.
 *   **Redemption Queue**: Inactive players are **NOT** ignored. They are still matched, but with lower priority:
     *   The bot prioritizes matching **Active vs Active** players.
     *   It then matches **Inactive vs Inactive** players (Redemption Games).
