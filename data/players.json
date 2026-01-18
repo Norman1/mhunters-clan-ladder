@@ -11,7 +11,8 @@
     "elo": 960,
     "game_cap": 2,
     "missed_games": 157,
-    "last_opponent": "84143567121"
+    "last_opponent": "84143567121",
+    "last_assigned_at": "2026-01-18T16:23:54.292Z"
   },
   "266160220": {
     "name": "(CZ-SK)eXitus",
@@ -71,10 +72,11 @@
   },
   "3631391841": {
     "name": "BlackBart",
-    "elo": 972,
+    "elo": 998,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "84143567121"
+    "last_opponent": "88110265403",
+    "last_assigned_at": "2026-01-18T16:23:54.292Z"
   },
   "3737155555": {
     "name": "Jumpshott",
@@ -106,17 +108,19 @@
   },
   "88110265403": {
     "name": "Crouton",
-    "elo": 1074,
+    "elo": 1048,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "58134761580"
+    "last_opponent": "3631391841",
+    "last_assigned_at": "2026-01-18T16:23:54.958Z"
   },
   "84143567121": {
     "name": "Poldi",
     "elo": 1042,
     "game_cap": 2,
     "missed_games": 16,
-    "last_opponent": "58134761580"
+    "last_opponent": "58134761580",
+    "last_assigned_at": "2026-01-18T16:23:54.958Z"
   },
   "23154545458": {
     "name": "Dark Magician Girl",
