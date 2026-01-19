@@ -2283,5 +2283,25 @@
     "finished_at": "2026-01-18T22:19:24.351Z",
     "template_id": 1573495,
     "elo_change": 13
+  },
+  {
+    "game_id": "43363089",
+    "finished_at": "2026-01-19T01:48:31.535Z",
+    "note": "Declined"
+  },
+  {
+    "game_id": "43374281",
+    "finished_at": "2026-01-19T01:48:31.786Z",
+    "note": "Declined"
+  },
+  {
+    "game_id": "43382591",
+    "finished_at": "2026-01-19T01:48:32.736Z",
+    "note": "Declined"
+  },
+  {
+    "game_id": "43382643",
+    "finished_at": "2026-01-19T01:48:35.176Z",
+    "note": "Declined"
   }
 ]

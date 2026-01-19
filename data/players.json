@@ -3,8 +3,9 @@
     "name": "Swisster",
     "elo": 1000,
     "game_cap": 2,
-    "missed_games": 38,
-    "last_opponent": "84143567121"
+    "missed_games": 40,
+    "last_opponent": "79105823914",
+    "last_assigned_at": "2026-01-19T01:48:37.750Z"
   },
   "81598466": {
     "name": "Tim",
@@ -104,7 +105,8 @@
     "elo": 942,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "81598466"
+    "last_opponent": "28867016",
+    "last_assigned_at": "2026-01-19T01:48:37.177Z"
   },
   "88110265403": {
     "name": "Crouton",
@@ -127,8 +129,8 @@
     "elo": 1015,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "9313400553",
-    "last_assigned_at": "2026-01-18T12:39:01.991Z"
+    "last_opponent": "28867016",
+    "last_assigned_at": "2026-01-19T01:48:37.177Z"
   },
   "9482920905": {
     "name": "Ethosys",
@@ -168,7 +170,7 @@
     "game_cap": 2,
     "missed_games": 0,
     "last_opponent": "71155120841",
-    "last_assigned_at": "2026-01-18T22:19:29.446Z"
+    "last_assigned_at": "2026-01-19T01:48:37.750Z"
   },
   "4543063534": {
     "name": "Farah",
@@ -344,7 +346,8 @@
     "elo": 1000,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-01-18T12:39:37.803Z"
+    "last_assigned_at": "2026-01-19T01:48:36.406Z",
+    "last_opponent": "5520443420"
   },
   "50127514525": {
     "name": "toont3",
@@ -372,7 +375,8 @@
     "elo": 1000,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-01-18T12:39:13.980Z"
+    "last_assigned_at": "2026-01-19T01:48:36.406Z",
+    "last_opponent": "5520443420"
   },
   "25149077292": {
     "name": "EVIL DRAG QUEEN",
@@ -385,8 +389,9 @@
     "name": "pottygoboomboom",
     "elo": 1000,
     "game_cap": 2,
-    "missed_games": 0,
-    "last_assigned_at": "2026-01-18T12:39:37.803Z"
+    "missed_games": 2,
+    "last_assigned_at": "2026-01-18T12:39:37.803Z",
+    "last_opponent": "56133341636"
   },
   "64126464642": {
     "name": "Leo",
