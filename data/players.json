@@ -310,7 +310,8 @@
     "elo": 1000,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-01-18T12:39:29.470Z"
+    "last_assigned_at": "2026-01-19T04:51:54.579Z",
+    "last_opponent": "31104791368"
   },
   "63114105399": {
     "name": "thecloser_",
@@ -474,10 +475,11 @@
   },
   "25126079448": {
     "name": "Adrian D'Agostino",
-    "elo": 1000,
+    "elo": 1020,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-01-18T12:39:30.061Z"
+    "last_assigned_at": "2026-01-19T04:51:54.579Z",
+    "last_opponent": "31104791368"
   },
   "89114164339": {
     "name": "Blacksmith",
@@ -568,10 +570,11 @@
   },
   "31104791368": {
     "name": "Iamtznu",
-    "elo": 1000,
+    "elo": 980,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-01-18T12:39:30.061Z"
+    "last_assigned_at": "2026-01-18T12:39:30.061Z",
+    "last_opponent": "25126079448"
   },
   "5540862349": {
     "name": "Mortiis",
