@@ -73,11 +73,11 @@
   },
   "3631391841": {
     "name": "BlackBart",
-    "elo": 998,
+    "elo": 981,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "81598466",
-    "last_assigned_at": "2026-01-18T18:27:23.843Z"
+    "last_opponent": "88110265403",
+    "last_assigned_at": "2026-01-19T20:23:56.996Z"
   },
   "3737155555": {
     "name": "Jumpshott",
@@ -110,11 +110,11 @@
   },
   "88110265403": {
     "name": "Crouton",
-    "elo": 1048,
+    "elo": 1065,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "84143567121",
-    "last_assigned_at": "2026-01-18T18:27:23.843Z"
+    "last_opponent": "3631391841",
+    "last_assigned_at": "2026-01-19T20:23:57.615Z"
   },
   "84143567121": {
     "name": "Poldi",
@@ -146,7 +146,7 @@
     "game_cap": 2,
     "missed_games": 0,
     "last_opponent": "71155120841",
-    "last_assigned_at": "2026-01-18T22:19:28.068Z"
+    "last_assigned_at": "2026-01-19T20:23:56.996Z"
   },
   "58134761580": {
     "name": "ExFailures",
@@ -332,7 +332,7 @@
     "elo": 988,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-01-18T22:19:28.068Z",
+    "last_assigned_at": "2026-01-19T20:23:58.174Z",
     "last_opponent": "8294358602"
   },
   "6411877352": {
@@ -436,8 +436,8 @@
     "elo": 1000,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-01-19T08:32:41.233Z",
-    "last_opponent": "44134229332"
+    "last_assigned_at": "2026-01-19T20:23:57.615Z",
+    "last_opponent": "31104791368"
   },
   "23105988432": {
     "name": "Socrates",
@@ -501,8 +501,8 @@
     "elo": 1000,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-01-19T08:32:41.982Z",
-    "last_opponent": "4337497298"
+    "last_assigned_at": "2026-01-19T20:23:58.174Z",
+    "last_opponent": "31104791368"
   },
   "50144225272": {
     "name": "polar",
@@ -573,9 +573,9 @@
     "name": "Iamtznu",
     "elo": 980,
     "game_cap": 2,
-    "missed_games": 0,
+    "missed_games": 2,
     "last_assigned_at": "2026-01-19T08:32:41.982Z",
-    "last_opponent": "25126079448"
+    "last_opponent": "44134229332"
   },
   "5540862349": {
     "name": "Mortiis",
