@@ -435,7 +435,7 @@
     "name": "Gnoransa",
     "elo": 1000,
     "game_cap": 2,
-    "missed_games": 1,
+    "missed_games": 0,
     "last_assigned_at": "2026-01-19T08:32:41.233Z",
     "last_opponent": "44134229332"
   },
