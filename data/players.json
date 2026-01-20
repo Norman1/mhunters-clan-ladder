@@ -93,7 +93,7 @@
     "elo": 980,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-01-18T12:39:28.878Z",
+    "last_assigned_at": "2026-01-20T12:49:33.663Z",
     "last_opponent": "23105988432"
   },
   "4180490094": {
@@ -116,8 +116,8 @@
     "elo": 1065,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "3631391841",
-    "last_assigned_at": "2026-01-19T20:23:57.615Z"
+    "last_opponent": "4337497298",
+    "last_assigned_at": "2026-01-20T12:49:34.309Z"
   },
   "84143567121": {
     "name": "Poldi",
@@ -385,10 +385,11 @@
   },
   "25149077292": {
     "name": "EVIL DRAG QUEEN",
-    "elo": 1000,
+    "elo": 980,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-01-18T12:39:19.942Z"
+    "last_assigned_at": "2026-01-20T12:49:34.309Z",
+    "last_opponent": "74149320612"
   },
   "5520443420": {
     "name": "pottygoboomboom",
@@ -408,10 +409,11 @@
   },
   "74149320612": {
     "name": "Svarta Hingsten",
-    "elo": 1000,
+    "elo": 1020,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-01-18T12:39:16.371Z"
+    "last_assigned_at": "2026-01-20T12:49:33.663Z",
+    "last_opponent": "25149077292"
   },
   "64114468853": {
     "name": "Wonkier",
@@ -439,9 +441,9 @@
     "name": "Gnoransa",
     "elo": 1000,
     "game_cap": 2,
-    "missed_games": 0,
+    "missed_games": 1,
     "last_assigned_at": "2026-01-19T20:23:57.615Z",
-    "last_opponent": "31104791368"
+    "last_opponent": "88110265403"
   },
   "23105988432": {
     "name": "Socrates",
