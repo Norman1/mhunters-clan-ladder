@@ -255,10 +255,11 @@
   },
   "14130113253": {
     "name": "incandwo",
-    "elo": 1000,
+    "elo": 1019,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-01-18T12:39:24.715Z"
+    "last_assigned_at": "2026-01-20T20:41:44.836Z",
+    "last_opponent": "25149077292"
   },
   "93159203503": {
     "name": "President_Newsom",
@@ -386,11 +387,11 @@
   },
   "25149077292": {
     "name": "EVIL DRAG QUEEN",
-    "elo": 980,
+    "elo": 961,
     "game_cap": 2,
     "missed_games": 0,
     "last_assigned_at": "2026-01-20T12:49:34.309Z",
-    "last_opponent": "74149320612"
+    "last_opponent": "14130113253"
   },
   "5520443420": {
     "name": "pottygoboomboom",
@@ -538,7 +539,7 @@
     "elo": 1020,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-01-18T12:39:31.845Z",
+    "last_assigned_at": "2026-01-20T20:41:44.836Z",
     "last_opponent": "71148639731"
   },
   "88117806994": {
