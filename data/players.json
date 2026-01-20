@@ -40,8 +40,9 @@
     "name": "ElDuderino",
     "elo": 980,
     "game_cap": 2,
-    "missed_games": 18,
-    "last_opponent": "9482920905"
+    "missed_games": 19,
+    "last_opponent": "4543063534",
+    "last_assigned_at": "2026-01-20T04:43:55.837Z"
   },
   "3330212221": {
     "name": "blue_stream",
@@ -69,7 +70,7 @@
     "elo": 1020,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-01-18T12:39:21.134Z",
+    "last_assigned_at": "2026-01-20T04:43:55.837Z",
     "last_opponent": "53134900057"
   },
   "3631391841": {
@@ -177,8 +178,9 @@
     "name": "Farah",
     "elo": 958,
     "game_cap": 1,
-    "missed_games": 2,
-    "last_opponent": "81598466"
+    "missed_games": 3,
+    "last_opponent": "2590914675",
+    "last_assigned_at": "2026-01-20T04:43:56.593Z"
   },
   "51156980238": {
     "name": "cd",
@@ -560,7 +562,7 @@
     "elo": 980,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-01-18T12:39:21.134Z",
+    "last_assigned_at": "2026-01-20T04:43:56.593Z",
     "last_opponent": "3591948853"
   },
   "4379764745": {
