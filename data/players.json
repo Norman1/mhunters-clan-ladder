@@ -75,10 +75,10 @@
   },
   "3631391841": {
     "name": "BlackBart",
-    "elo": 981,
+    "elo": 959,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "88110265403",
+    "last_opponent": "8294358602",
     "last_assigned_at": "2026-01-19T20:23:56.996Z"
   },
   "3737155555": {
@@ -145,11 +145,11 @@
   },
   "8294358602": {
     "name": "Wolkenstern",
-    "elo": 940,
+    "elo": 962,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "71155120841",
-    "last_assigned_at": "2026-01-19T20:23:56.996Z"
+    "last_opponent": "3631391841",
+    "last_assigned_at": "2026-01-20T22:22:40.278Z"
   },
   "58134761580": {
     "name": "ExFailures",
@@ -390,7 +390,7 @@
     "elo": 961,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-01-20T12:49:34.309Z",
+    "last_assigned_at": "2026-01-20T22:22:40.278Z",
     "last_opponent": "14130113253"
   },
   "5520443420": {
