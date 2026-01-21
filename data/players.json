@@ -475,9 +475,9 @@
     "name": "Gnoransa",
     "elo": 959,
     "game_cap": 2,
-    "missed_games": 1,
+    "missed_games": 3,
     "last_assigned_at": "2026-01-21T14:30:22.184Z",
-    "last_opponent": "74149320612"
+    "last_opponent": "44134229332"
   },
   "23105988432": {
     "name": "Socrates",
@@ -499,8 +499,8 @@
     "elo": 1000,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-01-21T14:30:21.630Z",
-    "last_opponent": "63152422979"
+    "last_assigned_at": "2026-01-21T16:46:43.927Z",
+    "last_opponent": "4337497298"
   },
   "4353717389": {
     "name": "Krys",
@@ -547,8 +547,8 @@
     "elo": 1000,
     "game_cap": 2,
     "missed_games": 1,
-    "last_assigned_at": "2026-01-21T14:30:22.184Z",
-    "last_opponent": "64126464642"
+    "last_assigned_at": "2026-01-21T16:46:43.927Z",
+    "last_opponent": "4337497298"
   },
   "50144225272": {
     "name": "polar",
