@@ -147,8 +147,8 @@
     "name": "Ethosys",
     "elo": 1042,
     "game_cap": 2,
-    "missed_games": 22,
-    "last_opponent": "6823726918",
+    "missed_games": 23,
+    "last_opponent": "58134761580",
     "last_assigned_at": "2026-01-18T22:19:28.844Z"
   },
   "8294358602": {
@@ -163,8 +163,8 @@
     "name": "ExFailures",
     "elo": 982,
     "game_cap": 2,
-    "missed_games": 16,
-    "last_opponent": "6823726918",
+    "missed_games": 17,
+    "last_opponent": "9482920905",
     "last_assigned_at": "2026-01-18T22:19:28.844Z"
   },
   "6823726918": {
