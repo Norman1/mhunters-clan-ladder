@@ -249,11 +249,11 @@
   },
   "4942304274": {
     "name": "Maddest",
-    "elo": 1000,
+    "elo": 1020,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-01-21T12:49:57.965Z",
-    "last_opponent": "3737155555"
+    "last_assigned_at": "2026-01-21T20:30:18.820Z",
+    "last_opponent": "8222729424"
   },
   "7499140988": {
     "name": "angrybeavers",
@@ -276,7 +276,7 @@
     "elo": 1039,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-01-21T12:50:00.208Z",
+    "last_assigned_at": "2026-01-21T20:30:18.820Z",
     "last_opponent": "8222729424"
   },
   "93159203503": {
@@ -467,9 +467,9 @@
     "name": "matt8.3",
     "elo": 1000,
     "game_cap": 2,
-    "missed_games": 1,
+    "missed_games": 2,
     "last_assigned_at": "2026-01-21T12:49:56.297Z",
-    "last_opponent": "13130892902"
+    "last_opponent": "5540862349"
   },
   "4337497298": {
     "name": "Gnoransa",
@@ -576,11 +576,11 @@
   },
   "8222729424": {
     "name": "Al AssAff",
-    "elo": 1000,
+    "elo": 980,
     "game_cap": 2,
     "missed_games": 0,
     "last_assigned_at": "2026-01-21T12:49:57.965Z",
-    "last_opponent": "14130113253"
+    "last_opponent": "4942304274"
   },
   "88117806994": {
     "name": "RameurA",
@@ -634,9 +634,9 @@
     "name": "Mortiis",
     "elo": 1000,
     "game_cap": 2,
-    "missed_games": 1,
+    "missed_games": 2,
     "last_assigned_at": "2026-01-21T12:50:00.208Z",
-    "last_opponent": "59127253198"
+    "last_opponent": "4471034885"
   },
   "5118531774": {
     "name": "krua (from Russia)",
