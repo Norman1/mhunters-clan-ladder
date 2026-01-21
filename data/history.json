@@ -2703,5 +2703,25 @@
     "game_id": "43382642",
     "finished_at": "2026-01-21T12:49:52.208Z",
     "note": "Timed Out (Lobby)"
+  },
+  {
+    "game_id": "43383232",
+    "finished_at": "2026-01-21T14:30:18.630Z",
+    "note": "Timed Out (Lobby)"
+  },
+  {
+    "game_id": "43407551",
+    "p1_id": "3631391841",
+    "p2_id": "4337497298",
+    "winner_id": "3631391841",
+    "loser_id": "4337497298",
+    "finished_at": "2026-01-21T14:30:19.476Z",
+    "template_id": 1573495,
+    "elo_change": 21
+  },
+  {
+    "game_id": "43408960",
+    "finished_at": "2026-01-21T14:30:19.977Z",
+    "note": "Declined"
   }
 ]
