@@ -56,7 +56,8 @@
     "elo": 1168,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "88110265403"
+    "last_opponent": "88110265403",
+    "last_assigned_at": "2026-01-21T10:28:21.615Z"
   },
   "3428471447": {
     "name": "AyanM",
@@ -93,8 +94,8 @@
     "elo": 1002,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-01-21T08:31:36.116Z",
-    "last_opponent": "74149320612"
+    "last_assigned_at": "2026-01-21T10:28:21.615Z",
+    "last_opponent": "4337497298"
   },
   "4180490094": {
     "name": "Woololo",
@@ -444,9 +445,9 @@
     "name": "Gnoransa",
     "elo": 980,
     "game_cap": 2,
-    "missed_games": 1,
+    "missed_games": 0,
     "last_assigned_at": "2026-01-21T08:31:37.192Z",
-    "last_opponent": "71148639731"
+    "last_opponent": "4155523061"
   },
   "23105988432": {
     "name": "Socrates",
