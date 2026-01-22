@@ -57,10 +57,10 @@
   },
   "3346775331": {
     "name": "Gatsu12",
-    "elo": 1168,
+    "elo": 1138,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "88110265403",
+    "last_opponent": "3631391841",
     "last_assigned_at": "2026-01-21T10:28:21.615Z"
   },
   "3428471447": {
@@ -81,11 +81,11 @@
   },
   "3631391841": {
     "name": "BlackBart",
-    "elo": 980,
+    "elo": 1010,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "4337497298",
-    "last_assigned_at": "2026-01-21T14:30:21.051Z"
+    "last_opponent": "3346775331",
+    "last_assigned_at": "2026-01-22T12:48:58.240Z"
   },
   "3737155555": {
     "name": "Jumpshott",
@@ -181,7 +181,7 @@
     "game_cap": 2,
     "missed_games": 0,
     "last_opponent": "16127869941",
-    "last_assigned_at": "2026-01-22T03:47:15.285Z"
+    "last_assigned_at": "2026-01-22T12:48:58.240Z"
   },
   "4543063534": {
     "name": "Farah",
