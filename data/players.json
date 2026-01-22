@@ -177,10 +177,10 @@
   },
   "9313400553": {
     "name": "Word Walker",
-    "elo": 863,
+    "elo": 851,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "28867016",
+    "last_opponent": "16127869941",
     "last_assigned_at": "2026-01-22T03:47:15.285Z"
   },
   "4543063534": {
@@ -489,11 +489,11 @@
   },
   "16127869941": {
     "name": "gg",
-    "elo": 1020,
+    "elo": 1032,
     "game_cap": 2,
     "missed_games": 0,
     "last_assigned_at": "2026-01-22T03:47:15.285Z",
-    "last_opponent": "71148639731"
+    "last_opponent": "9313400553"
   },
   "4555082823": {
     "name": "Super Smoove",
