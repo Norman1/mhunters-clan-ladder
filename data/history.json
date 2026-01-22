@@ -2838,5 +2838,30 @@
     "finished_at": "2026-01-22T16:35:13.277Z",
     "template_id": 1573499,
     "elo_change": 21
+  },
+  {
+    "game_id": "43388212",
+    "p1_id": "23154545458",
+    "p2_id": "79105823914",
+    "winner_id": "23154545458",
+    "loser_id": "79105823914",
+    "finished_at": "2026-01-22T20:27:23.620Z",
+    "template_id": 1573495,
+    "elo_change": 16
+  },
+  {
+    "game_id": "43395346",
+    "finished_at": "2026-01-22T20:27:23.679Z",
+    "note": "Timed Out (Lobby)"
+  },
+  {
+    "game_id": "43414166",
+    "p1_id": "71148639731",
+    "p2_id": "8222729424",
+    "winner_id": "8222729424",
+    "loser_id": "71148639731",
+    "finished_at": "2026-01-22T20:27:25.026Z",
+    "template_id": 1573499,
+    "elo_change": 20
   }
 ]
