@@ -339,9 +339,9 @@
     "name": "TMG",
     "elo": 1000,
     "game_cap": 2,
-    "missed_games": 1,
+    "missed_games": 2,
     "last_assigned_at": "2026-01-21T12:50:00.762Z",
-    "last_opponent": "59151494981"
+    "last_opponent": "25126079448"
   },
   "63114105399": {
     "name": "thecloser_",
@@ -492,7 +492,7 @@
     "elo": 1032,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-01-22T03:47:15.285Z",
+    "last_assigned_at": "2026-01-22T06:34:35.242Z",
     "last_opponent": "9313400553"
   },
   "4555082823": {
@@ -524,8 +524,8 @@
     "elo": 1020,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-01-21T12:49:54.627Z",
-    "last_opponent": "5118531774"
+    "last_assigned_at": "2026-01-22T06:34:35.242Z",
+    "last_opponent": "44147840330"
   },
   "89114164339": {
     "name": "Blacksmith",
