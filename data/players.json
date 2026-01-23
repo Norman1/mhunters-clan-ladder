@@ -43,8 +43,8 @@
     "name": "ElDuderino",
     "elo": 980,
     "game_cap": 2,
-    "missed_games": 19,
-    "last_opponent": "4543063534",
+    "missed_games": 20,
+    "last_opponent": "3591948853",
     "last_assigned_at": "2026-01-20T04:43:55.837Z"
   },
   "3330212221": {
@@ -76,8 +76,8 @@
     "elo": 1020,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-01-21T12:49:59.089Z",
-    "last_opponent": "63114105399"
+    "last_assigned_at": "2026-01-23T06:34:30.470Z",
+    "last_opponent": "2590914675"
   },
   "3631391841": {
     "name": "BlackBart",
@@ -177,11 +177,11 @@
   },
   "9313400553": {
     "name": "Word Walker",
-    "elo": 880,
+    "elo": 868,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "3631391841",
-    "last_assigned_at": "2026-01-23T01:43:44.682Z"
+    "last_opponent": "23105988432",
+    "last_assigned_at": "2026-01-23T06:34:30.470Z"
   },
   "4543063534": {
     "name": "Farah",
@@ -481,11 +481,11 @@
   },
   "23105988432": {
     "name": "Socrates",
-    "elo": 1020,
+    "elo": 1032,
     "game_cap": 2,
     "missed_games": 0,
     "last_assigned_at": "2026-01-20T06:35:59.068Z",
-    "last_opponent": "4155523061"
+    "last_opponent": "9313400553"
   },
   "16127869941": {
     "name": "gg",
