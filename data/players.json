@@ -57,11 +57,11 @@
   },
   "3346775331": {
     "name": "Gatsu12",
-    "elo": 1138,
+    "elo": 1151,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "3631391841",
-    "last_assigned_at": "2026-01-22T16:35:14.334Z"
+    "last_opponent": "14130113253",
+    "last_assigned_at": "2026-01-23T01:43:45.286Z"
   },
   "3428471447": {
     "name": "AyanM",
@@ -81,11 +81,11 @@
   },
   "3631391841": {
     "name": "BlackBart",
-    "elo": 1010,
+    "elo": 981,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "3346775331",
-    "last_assigned_at": "2026-01-22T12:48:58.240Z"
+    "last_opponent": "9313400553",
+    "last_assigned_at": "2026-01-23T01:43:43.906Z"
   },
   "3737155555": {
     "name": "Jumpshott",
@@ -117,7 +117,7 @@
     "game_cap": 2,
     "missed_games": 0,
     "last_opponent": "23154545458",
-    "last_assigned_at": "2026-01-19T01:48:37.177Z"
+    "last_assigned_at": "2026-01-23T01:43:45.286Z"
   },
   "88110265403": {
     "name": "Crouton",
@@ -141,7 +141,7 @@
     "game_cap": 2,
     "missed_games": 0,
     "last_opponent": "79105823914",
-    "last_assigned_at": "2026-01-21T12:49:55.734Z"
+    "last_assigned_at": "2026-01-23T01:43:43.906Z"
   },
   "9482920905": {
     "name": "Ethosys",
@@ -177,11 +177,11 @@
   },
   "9313400553": {
     "name": "Word Walker",
-    "elo": 851,
+    "elo": 880,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "16127869941",
-    "last_assigned_at": "2026-01-22T12:48:58.240Z"
+    "last_opponent": "3631391841",
+    "last_assigned_at": "2026-01-23T01:43:44.682Z"
   },
   "4543063534": {
     "name": "Farah",
@@ -273,11 +273,11 @@
   },
   "14130113253": {
     "name": "incandwo",
-    "elo": 1018,
+    "elo": 1005,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-01-22T16:35:14.334Z",
-    "last_opponent": "4942304274"
+    "last_assigned_at": "2026-01-23T01:43:44.682Z",
+    "last_opponent": "3346775331"
   },
   "93159203503": {
     "name": "President_Newsom",
