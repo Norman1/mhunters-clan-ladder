@@ -73,11 +73,11 @@
   },
   "3591948853": {
     "name": "jdg5201",
-    "elo": 1020,
+    "elo": 999,
     "game_cap": 2,
-    "missed_games": 0,
-    "last_assigned_at": "2026-01-23T06:34:30.470Z",
-    "last_opponent": "2590914675"
+    "missed_games": 1,
+    "last_assigned_at": "2026-01-23T16:30:06.060Z",
+    "last_opponent": "9313400553"
   },
   "3631391841": {
     "name": "BlackBart",
@@ -180,8 +180,8 @@
     "elo": 868,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "23105988432",
-    "last_assigned_at": "2026-01-23T06:34:30.470Z"
+    "last_opponent": "3591948853",
+    "last_assigned_at": "2026-01-23T16:30:06.715Z"
   },
   "4543063534": {
     "name": "Farah",
@@ -484,7 +484,7 @@
     "elo": 1032,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-01-20T06:35:59.068Z",
+    "last_assigned_at": "2026-01-23T16:30:06.060Z",
     "last_opponent": "9313400553"
   },
   "16127869941": {
@@ -585,11 +585,11 @@
   },
   "88117806994": {
     "name": "RameurA",
-    "elo": 1000,
+    "elo": 1021,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-01-21T12:49:59.647Z",
-    "last_opponent": "20125423673"
+    "last_assigned_at": "2026-01-23T16:30:06.715Z",
+    "last_opponent": "3591948853"
   },
   "59127253198": {
     "name": "Pp",
