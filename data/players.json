@@ -76,7 +76,7 @@
     "elo": 999,
     "game_cap": 2,
     "missed_games": 1,
-    "last_assigned_at": "2026-01-23T16:30:06.060Z",
+    "last_assigned_at": "2026-01-23T20:25:21.226Z",
     "last_opponent": "9313400553"
   },
   "3631391841": {
@@ -353,11 +353,11 @@
   },
   "71148639731": {
     "name": "Nick",
-    "elo": 962,
+    "elo": 985,
     "game_cap": 2,
     "missed_games": 0,
     "last_assigned_at": "2026-01-22T20:27:26.085Z",
-    "last_opponent": "8222729424"
+    "last_opponent": "16127869941"
   },
   "71155120841": {
     "name": "Ventura",
@@ -489,11 +489,11 @@
   },
   "16127869941": {
     "name": "gg",
-    "elo": 1011,
+    "elo": 988,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-01-22T20:27:26.085Z",
-    "last_opponent": "25126079448"
+    "last_assigned_at": "2026-01-23T20:25:21.226Z",
+    "last_opponent": "71148639731"
   },
   "4555082823": {
     "name": "Super Smoove",
