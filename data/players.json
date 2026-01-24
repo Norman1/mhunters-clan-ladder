@@ -156,8 +156,8 @@
     "elo": 962,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "3631391841",
-    "last_assigned_at": "2026-01-20T22:22:40.278Z"
+    "last_opponent": "25149077292",
+    "last_assigned_at": "2026-01-24T01:40:59.858Z"
   },
   "58134761580": {
     "name": "ExFailures",
@@ -177,11 +177,11 @@
   },
   "9313400553": {
     "name": "Word Walker",
-    "elo": 868,
+    "elo": 856,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "3591948853",
-    "last_assigned_at": "2026-01-23T16:30:06.715Z"
+    "last_opponent": "14130113253",
+    "last_assigned_at": "2026-01-24T01:41:00.561Z"
   },
   "4543063534": {
     "name": "Farah",
@@ -273,11 +273,11 @@
   },
   "14130113253": {
     "name": "incandwo",
-    "elo": 1005,
+    "elo": 1017,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-01-23T01:43:44.682Z",
-    "last_opponent": "3346775331"
+    "last_assigned_at": "2026-01-24T01:40:59.858Z",
+    "last_opponent": "9313400553"
   },
   "93159203503": {
     "name": "President_Newsom",
@@ -419,9 +419,9 @@
     "name": "EVIL DRAG QUEEN",
     "elo": 946,
     "game_cap": 2,
-    "missed_games": 0,
-    "last_assigned_at": "2026-01-23T22:18:03.744Z",
-    "last_opponent": "88110265403"
+    "missed_games": 1,
+    "last_assigned_at": "2026-01-24T01:41:00.561Z",
+    "last_opponent": "8294358602"
   },
   "5520443420": {
     "name": "pottygoboomboom",
