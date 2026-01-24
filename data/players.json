@@ -81,11 +81,11 @@
   },
   "3631391841": {
     "name": "BlackBart",
-    "elo": 981,
+    "elo": 1006,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "74149320612",
-    "last_assigned_at": "2026-01-24T14:19:09.024Z"
+    "last_opponent": "25126079448",
+    "last_assigned_at": "2026-01-24T20:21:20.759Z"
   },
   "3737155555": {
     "name": "Jumpshott",
@@ -124,8 +124,8 @@
     "elo": 1065,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "74149320612",
-    "last_assigned_at": "2026-01-24T10:20:57.805Z"
+    "last_opponent": "88117806994",
+    "last_assigned_at": "2026-01-24T20:21:20.200Z"
   },
   "84143567121": {
     "name": "Poldi",
@@ -419,7 +419,7 @@
     "name": "EVIL DRAG QUEEN",
     "elo": 946,
     "game_cap": 2,
-    "missed_games": 1,
+    "missed_games": 0,
     "last_assigned_at": "2026-01-24T12:39:39.684Z",
     "last_opponent": "9313400553"
   },
@@ -500,8 +500,8 @@
     "elo": 1000,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-01-24T18:29:21.624Z",
-    "last_opponent": "44134229332"
+    "last_assigned_at": "2026-01-24T20:21:20.759Z",
+    "last_opponent": "88117806994"
   },
   "4353717389": {
     "name": "Krys",
@@ -521,11 +521,11 @@
   },
   "25126079448": {
     "name": "Adrian D'Agostino",
-    "elo": 1078,
+    "elo": 1053,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-01-24T18:29:21.076Z",
-    "last_opponent": "4942304274"
+    "last_assigned_at": "2026-01-24T20:21:20.200Z",
+    "last_opponent": "3631391841"
   },
   "89114164339": {
     "name": "Blacksmith",
@@ -587,9 +587,9 @@
     "name": "RameurA",
     "elo": 1021,
     "game_cap": 2,
-    "missed_games": 1,
+    "missed_games": 3,
     "last_assigned_at": "2026-01-24T14:19:08.423Z",
-    "last_opponent": "51156980238"
+    "last_opponent": "4555082823"
   },
   "59127253198": {
     "name": "Pp",
