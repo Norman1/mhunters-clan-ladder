@@ -179,8 +179,8 @@
     "name": "Word Walker",
     "elo": 856,
     "game_cap": 2,
-    "missed_games": 0,
-    "last_opponent": "14130113253",
+    "missed_games": 1,
+    "last_opponent": "25149077292",
     "last_assigned_at": "2026-01-24T01:41:00.561Z"
   },
   "4543063534": {
@@ -421,7 +421,7 @@
     "game_cap": 2,
     "missed_games": 1,
     "last_assigned_at": "2026-01-24T01:41:00.561Z",
-    "last_opponent": "8294358602"
+    "last_opponent": "9313400553"
   },
   "5520443420": {
     "name": "pottygoboomboom",
