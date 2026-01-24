@@ -124,8 +124,8 @@
     "elo": 1065,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "25149077292",
-    "last_assigned_at": "2026-01-23T22:18:04.514Z"
+    "last_opponent": "74149320612",
+    "last_assigned_at": "2026-01-24T10:20:57.805Z"
   },
   "84143567121": {
     "name": "Poldi",
@@ -180,8 +180,8 @@
     "elo": 856,
     "game_cap": 2,
     "missed_games": 1,
-    "last_opponent": "25149077292",
-    "last_assigned_at": "2026-01-24T01:41:00.561Z"
+    "last_opponent": "88117806994",
+    "last_assigned_at": "2026-01-24T10:20:58.577Z"
   },
   "4543063534": {
     "name": "Farah",
@@ -443,9 +443,9 @@
     "name": "Svarta Hingsten",
     "elo": 998,
     "game_cap": 2,
-    "missed_games": 0,
-    "last_assigned_at": "2026-01-21T14:30:21.051Z",
-    "last_opponent": "4337497298"
+    "missed_games": 1,
+    "last_assigned_at": "2026-01-24T10:20:58.577Z",
+    "last_opponent": "88110265403"
   },
   "64114468853": {
     "name": "Wonkier",
@@ -587,9 +587,9 @@
     "name": "RameurA",
     "elo": 1021,
     "game_cap": 2,
-    "missed_games": 0,
-    "last_assigned_at": "2026-01-23T16:30:06.715Z",
-    "last_opponent": "3591948853"
+    "missed_games": 1,
+    "last_assigned_at": "2026-01-24T10:20:57.805Z",
+    "last_opponent": "9313400553"
   },
   "59127253198": {
     "name": "Pp",
