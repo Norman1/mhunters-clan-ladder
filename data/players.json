@@ -68,7 +68,7 @@
     "elo": 980,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-01-21T12:49:55.181Z",
+    "last_assigned_at": "2026-01-25T10:21:08.476Z",
     "last_opponent": "6411877352"
   },
   "3591948853": {
@@ -251,9 +251,9 @@
     "name": "Maddest",
     "elo": 1023,
     "game_cap": 2,
-    "missed_games": 0,
+    "missed_games": 2,
     "last_assigned_at": "2026-01-25T06:31:33.672Z",
-    "last_opponent": "23105988432"
+    "last_opponent": "71148639731"
   },
   "7499140988": {
     "name": "angrybeavers",
@@ -356,8 +356,8 @@
     "elo": 1005,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-01-25T06:31:33.672Z",
-    "last_opponent": "56133341636"
+    "last_assigned_at": "2026-01-25T10:21:08.476Z",
+    "last_opponent": "4942304274"
   },
   "71155120841": {
     "name": "Ventura",
@@ -372,7 +372,7 @@
     "elo": 1020,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-01-24T14:19:10.235Z",
+    "last_assigned_at": "2026-01-25T10:21:09.078Z",
     "last_opponent": "3428471447"
   },
   "56133341636": {
@@ -524,8 +524,8 @@
     "elo": 1034,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-01-25T01:53:05.237Z",
-    "last_opponent": "88110265403"
+    "last_assigned_at": "2026-01-25T10:21:09.078Z",
+    "last_opponent": "4942304274"
   },
   "89114164339": {
     "name": "Blacksmith",
