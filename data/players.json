@@ -57,10 +57,10 @@
   },
   "3346775331": {
     "name": "Gatsu12",
-    "elo": 1151,
+    "elo": 1162,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "14130113253",
+    "last_opponent": "4155523061",
     "last_assigned_at": "2026-01-23T01:43:45.286Z"
   },
   "3428471447": {
@@ -97,11 +97,11 @@
   },
   "4155523061": {
     "name": "AGEHNT SMITH",
-    "elo": 982,
+    "elo": 971,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-01-25T06:31:32.385Z",
-    "last_opponent": "99110844848"
+    "last_assigned_at": "2026-01-25T20:23:51.134Z",
+    "last_opponent": "3346775331"
   },
   "4180490094": {
     "name": "Woololo",
@@ -361,11 +361,11 @@
   },
   "71155120841": {
     "name": "Ventura",
-    "elo": 1025,
+    "elo": 1046,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-01-25T18:29:14.318Z",
-    "last_opponent": "8222729424"
+    "last_assigned_at": "2026-01-25T20:23:51.134Z",
+    "last_opponent": "25126079448"
   },
   "6411877352": {
     "name": "Kratos",
@@ -420,7 +420,7 @@
     "elo": 928,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-01-24T12:39:39.684Z",
+    "last_assigned_at": "2026-01-25T20:23:51.948Z",
     "last_opponent": "16127869941"
   },
   "5520443420": {
@@ -521,11 +521,11 @@
   },
   "25126079448": {
     "name": "Adrian D'Agostino",
-    "elo": 1034,
+    "elo": 1013,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-01-25T10:21:09.078Z",
-    "last_opponent": "4942304274"
+    "last_assigned_at": "2026-01-25T20:23:51.948Z",
+    "last_opponent": "71155120841"
   },
   "89114164339": {
     "name": "Blacksmith",
