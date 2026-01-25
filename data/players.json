@@ -65,11 +65,11 @@
   },
   "3428471447": {
     "name": "AyanM",
-    "elo": 1000,
+    "elo": 980,
     "game_cap": 2,
     "missed_games": 0,
     "last_assigned_at": "2026-01-21T12:49:55.181Z",
-    "last_opponent": "6630558043"
+    "last_opponent": "6411877352"
   },
   "3591948853": {
     "name": "jdg5201",
@@ -369,11 +369,11 @@
   },
   "6411877352": {
     "name": "Kratos",
-    "elo": 1000,
+    "elo": 1020,
     "game_cap": 2,
     "missed_games": 0,
     "last_assigned_at": "2026-01-24T14:19:10.235Z",
-    "last_opponent": "44147840330"
+    "last_opponent": "3428471447"
   },
   "56133341636": {
     "name": "Bastian Pyornkrachzark",
