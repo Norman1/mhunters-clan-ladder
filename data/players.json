@@ -121,11 +121,11 @@
   },
   "88110265403": {
     "name": "Crouton",
-    "elo": 1065,
+    "elo": 1084,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "88117806994",
-    "last_assigned_at": "2026-01-24T20:21:20.200Z"
+    "last_opponent": "25126079448",
+    "last_assigned_at": "2026-01-25T01:53:05.884Z"
   },
   "84143567121": {
     "name": "Poldi",
@@ -249,11 +249,11 @@
   },
   "4942304274": {
     "name": "Maddest",
-    "elo": 1022,
+    "elo": 1001,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-01-24T18:29:21.624Z",
-    "last_opponent": "25126079448"
+    "last_assigned_at": "2026-01-25T01:53:05.237Z",
+    "last_opponent": "4555082823"
   },
   "7499140988": {
     "name": "angrybeavers",
@@ -497,11 +497,11 @@
   },
   "4555082823": {
     "name": "Super Smoove",
-    "elo": 1000,
+    "elo": 1021,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-01-24T20:21:20.759Z",
-    "last_opponent": "88117806994"
+    "last_assigned_at": "2026-01-25T01:53:05.884Z",
+    "last_opponent": "4942304274"
   },
   "4353717389": {
     "name": "Krys",
@@ -521,11 +521,11 @@
   },
   "25126079448": {
     "name": "Adrian D'Agostino",
-    "elo": 1053,
+    "elo": 1034,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-01-24T20:21:20.200Z",
-    "last_opponent": "3631391841"
+    "last_assigned_at": "2026-01-25T01:53:05.237Z",
+    "last_opponent": "88110265403"
   },
   "89114164339": {
     "name": "Blacksmith",
