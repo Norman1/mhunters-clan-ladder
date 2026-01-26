@@ -76,7 +76,7 @@
     "elo": 999,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-01-25T18:29:14.318Z",
+    "last_assigned_at": "2026-01-26T10:26:31.314Z",
     "last_opponent": "74149320612"
   },
   "3631391841": {
@@ -443,7 +443,7 @@
     "name": "Svarta Hingsten",
     "elo": 998,
     "game_cap": 2,
-    "missed_games": 1,
+    "missed_games": 0,
     "last_assigned_at": "2026-01-26T08:32:23.234Z",
     "last_opponent": "3591948853"
   },
@@ -628,7 +628,7 @@
     "elo": 980,
     "game_cap": 2,
     "missed_games": 2,
-    "last_assigned_at": "2026-01-19T08:32:41.982Z",
+    "last_assigned_at": "2026-01-26T10:26:31.314Z",
     "last_opponent": "44134229332"
   },
   "5540862349": {
