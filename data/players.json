@@ -83,9 +83,9 @@
     "name": "BlackBart",
     "elo": 1009,
     "game_cap": 2,
-    "missed_games": 0,
-    "last_opponent": "3591948853",
-    "last_assigned_at": "2026-01-26T16:34:03.604Z"
+    "missed_games": 1,
+    "last_opponent": "74149320612",
+    "last_assigned_at": "2026-01-26T18:35:24.370Z"
   },
   "3737155555": {
     "name": "Jumpshott",
@@ -125,7 +125,7 @@
     "game_cap": 2,
     "missed_games": 0,
     "last_opponent": "74149320612",
-    "last_assigned_at": "2026-01-26T08:32:23.234Z"
+    "last_assigned_at": "2026-01-26T18:35:24.370Z"
   },
   "84143567121": {
     "name": "Poldi",
@@ -153,11 +153,11 @@
   },
   "8294358602": {
     "name": "Wolkenstern",
-    "elo": 962,
+    "elo": 985,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "25149077292",
-    "last_assigned_at": "2026-01-24T01:40:59.858Z"
+    "last_opponent": "14130113253",
+    "last_assigned_at": "2026-01-26T18:35:25.192Z"
   },
   "58134761580": {
     "name": "ExFailures",
@@ -273,11 +273,11 @@
   },
   "14130113253": {
     "name": "incandwo",
-    "elo": 1017,
+    "elo": 994,
     "game_cap": 2,
     "missed_games": 0,
     "last_assigned_at": "2026-01-24T14:19:09.629Z",
-    "last_opponent": "5540862349"
+    "last_opponent": "8294358602"
   },
   "93159203503": {
     "name": "President_Newsom",
@@ -309,7 +309,7 @@
     "game_cap": 2,
     "missed_games": 2,
     "last_assigned_at": "2026-01-25T12:41:18.971Z",
-    "last_opponent": "88117806994"
+    "last_opponent": "4379764745"
   },
   "66141834893": {
     "name": "SUPREME",
@@ -444,8 +444,8 @@
     "elo": 1022,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-01-26T16:34:03.604Z",
-    "last_opponent": "88110265403"
+    "last_assigned_at": "2026-01-26T18:35:25.192Z",
+    "last_opponent": "3631391841"
   },
   "64114468853": {
     "name": "Wonkier",
@@ -619,9 +619,9 @@
     "name": "Malatya44",
     "elo": 1000,
     "game_cap": 2,
-    "missed_games": 2,
+    "missed_games": 3,
     "last_assigned_at": "2026-01-25T12:41:18.971Z",
-    "last_opponent": "64126464642"
+    "last_opponent": "20125423673"
   },
   "31104791368": {
     "name": "Iamtznu",
