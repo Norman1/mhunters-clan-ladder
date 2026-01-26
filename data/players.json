@@ -68,24 +68,24 @@
     "elo": 980,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-01-25T10:21:08.476Z",
+    "last_assigned_at": "2026-01-26T16:34:02.804Z",
     "last_opponent": "71148639731"
   },
   "3591948853": {
     "name": "jdg5201",
-    "elo": 999,
+    "elo": 978,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-01-26T14:27:59.323Z",
-    "last_opponent": "31104791368"
+    "last_assigned_at": "2026-01-26T16:34:02.804Z",
+    "last_opponent": "3631391841"
   },
   "3631391841": {
     "name": "BlackBart",
-    "elo": 988,
+    "elo": 1009,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "23154545458",
-    "last_assigned_at": "2026-01-26T14:27:59.323Z"
+    "last_opponent": "3591948853",
+    "last_assigned_at": "2026-01-26T16:34:03.604Z"
   },
   "3737155555": {
     "name": "Jumpshott",
@@ -121,10 +121,10 @@
   },
   "88110265403": {
     "name": "Crouton",
-    "elo": 1060,
+    "elo": 1036,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "71148639731",
+    "last_opponent": "74149320612",
     "last_assigned_at": "2026-01-26T08:32:23.234Z"
   },
   "84143567121": {
@@ -355,7 +355,7 @@
     "name": "Nick",
     "elo": 1029,
     "game_cap": 2,
-    "missed_games": 1,
+    "missed_games": 0,
     "last_assigned_at": "2026-01-26T14:27:58.699Z",
     "last_opponent": "3428471447"
   },
@@ -441,11 +441,11 @@
   },
   "74149320612": {
     "name": "Svarta Hingsten",
-    "elo": 998,
+    "elo": 1022,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-01-26T08:32:23.234Z",
-    "last_opponent": "3591948853"
+    "last_assigned_at": "2026-01-26T16:34:03.604Z",
+    "last_opponent": "88110265403"
   },
   "64114468853": {
     "name": "Wonkier",
