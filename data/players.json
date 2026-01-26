@@ -77,7 +77,7 @@
     "game_cap": 2,
     "missed_games": 0,
     "last_assigned_at": "2026-01-26T10:26:31.314Z",
-    "last_opponent": "74149320612"
+    "last_opponent": "31104791368"
   },
   "3631391841": {
     "name": "BlackBart",
@@ -627,9 +627,9 @@
     "name": "Iamtznu",
     "elo": 980,
     "game_cap": 2,
-    "missed_games": 2,
+    "missed_games": 3,
     "last_assigned_at": "2026-01-26T10:26:31.314Z",
-    "last_opponent": "44134229332"
+    "last_opponent": "3591948853"
   },
   "5540862349": {
     "name": "Mortiis",
