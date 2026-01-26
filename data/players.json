@@ -61,7 +61,7 @@
     "game_cap": 2,
     "missed_games": 0,
     "last_opponent": "4155523061",
-    "last_assigned_at": "2026-01-23T01:43:45.286Z"
+    "last_assigned_at": "2026-01-26T01:52:39.044Z"
   },
   "3428471447": {
     "name": "AyanM",
@@ -369,11 +369,11 @@
   },
   "6411877352": {
     "name": "Kratos",
-    "elo": 1020,
+    "elo": 1000,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-01-25T10:21:09.078Z",
-    "last_opponent": "3428471447"
+    "last_assigned_at": "2026-01-26T01:52:39.044Z",
+    "last_opponent": "25126079448"
   },
   "56133341636": {
     "name": "Bastian Pyornkrachzark",
@@ -521,11 +521,11 @@
   },
   "25126079448": {
     "name": "Adrian D'Agostino",
-    "elo": 1013,
+    "elo": 1033,
     "game_cap": 2,
     "missed_games": 0,
     "last_assigned_at": "2026-01-25T20:23:51.948Z",
-    "last_opponent": "71155120841"
+    "last_opponent": "6411877352"
   },
   "89114164339": {
     "name": "Blacksmith",
