@@ -77,7 +77,7 @@
     "game_cap": 2,
     "missed_games": 0,
     "last_assigned_at": "2026-01-25T18:29:14.318Z",
-    "last_opponent": "23105988432"
+    "last_opponent": "74149320612"
   },
   "3631391841": {
     "name": "BlackBart",
@@ -125,7 +125,7 @@
     "game_cap": 2,
     "missed_games": 0,
     "last_opponent": "71148639731",
-    "last_assigned_at": "2026-01-25T01:53:05.884Z"
+    "last_assigned_at": "2026-01-26T08:32:23.234Z"
   },
   "84143567121": {
     "name": "Poldi",
@@ -443,9 +443,9 @@
     "name": "Svarta Hingsten",
     "elo": 998,
     "game_cap": 2,
-    "missed_games": 0,
-    "last_assigned_at": "2026-01-25T16:25:08.149Z",
-    "last_opponent": "3631391841"
+    "missed_games": 1,
+    "last_assigned_at": "2026-01-26T08:32:23.234Z",
+    "last_opponent": "3591948853"
   },
   "64114468853": {
     "name": "Wonkier",
