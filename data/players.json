@@ -57,11 +57,11 @@
   },
   "3346775331": {
     "name": "Gatsu12",
-    "elo": 1173,
+    "elo": 1183,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "6411877352",
-    "last_assigned_at": "2026-01-26T20:27:01.008Z"
+    "last_opponent": "3631391841",
+    "last_assigned_at": "2026-01-27T14:29:39.562Z"
   },
   "3428471447": {
     "name": "AyanM",
@@ -81,11 +81,11 @@
   },
   "3631391841": {
     "name": "BlackBart",
-    "elo": 991,
+    "elo": 981,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "88110265403",
-    "last_assigned_at": "2026-01-26T20:27:01.008Z"
+    "last_opponent": "3346775331",
+    "last_assigned_at": "2026-01-27T14:29:40.131Z"
   },
   "3737155555": {
     "name": "Jumpshott",
@@ -141,7 +141,7 @@
     "game_cap": 2,
     "missed_games": 0,
     "last_opponent": "6411877352",
-    "last_assigned_at": "2026-01-26T14:27:58.699Z"
+    "last_assigned_at": "2026-01-27T14:29:39.562Z"
   },
   "9482920905": {
     "name": "Ethosys",
@@ -489,11 +489,11 @@
   },
   "16127869941": {
     "name": "gg",
-    "elo": 1006,
+    "elo": 1024,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-01-25T18:29:13.196Z",
-    "last_opponent": "25149077292"
+    "last_assigned_at": "2026-01-27T14:29:38.828Z",
+    "last_opponent": "53134900057"
   },
   "4555082823": {
     "name": "Super Smoove",
@@ -577,11 +577,11 @@
   },
   "8222729424": {
     "name": "Al AssAff",
-    "elo": 962,
+    "elo": 983,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-01-25T18:29:13.778Z",
-    "last_opponent": "71155120841"
+    "last_assigned_at": "2026-01-27T14:29:38.828Z",
+    "last_opponent": "53134900057"
   },
   "88117806994": {
     "name": "RameurA",
@@ -609,11 +609,11 @@
   },
   "53134900057": {
     "name": "extelon",
-    "elo": 987,
+    "elo": 948,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-01-25T18:29:13.196Z",
-    "last_opponent": "3591948853"
+    "last_assigned_at": "2026-01-27T14:29:40.131Z",
+    "last_opponent": "16127869941"
   },
   "4379764745": {
     "name": "Malatya44",
