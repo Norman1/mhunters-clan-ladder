@@ -353,11 +353,11 @@
   },
   "71148639731": {
     "name": "Nick",
-    "elo": 1029,
+    "elo": 1049,
     "game_cap": 2,
     "missed_games": 0,
     "last_assigned_at": "2026-01-26T14:27:58.699Z",
-    "last_opponent": "3428471447"
+    "last_opponent": "25126079448"
   },
   "71155120841": {
     "name": "Ventura",
@@ -521,11 +521,11 @@
   },
   "25126079448": {
     "name": "Adrian D'Agostino",
-    "elo": 1033,
+    "elo": 1013,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-01-26T06:36:40.396Z",
-    "last_opponent": "6411877352"
+    "last_assigned_at": "2026-01-27T18:38:00.619Z",
+    "last_opponent": "71148639731"
   },
   "89114164339": {
     "name": "Blacksmith",
@@ -612,7 +612,7 @@
     "elo": 948,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-01-27T14:29:40.131Z",
+    "last_assigned_at": "2026-01-27T18:38:00.619Z",
     "last_opponent": "16127869941"
   },
   "4379764745": {
