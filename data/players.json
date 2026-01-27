@@ -25,11 +25,11 @@
   },
   "1382545505": {
     "name": "Ree",
-    "elo": 1000,
+    "elo": 1021,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-01-21T12:49:57.409Z",
-    "last_opponent": "29146480207"
+    "last_assigned_at": "2026-01-27T03:47:35.454Z",
+    "last_opponent": "99110844848"
   },
   "1822261234": {
     "name": "fifi",
@@ -124,8 +124,8 @@
     "elo": 1054,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "3631391841",
-    "last_assigned_at": "2026-01-26T20:27:01.619Z"
+    "last_opponent": "6411877352",
+    "last_assigned_at": "2026-01-27T03:47:35.454Z"
   },
   "84143567121": {
     "name": "Poldi",
@@ -276,8 +276,8 @@
     "elo": 994,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-01-26T20:27:00.197Z",
-    "last_opponent": "8294358602"
+    "last_assigned_at": "2026-01-27T03:47:34.674Z",
+    "last_opponent": "6411877352"
   },
   "93159203503": {
     "name": "President_Newsom",
@@ -371,9 +371,9 @@
     "name": "Kratos",
     "elo": 973,
     "game_cap": 2,
-    "missed_games": 0,
+    "missed_games": 2,
     "last_assigned_at": "2026-01-26T20:27:01.619Z",
-    "last_opponent": "3346775331"
+    "last_opponent": "88110265403"
   },
   "56133341636": {
     "name": "Bastian Pyornkrachzark",
@@ -569,11 +569,11 @@
   },
   "99110844848": {
     "name": "CrypticNeo1",
-    "elo": 1020,
+    "elo": 999,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-01-25T06:31:33.082Z",
-    "last_opponent": "4155523061"
+    "last_assigned_at": "2026-01-27T03:47:34.674Z",
+    "last_opponent": "1382545505"
   },
   "8222729424": {
     "name": "Al AssAff",
