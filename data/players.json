@@ -77,7 +77,7 @@
     "game_cap": 2,
     "missed_games": 0,
     "last_assigned_at": "2026-01-26T16:34:02.804Z",
-    "last_opponent": "3631391841"
+    "last_opponent": "71155120841"
   },
   "3631391841": {
     "name": "BlackBart",
@@ -363,9 +363,9 @@
     "name": "Ventura",
     "elo": 1022,
     "game_cap": 2,
-    "missed_games": 0,
+    "missed_games": 1,
     "last_assigned_at": "2026-01-28T03:44:38.481Z",
-    "last_opponent": "4155523061"
+    "last_opponent": "3591948853"
   },
   "6411877352": {
     "name": "Kratos",
