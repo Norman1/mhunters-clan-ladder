@@ -3558,5 +3558,20 @@
     "finished_at": "2026-01-28T20:30:42.307Z",
     "template_id": 1573497,
     "elo_change": 19
+  },
+  {
+    "game_id": "43459548",
+    "p1_id": "23154545458",
+    "p2_id": "3346775331",
+    "winner_id": "3346775331",
+    "loser_id": "23154545458",
+    "finished_at": "2026-01-28T22:25:57.348Z",
+    "template_id": 1573495,
+    "elo_change": 14
+  },
+  {
+    "game_id": "43471087",
+    "finished_at": "2026-01-28T22:25:58.167Z",
+    "note": "Declined"
   }
 ]
