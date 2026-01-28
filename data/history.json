@@ -3438,5 +3438,90 @@
     "finished_at": "2026-01-28T03:44:36.641Z",
     "template_id": 1431579,
     "elo_change": 22
+  },
+  {
+    "game_id": "43441161",
+    "finished_at": "2026-01-28T12:50:12.691Z",
+    "note": "Timed Out (Lobby)"
+  },
+  {
+    "game_id": "43441162",
+    "finished_at": "2026-01-28T12:50:12.833Z",
+    "note": "Timed Out (Lobby)"
+  },
+  {
+    "game_id": "43441163",
+    "finished_at": "2026-01-28T12:50:12.975Z",
+    "note": "Timed Out (Lobby)"
+  },
+  {
+    "game_id": "43441165",
+    "finished_at": "2026-01-28T12:50:13.122Z",
+    "note": "Timed Out (Lobby)"
+  },
+  {
+    "game_id": "43441166",
+    "finished_at": "2026-01-28T12:50:13.321Z",
+    "note": "Timed Out (Lobby)"
+  },
+  {
+    "game_id": "43441167",
+    "finished_at": "2026-01-28T12:50:13.452Z",
+    "note": "Timed Out (Lobby)"
+  },
+  {
+    "game_id": "43441168",
+    "finished_at": "2026-01-28T12:50:13.590Z",
+    "note": "Timed Out (Lobby)"
+  },
+  {
+    "game_id": "43441169",
+    "finished_at": "2026-01-28T12:50:13.726Z",
+    "note": "Timed Out (Lobby)"
+  },
+  {
+    "game_id": "43441170",
+    "finished_at": "2026-01-28T12:50:13.870Z",
+    "note": "Timed Out (Lobby)"
+  },
+  {
+    "game_id": "43441171",
+    "finished_at": "2026-01-28T12:50:14.007Z",
+    "note": "Timed Out (Lobby)"
+  },
+  {
+    "game_id": "43441172",
+    "finished_at": "2026-01-28T12:50:14.142Z",
+    "note": "Timed Out (Lobby)"
+  },
+  {
+    "game_id": "43441173",
+    "finished_at": "2026-01-28T12:50:14.273Z",
+    "note": "Timed Out (Lobby)"
+  },
+  {
+    "game_id": "43441175",
+    "finished_at": "2026-01-28T12:50:14.406Z",
+    "note": "Timed Out (Lobby)"
+  },
+  {
+    "game_id": "43441176",
+    "finished_at": "2026-01-28T12:50:14.541Z",
+    "note": "Timed Out (Lobby)"
+  },
+  {
+    "game_id": "43441177",
+    "finished_at": "2026-01-28T12:50:14.726Z",
+    "note": "Timed Out (Lobby)"
+  },
+  {
+    "game_id": "43441178",
+    "finished_at": "2026-01-28T12:50:14.859Z",
+    "note": "Timed Out (Lobby)"
+  },
+  {
+    "game_id": "43441179",
+    "finished_at": "2026-01-28T12:50:14.993Z",
+    "note": "Timed Out (Lobby)"
   }
 ]
