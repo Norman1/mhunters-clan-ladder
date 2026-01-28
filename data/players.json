@@ -81,11 +81,11 @@
   },
   "3631391841": {
     "name": "BlackBart",
-    "elo": 959,
+    "elo": 981,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "53134900057",
-    "last_assigned_at": "2026-01-28T03:44:37.765Z"
+    "last_opponent": "14130113253",
+    "last_assigned_at": "2026-01-28T16:36:46.907Z"
   },
   "3737155555": {
     "name": "Jumpshott",
@@ -121,11 +121,11 @@
   },
   "88110265403": {
     "name": "Crouton",
-    "elo": 1054,
+    "elo": 1072,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "6411877352",
-    "last_assigned_at": "2026-01-27T03:47:35.454Z"
+    "last_opponent": "4555082823",
+    "last_assigned_at": "2026-01-28T16:36:47.479Z"
   },
   "84143567121": {
     "name": "Poldi",
@@ -273,11 +273,11 @@
   },
   "14130113253": {
     "name": "incandwo",
-    "elo": 994,
+    "elo": 972,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-01-28T03:44:37.765Z",
-    "last_opponent": "99110844848"
+    "last_assigned_at": "2026-01-28T16:36:47.479Z",
+    "last_opponent": "3631391841"
   },
   "93159203503": {
     "name": "President_Newsom",
@@ -497,11 +497,11 @@
   },
   "4555082823": {
     "name": "Super Smoove",
-    "elo": 1021,
+    "elo": 1003,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-01-25T01:53:05.884Z",
-    "last_opponent": "4942304274"
+    "last_assigned_at": "2026-01-28T16:36:46.907Z",
+    "last_opponent": "88110265403"
   },
   "4353717389": {
     "name": "Krys",
