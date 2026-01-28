@@ -195,8 +195,8 @@
     "name": "cd",
     "elo": 1000,
     "game_cap": 2,
-    "missed_games": 2,
-    "last_assigned_at": "2026-01-28T12:50:17.002Z",
+    "missed_games": 0,
+    "last_assigned_at": "2026-01-28T20:30:44.410Z",
     "last_opponent": "88117806994"
   },
   "81152745597": {
@@ -364,7 +364,7 @@
     "elo": 1022,
     "game_cap": 2,
     "missed_games": 1,
-    "last_assigned_at": "2026-01-28T03:44:38.481Z",
+    "last_assigned_at": "2026-01-28T20:30:45.152Z",
     "last_opponent": "3591948853"
   },
   "6411877352": {
@@ -481,11 +481,11 @@
   },
   "23105988432": {
     "name": "Socrates",
-    "elo": 988,
+    "elo": 969,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-01-25T18:29:13.778Z",
-    "last_opponent": "3591948853"
+    "last_assigned_at": "2026-01-28T20:30:45.152Z",
+    "last_opponent": "8222729424"
   },
   "16127869941": {
     "name": "gg",
@@ -577,11 +577,11 @@
   },
   "8222729424": {
     "name": "Al AssAff",
-    "elo": 1005,
+    "elo": 1024,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-01-27T22:22:19.404Z",
-    "last_opponent": "16127869941"
+    "last_assigned_at": "2026-01-28T20:30:44.410Z",
+    "last_opponent": "23105988432"
   },
   "88117806994": {
     "name": "RameurA",
