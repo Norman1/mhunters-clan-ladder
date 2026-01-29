@@ -121,11 +121,11 @@
   },
   "88110265403": {
     "name": "Crouton",
-    "elo": 1072,
+    "elo": 1086,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "4555082823",
-    "last_assigned_at": "2026-01-28T16:36:47.479Z"
+    "last_opponent": "14130113253",
+    "last_assigned_at": "2026-01-29T01:58:13.732Z"
   },
   "84143567121": {
     "name": "Poldi",
@@ -195,7 +195,7 @@
     "name": "cd",
     "elo": 1000,
     "game_cap": 2,
-    "missed_games": 1,
+    "missed_games": 0,
     "last_assigned_at": "2026-01-28T22:25:59.343Z",
     "last_opponent": "8222729424"
   },
@@ -273,11 +273,11 @@
   },
   "14130113253": {
     "name": "incandwo",
-    "elo": 972,
+    "elo": 958,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-01-28T16:36:47.479Z",
-    "last_opponent": "3631391841"
+    "last_assigned_at": "2026-01-29T01:58:14.289Z",
+    "last_opponent": "88110265403"
   },
   "93159203503": {
     "name": "President_Newsom",
@@ -363,7 +363,7 @@
     "name": "Ventura",
     "elo": 1022,
     "game_cap": 2,
-    "missed_games": 1,
+    "missed_games": 0,
     "last_assigned_at": "2026-01-28T20:30:45.152Z",
     "last_opponent": "3591948853"
   },
@@ -417,11 +417,11 @@
   },
   "25149077292": {
     "name": "EVIL DRAG QUEEN",
-    "elo": 928,
+    "elo": 913,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-01-25T20:23:51.948Z",
-    "last_opponent": "16127869941"
+    "last_assigned_at": "2026-01-29T01:58:14.289Z",
+    "last_opponent": "25126079448"
   },
   "5520443420": {
     "name": "pottygoboomboom",
@@ -481,11 +481,11 @@
   },
   "23105988432": {
     "name": "Socrates",
-    "elo": 969,
+    "elo": 991,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-01-28T20:30:45.152Z",
-    "last_opponent": "8222729424"
+    "last_assigned_at": "2026-01-29T01:58:13.124Z",
+    "last_opponent": "99110844848"
   },
   "16127869941": {
     "name": "gg",
@@ -521,11 +521,11 @@
   },
   "25126079448": {
     "name": "Adrian D'Agostino",
-    "elo": 1013,
+    "elo": 1028,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-01-27T18:38:00.619Z",
-    "last_opponent": "71148639731"
+    "last_assigned_at": "2026-01-29T01:58:13.732Z",
+    "last_opponent": "25149077292"
   },
   "89114164339": {
     "name": "Blacksmith",
@@ -569,18 +569,18 @@
   },
   "99110844848": {
     "name": "CrypticNeo1",
-    "elo": 999,
+    "elo": 977,
     "game_cap": 2,
     "missed_games": 0,
     "last_assigned_at": "2026-01-28T03:44:38.481Z",
-    "last_opponent": "14130113253"
+    "last_opponent": "23105988432"
   },
   "8222729424": {
     "name": "Al AssAff",
     "elo": 1024,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-01-28T20:30:44.410Z",
+    "last_assigned_at": "2026-01-29T01:58:13.124Z",
     "last_opponent": "51156980238"
   },
   "88117806994": {
