@@ -61,7 +61,7 @@
     "game_cap": 2,
     "missed_games": 0,
     "last_opponent": "79105823914",
-    "last_assigned_at": "2026-01-28T22:25:59.343Z"
+    "last_assigned_at": "2026-01-29T20:29:53.680Z"
   },
   "3428471447": {
     "name": "AyanM",
@@ -121,10 +121,10 @@
   },
   "88110265403": {
     "name": "Crouton",
-    "elo": 1086,
+    "elo": 1101,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "14130113253",
+    "last_opponent": "25126079448",
     "last_assigned_at": "2026-01-29T01:58:13.732Z"
   },
   "84143567121": {
@@ -417,11 +417,11 @@
   },
   "25149077292": {
     "name": "EVIL DRAG QUEEN",
-    "elo": 913,
+    "elo": 899,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-01-29T01:58:14.289Z",
-    "last_opponent": "25126079448"
+    "last_assigned_at": "2026-01-29T20:29:52.927Z",
+    "last_opponent": "74149320612"
   },
   "5520443420": {
     "name": "pottygoboomboom",
@@ -441,11 +441,11 @@
   },
   "74149320612": {
     "name": "Svarta Hingsten",
-    "elo": 1022,
+    "elo": 1036,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-01-26T18:35:25.192Z",
-    "last_opponent": "3631391841"
+    "last_assigned_at": "2026-01-29T20:29:53.680Z",
+    "last_opponent": "25149077292"
   },
   "64114468853": {
     "name": "Wonkier",
@@ -513,11 +513,11 @@
   },
   "25126079448": {
     "name": "Adrian D'Agostino",
-    "elo": 1005,
+    "elo": 990,
     "game_cap": 2,
     "missed_games": 0,
     "last_assigned_at": "2026-01-29T06:46:24.717Z",
-    "last_opponent": "53134900057"
+    "last_opponent": "88110265403"
   },
   "89114164339": {
     "name": "Blacksmith",
