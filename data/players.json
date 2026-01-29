@@ -195,7 +195,7 @@
     "name": "cd",
     "elo": 1000,
     "game_cap": 0,
-    "missed_games": 1,
+    "missed_games": 0,
     "last_assigned_at": "2026-01-29T10:36:09.829Z",
     "last_opponent": "3346775331"
   },
