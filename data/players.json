@@ -65,19 +65,19 @@
   },
   "3428471447": {
     "name": "AyanM",
-    "elo": 980,
+    "elo": 960,
     "game_cap": 2,
     "missed_games": 0,
     "last_assigned_at": "2026-01-26T16:34:02.804Z",
-    "last_opponent": "71148639731"
+    "last_opponent": "3591948853"
   },
   "3591948853": {
     "name": "jdg5201",
-    "elo": 978,
+    "elo": 998,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-01-28T22:26:00.125Z",
-    "last_opponent": "71155120841"
+    "last_assigned_at": "2026-01-29T06:46:24.717Z",
+    "last_opponent": "3428471447"
   },
   "3631391841": {
     "name": "BlackBart",
@@ -524,7 +524,7 @@
     "elo": 1005,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-01-29T01:58:13.732Z",
+    "last_assigned_at": "2026-01-29T06:46:24.717Z",
     "last_opponent": "53134900057"
   },
   "89114164339": {
