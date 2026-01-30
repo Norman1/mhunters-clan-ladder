@@ -73,19 +73,19 @@
   },
   "3591948853": {
     "name": "jdg5201",
-    "elo": 978,
+    "elo": 958,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-01-29T22:27:25.891Z",
-    "last_opponent": "25126079448"
+    "last_assigned_at": "2026-01-30T12:54:34.833Z",
+    "last_opponent": "53134900057"
   },
   "3631391841": {
     "name": "BlackBart",
-    "elo": 981,
+    "elo": 957,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "4555082823",
-    "last_assigned_at": "2026-01-29T18:44:04.831Z"
+    "last_opponent": "79105823914",
+    "last_assigned_at": "2026-01-30T12:54:36.067Z"
   },
   "3737155555": {
     "name": "Jumpshott",
@@ -113,10 +113,10 @@
   },
   "79105823914": {
     "name": "krinid",
-    "elo": 919,
+    "elo": 943,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "3346775331",
+    "last_opponent": "3631391841",
     "last_assigned_at": "2026-01-29T18:44:04.831Z"
   },
   "88110265403": {
@@ -489,11 +489,11 @@
   },
   "16127869941": {
     "name": "gg",
-    "elo": 1023,
+    "elo": 1042,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-01-29T22:27:24.783Z",
-    "last_opponent": "13128957162"
+    "last_assigned_at": "2026-01-30T12:54:34.833Z",
+    "last_opponent": "25126079448"
   },
   "4353717389": {
     "name": "Krys",
@@ -513,11 +513,11 @@
   },
   "25126079448": {
     "name": "Adrian D'Agostino",
-    "elo": 1010,
+    "elo": 991,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-01-29T22:27:24.783Z",
-    "last_opponent": "3591948853"
+    "last_assigned_at": "2026-01-30T12:54:36.067Z",
+    "last_opponent": "16127869941"
   },
   "89114164339": {
     "name": "Blacksmith",
@@ -601,11 +601,11 @@
   },
   "53134900057": {
     "name": "extelon",
-    "elo": 973,
+    "elo": 993,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-01-29T22:27:25.891Z",
-    "last_opponent": "51156980238"
+    "last_assigned_at": "2026-01-30T12:54:35.506Z",
+    "last_opponent": "3591948853"
   },
   "4379764745": {
     "name": "Malatya44",
