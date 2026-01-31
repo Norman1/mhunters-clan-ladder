@@ -76,7 +76,7 @@
     "elo": 931,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-01-30T20:29:18.558Z",
+    "last_assigned_at": "2026-01-31T10:23:49.661Z",
     "last_opponent": "16127869941"
   },
   "3631391841": {
@@ -153,11 +153,11 @@
   },
   "8294358602": {
     "name": "Wolkenstern",
-    "elo": 985,
+    "elo": 1007,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "14130113253",
-    "last_assigned_at": "2026-01-26T18:35:25.192Z"
+    "last_opponent": "74149320612",
+    "last_assigned_at": "2026-01-31T10:23:50.421Z"
   },
   "58134761580": {
     "name": "ExFailures",
@@ -441,11 +441,11 @@
   },
   "74149320612": {
     "name": "Svarta Hingsten",
-    "elo": 1025,
+    "elo": 1003,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-01-30T22:24:47.375Z",
-    "last_opponent": "3346775331"
+    "last_assigned_at": "2026-01-31T10:23:49.661Z",
+    "last_opponent": "8294358602"
   },
   "64114468853": {
     "name": "Wonkier",
@@ -492,7 +492,7 @@
     "elo": 1086,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-01-31T04:05:28.627Z",
+    "last_assigned_at": "2026-01-31T10:23:50.421Z",
     "last_opponent": "3591948853"
   },
   "4353717389": {
