@@ -83,9 +83,9 @@
     "name": "BlackBart",
     "elo": 932,
     "game_cap": 2,
-    "missed_games": 0,
-    "last_opponent": "88110265403",
-    "last_assigned_at": "2026-01-31T16:28:03.514Z"
+    "missed_games": 1,
+    "last_opponent": "74149320612",
+    "last_assigned_at": "2026-01-31T18:31:40.272Z"
   },
   "3737155555": {
     "name": "Jumpshott",
@@ -157,7 +157,7 @@
     "game_cap": 2,
     "missed_games": 0,
     "last_opponent": "16127869941",
-    "last_assigned_at": "2026-01-31T10:23:50.421Z"
+    "last_assigned_at": "2026-01-31T18:31:39.678Z"
   },
   "58134761580": {
     "name": "ExFailures",
@@ -444,8 +444,8 @@
     "elo": 1026,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-01-31T16:28:03.514Z",
-    "last_opponent": "71148639731"
+    "last_assigned_at": "2026-01-31T18:31:39.678Z",
+    "last_opponent": "3631391841"
   },
   "64114468853": {
     "name": "Wonkier",
@@ -513,11 +513,11 @@
   },
   "25126079448": {
     "name": "Adrian D'Agostino",
-    "elo": 991,
+    "elo": 1011,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-01-30T14:35:14.308Z",
-    "last_opponent": "3631391841"
+    "last_assigned_at": "2026-01-31T18:31:40.272Z",
+    "last_opponent": "53134900057"
   },
   "89114164339": {
     "name": "Blacksmith",
@@ -601,11 +601,11 @@
   },
   "53134900057": {
     "name": "extelon",
-    "elo": 993,
+    "elo": 973,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-01-30T12:54:35.506Z",
-    "last_opponent": "3591948853"
+    "last_assigned_at": "2026-01-31T18:31:38.939Z",
+    "last_opponent": "25126079448"
   },
   "4379764745": {
     "name": "Malatya44",
