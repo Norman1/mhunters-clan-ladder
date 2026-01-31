@@ -81,11 +81,11 @@
   },
   "3631391841": {
     "name": "BlackBart",
-    "elo": 943,
+    "elo": 932,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "16127869941",
-    "last_assigned_at": "2026-01-31T04:05:28.036Z"
+    "last_opponent": "88110265403",
+    "last_assigned_at": "2026-01-31T16:28:03.514Z"
   },
   "3737155555": {
     "name": "Jumpshott",
@@ -121,11 +121,11 @@
   },
   "88110265403": {
     "name": "Crouton",
-    "elo": 1116,
+    "elo": 1127,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "1382545505",
-    "last_assigned_at": "2026-01-31T04:05:28.036Z"
+    "last_opponent": "3631391841",
+    "last_assigned_at": "2026-01-31T16:28:04.845Z"
   },
   "84143567121": {
     "name": "Poldi",
@@ -353,11 +353,11 @@
   },
   "71148639731": {
     "name": "Nick",
-    "elo": 1049,
+    "elo": 1026,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-01-30T22:24:47.375Z",
-    "last_opponent": "4543063534"
+    "last_assigned_at": "2026-01-31T16:28:04.258Z",
+    "last_opponent": "74149320612"
   },
   "71155120841": {
     "name": "Ventura",
@@ -441,11 +441,11 @@
   },
   "74149320612": {
     "name": "Svarta Hingsten",
-    "elo": 1003,
+    "elo": 1026,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-01-31T10:23:49.661Z",
-    "last_opponent": "8294358602"
+    "last_assigned_at": "2026-01-31T16:28:03.514Z",
+    "last_opponent": "71148639731"
   },
   "64114468853": {
     "name": "Wonkier",
@@ -457,11 +457,11 @@
   },
   "13128957162": {
     "name": "Warlord",
-    "elo": 997,
+    "elo": 1019,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-01-29T22:27:25.344Z",
-    "last_opponent": "16127869941"
+    "last_assigned_at": "2026-01-31T16:28:04.845Z",
+    "last_opponent": "8222729424"
   },
   "4471034885": {
     "name": "matt8.3",
@@ -569,11 +569,11 @@
   },
   "8222729424": {
     "name": "Al AssAff",
-    "elo": 1024,
+    "elo": 1002,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-01-29T01:58:13.124Z",
-    "last_opponent": "51156980238"
+    "last_assigned_at": "2026-01-31T16:28:04.258Z",
+    "last_opponent": "13128957162"
   },
   "88117806994": {
     "name": "RameurA",
