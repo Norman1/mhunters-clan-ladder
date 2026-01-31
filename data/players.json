@@ -155,8 +155,8 @@
     "name": "Wolkenstern",
     "elo": 1007,
     "game_cap": 2,
-    "missed_games": 0,
-    "last_opponent": "74149320612",
+    "missed_games": 1,
+    "last_opponent": "16127869941",
     "last_assigned_at": "2026-01-31T10:23:50.421Z"
   },
   "58134761580": {
@@ -181,7 +181,7 @@
     "game_cap": 2,
     "missed_games": 2,
     "last_opponent": "74149320612",
-    "last_assigned_at": "2026-01-24T10:20:58.577Z"
+    "last_assigned_at": "2026-01-31T12:46:12.890Z"
   },
   "4543063534": {
     "name": "Farah",
@@ -492,8 +492,8 @@
     "elo": 1086,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-01-31T10:23:50.421Z",
-    "last_opponent": "3591948853"
+    "last_assigned_at": "2026-01-31T12:46:12.890Z",
+    "last_opponent": "8294358602"
   },
   "4353717389": {
     "name": "Krys",
