@@ -73,11 +73,11 @@
   },
   "3591948853": {
     "name": "jdg5201",
-    "elo": 944,
+    "elo": 931,
     "game_cap": 2,
     "missed_games": 0,
     "last_assigned_at": "2026-01-30T20:29:18.558Z",
-    "last_opponent": "23154545458"
+    "last_opponent": "16127869941"
   },
   "3631391841": {
     "name": "BlackBart",
@@ -489,11 +489,11 @@
   },
   "16127869941": {
     "name": "gg",
-    "elo": 1073,
+    "elo": 1086,
     "game_cap": 2,
     "missed_games": 0,
     "last_assigned_at": "2026-01-31T04:05:28.627Z",
-    "last_opponent": "3631391841"
+    "last_opponent": "3591948853"
   },
   "4353717389": {
     "name": "Krys",
