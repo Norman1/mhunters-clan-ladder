@@ -137,11 +137,11 @@
   },
   "23154545458": {
     "name": "Dark Magician Girl",
-    "elo": 1082,
+    "elo": 1099,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "3591948853",
-    "last_assigned_at": "2026-01-30T20:29:19.314Z"
+    "last_opponent": "71148639731",
+    "last_assigned_at": "2026-02-01T02:22:31.907Z"
   },
   "9482920905": {
     "name": "Ethosys",
@@ -155,7 +155,7 @@
     "name": "Wolkenstern",
     "elo": 1007,
     "game_cap": 2,
-    "missed_games": 1,
+    "missed_games": 0,
     "last_opponent": "74149320612",
     "last_assigned_at": "2026-01-31T22:22:06.740Z"
   },
@@ -179,7 +179,7 @@
     "name": "Word Walker",
     "elo": 856,
     "game_cap": 2,
-    "missed_games": 2,
+    "missed_games": 0,
     "last_opponent": "74149320612",
     "last_assigned_at": "2026-01-31T12:46:12.890Z"
   },
@@ -276,8 +276,8 @@
     "elo": 958,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-01-29T01:58:14.289Z",
-    "last_opponent": "88110265403"
+    "last_assigned_at": "2026-02-01T02:22:31.308Z",
+    "last_opponent": "25149077292"
   },
   "93159203503": {
     "name": "President_Newsom",
@@ -353,11 +353,11 @@
   },
   "71148639731": {
     "name": "Nick",
-    "elo": 1026,
+    "elo": 1009,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-01-31T22:22:05.534Z",
-    "last_opponent": "8222729424"
+    "last_assigned_at": "2026-02-01T02:22:31.308Z",
+    "last_opponent": "23154545458"
   },
   "71155120841": {
     "name": "Ventura",
@@ -419,9 +419,9 @@
     "name": "EVIL DRAG QUEEN",
     "elo": 899,
     "game_cap": 2,
-    "missed_games": 0,
-    "last_assigned_at": "2026-01-29T20:29:52.927Z",
-    "last_opponent": "74149320612"
+    "missed_games": 1,
+    "last_assigned_at": "2026-02-01T02:22:31.907Z",
+    "last_opponent": "14130113253"
   },
   "5520443420": {
     "name": "pottygoboomboom",
