@@ -60,8 +60,8 @@
     "elo": 1215,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "74149320612",
-    "last_assigned_at": "2026-01-30T20:29:19.314Z"
+    "last_opponent": "25149077292",
+    "last_assigned_at": "2026-02-01T22:23:39.614Z"
   },
   "3428471447": {
     "name": "AyanM",
@@ -76,7 +76,7 @@
     "elo": 954,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-01-31T10:23:49.661Z",
+    "last_assigned_at": "2026-02-01T22:23:39.614Z",
     "last_opponent": "4155523061"
   },
   "3631391841": {
@@ -177,10 +177,10 @@
   },
   "9313400553": {
     "name": "Word Walker",
-    "elo": 848,
+    "elo": 837,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "16127869941",
+    "last_opponent": "71148639731",
     "last_assigned_at": "2026-02-01T06:48:33.966Z"
   },
   "4543063534": {
@@ -353,11 +353,11 @@
   },
   "71148639731": {
     "name": "Nick",
-    "elo": 1009,
+    "elo": 1020,
     "game_cap": 2,
     "missed_games": 0,
     "last_assigned_at": "2026-02-01T05:21:24.746Z",
-    "last_opponent": "14130113253"
+    "last_opponent": "9313400553"
   },
   "71155120841": {
     "name": "Ventura",
@@ -419,9 +419,9 @@
     "name": "EVIL DRAG QUEEN",
     "elo": 899,
     "game_cap": 2,
-    "missed_games": 1,
+    "missed_games": 2,
     "last_assigned_at": "2026-02-01T02:22:31.907Z",
-    "last_opponent": "14130113253"
+    "last_opponent": "3346775331"
   },
   "5520443420": {
     "name": "pottygoboomboom",
