@@ -113,10 +113,10 @@
   },
   "79105823914": {
     "name": "krinid",
-    "elo": 943,
+    "elo": 967,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "3631391841",
+    "last_opponent": "25126079448",
     "last_assigned_at": "2026-01-30T14:35:14.308Z"
   },
   "88110265403": {
@@ -513,11 +513,11 @@
   },
   "25126079448": {
     "name": "Adrian D'Agostino",
-    "elo": 1011,
+    "elo": 987,
     "game_cap": 2,
     "missed_games": 0,
     "last_assigned_at": "2026-01-31T18:31:40.272Z",
-    "last_opponent": "53134900057"
+    "last_opponent": "79105823914"
   },
   "89114164339": {
     "name": "Blacksmith",
