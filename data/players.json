@@ -81,11 +81,11 @@
   },
   "3631391841": {
     "name": "BlackBart",
-    "elo": 954,
+    "elo": 976,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "53134900057",
-    "last_assigned_at": "2026-01-31T22:22:06.740Z"
+    "last_opponent": "25126079448",
+    "last_assigned_at": "2026-02-03T02:05:05.952Z"
   },
   "3737155555": {
     "name": "Jumpshott",
@@ -177,11 +177,11 @@
   },
   "9313400553": {
     "name": "Word Walker",
-    "elo": 837,
+    "elo": 822,
     "game_cap": 2,
-    "missed_games": 1,
-    "last_opponent": "3591948853",
-    "last_assigned_at": "2026-02-02T12:58:30.602Z"
+    "missed_games": 0,
+    "last_opponent": "53134900057",
+    "last_assigned_at": "2026-02-03T02:05:07.301Z"
   },
   "4543063534": {
     "name": "Farah",
@@ -361,11 +361,11 @@
   },
   "71155120841": {
     "name": "Ventura",
-    "elo": 999,
+    "elo": 1019,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-02-01T20:26:13.740Z",
-    "last_opponent": "99110844848"
+    "last_assigned_at": "2026-02-03T02:05:06.705Z",
+    "last_opponent": "23105988432"
   },
   "6411877352": {
     "name": "Kratos",
@@ -481,11 +481,11 @@
   },
   "23105988432": {
     "name": "Socrates",
-    "elo": 991,
+    "elo": 971,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-01-29T01:58:13.124Z",
-    "last_opponent": "99110844848"
+    "last_assigned_at": "2026-02-03T02:05:05.952Z",
+    "last_opponent": "71155120841"
   },
   "16127869941": {
     "name": "gg",
@@ -513,11 +513,11 @@
   },
   "25126079448": {
     "name": "Adrian D'Agostino",
-    "elo": 987,
+    "elo": 965,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-02-02T18:42:46.391Z",
-    "last_opponent": "79105823914"
+    "last_assigned_at": "2026-02-03T02:05:07.301Z",
+    "last_opponent": "3631391841"
   },
   "89114164339": {
     "name": "Blacksmith",
@@ -601,11 +601,11 @@
   },
   "53134900057": {
     "name": "extelon",
-    "elo": 934,
+    "elo": 949,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-02-02T12:58:30.602Z",
-    "last_opponent": "99110844848"
+    "last_assigned_at": "2026-02-03T02:05:06.705Z",
+    "last_opponent": "9313400553"
   },
   "4379764745": {
     "name": "Malatya44",
