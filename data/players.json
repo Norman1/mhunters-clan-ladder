@@ -28,7 +28,7 @@
     "elo": 991,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-01-31T22:22:04.765Z",
+    "last_assigned_at": "2026-02-03T20:35:17.634Z",
     "last_opponent": "8222729424"
   },
   "1822261234": {
@@ -57,11 +57,11 @@
   },
   "3346775331": {
     "name": "Gatsu12",
-    "elo": 1232,
+    "elo": 1245,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "71148639731",
-    "last_assigned_at": "2026-02-02T18:42:45.833Z"
+    "last_opponent": "23154545458",
+    "last_assigned_at": "2026-02-03T20:35:16.921Z"
   },
   "3428471447": {
     "name": "AyanM",
@@ -137,11 +137,11 @@
   },
   "23154545458": {
     "name": "Dark Magician Girl",
-    "elo": 1099,
+    "elo": 1086,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "71148639731",
-    "last_assigned_at": "2026-02-01T02:22:31.907Z"
+    "last_opponent": "3346775331",
+    "last_assigned_at": "2026-02-03T20:35:17.634Z"
   },
   "9482920905": {
     "name": "Ethosys",
