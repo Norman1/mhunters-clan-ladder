@@ -84,8 +84,8 @@
     "elo": 976,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "25126079448",
-    "last_assigned_at": "2026-02-03T02:05:05.952Z"
+    "last_opponent": "8294358602",
+    "last_assigned_at": "2026-02-03T22:29:03.464Z"
   },
   "3737155555": {
     "name": "Jumpshott",
@@ -155,9 +155,9 @@
     "name": "Wolkenstern",
     "elo": 1007,
     "game_cap": 2,
-    "missed_games": 0,
-    "last_opponent": "74149320612",
-    "last_assigned_at": "2026-01-31T22:22:06.740Z"
+    "missed_games": 1,
+    "last_opponent": "3631391841",
+    "last_assigned_at": "2026-02-03T22:29:02.674Z"
   },
   "58134761580": {
     "name": "ExFailures",
@@ -444,8 +444,8 @@
     "elo": 1026,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-02-03T10:39:16.729Z",
-    "last_opponent": "3591948853"
+    "last_assigned_at": "2026-02-03T22:29:02.674Z",
+    "last_opponent": "53134900057"
   },
   "64114468853": {
     "name": "Wonkier",
@@ -604,8 +604,8 @@
     "elo": 949,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-02-03T02:05:06.705Z",
-    "last_opponent": "9313400553"
+    "last_assigned_at": "2026-02-03T22:29:03.464Z",
+    "last_opponent": "74149320612"
   },
   "4379764745": {
     "name": "Malatya44",
