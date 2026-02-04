@@ -307,9 +307,9 @@
     "name": "Fil",
     "elo": 1000,
     "game_cap": 2,
-    "missed_games": 2,
+    "missed_games": 3,
     "last_assigned_at": "2026-02-01T12:48:57.396Z",
-    "last_opponent": "4379764745"
+    "last_opponent": "99110844848"
   },
   "66141834893": {
     "name": "SUPREME",
@@ -340,7 +340,7 @@
     "elo": 1000,
     "game_cap": 2,
     "missed_games": 3,
-    "last_assigned_at": "2026-01-21T12:50:00.762Z",
+    "last_assigned_at": "2026-02-04T12:58:10.649Z",
     "last_opponent": "6411877352"
   },
   "63114105399": {
@@ -412,7 +412,7 @@
     "elo": 1000,
     "game_cap": 2,
     "missed_games": 3,
-    "last_assigned_at": "2026-01-21T12:50:01.327Z",
+    "last_assigned_at": "2026-02-04T12:58:10.058Z",
     "last_opponent": "4555082823"
   },
   "25149077292": {
@@ -436,7 +436,7 @@
     "elo": 1000,
     "game_cap": 2,
     "missed_games": 3,
-    "last_assigned_at": "2026-01-21T12:49:56.297Z",
+    "last_assigned_at": "2026-02-04T12:58:09.300Z",
     "last_opponent": "4471034885"
   },
   "74149320612": {
@@ -468,7 +468,7 @@
     "elo": 1000,
     "game_cap": 2,
     "missed_games": 3,
-    "last_assigned_at": "2026-01-21T12:49:56.297Z",
+    "last_assigned_at": "2026-02-04T12:58:10.058Z",
     "last_opponent": "64126464642"
   },
   "4337497298": {
@@ -564,8 +564,8 @@
     "elo": 1017,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-02-02T12:58:31.358Z",
-    "last_opponent": "53134900057"
+    "last_assigned_at": "2026-02-04T12:58:10.649Z",
+    "last_opponent": "20125423673"
   },
   "8222729424": {
     "name": "Al AssAff",
@@ -628,7 +628,7 @@
     "elo": 1000,
     "game_cap": 2,
     "missed_games": 3,
-    "last_assigned_at": "2026-01-21T12:50:00.208Z",
+    "last_assigned_at": "2026-02-04T12:58:09.300Z",
     "last_opponent": "14130113253"
   },
   "5118531774": {
