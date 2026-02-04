@@ -155,7 +155,7 @@
     "name": "Wolkenstern",
     "elo": 1007,
     "game_cap": 2,
-    "missed_games": 1,
+    "missed_games": 0,
     "last_opponent": "3631391841",
     "last_assigned_at": "2026-02-03T22:29:02.674Z"
   },
@@ -189,7 +189,7 @@
     "game_cap": 1,
     "missed_games": 2,
     "last_opponent": "71148639731",
-    "last_assigned_at": "2026-01-27T22:22:19.984Z"
+    "last_assigned_at": "2026-02-04T02:00:14.574Z"
   },
   "51156980238": {
     "name": "cd",
@@ -371,8 +371,8 @@
     "name": "Kratos",
     "elo": 973,
     "game_cap": 2,
-    "missed_games": 2,
-    "last_assigned_at": "2026-02-03T05:14:32.053Z",
+    "missed_games": 0,
+    "last_assigned_at": "2026-02-04T02:00:13.879Z",
     "last_opponent": "88110265403"
   },
   "56133341636": {
@@ -481,11 +481,11 @@
   },
   "23105988432": {
     "name": "Socrates",
-    "elo": 971,
+    "elo": 992,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-02-03T02:05:05.952Z",
-    "last_opponent": "71155120841"
+    "last_assigned_at": "2026-02-04T02:00:14.574Z",
+    "last_opponent": "8222729424"
   },
   "16127869941": {
     "name": "gg",
@@ -569,11 +569,11 @@
   },
   "8222729424": {
     "name": "Al AssAff",
-    "elo": 980,
+    "elo": 959,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-02-03T14:42:27.070Z",
-    "last_opponent": "1382545505"
+    "last_assigned_at": "2026-02-04T02:00:13.879Z",
+    "last_opponent": "23105988432"
   },
   "88117806994": {
     "name": "RameurA",
