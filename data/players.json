@@ -140,8 +140,8 @@
     "elo": 1086,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "3346775331",
-    "last_assigned_at": "2026-02-03T20:35:17.634Z"
+    "last_opponent": "25149077292",
+    "last_assigned_at": "2026-02-04T04:15:59.565Z"
   },
   "9482920905": {
     "name": "Ethosys",
@@ -353,11 +353,11 @@
   },
   "71148639731": {
     "name": "Nick",
-    "elo": 1046,
+    "elo": 1062,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-02-03T10:39:16.729Z",
-    "last_opponent": "3428471447"
+    "last_assigned_at": "2026-02-04T04:15:58.940Z",
+    "last_opponent": "6411877352"
   },
   "71155120841": {
     "name": "Ventura",
@@ -369,11 +369,11 @@
   },
   "6411877352": {
     "name": "Kratos",
-    "elo": 973,
+    "elo": 957,
     "game_cap": 2,
-    "missed_games": 0,
-    "last_assigned_at": "2026-02-04T02:00:13.879Z",
-    "last_opponent": "88110265403"
+    "missed_games": 1,
+    "last_assigned_at": "2026-02-04T04:15:59.565Z",
+    "last_opponent": "8222729424"
   },
   "56133341636": {
     "name": "Bastian Pyornkrachzark",
@@ -419,9 +419,9 @@
     "name": "EVIL DRAG QUEEN",
     "elo": 899,
     "game_cap": 2,
-    "missed_games": 2,
+    "missed_games": 3,
     "last_assigned_at": "2026-02-01T02:22:31.907Z",
-    "last_opponent": "3346775331"
+    "last_opponent": "23154545458"
   },
   "5520443420": {
     "name": "pottygoboomboom",
@@ -572,8 +572,8 @@
     "elo": 959,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-02-04T02:00:13.879Z",
-    "last_opponent": "23105988432"
+    "last_assigned_at": "2026-02-04T04:15:58.940Z",
+    "last_opponent": "6411877352"
   },
   "88117806994": {
     "name": "RameurA",
