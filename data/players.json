@@ -381,7 +381,7 @@
     "game_cap": 2,
     "missed_games": 0,
     "last_assigned_at": "2026-02-04T16:47:04.109Z",
-    "last_opponent": "4155523061"
+    "last_opponent": "74149320612"
   },
   "50127514525": {
     "name": "toont3",
@@ -443,9 +443,9 @@
     "name": "Svarta Hingsten",
     "elo": 1048,
     "game_cap": 2,
-    "missed_games": 0,
+    "missed_games": 1,
     "last_assigned_at": "2026-02-04T16:47:04.109Z",
-    "last_opponent": "71148639731"
+    "last_opponent": "56133341636"
   },
   "64114468853": {
     "name": "Wonkier",
