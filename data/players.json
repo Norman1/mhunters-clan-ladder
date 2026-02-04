@@ -65,11 +65,11 @@
   },
   "3428471447": {
     "name": "AyanM",
-    "elo": 986,
+    "elo": 1002,
     "game_cap": 2,
     "missed_games": 0,
     "last_assigned_at": "2026-02-03T10:39:15.914Z",
-    "last_opponent": "71148639731"
+    "last_opponent": "25126079448"
   },
   "3591948853": {
     "name": "jdg5201",
@@ -177,10 +177,10 @@
   },
   "9313400553": {
     "name": "Word Walker",
-    "elo": 822,
+    "elo": 849,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "4942304274",
+    "last_opponent": "25126079448",
     "last_assigned_at": "2026-02-04T06:51:38.152Z"
   },
   "4543063534": {
@@ -476,7 +476,7 @@
     "elo": 959,
     "game_cap": 2,
     "missed_games": 3,
-    "last_assigned_at": "2026-01-21T14:30:22.184Z",
+    "last_assigned_at": "2026-02-04T14:39:51.322Z",
     "last_opponent": "44134229332"
   },
   "23105988432": {
@@ -513,11 +513,11 @@
   },
   "25126079448": {
     "name": "Adrian D'Agostino",
-    "elo": 948,
+    "elo": 905,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-02-03T08:35:59.340Z",
-    "last_opponent": "71148639731"
+    "last_assigned_at": "2026-02-04T14:39:51.322Z",
+    "last_opponent": "3428471447"
   },
   "89114164339": {
     "name": "Blacksmith",
