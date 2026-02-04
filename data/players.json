@@ -140,8 +140,8 @@
     "elo": 1086,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "25149077292",
-    "last_assigned_at": "2026-02-04T04:15:59.565Z"
+    "last_opponent": "6411877352",
+    "last_assigned_at": "2026-02-04T06:51:38.152Z"
   },
   "9482920905": {
     "name": "Ethosys",
@@ -180,8 +180,8 @@
     "elo": 822,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "53134900057",
-    "last_assigned_at": "2026-02-03T02:05:07.301Z"
+    "last_opponent": "4942304274",
+    "last_assigned_at": "2026-02-04T06:51:38.152Z"
   },
   "4543063534": {
     "name": "Farah",
@@ -251,9 +251,9 @@
     "name": "Maddest",
     "elo": 1023,
     "game_cap": 2,
-    "missed_games": 2,
+    "missed_games": 3,
     "last_assigned_at": "2026-02-01T06:48:33.966Z",
-    "last_opponent": "71148639731"
+    "last_opponent": "9313400553"
   },
   "7499140988": {
     "name": "angrybeavers",
@@ -371,9 +371,9 @@
     "name": "Kratos",
     "elo": 957,
     "game_cap": 2,
-    "missed_games": 1,
+    "missed_games": 2,
     "last_assigned_at": "2026-02-04T04:15:59.565Z",
-    "last_opponent": "8222729424"
+    "last_opponent": "23154545458"
   },
   "56133341636": {
     "name": "Bastian Pyornkrachzark",
