@@ -177,11 +177,11 @@
   },
   "9313400553": {
     "name": "Word Walker",
-    "elo": 849,
+    "elo": 839,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "25126079448",
-    "last_assigned_at": "2026-02-04T16:47:02.766Z"
+    "last_opponent": "71148639731",
+    "last_assigned_at": "2026-02-05T02:01:47.396Z"
   },
   "4543063534": {
     "name": "Farah",
@@ -353,11 +353,11 @@
   },
   "71148639731": {
     "name": "Nick",
-    "elo": 1040,
+    "elo": 1050,
     "game_cap": 2,
     "missed_games": 0,
     "last_assigned_at": "2026-02-04T16:47:02.766Z",
-    "last_opponent": "74149320612"
+    "last_opponent": "9313400553"
   },
   "71155120841": {
     "name": "Ventura",
@@ -492,7 +492,7 @@
     "elo": 1081,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-02-03T14:42:27.070Z",
+    "last_assigned_at": "2026-02-05T02:01:47.396Z",
     "last_opponent": "14130113253"
   },
   "4353717389": {
