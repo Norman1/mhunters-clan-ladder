@@ -363,7 +363,7 @@
     "name": "Ventura",
     "elo": 1019,
     "game_cap": 2,
-    "missed_games": 1,
+    "missed_games": 0,
     "last_assigned_at": "2026-02-04T20:33:49.543Z",
     "last_opponent": "4155523061"
   },
