@@ -25,11 +25,11 @@
   },
   "1382545505": {
     "name": "Ree",
-    "elo": 991,
+    "elo": 1016,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-02-03T20:35:17.634Z",
-    "last_opponent": "8222729424"
+    "last_assigned_at": "2026-02-05T22:26:54.639Z",
+    "last_opponent": "23154545458"
   },
   "1822261234": {
     "name": "fifi",
@@ -137,11 +137,11 @@
   },
   "23154545458": {
     "name": "Dark Magician Girl",
-    "elo": 1086,
+    "elo": 1061,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "6411877352",
-    "last_assigned_at": "2026-02-04T06:51:38.152Z"
+    "last_opponent": "1382545505",
+    "last_assigned_at": "2026-02-05T22:26:55.289Z"
   },
   "9482920905": {
     "name": "Ethosys",
@@ -361,11 +361,11 @@
   },
   "71155120841": {
     "name": "Ventura",
-    "elo": 1019,
+    "elo": 998,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-02-04T20:33:49.543Z",
-    "last_opponent": "4155523061"
+    "last_assigned_at": "2026-02-05T22:26:54.639Z",
+    "last_opponent": "53134900057"
   },
   "6411877352": {
     "name": "Kratos",
@@ -457,11 +457,11 @@
   },
   "13128957162": {
     "name": "Warlord",
-    "elo": 1045,
+    "elo": 1063,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-02-05T16:47:37.036Z",
-    "last_opponent": "88110265403"
+    "last_assigned_at": "2026-02-05T22:26:55.289Z",
+    "last_opponent": "53134900057"
   },
   "4471034885": {
     "name": "matt8.3",
@@ -601,11 +601,11 @@
   },
   "53134900057": {
     "name": "extelon",
-    "elo": 993,
+    "elo": 996,
     "game_cap": 2,
     "missed_games": 0,
     "last_assigned_at": "2026-02-05T16:47:37.036Z",
-    "last_opponent": "14130113253"
+    "last_opponent": "13128957162"
   },
   "4379764745": {
     "name": "Malatya44",
