@@ -475,9 +475,9 @@
     "name": "Gnoransa",
     "elo": 959,
     "game_cap": 2,
-    "missed_games": 3,
+    "missed_games": 4,
     "last_assigned_at": "2026-02-04T14:39:51.322Z",
-    "last_opponent": "44134229332"
+    "last_opponent": "25126079448"
   },
   "23105988432": {
     "name": "Socrates",
@@ -516,8 +516,8 @@
     "elo": 905,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-02-04T16:47:03.501Z",
-    "last_opponent": "3428471447"
+    "last_assigned_at": "2026-02-05T10:39:46.014Z",
+    "last_opponent": "4337497298"
   },
   "89114164339": {
     "name": "Blacksmith",
@@ -572,7 +572,7 @@
     "elo": 946,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-02-04T04:15:58.940Z",
+    "last_assigned_at": "2026-02-05T10:39:46.014Z",
     "last_opponent": "16127869941"
   },
   "88117806994": {
