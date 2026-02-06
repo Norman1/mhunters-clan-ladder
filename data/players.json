@@ -121,10 +121,10 @@
   },
   "88110265403": {
     "name": "Crouton",
-    "elo": 1114,
+    "elo": 1087,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "14130113253",
+    "last_opponent": "53134900057",
     "last_assigned_at": "2026-02-06T02:01:11.546Z"
   },
   "84143567121": {
@@ -179,7 +179,7 @@
     "name": "Word Walker",
     "elo": 830,
     "game_cap": 2,
-    "missed_games": 1,
+    "missed_games": 0,
     "last_opponent": "8222729424",
     "last_assigned_at": "2026-02-06T14:38:40.201Z"
   },
@@ -601,11 +601,11 @@
   },
   "53134900057": {
     "name": "extelon",
-    "elo": 996,
+    "elo": 1023,
     "game_cap": 2,
     "missed_games": 0,
     "last_assigned_at": "2026-02-06T02:01:11.546Z",
-    "last_opponent": "13128957162"
+    "last_opponent": "88110265403"
   },
   "4379764745": {
     "name": "Malatya44",
