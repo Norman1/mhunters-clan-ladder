@@ -97,11 +97,11 @@
   },
   "4155523061": {
     "name": "AGEHNT SMITH",
-    "elo": 934,
+    "elo": 917,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-02-04T20:33:48.776Z",
-    "last_opponent": "71155120841"
+    "last_assigned_at": "2026-02-08T05:22:56.153Z",
+    "last_opponent": "14130113253"
   },
   "4180490094": {
     "name": "Woololo",
@@ -125,7 +125,7 @@
     "game_cap": 2,
     "missed_games": 0,
     "last_opponent": "9313400553",
-    "last_assigned_at": "2026-02-07T18:34:58.252Z"
+    "last_assigned_at": "2026-02-08T05:22:56.153Z"
   },
   "84143567121": {
     "name": "Poldi",
@@ -181,7 +181,7 @@
     "game_cap": 2,
     "missed_games": 0,
     "last_opponent": "88110265403",
-    "last_assigned_at": "2026-02-07T18:34:58.252Z"
+    "last_assigned_at": "2026-02-08T05:22:55.541Z"
   },
   "4543063534": {
     "name": "Farah",
@@ -273,11 +273,11 @@
   },
   "14130113253": {
     "name": "incandwo",
-    "elo": 993,
+    "elo": 1010,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-02-07T18:34:57.672Z",
-    "last_opponent": "53134900057"
+    "last_assigned_at": "2026-02-08T05:22:55.541Z",
+    "last_opponent": "4155523061"
   },
   "93159203503": {
     "name": "President_Newsom",
