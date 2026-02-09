@@ -25,11 +25,11 @@
   },
   "1382545505": {
     "name": "Ree",
-    "elo": 1008,
+    "elo": 987,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-02-06T14:38:40.201Z",
-    "last_opponent": "3346775331"
+    "last_assigned_at": "2026-02-09T13:08:02.962Z",
+    "last_opponent": "71155120841"
   },
   "1822261234": {
     "name": "fifi",
@@ -65,11 +65,11 @@
   },
   "3428471447": {
     "name": "AyanM",
-    "elo": 1019,
+    "elo": 1033,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-02-07T18:34:56.425Z",
-    "last_opponent": "44134229332"
+    "last_assigned_at": "2026-02-09T13:08:02.962Z",
+    "last_opponent": "25126079448"
   },
   "3591948853": {
     "name": "jdg5201",
@@ -361,11 +361,11 @@
   },
   "71155120841": {
     "name": "Ventura",
-    "elo": 998,
+    "elo": 1019,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-02-05T22:26:54.639Z",
-    "last_opponent": "53134900057"
+    "last_assigned_at": "2026-02-09T13:08:03.582Z",
+    "last_opponent": "1382545505"
   },
   "6411877352": {
     "name": "Kratos",
@@ -513,11 +513,11 @@
   },
   "25126079448": {
     "name": "Adrian D'Agostino",
-    "elo": 905,
+    "elo": 891,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-02-05T13:01:03.310Z",
-    "last_opponent": "8222729424"
+    "last_assigned_at": "2026-02-09T13:08:03.582Z",
+    "last_opponent": "3428471447"
   },
   "89114164339": {
     "name": "Blacksmith",
