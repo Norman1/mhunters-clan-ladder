@@ -60,8 +60,8 @@
     "elo": 1270,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "4155523061",
-    "last_assigned_at": "2026-02-09T20:37:51.850Z"
+    "last_opponent": "8294358602",
+    "last_assigned_at": "2026-02-10T02:25:19.762Z"
   },
   "3428471447": {
     "name": "AyanM",
@@ -155,8 +155,8 @@
     "name": "Wolkenstern",
     "elo": 984,
     "game_cap": 2,
-    "missed_games": 2,
-    "last_opponent": "53134900057",
+    "missed_games": 3,
+    "last_opponent": "3346775331",
     "last_assigned_at": "2026-02-07T01:57:32.714Z"
   },
   "58134761580": {
@@ -177,11 +177,11 @@
   },
   "9313400553": {
     "name": "Word Walker",
-    "elo": 881,
+    "elo": 908,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "88110265403",
-    "last_assigned_at": "2026-02-08T05:22:55.541Z"
+    "last_opponent": "14130113253",
+    "last_assigned_at": "2026-02-10T02:25:19.762Z"
   },
   "4543063534": {
     "name": "Farah",
@@ -273,11 +273,11 @@
   },
   "14130113253": {
     "name": "incandwo",
-    "elo": 1010,
+    "elo": 983,
     "game_cap": 2,
     "missed_games": 0,
     "last_assigned_at": "2026-02-08T05:22:55.541Z",
-    "last_opponent": "4155523061"
+    "last_opponent": "9313400553"
   },
   "93159203503": {
     "name": "President_Newsom",
