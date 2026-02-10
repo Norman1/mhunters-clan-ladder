@@ -277,7 +277,7 @@
     "game_cap": 2,
     "missed_games": 0,
     "last_assigned_at": "2026-02-10T10:53:48.308Z",
-    "last_opponent": "9313400553"
+    "last_opponent": "71148639731"
   },
   "93159203503": {
     "name": "President_Newsom",
@@ -355,9 +355,9 @@
     "name": "Nick",
     "elo": 1023,
     "game_cap": 2,
-    "missed_games": 0,
+    "missed_games": 1,
     "last_assigned_at": "2026-02-10T10:53:48.308Z",
-    "last_opponent": "8222729424"
+    "last_opponent": "14130113253"
   },
   "71155120841": {
     "name": "Ventura",
