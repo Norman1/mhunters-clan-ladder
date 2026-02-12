@@ -137,11 +137,11 @@
   },
   "23154545458": {
     "name": "Dark Magician Girl",
-    "elo": 1085,
+    "elo": 1100,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "23105988432",
-    "last_assigned_at": "2026-02-09T22:35:13.242Z"
+    "last_opponent": "31104791368",
+    "last_assigned_at": "2026-02-12T16:57:50.025Z"
   },
   "9482920905": {
     "name": "Ethosys",
@@ -181,7 +181,7 @@
     "game_cap": 2,
     "missed_games": 0,
     "last_opponent": "31104791368",
-    "last_assigned_at": "2026-02-11T02:21:31.142Z"
+    "last_assigned_at": "2026-02-12T16:57:50.025Z"
   },
   "4543063534": {
     "name": "Farah",
@@ -617,11 +617,11 @@
   },
   "31104791368": {
     "name": "Iamtznu",
-    "elo": 991,
+    "elo": 976,
     "game_cap": 2,
     "missed_games": 0,
     "last_assigned_at": "2026-02-12T14:46:43.088Z",
-    "last_opponent": "9313400553"
+    "last_opponent": "23154545458"
   },
   "5540862349": {
     "name": "Mortiis",
