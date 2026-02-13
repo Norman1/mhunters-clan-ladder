@@ -273,11 +273,11 @@
   },
   "14130113253": {
     "name": "incandwo",
-    "elo": 964,
+    "elo": 938,
     "game_cap": 2,
     "missed_games": 0,
     "last_assigned_at": "2026-02-12T02:08:17.665Z",
-    "last_opponent": "23105988432"
+    "last_opponent": "25126079448"
   },
   "93159203503": {
     "name": "President_Newsom",
@@ -513,11 +513,11 @@
   },
   "25126079448": {
     "name": "Adrian D'Agostino",
-    "elo": 863,
+    "elo": 889,
     "game_cap": 2,
     "missed_games": 0,
     "last_assigned_at": "2026-02-12T20:34:24.408Z",
-    "last_opponent": "71155120841"
+    "last_opponent": "14130113253"
   },
   "89114164339": {
     "name": "Blacksmith",
