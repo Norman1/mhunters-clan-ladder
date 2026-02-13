@@ -57,10 +57,10 @@
   },
   "3346775331": {
     "name": "Gatsu12",
-    "elo": 1275,
+    "elo": 1281,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "4155523061",
+    "last_opponent": "99110844848",
     "last_assigned_at": "2026-02-12T02:08:19.034Z"
   },
   "3428471447": {
@@ -561,11 +561,11 @@
   },
   "99110844848": {
     "name": "CrypticNeo1",
-    "elo": 971,
+    "elo": 965,
     "game_cap": 2,
     "missed_games": 0,
     "last_assigned_at": "2026-02-12T05:23:48.433Z",
-    "last_opponent": "6411877352"
+    "last_opponent": "3346775331"
   },
   "8222729424": {
     "name": "Al AssAff",
