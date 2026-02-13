@@ -137,11 +137,11 @@
   },
   "23154545458": {
     "name": "Dark Magician Girl",
-    "elo": 1100,
+    "elo": 1108,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "31104791368",
-    "last_assigned_at": "2026-02-12T16:57:50.025Z"
+    "last_opponent": "9313400553",
+    "last_assigned_at": "2026-02-13T06:58:54.868Z"
   },
   "9482920905": {
     "name": "Ethosys",
@@ -177,11 +177,11 @@
   },
   "9313400553": {
     "name": "Word Walker",
-    "elo": 868,
+    "elo": 860,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "31104791368",
-    "last_assigned_at": "2026-02-12T20:34:24.965Z"
+    "last_opponent": "23154545458",
+    "last_assigned_at": "2026-02-13T06:58:54.197Z"
   },
   "4543063534": {
     "name": "Farah",
@@ -276,7 +276,7 @@
     "elo": 938,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-02-12T02:08:17.665Z",
+    "last_assigned_at": "2026-02-13T06:58:54.868Z",
     "last_opponent": "25126079448"
   },
   "93159203503": {
@@ -516,7 +516,7 @@
     "elo": 889,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-02-12T20:34:24.408Z",
+    "last_assigned_at": "2026-02-13T06:58:54.197Z",
     "last_opponent": "14130113253"
   },
   "89114164339": {
