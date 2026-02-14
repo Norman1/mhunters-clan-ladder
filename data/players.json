@@ -85,7 +85,7 @@
     "game_cap": 2,
     "missed_games": 0,
     "last_opponent": "4155523061",
-    "last_assigned_at": "2026-02-13T22:32:22.949Z"
+    "last_assigned_at": "2026-02-14T01:59:07.009Z"
   },
   "3737155555": {
     "name": "Jumpshott",
@@ -177,10 +177,10 @@
   },
   "9313400553": {
     "name": "Word Walker",
-    "elo": 860,
+    "elo": 842,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "23154545458",
+    "last_opponent": "25126079448",
     "last_assigned_at": "2026-02-13T06:58:54.197Z"
   },
   "4543063534": {
@@ -513,11 +513,11 @@
   },
   "25126079448": {
     "name": "Adrian D'Agostino",
-    "elo": 889,
+    "elo": 907,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-02-13T06:58:54.197Z",
-    "last_opponent": "14130113253"
+    "last_assigned_at": "2026-02-14T01:59:07.009Z",
+    "last_opponent": "9313400553"
   },
   "89114164339": {
     "name": "Blacksmith",
