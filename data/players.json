@@ -73,11 +73,11 @@
   },
   "3591948853": {
     "name": "jdg5201",
-    "elo": 975,
+    "elo": 991,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-02-14T06:43:12.544Z",
-    "last_opponent": "3346775331"
+    "last_assigned_at": "2026-02-14T14:26:24.844Z",
+    "last_opponent": "4155523061"
   },
   "3631391841": {
     "name": "BlackBart",
@@ -97,11 +97,11 @@
   },
   "4155523061": {
     "name": "AGEHNT SMITH",
-    "elo": 907,
+    "elo": 891,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-02-13T22:32:23.489Z",
-    "last_opponent": "3631391841"
+    "last_assigned_at": "2026-02-14T14:26:24.231Z",
+    "last_opponent": "3591948853"
   },
   "4180490094": {
     "name": "Woololo",
@@ -181,7 +181,7 @@
     "game_cap": 2,
     "missed_games": 0,
     "last_opponent": "53134900057",
-    "last_assigned_at": "2026-02-13T06:58:54.197Z"
+    "last_assigned_at": "2026-02-14T14:26:25.388Z"
   },
   "4543063534": {
     "name": "Farah",
@@ -377,11 +377,11 @@
   },
   "56133341636": {
     "name": "Bastian Pyornkrachzark",
-    "elo": 984,
+    "elo": 962,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-02-13T18:49:01.961Z",
-    "last_opponent": "53134900057"
+    "last_assigned_at": "2026-02-14T14:26:25.388Z",
+    "last_opponent": "99110844848"
   },
   "50127514525": {
     "name": "toont3",
@@ -561,11 +561,11 @@
   },
   "99110844848": {
     "name": "CrypticNeo1",
-    "elo": 945,
+    "elo": 967,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-02-13T22:32:22.343Z",
-    "last_opponent": "3631391841"
+    "last_assigned_at": "2026-02-14T14:26:24.844Z",
+    "last_opponent": "56133341636"
   },
   "8222729424": {
     "name": "Al AssAff",
