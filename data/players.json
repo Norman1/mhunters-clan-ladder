@@ -65,11 +65,11 @@
   },
   "3428471447": {
     "name": "AyanM",
-    "elo": 1027,
+    "elo": 1015,
     "game_cap": 2,
     "missed_games": 0,
     "last_assigned_at": "2026-02-11T22:28:55.852Z",
-    "last_opponent": "1382545505"
+    "last_opponent": "88110265403"
   },
   "3591948853": {
     "name": "jdg5201",
@@ -121,10 +121,10 @@
   },
   "88110265403": {
     "name": "Crouton",
-    "elo": 1183,
+    "elo": 1195,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "3346775331",
+    "last_opponent": "3428471447",
     "last_assigned_at": "2026-02-14T04:15:59.726Z"
   },
   "84143567121": {
