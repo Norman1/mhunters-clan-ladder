@@ -75,7 +75,7 @@
     "name": "jdg5201",
     "elo": 1026,
     "game_cap": 2,
-    "missed_games": 1,
+    "missed_games": 0,
     "last_assigned_at": "2026-02-15T18:36:04.305Z",
     "last_opponent": "3346775331"
   },
@@ -365,7 +365,7 @@
     "game_cap": 2,
     "missed_games": 0,
     "last_assigned_at": "2026-02-15T18:36:04.305Z",
-    "last_opponent": "99110844848"
+    "last_opponent": "31104791368"
   },
   "6411877352": {
     "name": "Kratos",
@@ -604,7 +604,7 @@
     "elo": 954,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-02-15T05:18:26.932Z",
+    "last_assigned_at": "2026-02-15T22:23:33.469Z",
     "last_opponent": "3346775331"
   },
   "4379764745": {
@@ -619,9 +619,9 @@
     "name": "Iamtznu",
     "elo": 976,
     "game_cap": 2,
-    "missed_games": 0,
-    "last_assigned_at": "2026-02-12T20:34:26.047Z",
-    "last_opponent": "79105823914"
+    "missed_games": 1,
+    "last_assigned_at": "2026-02-15T22:23:33.469Z",
+    "last_opponent": "71155120841"
   },
   "5540862349": {
     "name": "Mortiis",
