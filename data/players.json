@@ -177,18 +177,18 @@
   },
   "9313400553": {
     "name": "Word Walker",
-    "elo": 787,
+    "elo": 774,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "56133341636",
-    "last_assigned_at": "2026-02-18T02:07:30.919Z"
+    "last_opponent": "99110844848",
+    "last_assigned_at": "2026-02-18T05:22:44.866Z"
   },
   "4543063534": {
     "name": "Farah",
     "elo": 937,
     "game_cap": 1,
     "missed_games": 3,
-    "last_opponent": "23105988432",
+    "last_opponent": "6411877352",
     "last_assigned_at": "2026-02-18T02:07:32.131Z"
   },
   "51156980238": {
@@ -371,9 +371,9 @@
     "name": "Kratos",
     "elo": 986,
     "game_cap": 2,
-    "missed_games": 0,
+    "missed_games": 2,
     "last_assigned_at": "2026-02-18T02:07:32.131Z",
-    "last_opponent": "1382545505"
+    "last_opponent": "4543063534"
   },
   "56133341636": {
     "name": "Bastian Pyornkrachzark",
@@ -492,8 +492,8 @@
     "elo": 1078,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-02-17T18:57:17.373Z",
-    "last_opponent": "71148639731"
+    "last_assigned_at": "2026-02-18T05:22:44.866Z",
+    "last_opponent": "6411877352"
   },
   "4353717389": {
     "name": "Krys",
@@ -561,11 +561,11 @@
   },
   "99110844848": {
     "name": "CrypticNeo1",
-    "elo": 913,
+    "elo": 926,
     "game_cap": 2,
     "missed_games": 0,
     "last_assigned_at": "2026-02-17T02:03:31.258Z",
-    "last_opponent": "3346775331"
+    "last_opponent": "9313400553"
   },
   "8222729424": {
     "name": "Al AssAff",
