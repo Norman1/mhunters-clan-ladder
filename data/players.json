@@ -65,11 +65,11 @@
   },
   "3428471447": {
     "name": "AyanM",
-    "elo": 1033,
+    "elo": 1019,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-02-16T13:02:03.288Z",
-    "last_opponent": "56133341636"
+    "last_assigned_at": "2026-02-18T07:00:28.777Z",
+    "last_opponent": "23154545458"
   },
   "3591948853": {
     "name": "jdg5201",
@@ -137,10 +137,10 @@
   },
   "23154545458": {
     "name": "Dark Magician Girl",
-    "elo": 1135,
+    "elo": 1149,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "14130113253",
+    "last_opponent": "3428471447",
     "last_assigned_at": "2026-02-16T05:25:54.034Z"
   },
   "9482920905": {
@@ -251,9 +251,9 @@
     "name": "Maddest",
     "elo": 1023,
     "game_cap": 2,
-    "missed_games": 3,
+    "missed_games": 4,
     "last_assigned_at": "2026-02-15T06:52:07.686Z",
-    "last_opponent": "9313400553"
+    "last_opponent": "25149077292"
   },
   "7499140988": {
     "name": "angrybeavers",
@@ -419,9 +419,9 @@
     "name": "EVIL DRAG QUEEN",
     "elo": 899,
     "game_cap": 2,
-    "missed_games": 3,
+    "missed_games": 4,
     "last_assigned_at": "2026-02-15T06:52:07.686Z",
-    "last_opponent": "23154545458"
+    "last_opponent": "4942304274"
   },
   "5520443420": {
     "name": "pottygoboomboom",
@@ -564,7 +564,7 @@
     "elo": 926,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-02-17T02:03:31.258Z",
+    "last_assigned_at": "2026-02-18T07:00:28.777Z",
     "last_opponent": "9313400553"
   },
   "8222729424": {
