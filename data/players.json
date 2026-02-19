@@ -141,7 +141,7 @@
     "game_cap": 2,
     "missed_games": 0,
     "last_opponent": "1382545505",
-    "last_assigned_at": "2026-02-18T10:42:58.327Z"
+    "last_assigned_at": "2026-02-19T14:45:53.541Z"
   },
   "9482920905": {
     "name": "Ethosys",
@@ -513,11 +513,11 @@
   },
   "25126079448": {
     "name": "Adrian D'Agostino",
-    "elo": 897,
+    "elo": 880,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-02-19T10:41:48.326Z",
-    "last_opponent": "3346775331"
+    "last_assigned_at": "2026-02-19T14:45:53.541Z",
+    "last_opponent": "31104791368"
   },
   "89114164339": {
     "name": "Blacksmith",
@@ -617,11 +617,11 @@
   },
   "31104791368": {
     "name": "Iamtznu",
-    "elo": 958,
+    "elo": 975,
     "game_cap": 2,
     "missed_games": 0,
     "last_assigned_at": "2026-02-19T10:41:48.326Z",
-    "last_opponent": "13128957162"
+    "last_opponent": "25126079448"
   },
   "5540862349": {
     "name": "Mortiis",
