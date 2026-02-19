@@ -25,11 +25,11 @@
   },
   "1382545505": {
     "name": "Ree",
-    "elo": 1018,
+    "elo": 1005,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-02-18T02:07:31.525Z",
-    "last_opponent": "6411877352"
+    "last_assigned_at": "2026-02-19T13:04:25.695Z",
+    "last_opponent": "23154545458"
   },
   "1822261234": {
     "name": "fifi",
@@ -137,10 +137,10 @@
   },
   "23154545458": {
     "name": "Dark Magician Girl",
-    "elo": 1149,
+    "elo": 1162,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "3428471447",
+    "last_opponent": "1382545505",
     "last_assigned_at": "2026-02-18T10:42:58.327Z"
   },
   "9482920905": {
@@ -460,7 +460,7 @@
     "elo": 1047,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-02-18T13:03:26.129Z",
+    "last_assigned_at": "2026-02-19T13:04:25.695Z",
     "last_opponent": "31104791368"
   },
   "4471034885": {
