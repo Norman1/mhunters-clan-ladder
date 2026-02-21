@@ -5782,5 +5782,10 @@
     "finished_at": "2026-02-21T16:27:49.256Z",
     "template_id": 1573497,
     "elo_change": 13
+  },
+  {
+    "game_id": "43667399",
+    "finished_at": "2026-02-21T18:34:41.562Z",
+    "note": "Declined"
   }
 ]
