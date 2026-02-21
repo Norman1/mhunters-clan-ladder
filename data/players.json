@@ -123,9 +123,9 @@
     "name": "Crouton",
     "elo": 1201,
     "game_cap": 2,
-    "missed_games": 0,
-    "last_opponent": "25126079448",
-    "last_assigned_at": "2026-02-18T17:02:41.291Z"
+    "missed_games": 1,
+    "last_opponent": "23154545458",
+    "last_assigned_at": "2026-02-21T12:45:49.872Z"
   },
   "84143567121": {
     "name": "Poldi",
@@ -140,7 +140,7 @@
     "elo": 1168,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "25126079448",
+    "last_opponent": "88110265403",
     "last_assigned_at": "2026-02-21T01:57:00.421Z"
   },
   "9482920905": {
@@ -157,7 +157,7 @@
     "game_cap": 2,
     "missed_games": 3,
     "last_opponent": "3346775331",
-    "last_assigned_at": "2026-02-07T01:57:32.714Z"
+    "last_assigned_at": "2026-02-21T12:45:49.872Z"
   },
   "58134761580": {
     "name": "ExFailures",
