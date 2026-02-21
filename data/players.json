@@ -141,7 +141,7 @@
     "game_cap": 2,
     "missed_games": 0,
     "last_opponent": "88110265403",
-    "last_assigned_at": "2026-02-21T01:57:00.421Z"
+    "last_assigned_at": "2026-02-21T14:25:27.370Z"
   },
   "9482920905": {
     "name": "Ethosys",
@@ -177,10 +177,10 @@
   },
   "9313400553": {
     "name": "Word Walker",
-    "elo": 798,
+    "elo": 790,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "8222729424",
+    "last_opponent": "74149320612",
     "last_assigned_at": "2026-02-21T01:57:01.196Z"
   },
   "4543063534": {
@@ -441,11 +441,11 @@
   },
   "74149320612": {
     "name": "Svarta Hingsten",
-    "elo": 1048,
+    "elo": 1056,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-02-21T01:57:00.421Z",
-    "last_opponent": "53134900057"
+    "last_assigned_at": "2026-02-21T14:25:27.370Z",
+    "last_opponent": "9313400553"
   },
   "64114468853": {
     "name": "Wonkier",
