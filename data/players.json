@@ -73,11 +73,11 @@
   },
   "3591948853": {
     "name": "jdg5201",
-    "elo": 1013,
+    "elo": 986,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-02-21T01:57:03.011Z",
-    "last_opponent": "23105988432"
+    "last_assigned_at": "2026-02-21T04:09:28.146Z",
+    "last_opponent": "99110844848"
   },
   "3631391841": {
     "name": "BlackBart",
@@ -355,9 +355,9 @@
     "name": "Nick",
     "elo": 1043,
     "game_cap": 2,
-    "missed_games": 0,
-    "last_assigned_at": "2026-02-21T01:57:03.618Z",
-    "last_opponent": "13128957162"
+    "missed_games": 1,
+    "last_assigned_at": "2026-02-21T04:09:28.853Z",
+    "last_opponent": "25126079448"
   },
   "71155120841": {
     "name": "Ventura",
@@ -516,8 +516,8 @@
     "elo": 857,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-02-21T01:57:03.618Z",
-    "last_opponent": "23154545458"
+    "last_assigned_at": "2026-02-21T04:09:28.146Z",
+    "last_opponent": "71148639731"
   },
   "89114164339": {
     "name": "Blacksmith",
@@ -561,11 +561,11 @@
   },
   "99110844848": {
     "name": "CrypticNeo1",
-    "elo": 895,
+    "elo": 922,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-02-20T05:15:40.400Z",
-    "last_opponent": "3428471447"
+    "last_assigned_at": "2026-02-21T04:09:28.853Z",
+    "last_opponent": "3591948853"
   },
   "8222729424": {
     "name": "Al AssAff",
