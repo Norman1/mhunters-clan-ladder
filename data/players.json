@@ -81,11 +81,11 @@
   },
   "3631391841": {
     "name": "BlackBart",
-    "elo": 976,
+    "elo": 964,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "53134900057",
-    "last_assigned_at": "2026-02-20T18:47:02.103Z"
+    "last_opponent": "71155120841",
+    "last_assigned_at": "2026-02-22T18:35:17.104Z"
   },
   "3737155555": {
     "name": "Jumpshott",
@@ -361,11 +361,11 @@
   },
   "71155120841": {
     "name": "Ventura",
-    "elo": 1123,
+    "elo": 1135,
     "game_cap": 2,
     "missed_games": 0,
     "last_assigned_at": "2026-02-21T20:24:25.885Z",
-    "last_opponent": "4155523061"
+    "last_opponent": "3631391841"
   },
   "6411877352": {
     "name": "Kratos",
@@ -492,7 +492,7 @@
     "elo": 1133,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-02-22T02:05:48.903Z",
+    "last_assigned_at": "2026-02-22T18:35:17.104Z",
     "last_opponent": "25126079448"
   },
   "4353717389": {
