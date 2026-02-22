@@ -123,7 +123,7 @@
     "name": "Crouton",
     "elo": 1201,
     "game_cap": 2,
-    "missed_games": 1,
+    "missed_games": 0,
     "last_opponent": "23154545458",
     "last_assigned_at": "2026-02-21T12:45:49.872Z"
   },
@@ -489,11 +489,11 @@
   },
   "16127869941": {
     "name": "gg",
-    "elo": 1125,
+    "elo": 1133,
     "game_cap": 2,
     "missed_games": 0,
     "last_assigned_at": "2026-02-22T02:05:48.903Z",
-    "last_opponent": "23105988432"
+    "last_opponent": "25126079448"
   },
   "4353717389": {
     "name": "Krys",
@@ -513,11 +513,11 @@
   },
   "25126079448": {
     "name": "Adrian D'Agostino",
-    "elo": 872,
+    "elo": 864,
     "game_cap": 2,
     "missed_games": 0,
     "last_assigned_at": "2026-02-22T02:05:48.903Z",
-    "last_opponent": "3591948853"
+    "last_opponent": "16127869941"
   },
   "89114164339": {
     "name": "Blacksmith",
