@@ -57,11 +57,11 @@
   },
   "3346775331": {
     "name": "Gatsu12",
-    "elo": 1278,
+    "elo": 1282,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "14130113253",
-    "last_assigned_at": "2026-02-21T01:57:04.214Z"
+    "last_opponent": "8222729424",
+    "last_assigned_at": "2026-02-23T22:40:22.207Z"
   },
   "3428471447": {
     "name": "AyanM",
@@ -113,11 +113,11 @@
   },
   "79105823914": {
     "name": "krinid",
-    "elo": 950,
+    "elo": 933,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "25126079448",
-    "last_assigned_at": "2026-02-21T01:57:01.196Z"
+    "last_opponent": "53134900057",
+    "last_assigned_at": "2026-02-23T22:40:22.808Z"
   },
   "88110265403": {
     "name": "Crouton",
@@ -273,10 +273,10 @@
   },
   "14130113253": {
     "name": "incandwo",
-    "elo": 1045,
+    "elo": 1058,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-02-23T16:56:31.881Z",
+    "last_assigned_at": "2026-02-23T22:40:22.808Z",
     "last_opponent": "31104791368"
   },
   "93159203503": {
@@ -569,11 +569,11 @@
   },
   "8222729424": {
     "name": "Al AssAff",
-    "elo": 889,
+    "elo": 885,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-02-23T19:01:59.471Z",
-    "last_opponent": "56133341636"
+    "last_assigned_at": "2026-02-23T22:40:21.428Z",
+    "last_opponent": "3346775331"
   },
   "88117806994": {
     "name": "RameurA",
@@ -601,11 +601,11 @@
   },
   "53134900057": {
     "name": "extelon",
-    "elo": 995,
+    "elo": 1012,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-02-23T19:02:00.200Z",
-    "last_opponent": "71155120841"
+    "last_assigned_at": "2026-02-23T22:40:22.207Z",
+    "last_opponent": "79105823914"
   },
   "4379764745": {
     "name": "Malatya44",
@@ -617,10 +617,10 @@
   },
   "31104791368": {
     "name": "Iamtznu",
-    "elo": 927,
+    "elo": 914,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-02-23T16:56:31.313Z",
+    "last_assigned_at": "2026-02-23T22:40:21.428Z",
     "last_opponent": "14130113253"
   },
   "5540862349": {
