@@ -115,7 +115,7 @@
     "name": "krinid",
     "elo": 933,
     "game_cap": 2,
-    "missed_games": 1,
+    "missed_games": 0,
     "last_opponent": "14130113253",
     "last_assigned_at": "2026-02-24T02:03:22.337Z"
   },
@@ -275,9 +275,9 @@
     "name": "incandwo",
     "elo": 1058,
     "game_cap": 2,
-    "missed_games": 0,
+    "missed_games": 1,
     "last_assigned_at": "2026-02-24T02:03:23.104Z",
-    "last_opponent": "79105823914"
+    "last_opponent": "74149320612"
   },
   "93159203503": {
     "name": "President_Newsom",
@@ -445,7 +445,7 @@
     "game_cap": 2,
     "missed_games": 1,
     "last_assigned_at": "2026-02-24T02:03:23.104Z",
-    "last_opponent": "23154545458"
+    "last_opponent": "14130113253"
   },
   "64114468853": {
     "name": "Wonkier",
