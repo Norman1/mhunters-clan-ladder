@@ -25,11 +25,11 @@
   },
   "1382545505": {
     "name": "Ree",
-    "elo": 1005,
+    "elo": 1026,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-02-19T13:04:25.695Z",
-    "last_opponent": "23154545458"
+    "last_assigned_at": "2026-02-24T19:00:48.372Z",
+    "last_opponent": "13128957162"
   },
   "1822261234": {
     "name": "fifi",
@@ -81,11 +81,11 @@
   },
   "3631391841": {
     "name": "BlackBart",
-    "elo": 988,
+    "elo": 1012,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "31104791368",
-    "last_assigned_at": "2026-02-24T17:05:19.211Z"
+    "last_opponent": "14130113253",
+    "last_assigned_at": "2026-02-24T19:00:48.923Z"
   },
   "3737155555": {
     "name": "Jumpshott",
@@ -273,11 +273,11 @@
   },
   "14130113253": {
     "name": "incandwo",
-    "elo": 1058,
+    "elo": 1034,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-02-24T13:04:43.130Z",
-    "last_opponent": "74149320612"
+    "last_assigned_at": "2026-02-24T19:00:48.372Z",
+    "last_opponent": "3631391841"
   },
   "93159203503": {
     "name": "President_Newsom",
@@ -457,11 +457,11 @@
   },
   "13128957162": {
     "name": "Warlord",
-    "elo": 1026,
+    "elo": 980,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-02-21T01:57:01.792Z",
-    "last_opponent": "71148639731"
+    "last_assigned_at": "2026-02-24T19:00:48.923Z",
+    "last_opponent": "23105988432"
   },
   "4471034885": {
     "name": "matt8.3",
@@ -481,11 +481,11 @@
   },
   "23105988432": {
     "name": "Socrates",
-    "elo": 924,
+    "elo": 949,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-02-22T02:05:49.495Z",
-    "last_opponent": "16127869941"
+    "last_assigned_at": "2026-02-24T19:00:49.482Z",
+    "last_opponent": "13128957162"
   },
   "16127869941": {
     "name": "gg",
@@ -595,9 +595,9 @@
     "name": "Acuna42",
     "elo": 1000,
     "game_cap": 2,
-    "missed_games": 0,
-    "last_assigned_at": "2026-02-24T17:05:18.614Z",
-    "last_opponent": "5118531774"
+    "missed_games": 1,
+    "last_assigned_at": "2026-02-24T19:00:47.638Z",
+    "last_opponent": "31104791368"
   },
   "53134900057": {
     "name": "extelon",
@@ -620,8 +620,8 @@
     "elo": 897,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-02-24T17:05:18.614Z",
-    "last_opponent": "3631391841"
+    "last_assigned_at": "2026-02-24T19:00:49.482Z",
+    "last_opponent": "9780712014"
   },
   "5540862349": {
     "name": "Mortiis",
