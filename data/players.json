@@ -340,7 +340,7 @@
     "elo": 1000,
     "game_cap": 2,
     "missed_games": 4,
-    "last_assigned_at": "2026-02-04T12:58:10.649Z",
+    "last_assigned_at": "2026-02-25T13:03:10.210Z",
     "last_opponent": "99110844848"
   },
   "63114105399": {
@@ -412,7 +412,7 @@
     "elo": 1000,
     "game_cap": 2,
     "missed_games": 4,
-    "last_assigned_at": "2026-02-04T12:58:10.058Z",
+    "last_assigned_at": "2026-02-25T13:03:10.798Z",
     "last_opponent": "4471034885"
   },
   "25149077292": {
@@ -436,7 +436,7 @@
     "elo": 1000,
     "game_cap": 2,
     "missed_games": 4,
-    "last_assigned_at": "2026-02-04T12:58:09.300Z",
+    "last_assigned_at": "2026-02-25T13:03:10.210Z",
     "last_opponent": "5540862349"
   },
   "74149320612": {
@@ -468,7 +468,7 @@
     "elo": 1000,
     "game_cap": 2,
     "missed_games": 4,
-    "last_assigned_at": "2026-02-04T12:58:10.058Z",
+    "last_assigned_at": "2026-02-25T13:03:09.515Z",
     "last_opponent": "92131071479"
   },
   "4337497298": {
@@ -484,7 +484,7 @@
     "elo": 941,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-02-25T02:05:41.242Z",
+    "last_assigned_at": "2026-02-25T13:03:10.798Z",
     "last_opponent": "31104791368"
   },
   "16127869941": {
@@ -628,7 +628,7 @@
     "elo": 1000,
     "game_cap": 2,
     "missed_games": 4,
-    "last_assigned_at": "2026-02-04T12:58:09.300Z",
+    "last_assigned_at": "2026-02-25T13:03:09.515Z",
     "last_opponent": "64126464642"
   },
   "5118531774": {
