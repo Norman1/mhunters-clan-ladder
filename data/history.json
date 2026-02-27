@@ -6277,5 +6277,35 @@
     "game_id": "43713213",
     "finished_at": "2026-02-27T08:39:52.763Z",
     "note": "Declined"
+  },
+  {
+    "game_id": "43679837",
+    "p1_id": "16127869941",
+    "p2_id": "3428471447",
+    "winner_id": "3428471447",
+    "loser_id": "16127869941",
+    "finished_at": "2026-02-27T12:57:56.997Z",
+    "template_id": 1573497,
+    "elo_change": 25
+  },
+  {
+    "game_id": "43710357",
+    "p1_id": "99110844848",
+    "p2_id": "9780712014",
+    "winner_id": "99110844848",
+    "loser_id": "9780712014",
+    "finished_at": "2026-02-27T12:57:57.930Z",
+    "template_id": 1574451,
+    "elo_change": 26
+  },
+  {
+    "game_id": "43711236",
+    "finished_at": "2026-02-27T12:57:57.978Z",
+    "note": "Declined"
+  },
+  {
+    "game_id": "43714681",
+    "finished_at": "2026-02-27T12:57:58.230Z",
+    "note": "Declined"
   }
 ]
