@@ -84,8 +84,8 @@
     "elo": 1030,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "16127869941",
-    "last_assigned_at": "2026-02-27T14:38:00.919Z"
+    "last_opponent": "13128957162",
+    "last_assigned_at": "2026-02-27T20:27:07.171Z"
   },
   "3737155555": {
     "name": "Jumpshott",
@@ -179,7 +179,7 @@
     "name": "Word Walker",
     "elo": 811,
     "game_cap": 2,
-    "missed_games": 1,
+    "missed_games": 0,
     "last_opponent": "88110265403",
     "last_assigned_at": "2026-02-27T12:57:59.046Z"
   },
@@ -459,9 +459,9 @@
     "name": "Warlord",
     "elo": 980,
     "game_cap": 2,
-    "missed_games": 0,
+    "missed_games": 2,
     "last_assigned_at": "2026-02-24T19:00:48.923Z",
-    "last_opponent": "23105988432"
+    "last_opponent": "3631391841"
   },
   "4471034885": {
     "name": "matt8.3",
@@ -596,8 +596,8 @@
     "elo": 994,
     "game_cap": 2,
     "missed_games": 1,
-    "last_assigned_at": "2026-02-27T14:38:00.352Z",
-    "last_opponent": "16127869941"
+    "last_assigned_at": "2026-02-27T20:27:07.171Z",
+    "last_opponent": "13128957162"
   },
   "53134900057": {
     "name": "extelon",
