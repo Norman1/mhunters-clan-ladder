@@ -25,11 +25,11 @@
   },
   "1382545505": {
     "name": "Ree",
-    "elo": 1026,
+    "elo": 1007,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-02-24T19:00:48.372Z",
-    "last_opponent": "13128957162"
+    "last_assigned_at": "2026-02-27T02:00:13.454Z",
+    "last_opponent": "14130113253"
   },
   "1822261234": {
     "name": "fifi",
@@ -85,7 +85,7 @@
     "game_cap": 2,
     "missed_games": 0,
     "last_opponent": "4379764745",
-    "last_assigned_at": "2026-02-24T19:00:48.923Z"
+    "last_assigned_at": "2026-02-27T02:00:14.002Z"
   },
   "3737155555": {
     "name": "Jumpshott",
@@ -121,11 +121,11 @@
   },
   "88110265403": {
     "name": "Crouton",
-    "elo": 1208,
+    "elo": 1211,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "99110844848",
-    "last_assigned_at": "2026-02-26T05:19:18.401Z"
+    "last_opponent": "9313400553",
+    "last_assigned_at": "2026-02-27T02:00:12.876Z"
   },
   "84143567121": {
     "name": "Poldi",
@@ -177,11 +177,11 @@
   },
   "9313400553": {
     "name": "Word Walker",
-    "elo": 790,
+    "elo": 787,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "53134900057",
-    "last_assigned_at": "2026-02-26T05:19:18.401Z"
+    "last_opponent": "88110265403",
+    "last_assigned_at": "2026-02-27T02:00:13.454Z"
   },
   "4543063534": {
     "name": "Farah",
@@ -273,11 +273,11 @@
   },
   "14130113253": {
     "name": "incandwo",
-    "elo": 1052,
+    "elo": 1044,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-02-25T02:05:41.242Z",
-    "last_opponent": "53134900057"
+    "last_assigned_at": "2026-02-27T02:00:14.002Z",
+    "last_opponent": "23105988432"
   },
   "93159203503": {
     "name": "President_Newsom",
@@ -481,11 +481,11 @@
   },
   "23105988432": {
     "name": "Socrates",
-    "elo": 941,
+    "elo": 968,
     "game_cap": 2,
     "missed_games": 0,
     "last_assigned_at": "2026-02-25T13:03:10.798Z",
-    "last_opponent": "31104791368"
+    "last_opponent": "14130113253"
   },
   "16127869941": {
     "name": "gg",
