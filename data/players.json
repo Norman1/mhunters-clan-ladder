@@ -85,7 +85,7 @@
     "game_cap": 2,
     "missed_games": 0,
     "last_opponent": "3591948853",
-    "last_assigned_at": "2026-03-02T02:03:55.834Z"
+    "last_assigned_at": "2026-03-02T06:57:26.547Z"
   },
   "3737155555": {
     "name": "Jumpshott",
@@ -179,9 +179,9 @@
     "name": "Word Walker",
     "elo": 801,
     "game_cap": 2,
-    "missed_games": 0,
-    "last_opponent": "1382545505",
-    "last_assigned_at": "2026-03-02T02:03:55.283Z"
+    "missed_games": 1,
+    "last_opponent": "8222729424",
+    "last_assigned_at": "2026-03-02T06:57:26.547Z"
   },
   "4543063534": {
     "name": "Farah",
@@ -292,7 +292,7 @@
     "elo": 1000,
     "game_cap": 2,
     "missed_games": 4,
-    "last_assigned_at": "2026-02-09T02:08:40.249Z",
+    "last_assigned_at": "2026-03-02T06:57:27.269Z",
     "last_opponent": "3631391841"
   },
   "6630558043": {
@@ -572,8 +572,8 @@
     "elo": 892,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-03-02T02:03:55.283Z",
-    "last_opponent": "31104791368"
+    "last_assigned_at": "2026-03-02T06:57:27.269Z",
+    "last_opponent": "9313400553"
   },
   "88117806994": {
     "name": "RameurA",
