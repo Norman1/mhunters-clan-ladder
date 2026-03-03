@@ -353,11 +353,11 @@
   },
   "71148639731": {
     "name": "Nick",
-    "elo": 1036,
+    "elo": 1054,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-03-03T05:13:47.388Z",
-    "last_opponent": "99110844848"
+    "last_assigned_at": "2026-03-03T22:28:12.017Z",
+    "last_opponent": "53134900057"
   },
   "71155120841": {
     "name": "Ventura",
@@ -460,7 +460,7 @@
     "elo": 980,
     "game_cap": 2,
     "missed_games": 2,
-    "last_assigned_at": "2026-02-24T19:00:48.923Z",
+    "last_assigned_at": "2026-03-03T22:28:12.017Z",
     "last_opponent": "3631391841"
   },
   "4471034885": {
@@ -601,11 +601,11 @@
   },
   "53134900057": {
     "name": "extelon",
-    "elo": 1001,
+    "elo": 983,
     "game_cap": 2,
     "missed_games": 0,
     "last_assigned_at": "2026-03-03T02:05:20.715Z",
-    "last_opponent": "9313400553"
+    "last_opponent": "71148639731"
   },
   "4379764745": {
     "name": "Malatya44",
