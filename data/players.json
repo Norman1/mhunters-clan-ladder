@@ -97,11 +97,11 @@
   },
   "4155523061": {
     "name": "AGEHNT SMITH",
-    "elo": 847,
+    "elo": 867,
     "game_cap": 2,
     "missed_games": 0,
     "last_assigned_at": "2026-03-01T14:23:43.317Z",
-    "last_opponent": "3591948853"
+    "last_opponent": "25126079448"
   },
   "4180490094": {
     "name": "Woololo",
@@ -356,7 +356,7 @@
     "elo": 1036,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-03-03T02:05:20.715Z",
+    "last_assigned_at": "2026-03-03T05:13:47.388Z",
     "last_opponent": "99110844848"
   },
   "71155120841": {
@@ -513,11 +513,11 @@
   },
   "25126079448": {
     "name": "Adrian D'Agostino",
-    "elo": 840,
+    "elo": 820,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-03-01T14:23:43.317Z",
-    "last_opponent": "23105988432"
+    "last_assigned_at": "2026-03-03T05:13:47.388Z",
+    "last_opponent": "4155523061"
   },
   "89114164339": {
     "name": "Blacksmith",
