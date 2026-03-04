@@ -28,8 +28,8 @@
     "elo": 1038,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-03-03T02:05:20.102Z",
-    "last_opponent": "71148639731"
+    "last_assigned_at": "2026-03-04T22:30:09.932Z",
+    "last_opponent": "7499140988"
   },
   "1822261234": {
     "name": "fifi",
@@ -57,11 +57,11 @@
   },
   "3346775331": {
     "name": "Gatsu12",
-    "elo": 1316,
+    "elo": 1321,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "88117806994",
-    "last_assigned_at": "2026-03-04T18:50:56.208Z"
+    "last_opponent": "9780712014",
+    "last_assigned_at": "2026-03-04T22:30:09.932Z"
   },
   "3428471447": {
     "name": "AyanM",
@@ -177,11 +177,11 @@
   },
   "9313400553": {
     "name": "Word Walker",
-    "elo": 780,
+    "elo": 764,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "23154545458",
-    "last_assigned_at": "2026-03-04T01:59:07.314Z"
+    "last_opponent": "25126079448",
+    "last_assigned_at": "2026-03-04T22:30:10.503Z"
   },
   "4543063534": {
     "name": "Farah",
@@ -259,9 +259,9 @@
     "name": "angrybeavers",
     "elo": 1000,
     "game_cap": 2,
-    "missed_games": 4,
+    "missed_games": 5,
     "last_assigned_at": "2026-03-01T22:23:05.260Z",
-    "last_opponent": "64114468853"
+    "last_opponent": "1382545505"
   },
   "29146480207": {
     "name": "Boris Grishenko",
@@ -513,11 +513,11 @@
   },
   "25126079448": {
     "name": "Adrian D'Agostino",
-    "elo": 844,
+    "elo": 860,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-03-04T20:31:04.459Z",
-    "last_opponent": "88117806994"
+    "last_assigned_at": "2026-03-04T22:30:09.224Z",
+    "last_opponent": "9313400553"
   },
   "89114164339": {
     "name": "Blacksmith",
@@ -580,7 +580,7 @@
     "elo": 1006,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-03-04T20:31:05.188Z",
+    "last_assigned_at": "2026-03-04T22:30:09.224Z",
     "last_opponent": "3346775331"
   },
   "59127253198": {
@@ -593,11 +593,11 @@
   },
   "9780712014": {
     "name": "Acuna42",
-    "elo": 976,
+    "elo": 971,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-03-04T18:50:56.208Z",
-    "last_opponent": "53134900057"
+    "last_assigned_at": "2026-03-04T22:30:10.503Z",
+    "last_opponent": "3346775331"
   },
   "53134900057": {
     "name": "extelon",
