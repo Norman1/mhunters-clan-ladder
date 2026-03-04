@@ -137,11 +137,11 @@
   },
   "23154545458": {
     "name": "Dark Magician Girl",
-    "elo": 1159,
+    "elo": 1163,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "3346775331",
-    "last_assigned_at": "2026-03-02T18:47:56.983Z"
+    "last_opponent": "9313400553",
+    "last_assigned_at": "2026-03-04T01:59:06.742Z"
   },
   "9482920905": {
     "name": "Ethosys",
@@ -177,11 +177,11 @@
   },
   "9313400553": {
     "name": "Word Walker",
-    "elo": 784,
+    "elo": 780,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "53134900057",
-    "last_assigned_at": "2026-03-03T02:05:19.325Z"
+    "last_opponent": "23154545458",
+    "last_assigned_at": "2026-03-04T01:59:07.314Z"
   },
   "4543063534": {
     "name": "Farah",
@@ -353,11 +353,11 @@
   },
   "71148639731": {
     "name": "Nick",
-    "elo": 1054,
+    "elo": 1062,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-03-03T22:28:12.017Z",
-    "last_opponent": "53134900057"
+    "last_assigned_at": "2026-03-04T01:59:06.742Z",
+    "last_opponent": "25126079448"
   },
   "71155120841": {
     "name": "Ventura",
@@ -513,11 +513,11 @@
   },
   "25126079448": {
     "name": "Adrian D'Agostino",
-    "elo": 820,
+    "elo": 812,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-03-03T05:13:47.388Z",
-    "last_opponent": "4155523061"
+    "last_assigned_at": "2026-03-04T01:59:07.314Z",
+    "last_opponent": "71148639731"
   },
   "89114164339": {
     "name": "Blacksmith",
