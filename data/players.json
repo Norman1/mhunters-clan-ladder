@@ -85,7 +85,7 @@
     "game_cap": 2,
     "missed_games": 0,
     "last_opponent": "88110265403",
-    "last_assigned_at": "2026-03-05T06:51:27.631Z"
+    "last_assigned_at": "2026-03-05T18:03:21.658Z"
   },
   "3737155555": {
     "name": "Jumpshott",
@@ -125,7 +125,7 @@
     "game_cap": 2,
     "missed_games": 0,
     "last_opponent": "3631391841",
-    "last_assigned_at": "2026-03-05T06:51:27.631Z"
+    "last_assigned_at": "2026-03-05T18:03:21.071Z"
   },
   "84143567121": {
     "name": "Poldi",
@@ -137,11 +137,11 @@
   },
   "23154545458": {
     "name": "Dark Magician Girl",
-    "elo": 1133,
+    "elo": 1109,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "53134900057",
-    "last_assigned_at": "2026-03-04T16:42:46.010Z"
+    "last_opponent": "71148639731",
+    "last_assigned_at": "2026-03-05T18:03:21.658Z"
   },
   "9482920905": {
     "name": "Ethosys",
@@ -353,11 +353,11 @@
   },
   "71148639731": {
     "name": "Nick",
-    "elo": 1062,
+    "elo": 1086,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-03-04T01:59:06.742Z",
-    "last_opponent": "25126079448"
+    "last_assigned_at": "2026-03-05T18:03:21.071Z",
+    "last_opponent": "23154545458"
   },
   "71155120841": {
     "name": "Ventura",
