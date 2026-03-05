@@ -481,19 +481,19 @@
   },
   "23105988432": {
     "name": "Socrates",
-    "elo": 968,
+    "elo": 956,
     "game_cap": 2,
     "missed_games": 0,
     "last_assigned_at": "2026-03-01T14:23:42.711Z",
-    "last_opponent": "25126079448"
+    "last_opponent": "16127869941"
   },
   "16127869941": {
     "name": "gg",
-    "elo": 1115,
+    "elo": 1127,
     "game_cap": 2,
     "missed_games": 0,
     "last_assigned_at": "2026-03-02T18:47:56.388Z",
-    "last_opponent": "9313400553"
+    "last_opponent": "23105988432"
   },
   "4353717389": {
     "name": "Krys",
