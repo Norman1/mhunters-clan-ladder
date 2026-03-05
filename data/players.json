@@ -68,7 +68,7 @@
     "elo": 994,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-03-05T06:51:26.917Z",
+    "last_assigned_at": "2026-03-05T08:40:29.429Z",
     "last_opponent": "88110265403"
   },
   "3591948853": {
@@ -291,9 +291,9 @@
     "name": "Marengo",
     "elo": 1000,
     "game_cap": 2,
-    "missed_games": 4,
+    "missed_games": 5,
     "last_assigned_at": "2026-03-02T06:57:27.269Z",
-    "last_opponent": "3631391841"
+    "last_opponent": "8222729424"
   },
   "6630558043": {
     "name": "Yobledore",
@@ -572,8 +572,8 @@
     "elo": 892,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-03-02T06:57:27.269Z",
-    "last_opponent": "9313400553"
+    "last_assigned_at": "2026-03-05T08:40:29.429Z",
+    "last_opponent": "13151753517"
   },
   "88117806994": {
     "name": "RameurA",
