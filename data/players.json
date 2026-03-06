@@ -73,11 +73,11 @@
   },
   "3591948853": {
     "name": "jdg5201",
-    "elo": 968,
+    "elo": 956,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-03-04T16:42:46.010Z",
-    "last_opponent": "9780712014"
+    "last_assigned_at": "2026-03-06T05:09:12.648Z",
+    "last_opponent": "23154545458"
   },
   "3631391841": {
     "name": "BlackBart",
@@ -137,10 +137,10 @@
   },
   "23154545458": {
     "name": "Dark Magician Girl",
-    "elo": 1109,
+    "elo": 1121,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "71148639731",
+    "last_opponent": "3591948853",
     "last_assigned_at": "2026-03-05T18:03:21.658Z"
   },
   "9482920905": {
@@ -276,7 +276,7 @@
     "elo": 1044,
     "game_cap": 2,
     "missed_games": 2,
-    "last_assigned_at": "2026-02-27T02:00:14.002Z",
+    "last_assigned_at": "2026-03-06T05:09:12.648Z",
     "last_opponent": "3631391841"
   },
   "93159203503": {
