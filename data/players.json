@@ -61,7 +61,7 @@
     "game_cap": 2,
     "missed_games": 0,
     "last_opponent": "3631391841",
-    "last_assigned_at": "2026-03-06T22:27:40.926Z"
+    "last_assigned_at": "2026-03-07T05:04:34.364Z"
   },
   "3428471447": {
     "name": "AyanM",
@@ -187,8 +187,8 @@
     "name": "Farah",
     "elo": 937,
     "game_cap": 1,
-    "missed_games": 3,
-    "last_opponent": "6411877352",
+    "missed_games": 4,
+    "last_opponent": "99110844848",
     "last_assigned_at": "2026-03-04T04:14:37.999Z"
   },
   "51156980238": {
@@ -564,8 +564,8 @@
     "elo": 867,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-03-05T06:51:26.917Z",
-    "last_opponent": "9313400553"
+    "last_assigned_at": "2026-03-07T05:04:34.364Z",
+    "last_opponent": "4543063534"
   },
   "8222729424": {
     "name": "Al AssAff",
