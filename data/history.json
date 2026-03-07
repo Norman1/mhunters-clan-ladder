@@ -7042,5 +7042,15 @@
     "game_id": "43776688",
     "finished_at": "2026-03-06T22:27:40.041Z",
     "note": "Declined"
+  },
+  {
+    "game_id": "43753164",
+    "finished_at": "2026-03-07T01:54:37.356Z",
+    "note": "Timed Out (Lobby)"
+  },
+  {
+    "game_id": "43778419",
+    "finished_at": "2026-03-07T01:54:38.202Z",
+    "note": "Declined"
   }
 ]
