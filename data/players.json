@@ -97,7 +97,7 @@
   },
   "4155523061": {
     "name": "AGEHNT SMITH",
-    "elo": 846,
+    "elo": 875,
     "game_cap": 2,
     "missed_games": 0,
     "last_assigned_at": "2026-03-06T18:43:39.160Z",
@@ -609,11 +609,11 @@
   },
   "4379764745": {
     "name": "Malatya44",
-    "elo": 1013,
+    "elo": 984,
     "game_cap": 2,
     "missed_games": 0,
     "last_assigned_at": "2026-03-06T22:27:41.568Z",
-    "last_opponent": "3631391841"
+    "last_opponent": "4155523061"
   },
   "31104791368": {
     "name": "Iamtznu",
