@@ -7187,5 +7187,35 @@
     "finished_at": "2026-03-09T10:43:52.699Z",
     "template_id": 1573495,
     "elo_change": 29
+  },
+  {
+    "game_id": "43767760",
+    "p1_id": "88110265403",
+    "p2_id": "71148639731",
+    "winner_id": "88110265403",
+    "loser_id": "71148639731",
+    "finished_at": "2026-03-09T13:01:36.830Z",
+    "template_id": 1573497,
+    "elo_change": 12
+  },
+  {
+    "game_id": "43776690",
+    "p1_id": "3591948853",
+    "p2_id": "8222729424",
+    "winner_id": "8222729424",
+    "loser_id": "3591948853",
+    "finished_at": "2026-03-09T13:01:37.030Z",
+    "template_id": 1431579,
+    "elo_change": 23
+  },
+  {
+    "game_id": "43795329",
+    "finished_at": "2026-03-09T13:01:37.532Z",
+    "note": "Declined"
+  },
+  {
+    "game_id": "43795961",
+    "finished_at": "2026-03-09T13:01:37.630Z",
+    "note": "Declined"
   }
 ]
