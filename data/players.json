@@ -137,10 +137,10 @@
   },
   "23154545458": {
     "name": "Dark Magician Girl",
-    "elo": 1102,
+    "elo": 1115,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "9313400553",
+    "last_opponent": "9780712014",
     "last_assigned_at": "2026-03-10T04:13:48.725Z"
   },
   "9482920905": {
@@ -593,11 +593,11 @@
   },
   "9780712014": {
     "name": "Acuna42",
-    "elo": 972,
+    "elo": 959,
     "game_cap": 2,
     "missed_games": 0,
     "last_assigned_at": "2026-03-09T16:56:13.565Z",
-    "last_opponent": "4379764745"
+    "last_opponent": "23154545458"
   },
   "53134900057": {
     "name": "extelon",
