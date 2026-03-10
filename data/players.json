@@ -57,11 +57,11 @@
   },
   "3346775331": {
     "name": "Gatsu12",
-    "elo": 1350,
+    "elo": 1354,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "56133341636",
-    "last_assigned_at": "2026-03-09T16:56:13.565Z"
+    "last_opponent": "9780712014",
+    "last_assigned_at": "2026-03-10T18:46:50.515Z"
   },
   "3428471447": {
     "name": "AyanM",
@@ -141,7 +141,7 @@
     "game_cap": 2,
     "missed_games": 0,
     "last_opponent": "9780712014",
-    "last_assigned_at": "2026-03-10T04:13:48.725Z"
+    "last_assigned_at": "2026-03-10T18:46:50.515Z"
   },
   "9482920905": {
     "name": "Ethosys",
@@ -593,11 +593,11 @@
   },
   "9780712014": {
     "name": "Acuna42",
-    "elo": 959,
+    "elo": 955,
     "game_cap": 2,
     "missed_games": 0,
     "last_assigned_at": "2026-03-09T16:56:13.565Z",
-    "last_opponent": "23154545458"
+    "last_opponent": "3346775331"
   },
   "53134900057": {
     "name": "extelon",
