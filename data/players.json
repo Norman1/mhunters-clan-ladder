@@ -137,10 +137,10 @@
   },
   "23154545458": {
     "name": "Dark Magician Girl",
-    "elo": 1137,
+    "elo": 1102,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "3631391841",
+    "last_opponent": "9313400553",
     "last_assigned_at": "2026-03-09T05:18:37.080Z"
   },
   "9482920905": {
@@ -177,10 +177,10 @@
   },
   "9313400553": {
     "name": "Word Walker",
-    "elo": 809,
+    "elo": 844,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "1382545505",
+    "last_opponent": "23154545458",
     "last_assigned_at": "2026-03-08T02:03:37.238Z"
   },
   "4543063534": {
