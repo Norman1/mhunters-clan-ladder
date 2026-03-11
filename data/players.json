@@ -65,11 +65,11 @@
   },
   "3428471447": {
     "name": "AyanM",
-    "elo": 994,
+    "elo": 969,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-03-05T08:40:29.429Z",
-    "last_opponent": "88110265403"
+    "last_assigned_at": "2026-03-11T01:57:22.919Z",
+    "last_opponent": "8222729424"
   },
   "3591948853": {
     "name": "jdg5201",
@@ -443,7 +443,7 @@
     "name": "Svarta Hingsten",
     "elo": 1056,
     "game_cap": 2,
-    "missed_games": 3,
+    "missed_games": 0,
     "last_assigned_at": "2026-03-10T14:47:03.910Z",
     "last_opponent": "3346775331"
   },
@@ -569,11 +569,11 @@
   },
   "8222729424": {
     "name": "Al AssAff",
-    "elo": 898,
+    "elo": 923,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-03-09T13:01:39.728Z",
-    "last_opponent": "3591948853"
+    "last_assigned_at": "2026-03-11T01:57:23.489Z",
+    "last_opponent": "3428471447"
   },
   "88117806994": {
     "name": "RameurA",
@@ -596,7 +596,7 @@
     "elo": 955,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-03-09T16:56:13.565Z",
+    "last_assigned_at": "2026-03-11T01:57:23.489Z",
     "last_opponent": "3346775331"
   },
   "53134900057": {
