@@ -81,11 +81,11 @@
   },
   "3631391841": {
     "name": "BlackBart",
-    "elo": 1037,
+    "elo": 1050,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "3591948853",
-    "last_assigned_at": "2026-03-09T13:01:39.171Z"
+    "last_opponent": "4155523061",
+    "last_assigned_at": "2026-03-11T14:44:03.255Z"
   },
   "3737155555": {
     "name": "Jumpshott",
@@ -97,11 +97,11 @@
   },
   "4155523061": {
     "name": "AGEHNT SMITH",
-    "elo": 901,
+    "elo": 888,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-03-11T04:13:23.522Z",
-    "last_opponent": "53134900057"
+    "last_assigned_at": "2026-03-11T14:44:03.853Z",
+    "last_opponent": "3631391841"
   },
   "4180490094": {
     "name": "Woololo",
@@ -577,11 +577,11 @@
   },
   "88117806994": {
     "name": "RameurA",
-    "elo": 1006,
+    "elo": 983,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-03-04T22:30:09.224Z",
-    "last_opponent": "3346775331"
+    "last_assigned_at": "2026-03-11T14:44:03.255Z",
+    "last_opponent": "53134900057"
   },
   "59127253198": {
     "name": "Pp",
@@ -601,11 +601,11 @@
   },
   "53134900057": {
     "name": "extelon",
-    "elo": 959,
+    "elo": 982,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-03-11T08:40:14.155Z",
-    "last_opponent": "4155523061"
+    "last_assigned_at": "2026-03-11T14:44:03.853Z",
+    "last_opponent": "88117806994"
   },
   "4379764745": {
     "name": "Malatya44",
