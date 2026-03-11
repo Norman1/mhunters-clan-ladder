@@ -251,9 +251,9 @@
     "name": "Maddest",
     "elo": 1023,
     "game_cap": 2,
-    "missed_games": 4,
+    "missed_games": 5,
     "last_assigned_at": "2026-03-08T08:30:47.679Z",
-    "last_opponent": "25149077292"
+    "last_opponent": "99110844848"
   },
   "7499140988": {
     "name": "angrybeavers",
@@ -419,9 +419,9 @@
     "name": "EVIL DRAG QUEEN",
     "elo": 899,
     "game_cap": 2,
-    "missed_games": 4,
+    "missed_games": 5,
     "last_assigned_at": "2026-03-08T08:30:48.418Z",
-    "last_opponent": "4942304274"
+    "last_opponent": "25126079448"
   },
   "5520443420": {
     "name": "pottygoboomboom",
@@ -516,8 +516,8 @@
     "elo": 858,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-03-08T08:30:48.418Z",
-    "last_opponent": "99110844848"
+    "last_assigned_at": "2026-03-11T08:40:14.155Z",
+    "last_opponent": "25149077292"
   },
   "89114164339": {
     "name": "Blacksmith",
@@ -565,7 +565,7 @@
     "game_cap": 2,
     "missed_games": 0,
     "last_assigned_at": "2026-03-08T08:30:47.679Z",
-    "last_opponent": "25126079448"
+    "last_opponent": "4942304274"
   },
   "8222729424": {
     "name": "Al AssAff",
@@ -604,7 +604,7 @@
     "elo": 959,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-03-06T18:43:39.160Z",
+    "last_assigned_at": "2026-03-11T08:40:14.155Z",
     "last_opponent": "4155523061"
   },
   "4379764745": {
