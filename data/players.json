@@ -75,15 +75,15 @@
     "name": "jdg5201",
     "elo": 903,
     "game_cap": 2,
-    "missed_games": 1,
+    "missed_games": 3,
     "last_assigned_at": "2026-03-09T13:01:40.293Z",
-    "last_opponent": "3631391841"
+    "last_opponent": "88110265403"
   },
   "3631391841": {
     "name": "BlackBart",
     "elo": 1088,
     "game_cap": 2,
-    "missed_games": 1,
+    "missed_games": 0,
     "last_opponent": "79105823914",
     "last_assigned_at": "2026-03-12T10:38:02.918Z"
   },
@@ -117,15 +117,15 @@
     "game_cap": 2,
     "missed_games": 0,
     "last_opponent": "3631391841",
-    "last_assigned_at": "2026-03-12T10:38:02.918Z"
+    "last_assigned_at": "2026-03-12T14:48:14.352Z"
   },
   "88110265403": {
     "name": "Crouton",
     "elo": 1270,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "79105823914",
-    "last_assigned_at": "2026-03-09T22:27:49.414Z"
+    "last_opponent": "3591948853",
+    "last_assigned_at": "2026-03-12T14:48:14.352Z"
   },
   "84143567121": {
     "name": "Poldi",
@@ -613,7 +613,7 @@
     "game_cap": 2,
     "missed_games": 2,
     "last_assigned_at": "2026-03-09T22:27:48.853Z",
-    "last_opponent": "79105823914"
+    "last_opponent": "3591948853"
   },
   "31104791368": {
     "name": "Iamtznu",
