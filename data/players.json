@@ -25,11 +25,11 @@
   },
   "1382545505": {
     "name": "Ree",
-    "elo": 1025,
+    "elo": 1043,
     "game_cap": 2,
     "missed_games": 0,
     "last_assigned_at": "2026-03-08T02:03:38.022Z",
-    "last_opponent": "9313400553"
+    "last_opponent": "79105823914"
   },
   "1822261234": {
     "name": "fifi",
@@ -113,10 +113,10 @@
   },
   "79105823914": {
     "name": "krinid",
-    "elo": 992,
+    "elo": 974,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "4379764745",
+    "last_opponent": "1382545505",
     "last_assigned_at": "2026-03-10T14:47:03.910Z"
   },
   "88110265403": {
