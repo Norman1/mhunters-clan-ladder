@@ -25,11 +25,11 @@
   },
   "1382545505": {
     "name": "Ree",
-    "elo": 1043,
+    "elo": 1058,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-03-12T10:38:02.294Z",
-    "last_opponent": "79105823914"
+    "last_assigned_at": "2026-03-13T05:12:23.647Z",
+    "last_opponent": "53134900057"
   },
   "1822261234": {
     "name": "fifi",
@@ -137,11 +137,11 @@
   },
   "23154545458": {
     "name": "Dark Magician Girl",
-    "elo": 1115,
+    "elo": 1135,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "9780712014",
-    "last_assigned_at": "2026-03-10T18:46:50.515Z"
+    "last_opponent": "71148639731",
+    "last_assigned_at": "2026-03-13T05:12:24.246Z"
   },
   "9482920905": {
     "name": "Ethosys",
@@ -181,7 +181,7 @@
     "game_cap": 2,
     "missed_games": 0,
     "last_opponent": "56133341636",
-    "last_assigned_at": "2026-03-11T22:26:22.940Z"
+    "last_assigned_at": "2026-03-13T05:12:23.647Z"
   },
   "4543063534": {
     "name": "Farah",
@@ -353,11 +353,11 @@
   },
   "71148639731": {
     "name": "Nick",
-    "elo": 1116,
+    "elo": 1096,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-03-10T04:13:48.725Z",
-    "last_opponent": "16127869941"
+    "last_assigned_at": "2026-03-13T05:12:22.844Z",
+    "last_opponent": "23154545458"
   },
   "71155120841": {
     "name": "Ventura",
@@ -513,11 +513,11 @@
   },
   "25126079448": {
     "name": "Adrian D'Agostino",
-    "elo": 858,
+    "elo": 843,
     "game_cap": 2,
     "missed_games": 0,
     "last_assigned_at": "2026-03-11T08:40:14.155Z",
-    "last_opponent": "25149077292"
+    "last_opponent": "53134900057"
   },
   "89114164339": {
     "name": "Blacksmith",
@@ -604,8 +604,8 @@
     "elo": 943,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-03-12T10:38:02.294Z",
-    "last_opponent": "3631391841"
+    "last_assigned_at": "2026-03-13T05:12:24.246Z",
+    "last_opponent": "1382545505"
   },
   "4379764745": {
     "name": "Malatya44",
