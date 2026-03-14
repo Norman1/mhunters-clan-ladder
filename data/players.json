@@ -361,11 +361,11 @@
   },
   "71155120841": {
     "name": "Ventura",
-    "elo": 1065,
+    "elo": 1077,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-03-13T18:41:05.780Z",
-    "last_opponent": "25126079448"
+    "last_assigned_at": "2026-03-14T01:58:38.289Z",
+    "last_opponent": "53134900057"
   },
   "6411877352": {
     "name": "Kratos",
@@ -516,8 +516,8 @@
     "elo": 861,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-03-13T22:27:22.722Z",
-    "last_opponent": "71155120841"
+    "last_assigned_at": "2026-03-14T01:58:38.289Z",
+    "last_opponent": "9780712014"
   },
   "89114164339": {
     "name": "Blacksmith",
@@ -595,17 +595,17 @@
     "name": "Acuna42",
     "elo": 973,
     "game_cap": 2,
-    "missed_games": 0,
-    "last_assigned_at": "2026-03-13T22:27:21.950Z",
-    "last_opponent": "8222729424"
+    "missed_games": 1,
+    "last_assigned_at": "2026-03-14T01:58:37.686Z",
+    "last_opponent": "25126079448"
   },
   "53134900057": {
     "name": "extelon",
-    "elo": 922,
+    "elo": 910,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-03-13T20:33:45.954Z",
-    "last_opponent": "23154545458"
+    "last_assigned_at": "2026-03-14T01:58:37.686Z",
+    "last_opponent": "71155120841"
   },
   "4379764745": {
     "name": "Malatya44",
