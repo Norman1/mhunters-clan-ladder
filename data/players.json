@@ -57,11 +57,11 @@
   },
   "3346775331": {
     "name": "Gatsu12",
-    "elo": 1358,
+    "elo": 1366,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "23105988432",
-    "last_assigned_at": "2026-03-11T22:26:22.241Z"
+    "last_opponent": "16127869941",
+    "last_assigned_at": "2026-03-14T14:28:24.671Z"
   },
   "3428471447": {
     "name": "AyanM",
@@ -81,10 +81,10 @@
   },
   "3631391841": {
     "name": "BlackBart",
-    "elo": 1088,
+    "elo": 1109,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "79105823914",
+    "last_opponent": "16127869941",
     "last_assigned_at": "2026-03-12T18:53:29.635Z"
   },
   "3737155555": {
@@ -371,9 +371,9 @@
     "name": "Kratos",
     "elo": 986,
     "game_cap": 2,
-    "missed_games": 3,
+    "missed_games": 4,
     "last_assigned_at": "2026-03-11T12:58:50.972Z",
-    "last_opponent": "31104791368"
+    "last_opponent": "99110844848"
   },
   "56133341636": {
     "name": "Bastian Pyornkrachzark",
@@ -489,11 +489,11 @@
   },
   "16127869941": {
     "name": "gg",
-    "elo": 1115,
+    "elo": 1086,
     "game_cap": 2,
     "missed_games": 0,
     "last_assigned_at": "2026-03-12T18:53:29.635Z",
-    "last_opponent": "4155523061"
+    "last_opponent": "3631391841"
   },
   "4353717389": {
     "name": "Krys",
@@ -564,8 +564,8 @@
     "elo": 913,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-03-14T04:16:32.091Z",
-    "last_opponent": "3428471447"
+    "last_assigned_at": "2026-03-14T14:28:24.671Z",
+    "last_opponent": "6411877352"
   },
   "8222729424": {
     "name": "Al AssAff",
