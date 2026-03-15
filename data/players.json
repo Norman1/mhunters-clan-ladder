@@ -28,7 +28,7 @@
     "elo": 1074,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-03-13T05:12:23.647Z",
+    "last_assigned_at": "2026-03-15T14:29:29.254Z",
     "last_opponent": "23105988432"
   },
   "1822261234": {
@@ -97,11 +97,11 @@
   },
   "4155523061": {
     "name": "AGEHNT SMITH",
-    "elo": 903,
+    "elo": 888,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-03-12T20:34:15.157Z",
-    "last_opponent": "16127869941"
+    "last_assigned_at": "2026-03-15T14:29:29.254Z",
+    "last_opponent": "79105823914"
   },
   "4180490094": {
     "name": "Woololo",
@@ -113,11 +113,11 @@
   },
   "79105823914": {
     "name": "krinid",
-    "elo": 999,
+    "elo": 1014,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "74149320612",
-    "last_assigned_at": "2026-03-12T20:34:15.157Z"
+    "last_opponent": "4155523061",
+    "last_assigned_at": "2026-03-15T14:29:29.870Z"
   },
   "88110265403": {
     "name": "Crouton",
@@ -524,7 +524,7 @@
     "elo": 1000,
     "game_cap": 2,
     "missed_games": 4,
-    "last_assigned_at": "2026-02-22T14:25:37.719Z",
+    "last_assigned_at": "2026-03-15T14:29:29.870Z",
     "last_opponent": "25126079448"
   },
   "7337119889": {
