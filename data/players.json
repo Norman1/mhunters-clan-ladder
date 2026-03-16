@@ -5,7 +5,7 @@
     "game_cap": 2,
     "missed_games": 41,
     "last_opponent": "9313400553",
-    "last_assigned_at": "2026-01-19T01:48:37.750Z"
+    "last_assigned_at": "2026-03-16T02:24:56.506Z"
   },
   "81598466": {
     "name": "Tim",
@@ -139,8 +139,8 @@
     "name": "Dark Magician Girl",
     "elo": 1135,
     "game_cap": 2,
-    "missed_games": 0,
-    "last_opponent": "3346775331",
+    "missed_games": 1,
+    "last_opponent": "71148639731",
     "last_assigned_at": "2026-03-15T22:27:04.264Z"
   },
   "9482920905": {
@@ -149,7 +149,7 @@
     "game_cap": 2,
     "missed_games": 23,
     "last_opponent": "58134761580",
-    "last_assigned_at": "2026-01-18T22:19:28.844Z"
+    "last_assigned_at": "2026-03-16T02:24:56.506Z"
   },
   "8294358602": {
     "name": "Wolkenstern",
@@ -357,7 +357,7 @@
     "game_cap": 2,
     "missed_games": 0,
     "last_assigned_at": "2026-03-15T02:23:51.859Z",
-    "last_opponent": "53134900057"
+    "last_opponent": "23154545458"
   },
   "71155120841": {
     "name": "Ventura",
