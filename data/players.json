@@ -81,11 +81,11 @@
   },
   "3631391841": {
     "name": "BlackBart",
-    "elo": 1121,
+    "elo": 1087,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "88117806994",
-    "last_assigned_at": "2026-03-16T10:52:24.570Z"
+    "last_opponent": "9313400553",
+    "last_assigned_at": "2026-03-16T14:59:05.577Z"
   },
   "3737155555": {
     "name": "Jumpshott",
@@ -177,11 +177,11 @@
   },
   "9313400553": {
     "name": "Word Walker",
-    "elo": 817,
+    "elo": 851,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "9780712014",
-    "last_assigned_at": "2026-03-16T10:52:24.570Z"
+    "last_opponent": "3631391841",
+    "last_assigned_at": "2026-03-16T14:59:04.974Z"
   },
   "4543063534": {
     "name": "Farah",
@@ -361,11 +361,11 @@
   },
   "71155120841": {
     "name": "Ventura",
-    "elo": 1084,
+    "elo": 1093,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-03-14T18:38:05.215Z",
-    "last_opponent": "9313400553"
+    "last_assigned_at": "2026-03-16T14:59:05.577Z",
+    "last_opponent": "25126079448"
   },
   "6411877352": {
     "name": "Kratos",
@@ -513,11 +513,11 @@
   },
   "25126079448": {
     "name": "Adrian D'Agostino",
-    "elo": 861,
+    "elo": 852,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-03-14T01:58:38.289Z",
-    "last_opponent": "9780712014"
+    "last_assigned_at": "2026-03-16T14:59:04.212Z",
+    "last_opponent": "71155120841"
   },
   "89114164339": {
     "name": "Blacksmith",
@@ -579,8 +579,8 @@
     "name": "RameurA",
     "elo": 960,
     "game_cap": 2,
-    "missed_games": 1,
-    "last_assigned_at": "2026-03-16T10:52:23.884Z",
+    "missed_games": 0,
+    "last_assigned_at": "2026-03-16T14:59:04.974Z",
     "last_opponent": "9780712014"
   },
   "59127253198": {
@@ -596,7 +596,7 @@
     "elo": 919,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-03-16T10:52:23.884Z",
+    "last_assigned_at": "2026-03-16T14:59:04.212Z",
     "last_opponent": "88117806994"
   },
   "53134900057": {
