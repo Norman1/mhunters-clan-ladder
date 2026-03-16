@@ -81,11 +81,11 @@
   },
   "3631391841": {
     "name": "BlackBart",
-    "elo": 1109,
+    "elo": 1121,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "16127869941",
-    "last_assigned_at": "2026-03-14T18:38:05.215Z"
+    "last_opponent": "88117806994",
+    "last_assigned_at": "2026-03-16T10:52:24.570Z"
   },
   "3737155555": {
     "name": "Jumpshott",
@@ -139,7 +139,7 @@
     "name": "Dark Magician Girl",
     "elo": 1135,
     "game_cap": 2,
-    "missed_games": 1,
+    "missed_games": 0,
     "last_opponent": "71148639731",
     "last_assigned_at": "2026-03-16T05:48:33.419Z"
   },
@@ -177,11 +177,11 @@
   },
   "9313400553": {
     "name": "Word Walker",
-    "elo": 788,
+    "elo": 817,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "16127869941",
-    "last_assigned_at": "2026-03-15T22:27:06.159Z"
+    "last_opponent": "9780712014",
+    "last_assigned_at": "2026-03-16T10:52:24.570Z"
   },
   "4543063534": {
     "name": "Farah",
@@ -577,11 +577,11 @@
   },
   "88117806994": {
     "name": "RameurA",
-    "elo": 972,
+    "elo": 960,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-03-14T16:30:34.005Z",
-    "last_opponent": "53134900057"
+    "last_assigned_at": "2026-03-16T10:52:23.884Z",
+    "last_opponent": "3631391841"
   },
   "59127253198": {
     "name": "Pp",
@@ -593,11 +593,11 @@
   },
   "9780712014": {
     "name": "Acuna42",
-    "elo": 948,
+    "elo": 919,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-03-15T22:27:05.024Z",
-    "last_opponent": "53134900057"
+    "last_assigned_at": "2026-03-16T10:52:23.884Z",
+    "last_opponent": "9313400553"
   },
   "53134900057": {
     "name": "extelon",
