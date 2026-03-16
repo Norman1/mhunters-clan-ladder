@@ -565,7 +565,7 @@
     "game_cap": 2,
     "missed_games": 1,
     "last_assigned_at": "2026-03-16T20:37:55.619Z",
-    "last_opponent": "8222729424"
+    "last_opponent": "53134900057"
   },
   "8222729424": {
     "name": "Al AssAff",
@@ -604,15 +604,15 @@
     "elo": 877,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-03-16T20:37:55.619Z",
-    "last_opponent": "9313400553"
+    "last_assigned_at": "2026-03-16T22:32:35.431Z",
+    "last_opponent": "99110844848"
   },
   "4379764745": {
     "name": "Malatya44",
     "elo": 962,
     "game_cap": 2,
     "missed_games": 2,
-    "last_assigned_at": "2026-03-09T22:27:48.853Z",
+    "last_assigned_at": "2026-03-16T22:32:35.431Z",
     "last_opponent": "3591948853"
   },
   "31104791368": {
