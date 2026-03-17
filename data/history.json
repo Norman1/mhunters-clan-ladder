@@ -8435,5 +8435,17 @@
     "template_id": 1390041,
     "finished_at": "2026-03-17T13:10:51.688Z",
     "note": "Declined"
+  },
+  {
+    "game_id": "43812849",
+    "created_at": "2026-03-11T04:13:23.522Z",
+    "p1_id": "4155523061",
+    "p2_id": "74149320612",
+    "winner_id": "74149320612",
+    "loser_id": "4155523061",
+    "finished_at": "2026-03-17T17:03:02.001Z",
+    "template_id": 1390041,
+    "elo_change": 12,
+    "turns": 9
   }
 ]
