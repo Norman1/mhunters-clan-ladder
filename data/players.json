@@ -45,7 +45,7 @@
     "game_cap": 2,
     "missed_games": 20,
     "last_opponent": "3591948853",
-    "last_assigned_at": "2026-01-20T04:43:55.837Z"
+    "last_assigned_at": "2026-03-17T05:20:49.797Z"
   },
   "3330212221": {
     "name": "blue_stream",
@@ -61,7 +61,7 @@
     "game_cap": 2,
     "missed_games": 0,
     "last_opponent": "16127869941",
-    "last_assigned_at": "2026-03-16T19:00:29.963Z"
+    "last_assigned_at": "2026-03-17T05:20:49.204Z"
   },
   "3428471447": {
     "name": "AyanM",
@@ -177,11 +177,11 @@
   },
   "9313400553": {
     "name": "Word Walker",
-    "elo": 874,
+    "elo": 855,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "53134900057",
-    "last_assigned_at": "2026-03-16T20:37:56.395Z"
+    "last_opponent": "8222729424",
+    "last_assigned_at": "2026-03-17T05:20:49.797Z"
   },
   "4543063534": {
     "name": "Farah",
@@ -569,11 +569,11 @@
   },
   "8222729424": {
     "name": "Al AssAff",
-    "elo": 892,
+    "elo": 911,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-03-16T20:37:56.395Z",
-    "last_opponent": "99110844848"
+    "last_assigned_at": "2026-03-17T05:20:49.204Z",
+    "last_opponent": "9313400553"
   },
   "88117806994": {
     "name": "RameurA",
