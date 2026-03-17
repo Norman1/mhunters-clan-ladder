@@ -57,10 +57,10 @@
   },
   "3346775331": {
     "name": "Gatsu12",
-    "elo": 1378,
+    "elo": 1385,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "99110844848",
+    "last_opponent": "16127869941",
     "last_assigned_at": "2026-03-16T19:00:29.963Z"
   },
   "3428471447": {
@@ -489,11 +489,11 @@
   },
   "16127869941": {
     "name": "gg",
-    "elo": 1102,
+    "elo": 1095,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-03-15T22:27:05.595Z",
-    "last_opponent": "9313400553"
+    "last_assigned_at": "2026-03-17T02:04:16.865Z",
+    "last_opponent": "3346775331"
   },
   "4353717389": {
     "name": "Krys",
@@ -563,8 +563,8 @@
     "name": "CrypticNeo1",
     "elo": 910,
     "game_cap": 2,
-    "missed_games": 1,
-    "last_assigned_at": "2026-03-16T20:37:55.619Z",
+    "missed_games": 0,
+    "last_assigned_at": "2026-03-17T02:04:16.865Z",
     "last_opponent": "53134900057"
   },
   "8222729424": {
