@@ -100,7 +100,7 @@
     "elo": 876,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-03-15T14:29:29.254Z",
+    "last_assigned_at": "2026-03-17T19:01:24.924Z",
     "last_opponent": "74149320612"
   },
   "4180490094": {
@@ -611,8 +611,8 @@
     "name": "Malatya44",
     "elo": 962,
     "game_cap": 2,
-    "missed_games": 2,
-    "last_assigned_at": "2026-03-16T22:32:35.431Z",
+    "missed_games": 0,
+    "last_assigned_at": "2026-03-17T19:01:24.924Z",
     "last_opponent": "3591948853"
   },
   "31104791368": {
