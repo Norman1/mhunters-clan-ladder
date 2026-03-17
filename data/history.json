@@ -7,7 +7,8 @@
     "loser_id": "58134761580",
     "finished_at": "2025-12-16T01:40:32.270Z",
     "template_id": 1431579,
-    "elo_change": 20
+    "elo_change": 20,
+    "turns": 5
   },
   {
     "game_id": "43091067",
@@ -27,7 +28,8 @@
     "loser_id": "9482920905",
     "finished_at": "2025-12-18T04:33:29.573Z",
     "template_id": 1431579,
-    "elo_change": 20
+    "elo_change": 20,
+    "turns": 6
   },
   {
     "game_id": "43116543",
@@ -37,7 +39,8 @@
     "loser_id": "2590914675",
     "finished_at": "2025-12-18T10:23:05.500Z",
     "template_id": 1390041,
-    "elo_change": 20
+    "elo_change": 20,
+    "turns": 4
   },
   {
     "game_id": "43116541",
@@ -52,7 +55,8 @@
     "loser_id": "8294358602",
     "finished_at": "2025-12-19T12:40:28.065Z",
     "template_id": 1390041,
-    "elo_change": 21
+    "elo_change": 21,
+    "turns": 7
   },
   {
     "game_id": "43142702",
@@ -62,7 +66,8 @@
     "loser_id": "81598466",
     "finished_at": "2025-12-19T20:22:24.170Z",
     "template_id": 1573495,
-    "elo_change": 20
+    "elo_change": 20,
+    "turns": 8
   },
   {
     "game_id": "43142706",
@@ -72,7 +77,8 @@
     "loser_id": "3631391841",
     "finished_at": "2025-12-19T22:19:25.692Z",
     "template_id": 1573495,
-    "elo_change": 19
+    "elo_change": 19,
+    "turns": 7
   },
   {
     "game_id": "43090407",
@@ -82,7 +88,8 @@
     "loser_id": "79105823914",
     "finished_at": "2025-12-20T06:29:49.889Z",
     "template_id": 1390041,
-    "elo_change": 21
+    "elo_change": 21,
+    "turns": 8
   },
   {
     "game_id": "43090409",
@@ -92,7 +99,8 @@
     "loser_id": "8294358602",
     "finished_at": "2025-12-20T20:20:01.574Z",
     "template_id": 1431579,
-    "elo_change": 19
+    "elo_change": 19,
+    "turns": 4
   },
   {
     "game_id": "43146229",
@@ -102,7 +110,8 @@
     "loser_id": "81598466",
     "finished_at": "2025-12-20T20:20:02.129Z",
     "template_id": 1573499,
-    "elo_change": 20
+    "elo_change": 20,
+    "turns": 8
   },
   {
     "game_id": "43148173",
@@ -112,7 +121,8 @@
     "loser_id": "9313400553",
     "finished_at": "2025-12-20T22:18:06.178Z",
     "template_id": 1573499,
-    "elo_change": 22
+    "elo_change": 22,
+    "turns": 2
   },
   {
     "game_id": "43152398",
@@ -122,7 +132,8 @@
     "loser_id": "88110265403",
     "finished_at": "2025-12-20T22:18:06.225Z",
     "template_id": 1573498,
-    "elo_change": 21
+    "elo_change": 21,
+    "turns": 7
   },
   {
     "game_id": "43153298",
@@ -132,7 +143,8 @@
     "loser_id": "9313400553",
     "finished_at": "2025-12-21T01:45:01.361Z",
     "template_id": 1573498,
-    "elo_change": 20
+    "elo_change": 20,
+    "turns": 4
   },
   {
     "game_id": "43142703",
@@ -152,7 +164,8 @@
     "loser_id": "9313400553",
     "finished_at": "2025-12-21T06:29:54.753Z",
     "template_id": 1573498,
-    "elo_change": 21
+    "elo_change": 21,
+    "turns": 7
   },
   {
     "game_id": "43152399",
@@ -192,7 +205,8 @@
     "loser_id": "58134761580",
     "finished_at": "2025-12-21T22:18:57.694Z",
     "template_id": 1390041,
-    "elo_change": 19
+    "elo_change": 19,
+    "turns": 7
   },
   {
     "game_id": "43156160",
@@ -257,7 +271,8 @@
     "loser_id": "88110265403",
     "finished_at": "2025-12-22T16:25:57.312Z",
     "template_id": 1390041,
-    "elo_change": 19
+    "elo_change": 19,
+    "turns": 10
   },
   {
     "game_id": "43142704",
@@ -282,7 +297,8 @@
     "loser_id": "3631391841",
     "finished_at": "2025-12-22T20:22:22.393Z",
     "template_id": 1573497,
-    "elo_change": 22
+    "elo_change": 22,
+    "turns": 8
   },
   {
     "game_id": "43167800",
@@ -307,7 +323,8 @@
     "loser_id": "3631391841",
     "finished_at": "2025-12-23T01:40:23.331Z",
     "template_id": 1573498,
-    "elo_change": 19
+    "elo_change": 19,
+    "turns": 3
   },
   {
     "game_id": "43170054",
@@ -342,7 +359,8 @@
     "loser_id": "23154545458",
     "finished_at": "2025-12-23T16:27:00.065Z",
     "template_id": 1390041,
-    "elo_change": 19
+    "elo_change": 19,
+    "turns": 9
   },
   {
     "game_id": "43172029",
@@ -547,7 +565,8 @@
     "loser_id": "23154545458",
     "finished_at": "2025-12-26T06:31:39.995Z",
     "template_id": 1390041,
-    "elo_change": 18
+    "elo_change": 18,
+    "turns": 8
   },
   {
     "game_id": "43186428",
@@ -567,7 +586,8 @@
     "loser_id": "9313400553",
     "finished_at": "2025-12-26T08:27:46.382Z",
     "template_id": 1573495,
-    "elo_change": 19
+    "elo_change": 19,
+    "turns": 6
   },
   {
     "game_id": "43191995",
@@ -597,7 +617,8 @@
     "loser_id": "3631391841",
     "finished_at": "2025-12-26T22:19:13.356Z",
     "template_id": 1573495,
-    "elo_change": 24
+    "elo_change": 24,
+    "turns": 3
   },
   {
     "game_id": "43198121",
@@ -617,7 +638,8 @@
     "loser_id": "8294358602",
     "finished_at": "2025-12-27T14:17:49.133Z",
     "template_id": 1431579,
-    "elo_change": 19
+    "elo_change": 19,
+    "turns": 4
   },
   {
     "game_id": "43202763",
@@ -652,7 +674,8 @@
     "loser_id": "84143567121",
     "finished_at": "2025-12-28T14:18:34.338Z",
     "template_id": 1390041,
-    "elo_change": 19
+    "elo_change": 19,
+    "turns": 12
   },
   {
     "game_id": "43205233",
@@ -662,7 +685,8 @@
     "loser_id": "8294358602",
     "finished_at": "2025-12-28T18:28:35.936Z",
     "template_id": 1573495,
-    "elo_change": 17
+    "elo_change": 17,
+    "turns": 4
   },
   {
     "game_id": "43210068",
@@ -682,7 +706,8 @@
     "loser_id": "84143567121",
     "finished_at": "2025-12-28T22:19:08.106Z",
     "template_id": 1573495,
-    "elo_change": 17
+    "elo_change": 17,
+    "turns": 3
   },
   {
     "game_id": "43212663",
@@ -712,7 +737,8 @@
     "loser_id": "23154545458",
     "finished_at": "2025-12-29T04:48:47.994Z",
     "template_id": 1573497,
-    "elo_change": 17
+    "elo_change": 17,
+    "turns": 5
   },
   {
     "game_id": "43192514",
@@ -772,7 +798,8 @@
     "loser_id": "84143567121",
     "finished_at": "2025-12-29T22:19:12.033Z",
     "template_id": 1573498,
-    "elo_change": 15
+    "elo_change": 15,
+    "turns": 10
   },
   {
     "game_id": "43214792",
@@ -782,7 +809,8 @@
     "loser_id": "84143567121",
     "finished_at": "2025-12-29T22:19:12.319Z",
     "template_id": 1573495,
-    "elo_change": 13
+    "elo_change": 13,
+    "turns": 7
   },
   {
     "game_id": "43198120",
@@ -792,7 +820,8 @@
     "loser_id": "9313400553",
     "finished_at": "2025-12-30T01:41:02.489Z",
     "template_id": 1573497,
-    "elo_change": 22
+    "elo_change": 22,
+    "turns": 4
   },
   {
     "game_id": "43199358",
@@ -822,7 +851,8 @@
     "loser_id": "88110265403",
     "finished_at": "2025-12-30T16:26:44.513Z",
     "template_id": 1573498,
-    "elo_change": 19
+    "elo_change": 19,
+    "turns": 9
   },
   {
     "game_id": "43227439",
@@ -842,7 +872,8 @@
     "loser_id": "3631391841",
     "finished_at": "2025-12-31T01:41:47.036Z",
     "template_id": 1390041,
-    "elo_change": 22
+    "elo_change": 22,
+    "turns": 9
   },
   {
     "game_id": "43231498",
@@ -877,7 +908,8 @@
     "loser_id": "9313400553",
     "finished_at": "2025-12-31T14:19:19.102Z",
     "template_id": 1573499,
-    "elo_change": 20
+    "elo_change": 20,
+    "turns": 4
   },
   {
     "game_id": "43229265",
@@ -887,7 +919,8 @@
     "loser_id": "6823726918",
     "finished_at": "2025-12-31T16:25:20.042Z",
     "template_id": 1390041,
-    "elo_change": 23
+    "elo_change": 23,
+    "turns": 2
   },
   {
     "game_id": "43236038",
@@ -927,7 +960,8 @@
     "loser_id": "3631391841",
     "finished_at": "2026-01-01T14:18:59.344Z",
     "template_id": 1573497,
-    "elo_change": 18
+    "elo_change": 18,
+    "turns": 13
   },
   {
     "game_id": "43240312",
@@ -952,7 +986,8 @@
     "loser_id": "9313400553",
     "finished_at": "2026-01-02T01:42:33.698Z",
     "template_id": 1573499,
-    "elo_change": 17
+    "elo_change": 17,
+    "turns": 5
   },
   {
     "game_id": "43223698",
@@ -992,7 +1027,8 @@
     "loser_id": "3631391841",
     "finished_at": "2026-01-02T08:28:37.969Z",
     "template_id": 1573499,
-    "elo_change": 16
+    "elo_change": 16,
+    "turns": 9
   },
   {
     "game_id": "43247642",
@@ -1017,7 +1053,8 @@
     "loser_id": "9313400553",
     "finished_at": "2026-01-02T16:24:58.159Z",
     "template_id": 1573495,
-    "elo_change": 15
+    "elo_change": 15,
+    "turns": 5
   },
   {
     "game_id": "43213606",
@@ -1027,7 +1064,8 @@
     "loser_id": "8294358602",
     "finished_at": "2026-01-02T18:29:14.846Z",
     "template_id": 1573495,
-    "elo_change": 13
+    "elo_change": 13,
+    "turns": 8
   },
   {
     "game_id": "43248027",
@@ -1042,7 +1080,8 @@
     "loser_id": "23154545458",
     "finished_at": "2026-01-02T20:22:04.987Z",
     "template_id": 1573499,
-    "elo_change": 15
+    "elo_change": 15,
+    "turns": 4
   },
   {
     "game_id": "43252661",
@@ -1087,7 +1126,8 @@
     "loser_id": "9313400553",
     "finished_at": "2026-01-04T01:51:33.589Z",
     "template_id": 1573498,
-    "elo_change": 12
+    "elo_change": 12,
+    "turns": 3
   },
   {
     "game_id": "43262778",
@@ -1107,7 +1147,8 @@
     "loser_id": "84143567121",
     "finished_at": "2026-01-04T14:18:17.305Z",
     "template_id": 1573499,
-    "elo_change": 12
+    "elo_change": 12,
+    "turns": 4
   },
   {
     "game_id": "43241265",
@@ -1142,7 +1183,8 @@
     "loser_id": "9313400553",
     "finished_at": "2026-01-04T22:19:11.641Z",
     "template_id": 1573495,
-    "elo_change": 11
+    "elo_change": 11,
+    "turns": 3
   },
   {
     "game_id": "43269496",
@@ -1177,7 +1219,8 @@
     "loser_id": "3631391841",
     "finished_at": "2026-01-05T16:26:43.819Z",
     "template_id": 1390041,
-    "elo_change": 20
+    "elo_change": 20,
+    "turns": 8
   },
   {
     "game_id": "43272878",
@@ -1187,7 +1230,8 @@
     "loser_id": "9313400553",
     "finished_at": "2026-01-05T20:25:06.128Z",
     "template_id": 1431579,
-    "elo_change": 18
+    "elo_change": 18,
+    "turns": 8
   },
   {
     "game_id": "43253581",
@@ -1232,7 +1276,8 @@
     "loser_id": "9313400553",
     "finished_at": "2026-01-06T20:23:15.508Z",
     "template_id": 1573495,
-    "elo_change": 15
+    "elo_change": 15,
+    "turns": 4
   },
   {
     "game_id": "43261572",
@@ -1262,7 +1307,8 @@
     "loser_id": "9313400553",
     "finished_at": "2026-01-07T04:40:19.330Z",
     "template_id": 1574451,
-    "elo_change": 10
+    "elo_change": 10,
+    "turns": -1
   },
   {
     "game_id": "43288504",
@@ -1297,7 +1343,8 @@
     "loser_id": "3631391841",
     "finished_at": "2026-01-07T12:43:55.478Z",
     "template_id": 1574451,
-    "elo_change": 20
+    "elo_change": 20,
+    "turns": -1
   },
   {
     "game_id": "43285729",
@@ -1307,7 +1354,8 @@
     "loser_id": "3631391841",
     "finished_at": "2026-01-07T12:43:55.571Z",
     "template_id": 1574451,
-    "elo_change": 17
+    "elo_change": 17,
+    "turns": 2
   },
   {
     "game_id": "43265727",
@@ -1327,7 +1375,8 @@
     "loser_id": "4543063534",
     "finished_at": "2026-01-07T18:32:49.326Z",
     "template_id": 1390041,
-    "elo_change": 28
+    "elo_change": 28,
+    "turns": 0
   },
   {
     "game_id": "43250846",
@@ -1337,7 +1386,8 @@
     "loser_id": "4543063534",
     "finished_at": "2026-01-07T18:32:49.376Z",
     "template_id": 1431579,
-    "elo_change": 14
+    "elo_change": 14,
+    "turns": 0
   },
   {
     "game_id": "43291178",
@@ -1347,7 +1397,8 @@
     "loser_id": "3631391841",
     "finished_at": "2026-01-07T18:32:49.825Z",
     "template_id": 1573498,
-    "elo_change": 9
+    "elo_change": 9,
+    "turns": 10
   },
   {
     "game_id": "43268615",
@@ -1387,7 +1438,8 @@
     "loser_id": "3631391841",
     "finished_at": "2026-01-08T03:38:30.497Z",
     "template_id": 1431579,
-    "elo_change": 11
+    "elo_change": 11,
+    "turns": 10
   },
   {
     "game_id": "43296188",
@@ -1417,7 +1469,8 @@
     "loser_id": "79105823914",
     "finished_at": "2026-01-08T06:33:46.892Z",
     "template_id": 1431579,
-    "elo_change": 28
+    "elo_change": 28,
+    "turns": 11
   },
   {
     "game_id": "43296189",
@@ -1447,7 +1500,8 @@
     "loser_id": "88110265403",
     "finished_at": "2026-01-08T16:29:31.039Z",
     "template_id": 1573495,
-    "elo_change": 30
+    "elo_change": 30,
+    "turns": 10
   },
   {
     "game_id": "43297231",
@@ -1457,7 +1511,8 @@
     "loser_id": "79105823914",
     "finished_at": "2026-01-08T16:29:31.102Z",
     "template_id": 1573499,
-    "elo_change": 25
+    "elo_change": 25,
+    "turns": 2
   },
   {
     "game_id": "43299033",
@@ -1497,7 +1552,8 @@
     "loser_id": "79105823914",
     "finished_at": "2026-01-09T06:33:23.971Z",
     "template_id": 1573495,
-    "elo_change": 16
+    "elo_change": 16,
+    "turns": 4
   },
   {
     "game_id": "43280449",
@@ -1517,7 +1573,8 @@
     "loser_id": "3346775331",
     "finished_at": "2026-01-09T14:23:55.830Z",
     "template_id": 1431579,
-    "elo_change": 29
+    "elo_change": 29,
+    "turns": 11
   },
   {
     "game_id": "43293197",
@@ -1527,7 +1584,8 @@
     "loser_id": "9313400553",
     "finished_at": "2026-01-09T18:31:34.323Z",
     "template_id": 1574451,
-    "elo_change": 9
+    "elo_change": 9,
+    "turns": -1
   },
   {
     "game_id": "43306049",
@@ -1547,7 +1605,8 @@
     "loser_id": "79105823914",
     "finished_at": "2026-01-09T20:23:51.418Z",
     "template_id": 1573495,
-    "elo_change": 22
+    "elo_change": 22,
+    "turns": 9
   },
   {
     "game_id": "43310196",
@@ -1597,7 +1656,8 @@
     "loser_id": "79105823914",
     "finished_at": "2026-01-10T18:28:53.406Z",
     "template_id": 1573497,
-    "elo_change": 19
+    "elo_change": 19,
+    "turns": 13
   },
   {
     "game_id": "43317219",
@@ -1632,7 +1692,8 @@
     "loser_id": "9313400553",
     "finished_at": "2026-01-11T04:46:59.381Z",
     "template_id": 1574451,
-    "elo_change": 13
+    "elo_change": 13,
+    "turns": -1
   },
   {
     "game_id": "43321842",
@@ -1652,7 +1713,8 @@
     "loser_id": "3631391841",
     "finished_at": "2026-01-11T14:18:25.715Z",
     "template_id": 1573495,
-    "elo_change": 19
+    "elo_change": 19,
+    "turns": 14
   },
   {
     "game_id": "43314215",
@@ -1662,7 +1724,8 @@
     "loser_id": "88110265403",
     "finished_at": "2026-01-11T16:23:46.667Z",
     "template_id": 1573498,
-    "elo_change": 18
+    "elo_change": 18,
+    "turns": 7
   },
   {
     "game_id": "43325345",
@@ -1672,7 +1735,8 @@
     "loser_id": "3631391841",
     "finished_at": "2026-01-11T18:28:34.984Z",
     "template_id": 1431579,
-    "elo_change": 15
+    "elo_change": 15,
+    "turns": 8
   },
   {
     "game_id": "43322551",
@@ -1697,7 +1761,8 @@
     "loser_id": "9313400553",
     "finished_at": "2026-01-12T01:47:48.492Z",
     "template_id": 1390041,
-    "elo_change": 12
+    "elo_change": 12,
+    "turns": 6
   },
   {
     "game_id": "43303528",
@@ -1737,7 +1802,8 @@
     "loser_id": "3631391841",
     "finished_at": "2026-01-12T16:26:51.544Z",
     "template_id": 1573498,
-    "elo_change": 11
+    "elo_change": 11,
+    "turns": 7
   },
   {
     "game_id": "43332598",
@@ -1767,7 +1833,8 @@
     "loser_id": "3631391841",
     "finished_at": "2026-01-12T22:18:49.934Z",
     "template_id": 1573495,
-    "elo_change": 10
+    "elo_change": 10,
+    "turns": 8
   },
   {
     "game_id": "43329537",
@@ -1777,7 +1844,8 @@
     "loser_id": "3631391841",
     "finished_at": "2026-01-13T03:27:23.014Z",
     "template_id": 1573497,
-    "elo_change": 15
+    "elo_change": 15,
+    "turns": 8
   },
   {
     "game_id": "43337422",
@@ -1797,7 +1865,8 @@
     "loser_id": "3631391841",
     "finished_at": "2026-01-13T12:46:01.276Z",
     "template_id": 1573495,
-    "elo_change": 8
+    "elo_change": 8,
+    "turns": 6
   },
   {
     "game_id": "43339292",
@@ -1807,7 +1876,8 @@
     "loser_id": "3346775331",
     "finished_at": "2026-01-13T12:46:01.326Z",
     "template_id": 1573497,
-    "elo_change": 32
+    "elo_change": 32,
+    "turns": 5
   },
   {
     "game_id": "43317221",
@@ -1832,7 +1902,8 @@
     "loser_id": "84143567121",
     "finished_at": "2026-01-13T22:21:29.732Z",
     "template_id": 1573498,
-    "elo_change": 17
+    "elo_change": 17,
+    "turns": 12
   },
   {
     "game_id": "43341205",
@@ -1887,7 +1958,8 @@
     "loser_id": "88110265403",
     "finished_at": "2026-01-15T01:42:13.019Z",
     "template_id": 1390041,
-    "elo_change": 25
+    "elo_change": 25,
+    "turns": 12
   },
   {
     "game_id": "43330075",
@@ -1927,7 +1999,8 @@
     "loser_id": "8294358602",
     "finished_at": "2026-01-15T16:34:33.369Z",
     "template_id": 1390041,
-    "elo_change": 20
+    "elo_change": 20,
+    "turns": 14
   },
   {
     "game_id": "43359105",
@@ -1967,7 +2040,8 @@
     "loser_id": "9313400553",
     "finished_at": "2026-01-15T18:36:06.683Z",
     "template_id": 1574451,
-    "elo_change": 14
+    "elo_change": 14,
+    "turns": -1
   },
   {
     "game_id": "43360092",
@@ -1997,7 +2071,8 @@
     "loser_id": "23154545458",
     "finished_at": "2026-01-15T22:21:18.059Z",
     "template_id": 1573499,
-    "elo_change": 15
+    "elo_change": 15,
+    "turns": 6
   },
   {
     "game_id": "43362100",
@@ -2097,7 +2172,8 @@
     "loser_id": "79105823914",
     "finished_at": "2026-01-17T08:25:33.610Z",
     "template_id": 1573499,
-    "elo_change": 17
+    "elo_change": 17,
+    "turns": 9
   },
   {
     "game_id": "43373514",
@@ -2137,7 +2213,8 @@
     "loser_id": "8294358602",
     "finished_at": "2026-01-17T20:21:06.250Z",
     "template_id": 1573497,
-    "elo_change": 24
+    "elo_change": 24,
+    "turns": 5
   },
   {
     "game_id": "43377259",
@@ -2167,7 +2244,8 @@
     "loser_id": "79105823914",
     "finished_at": "2026-01-18T03:45:26.335Z",
     "template_id": 1573497,
-    "elo_change": 21
+    "elo_change": 21,
+    "turns": 8
   },
   {
     "game_id": "43380062",
@@ -2207,7 +2285,8 @@
     "loser_id": "23154545458",
     "finished_at": "2026-01-18T12:38:57.059Z",
     "template_id": 1573495,
-    "elo_change": 29
+    "elo_change": 29,
+    "turns": 2
   },
   {
     "game_id": "43382608",
@@ -2227,7 +2306,8 @@
     "loser_id": "88110265403",
     "finished_at": "2026-01-18T16:23:50.222Z",
     "template_id": 1573495,
-    "elo_change": 26
+    "elo_change": 26,
+    "turns": 10
   },
   {
     "game_id": "43384100",
@@ -2267,7 +2347,8 @@
     "loser_id": "9313400553",
     "finished_at": "2026-01-18T22:19:20.344Z",
     "template_id": 1431579,
-    "elo_change": 20
+    "elo_change": 20,
+    "turns": 10
   },
   {
     "game_id": "43362101",
@@ -2282,7 +2363,8 @@
     "loser_id": "9313400553",
     "finished_at": "2026-01-18T22:19:24.351Z",
     "template_id": 1573495,
-    "elo_change": 13
+    "elo_change": 13,
+    "turns": 3
   },
   {
     "game_id": "43363089",
@@ -2317,7 +2399,8 @@
     "loser_id": "31104791368",
     "finished_at": "2026-01-19T04:51:52.816Z",
     "template_id": 1573498,
-    "elo_change": 20
+    "elo_change": 20,
+    "turns": 2
   },
   {
     "game_id": "43382636",
@@ -2332,7 +2415,8 @@
     "loser_id": "71155120841",
     "finished_at": "2026-01-19T16:29:01.765Z",
     "template_id": 1573495,
-    "elo_change": 25
+    "elo_change": 25,
+    "turns": 13
   },
   {
     "game_id": "43385116",
@@ -2342,7 +2426,8 @@
     "loser_id": "3631391841",
     "finished_at": "2026-01-19T20:23:55.635Z",
     "template_id": 1390041,
-    "elo_change": 17
+    "elo_change": 17,
+    "turns": 15
   },
   {
     "game_id": "43389883",
@@ -2362,7 +2447,8 @@
     "loser_id": "53134900057",
     "finished_at": "2026-01-20T03:43:11.975Z",
     "template_id": 1573497,
-    "elo_change": 20
+    "elo_change": 20,
+    "turns": 6
   },
   {
     "game_id": "43373188",
@@ -2377,7 +2463,8 @@
     "loser_id": "4155523061",
     "finished_at": "2026-01-20T06:35:57.134Z",
     "template_id": 1573497,
-    "elo_change": 20
+    "elo_change": 20,
+    "turns": 1
   },
   {
     "game_id": "43387072",
@@ -2392,7 +2479,8 @@
     "loser_id": "25149077292",
     "finished_at": "2026-01-20T12:49:30.482Z",
     "template_id": 1573497,
-    "elo_change": 20
+    "elo_change": 20,
+    "turns": 8
   },
   {
     "game_id": "43395345",
@@ -2407,7 +2495,8 @@
     "loser_id": "71148639731",
     "finished_at": "2026-01-20T18:35:57.379Z",
     "template_id": 1573495,
-    "elo_change": 20
+    "elo_change": 20,
+    "turns": 7
   },
   {
     "game_id": "43382613",
@@ -2417,7 +2506,8 @@
     "loser_id": "25149077292",
     "finished_at": "2026-01-20T20:41:42.238Z",
     "template_id": 1573499,
-    "elo_change": 19
+    "elo_change": 19,
+    "turns": 5
   },
   {
     "game_id": "43395344",
@@ -2427,7 +2517,8 @@
     "loser_id": "3631391841",
     "finished_at": "2026-01-20T22:22:39.083Z",
     "template_id": 1573497,
-    "elo_change": 22
+    "elo_change": 22,
+    "turns": 10
   },
   {
     "game_id": "43345843",
@@ -2437,7 +2528,8 @@
     "loser_id": "88110265403",
     "finished_at": "2026-01-21T08:31:31.247Z",
     "template_id": 1573498,
-    "elo_change": 15
+    "elo_change": 15,
+    "turns": 18
   },
   {
     "game_id": "43382611",
@@ -2447,7 +2539,8 @@
     "loser_id": "4337497298",
     "finished_at": "2026-01-21T08:31:32.900Z",
     "template_id": 1573495,
-    "elo_change": 20
+    "elo_change": 20,
+    "turns": 4
   },
   {
     "game_id": "43400400",
@@ -2457,7 +2550,8 @@
     "loser_id": "74149320612",
     "finished_at": "2026-01-21T08:31:34.597Z",
     "template_id": 1573499,
-    "elo_change": 22
+    "elo_change": 22,
+    "turns": 6
   },
   {
     "game_id": "43402850",
@@ -2717,7 +2811,8 @@
     "loser_id": "4337497298",
     "finished_at": "2026-01-21T14:30:19.476Z",
     "template_id": 1573495,
-    "elo_change": 21
+    "elo_change": 21,
+    "turns": 8
   },
   {
     "game_id": "43408960",
@@ -2742,7 +2837,8 @@
     "loser_id": "8222729424",
     "finished_at": "2026-01-21T18:41:38.176Z",
     "template_id": 1574451,
-    "elo_change": 20
+    "elo_change": 20,
+    "turns": 4
   },
   {
     "game_id": "43386095",
@@ -2757,7 +2853,8 @@
     "loser_id": "8222729424",
     "finished_at": "2026-01-21T20:30:17.299Z",
     "template_id": 1573495,
-    "elo_change": 20
+    "elo_change": 20,
+    "turns": 7
   },
   {
     "game_id": "43387071",
@@ -2772,7 +2869,8 @@
     "loser_id": "13128957162",
     "finished_at": "2026-01-22T01:46:40.318Z",
     "template_id": 1573495,
-    "elo_change": 22
+    "elo_change": 22,
+    "turns": 6
   },
   {
     "game_id": "43382598",
@@ -2782,7 +2880,8 @@
     "loser_id": "71148639731",
     "finished_at": "2026-01-22T03:47:10.647Z",
     "template_id": 1574451,
-    "elo_change": 20
+    "elo_change": 20,
+    "turns": 7
   },
   {
     "game_id": "43388211",
@@ -2802,7 +2901,8 @@
     "loser_id": "9313400553",
     "finished_at": "2026-01-22T04:47:28.875Z",
     "template_id": 1573497,
-    "elo_change": 12
+    "elo_change": 12,
+    "turns": 3
   },
   {
     "game_id": "43388989",
@@ -2817,7 +2917,8 @@
     "loser_id": "3346775331",
     "finished_at": "2026-01-22T12:48:55.783Z",
     "template_id": 1431579,
-    "elo_change": 30
+    "elo_change": 30,
+    "turns": 17
   },
   {
     "game_id": "43412280",
@@ -2827,7 +2928,8 @@
     "loser_id": "14130113253",
     "finished_at": "2026-01-22T16:35:12.942Z",
     "template_id": 1431579,
-    "elo_change": 21
+    "elo_change": 21,
+    "turns": 11
   },
   {
     "game_id": "43415209",
@@ -2837,7 +2939,8 @@
     "loser_id": "16127869941",
     "finished_at": "2026-01-22T16:35:13.277Z",
     "template_id": 1573499,
-    "elo_change": 21
+    "elo_change": 21,
+    "turns": 2
   },
   {
     "game_id": "43388212",
@@ -2847,7 +2950,8 @@
     "loser_id": "79105823914",
     "finished_at": "2026-01-22T20:27:23.620Z",
     "template_id": 1573495,
-    "elo_change": 16
+    "elo_change": 16,
+    "turns": 5
   },
   {
     "game_id": "43395346",
@@ -2862,7 +2966,8 @@
     "loser_id": "71148639731",
     "finished_at": "2026-01-22T20:27:25.026Z",
     "template_id": 1573499,
-    "elo_change": 20
+    "elo_change": 20,
+    "turns": 5
   },
   {
     "game_id": "43416921",
@@ -2872,7 +2977,8 @@
     "loser_id": "3631391841",
     "finished_at": "2026-01-23T01:43:42.584Z",
     "template_id": 1573499,
-    "elo_change": 29
+    "elo_change": 29,
+    "turns": 3
   },
   {
     "game_id": "43418573",
@@ -2882,7 +2988,8 @@
     "loser_id": "14130113253",
     "finished_at": "2026-01-23T01:43:42.664Z",
     "template_id": 1573495,
-    "elo_change": 13
+    "elo_change": 13,
+    "turns": 3
   },
   {
     "game_id": "43398221",
@@ -2897,7 +3004,8 @@
     "loser_id": "9313400553",
     "finished_at": "2026-01-23T06:34:28.370Z",
     "template_id": 1573498,
-    "elo_change": 12
+    "elo_change": 12,
+    "turns": 13
   },
   {
     "game_id": "43408961",
@@ -2907,7 +3015,8 @@
     "loser_id": "3591948853",
     "finished_at": "2026-01-23T16:30:04.366Z",
     "template_id": 1574451,
-    "elo_change": 21
+    "elo_change": 21,
+    "turns": 1
   },
   {
     "game_id": "43423473",
@@ -2922,7 +3031,8 @@
     "loser_id": "16127869941",
     "finished_at": "2026-01-23T20:25:20.229Z",
     "template_id": 1431579,
-    "elo_change": 23
+    "elo_change": 23,
+    "turns": 4
   },
   {
     "game_id": "43400401",
@@ -2932,7 +3042,8 @@
     "loser_id": "25149077292",
     "finished_at": "2026-01-23T22:18:00.506Z",
     "template_id": 1574451,
-    "elo_change": 15
+    "elo_change": 15,
+    "turns": 0
   },
   {
     "game_id": "43428776",
@@ -2952,7 +3063,8 @@
     "loser_id": "9313400553",
     "finished_at": "2026-01-24T01:40:58.621Z",
     "template_id": 1390041,
-    "elo_change": 12
+    "elo_change": 12,
+    "turns": 6
   },
   {
     "game_id": "43430832",
@@ -2987,7 +3099,8 @@
     "loser_id": "56133341636",
     "finished_at": "2026-01-24T14:19:04.124Z",
     "template_id": 1573499,
-    "elo_change": 18
+    "elo_change": 18,
+    "turns": 3
   },
   {
     "game_id": "43408954",
@@ -2997,7 +3110,8 @@
     "loser_id": "53134900057",
     "finished_at": "2026-01-24T14:19:04.296Z",
     "template_id": 1390041,
-    "elo_change": 17
+    "elo_change": 17,
+    "turns": 4
   },
   {
     "game_id": "43408956",
@@ -3042,7 +3156,8 @@
     "loser_id": "4942304274",
     "finished_at": "2026-01-24T18:29:19.066Z",
     "template_id": 1573497,
-    "elo_change": 19
+    "elo_change": 19,
+    "turns": 9
   },
   {
     "game_id": "43433881",
@@ -3052,7 +3167,8 @@
     "loser_id": "53134900057",
     "finished_at": "2026-01-24T18:29:19.564Z",
     "template_id": 1573497,
-    "elo_change": 19
+    "elo_change": 19,
+    "turns": 4
   },
   {
     "game_id": "43432706",
@@ -3072,7 +3188,8 @@
     "loser_id": "25126079448",
     "finished_at": "2026-01-24T20:21:19.170Z",
     "template_id": 1573495,
-    "elo_change": 25
+    "elo_change": 25,
+    "turns": 9
   },
   {
     "game_id": "43398222",
@@ -3082,7 +3199,8 @@
     "loser_id": "4543063534",
     "finished_at": "2026-01-24T22:19:20.282Z",
     "template_id": 1390041,
-    "elo_change": 21
+    "elo_change": 21,
+    "turns": -1
   },
   {
     "game_id": "43414167",
@@ -3092,7 +3210,8 @@
     "loser_id": "8222729424",
     "finished_at": "2026-01-24T22:19:20.534Z",
     "template_id": 1390041,
-    "elo_change": 20
+    "elo_change": 20,
+    "turns": 8
   },
   {
     "game_id": "43435755",
@@ -3102,7 +3221,8 @@
     "loser_id": "4942304274",
     "finished_at": "2026-01-25T01:53:04.264Z",
     "template_id": 1573498,
-    "elo_change": 21
+    "elo_change": 21,
+    "turns": 6
   },
   {
     "game_id": "43436616",
@@ -3112,7 +3232,8 @@
     "loser_id": "25126079448",
     "finished_at": "2026-01-25T01:53:04.315Z",
     "template_id": 1431579,
-    "elo_change": 19
+    "elo_change": 19,
+    "turns": 7
   },
   {
     "game_id": "43408957",
@@ -3122,7 +3243,8 @@
     "loser_id": "4155523061",
     "finished_at": "2026-01-25T04:52:00.389Z",
     "template_id": 1431579,
-    "elo_change": 20
+    "elo_change": 20,
+    "turns": 16
   },
   {
     "game_id": "43382576",
@@ -3132,7 +3254,8 @@
     "loser_id": "23105988432",
     "finished_at": "2026-01-25T06:31:29.870Z",
     "template_id": 1573498,
-    "elo_change": 22
+    "elo_change": 22,
+    "turns": 19
   },
   {
     "game_id": "43414600",
@@ -3142,7 +3265,8 @@
     "loser_id": "56133341636",
     "finished_at": "2026-01-25T06:31:30.315Z",
     "template_id": 1573495,
-    "elo_change": 20
+    "elo_change": 20,
+    "turns": 4
   },
   {
     "game_id": "43408953",
@@ -3152,7 +3276,8 @@
     "loser_id": "3428471447",
     "finished_at": "2026-01-25T08:27:07.280Z",
     "template_id": 1573497,
-    "elo_change": 20
+    "elo_change": 20,
+    "turns": 6
   },
   {
     "game_id": "43438674",
@@ -3172,7 +3297,8 @@
     "loser_id": "3591948853",
     "finished_at": "2026-01-25T16:25:04.791Z",
     "template_id": 1573495,
-    "elo_change": 22
+    "elo_change": 22,
+    "turns": 7
   },
   {
     "game_id": "43420430",
@@ -3182,7 +3308,8 @@
     "loser_id": "8222729424",
     "finished_at": "2026-01-25T18:29:10.555Z",
     "template_id": 1390041,
-    "elo_change": 18
+    "elo_change": 18,
+    "turns": 24
   },
   {
     "game_id": "43427012",
@@ -3192,7 +3319,8 @@
     "loser_id": "23105988432",
     "finished_at": "2026-01-25T18:29:10.703Z",
     "template_id": 1431579,
-    "elo_change": 22
+    "elo_change": 22,
+    "turns": 5
   },
   {
     "game_id": "43429607",
@@ -3202,7 +3330,8 @@
     "loser_id": "25149077292",
     "finished_at": "2026-01-25T18:29:10.760Z",
     "template_id": 1431579,
-    "elo_change": 18
+    "elo_change": 18,
+    "turns": 13
   },
   {
     "game_id": "43408109",
@@ -3212,7 +3341,8 @@
     "loser_id": "4155523061",
     "finished_at": "2026-01-25T20:23:47.650Z",
     "template_id": 1573498,
-    "elo_change": 11
+    "elo_change": 11,
+    "turns": 10
   },
   {
     "game_id": "43435754",
@@ -3222,7 +3352,8 @@
     "loser_id": "25126079448",
     "finished_at": "2026-01-25T20:23:48.219Z",
     "template_id": 1390041,
-    "elo_change": 21
+    "elo_change": 21,
+    "turns": 5
   },
   {
     "game_id": "43440450",
@@ -3232,7 +3363,8 @@
     "loser_id": "6411877352",
     "finished_at": "2026-01-26T01:52:35.944Z",
     "template_id": 1390041,
-    "elo_change": 20
+    "elo_change": 20,
+    "turns": 12
   },
   {
     "game_id": "43429608",
@@ -3242,7 +3374,8 @@
     "loser_id": "88110265403",
     "finished_at": "2026-01-26T06:36:37.018Z",
     "template_id": 1573495,
-    "elo_change": 24
+    "elo_change": 24,
+    "turns": 14
   },
   {
     "game_id": "43442759",
@@ -3262,7 +3395,8 @@
     "loser_id": "3631391841",
     "finished_at": "2026-01-26T14:27:55.776Z",
     "template_id": 1431579,
-    "elo_change": 18
+    "elo_change": 18,
+    "turns": 7
   },
   {
     "game_id": "43440449",
@@ -3277,7 +3411,8 @@
     "loser_id": "88110265403",
     "finished_at": "2026-01-26T16:34:01.577Z",
     "template_id": 1573497,
-    "elo_change": 24
+    "elo_change": 24,
+    "turns": 11
   },
   {
     "game_id": "43450579",
@@ -3287,7 +3422,8 @@
     "loser_id": "3591948853",
     "finished_at": "2026-01-26T16:34:01.754Z",
     "template_id": 1431579,
-    "elo_change": 21
+    "elo_change": 21,
+    "turns": 9
   },
   {
     "game_id": "43430831",
@@ -3297,7 +3433,8 @@
     "loser_id": "14130113253",
     "finished_at": "2026-01-26T18:35:19.690Z",
     "template_id": 1390041,
-    "elo_change": 23
+    "elo_change": 23,
+    "turns": 10
   },
   {
     "game_id": "43441164",
@@ -3317,7 +3454,8 @@
     "loser_id": "6411877352",
     "finished_at": "2026-01-26T20:26:56.237Z",
     "template_id": 1573495,
-    "elo_change": 16
+    "elo_change": 16,
+    "turns": 2
   },
   {
     "game_id": "43446974",
@@ -3327,7 +3465,8 @@
     "loser_id": "6411877352",
     "finished_at": "2026-01-26T20:26:58.786Z",
     "template_id": 1573495,
-    "elo_change": 11
+    "elo_change": 11,
+    "turns": 5
   },
   {
     "game_id": "43452741",
@@ -3337,7 +3476,8 @@
     "loser_id": "3631391841",
     "finished_at": "2026-01-26T20:26:59.109Z",
     "template_id": 1573498,
-    "elo_change": 18
+    "elo_change": 18,
+    "turns": 4
   },
   {
     "game_id": "43408958",
@@ -3347,7 +3487,8 @@
     "loser_id": "99110844848",
     "finished_at": "2026-01-27T03:47:30.034Z",
     "template_id": 1573498,
-    "elo_change": 21
+    "elo_change": 21,
+    "turns": 5
   },
   {
     "game_id": "43453786",
@@ -3367,7 +3508,8 @@
     "loser_id": "53134900057",
     "finished_at": "2026-01-27T14:29:36.201Z",
     "template_id": 1431579,
-    "elo_change": 21
+    "elo_change": 21,
+    "turns": 4
   },
   {
     "game_id": "43443681",
@@ -3377,7 +3519,8 @@
     "loser_id": "53134900057",
     "finished_at": "2026-01-27T14:29:37.341Z",
     "template_id": 1573498,
-    "elo_change": 18
+    "elo_change": 18,
+    "turns": 2
   },
   {
     "game_id": "43453787",
@@ -3387,7 +3530,8 @@
     "loser_id": "3631391841",
     "finished_at": "2026-01-27T14:29:37.829Z",
     "template_id": 1573495,
-    "elo_change": 10
+    "elo_change": 10,
+    "turns": 11
   },
   {
     "game_id": "43448081",
@@ -3397,7 +3541,8 @@
     "loser_id": "25126079448",
     "finished_at": "2026-01-27T18:37:59.025Z",
     "template_id": 1573495,
-    "elo_change": 20
+    "elo_change": 20,
+    "turns": 4
   },
   {
     "game_id": "43437547",
@@ -3412,7 +3557,8 @@
     "loser_id": "71155120841",
     "finished_at": "2026-01-27T22:22:18.170Z",
     "template_id": 1573498,
-    "elo_change": 24
+    "elo_change": 24,
+    "turns": 4
   },
   {
     "game_id": "43459546",
@@ -3422,7 +3568,8 @@
     "loser_id": "16127869941",
     "finished_at": "2026-01-27T22:22:18.519Z",
     "template_id": 1573498,
-    "elo_change": 22
+    "elo_change": 22,
+    "turns": 5
   },
   {
     "game_id": "43456603",
@@ -3437,7 +3584,8 @@
     "loser_id": "3631391841",
     "finished_at": "2026-01-28T03:44:36.641Z",
     "template_id": 1431579,
-    "elo_change": 22
+    "elo_change": 22,
+    "turns": 9
   },
   {
     "game_id": "43441161",
@@ -3532,7 +3680,8 @@
     "loser_id": "4555082823",
     "finished_at": "2026-01-28T16:36:45.315Z",
     "template_id": 1390041,
-    "elo_change": 18
+    "elo_change": 18,
+    "turns": 2
   },
   {
     "game_id": "43465158",
@@ -3542,7 +3691,8 @@
     "loser_id": "14130113253",
     "finished_at": "2026-01-28T16:36:46.065Z",
     "template_id": 1573498,
-    "elo_change": 22
+    "elo_change": 22,
+    "turns": 5
   },
   {
     "game_id": "43443685",
@@ -3557,7 +3707,8 @@
     "loser_id": "23105988432",
     "finished_at": "2026-01-28T20:30:42.307Z",
     "template_id": 1573497,
-    "elo_change": 19
+    "elo_change": 19,
+    "turns": 8
   },
   {
     "game_id": "43459548",
@@ -3567,7 +3718,8 @@
     "loser_id": "23154545458",
     "finished_at": "2026-01-28T22:25:57.348Z",
     "template_id": 1573495,
-    "elo_change": 14
+    "elo_change": 14,
+    "turns": 4
   },
   {
     "game_id": "43471087",
@@ -3582,7 +3734,8 @@
     "loser_id": "99110844848",
     "finished_at": "2026-01-29T01:58:11.541Z",
     "template_id": 1390041,
-    "elo_change": 22
+    "elo_change": 22,
+    "turns": 8
   },
   {
     "game_id": "43444731",
@@ -3592,7 +3745,8 @@
     "loser_id": "25149077292",
     "finished_at": "2026-01-29T01:58:11.611Z",
     "template_id": 1574451,
-    "elo_change": 15
+    "elo_change": 15,
+    "turns": 1
   },
   {
     "game_id": "43469310",
@@ -3602,7 +3756,8 @@
     "loser_id": "14130113253",
     "finished_at": "2026-01-29T01:58:12.196Z",
     "template_id": 1431579,
-    "elo_change": 14
+    "elo_change": 14,
+    "turns": 9
   },
   {
     "game_id": "43461649",
@@ -3612,7 +3767,8 @@
     "loser_id": "25126079448",
     "finished_at": "2026-01-29T04:11:15.209Z",
     "template_id": 1390041,
-    "elo_change": 23
+    "elo_change": 23,
+    "turns": 7
   },
   {
     "game_id": "43451687",
@@ -3622,7 +3778,8 @@
     "loser_id": "3428471447",
     "finished_at": "2026-01-29T06:46:23.169Z",
     "template_id": 1431579,
-    "elo_change": 20
+    "elo_change": 20,
+    "turns": 6
   },
   {
     "game_id": "43471971",
@@ -3637,7 +3794,8 @@
     "loser_id": "79105823914",
     "finished_at": "2026-01-29T18:44:03.040Z",
     "template_id": 1390041,
-    "elo_change": 7
+    "elo_change": 7,
+    "turns": 16
   },
   {
     "game_id": "43436617",
@@ -3646,7 +3804,8 @@
     "winner_id": "3631391841",
     "loser_id": "4555082823",
     "finished_at": "2026-01-29T18:44:03.188Z",
-    "template_id": 1573499
+    "template_id": 1573499,
+    "turns": 4
   },
   {
     "game_id": "43433340",
@@ -3656,7 +3815,8 @@
     "loser_id": "25149077292",
     "finished_at": "2026-01-29T20:29:50.275Z",
     "template_id": 1573498,
-    "elo_change": 14
+    "elo_change": 14,
+    "turns": 8
   },
   {
     "game_id": "43473050",
@@ -3666,7 +3826,8 @@
     "loser_id": "25126079448",
     "finished_at": "2026-01-29T20:29:51.557Z",
     "template_id": 1573498,
-    "elo_change": 15
+    "elo_change": 15,
+    "turns": 4
   },
   {
     "game_id": "43382612",
@@ -3676,7 +3837,8 @@
     "loser_id": "13128957162",
     "finished_at": "2026-01-29T22:27:22.986Z",
     "template_id": 1573498,
-    "elo_change": 21
+    "elo_change": 21,
+    "turns": 32
   },
   {
     "game_id": "43467612",
@@ -3686,7 +3848,8 @@
     "loser_id": "53134900057",
     "finished_at": "2026-01-29T22:27:23.526Z",
     "template_id": 1390041,
-    "elo_change": 20
+    "elo_change": 20,
+    "turns": 6
   },
   {
     "game_id": "43474104",
@@ -3696,7 +3859,8 @@
     "loser_id": "3591948853",
     "finished_at": "2026-01-29T22:27:23.878Z",
     "template_id": 1573499,
-    "elo_change": 20
+    "elo_change": 20,
+    "turns": 6
   },
   {
     "game_id": "43478473",
@@ -3706,7 +3870,8 @@
     "loser_id": "3631391841",
     "finished_at": "2026-01-30T12:54:33.806Z",
     "template_id": 1573495,
-    "elo_change": 24
+    "elo_change": 24,
+    "turns": 9
   },
   {
     "game_id": "43480270",
@@ -3716,7 +3881,8 @@
     "loser_id": "25126079448",
     "finished_at": "2026-01-30T12:54:33.957Z",
     "template_id": 1573495,
-    "elo_change": 19
+    "elo_change": 19,
+    "turns": 14
   },
   {
     "game_id": "43480272",
@@ -3726,7 +3892,8 @@
     "loser_id": "3591948853",
     "finished_at": "2026-01-30T12:54:34.053Z",
     "template_id": 1573495,
-    "elo_change": 20
+    "elo_change": 20,
+    "turns": 6
   },
   {
     "game_id": "43484049",
@@ -3741,7 +3908,8 @@
     "loser_id": "4155523061",
     "finished_at": "2026-01-30T18:41:28.994Z",
     "template_id": 1431579,
-    "elo_change": 17
+    "elo_change": 17,
+    "turns": 11
   },
   {
     "game_id": "43471972",
@@ -3751,7 +3919,8 @@
     "loser_id": "3591948853",
     "finished_at": "2026-01-30T20:29:16.718Z",
     "template_id": 1573498,
-    "elo_change": 14
+    "elo_change": 14,
+    "turns": 12
   },
   {
     "game_id": "43479377",
@@ -3761,7 +3930,8 @@
     "loser_id": "74149320612",
     "finished_at": "2026-01-30T20:29:17.184Z",
     "template_id": 1573495,
-    "elo_change": 11
+    "elo_change": 11,
+    "turns": 10
   },
   {
     "game_id": "43463631",
@@ -3776,7 +3946,8 @@
     "loser_id": "1382545505",
     "finished_at": "2026-01-31T01:54:57.084Z",
     "template_id": 1573495,
-    "elo_change": 15
+    "elo_change": 15,
+    "turns": 3
   },
   {
     "game_id": "43486532",
@@ -3786,7 +3957,8 @@
     "loser_id": "3631391841",
     "finished_at": "2026-01-31T04:05:27.166Z",
     "template_id": 1390041,
-    "elo_change": 14
+    "elo_change": 14,
+    "turns": 9
   },
   {
     "game_id": "43484047",
@@ -3796,7 +3968,8 @@
     "loser_id": "3591948853",
     "finished_at": "2026-01-31T06:38:08.560Z",
     "template_id": 1573497,
-    "elo_change": 13
+    "elo_change": 13,
+    "turns": 14
   },
   {
     "game_id": "43452742",
@@ -3806,7 +3979,8 @@
     "loser_id": "74149320612",
     "finished_at": "2026-01-31T10:23:47.289Z",
     "template_id": 1573495,
-    "elo_change": 22
+    "elo_change": 22,
+    "turns": 7
   },
   {
     "game_id": "43491315",
@@ -3821,7 +3995,8 @@
     "loser_id": "8222729424",
     "finished_at": "2026-01-31T16:28:01.321Z",
     "template_id": 1573497,
-    "elo_change": 22
+    "elo_change": 22,
+    "turns": 8
   },
   {
     "game_id": "43488196",
@@ -3831,7 +4006,8 @@
     "loser_id": "71148639731",
     "finished_at": "2026-01-31T16:28:02.282Z",
     "template_id": 1573497,
-    "elo_change": 23
+    "elo_change": 23,
+    "turns": 7
   },
   {
     "game_id": "43489954",
@@ -3841,7 +4017,8 @@
     "loser_id": "3631391841",
     "finished_at": "2026-01-31T16:28:02.346Z",
     "template_id": 1573495,
-    "elo_change": 11
+    "elo_change": 11,
+    "turns": 6
   },
   {
     "game_id": "43469309",
@@ -3856,7 +4033,8 @@
     "loser_id": "53134900057",
     "finished_at": "2026-01-31T18:31:37.089Z",
     "template_id": 1390041,
-    "elo_change": 20
+    "elo_change": 20,
+    "turns": 7
   },
   {
     "game_id": "43493434",
@@ -3876,7 +4054,8 @@
     "loser_id": "1382545505",
     "finished_at": "2026-01-31T22:22:01.880Z",
     "template_id": 1390041,
-    "elo_change": 23
+    "elo_change": 23,
+    "turns": 15
   },
   {
     "game_id": "43494342",
@@ -3886,7 +4065,8 @@
     "loser_id": "53134900057",
     "finished_at": "2026-01-31T22:22:03.563Z",
     "template_id": 1431579,
-    "elo_change": 22
+    "elo_change": 22,
+    "turns": 3
   },
   {
     "game_id": "43494343",
@@ -3901,7 +4081,8 @@
     "loser_id": "71148639731",
     "finished_at": "2026-02-01T02:22:29.535Z",
     "template_id": 1390041,
-    "elo_change": 17
+    "elo_change": 17,
+    "turns": 10
   },
   {
     "game_id": "43473051",
@@ -3916,7 +4097,8 @@
     "loser_id": "9313400553",
     "finished_at": "2026-02-01T05:21:22.051Z",
     "template_id": 1431579,
-    "elo_change": 8
+    "elo_change": 8,
+    "turns": 9
   },
   {
     "game_id": "43497261",
@@ -3931,7 +4113,8 @@
     "loser_id": "71155120841",
     "finished_at": "2026-02-01T08:31:42.401Z",
     "template_id": 1573497,
-    "elo_change": 23
+    "elo_change": 23,
+    "turns": 8
   },
   {
     "game_id": "43487338",
@@ -3941,7 +4124,8 @@
     "loser_id": "4155523061",
     "finished_at": "2026-02-01T20:26:12.048Z",
     "template_id": 1431579,
-    "elo_change": 23
+    "elo_change": 23,
+    "turns": 12
   },
   {
     "game_id": "43479376",
@@ -3956,7 +4140,8 @@
     "loser_id": "9313400553",
     "finished_at": "2026-02-01T22:23:38.277Z",
     "template_id": 1431579,
-    "elo_change": 11
+    "elo_change": 11,
+    "turns": 11
   },
   {
     "game_id": "43504111",
@@ -3966,7 +4151,8 @@
     "loser_id": "3591948853",
     "finished_at": "2026-02-02T02:07:02.850Z",
     "template_id": 1431579,
-    "elo_change": 7
+    "elo_change": 7,
+    "turns": 3
   },
   {
     "game_id": "43505244",
@@ -3981,7 +4167,8 @@
     "loser_id": "53134900057",
     "finished_at": "2026-02-02T12:58:28.772Z",
     "template_id": 1390041,
-    "elo_change": 17
+    "elo_change": 17,
+    "turns": 13
   },
   {
     "game_id": "43484660",
@@ -3991,7 +4178,8 @@
     "loser_id": "25126079448",
     "finished_at": "2026-02-02T16:39:36.213Z",
     "template_id": 1573497,
-    "elo_change": 24
+    "elo_change": 24,
+    "turns": 9
   },
   {
     "game_id": "43505245",
@@ -4001,7 +4189,8 @@
     "loser_id": "71148639731",
     "finished_at": "2026-02-02T18:42:45.026Z",
     "template_id": 1431579,
-    "elo_change": 10
+    "elo_change": 10,
+    "turns": 9
   },
   {
     "game_id": "43471088",
@@ -4011,7 +4200,8 @@
     "loser_id": "23105988432",
     "finished_at": "2026-02-03T02:05:02.919Z",
     "template_id": 1573499,
-    "elo_change": 20
+    "elo_change": 20,
+    "turns": 7
   },
   {
     "game_id": "43494344",
@@ -4021,7 +4211,8 @@
     "loser_id": "25126079448",
     "finished_at": "2026-02-03T02:05:03.737Z",
     "template_id": 1390041,
-    "elo_change": 22
+    "elo_change": 22,
+    "turns": 14
   },
   {
     "game_id": "43507848",
@@ -4031,7 +4222,8 @@
     "loser_id": "9313400553",
     "finished_at": "2026-02-03T02:05:04.717Z",
     "template_id": 1573499,
-    "elo_change": 15
+    "elo_change": 15,
+    "turns": 2
   },
   {
     "game_id": "43510463",
@@ -4041,7 +4233,8 @@
     "loser_id": "25126079448",
     "finished_at": "2026-02-03T05:14:31.019Z",
     "template_id": 1390041,
-    "elo_change": 17
+    "elo_change": 17,
+    "turns": 8
   },
   {
     "game_id": "43475116",
@@ -4051,7 +4244,8 @@
     "loser_id": "51156980238",
     "finished_at": "2026-02-03T08:35:57.529Z",
     "template_id": 1573499,
-    "elo_change": 22
+    "elo_change": 22,
+    "turns": 4
   },
   {
     "game_id": "43491314",
@@ -4066,7 +4260,8 @@
     "loser_id": "3428471447",
     "finished_at": "2026-02-03T10:39:13.990Z",
     "template_id": 1431579,
-    "elo_change": 19
+    "elo_change": 19,
+    "turns": 6
   },
   {
     "game_id": "43489955",
@@ -4076,7 +4271,8 @@
     "loser_id": "1382545505",
     "finished_at": "2026-02-03T12:58:56.227Z",
     "template_id": 1573498,
-    "elo_change": 14
+    "elo_change": 14,
+    "turns": 5
   },
   {
     "game_id": "43496045",
@@ -4086,7 +4282,8 @@
     "loser_id": "8222729424",
     "finished_at": "2026-02-03T14:42:25.399Z",
     "template_id": 1573499,
-    "elo_change": 22
+    "elo_change": 22,
+    "turns": 6
   },
   {
     "game_id": "43487339",
@@ -4096,7 +4293,8 @@
     "loser_id": "23154545458",
     "finished_at": "2026-02-03T20:35:15.054Z",
     "template_id": 1573499,
-    "elo_change": 13
+    "elo_change": 13,
+    "turns": 6
   },
   {
     "game_id": "43496047",
@@ -4116,7 +4314,8 @@
     "loser_id": "8222729424",
     "finished_at": "2026-02-04T02:00:11.677Z",
     "template_id": 1390041,
-    "elo_change": 21
+    "elo_change": 21,
+    "turns": 16
   },
   {
     "game_id": "43497262",
@@ -4131,7 +4330,8 @@
     "loser_id": "6411877352",
     "finished_at": "2026-02-04T04:15:57.645Z",
     "template_id": 1573497,
-    "elo_change": 16
+    "elo_change": 16,
+    "turns": 12
   },
   {
     "game_id": "43522172",
@@ -4161,7 +4361,8 @@
     "loser_id": "25126079448",
     "finished_at": "2026-02-04T14:39:49.186Z",
     "template_id": 1573497,
-    "elo_change": 27
+    "elo_change": 27,
+    "turns": 9
   },
   {
     "game_id": "43515078",
@@ -4171,7 +4372,8 @@
     "loser_id": "25126079448",
     "finished_at": "2026-02-04T14:39:49.263Z",
     "template_id": 1573498,
-    "elo_change": 16
+    "elo_change": 16,
+    "turns": 1
   },
   {
     "game_id": "43433884",
@@ -4181,7 +4383,8 @@
     "loser_id": "56133341636",
     "finished_at": "2026-02-04T16:46:59.658Z",
     "template_id": 1573499,
-    "elo_change": 20
+    "elo_change": 20,
+    "turns": 9
   },
   {
     "game_id": "43439590",
@@ -4191,7 +4394,8 @@
     "loser_id": "4155523061",
     "finished_at": "2026-02-04T16:46:59.737Z",
     "template_id": 1573499,
-    "elo_change": 21
+    "elo_change": 21,
+    "turns": 7
   },
   {
     "game_id": "43515591",
@@ -4201,7 +4405,8 @@
     "loser_id": "71148639731",
     "finished_at": "2026-02-04T16:47:00.738Z",
     "template_id": 1573498,
-    "elo_change": 22
+    "elo_change": 22,
+    "turns": 3
   },
   {
     "game_id": "43526513",
@@ -4221,7 +4426,8 @@
     "loser_id": "79105823914",
     "finished_at": "2026-02-04T20:33:45.995Z",
     "template_id": 1573497,
-    "elo_change": 7
+    "elo_change": 7,
+    "turns": 6
   },
   {
     "game_id": "43520909",
@@ -4231,7 +4437,8 @@
     "loser_id": "3631391841",
     "finished_at": "2026-02-04T20:33:46.697Z",
     "template_id": 1431579,
-    "elo_change": 22
+    "elo_change": 22,
+    "turns": 10
   },
   {
     "game_id": "43497893",
@@ -4241,7 +4448,8 @@
     "loser_id": "16127869941",
     "finished_at": "2026-02-04T22:27:42.764Z",
     "template_id": 1390041,
-    "elo_change": 27
+    "elo_change": 27,
+    "turns": 9
   },
   {
     "game_id": "43528570",
@@ -4256,7 +4464,8 @@
     "loser_id": "9313400553",
     "finished_at": "2026-02-05T02:01:46.173Z",
     "template_id": 1431579,
-    "elo_change": 10
+    "elo_change": 10,
+    "turns": 5
   },
   {
     "game_id": "43517111",
@@ -4266,7 +4475,8 @@
     "loser_id": "8222729424",
     "finished_at": "2026-02-05T06:58:25.276Z",
     "template_id": 1573497,
-    "elo_change": 13
+    "elo_change": 13,
+    "turns": 10
   },
   {
     "game_id": "43525492",
@@ -4281,7 +4491,8 @@
     "loser_id": "3591948853",
     "finished_at": "2026-02-05T13:01:00.842Z",
     "template_id": 1573498,
-    "elo_change": 17
+    "elo_change": 17,
+    "turns": 2
   },
   {
     "game_id": "43532979",
@@ -4296,7 +4507,8 @@
     "loser_id": "88110265403",
     "finished_at": "2026-02-05T14:41:45.743Z",
     "template_id": 1390041,
-    "elo_change": 26
+    "elo_change": 26,
+    "turns": 7
   },
   {
     "game_id": "43529442",
@@ -4306,7 +4518,8 @@
     "loser_id": "14130113253",
     "finished_at": "2026-02-05T16:47:35.247Z",
     "template_id": 1573495,
-    "elo_change": 22
+    "elo_change": 22,
+    "turns": 6
   },
   {
     "game_id": "43513597",
@@ -4316,7 +4529,8 @@
     "loser_id": "71155120841",
     "finished_at": "2026-02-05T22:26:52.785Z",
     "template_id": 1573495,
-    "elo_change": 21
+    "elo_change": 21,
+    "turns": 10
   },
   {
     "game_id": "43520014",
@@ -4326,7 +4540,8 @@
     "loser_id": "23154545458",
     "finished_at": "2026-02-05T22:26:52.885Z",
     "template_id": 1573495,
-    "elo_change": 25
+    "elo_change": 25,
+    "turns": 2
   },
   {
     "game_id": "43535321",
@@ -4336,7 +4551,8 @@
     "loser_id": "53134900057",
     "finished_at": "2026-02-05T22:26:53.890Z",
     "template_id": 1573497,
-    "elo_change": 18
+    "elo_change": 18,
+    "turns": 9
   },
   {
     "game_id": "43535320",
@@ -4346,7 +4562,8 @@
     "loser_id": "14130113253",
     "finished_at": "2026-02-06T02:01:09.957Z",
     "template_id": 1573499,
-    "elo_change": 13
+    "elo_change": 13,
+    "turns": 4
   },
   {
     "game_id": "43523318",
@@ -4356,7 +4573,8 @@
     "loser_id": "9313400553",
     "finished_at": "2026-02-06T05:14:37.017Z",
     "template_id": 1573499,
-    "elo_change": 9
+    "elo_change": 9,
+    "turns": 4
   },
   {
     "game_id": "43533748",
@@ -4366,7 +4584,8 @@
     "loser_id": "8222729424",
     "finished_at": "2026-02-06T08:40:38.526Z",
     "template_id": 1431579,
-    "elo_change": 21
+    "elo_change": 21,
+    "turns": 10
   },
   {
     "game_id": "43520013",
@@ -4376,7 +4595,8 @@
     "loser_id": "1382545505",
     "finished_at": "2026-02-06T12:58:03.110Z",
     "template_id": 1573495,
-    "elo_change": 8
+    "elo_change": 8,
+    "turns": 9
   },
   {
     "game_id": "43540862",
@@ -4391,7 +4611,8 @@
     "loser_id": "88110265403",
     "finished_at": "2026-02-06T16:43:28.507Z",
     "template_id": 1573495,
-    "elo_change": 27
+    "elo_change": 27,
+    "turns": 8
   },
   {
     "game_id": "43380728",
@@ -4401,7 +4622,8 @@
     "loser_id": "8294358602",
     "finished_at": "2026-02-06T20:33:25.415Z",
     "template_id": 1573498,
-    "elo_change": 23
+    "elo_change": 23,
+    "turns": 22
   },
   {
     "game_id": "43507849",
@@ -4411,7 +4633,8 @@
     "loser_id": "99110844848",
     "finished_at": "2026-02-06T22:22:33.871Z",
     "template_id": 1431579,
-    "elo_change": 24
+    "elo_change": 24,
+    "turns": 16
   },
   {
     "game_id": "43530692",
@@ -4421,7 +4644,8 @@
     "loser_id": "16127869941",
     "finished_at": "2026-02-06T22:22:34.560Z",
     "template_id": 1573498,
-    "elo_change": 33
+    "elo_change": 33,
+    "turns": 3
   },
   {
     "game_id": "43542902",
@@ -4431,7 +4655,8 @@
     "loser_id": "8222729424",
     "finished_at": "2026-02-06T22:22:34.958Z",
     "template_id": 1573495,
-    "elo_change": 5
+    "elo_change": 5,
+    "turns": 11
   },
   {
     "game_id": "43520908",
@@ -4461,7 +4686,8 @@
     "loser_id": "23105988432",
     "finished_at": "2026-02-07T08:30:59.078Z",
     "template_id": 1431579,
-    "elo_change": 22
+    "elo_change": 22,
+    "turns": 12
   },
   {
     "game_id": "43524890",
@@ -4496,7 +4722,8 @@
     "loser_id": "53134900057",
     "finished_at": "2026-02-07T18:34:55.155Z",
     "template_id": 1573499,
-    "elo_change": 23
+    "elo_change": 23,
+    "turns": 7
   },
   {
     "game_id": "43546229",
@@ -4506,7 +4733,8 @@
     "loser_id": "79105823914",
     "finished_at": "2026-02-07T18:34:55.264Z",
     "template_id": 1573495,
-    "elo_change": 14
+    "elo_change": 14,
+    "turns": 4
   },
   {
     "game_id": "43547048",
@@ -4516,7 +4744,8 @@
     "loser_id": "99110844848",
     "finished_at": "2026-02-07T18:34:55.377Z",
     "template_id": 1573499,
-    "elo_change": 27
+    "elo_change": 27,
+    "turns": 6
   },
   {
     "game_id": "43553273",
@@ -4526,7 +4755,8 @@
     "loser_id": "9313400553",
     "finished_at": "2026-02-07T20:26:43.457Z",
     "template_id": 1573499,
-    "elo_change": 9
+    "elo_change": 9,
+    "turns": 3
   },
   {
     "game_id": "43526514",
@@ -4536,7 +4766,8 @@
     "loser_id": "4155523061",
     "finished_at": "2026-02-08T05:22:54.031Z",
     "template_id": 1573499,
-    "elo_change": 17
+    "elo_change": 17,
+    "turns": 9
   },
   {
     "game_id": "43553269",
@@ -4546,7 +4777,8 @@
     "loser_id": "3631391841",
     "finished_at": "2026-02-09T02:08:37.688Z",
     "template_id": 1573497,
-    "elo_change": 19
+    "elo_change": 19,
+    "turns": 11
   },
   {
     "game_id": "43533749",
@@ -4556,7 +4788,8 @@
     "loser_id": "25126079448",
     "finished_at": "2026-02-09T13:08:00.559Z",
     "template_id": 1390041,
-    "elo_change": 14
+    "elo_change": 14,
+    "turns": 5
   },
   {
     "game_id": "43538291",
@@ -4566,7 +4799,8 @@
     "loser_id": "1382545505",
     "finished_at": "2026-02-09T13:08:00.631Z",
     "template_id": 1573498,
-    "elo_change": 21
+    "elo_change": 21,
+    "turns": 11
   },
   {
     "game_id": "43528565",
@@ -4576,7 +4810,8 @@
     "loser_id": "4155523061",
     "finished_at": "2026-02-09T20:37:48.625Z",
     "template_id": 1574451,
-    "elo_change": 5
+    "elo_change": 5,
+    "turns": 6
   },
   {
     "game_id": "43546230",
@@ -4591,7 +4826,8 @@
     "loser_id": "99110844848",
     "finished_at": "2026-02-09T20:37:49.184Z",
     "template_id": 1573499,
-    "elo_change": 20
+    "elo_change": 20,
+    "turns": 1
   },
   {
     "game_id": "43565920",
@@ -4601,7 +4837,8 @@
     "loser_id": "53134900057",
     "finished_at": "2026-02-09T20:37:50.346Z",
     "template_id": 1573497,
-    "elo_change": 22
+    "elo_change": 22,
+    "turns": 14
   },
   {
     "game_id": "43548771",
@@ -4611,7 +4848,8 @@
     "loser_id": "23105988432",
     "finished_at": "2026-02-09T22:35:10.496Z",
     "template_id": 1574451,
-    "elo_change": 15
+    "elo_change": 15,
+    "turns": 3
   },
   {
     "game_id": "43548155",
@@ -4626,7 +4864,8 @@
     "loser_id": "14130113253",
     "finished_at": "2026-02-10T02:25:17.638Z",
     "template_id": 1390041,
-    "elo_change": 27
+    "elo_change": 27,
+    "turns": 9
   },
   {
     "game_id": "43556727",
@@ -4636,7 +4875,8 @@
     "loser_id": "4155523061",
     "finished_at": "2026-02-10T05:26:58.688Z",
     "template_id": 1390041,
-    "elo_change": 10
+    "elo_change": 10,
+    "turns": 9
   },
   {
     "game_id": "43572558",
@@ -4651,7 +4891,8 @@
     "loser_id": "71148639731",
     "finished_at": "2026-02-10T10:53:43.996Z",
     "template_id": 1390041,
-    "elo_change": 27
+    "elo_change": 27,
+    "turns": 14
   },
   {
     "game_id": "43574644",
@@ -4666,7 +4907,8 @@
     "loser_id": "53134900057",
     "finished_at": "2026-02-10T20:43:20.160Z",
     "template_id": 1573497,
-    "elo_change": 21
+    "elo_change": 21,
+    "turns": 2
   },
   {
     "game_id": "43570338",
@@ -4676,7 +4918,8 @@
     "loser_id": "31104791368",
     "finished_at": "2026-02-11T02:21:30.020Z",
     "template_id": 1574451,
-    "elo_change": 26
+    "elo_change": 26,
+    "turns": 2
   },
   {
     "game_id": "43573393",
@@ -4686,7 +4929,8 @@
     "loser_id": "9313400553",
     "finished_at": "2026-02-11T02:21:30.265Z",
     "template_id": 1573498,
-    "elo_change": 9
+    "elo_change": 9,
+    "turns": 4
   },
   {
     "game_id": "43579043",
@@ -4696,7 +4940,8 @@
     "loser_id": "8222729424",
     "finished_at": "2026-02-11T02:21:30.364Z",
     "template_id": 1390041,
-    "elo_change": 18
+    "elo_change": 18,
+    "turns": 5
   },
   {
     "game_id": "43553268",
@@ -4706,7 +4951,8 @@
     "loser_id": "3428471447",
     "finished_at": "2026-02-11T08:48:39.766Z",
     "template_id": 1574451,
-    "elo_change": 25
+    "elo_change": 25,
+    "turns": 10
   },
   {
     "game_id": "43558722",
@@ -4801,7 +5047,8 @@
     "loser_id": "13128957162",
     "finished_at": "2026-02-11T14:52:31.136Z",
     "template_id": 1573495,
-    "elo_change": 16
+    "elo_change": 16,
+    "turns": 11
   },
   {
     "game_id": "43528569",
@@ -4811,7 +5058,8 @@
     "loser_id": "56133341636",
     "finished_at": "2026-02-11T19:02:09.424Z",
     "template_id": 1573498,
-    "elo_change": 20
+    "elo_change": 20,
+    "turns": 9
   },
   {
     "game_id": "43581131",
@@ -4826,7 +5074,8 @@
     "loser_id": "1382545505",
     "finished_at": "2026-02-11T22:28:54.459Z",
     "template_id": 1573495,
-    "elo_change": 19
+    "elo_change": 19,
+    "turns": 2
   },
   {
     "game_id": "43526511",
@@ -4836,7 +5085,8 @@
     "loser_id": "25126079448",
     "finished_at": "2026-02-12T02:08:14.604Z",
     "template_id": 1573497,
-    "elo_change": 17
+    "elo_change": 17,
+    "turns": 7
   },
   {
     "game_id": "43573392",
@@ -4846,7 +5096,8 @@
     "loser_id": "4155523061",
     "finished_at": "2026-02-12T02:08:15.891Z",
     "template_id": 1390041,
-    "elo_change": 5
+    "elo_change": 5,
+    "turns": 9
   },
   {
     "game_id": "43579042",
@@ -4856,7 +5107,8 @@
     "loser_id": "14130113253",
     "finished_at": "2026-02-12T02:08:16.046Z",
     "template_id": 1574451,
-    "elo_change": 19
+    "elo_change": 19,
+    "turns": 2
   },
   {
     "game_id": "43581805",
@@ -4866,7 +5118,8 @@
     "loser_id": "6411877352",
     "finished_at": "2026-02-12T02:08:16.290Z",
     "template_id": 1573495,
-    "elo_change": 18
+    "elo_change": 18,
+    "turns": 8
   },
   {
     "game_id": "43586769",
@@ -4876,7 +5129,8 @@
     "loser_id": "3631391841",
     "finished_at": "2026-02-12T02:08:16.535Z",
     "template_id": 1573495,
-    "elo_change": 11
+    "elo_change": 11,
+    "turns": 16
   },
   {
     "game_id": "43547049",
@@ -4886,7 +5140,8 @@
     "loser_id": "16127869941",
     "finished_at": "2026-02-12T05:23:45.974Z",
     "template_id": 1431579,
-    "elo_change": 27
+    "elo_change": 27,
+    "turns": 22
   },
   {
     "game_id": "43564015",
@@ -4906,7 +5161,8 @@
     "loser_id": "79105823914",
     "finished_at": "2026-02-12T14:46:41.059Z",
     "template_id": 1573497,
-    "elo_change": 17
+    "elo_change": 17,
+    "turns": 7
   },
   {
     "game_id": "43542901",
@@ -4916,7 +5172,8 @@
     "loser_id": "9313400553",
     "finished_at": "2026-02-12T14:46:41.341Z",
     "template_id": 1390041,
-    "elo_change": 16
+    "elo_change": 16,
+    "turns": 14
   },
   {
     "game_id": "43581130",
@@ -4926,7 +5183,8 @@
     "loser_id": "9313400553",
     "finished_at": "2026-02-12T14:46:41.632Z",
     "template_id": 1573498,
-    "elo_change": 15
+    "elo_change": 15,
+    "turns": 6
   },
   {
     "game_id": "43571317",
@@ -4936,7 +5194,8 @@
     "loser_id": "31104791368",
     "finished_at": "2026-02-12T16:57:48.076Z",
     "template_id": 1390041,
-    "elo_change": 15
+    "elo_change": 15,
+    "turns": 3
   },
   {
     "game_id": "43566646",
@@ -4946,7 +5205,8 @@
     "loser_id": "25126079448",
     "finished_at": "2026-02-12T20:34:22.791Z",
     "template_id": 1573498,
-    "elo_change": 11
+    "elo_change": 11,
+    "turns": 7
   },
   {
     "game_id": "43570340",
@@ -4956,7 +5216,8 @@
     "loser_id": "23105988432",
     "finished_at": "2026-02-12T20:34:22.887Z",
     "template_id": 1573495,
-    "elo_change": 20
+    "elo_change": 20,
+    "turns": 13
   },
   {
     "game_id": "43593290",
@@ -4971,7 +5232,8 @@
     "loser_id": "14130113253",
     "finished_at": "2026-02-13T05:20:34.663Z",
     "template_id": 1573498,
-    "elo_change": 26
+    "elo_change": 26,
+    "turns": 4
   },
   {
     "game_id": "43594259",
@@ -4981,7 +5243,8 @@
     "loser_id": "9313400553",
     "finished_at": "2026-02-13T06:58:53.119Z",
     "template_id": 1573497,
-    "elo_change": 8
+    "elo_change": 8,
+    "turns": 6
   },
   {
     "game_id": "43570339",
@@ -4991,7 +5254,8 @@
     "loser_id": "99110844848",
     "finished_at": "2026-02-13T14:39:37.621Z",
     "template_id": 1573499,
-    "elo_change": 6
+    "elo_change": 6,
+    "turns": 12
   },
   {
     "game_id": "43589761",
@@ -5001,7 +5265,8 @@
     "loser_id": "53134900057",
     "finished_at": "2026-02-13T18:48:59.120Z",
     "template_id": 1573495,
-    "elo_change": 24
+    "elo_change": 24,
+    "turns": 7
   },
   {
     "game_id": "43590507",
@@ -5011,7 +5276,8 @@
     "loser_id": "99110844848",
     "finished_at": "2026-02-13T20:37:35.944Z",
     "template_id": 1431579,
-    "elo_change": 20
+    "elo_change": 20,
+    "turns": 7
   },
   {
     "game_id": "43589763",
@@ -5021,7 +5287,8 @@
     "loser_id": "4155523061",
     "finished_at": "2026-02-13T22:32:20.996Z",
     "template_id": 1573498,
-    "elo_change": 16
+    "elo_change": 16,
+    "turns": 12
   },
   {
     "game_id": "43593291",
@@ -5031,7 +5298,8 @@
     "loser_id": "71155120841",
     "finished_at": "2026-02-13T22:32:21.193Z",
     "template_id": 1573495,
-    "elo_change": 24
+    "elo_change": 24,
+    "turns": 8
   },
   {
     "game_id": "43599488",
@@ -5041,7 +5309,8 @@
     "loser_id": "9313400553",
     "finished_at": "2026-02-14T01:59:05.861Z",
     "template_id": 1573497,
-    "elo_change": 18
+    "elo_change": 18,
+    "turns": 6
   },
   {
     "game_id": "43589762",
@@ -5051,7 +5320,8 @@
     "loser_id": "3346775331",
     "finished_at": "2026-02-14T04:15:58.234Z",
     "template_id": 1431579,
-    "elo_change": 27
+    "elo_change": 27,
+    "turns": 6
   },
   {
     "game_id": "43606178",
@@ -5066,7 +5336,8 @@
     "loser_id": "53134900057",
     "finished_at": "2026-02-14T06:43:11.307Z",
     "template_id": 1390041,
-    "elo_change": 29
+    "elo_change": 29,
+    "turns": 13
   },
   {
     "game_id": "43603468",
@@ -5076,7 +5347,8 @@
     "loser_id": "56133341636",
     "finished_at": "2026-02-14T14:26:23.139Z",
     "template_id": 1573497,
-    "elo_change": 22
+    "elo_change": 22,
+    "turns": 2
   },
   {
     "game_id": "43605140",
@@ -5086,7 +5358,8 @@
     "loser_id": "4155523061",
     "finished_at": "2026-02-14T14:26:23.290Z",
     "template_id": 1390041,
-    "elo_change": 16
+    "elo_change": 16,
+    "turns": 11
   },
   {
     "game_id": "43607402",
@@ -5096,7 +5369,8 @@
     "loser_id": "53134900057",
     "finished_at": "2026-02-14T22:23:02.968Z",
     "template_id": 1573497,
-    "elo_change": 19
+    "elo_change": 19,
+    "turns": 7
   },
   {
     "game_id": "43609447",
@@ -5106,7 +5380,8 @@
     "loser_id": "99110844848",
     "finished_at": "2026-02-14T22:23:03.131Z",
     "template_id": 1573498,
-    "elo_change": 18
+    "elo_change": 18,
+    "turns": 7
   },
   {
     "game_id": "43605139",
@@ -5116,7 +5391,8 @@
     "loser_id": "3631391841",
     "finished_at": "2026-02-15T02:10:24.555Z",
     "template_id": 1573497,
-    "elo_change": 20
+    "elo_change": 20,
+    "turns": 3
   },
   {
     "game_id": "43609446",
@@ -5126,7 +5402,8 @@
     "loser_id": "9313400553",
     "finished_at": "2026-02-15T05:18:24.920Z",
     "template_id": 1431579,
-    "elo_change": 19
+    "elo_change": 19,
+    "turns": 5
   },
   {
     "game_id": "43609448",
@@ -5136,7 +5413,8 @@
     "loser_id": "9313400553",
     "finished_at": "2026-02-15T05:18:25.002Z",
     "template_id": 1573499,
-    "elo_change": 14
+    "elo_change": 14,
+    "turns": 3
   },
   {
     "game_id": "43613710",
@@ -5146,7 +5424,8 @@
     "loser_id": "3591948853",
     "finished_at": "2026-02-15T05:18:25.165Z",
     "template_id": 1573498,
-    "elo_change": 23
+    "elo_change": 23,
+    "turns": 4
   },
   {
     "game_id": "43584804",
@@ -5156,7 +5435,8 @@
     "loser_id": "3428471447",
     "finished_at": "2026-02-15T08:32:44.583Z",
     "template_id": 1573498,
-    "elo_change": 12
+    "elo_change": 12,
+    "turns": 6
   },
   {
     "game_id": "43538293",
@@ -5166,7 +5446,8 @@
     "loser_id": "13128957162",
     "finished_at": "2026-02-15T10:25:37.176Z",
     "template_id": 1431579,
-    "elo_change": 17
+    "elo_change": 17,
+    "turns": 13
   },
   {
     "game_id": "43606727",
@@ -5176,7 +5457,8 @@
     "loser_id": "3631391841",
     "finished_at": "2026-02-15T12:50:03.019Z",
     "template_id": 1573499,
-    "elo_change": 8
+    "elo_change": 8,
+    "turns": 7
   },
   {
     "game_id": "43590506",
@@ -5186,7 +5468,8 @@
     "loser_id": "23105988432",
     "finished_at": "2026-02-15T14:26:54.689Z",
     "template_id": 1573495,
-    "elo_change": 18
+    "elo_change": 18,
+    "turns": 9
   },
   {
     "game_id": "43614324",
@@ -5196,7 +5479,8 @@
     "loser_id": "9313400553",
     "finished_at": "2026-02-15T14:26:55.188Z",
     "template_id": 1573495,
-    "elo_change": 11
+    "elo_change": 11,
+    "turns": 5
   },
   {
     "game_id": "43614327",
@@ -5206,7 +5490,8 @@
     "loser_id": "9313400553",
     "finished_at": "2026-02-15T14:26:55.339Z",
     "template_id": 1573498,
-    "elo_change": 10
+    "elo_change": 10,
+    "turns": 2
   },
   {
     "game_id": "43603467",
@@ -5216,7 +5501,8 @@
     "loser_id": "53134900057",
     "finished_at": "2026-02-15T16:29:39.828Z",
     "template_id": 1573498,
-    "elo_change": 6
+    "elo_change": 6,
+    "turns": 9
   },
   {
     "game_id": "43605138",
@@ -5226,7 +5512,8 @@
     "loser_id": "99110844848",
     "finished_at": "2026-02-15T18:36:02.211Z",
     "template_id": 1573497,
-    "elo_change": 16
+    "elo_change": 16,
+    "turns": 4
   },
   {
     "game_id": "43617448",
@@ -5246,7 +5533,8 @@
     "loser_id": "14130113253",
     "finished_at": "2026-02-16T05:25:51.623Z",
     "template_id": 1573495,
-    "elo_change": 10
+    "elo_change": 10,
+    "turns": 11
   },
   {
     "game_id": "43613709",
@@ -5256,7 +5544,8 @@
     "loser_id": "99110844848",
     "finished_at": "2026-02-16T05:25:51.726Z",
     "template_id": 1390041,
-    "elo_change": 15
+    "elo_change": 15,
+    "turns": 7
   },
   {
     "game_id": "43616614",
@@ -5266,7 +5555,8 @@
     "loser_id": "9313400553",
     "finished_at": "2026-02-16T07:02:30.957Z",
     "template_id": 1573495,
-    "elo_change": 8
+    "elo_change": 8,
+    "turns": 8
   },
   {
     "game_id": "43588539",
@@ -5276,7 +5566,8 @@
     "loser_id": "56133341636",
     "finished_at": "2026-02-16T13:02:00.917Z",
     "template_id": 1573498,
-    "elo_change": 18
+    "elo_change": 18,
+    "turns": 7
   },
   {
     "game_id": "43614325",
@@ -5286,7 +5577,8 @@
     "loser_id": "56133341636",
     "finished_at": "2026-02-16T16:42:23.595Z",
     "template_id": 1574451,
-    "elo_change": 20
+    "elo_change": 20,
+    "turns": 11
   },
   {
     "game_id": "43616615",
@@ -5296,7 +5588,8 @@
     "loser_id": "9313400553",
     "finished_at": "2026-02-16T16:42:24.177Z",
     "template_id": 1573498,
-    "elo_change": 10
+    "elo_change": 10,
+    "turns": 12
   },
   {
     "game_id": "43625919",
@@ -5311,7 +5604,8 @@
     "loser_id": "4155523061",
     "finished_at": "2026-02-17T02:03:29.369Z",
     "template_id": 1431579,
-    "elo_change": 17
+    "elo_change": 17,
+    "turns": 22
   },
   {
     "game_id": "43614326",
@@ -5321,7 +5615,8 @@
     "loser_id": "4155523061",
     "finished_at": "2026-02-17T02:03:29.705Z",
     "template_id": 1431579,
-    "elo_change": 14
+    "elo_change": 14,
+    "turns": 8
   },
   {
     "game_id": "43618362",
@@ -5331,7 +5626,8 @@
     "loser_id": "99110844848",
     "finished_at": "2026-02-17T02:03:30.036Z",
     "template_id": 1574451,
-    "elo_change": 5
+    "elo_change": 5,
+    "turns": 3
   },
   {
     "game_id": "43618363",
@@ -5341,7 +5637,8 @@
     "loser_id": "3591948853",
     "finished_at": "2026-02-17T16:56:21.111Z",
     "template_id": 1573499,
-    "elo_change": 19
+    "elo_change": 19,
+    "turns": 6
   },
   {
     "game_id": "43531945",
@@ -5351,7 +5648,8 @@
     "loser_id": "71148639731",
     "finished_at": "2026-02-17T18:57:13.081Z",
     "template_id": 1573497,
-    "elo_change": 18
+    "elo_change": 18,
+    "turns": 24
   },
   {
     "game_id": "43590508",
@@ -5361,7 +5659,8 @@
     "loser_id": "8222729424",
     "finished_at": "2026-02-17T18:57:13.753Z",
     "template_id": 1431579,
-    "elo_change": 22
+    "elo_change": 22,
+    "turns": 13
   },
   {
     "game_id": "43589764",
@@ -5371,7 +5670,8 @@
     "loser_id": "1382545505",
     "finished_at": "2026-02-18T02:07:27.231Z",
     "template_id": 1390041,
-    "elo_change": 25
+    "elo_change": 25,
+    "turns": 14
   },
   {
     "game_id": "43625920",
@@ -5381,7 +5681,8 @@
     "loser_id": "9313400553",
     "finished_at": "2026-02-18T02:07:28.545Z",
     "template_id": 1573495,
-    "elo_change": 12
+    "elo_change": 12,
+    "turns": 4
   },
   {
     "game_id": "43635315",
@@ -5391,7 +5692,8 @@
     "loser_id": "8222729424",
     "finished_at": "2026-02-18T02:07:29.044Z",
     "template_id": 1573497,
-    "elo_change": 17
+    "elo_change": 17,
+    "turns": 5
   },
   {
     "game_id": "43622574",
@@ -5401,7 +5703,8 @@
     "loser_id": "9313400553",
     "finished_at": "2026-02-18T05:22:43.206Z",
     "template_id": 1390041,
-    "elo_change": 13
+    "elo_change": 13,
+    "turns": 6
   },
   {
     "game_id": "43635317",
@@ -5426,7 +5729,8 @@
     "loser_id": "3428471447",
     "finished_at": "2026-02-18T07:00:26.856Z",
     "template_id": 1573499,
-    "elo_change": 14
+    "elo_change": 14,
+    "turns": 7
   },
   {
     "game_id": "43615427",
@@ -5441,7 +5745,8 @@
     "loser_id": "23105988432",
     "finished_at": "2026-02-18T13:03:22.513Z",
     "template_id": 1573497,
-    "elo_change": 20
+    "elo_change": 20,
+    "turns": 5
   },
   {
     "game_id": "43616095",
@@ -5456,7 +5761,8 @@
     "loser_id": "25126079448",
     "finished_at": "2026-02-18T17:02:37.225Z",
     "template_id": 1573499,
-    "elo_change": 6
+    "elo_change": 6,
+    "turns": -1
   },
   {
     "game_id": "43624288",
@@ -5466,7 +5772,8 @@
     "loser_id": "3428471447",
     "finished_at": "2026-02-18T17:02:37.890Z",
     "template_id": 1574451,
-    "elo_change": 17
+    "elo_change": 17,
+    "turns": 3
   },
   {
     "game_id": "43629890",
@@ -5476,7 +5783,8 @@
     "loser_id": "3631391841",
     "finished_at": "2026-02-18T17:02:38.132Z",
     "template_id": 1573495,
-    "elo_change": 8
+    "elo_change": 8,
+    "turns": 19
   },
   {
     "game_id": "43620189",
@@ -5486,7 +5794,8 @@
     "loser_id": "31104791368",
     "finished_at": "2026-02-18T22:31:57.799Z",
     "template_id": 1574451,
-    "elo_change": 21
+    "elo_change": 21,
+    "turns": 3
   },
   {
     "game_id": "43638829",
@@ -5496,7 +5805,8 @@
     "loser_id": "9313400553",
     "finished_at": "2026-02-18T22:31:58.309Z",
     "template_id": 1573498,
-    "elo_change": 5
+    "elo_change": 5,
+    "turns": 9
   },
   {
     "game_id": "43642804",
@@ -5506,7 +5816,8 @@
     "loser_id": "3631391841",
     "finished_at": "2026-02-18T22:31:58.611Z",
     "template_id": 1573499,
-    "elo_change": 15
+    "elo_change": 15,
+    "turns": 6
   },
   {
     "game_id": "43640919",
@@ -5516,7 +5827,8 @@
     "loser_id": "23105988432",
     "finished_at": "2026-02-19T02:06:09.178Z",
     "template_id": 1573497,
-    "elo_change": 5
+    "elo_change": 5,
+    "turns": 7
   },
   {
     "game_id": "43642803",
@@ -5526,7 +5838,8 @@
     "loser_id": "25126079448",
     "finished_at": "2026-02-19T02:06:09.283Z",
     "template_id": 1573495,
-    "elo_change": 4
+    "elo_change": 4,
+    "turns": 0
   },
   {
     "game_id": "43629889",
@@ -5536,7 +5849,8 @@
     "loser_id": "99110844848",
     "finished_at": "2026-02-19T05:20:47.907Z",
     "template_id": 1431579,
-    "elo_change": 16
+    "elo_change": 16,
+    "turns": 5
   },
   {
     "game_id": "43640920",
@@ -5546,7 +5860,8 @@
     "loser_id": "31104791368",
     "finished_at": "2026-02-19T10:41:47.232Z",
     "template_id": 1573495,
-    "elo_change": 17
+    "elo_change": 17,
+    "turns": 6
   },
   {
     "game_id": "43622247",
@@ -5556,7 +5871,8 @@
     "loser_id": "1382545505",
     "finished_at": "2026-02-19T13:04:23.373Z",
     "template_id": 1574451,
-    "elo_change": 13
+    "elo_change": 13,
+    "turns": 2
   },
   {
     "game_id": "43648722",
@@ -5566,7 +5882,8 @@
     "loser_id": "25126079448",
     "finished_at": "2026-02-19T14:45:52.758Z",
     "template_id": 1431579,
-    "elo_change": 17
+    "elo_change": 17,
+    "turns": -1
   },
   {
     "game_id": "43622246",
@@ -5576,7 +5893,8 @@
     "loser_id": "14130113253",
     "finished_at": "2026-02-19T16:52:08.096Z",
     "template_id": 1574451,
-    "elo_change": 13
+    "elo_change": 13,
+    "turns": 4
   },
   {
     "game_id": "43647491",
@@ -5586,7 +5904,8 @@
     "loser_id": "53134900057",
     "finished_at": "2026-02-19T16:52:09.378Z",
     "template_id": 1573495,
-    "elo_change": 7
+    "elo_change": 7,
+    "turns": 2
   },
   {
     "game_id": "43651344",
@@ -5596,7 +5915,8 @@
     "loser_id": "3346775331",
     "finished_at": "2026-02-19T20:31:51.262Z",
     "template_id": 1573497,
-    "elo_change": 31
+    "elo_change": 31,
+    "turns": 4
   },
   {
     "game_id": "43634419",
@@ -5606,7 +5926,8 @@
     "loser_id": "4155523061",
     "finished_at": "2026-02-19T22:30:25.856Z",
     "template_id": 1431579,
-    "elo_change": 13
+    "elo_change": 13,
+    "turns": 8
   },
   {
     "game_id": "43651345",
@@ -5616,7 +5937,8 @@
     "loser_id": "53134900057",
     "finished_at": "2026-02-19T22:30:26.549Z",
     "template_id": 1573498,
-    "elo_change": 25
+    "elo_change": 25,
+    "turns": 2
   },
   {
     "game_id": "43654099",
@@ -5626,7 +5948,8 @@
     "loser_id": "3591948853",
     "finished_at": "2026-02-20T02:01:54.416Z",
     "template_id": 1573497,
-    "elo_change": 25
+    "elo_change": 25,
+    "turns": 6
   },
   {
     "game_id": "43639140",
@@ -5636,7 +5959,8 @@
     "loser_id": "99110844848",
     "finished_at": "2026-02-20T05:15:39.083Z",
     "template_id": 1573497,
-    "elo_change": 15
+    "elo_change": 15,
+    "turns": 7
   },
   {
     "game_id": "43653146",
@@ -5646,7 +5970,8 @@
     "loser_id": "31104791368",
     "finished_at": "2026-02-20T14:38:17.274Z",
     "template_id": 1574451,
-    "elo_change": 6
+    "elo_change": 6,
+    "turns": 2
   },
   {
     "game_id": "43553270",
@@ -5656,7 +5981,8 @@
     "loser_id": "79105823914",
     "finished_at": "2026-02-20T16:37:51.732Z",
     "template_id": 1431579,
-    "elo_change": 19
+    "elo_change": 19,
+    "turns": 10
   },
   {
     "game_id": "43654100",
@@ -5666,7 +5992,8 @@
     "loser_id": "53134900057",
     "finished_at": "2026-02-20T16:37:52.930Z",
     "template_id": 1573495,
-    "elo_change": 13
+    "elo_change": 13,
+    "turns": 3
   },
   {
     "game_id": "43645379",
@@ -5676,7 +6003,8 @@
     "loser_id": "3631391841",
     "finished_at": "2026-02-20T18:47:00.826Z",
     "template_id": 1573497,
-    "elo_change": 22
+    "elo_change": 22,
+    "turns": 35
   },
   {
     "game_id": "43661407",
@@ -5691,7 +6019,8 @@
     "loser_id": "13128957162",
     "finished_at": "2026-02-21T01:56:57.420Z",
     "template_id": 1390041,
-    "elo_change": 21
+    "elo_change": 21,
+    "turns": 19
   },
   {
     "game_id": "43596238",
@@ -5701,7 +6030,8 @@
     "loser_id": "25126079448",
     "finished_at": "2026-02-21T01:56:57.640Z",
     "template_id": 1573499,
-    "elo_change": 17
+    "elo_change": 17,
+    "turns": 10
   },
   {
     "game_id": "43616613",
@@ -5711,7 +6041,8 @@
     "loser_id": "23105988432",
     "finished_at": "2026-02-21T01:56:57.721Z",
     "template_id": 1573495,
-    "elo_change": 18
+    "elo_change": 18,
+    "turns": 33
   },
   {
     "game_id": "43638162",
@@ -5721,7 +6052,8 @@
     "loser_id": "8222729424",
     "finished_at": "2026-02-21T01:56:58.251Z",
     "template_id": 1573498,
-    "elo_change": 29
+    "elo_change": 29,
+    "turns": 14
   },
   {
     "game_id": "43650339",
@@ -5731,7 +6063,8 @@
     "loser_id": "25126079448",
     "finished_at": "2026-02-21T01:56:58.983Z",
     "template_id": 1573497,
-    "elo_change": 6
+    "elo_change": 6,
+    "turns": 3
   },
   {
     "game_id": "43659726",
@@ -5741,7 +6074,8 @@
     "loser_id": "14130113253",
     "finished_at": "2026-02-21T01:56:59.306Z",
     "template_id": 1573499,
-    "elo_change": 6
+    "elo_change": 6,
+    "turns": 4
   },
   {
     "game_id": "43656087",
@@ -5751,7 +6085,8 @@
     "loser_id": "3591948853",
     "finished_at": "2026-02-21T04:09:26.524Z",
     "template_id": 1573495,
-    "elo_change": 27
+    "elo_change": 27,
+    "turns": 5
   },
   {
     "game_id": "43663412",
@@ -5771,7 +6106,8 @@
     "loser_id": "9313400553",
     "finished_at": "2026-02-21T14:25:25.786Z",
     "template_id": 1431579,
-    "elo_change": 8
+    "elo_change": 8,
+    "turns": 12
   },
   {
     "game_id": "43663411",
@@ -5781,7 +6117,8 @@
     "loser_id": "25126079448",
     "finished_at": "2026-02-21T16:27:49.256Z",
     "template_id": 1573497,
-    "elo_change": 13
+    "elo_change": 13,
+    "turns": 5
   },
   {
     "game_id": "43667399",
@@ -5796,7 +6133,8 @@
     "loser_id": "4155523061",
     "finished_at": "2026-02-21T20:24:23.190Z",
     "template_id": 1574451,
-    "elo_change": 8
+    "elo_change": 8,
+    "turns": 7
   },
   {
     "game_id": "43646775",
@@ -5806,7 +6144,8 @@
     "loser_id": "23105988432",
     "finished_at": "2026-02-22T02:05:47.270Z",
     "template_id": 1573498,
-    "elo_change": 10
+    "elo_change": 10,
+    "turns": 12
   },
   {
     "game_id": "43663890",
@@ -5816,7 +6155,8 @@
     "loser_id": "3591948853",
     "finished_at": "2026-02-22T02:05:47.856Z",
     "template_id": 1573499,
-    "elo_change": 28
+    "elo_change": 28,
+    "turns": 9
   },
   {
     "game_id": "43671271",
@@ -5826,7 +6166,8 @@
     "loser_id": "25126079448",
     "finished_at": "2026-02-22T05:15:17.834Z",
     "template_id": 1573495,
-    "elo_change": 8
+    "elo_change": 8,
+    "turns": 0
   },
   {
     "game_id": "43660639",
@@ -5836,7 +6177,8 @@
     "loser_id": "3631391841",
     "finished_at": "2026-02-22T18:35:14.907Z",
     "template_id": 1431579,
-    "elo_change": 12
+    "elo_change": 12,
+    "turns": 20
   },
   {
     "game_id": "43663410",
@@ -5846,7 +6188,8 @@
     "loser_id": "53134900057",
     "finished_at": "2026-02-22T20:26:05.982Z",
     "template_id": 1431579,
-    "elo_change": 21
+    "elo_change": 21,
+    "turns": 14
   },
   {
     "game_id": "43669161",
@@ -5856,7 +6199,8 @@
     "loser_id": "71155120841",
     "finished_at": "2026-02-22T20:26:06.526Z",
     "template_id": 1573499,
-    "elo_change": 29
+    "elo_change": 29,
+    "turns": 3
   },
   {
     "game_id": "43658825",
@@ -5866,7 +6210,8 @@
     "loser_id": "31104791368",
     "finished_at": "2026-02-23T02:06:41.876Z",
     "template_id": 1573497,
-    "elo_change": 17
+    "elo_change": 17,
+    "turns": 6
   },
   {
     "game_id": "43642805",
@@ -5876,7 +6221,8 @@
     "loser_id": "3428471447",
     "finished_at": "2026-02-23T05:24:54.195Z",
     "template_id": 1573497,
-    "elo_change": 11
+    "elo_change": 11,
+    "turns": 8
   },
   {
     "game_id": "43645383",
@@ -5886,7 +6232,8 @@
     "loser_id": "31104791368",
     "finished_at": "2026-02-23T05:24:54.248Z",
     "template_id": 1390041,
-    "elo_change": 10
+    "elo_change": 10,
+    "turns": 15
   },
   {
     "game_id": "43655224",
@@ -5896,7 +6243,8 @@
     "loser_id": "4155523061",
     "finished_at": "2026-02-23T05:24:54.408Z",
     "template_id": 1573498,
-    "elo_change": 12
+    "elo_change": 12,
+    "turns": 12
   },
   {
     "game_id": "43677041",
@@ -5906,7 +6254,8 @@
     "loser_id": "3591948853",
     "finished_at": "2026-02-23T05:24:55.197Z",
     "template_id": 1573495,
-    "elo_change": 19
+    "elo_change": 19,
+    "turns": 8
   },
   {
     "game_id": "43676098",
@@ -5916,7 +6265,8 @@
     "loser_id": "16127869941",
     "finished_at": "2026-02-23T14:45:02.600Z",
     "template_id": 1573499,
-    "elo_change": 29
+    "elo_change": 29,
+    "turns": 8
   },
   {
     "game_id": "43626893",
@@ -5926,7 +6276,8 @@
     "loser_id": "3631391841",
     "finished_at": "2026-02-23T16:56:29.395Z",
     "template_id": 1390041,
-    "elo_change": 22
+    "elo_change": 22,
+    "turns": 25
   },
   {
     "game_id": "43679835",
@@ -5936,7 +6287,8 @@
     "loser_id": "31104791368",
     "finished_at": "2026-02-23T16:56:30.393Z",
     "template_id": 1390041,
-    "elo_change": 15
+    "elo_change": 15,
+    "turns": 10
   },
   {
     "game_id": "43638161",
@@ -5946,7 +6298,8 @@
     "loser_id": "8222729424",
     "finished_at": "2026-02-23T19:01:57.261Z",
     "template_id": 1573495,
-    "elo_change": 16
+    "elo_change": 16,
+    "turns": 12
   },
   {
     "game_id": "43677042",
@@ -5956,7 +6309,8 @@
     "loser_id": "71155120841",
     "finished_at": "2026-02-23T19:01:58.358Z",
     "template_id": 1573497,
-    "elo_change": 28
+    "elo_change": 28,
+    "turns": 7
   },
   {
     "game_id": "43659727",
@@ -5966,7 +6320,8 @@
     "loser_id": "79105823914",
     "finished_at": "2026-02-23T22:40:18.609Z",
     "template_id": 1573499,
-    "elo_change": 17
+    "elo_change": 17,
+    "turns": 5
   },
   {
     "game_id": "43663413",
@@ -5976,7 +6331,8 @@
     "loser_id": "8222729424",
     "finished_at": "2026-02-23T22:40:19.124Z",
     "template_id": 1574451,
-    "elo_change": 4
+    "elo_change": 4,
+    "turns": 5
   },
   {
     "game_id": "43679836",
@@ -5986,7 +6342,8 @@
     "loser_id": "31104791368",
     "finished_at": "2026-02-23T22:40:19.902Z",
     "template_id": 1573495,
-    "elo_change": 13
+    "elo_change": 13,
+    "turns": 8
   },
   {
     "game_id": "43663407",
@@ -6016,7 +6373,8 @@
     "loser_id": "53134900057",
     "finished_at": "2026-02-24T13:04:41.573Z",
     "template_id": 1573499,
-    "elo_change": 7
+    "elo_change": 7,
+    "turns": 2
   },
   {
     "game_id": "43666593",
@@ -6031,7 +6389,8 @@
     "loser_id": "31104791368",
     "finished_at": "2026-02-24T17:05:17.391Z",
     "template_id": 1573497,
-    "elo_change": 17
+    "elo_change": 17,
+    "turns": 10
   },
   {
     "game_id": "43649544",
@@ -6041,7 +6400,8 @@
     "loser_id": "13128957162",
     "finished_at": "2026-02-24T19:00:45.656Z",
     "template_id": 1573497,
-    "elo_change": 21
+    "elo_change": 21,
+    "turns": 5
   },
   {
     "game_id": "43663409",
@@ -6051,7 +6411,8 @@
     "loser_id": "13128957162",
     "finished_at": "2026-02-24T19:00:45.769Z",
     "template_id": 1573499,
-    "elo_change": 25
+    "elo_change": 25,
+    "turns": 2
   },
   {
     "game_id": "43683622",
@@ -6061,7 +6422,8 @@
     "loser_id": "14130113253",
     "finished_at": "2026-02-24T19:00:46.321Z",
     "template_id": 1573499,
-    "elo_change": 24
+    "elo_change": 24,
+    "turns": 11
   },
   {
     "game_id": "43692851",
@@ -6076,7 +6438,8 @@
     "loser_id": "4155523061",
     "finished_at": "2026-02-24T20:35:09.396Z",
     "template_id": 1573497,
-    "elo_change": 4
+    "elo_change": 4,
+    "turns": 5
   },
   {
     "game_id": "43669162",
@@ -6086,7 +6449,8 @@
     "loser_id": "4155523061",
     "finished_at": "2026-02-24T22:33:03.487Z",
     "template_id": 1573498,
-    "elo_change": 23
+    "elo_change": 23,
+    "turns": 18
   },
   {
     "game_id": "43671272",
@@ -6096,7 +6460,8 @@
     "loser_id": "23105988432",
     "finished_at": "2026-02-24T22:33:03.534Z",
     "template_id": 1573499,
-    "elo_change": 18
+    "elo_change": 18,
+    "turns": 7
   },
   {
     "game_id": "43691076",
@@ -6106,7 +6471,8 @@
     "loser_id": "53134900057",
     "finished_at": "2026-02-25T02:05:40.058Z",
     "template_id": 1390041,
-    "elo_change": 18
+    "elo_change": 18,
+    "turns": 6
   },
   {
     "game_id": "43695606",
@@ -6116,7 +6482,8 @@
     "loser_id": "88110265403",
     "finished_at": "2026-02-25T02:05:40.417Z",
     "template_id": 1573499,
-    "elo_change": 34
+    "elo_change": 34,
+    "turns": 2
   },
   {
     "game_id": "43693812",
@@ -6126,7 +6493,8 @@
     "loser_id": "23105988432",
     "finished_at": "2026-02-25T10:50:55.516Z",
     "template_id": 1573499,
-    "elo_change": 24
+    "elo_change": 24,
+    "turns": 2
   },
   {
     "game_id": "43674358",
@@ -6141,7 +6509,8 @@
     "loser_id": "99110844848",
     "finished_at": "2026-02-25T20:38:13.214Z",
     "template_id": 1573499,
-    "elo_change": 4
+    "elo_change": 4,
+    "turns": 12
   },
   {
     "game_id": "43677040",
@@ -6151,7 +6520,8 @@
     "loser_id": "71155120841",
     "finished_at": "2026-02-25T20:38:13.564Z",
     "template_id": 1573499,
-    "elo_change": 23
+    "elo_change": 23,
+    "turns": 3
   },
   {
     "game_id": "43691830",
@@ -6161,7 +6531,8 @@
     "loser_id": "23154545458",
     "finished_at": "2026-02-25T20:38:14.088Z",
     "template_id": 1573497,
-    "elo_change": 19
+    "elo_change": 19,
+    "turns": 6
   },
   {
     "game_id": "43663408",
@@ -6171,7 +6542,8 @@
     "loser_id": "9313400553",
     "finished_at": "2026-02-26T02:01:06.335Z",
     "template_id": 1390041,
-    "elo_change": 13
+    "elo_change": 13,
+    "turns": 6
   },
   {
     "game_id": "43696865",
@@ -6181,7 +6553,8 @@
     "loser_id": "9313400553",
     "finished_at": "2026-02-26T02:01:07.281Z",
     "template_id": 1431579,
-    "elo_change": 10
+    "elo_change": 10,
+    "turns": 5
   },
   {
     "game_id": "43703110",
@@ -6191,7 +6564,8 @@
     "loser_id": "99110844848",
     "finished_at": "2026-02-26T05:19:17.227Z",
     "template_id": 1573495,
-    "elo_change": 7
+    "elo_change": 7,
+    "turns": 10
   },
   {
     "game_id": "43674357",
@@ -6201,7 +6575,8 @@
     "loser_id": "4379764745",
     "finished_at": "2026-02-26T14:45:59.790Z",
     "template_id": 1573499,
-    "elo_change": 20
+    "elo_change": 20,
+    "turns": 8
   },
   {
     "game_id": "43701495",
@@ -6226,7 +6601,8 @@
     "loser_id": "4379764745",
     "finished_at": "2026-02-26T20:37:05.626Z",
     "template_id": 1573497,
-    "elo_change": 18
+    "elo_change": 18,
+    "turns": 7
   },
   {
     "game_id": "43693810",
@@ -6236,7 +6612,8 @@
     "loser_id": "1382545505",
     "finished_at": "2026-02-27T02:00:11.361Z",
     "template_id": 1574451,
-    "elo_change": 19
+    "elo_change": 19,
+    "turns": -1
   },
   {
     "game_id": "43696864",
@@ -6246,7 +6623,8 @@
     "loser_id": "14130113253",
     "finished_at": "2026-02-27T02:00:11.503Z",
     "template_id": 1390041,
-    "elo_change": 27
+    "elo_change": 27,
+    "turns": 14
   },
   {
     "game_id": "43705703",
@@ -6256,7 +6634,8 @@
     "loser_id": "9313400553",
     "finished_at": "2026-02-27T02:00:12.000Z",
     "template_id": 1390041,
-    "elo_change": 3
+    "elo_change": 3,
+    "turns": 4
   },
   {
     "game_id": "43704982",
@@ -6266,7 +6645,8 @@
     "loser_id": "25126079448",
     "finished_at": "2026-02-27T04:19:55.395Z",
     "template_id": 1573499,
-    "elo_change": 24
+    "elo_change": 24,
+    "turns": 5
   },
   {
     "game_id": "43713211",
@@ -6286,7 +6666,8 @@
     "loser_id": "16127869941",
     "finished_at": "2026-02-27T12:57:56.997Z",
     "template_id": 1573497,
-    "elo_change": 25
+    "elo_change": 25,
+    "turns": 10
   },
   {
     "game_id": "43710357",
@@ -6296,7 +6677,8 @@
     "loser_id": "9780712014",
     "finished_at": "2026-02-27T12:57:57.930Z",
     "template_id": 1574451,
-    "elo_change": 26
+    "elo_change": 26,
+    "turns": -1
   },
   {
     "game_id": "43711236",
@@ -6341,7 +6723,8 @@
     "loser_id": "8222729424",
     "finished_at": "2026-02-27T22:21:53.704Z",
     "template_id": 1573495,
-    "elo_change": 16
+    "elo_change": 16,
+    "turns": 9
   },
   {
     "game_id": "43704983",
@@ -6351,7 +6734,8 @@
     "loser_id": "53134900057",
     "finished_at": "2026-02-28T01:50:25.153Z",
     "template_id": 1390041,
-    "elo_change": 23
+    "elo_change": 23,
+    "turns": 7
   },
   {
     "game_id": "43688187",
@@ -6361,7 +6745,8 @@
     "loser_id": "79105823914",
     "finished_at": "2026-02-28T03:54:15.775Z",
     "template_id": 1574451,
-    "elo_change": 10
+    "elo_change": 10,
+    "turns": 6
   },
   {
     "game_id": "43684697",
@@ -6371,7 +6756,8 @@
     "loser_id": "56133341636",
     "finished_at": "2026-02-28T04:54:57.808Z",
     "template_id": 1573495,
-    "elo_change": 21
+    "elo_change": 21,
+    "turns": 9
   },
   {
     "game_id": "43720166",
@@ -6406,7 +6792,8 @@
     "loser_id": "3631391841",
     "finished_at": "2026-02-28T20:25:33.072Z",
     "template_id": 1573498,
-    "elo_change": 7
+    "elo_change": 7,
+    "turns": 6
   },
   {
     "game_id": "43703111",
@@ -6421,7 +6808,8 @@
     "loser_id": "53134900057",
     "finished_at": "2026-02-28T22:22:02.080Z",
     "template_id": 1390041,
-    "elo_change": 22
+    "elo_change": 22,
+    "turns": 5
   },
   {
     "game_id": "43715975",
@@ -6431,7 +6819,8 @@
     "loser_id": "99110844848",
     "finished_at": "2026-03-01T02:12:37.964Z",
     "template_id": 1573497,
-    "elo_change": 7
+    "elo_change": 7,
+    "turns": 7
   },
   {
     "game_id": "43727821",
@@ -6446,7 +6835,8 @@
     "loser_id": "3428471447",
     "finished_at": "2026-03-01T05:16:48.095Z",
     "template_id": 1573498,
-    "elo_change": 23
+    "elo_change": 23,
+    "turns": 9
   },
   {
     "game_id": "43728952",
@@ -6456,7 +6846,8 @@
     "loser_id": "3631391841",
     "finished_at": "2026-03-01T05:16:48.942Z",
     "template_id": 1573499,
-    "elo_change": 10
+    "elo_change": 10,
+    "turns": 6
   },
   {
     "game_id": "43696866",
@@ -6466,7 +6857,8 @@
     "loser_id": "4155523061",
     "finished_at": "2026-03-01T06:44:17.402Z",
     "template_id": 1431579,
-    "elo_change": 3
+    "elo_change": 3,
+    "turns": 8
   },
   {
     "game_id": "43723979",
@@ -6481,7 +6873,8 @@
     "loser_id": "3591948853",
     "finished_at": "2026-03-01T12:47:01.979Z",
     "template_id": 1431579,
-    "elo_change": 31
+    "elo_change": 31,
+    "turns": 11
   },
   {
     "game_id": "43713702",
@@ -6496,7 +6889,8 @@
     "loser_id": "9313400553",
     "finished_at": "2026-03-01T22:23:02.732Z",
     "template_id": 1390041,
-    "elo_change": 10
+    "elo_change": 10,
+    "turns": 5
   },
   {
     "game_id": "43683623",
@@ -6506,7 +6900,8 @@
     "loser_id": "56133341636",
     "finished_at": "2026-03-02T02:03:51.481Z",
     "template_id": 1390041,
-    "elo_change": 13
+    "elo_change": 13,
+    "turns": 9
   },
   {
     "game_id": "43687129",
@@ -6516,7 +6911,8 @@
     "loser_id": "31104791368",
     "finished_at": "2026-03-02T02:03:51.548Z",
     "template_id": 1390041,
-    "elo_change": 23
+    "elo_change": 23,
+    "turns": 5
   },
   {
     "game_id": "43719325",
@@ -6526,7 +6922,8 @@
     "loser_id": "9780712014",
     "finished_at": "2026-03-02T02:03:51.734Z",
     "template_id": 1390041,
-    "elo_change": 19
+    "elo_change": 19,
+    "turns": 14
   },
   {
     "game_id": "43729591",
@@ -6536,7 +6933,8 @@
     "loser_id": "3591948853",
     "finished_at": "2026-03-02T02:03:52.095Z",
     "template_id": 1573499,
-    "elo_change": 18
+    "elo_change": 18,
+    "turns": 11
   },
   {
     "game_id": "43736836",
@@ -6556,7 +6954,8 @@
     "loser_id": "3591948853",
     "finished_at": "2026-03-02T16:45:23.114Z",
     "template_id": 1573498,
-    "elo_change": 13
+    "elo_change": 13,
+    "turns": 1
   },
   {
     "game_id": "43727820",
@@ -6571,7 +6970,8 @@
     "loser_id": "99110844848",
     "finished_at": "2026-03-02T18:47:52.525Z",
     "template_id": 1573497,
-    "elo_change": 18
+    "elo_change": 18,
+    "turns": 7
   },
   {
     "game_id": "43736837",
@@ -6581,7 +6981,8 @@
     "loser_id": "56133341636",
     "finished_at": "2026-03-02T18:47:54.414Z",
     "template_id": 1573498,
-    "elo_change": 15
+    "elo_change": 15,
+    "turns": 2
   },
   {
     "game_id": "43740953",
@@ -6596,7 +6997,8 @@
     "loser_id": "9313400553",
     "finished_at": "2026-03-02T20:36:50.825Z",
     "template_id": 1390041,
-    "elo_change": 7
+    "elo_change": 7,
+    "turns": 10
   },
   {
     "game_id": "43638163",
@@ -6606,7 +7008,8 @@
     "loser_id": "71148639731",
     "finished_at": "2026-03-03T02:05:14.425Z",
     "template_id": 1573498,
-    "elo_change": 21
+    "elo_change": 21,
+    "turns": 13
   },
   {
     "game_id": "43663891",
@@ -6616,7 +7019,8 @@
     "loser_id": "99110844848",
     "finished_at": "2026-03-03T02:05:14.778Z",
     "template_id": 1573498,
-    "elo_change": 14
+    "elo_change": 14,
+    "turns": 9
   },
   {
     "game_id": "43742935",
@@ -6626,7 +7030,8 @@
     "loser_id": "9313400553",
     "finished_at": "2026-03-03T02:05:18.343Z",
     "template_id": 1573495,
-    "elo_change": 10
+    "elo_change": 10,
+    "turns": 4
   },
   {
     "game_id": "43732043",
@@ -6636,7 +7041,8 @@
     "loser_id": "25126079448",
     "finished_at": "2026-03-03T05:13:45.307Z",
     "template_id": 1390041,
-    "elo_change": 20
+    "elo_change": 20,
+    "turns": 6
   },
   {
     "game_id": "43741954",
@@ -6646,7 +7052,8 @@
     "loser_id": "3591948853",
     "finished_at": "2026-03-03T12:56:21.937Z",
     "template_id": 1431579,
-    "elo_change": 14
+    "elo_change": 14,
+    "turns": 3
   },
   {
     "game_id": "43730699",
@@ -6666,7 +7073,8 @@
     "loser_id": "53134900057",
     "finished_at": "2026-03-03T22:28:11.118Z",
     "template_id": 1390041,
-    "elo_change": 18
+    "elo_change": 18,
+    "turns": 2
   },
   {
     "game_id": "43741958",
@@ -6676,7 +7084,8 @@
     "loser_id": "9313400553",
     "finished_at": "2026-03-04T01:59:05.613Z",
     "template_id": 1573495,
-    "elo_change": 4
+    "elo_change": 4,
+    "turns": 6
   },
   {
     "game_id": "43746130",
@@ -6686,7 +7095,8 @@
     "loser_id": "25126079448",
     "finished_at": "2026-03-04T01:59:05.811Z",
     "template_id": 1390041,
-    "elo_change": 8
+    "elo_change": 8,
+    "turns": -1
   },
   {
     "game_id": "43741959",
@@ -6696,7 +7106,8 @@
     "loser_id": "99110844848",
     "finished_at": "2026-03-04T04:14:35.594Z",
     "template_id": 1573495,
-    "elo_change": 4
+    "elo_change": 4,
+    "turns": 5
   },
   {
     "game_id": "43721797",
@@ -6706,7 +7117,8 @@
     "loser_id": "23154545458",
     "finished_at": "2026-03-04T14:37:19.794Z",
     "template_id": 1390041,
-    "elo_change": 30
+    "elo_change": 30,
+    "turns": 6
   },
   {
     "game_id": "43732044",
@@ -6791,7 +7203,8 @@
     "loser_id": "53134900057",
     "finished_at": "2026-03-04T14:37:22.517Z",
     "template_id": 1573498,
-    "elo_change": 6
+    "elo_change": 6,
+    "turns": 2
   },
   {
     "game_id": "43751268",
@@ -6801,7 +7214,8 @@
     "loser_id": "9780712014",
     "finished_at": "2026-03-04T16:42:44.137Z",
     "template_id": 1573495,
-    "elo_change": 22
+    "elo_change": 22,
+    "turns": 11
   },
   {
     "game_id": "43758613",
@@ -6811,7 +7225,8 @@
     "loser_id": "53134900057",
     "finished_at": "2026-03-04T18:50:55.271Z",
     "template_id": 1573495,
-    "elo_change": 23
+    "elo_change": 23,
+    "turns": 5
   },
   {
     "game_id": "43667400",
@@ -6821,7 +7236,8 @@
     "loser_id": "88117806994",
     "finished_at": "2026-03-04T20:31:02.438Z",
     "template_id": 1573499,
-    "elo_change": 32
+    "elo_change": 32,
+    "turns": 15
   },
   {
     "game_id": "43703109",
@@ -6831,7 +7247,8 @@
     "loser_id": "88117806994",
     "finished_at": "2026-03-04T20:31:02.659Z",
     "template_id": 1573498,
-    "elo_change": 6
+    "elo_change": 6,
+    "turns": 9
   },
   {
     "game_id": "43735703",
@@ -6846,7 +7263,8 @@
     "loser_id": "9313400553",
     "finished_at": "2026-03-04T22:30:08.106Z",
     "template_id": 1573499,
-    "elo_change": 16
+    "elo_change": 16,
+    "turns": 2
   },
   {
     "game_id": "43759617",
@@ -6856,7 +7274,8 @@
     "loser_id": "9780712014",
     "finished_at": "2026-03-04T22:30:08.277Z",
     "template_id": 1573498,
-    "elo_change": 5
+    "elo_change": 5,
+    "turns": 3
   },
   {
     "game_id": "43745084",
@@ -6866,7 +7285,8 @@
     "loser_id": "99110844848",
     "finished_at": "2026-03-05T05:11:45.059Z",
     "template_id": 1573497,
-    "elo_change": 27
+    "elo_change": 27,
+    "turns": 5
   },
   {
     "game_id": "43715977",
@@ -6876,7 +7296,8 @@
     "loser_id": "3428471447",
     "finished_at": "2026-03-05T06:51:24.665Z",
     "template_id": 1573497,
-    "elo_change": 23
+    "elo_change": 23,
+    "turns": 4
   },
   {
     "game_id": "43729833",
@@ -6886,7 +7307,8 @@
     "loser_id": "3428471447",
     "finished_at": "2026-03-05T06:51:25.084Z",
     "template_id": 1573497,
-    "elo_change": 8
+    "elo_change": 8,
+    "turns": 4
   },
   {
     "game_id": "43751269",
@@ -6896,7 +7318,8 @@
     "loser_id": "4155523061",
     "finished_at": "2026-03-05T06:51:25.397Z",
     "template_id": 1431579,
-    "elo_change": 9
+    "elo_change": 9,
+    "turns": 5
   },
   {
     "game_id": "43737801",
@@ -6911,7 +7334,8 @@
     "loser_id": "3631391841",
     "finished_at": "2026-03-05T14:43:16.185Z",
     "template_id": 1573497,
-    "elo_change": 12
+    "elo_change": 12,
+    "turns": 8
   },
   {
     "game_id": "43754268",
@@ -6921,7 +7345,8 @@
     "loser_id": "23154545458",
     "finished_at": "2026-03-05T18:03:19.759Z",
     "template_id": 1573497,
-    "elo_change": 24
+    "elo_change": 24,
+    "turns": 8
   },
   {
     "game_id": "43724524",
@@ -6931,7 +7356,8 @@
     "loser_id": "23105988432",
     "finished_at": "2026-03-05T20:36:19.752Z",
     "template_id": 1573497,
-    "elo_change": 12
+    "elo_change": 12,
+    "turns": 8
   },
   {
     "game_id": "43745085",
@@ -6941,7 +7367,8 @@
     "loser_id": "1382545505",
     "finished_at": "2026-03-06T02:01:51.201Z",
     "template_id": 1573499,
-    "elo_change": 17
+    "elo_change": 17,
+    "turns": 8
   },
   {
     "game_id": "43760502",
@@ -6951,7 +7378,8 @@
     "loser_id": "53134900057",
     "finished_at": "2026-03-06T02:01:51.450Z",
     "template_id": 1573497,
-    "elo_change": 27
+    "elo_change": 27,
+    "turns": 2
   },
   {
     "game_id": "43758614",
@@ -6961,7 +7389,8 @@
     "loser_id": "3591948853",
     "finished_at": "2026-03-06T05:09:11.247Z",
     "template_id": 1390041,
-    "elo_change": 12
+    "elo_change": 12,
+    "turns": 12
   },
   {
     "game_id": "43761547",
@@ -6971,7 +7400,8 @@
     "loser_id": "9780712014",
     "finished_at": "2026-03-06T06:47:42.272Z",
     "template_id": 1390041,
-    "elo_change": 30
+    "elo_change": 30,
+    "turns": 5
   },
   {
     "game_id": "43763541",
@@ -6981,7 +7411,8 @@
     "loser_id": "9313400553",
     "finished_at": "2026-03-06T06:47:42.350Z",
     "template_id": 1390041,
-    "elo_change": 2
+    "elo_change": 2,
+    "turns": 6
   },
   {
     "game_id": "43720167",
@@ -6991,7 +7422,8 @@
     "loser_id": "8222729424",
     "finished_at": "2026-03-06T12:54:40.130Z",
     "template_id": 1431579,
-    "elo_change": 17
+    "elo_change": 17,
+    "turns": 14
   },
   {
     "game_id": "43761545",
@@ -7001,7 +7433,8 @@
     "loser_id": "1382545505",
     "finished_at": "2026-03-06T12:54:41.395Z",
     "template_id": 1573497,
-    "elo_change": 6
+    "elo_change": 6,
+    "turns": 2
   },
   {
     "game_id": "43763808",
@@ -7011,7 +7444,8 @@
     "loser_id": "4155523061",
     "finished_at": "2026-03-06T18:43:37.040Z",
     "template_id": 1573499,
-    "elo_change": 12
+    "elo_change": 12,
+    "turns": 2
   },
   {
     "game_id": "43771223",
@@ -7021,7 +7455,8 @@
     "loser_id": "3631391841",
     "finished_at": "2026-03-06T18:43:37.238Z",
     "template_id": 1573499,
-    "elo_change": 28
+    "elo_change": 28,
+    "turns": 12
   },
   {
     "game_id": "43771896",
@@ -7036,7 +7471,8 @@
     "loser_id": "9780712014",
     "finished_at": "2026-03-06T22:27:39.893Z",
     "template_id": 1573498,
-    "elo_change": 4
+    "elo_change": 4,
+    "turns": 4
   },
   {
     "game_id": "43776688",
@@ -7066,7 +7502,8 @@
     "loser_id": "25126079448",
     "finished_at": "2026-03-07T06:39:44.678Z",
     "template_id": 1573499,
-    "elo_change": 8
+    "elo_change": 8,
+    "turns": 7
   },
   {
     "game_id": "43780093",
@@ -7081,7 +7518,8 @@
     "loser_id": "56133341636",
     "finished_at": "2026-03-07T20:24:51.589Z",
     "template_id": 1573499,
-    "elo_change": 18
+    "elo_change": 18,
+    "turns": 7
   },
   {
     "game_id": "43773907",
@@ -7091,7 +7529,8 @@
     "loser_id": "9313400553",
     "finished_at": "2026-03-08T02:03:35.774Z",
     "template_id": 1573497,
-    "elo_change": 10
+    "elo_change": 10,
+    "turns": 2
   },
   {
     "game_id": "43782650",
@@ -7101,7 +7540,8 @@
     "loser_id": "25126079448",
     "finished_at": "2026-03-08T05:08:45.199Z",
     "template_id": 1390041,
-    "elo_change": 21
+    "elo_change": 21,
+    "turns": 4
   },
   {
     "game_id": "43732042",
@@ -7111,7 +7551,8 @@
     "loser_id": "3591948853",
     "finished_at": "2026-03-08T16:27:53.400Z",
     "template_id": 1390041,
-    "elo_change": 20
+    "elo_change": 20,
+    "turns": 15
   },
   {
     "game_id": "43782651",
@@ -7121,7 +7562,8 @@
     "loser_id": "16127869941",
     "finished_at": "2026-03-08T16:27:54.208Z",
     "template_id": 1574451,
-    "elo_change": 10
+    "elo_change": 10,
+    "turns": 4
   },
   {
     "game_id": "43741956",
@@ -7131,7 +7573,8 @@
     "loser_id": "56133341636",
     "finished_at": "2026-03-09T02:05:12.225Z",
     "template_id": 1574451,
-    "elo_change": 9
+    "elo_change": 9,
+    "turns": 13
   },
   {
     "game_id": "43773906",
@@ -7141,7 +7584,8 @@
     "loser_id": "9780712014",
     "finished_at": "2026-03-09T02:05:12.989Z",
     "template_id": 1573495,
-    "elo_change": 4
+    "elo_change": 4,
+    "turns": 14
   },
   {
     "game_id": "43779435",
@@ -7151,7 +7595,8 @@
     "loser_id": "3631391841",
     "finished_at": "2026-03-09T02:05:13.246Z",
     "template_id": 1431579,
-    "elo_change": 19
+    "elo_change": 19,
+    "turns": 19
   },
   {
     "game_id": "43791147",
@@ -7161,7 +7606,8 @@
     "loser_id": "3591948853",
     "finished_at": "2026-03-09T02:05:13.633Z",
     "template_id": 1573499,
-    "elo_change": 10
+    "elo_change": 10,
+    "turns": 3
   },
   {
     "game_id": "43767761",
@@ -7171,7 +7617,8 @@
     "loser_id": "3631391841",
     "finished_at": "2026-03-09T05:18:34.724Z",
     "template_id": 1573495,
-    "elo_change": 16
+    "elo_change": 16,
+    "turns": 9
   },
   {
     "game_id": "43795324",
@@ -7186,7 +7633,8 @@
     "loser_id": "4379764745",
     "finished_at": "2026-03-09T10:43:52.699Z",
     "template_id": 1573495,
-    "elo_change": 29
+    "elo_change": 29,
+    "turns": 14
   },
   {
     "game_id": "43767760",
@@ -7196,7 +7644,8 @@
     "loser_id": "71148639731",
     "finished_at": "2026-03-09T13:01:36.830Z",
     "template_id": 1573497,
-    "elo_change": 12
+    "elo_change": 12,
+    "turns": 5
   },
   {
     "game_id": "43776690",
@@ -7206,7 +7655,8 @@
     "loser_id": "3591948853",
     "finished_at": "2026-03-09T13:01:37.030Z",
     "template_id": 1431579,
-    "elo_change": 23
+    "elo_change": 23,
+    "turns": 1
   },
   {
     "game_id": "43795329",
@@ -7226,7 +7676,8 @@
     "loser_id": "4379764745",
     "finished_at": "2026-03-09T14:49:49.335Z",
     "template_id": 1573497,
-    "elo_change": 22
+    "elo_change": 22,
+    "turns": 13
   },
   {
     "game_id": "43795328",
@@ -7236,7 +7687,8 @@
     "loser_id": "56133341636",
     "finished_at": "2026-03-09T16:56:12.491Z",
     "template_id": 1573497,
-    "elo_change": 3
+    "elo_change": 3,
+    "turns": 10
   },
   {
     "game_id": "43799695",
@@ -7251,7 +7703,8 @@
     "loser_id": "79105823914",
     "finished_at": "2026-03-09T22:27:47.133Z",
     "template_id": 1390041,
-    "elo_change": 7
+    "elo_change": 7,
+    "turns": 9
   },
   {
     "game_id": "43772199",
@@ -7261,7 +7714,8 @@
     "loser_id": "23154545458",
     "finished_at": "2026-03-10T01:57:35.637Z",
     "template_id": 1573499,
-    "elo_change": 35
+    "elo_change": 35,
+    "turns": 6
   },
   {
     "game_id": "43795326",
@@ -7271,7 +7725,8 @@
     "loser_id": "16127869941",
     "finished_at": "2026-03-10T04:13:46.167Z",
     "template_id": 1390041,
-    "elo_change": 23
+    "elo_change": 23,
+    "turns": 13
   },
   {
     "game_id": "43802610",
@@ -7286,7 +7741,8 @@
     "loser_id": "9780712014",
     "finished_at": "2026-03-10T16:55:45.529Z",
     "template_id": 1573497,
-    "elo_change": 13
+    "elo_change": 13,
+    "turns": 5
   },
   {
     "game_id": "43799694",
@@ -7296,7 +7752,8 @@
     "loser_id": "9780712014",
     "finished_at": "2026-03-10T18:46:49.189Z",
     "template_id": 1573499,
-    "elo_change": 4
+    "elo_change": 4,
+    "turns": 11
   },
   {
     "game_id": "43764203",
@@ -7306,7 +7763,8 @@
     "loser_id": "3428471447",
     "finished_at": "2026-03-11T01:57:21.345Z",
     "template_id": 1574451,
-    "elo_change": 25
+    "elo_change": 25,
+    "turns": 0
   },
   {
     "game_id": "43776689",
@@ -7316,7 +7774,8 @@
     "loser_id": "53134900057",
     "finished_at": "2026-03-11T04:13:21.883Z",
     "template_id": 1573495,
-    "elo_change": 26
+    "elo_change": 26,
+    "turns": 12
   },
   {
     "game_id": "43788615",
@@ -7336,7 +7795,8 @@
     "loser_id": "88117806994",
     "finished_at": "2026-03-11T14:44:01.356Z",
     "template_id": 1573499,
-    "elo_change": 23
+    "elo_change": 23,
+    "turns": 4
   },
   {
     "game_id": "43797919",
@@ -7346,7 +7806,8 @@
     "loser_id": "4155523061",
     "finished_at": "2026-03-11T14:44:01.897Z",
     "template_id": 1431579,
-    "elo_change": 13
+    "elo_change": 13,
+    "turns": 8
   },
   {
     "game_id": "43795327",
@@ -7356,7 +7817,8 @@
     "loser_id": "16127869941",
     "finished_at": "2026-03-11T18:53:00.940Z",
     "template_id": 1431579,
-    "elo_change": 24
+    "elo_change": 24,
+    "turns": 12
   },
   {
     "game_id": "43804280",
@@ -7366,7 +7828,8 @@
     "loser_id": "9313400553",
     "finished_at": "2026-03-11T18:53:01.186Z",
     "template_id": 1431579,
-    "elo_change": 8
+    "elo_change": 8,
+    "turns": 4
   },
   {
     "game_id": "43815686",
@@ -7376,7 +7839,8 @@
     "loser_id": "53134900057",
     "finished_at": "2026-03-11T18:53:01.712Z",
     "template_id": 1574451,
-    "elo_change": 25
+    "elo_change": 25,
+    "turns": 4
   },
   {
     "game_id": "43791146",
@@ -7386,7 +7850,8 @@
     "loser_id": "23105988432",
     "finished_at": "2026-03-11T22:26:20.442Z",
     "template_id": 1573495,
-    "elo_change": 4
+    "elo_change": 4,
+    "turns": 9
   },
   {
     "game_id": "43787246",
@@ -7396,7 +7861,8 @@
     "loser_id": "79105823914",
     "finished_at": "2026-03-12T05:15:08.406Z",
     "template_id": 1573499,
-    "elo_change": 18
+    "elo_change": 18,
+    "turns": 3
   },
   {
     "game_id": "43817567",
@@ -7406,7 +7872,8 @@
     "loser_id": "53134900057",
     "finished_at": "2026-03-12T10:38:01.425Z",
     "template_id": 1573497,
-    "elo_change": 14
+    "elo_change": 14,
+    "turns": 12
   },
   {
     "game_id": "43822179",
@@ -7431,7 +7898,8 @@
     "loser_id": "4155523061",
     "finished_at": "2026-03-12T18:53:28.626Z",
     "template_id": 1574451,
-    "elo_change": 10
+    "elo_change": 10,
+    "turns": 5
   },
   {
     "game_id": "43807313",
@@ -7441,7 +7909,8 @@
     "loser_id": "74149320612",
     "finished_at": "2026-03-12T20:34:13.768Z",
     "template_id": 1573499,
-    "elo_change": 25
+    "elo_change": 25,
+    "turns": 10
   },
   {
     "game_id": "43787245",
@@ -7451,7 +7920,8 @@
     "loser_id": "9313400553",
     "finished_at": "2026-03-12T22:25:31.067Z",
     "template_id": 1431579,
-    "elo_change": 16
+    "elo_change": 16,
+    "turns": 7
   },
   {
     "game_id": "43804281",
@@ -7461,7 +7931,8 @@
     "loser_id": "71148639731",
     "finished_at": "2026-03-13T05:12:20.708Z",
     "template_id": 1573497,
-    "elo_change": 20
+    "elo_change": 20,
+    "turns": 12
   },
   {
     "game_id": "43813670",
@@ -7471,7 +7942,8 @@
     "loser_id": "25126079448",
     "finished_at": "2026-03-13T05:12:21.105Z",
     "template_id": 1573499,
-    "elo_change": 15
+    "elo_change": 15,
+    "turns": 9
   },
   {
     "game_id": "43822178",
@@ -7481,7 +7953,8 @@
     "loser_id": "53134900057",
     "finished_at": "2026-03-13T05:12:21.553Z",
     "template_id": 1573499,
-    "elo_change": 15
+    "elo_change": 15,
+    "turns": 3
   },
   {
     "game_id": "43829279",
@@ -7491,7 +7964,8 @@
     "loser_id": "53134900057",
     "finished_at": "2026-03-13T18:41:04.503Z",
     "template_id": 1573497,
-    "elo_change": 12
+    "elo_change": 12,
+    "turns": 5
   },
   {
     "game_id": "43829281",
@@ -7501,7 +7975,8 @@
     "loser_id": "53134900057",
     "finished_at": "2026-03-13T18:41:04.669Z",
     "template_id": 1573495,
-    "elo_change": 9
+    "elo_change": 9,
+    "turns": 10
   },
   {
     "game_id": "43761544",
@@ -7511,7 +7986,8 @@
     "loser_id": "88117806994",
     "finished_at": "2026-03-13T20:33:44.043Z",
     "template_id": 1573498,
-    "elo_change": 28
+    "elo_change": 28,
+    "turns": 6
   },
   {
     "game_id": "43812183",
@@ -7521,7 +7997,8 @@
     "loser_id": "8222729424",
     "finished_at": "2026-03-13T22:27:19.659Z",
     "template_id": 1573499,
-    "elo_change": 18
+    "elo_change": 18,
+    "turns": 6
   },
   {
     "game_id": "43832012",
@@ -7531,7 +8008,8 @@
     "loser_id": "25126079448",
     "finished_at": "2026-03-13T22:27:20.653Z",
     "template_id": 1573497,
-    "elo_change": 10
+    "elo_change": 10,
+    "turns": 6
   },
   {
     "game_id": "43833813",
@@ -7541,7 +8019,8 @@
     "loser_id": "53134900057",
     "finished_at": "2026-03-14T01:58:36.699Z",
     "template_id": 1574451,
-    "elo_change": 12
+    "elo_change": 12,
+    "turns": 7
   },
   {
     "game_id": "43835553",
@@ -7556,7 +8035,8 @@
     "loser_id": "3428471447",
     "finished_at": "2026-03-14T04:16:30.282Z",
     "template_id": 1574451,
-    "elo_change": 25
+    "elo_change": 25,
+    "turns": 5
   },
   {
     "game_id": "43819198",
@@ -7566,7 +8046,8 @@
     "loser_id": "9313400553",
     "finished_at": "2026-03-14T04:16:30.837Z",
     "template_id": 1573497,
-    "elo_change": 12
+    "elo_change": 12,
+    "turns": 3
   },
   {
     "game_id": "43814936",
@@ -7581,7 +8062,8 @@
     "loser_id": "16127869941",
     "finished_at": "2026-03-14T14:28:23.305Z",
     "template_id": 1574451,
-    "elo_change": 8
+    "elo_change": 8,
+    "turns": 4
   },
   {
     "game_id": "43825745",
@@ -7591,7 +8073,8 @@
     "loser_id": "16127869941",
     "finished_at": "2026-03-14T14:28:23.398Z",
     "template_id": 1573498,
-    "elo_change": 21
+    "elo_change": 21,
+    "turns": 7
   },
   {
     "game_id": "43834749",
@@ -7601,7 +8084,8 @@
     "loser_id": "53134900057",
     "finished_at": "2026-03-14T16:30:32.900Z",
     "template_id": 1573499,
-    "elo_change": 17
+    "elo_change": 17,
+    "turns": 0
   },
   {
     "game_id": "43837030",
@@ -7611,7 +8095,8 @@
     "loser_id": "9313400553",
     "finished_at": "2026-03-14T18:38:03.807Z",
     "template_id": 1431579,
-    "elo_change": 7
+    "elo_change": 7,
+    "turns": 6
   },
   {
     "game_id": "43840396",
@@ -7621,7 +8106,8 @@
     "loser_id": "53134900057",
     "finished_at": "2026-03-14T18:38:04.220Z",
     "template_id": 1574451,
-    "elo_change": 10
+    "elo_change": 10,
+    "turns": 3
   },
   {
     "game_id": "43797920",
@@ -7631,7 +8117,8 @@
     "loser_id": "8222729424",
     "finished_at": "2026-03-14T20:27:51.410Z",
     "template_id": 1573499,
-    "elo_change": 9
+    "elo_change": 9,
+    "turns": 14
   },
   {
     "game_id": "43802611",
@@ -7641,7 +8128,8 @@
     "loser_id": "56133341636",
     "finished_at": "2026-03-15T02:23:48.647Z",
     "template_id": 1431579,
-    "elo_change": 5
+    "elo_change": 5,
+    "turns": 14
   },
   {
     "game_id": "43842196",
@@ -7651,7 +8139,8 @@
     "loser_id": "53134900057",
     "finished_at": "2026-03-15T02:23:50.009Z",
     "template_id": 1573497,
-    "elo_change": 8
+    "elo_change": 8,
+    "turns": 3
   },
   {
     "game_id": "43771224",
@@ -7661,7 +8150,8 @@
     "loser_id": "23105988432",
     "finished_at": "2026-03-15T05:27:22.411Z",
     "template_id": 1390041,
-    "elo_change": 16
+    "elo_change": 16,
+    "turns": 12
   },
   {
     "game_id": "43826591",
@@ -7671,7 +8161,8 @@
     "loser_id": "4155523061",
     "finished_at": "2026-03-15T14:29:27.689Z",
     "template_id": 1573499,
-    "elo_change": 15
+    "elo_change": 15,
+    "turns": 7
   },
   {
     "game_id": "43848418",
@@ -7686,7 +8177,8 @@
     "loser_id": "9780712014",
     "finished_at": "2026-03-15T20:28:54.020Z",
     "template_id": 1431579,
-    "elo_change": 25
+    "elo_change": 25,
+    "turns": 9
   },
   {
     "game_id": "43809123",
@@ -7696,7 +8188,8 @@
     "loser_id": "23154545458",
     "finished_at": "2026-03-15T22:27:02.068Z",
     "template_id": 1431579,
-    "elo_change": 9
+    "elo_change": 9,
+    "turns": 9
   },
   {
     "game_id": "43829280",
@@ -7706,7 +8199,8 @@
     "loser_id": "9313400553",
     "finished_at": "2026-03-15T22:27:02.563Z",
     "template_id": 1573499,
-    "elo_change": 7
+    "elo_change": 7,
+    "turns": 2
   },
   {
     "game_id": "43841383",
@@ -7716,7 +8210,8 @@
     "loser_id": "9313400553",
     "finished_at": "2026-03-15T22:27:03.057Z",
     "template_id": 1573498,
-    "elo_change": 6
+    "elo_change": 6,
+    "turns": 5
   },
   {
     "game_id": "43833814",
@@ -7731,7 +8226,8 @@
     "loser_id": "79105823914",
     "finished_at": "2026-03-16T05:48:30.792Z",
     "template_id": 1390041,
-    "elo_change": 7
+    "elo_change": 7,
+    "turns": 6
   },
   {
     "game_id": "43851069",
@@ -7746,7 +8242,8 @@
     "loser_id": "88117806994",
     "finished_at": "2026-03-16T10:52:22.082Z",
     "template_id": 1573497,
-    "elo_change": 12
+    "elo_change": 12,
+    "turns": 7
   },
   {
     "game_id": "43851066",
@@ -7756,7 +8253,8 @@
     "loser_id": "9780712014",
     "finished_at": "2026-03-16T10:52:22.828Z",
     "template_id": 1573495,
-    "elo_change": 29
+    "elo_change": 29,
+    "turns": 4
   },
   {
     "game_id": "43854185",
@@ -7771,7 +8269,8 @@
     "loser_id": "25126079448",
     "finished_at": "2026-03-16T14:59:01.746Z",
     "template_id": 1573495,
-    "elo_change": 9
+    "elo_change": 9,
+    "turns": 4
   },
   {
     "game_id": "43854186",
@@ -7781,7 +8280,8 @@
     "loser_id": "3631391841",
     "finished_at": "2026-03-16T14:59:03.265Z",
     "template_id": 1390041,
-    "elo_change": 34
+    "elo_change": 34,
+    "turns": 9
   },
   {
     "game_id": "43812182",
@@ -7791,7 +8291,8 @@
     "loser_id": "9780712014",
     "finished_at": "2026-03-16T17:00:40.840Z",
     "template_id": 1390041,
-    "elo_change": 19
+    "elo_change": 19,
+    "turns": 5
   },
   {
     "game_id": "43841382",
@@ -7801,7 +8302,8 @@
     "loser_id": "3631391841",
     "finished_at": "2026-03-16T17:00:41.328Z",
     "template_id": 1390041,
-    "elo_change": 20
+    "elo_change": 20,
+    "turns": 9
   },
   {
     "game_id": "43839565",
@@ -7811,7 +8313,8 @@
     "loser_id": "99110844848",
     "finished_at": "2026-03-16T19:00:27.579Z",
     "template_id": 1390041,
-    "elo_change": 3
+    "elo_change": 3,
+    "turns": 9
   },
   {
     "game_id": "43844489",
@@ -7821,7 +8324,8 @@
     "loser_id": "8222729424",
     "finished_at": "2026-03-16T19:00:27.679Z",
     "template_id": 1573498,
-    "elo_change": 4
+    "elo_change": 4,
+    "turns": 12
   },
   {
     "game_id": "43851068",
@@ -7831,7 +8335,8 @@
     "loser_id": "53134900057",
     "finished_at": "2026-03-16T20:37:53.693Z",
     "template_id": 1573498,
-    "elo_change": 23
+    "elo_change": 23,
+    "turns": 12
   },
   {
     "game_id": "43857655",

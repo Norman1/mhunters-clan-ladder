@@ -20,6 +20,7 @@
             <div class="site-nav__links">
                 <a class="active" href="index.html">Home</a>
                 <a href="history.html">History</a>
+                <a href="templates.html">Templates</a>
                 <a href="actions.html">Actions</a>
                 <a href="help.html">Help</a>
             </div>
@@ -35,14 +36,17 @@
                         <p class="eyebrow">Standings</p>
                         <h2>Leaderboard</h2>
                     </div>
-                    <span class="chip chip--success">Live</span>
+                    <span class="last-updated" id="last-updated"></span>
                 </div>
                 <table>
                     <thead>
                         <tr>
                             <th>Rank</th>
+                            <th>Change<span class="th-subtitle">(This Week)</span></th>
                             <th>Player</th>
                             <th>ELO</th>
+                            <th>Streak</th>
+                            <th>Last 10</th>
                         </tr>
                     </thead>
                     <tbody id="leaderboard-body">
@@ -54,13 +58,18 @@
             <section id="games-section" class="panel">
                 <div class="panel__header">
                     <div>
-                        <p class="eyebrow">In progress</p>
-                        <h2>Live Games</h2>
+                        <p class="eyebrow" id="games-eyebrow">Match Results</p>
+                        <h2 id="games-heading">Completed Games</h2>
                     </div>
-                    <span class="chip chip--accent">Real-time</span>
+                    <div class="seg-control">
+                        <button class="seg-control__btn active" id="tab-results" onclick="switchGamesTab('results')">Results</button>
+                        <button class="seg-control__btn" id="tab-live" onclick="switchGamesTab('live')">Active</button>
+                    </div>
                 </div>
-                <div id="games-list">
-                    <!-- JS will populate -->
+                <div id="games-results-view">
+                    <p>Loading...</p>
+                </div>
+                <div id="games-live-view" style="display:none;">
                     <p>Loading...</p>
                 </div>
             </section>
@@ -81,6 +90,10 @@
                 <a class="card link-card" href="history.html">
                     <h3>Full history</h3>
                     <p>Browse every reported match in the ladder archive.</p>
+                </a>
+                <a class="card link-card" href="templates.html">
+                    <h3>Templates</h3>
+                    <p>View the map pool, per-template stats, and template-specific leaderboards.</p>
                 </a>
                 <a class="card link-card" href="help.html">
                     <h3>Help</h3>

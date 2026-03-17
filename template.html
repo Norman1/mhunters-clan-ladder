@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>M'Hunters Ladder - History</title>
+    <title>M'Hunters Ladder - Template Detail</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -19,8 +19,8 @@
             <a class="nav-logo" href="index.html">M'Hunters Ladder</a>
             <div class="site-nav__links">
                 <a href="index.html">Home</a>
-                <a class="active" href="history.html">History</a>
-                <a href="templates.html">Templates</a>
+                <a href="history.html">History</a>
+                <a class="active" href="templates.html">Templates</a>
                 <a href="actions.html">Actions</a>
                 <a href="help.html">Help</a>
             </div>
@@ -28,15 +28,29 @@
     </nav>
 
     <main>
+        <a class="back-link" href="templates.html">&#8592; All Templates</a>
+
         <section class="panel">
             <div class="panel__header">
                 <div>
-                    <p class="eyebrow">Archive</p>
-                    <h2>All reported games</h2>
+                    <p class="eyebrow">Rankings</p>
+                    <h2 id="template-heading">Loading...</h2>
                 </div>
-                <span class="chip">Growing log</span>
+                <span class="chip chip--info">Template ELO</span>
             </div>
-            <div id="history-list">
+            <div id="template-records">
+                <p>Loading...</p>
+            </div>
+        </section>
+
+        <section class="panel">
+            <div class="panel__header">
+                <div>
+                    <p class="eyebrow">Match History</p>
+                    <h2>Games</h2>
+                </div>
+            </div>
+            <div id="template-games">
                 <p>Loading...</p>
             </div>
         </section>

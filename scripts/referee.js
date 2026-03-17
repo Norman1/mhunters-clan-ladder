@@ -55,8 +55,16 @@ async function runReferee() {
             const createdDate = new Date(game.created_at);
             const hoursSinceCreation = (now - createdDate) / (1000 * 60 * 60);
 
+            // Extract turn count from API response (returned as a string like "7")
+            const numberOfTurns = status.numberOfTurns ? parseInt(status.numberOfTurns, 10) : null;
+
             // --- 1. WAITING FOR PLAYERS (Declined OR Timeout) ---
             if (status.state === 'WaitingForPlayers') {
+                // Update game state for frontend display
+                if (game.game_state !== 'WaitingForPlayers') {
+                    game.game_state = 'WaitingForPlayers';
+                    stateChanged = true;
+                }
                 const declinedPlayer = status.players ? status.players.find(p => (p.State || p.state) === 'Declined') : null;
 
                 // A) Immediate Decline Handling
@@ -86,6 +94,10 @@ async function runReferee() {
                     // Archive as Void
                     history.push({
                         game_id: game.game_id,
+                        created_at: game.created_at,
+                        p1_id: game.p1_id,
+                        p2_id: game.p2_id,
+                        template_id: game.template_id,
                         finished_at: now.toISOString(),
                         note: "Declined"
                     });
@@ -135,6 +147,10 @@ async function runReferee() {
                     // Archive as Void
                     history.push({
                         game_id: game.game_id,
+                        created_at: game.created_at,
+                        p1_id: game.p1_id,
+                        p2_id: game.p2_id,
+                        template_id: game.template_id,
                         finished_at: now.toISOString(),
                         note: "Timed Out (Lobby)"
                     });
@@ -164,6 +180,10 @@ async function runReferee() {
 
                 history.push({
                     game_id: game.game_id,
+                    created_at: game.created_at,
+                    p1_id: game.p1_id,
+                    p2_id: game.p2_id,
+                    template_id: game.template_id,
                     finished_at: now.toISOString(),
                     note: "Terminated"
                 });
@@ -246,6 +266,7 @@ async function runReferee() {
 
                 history.push({
                     game_id: game.game_id,
+                    created_at: game.created_at,
                     p1_id: game.p1_id, // Save participants for display
                     p2_id: game.p2_id,
                     winner_id: winnerId,
@@ -253,6 +274,7 @@ async function runReferee() {
                     finished_at: now.toISOString(),
                     template_id: game.template_id,
                     elo_change: game.elo_change, // Undefined if draw
+                    turns: numberOfTurns,
                     note: winnerId ? undefined : "Draw"
                 });
 
@@ -260,18 +282,29 @@ async function runReferee() {
                 stateChanged = true;
             }
 
-            // --- 4. RUNNING / PLAYING ---
-            else if (status.state === 'Playing') {
+            // --- 4. RUNNING / PLAYING / DISTRIBUTING ---
+            else if (status.state === 'Playing' || status.state === 'DistributingTerritories') {
+                // Update game state and current turn on the active game
+                if (game.game_state !== status.state) {
+                    game.game_state = status.state;
+                    stateChanged = true;
+                }
+                if (numberOfTurns != null && game.current_turn !== numberOfTurns) {
+                    game.current_turn = numberOfTurns;
+                    stateChanged = true;
+                }
                 // If it's playing, they joined. Reset strikes.
-                [game.p1_id, game.p2_id].forEach(pid => {
-                    if (players[pid]) {
-                        if (players[pid].missed_games > 0) {
-                            console.log(`Player ${players[pid].name} joined game. Resetting strikes to 0.`);
-                            players[pid].missed_games = 0;
-                            stateChanged = true;
+                if (status.state === 'Playing') {
+                    [game.p1_id, game.p2_id].forEach(pid => {
+                        if (players[pid]) {
+                            if (players[pid].missed_games > 0) {
+                                console.log(`Player ${players[pid].name} joined game. Resetting strikes to 0.`);
+                                players[pid].missed_games = 0;
+                                stateChanged = true;
+                            }
                         }
-                    }
-                });
+                    });
+                }
             }
 
         } catch (err) {

@@ -13,7 +13,7 @@
     --radius: 16px;
     --radius-sm: 10px;
     --gutter: 1.25rem;
-    --max-width: 1100px;
+    --max-width: 1320px;
 }
 
 * {
@@ -187,7 +187,7 @@ header.hero {
 
 .panel-grid {
     display: grid;
-    grid-template-columns: 3fr 2fr;
+    grid-template-columns: 5fr 6fr;
     gap: 1.25rem;
     margin-top: 1.5rem;
 }
@@ -368,11 +368,12 @@ table thead {
 
 table th,
 table td {
-    padding: 0.85rem 0.9rem;
+    padding: 0.6rem 0.65rem;
     text-align: left;
     font-weight: 600;
     color: var(--text);
     border-bottom: 1px solid var(--border);
+    font-size: 0.9rem;
 }
 
 table tbody tr:hover {
@@ -395,12 +396,14 @@ table tbody tr:hover {
     transition: opacity 0.2s ease;
 }
 
-#games-list table,
+#games-results-view table,
+#games-live-view table,
 #history-list table {
     margin-top: 0;
 }
 
-#games-list tbody tr:nth-child(odd),
+#games-results-view tbody tr:nth-child(odd),
+#games-live-view tbody tr:nth-child(odd),
 #history-list tbody tr:nth-child(odd) {
     background: rgba(255, 255, 255, 0.02);
 }
@@ -495,12 +498,14 @@ details summary::-webkit-details-marker {
 }
 
 #history-list table td,
-#games-list table td {
+#games-results-view table td,
+#games-live-view table td {
     font-weight: 600;
 }
 
 #history-list table td a,
-#games-list table td a {
+#games-results-view table td a,
+#games-live-view table td a {
     color: var(--accent);
     font-weight: 700;
 }
@@ -511,4 +516,443 @@ details summary::-webkit-details-marker {
     gap: 0.25rem;
     color: var(--muted);
     font-size: 0.9rem;
+}
+
+/* --- Segmented Control --- */
+
+.seg-control {
+    display: inline-flex;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    padding: 3px;
+    gap: 2px;
+}
+
+.seg-control__btn {
+    all: unset;
+    padding: 0.4rem 1rem;
+    border-radius: 999px;
+    font-weight: 700;
+    font-size: 0.85rem;
+    color: var(--muted);
+    cursor: pointer;
+    transition: color 0.12s ease, background 0.12s ease;
+    width: auto;
+    box-shadow: none;
+}
+
+.seg-control__btn:hover {
+    color: var(--text);
+    background: rgba(255, 255, 255, 0.06);
+    transform: none;
+    box-shadow: none;
+}
+
+.seg-control__btn.active {
+    color: #0b1525;
+    background: linear-gradient(135deg, var(--accent), var(--accent-strong));
+    box-shadow: none;
+    transform: none;
+}
+
+/* --- Rank Change Indicators --- */
+
+.rank-up {
+    color: var(--accent);
+    font-weight: 700;
+}
+
+.rank-down {
+    color: var(--danger);
+    font-weight: 700;
+}
+
+.rank-same {
+    color: var(--muted);
+}
+
+.rank-new {
+    color: var(--warn);
+    font-weight: 700;
+    font-size: 0.8rem;
+}
+
+/* --- Streak Indicators --- */
+
+.streak-win {
+    color: var(--accent);
+    font-weight: 700;
+}
+
+.streak-loss {
+    color: var(--danger);
+    font-weight: 700;
+}
+
+.streak-none {
+    color: var(--muted);
+}
+
+/* --- ELO Change Inline --- */
+
+.elo-change {
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+.elo-change--pos {
+    color: var(--accent);
+}
+
+.elo-change--neg {
+    color: var(--danger);
+}
+
+/* --- Pagination --- */
+
+.pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+    padding: 0.5rem 0;
+}
+
+.pagination__btn {
+    all: unset;
+    padding: 0.5rem 1rem;
+    border-radius: 999px;
+    font-weight: 700;
+    font-size: 0.85rem;
+    color: var(--accent);
+    cursor: pointer;
+    border: 1px solid var(--border);
+    background: rgba(255, 255, 255, 0.04);
+    transition: background 0.12s ease, border-color 0.12s ease;
+    width: auto;
+    box-shadow: none;
+}
+
+.pagination__btn:hover:not(:disabled) {
+    background: rgba(109, 211, 166, 0.1);
+    border-color: rgba(109, 211, 166, 0.4);
+    transform: none;
+    box-shadow: none;
+}
+
+.pagination__btn:disabled {
+    opacity: 0.35;
+    cursor: default;
+    transform: none;
+    box-shadow: none;
+}
+
+.pagination__info {
+    color: var(--muted);
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+/* --- Template Grid & Cards --- */
+
+.template-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1rem;
+    margin-top: 0.75rem;
+}
+
+.template-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 1.25rem 1rem;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    color: var(--text);
+    text-decoration: none;
+    font-weight: 700;
+    transition: border-color 0.15s ease, transform 0.15s ease, background 0.15s ease;
+    cursor: pointer;
+}
+
+.template-card:hover {
+    border-color: rgba(109, 211, 166, 0.5);
+    transform: translateY(-2px);
+    background: rgba(109, 211, 166, 0.06);
+}
+
+/* --- Expandable nested rows (template detail) --- */
+
+.nested-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0;
+    background: transparent;
+    border: none;
+}
+
+.nested-table thead {
+    background: rgba(255, 255, 255, 0.02);
+}
+
+.nested-table th,
+.nested-table td {
+    padding: 0.5rem 0.75rem;
+    font-size: 0.85rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+.nested-table tbody tr:hover {
+    background: rgba(255, 255, 255, 0.03);
+}
+
+/* --- Link chip (View on Warzone) --- */
+
+.link-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+    padding: 0.25rem 0.7rem;
+    border-radius: 999px;
+    background: rgba(109, 211, 166, 0.15);
+    color: var(--accent);
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-decoration: none;
+    border: 1px solid rgba(109, 211, 166, 0.3);
+    transition: background 0.12s ease;
+    margin-left: 0.5rem;
+}
+
+.link-chip:hover {
+    background: rgba(109, 211, 166, 0.25);
+}
+
+/* --- Live chip for active games in combined lists --- */
+
+.chip--live {
+    background: rgba(109, 211, 166, 0.2);
+    color: var(--accent);
+    border-color: rgba(109, 211, 166, 0.45);
+    font-size: 0.75rem;
+    padding: 0.15rem 0.5rem;
+}
+
+/* --- Matchup Columns (P1 | vs | P2) --- */
+
+td.mu-p1,
+td.mu-p2 {
+    white-space: nowrap;
+}
+
+td.mu-p1 .name-text,
+td.mu-p2 .name-text {
+    color: var(--text);
+    font-weight: 700;
+}
+
+td.mu-vs {
+    color: var(--muted);
+    font-size: 0.7rem;
+    font-weight: 600;
+    text-align: center;
+    padding-left: 0.15rem !important;
+    padding-right: 0.15rem !important;
+    width: 1.5rem;
+}
+
+.vs-link {
+    color: var(--accent);
+    text-decoration: underline;
+    font-weight: 700;
+    font-size: 0.7rem;
+}
+
+.vs-link:hover {
+    opacity: 0.8;
+}
+
+/* --- Win/Loss Cell Backgrounds --- */
+
+td.cell-win {
+    background: rgba(109, 211, 166, 0.10);
+}
+
+td.cell-loss {
+    background: rgba(255, 107, 107, 0.10);
+}
+
+td.cell-draw {
+    background: rgba(244, 195, 99, 0.08);
+}
+
+/* --- Compact Leaderboard --- */
+
+#leaderboard-section table th,
+#leaderboard-section table td {
+    padding: 0.35rem 0.25rem;
+    font-size: 0.82rem;
+}
+
+#leaderboard-section table th:nth-child(1),
+#leaderboard-section table td:nth-child(1),
+#leaderboard-section table th:nth-child(2),
+#leaderboard-section table td:nth-child(2) {
+    padding-left: 0.2rem;
+    padding-right: 0.15rem;
+    white-space: nowrap;
+}
+
+/* --- Column header subtitle --- */
+
+.th-subtitle {
+    display: block;
+    font-size: 0.65rem;
+    font-weight: 500;
+    color: var(--muted);
+    text-transform: none;
+    letter-spacing: 0;
+}
+
+/* --- Last updated chip --- */
+
+.last-updated {
+    font-size: 0.75rem;
+    color: var(--muted);
+    font-weight: 600;
+}
+
+/* --- Back link --- */
+
+.back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+    color: var(--accent);
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+    transition: opacity 0.12s ease;
+}
+
+.back-link:hover {
+    opacity: 0.8;
+}
+
+/* --- Medal Ranks (Gold/Silver/Bronze) --- */
+
+.rank-num {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.6rem;
+    height: 1.6rem;
+    font-weight: 700;
+    font-size: 0.85rem;
+}
+
+.rank-medal {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.6rem;
+    height: 1.6rem;
+    border-radius: 50%;
+    font-weight: 900;
+    font-size: 0.75rem;
+    line-height: 1;
+    border: 2px solid;
+}
+
+.rank-gold {
+    background: linear-gradient(135deg, #ffd700, #f0c030);
+    color: #4a3800;
+    border-color: #e6be00;
+    box-shadow: 0 0 8px rgba(255, 215, 0, 0.45), inset 0 1px 0 rgba(255, 255, 255, 0.35);
+}
+
+.rank-silver {
+    background: linear-gradient(135deg, #d8d8d8, #a8a8a8);
+    color: #333;
+    border-color: #b0b0b0;
+    box-shadow: 0 0 8px rgba(192, 192, 192, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.4);
+}
+
+.rank-bronze {
+    background: linear-gradient(135deg, #cd7f32, #a0622a);
+    color: #2a1a08;
+    border-color: #b06a28;
+    box-shadow: 0 0 8px rgba(205, 127, 50, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.25);
+}
+
+/* --- Hot Streak Row Theming (fire/ember glow) --- */
+
+tr.streak-hot-1 {
+    background: rgba(255, 140, 50, 0.04) !important;
+    box-shadow: inset 0 0 20px rgba(255, 120, 30, 0.05);
+}
+
+tr.streak-hot-2 {
+    background: rgba(255, 120, 30, 0.07) !important;
+    box-shadow: inset 0 0 30px rgba(255, 100, 20, 0.08);
+}
+
+tr.streak-hot-3 {
+    background: rgba(255, 90, 10, 0.10) !important;
+    box-shadow: inset 0 0 40px rgba(255, 80, 10, 0.12);
+}
+
+tr.streak-hot-4 {
+    background: rgba(255, 70, 0, 0.13) !important;
+    box-shadow: inset 0 0 50px rgba(255, 60, 0, 0.15);
+}
+
+tr.streak-hot-5 {
+    background: rgba(255, 50, 0, 0.16) !important;
+    box-shadow: inset 0 0 60px rgba(255, 40, 0, 0.18);
+}
+
+/* --- Cold Streak Row Theming (ice/frost glow) --- */
+
+tr.streak-cold-1 {
+    background: rgba(100, 180, 255, 0.04) !important;
+    box-shadow: inset 0 0 20px rgba(80, 160, 255, 0.05);
+}
+
+tr.streak-cold-2 {
+    background: rgba(80, 160, 255, 0.07) !important;
+    box-shadow: inset 0 0 30px rgba(60, 140, 255, 0.08);
+}
+
+tr.streak-cold-3 {
+    background: rgba(60, 140, 255, 0.10) !important;
+    box-shadow: inset 0 0 40px rgba(40, 120, 255, 0.12);
+}
+
+tr.streak-cold-4 {
+    background: rgba(40, 120, 255, 0.13) !important;
+    box-shadow: inset 0 0 50px rgba(20, 100, 255, 0.15);
+}
+
+tr.streak-cold-5 {
+    background: rgba(20, 100, 255, 0.16) !important;
+    box-shadow: inset 0 0 60px rgba(0, 80, 255, 0.18);
+}
+
+/* --- Games table compact --- */
+
+#games-results-view table th,
+#games-results-view table td,
+#games-live-view table th,
+#games-live-view table td,
+#template-games table th,
+#template-games table td {
+    padding: 0.45rem 0.5rem;
+    font-size: 0.82rem;
 }
