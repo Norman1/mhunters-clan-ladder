@@ -8456,5 +8456,14 @@
     "template_id": 1579657,
     "finished_at": "2026-03-17T20:38:26.452Z",
     "note": "Declined"
+  },
+  {
+    "game_id": "43860790",
+    "created_at": "2026-03-17T02:04:16.865Z",
+    "p1_id": "16127869941",
+    "p2_id": "99110844848",
+    "template_id": 1579663,
+    "finished_at": "2026-03-18T02:07:58.586Z",
+    "note": "Declined"
   }
 ]

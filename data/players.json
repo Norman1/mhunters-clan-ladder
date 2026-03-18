@@ -493,7 +493,7 @@
     "game_cap": 2,
     "missed_games": 0,
     "last_assigned_at": "2026-03-17T13:10:52.949Z",
-    "last_opponent": "88117806994"
+    "last_opponent": "99110844848"
   },
   "4353717389": {
     "name": "Krys",
@@ -563,9 +563,9 @@
     "name": "CrypticNeo1",
     "elo": 933,
     "game_cap": 2,
-    "missed_games": 0,
+    "missed_games": 1,
     "last_assigned_at": "2026-03-17T13:10:54.175Z",
-    "last_opponent": "23105988432"
+    "last_opponent": "16127869941"
   },
   "8222729424": {
     "name": "Al AssAff",
