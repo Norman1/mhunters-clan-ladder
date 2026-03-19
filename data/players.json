@@ -377,11 +377,11 @@
   },
   "56133341636": {
     "name": "Bastian Pyornkrachzark",
-    "elo": 920,
+    "elo": 907,
     "game_cap": 2,
     "missed_games": 0,
     "last_assigned_at": "2026-03-15T02:23:51.859Z",
-    "last_opponent": "88110265403"
+    "last_opponent": "74149320612"
   },
   "50127514525": {
     "name": "toont3",
@@ -441,11 +441,11 @@
   },
   "74149320612": {
     "name": "Svarta Hingsten",
-    "elo": 1043,
+    "elo": 1056,
     "game_cap": 2,
     "missed_games": 0,
     "last_assigned_at": "2026-03-17T17:03:05.076Z",
-    "last_opponent": "4155523061"
+    "last_opponent": "56133341636"
   },
   "64114468853": {
     "name": "Wonkier",
