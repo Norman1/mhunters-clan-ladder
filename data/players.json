@@ -4,7 +4,7 @@
     "elo": 1000,
     "game_cap": 2,
     "missed_games": 41,
-    "last_opponent": "9313400553",
+    "last_opponent": "9482920905",
     "last_assigned_at": "2026-03-16T02:24:56.506Z"
   },
   "81598466": {
@@ -147,8 +147,8 @@
     "name": "Ethosys",
     "elo": 1042,
     "game_cap": 2,
-    "missed_games": 23,
-    "last_opponent": "58134761580",
+    "missed_games": 24,
+    "last_opponent": "28867016",
     "last_assigned_at": "2026-03-16T02:24:56.506Z"
   },
   "8294358602": {
@@ -563,7 +563,7 @@
     "name": "CrypticNeo1",
     "elo": 933,
     "game_cap": 2,
-    "missed_games": 1,
+    "missed_games": 0,
     "last_assigned_at": "2026-03-18T18:58:22.045Z",
     "last_opponent": "9780712014"
   },
