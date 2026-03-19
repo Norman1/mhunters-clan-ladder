@@ -25,11 +25,11 @@
   },
   "1382545505": {
     "name": "Ree",
-    "elo": 1081,
+    "elo": 1064,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-03-15T22:27:04.264Z",
-    "last_opponent": "9313400553"
+    "last_assigned_at": "2026-03-19T22:28:03.582Z",
+    "last_opponent": "23154545458"
   },
   "1822261234": {
     "name": "fifi",
@@ -81,11 +81,11 @@
   },
   "3631391841": {
     "name": "BlackBart",
-    "elo": 1050,
+    "elo": 1042,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "71155120841",
-    "last_assigned_at": "2026-03-19T20:36:49.569Z"
+    "last_opponent": "88110265403",
+    "last_assigned_at": "2026-03-19T22:28:02.856Z"
   },
   "3737155555": {
     "name": "Jumpshott",
@@ -121,11 +121,11 @@
   },
   "88110265403": {
     "name": "Crouton",
-    "elo": 1297,
+    "elo": 1305,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "99110844848",
-    "last_assigned_at": "2026-03-19T20:36:49.569Z"
+    "last_opponent": "3631391841",
+    "last_assigned_at": "2026-03-19T22:28:03.582Z"
   },
   "84143567121": {
     "name": "Poldi",
@@ -137,11 +137,11 @@
   },
   "23154545458": {
     "name": "Dark Magician Girl",
-    "elo": 1135,
+    "elo": 1152,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "71148639731",
-    "last_assigned_at": "2026-03-16T05:48:33.419Z"
+    "last_opponent": "1382545505",
+    "last_assigned_at": "2026-03-19T22:28:04.164Z"
   },
   "9482920905": {
     "name": "Ethosys",
@@ -444,8 +444,8 @@
     "elo": 1056,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-03-19T20:36:48.153Z",
-    "last_opponent": "56133341636"
+    "last_assigned_at": "2026-03-19T22:28:02.856Z",
+    "last_opponent": "23105988432"
   },
   "64114468853": {
     "name": "Wonkier",
@@ -484,8 +484,8 @@
     "elo": 945,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-03-17T17:03:05.076Z",
-    "last_opponent": "99110844848"
+    "last_assigned_at": "2026-03-19T22:28:04.164Z",
+    "last_opponent": "74149320612"
   },
   "16127869941": {
     "name": "gg",
@@ -563,7 +563,7 @@
     "name": "CrypticNeo1",
     "elo": 933,
     "game_cap": 2,
-    "missed_games": 1,
+    "missed_games": 0,
     "last_assigned_at": "2026-03-19T20:36:48.153Z",
     "last_opponent": "88110265403"
   },
