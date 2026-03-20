@@ -43,8 +43,8 @@
     "name": "ElDuderino",
     "elo": 980,
     "game_cap": 2,
-    "missed_games": 20,
-    "last_opponent": "3591948853",
+    "missed_games": 21,
+    "last_opponent": "9313400553",
     "last_assigned_at": "2026-03-17T05:20:49.797Z"
   },
   "3330212221": {
@@ -83,9 +83,9 @@
     "name": "BlackBart",
     "elo": 1023,
     "game_cap": 2,
-    "missed_games": 1,
+    "missed_games": 0,
     "last_opponent": "8222729424",
-    "last_assigned_at": "2026-03-20T02:02:45.333Z"
+    "last_assigned_at": "2026-03-20T06:54:51.021Z"
   },
   "3737155555": {
     "name": "Jumpshott",
@@ -180,8 +180,8 @@
     "elo": 847,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "99110844848",
-    "last_assigned_at": "2026-03-19T16:57:47.817Z"
+    "last_opponent": "2590914675",
+    "last_assigned_at": "2026-03-20T06:54:51.021Z"
   },
   "4543063534": {
     "name": "Farah",
