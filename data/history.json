@@ -8654,5 +8654,23 @@
     "template_id": 1579662,
     "finished_at": "2026-03-20T10:37:06.691Z",
     "note": "Declined"
+  },
+  {
+    "game_id": "43863587",
+    "created_at": "2026-03-17T13:10:53.607Z",
+    "p1_id": "88117806994",
+    "p2_id": "25126079448",
+    "template_id": 1573499,
+    "finished_at": "2026-03-20T14:41:10.041Z",
+    "note": "Timed Out (Lobby)"
+  },
+  {
+    "game_id": "43863590",
+    "created_at": "2026-03-17T13:10:55.390Z",
+    "p1_id": "25126079448",
+    "p2_id": "3428471447",
+    "template_id": 1579659,
+    "finished_at": "2026-03-20T14:41:10.194Z",
+    "note": "Timed Out (Lobby)"
   }
 ]

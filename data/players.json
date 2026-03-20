@@ -68,8 +68,8 @@
     "elo": 963,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-03-17T13:10:55.390Z",
-    "last_opponent": "8294358602"
+    "last_assigned_at": "2026-03-20T14:41:11.819Z",
+    "last_opponent": "25126079448"
   },
   "3591948853": {
     "name": "jdg5201",
@@ -85,7 +85,7 @@
     "game_cap": 2,
     "missed_games": 0,
     "last_opponent": "9313400553",
-    "last_assigned_at": "2026-03-20T06:54:51.021Z"
+    "last_assigned_at": "2026-03-20T14:41:11.819Z"
   },
   "3737155555": {
     "name": "Jumpshott",
@@ -515,9 +515,9 @@
     "name": "Adrian D'Agostino",
     "elo": 819,
     "game_cap": 2,
-    "missed_games": 0,
+    "missed_games": 2,
     "last_assigned_at": "2026-03-17T13:10:55.390Z",
-    "last_opponent": "9780712014"
+    "last_opponent": "3428471447"
   },
   "89114164339": {
     "name": "Blacksmith",
@@ -581,7 +581,7 @@
     "game_cap": 2,
     "missed_games": 2,
     "last_assigned_at": "2026-03-17T13:10:54.740Z",
-    "last_opponent": "9780712014"
+    "last_opponent": "25126079448"
   },
   "59127253198": {
     "name": "Pp",
