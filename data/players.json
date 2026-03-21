@@ -57,11 +57,11 @@
   },
   "3346775331": {
     "name": "Gatsu12",
-    "elo": 1403,
+    "elo": 1405,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "88110265403",
-    "last_assigned_at": "2026-03-20T22:28:14.295Z"
+    "last_opponent": "53134900057",
+    "last_assigned_at": "2026-03-21T04:07:46.961Z"
   },
   "3428471447": {
     "name": "AyanM",
@@ -601,18 +601,18 @@
   },
   "53134900057": {
     "name": "extelon",
-    "elo": 862,
+    "elo": 860,
     "game_cap": 2,
     "missed_games": 0,
     "last_assigned_at": "2026-03-20T22:28:14.295Z",
-    "last_opponent": "9313400553"
+    "last_opponent": "3346775331"
   },
   "4379764745": {
     "name": "Malatya44",
     "elo": 977,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-03-20T20:31:53.595Z",
+    "last_assigned_at": "2026-03-21T04:07:46.961Z",
     "last_opponent": "9313400553"
   },
   "31104791368": {
