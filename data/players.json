@@ -117,7 +117,7 @@
     "game_cap": 2,
     "missed_games": 0,
     "last_opponent": "16127869941",
-    "last_assigned_at": "2026-03-18T15:01:39.397Z"
+    "last_assigned_at": "2026-03-21T10:26:03.812Z"
   },
   "88110265403": {
     "name": "Crouton",
@@ -275,8 +275,8 @@
     "name": "incandwo",
     "elo": 1044,
     "game_cap": 2,
-    "missed_games": 3,
-    "last_assigned_at": "2026-03-20T05:14:49.546Z",
+    "missed_games": 0,
+    "last_assigned_at": "2026-03-21T10:26:03.812Z",
     "last_opponent": "3591948853"
   },
   "93159203503": {
