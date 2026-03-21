@@ -364,8 +364,8 @@
     "elo": 1140,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-03-19T20:36:48.934Z",
-    "last_opponent": "3631391841"
+    "last_assigned_at": "2026-03-21T20:26:12.226Z",
+    "last_opponent": "44134229332"
   },
   "6411877352": {
     "name": "Kratos",
@@ -539,9 +539,9 @@
     "name": "Sauranon",
     "elo": 1000,
     "game_cap": 2,
-    "missed_games": 4,
+    "missed_games": 5,
     "last_assigned_at": "2026-03-18T18:58:22.665Z",
-    "last_opponent": "4337497298"
+    "last_opponent": "71155120841"
   },
   "50144225272": {
     "name": "polar",
@@ -572,8 +572,8 @@
     "elo": 912,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-03-21T18:35:38.372Z",
-    "last_opponent": "14130113253"
+    "last_assigned_at": "2026-03-21T20:26:12.226Z",
+    "last_opponent": "4379764745"
   },
   "88117806994": {
     "name": "RameurA",
@@ -611,9 +611,9 @@
     "name": "Malatya44",
     "elo": 991,
     "game_cap": 2,
-    "missed_games": 1,
+    "missed_games": 2,
     "last_assigned_at": "2026-03-21T18:35:38.986Z",
-    "last_opponent": "3346775331"
+    "last_opponent": "8222729424"
   },
   "31104791368": {
     "name": "Iamtznu",

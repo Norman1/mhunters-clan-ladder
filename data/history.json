@@ -8780,5 +8780,23 @@
     "template_id": 1431579,
     "finished_at": "2026-03-21T18:35:37.489Z",
     "note": "Declined"
+  },
+  {
+    "game_id": "43874906",
+    "created_at": "2026-03-18T18:58:22.665Z",
+    "p1_id": "71155120841",
+    "p2_id": "44134229332",
+    "template_id": 1579657,
+    "finished_at": "2026-03-21T20:26:10.685Z",
+    "note": "Timed Out (Lobby)"
+  },
+  {
+    "game_id": "43899303",
+    "created_at": "2026-03-21T18:35:38.372Z",
+    "p1_id": "4379764745",
+    "p2_id": "8222729424",
+    "template_id": 1579665,
+    "finished_at": "2026-03-21T20:26:11.336Z",
+    "note": "Declined"
   }
 ]
