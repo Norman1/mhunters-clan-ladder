@@ -113,10 +113,10 @@
   },
   "79105823914": {
     "name": "krinid",
-    "elo": 993,
+    "elo": 982,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "16127869941",
+    "last_opponent": "23154545458",
     "last_assigned_at": "2026-03-21T10:26:03.812Z"
   },
   "88110265403": {
@@ -137,10 +137,10 @@
   },
   "23154545458": {
     "name": "Dark Magician Girl",
-    "elo": 1152,
+    "elo": 1163,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "1382545505",
+    "last_opponent": "79105823914",
     "last_assigned_at": "2026-03-19T22:28:04.164Z"
   },
   "9482920905": {
