@@ -5,7 +5,7 @@
     "p1_id": "71148639731",
     "p2_id": "56133341636",
     "template_id": 1573497,
-    "current_turn": 6,
+    "current_turn": 7,
     "game_state": "Playing"
   },
   {
@@ -33,7 +33,7 @@
     "p2_id": "56133341636",
     "template_id": 1573499,
     "game_state": "Playing",
-    "current_turn": 0
+    "current_turn": 2
   },
   {
     "game_id": "43884816",
@@ -179,6 +179,7 @@
     "created_at": "2026-03-23T05:38:51.317Z",
     "p1_id": "74149320612",
     "p2_id": "31104791368",
-    "template_id": 1579663
+    "template_id": 1579663,
+    "game_state": "WaitingForPlayers"
   }
 ]
