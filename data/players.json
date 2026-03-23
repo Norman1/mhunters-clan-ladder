@@ -441,11 +441,11 @@
   },
   "74149320612": {
     "name": "Svarta Hingsten",
-    "elo": 1075,
+    "elo": 1088,
     "game_cap": 2,
-    "missed_games": 1,
-    "last_assigned_at": "2026-03-23T02:10:21.696Z",
-    "last_opponent": "3346775331"
+    "missed_games": 0,
+    "last_assigned_at": "2026-03-23T05:38:51.317Z",
+    "last_opponent": "99110844848"
   },
   "64114468853": {
     "name": "Wonkier",
@@ -561,11 +561,11 @@
   },
   "99110844848": {
     "name": "CrypticNeo1",
-    "elo": 951,
+    "elo": 938,
     "game_cap": 2,
     "missed_games": 0,
     "last_assigned_at": "2026-03-22T22:25:10.129Z",
-    "last_opponent": "4379764745"
+    "last_opponent": "74149320612"
   },
   "8222729424": {
     "name": "Al AssAff",
@@ -620,7 +620,7 @@
     "elo": 898,
     "game_cap": 2,
     "missed_games": 3,
-    "last_assigned_at": "2026-03-09T02:05:17.081Z",
+    "last_assigned_at": "2026-03-23T05:38:51.317Z",
     "last_opponent": "20125423673"
   },
   "5540862349": {
