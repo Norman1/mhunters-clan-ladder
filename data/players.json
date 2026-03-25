@@ -273,11 +273,11 @@
   },
   "14130113253": {
     "name": "incandwo",
-    "elo": 1084,
+    "elo": 1095,
     "game_cap": 2,
     "missed_games": 0,
     "last_assigned_at": "2026-03-24T16:58:54.889Z",
-    "last_opponent": "9780712014"
+    "last_opponent": "53134900057"
   },
   "93159203503": {
     "name": "President_Newsom",
@@ -601,11 +601,11 @@
   },
   "53134900057": {
     "name": "extelon",
-    "elo": 905,
+    "elo": 894,
     "game_cap": 2,
     "missed_games": 0,
     "last_assigned_at": "2026-03-24T19:02:24.308Z",
-    "last_opponent": "74149320612"
+    "last_opponent": "14130113253"
   },
   "4379764745": {
     "name": "Malatya44",
