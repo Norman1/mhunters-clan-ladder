@@ -9308,5 +9308,14 @@
     "template_id": 1431579,
     "elo_change": 18,
     "turns": 8
+  },
+  {
+    "game_id": "43932814",
+    "created_at": "2026-03-25T17:01:20.902Z",
+    "p1_id": "8222729424",
+    "p2_id": "14130113253",
+    "template_id": 1390041,
+    "finished_at": "2026-03-25T18:54:53.698Z",
+    "note": "Declined"
   }
 ]
