@@ -100,8 +100,8 @@
     "elo": 838,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-03-25T02:07:52.360Z",
-    "last_opponent": "3346775331"
+    "last_assigned_at": "2026-03-25T05:22:40.100Z",
+    "last_opponent": "99110844848"
   },
   "4180490094": {
     "name": "Woololo",
@@ -121,11 +121,11 @@
   },
   "88110265403": {
     "name": "Crouton",
-    "elo": 1310,
+    "elo": 1315,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "8222729424",
-    "last_assigned_at": "2026-03-24T14:57:28.807Z"
+    "last_opponent": "99110844848",
+    "last_assigned_at": "2026-03-25T05:22:40.100Z"
   },
   "84143567121": {
     "name": "Poldi",
@@ -177,11 +177,11 @@
   },
   "9313400553": {
     "name": "Word Walker",
-    "elo": 810,
+    "elo": 805,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "9780712014",
-    "last_assigned_at": "2026-03-24T19:02:24.998Z"
+    "last_opponent": "16127869941",
+    "last_assigned_at": "2026-03-25T05:22:41.288Z"
   },
   "4543063534": {
     "name": "Farah",
@@ -189,7 +189,7 @@
     "game_cap": 1,
     "missed_games": 4,
     "last_opponent": "99110844848",
-    "last_assigned_at": "2026-03-04T04:14:37.999Z"
+    "last_assigned_at": "2026-03-25T05:22:41.844Z"
   },
   "51156980238": {
     "name": "cd",
@@ -444,7 +444,7 @@
     "elo": 1099,
     "game_cap": 2,
     "missed_games": 1,
-    "last_assigned_at": "2026-03-24T20:40:43.670Z",
+    "last_assigned_at": "2026-03-25T05:22:40.736Z",
     "last_opponent": "4379764745"
   },
   "64114468853": {
@@ -489,11 +489,11 @@
   },
   "16127869941": {
     "name": "gg",
-    "elo": 1166,
+    "elo": 1171,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-03-24T19:02:24.998Z",
-    "last_opponent": "9780712014"
+    "last_assigned_at": "2026-03-25T05:22:41.844Z",
+    "last_opponent": "9313400553"
   },
   "4353717389": {
     "name": "Krys",
@@ -561,11 +561,11 @@
   },
   "99110844848": {
     "name": "CrypticNeo1",
-    "elo": 952,
+    "elo": 947,
     "game_cap": 2,
     "missed_games": 1,
-    "last_assigned_at": "2026-03-25T02:07:52.360Z",
-    "last_opponent": "3346775331"
+    "last_assigned_at": "2026-03-25T05:22:41.288Z",
+    "last_opponent": "4155523061"
   },
   "8222729424": {
     "name": "Al AssAff",
