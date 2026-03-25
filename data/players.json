@@ -83,9 +83,9 @@
     "name": "BlackBart",
     "elo": 1030,
     "game_cap": 2,
-    "missed_games": 0,
-    "last_opponent": "3428471447",
-    "last_assigned_at": "2026-03-25T18:54:54.824Z"
+    "missed_games": 1,
+    "last_opponent": "14130113253",
+    "last_assigned_at": "2026-03-25T20:38:03.125Z"
   },
   "3737155555": {
     "name": "Jumpshott",
@@ -177,11 +177,11 @@
   },
   "9313400553": {
     "name": "Word Walker",
-    "elo": 800,
+    "elo": 795,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "23154545458",
-    "last_assigned_at": "2026-03-25T13:09:14.286Z"
+    "last_opponent": "71155120841",
+    "last_assigned_at": "2026-03-25T20:38:03.125Z"
   },
   "4543063534": {
     "name": "Farah",
@@ -276,8 +276,8 @@
     "elo": 1095,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-03-25T18:54:54.824Z",
-    "last_opponent": "8222729424"
+    "last_assigned_at": "2026-03-25T20:38:03.703Z",
+    "last_opponent": "3631391841"
   },
   "93159203503": {
     "name": "President_Newsom",
@@ -361,11 +361,11 @@
   },
   "71155120841": {
     "name": "Ventura",
-    "elo": 1143,
+    "elo": 1148,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-03-25T13:09:14.286Z",
-    "last_opponent": "56133341636"
+    "last_assigned_at": "2026-03-25T20:38:03.703Z",
+    "last_opponent": "9313400553"
   },
   "6411877352": {
     "name": "Kratos",
@@ -571,7 +571,7 @@
     "name": "Al AssAff",
     "elo": 883,
     "game_cap": 2,
-    "missed_games": 1,
+    "missed_games": 0,
     "last_assigned_at": "2026-03-25T18:54:55.589Z",
     "last_opponent": "14130113253"
   },
