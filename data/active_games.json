@@ -193,7 +193,8 @@
     "p1_id": "14130113253",
     "p2_id": "71155120841",
     "template_id": 1579656,
-    "game_state": "WaitingForPlayers"
+    "game_state": "DistributingTerritories",
+    "current_turn": -1
   },
   {
     "game_id": "43937567",
@@ -209,6 +210,7 @@
     "p1_id": "9780712014",
     "p2_id": "9313400553",
     "template_id": 1579660,
-    "game_state": "WaitingForPlayers"
+    "game_state": "Playing",
+    "current_turn": 0
   }
 ]
