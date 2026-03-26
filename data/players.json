@@ -493,7 +493,7 @@
     "game_cap": 2,
     "missed_games": 0,
     "last_assigned_at": "2026-03-25T05:22:41.844Z",
-    "last_opponent": "9313400553"
+    "last_opponent": "88117806994"
   },
   "4353717389": {
     "name": "Krys",
@@ -579,9 +579,9 @@
     "name": "RameurA",
     "elo": 947,
     "game_cap": 2,
-    "missed_games": 2,
+    "missed_games": 3,
     "last_assigned_at": "2026-03-24T14:57:29.412Z",
-    "last_opponent": "25126079448"
+    "last_opponent": "16127869941"
   },
   "59127253198": {
     "name": "Pp",
