@@ -443,7 +443,7 @@
     "name": "Svarta Hingsten",
     "elo": 1099,
     "game_cap": 2,
-    "missed_games": 1,
+    "missed_games": 0,
     "last_assigned_at": "2026-03-25T05:22:40.736Z",
     "last_opponent": "4379764745"
   },
@@ -563,7 +563,7 @@
     "name": "CrypticNeo1",
     "elo": 947,
     "game_cap": 2,
-    "missed_games": 1,
+    "missed_games": 0,
     "last_assigned_at": "2026-03-25T05:22:41.288Z",
     "last_opponent": "4155523061"
   },
