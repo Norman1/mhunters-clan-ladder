@@ -83,7 +83,7 @@
     "name": "BlackBart",
     "elo": 1038,
     "game_cap": 2,
-    "missed_games": 1,
+    "missed_games": 0,
     "last_opponent": "4379764745",
     "last_assigned_at": "2026-03-27T02:22:38.281Z"
   },
@@ -121,10 +121,10 @@
   },
   "88110265403": {
     "name": "Crouton",
-    "elo": 1317,
+    "elo": 1289,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "4155523061",
+    "last_opponent": "16127869941",
     "last_assigned_at": "2026-03-26T17:00:34.854Z"
   },
   "84143567121": {
@@ -489,11 +489,11 @@
   },
   "16127869941": {
     "name": "gg",
-    "elo": 1171,
+    "elo": 1199,
     "game_cap": 2,
     "missed_games": 0,
     "last_assigned_at": "2026-03-26T17:00:34.854Z",
-    "last_opponent": "88117806994"
+    "last_opponent": "88110265403"
   },
   "4353717389": {
     "name": "Krys",
