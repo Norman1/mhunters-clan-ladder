@@ -83,9 +83,9 @@
     "name": "BlackBart",
     "elo": 1038,
     "game_cap": 2,
-    "missed_games": 0,
-    "last_opponent": "9313400553",
-    "last_assigned_at": "2026-03-26T22:29:19.025Z"
+    "missed_games": 1,
+    "last_opponent": "4379764745",
+    "last_assigned_at": "2026-03-27T02:22:38.281Z"
   },
   "3737155555": {
     "name": "Jumpshott",
@@ -137,11 +137,11 @@
   },
   "23154545458": {
     "name": "Dark Magician Girl",
-    "elo": 1168,
+    "elo": 1176,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "9313400553",
-    "last_assigned_at": "2026-03-25T13:09:13.584Z"
+    "last_opponent": "23105988432",
+    "last_assigned_at": "2026-03-27T02:22:38.281Z"
   },
   "9482920905": {
     "name": "Ethosys",
@@ -481,11 +481,11 @@
   },
   "23105988432": {
     "name": "Socrates",
-    "elo": 938,
+    "elo": 930,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-03-26T22:29:17.874Z",
-    "last_opponent": "3591948853"
+    "last_assigned_at": "2026-03-27T02:22:37.494Z",
+    "last_opponent": "23154545458"
   },
   "16127869941": {
     "name": "gg",
@@ -563,7 +563,7 @@
     "name": "CrypticNeo1",
     "elo": 959,
     "game_cap": 2,
-    "missed_games": 1,
+    "missed_games": 0,
     "last_assigned_at": "2026-03-26T22:29:17.874Z",
     "last_opponent": "53134900057"
   },
@@ -612,8 +612,8 @@
     "elo": 988,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-03-26T22:29:19.025Z",
-    "last_opponent": "3346775331"
+    "last_assigned_at": "2026-03-27T02:22:37.494Z",
+    "last_opponent": "3631391841"
   },
   "31104791368": {
     "name": "Iamtznu",
