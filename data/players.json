@@ -605,15 +605,15 @@
     "game_cap": 2,
     "missed_games": 0,
     "last_assigned_at": "2026-03-28T18:39:56.276Z",
-    "last_opponent": "44147840330"
+    "last_opponent": "4379764745"
   },
   "4379764745": {
     "name": "Malatya44",
     "elo": 973,
     "game_cap": 2,
-    "missed_games": 0,
+    "missed_games": 1,
     "last_assigned_at": "2026-03-28T18:39:56.276Z",
-    "last_opponent": "14130113253"
+    "last_opponent": "53134900057"
   },
   "31104791368": {
     "name": "Iamtznu",
