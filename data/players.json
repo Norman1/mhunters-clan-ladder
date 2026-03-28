@@ -113,10 +113,10 @@
   },
   "79105823914": {
     "name": "krinid",
-    "elo": 977,
+    "elo": 962,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "8222729424",
+    "last_opponent": "74149320612",
     "last_assigned_at": "2026-03-27T20:37:48.566Z"
   },
   "88110265403": {
@@ -441,11 +441,11 @@
   },
   "74149320612": {
     "name": "Svarta Hingsten",
-    "elo": 1071,
+    "elo": 1086,
     "game_cap": 2,
     "missed_games": 0,
     "last_assigned_at": "2026-03-27T10:49:31.286Z",
-    "last_opponent": "99110844848"
+    "last_opponent": "79105823914"
   },
   "64114468853": {
     "name": "Wonkier",
