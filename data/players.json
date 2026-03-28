@@ -85,7 +85,7 @@
     "game_cap": 2,
     "missed_games": 0,
     "last_opponent": "3428471447",
-    "last_assigned_at": "2026-03-28T14:31:01.883Z"
+    "last_assigned_at": "2026-03-28T20:29:34.322Z"
   },
   "3737155555": {
     "name": "Jumpshott",
@@ -475,9 +475,9 @@
     "name": "Gnoransa",
     "elo": 959,
     "game_cap": 2,
-    "missed_games": 5,
+    "missed_games": 6,
     "last_assigned_at": "2026-03-25T18:54:55.589Z",
-    "last_opponent": "44134229332"
+    "last_opponent": "8222729424"
   },
   "23105988432": {
     "name": "Socrates",
@@ -572,8 +572,8 @@
     "elo": 867,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-03-27T20:37:47.860Z",
-    "last_opponent": "79105823914"
+    "last_assigned_at": "2026-03-28T20:29:34.322Z",
+    "last_opponent": "4337497298"
   },
   "88117806994": {
     "name": "RameurA",
