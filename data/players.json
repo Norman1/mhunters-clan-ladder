@@ -285,7 +285,7 @@
     "game_cap": 2,
     "missed_games": 5,
     "last_assigned_at": "2026-03-29T14:33:39.676Z",
-    "last_opponent": "63152422979"
+    "last_opponent": "66141834893"
   },
   "13151753517": {
     "name": "Marengo",
@@ -315,9 +315,9 @@
     "name": "SUPREME",
     "elo": 1000,
     "game_cap": 2,
-    "missed_games": 5,
+    "missed_games": 6,
     "last_assigned_at": "2026-03-29T14:33:39.676Z",
-    "last_opponent": "13130892902"
+    "last_opponent": "93159203503"
   },
   "63152422979": {
     "name": "mari",
