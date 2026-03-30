@@ -15,7 +15,7 @@
     "p2_id": "23154545458",
     "template_id": 1579656,
     "game_state": "Playing",
-    "current_turn": 0
+    "current_turn": 1
   },
   {
     "game_id": "43932815",
@@ -81,15 +81,6 @@
     "current_turn": 7
   },
   {
-    "game_id": "43951699",
-    "created_at": "2026-03-27T20:37:47.860Z",
-    "p1_id": "8222729424",
-    "p2_id": "9780712014",
-    "template_id": 1579662,
-    "game_state": "Playing",
-    "current_turn": 6
-  },
-  {
     "game_id": "43951700",
     "created_at": "2026-03-27T20:37:48.566Z",
     "p1_id": "79105823914",
@@ -105,7 +96,7 @@
     "p2_id": "9313400553",
     "template_id": 1579663,
     "game_state": "Playing",
-    "current_turn": 2
+    "current_turn": 3
   },
   {
     "game_id": "43954554",
@@ -126,14 +117,6 @@
     "current_turn": -1
   },
   {
-    "game_id": "43956757",
-    "created_at": "2026-03-28T14:31:02.494Z",
-    "p1_id": "23154545458",
-    "p2_id": "74149320612",
-    "template_id": 1579665,
-    "game_state": "WaitingForPlayers"
-  },
-  {
     "game_id": "43958548",
     "created_at": "2026-03-28T18:39:55.695Z",
     "p1_id": "14130113253",
@@ -150,15 +133,6 @@
     "template_id": 1579665,
     "game_state": "Playing",
     "current_turn": 2
-  },
-  {
-    "game_id": "43964603",
-    "created_at": "2026-03-29T14:33:35.305Z",
-    "p1_id": "71148639731",
-    "p2_id": "88110265403",
-    "template_id": 1579659,
-    "game_state": "Playing",
-    "current_turn": 14
   },
   {
     "game_id": "43964604",
@@ -303,5 +277,26 @@
     "p2_id": "13151753517",
     "template_id": 1579663,
     "game_state": "WaitingForPlayers"
+  },
+  {
+    "game_id": "43975478",
+    "created_at": "2026-03-30T18:59:12.993Z",
+    "p1_id": "3631391841",
+    "p2_id": "9780712014",
+    "template_id": 1579658
+  },
+  {
+    "game_id": "43975479",
+    "created_at": "2026-03-30T18:59:13.694Z",
+    "p1_id": "88110265403",
+    "p2_id": "23154545458",
+    "template_id": 1390041
+  },
+  {
+    "game_id": "43975480",
+    "created_at": "2026-03-30T18:59:14.282Z",
+    "p1_id": "8222729424",
+    "p2_id": "74149320612",
+    "template_id": 1579662
   }
 ]
