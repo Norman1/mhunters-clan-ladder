@@ -69,7 +69,7 @@
     "p2_id": "71155120841",
     "template_id": 1579660,
     "game_state": "Playing",
-    "current_turn": 2
+    "current_turn": 3
   },
   {
     "game_id": "43953584",
@@ -87,7 +87,7 @@
     "p2_id": "71155120841",
     "template_id": 1579661,
     "game_state": "Playing",
-    "current_turn": 3
+    "current_turn": 4
   },
   {
     "game_id": "43956755",
@@ -259,7 +259,7 @@
     "p2_id": "9780712014",
     "template_id": 1579658,
     "game_state": "Playing",
-    "current_turn": 3
+    "current_turn": 4
   },
   {
     "game_id": "43975479",
@@ -276,7 +276,7 @@
     "p2_id": "74149320612",
     "template_id": 1579662,
     "game_state": "Playing",
-    "current_turn": 4
+    "current_turn": 5
   },
   {
     "game_id": "43978519",
