@@ -83,8 +83,8 @@
     "name": "BlackBart",
     "elo": 1038,
     "game_cap": 2,
-    "missed_games": 0,
-    "last_opponent": "8222729424",
+    "missed_games": 1,
+    "last_opponent": "99110844848",
     "last_assigned_at": "2026-03-31T19:01:28.479Z"
   },
   "3737155555": {
@@ -565,7 +565,7 @@
     "game_cap": 2,
     "missed_games": 0,
     "last_assigned_at": "2026-03-31T19:01:28.479Z",
-    "last_opponent": "23105988432"
+    "last_opponent": "3631391841"
   },
   "8222729424": {
     "name": "Al AssAff",
