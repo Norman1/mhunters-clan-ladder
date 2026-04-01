@@ -443,9 +443,9 @@
     "name": "Svarta Hingsten",
     "elo": 1119,
     "game_cap": 2,
-    "missed_games": 1,
+    "missed_games": 2,
     "last_assigned_at": "2026-04-01T05:54:01.282Z",
-    "last_opponent": "99110844848"
+    "last_opponent": "23105988432"
   },
   "64114468853": {
     "name": "Wonkier",
@@ -484,8 +484,8 @@
     "elo": 943,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-03-31T22:33:57.220Z",
-    "last_opponent": "99110844848"
+    "last_assigned_at": "2026-04-01T07:19:43.212Z",
+    "last_opponent": "74149320612"
   },
   "16127869941": {
     "name": "gg",
@@ -563,8 +563,8 @@
     "name": "CrypticNeo1",
     "elo": 950,
     "game_cap": 2,
-    "missed_games": 1,
-    "last_assigned_at": "2026-04-01T02:32:59.483Z",
+    "missed_games": 0,
+    "last_assigned_at": "2026-04-01T07:19:43.212Z",
     "last_opponent": "3631391841"
   },
   "8222729424": {
