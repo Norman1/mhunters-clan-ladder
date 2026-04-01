@@ -83,8 +83,8 @@
     "name": "BlackBart",
     "elo": 1054,
     "game_cap": 2,
-    "missed_games": 1,
-    "last_opponent": "99110844848",
+    "missed_games": 2,
+    "last_opponent": "53134900057",
     "last_assigned_at": "2026-04-01T16:54:18.004Z"
   },
   "3737155555": {
@@ -121,10 +121,10 @@
   },
   "88110265403": {
     "name": "Crouton",
-    "elo": 1273,
+    "elo": 1282,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "4379764745",
+    "last_opponent": "14130113253",
     "last_assigned_at": "2026-03-31T02:23:08.185Z"
   },
   "84143567121": {
@@ -273,11 +273,11 @@
   },
   "14130113253": {
     "name": "incandwo",
-    "elo": 1048,
+    "elo": 1039,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-03-31T02:23:08.185Z",
-    "last_opponent": "71148639731"
+    "last_assigned_at": "2026-04-01T19:01:11.406Z",
+    "last_opponent": "88110265403"
   },
   "93159203503": {
     "name": "President_Newsom",
@@ -604,8 +604,8 @@
     "elo": 977,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-04-01T16:54:18.004Z",
-    "last_opponent": "9780712014"
+    "last_assigned_at": "2026-04-01T19:01:11.406Z",
+    "last_opponent": "3631391841"
   },
   "4379764745": {
     "name": "Malatya44",
