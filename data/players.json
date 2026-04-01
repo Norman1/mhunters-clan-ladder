@@ -84,8 +84,8 @@
     "elo": 1038,
     "game_cap": 2,
     "missed_games": 1,
-    "last_opponent": "99110844848",
-    "last_assigned_at": "2026-03-31T22:33:57.965Z"
+    "last_opponent": "53134900057",
+    "last_assigned_at": "2026-04-01T02:32:59.483Z"
   },
   "3737155555": {
     "name": "Jumpshott",
@@ -445,7 +445,7 @@
     "game_cap": 2,
     "missed_games": 1,
     "last_assigned_at": "2026-03-31T22:33:58.552Z",
-    "last_opponent": "9780712014"
+    "last_opponent": "99110844848"
   },
   "64114468853": {
     "name": "Wonkier",
@@ -563,9 +563,9 @@
     "name": "CrypticNeo1",
     "elo": 950,
     "game_cap": 2,
-    "missed_games": 0,
-    "last_assigned_at": "2026-03-31T22:33:58.552Z",
-    "last_opponent": "53134900057"
+    "missed_games": 1,
+    "last_assigned_at": "2026-04-01T02:32:59.483Z",
+    "last_opponent": "74149320612"
   },
   "8222729424": {
     "name": "Al AssAff",
@@ -604,8 +604,8 @@
     "elo": 962,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-03-31T22:33:59.144Z",
-    "last_opponent": "74149320612"
+    "last_assigned_at": "2026-04-01T02:32:58.714Z",
+    "last_opponent": "3631391841"
   },
   "4379764745": {
     "name": "Malatya44",
