@@ -561,11 +561,11 @@
   },
   "99110844848": {
     "name": "CrypticNeo1",
-    "elo": 950,
+    "elo": 972,
     "game_cap": 2,
-    "missed_games": 0,
+    "missed_games": 1,
     "last_assigned_at": "2026-04-01T16:54:17.227Z",
-    "last_opponent": "3631391841"
+    "last_opponent": "9780712014"
   },
   "8222729424": {
     "name": "Al AssAff",
@@ -597,15 +597,15 @@
     "game_cap": 2,
     "missed_games": 0,
     "last_assigned_at": "2026-04-01T16:54:17.227Z",
-    "last_opponent": "53134900057"
+    "last_opponent": "99110844848"
   },
   "53134900057": {
     "name": "extelon",
-    "elo": 977,
+    "elo": 955,
     "game_cap": 2,
     "missed_games": 0,
     "last_assigned_at": "2026-04-01T19:01:11.406Z",
-    "last_opponent": "3631391841"
+    "last_opponent": "99110844848"
   },
   "4379764745": {
     "name": "Malatya44",
