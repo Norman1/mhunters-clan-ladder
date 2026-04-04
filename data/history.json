@@ -10430,5 +10430,23 @@
     "template_id": 1573495,
     "elo_change": 27,
     "turns": 7
+  },
+  {
+    "game_id": "43990129",
+    "created_at": "2026-04-01T13:20:46.995Z",
+    "p1_id": "3631391841",
+    "p2_id": "6411877352",
+    "template_id": 1390041,
+    "finished_at": "2026-04-04T14:33:01.489Z",
+    "note": "Timed Out (Lobby)"
+  },
+  {
+    "game_id": "44012704",
+    "created_at": "2026-04-04T02:06:11.646Z",
+    "p1_id": "99110844848",
+    "p2_id": "9313400553",
+    "template_id": 1579656,
+    "finished_at": "2026-04-04T14:33:02.057Z",
+    "note": "Declined"
   }
 ]
