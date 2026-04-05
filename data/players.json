@@ -25,11 +25,11 @@
   },
   "1382545505": {
     "name": "Ree",
-    "elo": 1014,
+    "elo": 1005,
     "game_cap": 2,
     "missed_games": 0,
     "last_assigned_at": "2026-04-04T22:28:30.236Z",
-    "last_opponent": "9780712014"
+    "last_opponent": "71155120841"
   },
   "1822261234": {
     "name": "fifi",
@@ -361,11 +361,11 @@
   },
   "71155120841": {
     "name": "Ventura",
-    "elo": 1221,
+    "elo": 1230,
     "game_cap": 2,
     "missed_games": 0,
     "last_assigned_at": "2026-04-04T02:06:11.094Z",
-    "last_opponent": "88110265403"
+    "last_opponent": "1382545505"
   },
   "6411877352": {
     "name": "Kratos",
