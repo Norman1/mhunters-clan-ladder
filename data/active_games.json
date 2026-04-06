@@ -157,7 +157,7 @@
     "p2_id": "9780712014",
     "template_id": 1431579,
     "game_state": "Playing",
-    "current_turn": 4
+    "current_turn": 5
   },
   {
     "game_id": "44026874",
@@ -166,6 +166,6 @@
     "p2_id": "9780712014",
     "template_id": 1579656,
     "game_state": "Playing",
-    "current_turn": 0
+    "current_turn": 1
   }
 ]
