@@ -275,9 +275,9 @@
     "name": "incandwo",
     "elo": 1068,
     "game_cap": 2,
-    "missed_games": 0,
+    "missed_games": 1,
     "last_assigned_at": "2026-04-05T16:35:54.474Z",
-    "last_opponent": "3428471447"
+    "last_opponent": "71155120841"
   },
   "93159203503": {
     "name": "President_Newsom",
@@ -365,7 +365,7 @@
     "game_cap": 2,
     "missed_games": 0,
     "last_assigned_at": "2026-04-05T22:30:10.424Z",
-    "last_opponent": "9780712014"
+    "last_opponent": "14130113253"
   },
   "6411877352": {
     "name": "Kratos",
