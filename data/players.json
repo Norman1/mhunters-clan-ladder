@@ -275,8 +275,8 @@
     "name": "incandwo",
     "elo": 1042,
     "game_cap": 2,
-    "missed_games": 1,
-    "last_assigned_at": "2026-04-07T15:07:11.779Z",
+    "missed_games": 0,
+    "last_assigned_at": "2026-04-07T19:02:38.305Z",
     "last_opponent": "88117806994"
   },
   "93159203503": {
@@ -516,7 +516,7 @@
     "elo": 819,
     "game_cap": 2,
     "missed_games": 3,
-    "last_assigned_at": "2026-03-24T16:58:55.497Z",
+    "last_assigned_at": "2026-04-07T19:02:38.305Z",
     "last_opponent": "9780712014"
   },
   "89114164339": {
