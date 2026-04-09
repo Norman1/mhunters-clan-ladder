@@ -69,7 +69,7 @@
     "p2_id": "9780712014",
     "template_id": 1573498,
     "game_state": "Playing",
-    "current_turn": 10
+    "current_turn": 11
   },
   {
     "game_id": "44041943",
@@ -120,7 +120,7 @@
     "p2_id": "74149320612",
     "template_id": 1431579,
     "game_state": "Playing",
-    "current_turn": 0
+    "current_turn": 1
   },
   {
     "game_id": "44048599",
@@ -153,8 +153,8 @@
     "p1_id": "8222729424",
     "p2_id": "71155120841",
     "template_id": 1579656,
-    "game_state": "DistributingTerritories",
-    "current_turn": -1
+    "game_state": "Playing",
+    "current_turn": 0
   },
   {
     "game_id": "44053908",
