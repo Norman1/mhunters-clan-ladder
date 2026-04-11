@@ -28,8 +28,8 @@
     "elo": 1006,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-04-11T05:24:06.125Z",
-    "last_opponent": "71148639731"
+    "last_assigned_at": "2026-04-11T07:00:22.924Z",
+    "last_opponent": "14130113253"
   },
   "1822261234": {
     "name": "fifi",
@@ -276,8 +276,8 @@
     "elo": 1078,
     "game_cap": 2,
     "missed_games": 1,
-    "last_assigned_at": "2026-04-11T05:24:06.125Z",
-    "last_opponent": "99110844848"
+    "last_assigned_at": "2026-04-11T07:00:22.288Z",
+    "last_opponent": "1382545505"
   },
   "93159203503": {
     "name": "President_Newsom",
@@ -481,11 +481,11 @@
   },
   "23105988432": {
     "name": "Socrates",
-    "elo": 922,
+    "elo": 939,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-04-08T02:24:46.685Z",
-    "last_opponent": "53134900057"
+    "last_assigned_at": "2026-04-11T07:00:22.924Z",
+    "last_opponent": "8222729424"
   },
   "16127869941": {
     "name": "gg",
@@ -569,11 +569,11 @@
   },
   "8222729424": {
     "name": "Al AssAff",
-    "elo": 872,
+    "elo": 855,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-04-10T02:30:35.165Z",
-    "last_opponent": "71155120841"
+    "last_assigned_at": "2026-04-11T07:00:22.288Z",
+    "last_opponent": "23105988432"
   },
   "88117806994": {
     "name": "RameurA",
