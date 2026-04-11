@@ -68,7 +68,7 @@
     "elo": 925,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-04-11T05:24:05.569Z",
+    "last_assigned_at": "2026-04-11T20:33:09.969Z",
     "last_opponent": "99110844848"
   },
   "3591948853": {
@@ -97,11 +97,11 @@
   },
   "4155523061": {
     "name": "AGEHNT SMITH",
-    "elo": 776,
+    "elo": 771,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-04-10T13:08:47.349Z",
-    "last_opponent": "3428471447"
+    "last_assigned_at": "2026-04-11T20:33:09.969Z",
+    "last_opponent": "16127869941"
   },
   "4180490094": {
     "name": "Woololo",
@@ -489,11 +489,11 @@
   },
   "16127869941": {
     "name": "gg",
-    "elo": 1121,
+    "elo": 1126,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-04-10T13:08:47.349Z",
-    "last_opponent": "9780712014"
+    "last_assigned_at": "2026-04-11T20:33:10.671Z",
+    "last_opponent": "4155523061"
   },
   "4353717389": {
     "name": "Krys",
@@ -564,7 +564,7 @@
     "elo": 948,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-04-11T14:35:48.119Z",
+    "last_assigned_at": "2026-04-11T20:33:10.671Z",
     "last_opponent": "74149320612"
   },
   "8222729424": {
