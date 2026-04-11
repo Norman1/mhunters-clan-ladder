@@ -157,7 +157,7 @@
     "game_cap": 2,
     "missed_games": 5,
     "last_opponent": "3428471447",
-    "last_assigned_at": "2026-03-14T12:50:46.047Z"
+    "last_assigned_at": "2026-04-11T12:56:16.580Z"
   },
   "58134761580": {
     "name": "ExFailures",
@@ -441,11 +441,11 @@
   },
   "74149320612": {
     "name": "Svarta Hingsten",
-    "elo": 1119,
+    "elo": 1133,
     "game_cap": 2,
     "missed_games": 0,
     "last_assigned_at": "2026-04-08T19:14:33.835Z",
-    "last_opponent": "71155120841"
+    "last_opponent": "53134900057"
   },
   "64114468853": {
     "name": "Wonkier",
@@ -601,11 +601,11 @@
   },
   "53134900057": {
     "name": "extelon",
-    "elo": 1003,
+    "elo": 989,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-04-08T15:09:38.634Z",
-    "last_opponent": "99110844848"
+    "last_assigned_at": "2026-04-11T12:56:16.580Z",
+    "last_opponent": "74149320612"
   },
   "4379764745": {
     "name": "Malatya44",
