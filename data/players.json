@@ -25,11 +25,11 @@
   },
   "1382545505": {
     "name": "Ree",
-    "elo": 1019,
+    "elo": 1006,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-04-08T19:14:33.080Z",
-    "last_opponent": "8222729424"
+    "last_assigned_at": "2026-04-11T05:24:06.125Z",
+    "last_opponent": "71148639731"
   },
   "1822261234": {
     "name": "fifi",
@@ -65,11 +65,11 @@
   },
   "3428471447": {
     "name": "AyanM",
-    "elo": 946,
+    "elo": 925,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-04-10T02:30:34.403Z",
-    "last_opponent": "4155523061"
+    "last_assigned_at": "2026-04-11T05:24:05.569Z",
+    "last_opponent": "79105823914"
   },
   "3591948853": {
     "name": "jdg5201",
@@ -113,11 +113,11 @@
   },
   "79105823914": {
     "name": "krinid",
-    "elo": 936,
+    "elo": 957,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "88110265403",
-    "last_assigned_at": "2026-04-05T16:35:53.863Z"
+    "last_opponent": "3428471447",
+    "last_assigned_at": "2026-04-11T05:24:04.967Z"
   },
   "88110265403": {
     "name": "Crouton",
@@ -275,9 +275,9 @@
     "name": "incandwo",
     "elo": 1078,
     "game_cap": 2,
-    "missed_games": 0,
-    "last_assigned_at": "2026-04-11T02:09:36.740Z",
-    "last_opponent": "25126079448"
+    "missed_games": 1,
+    "last_assigned_at": "2026-04-11T05:24:06.125Z",
+    "last_opponent": "99110844848"
   },
   "93159203503": {
     "name": "President_Newsom",
@@ -353,11 +353,11 @@
   },
   "71148639731": {
     "name": "Nick",
-    "elo": 1146,
+    "elo": 1159,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-04-08T19:14:33.080Z",
-    "last_opponent": "56133341636"
+    "last_assigned_at": "2026-04-11T05:24:04.967Z",
+    "last_opponent": "1382545505"
   },
   "71155120841": {
     "name": "Ventura",
@@ -564,8 +564,8 @@
     "elo": 948,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-04-11T02:09:36.740Z",
-    "last_opponent": "9313400553"
+    "last_assigned_at": "2026-04-11T05:24:05.569Z",
+    "last_opponent": "14130113253"
   },
   "8222729424": {
     "name": "Al AssAff",
