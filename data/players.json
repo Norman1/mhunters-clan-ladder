@@ -137,11 +137,11 @@
   },
   "23154545458": {
     "name": "Dark Magician Girl",
-    "elo": 1188,
+    "elo": 1194,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "74149320612",
-    "last_assigned_at": "2026-03-30T18:59:13.694Z"
+    "last_opponent": "56133341636",
+    "last_assigned_at": "2026-04-12T13:00:11.041Z"
   },
   "9482920905": {
     "name": "Ethosys",
@@ -276,7 +276,7 @@
     "elo": 1051,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-04-12T02:32:12.665Z",
+    "last_assigned_at": "2026-04-12T13:00:10.438Z",
     "last_opponent": "99110844848"
   },
   "93159203503": {
@@ -377,11 +377,11 @@
   },
   "56133341636": {
     "name": "Bastian Pyornkrachzark",
-    "elo": 890,
+    "elo": 884,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-04-08T19:14:33.835Z",
-    "last_opponent": "3631391841"
+    "last_assigned_at": "2026-04-12T13:00:10.438Z",
+    "last_opponent": "23154545458"
   },
   "50127514525": {
     "name": "toont3",
@@ -444,7 +444,7 @@
     "elo": 1133,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-04-11T22:31:44.601Z",
+    "last_assigned_at": "2026-04-12T13:00:11.041Z",
     "last_opponent": "14130113253"
   },
   "64114468853": {
