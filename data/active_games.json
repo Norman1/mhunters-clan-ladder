@@ -96,7 +96,7 @@
     "p2_id": "23105988432",
     "template_id": 1579661,
     "game_state": "Playing",
-    "current_turn": 0
+    "current_turn": 1
   },
   {
     "game_id": "44071984",
@@ -122,7 +122,7 @@
     "p2_id": "3346775331",
     "template_id": 1579665,
     "game_state": "Playing",
-    "current_turn": 2
+    "current_turn": 5
   },
   {
     "game_id": "44076829",
@@ -131,7 +131,7 @@
     "p2_id": "1382545505",
     "template_id": 1574451,
     "game_state": "Playing",
-    "current_turn": 0
+    "current_turn": 3
   },
   {
     "game_id": "44076831",
@@ -174,7 +174,7 @@
     "p2_id": "99110844848",
     "template_id": 1579665,
     "game_state": "Playing",
-    "current_turn": 0
+    "current_turn": 1
   },
   {
     "game_id": "44080235",
