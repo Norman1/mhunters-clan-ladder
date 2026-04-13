@@ -45,22 +45,13 @@
     "current_turn": 3
   },
   {
-    "game_id": "44069397",
-    "created_at": "2026-04-11T02:09:37.446Z",
-    "p1_id": "25126079448",
-    "p2_id": "71155120841",
-    "template_id": 1579659,
-    "game_state": "Playing",
-    "current_turn": 7
-  },
-  {
     "game_id": "44070023",
     "created_at": "2026-04-11T05:24:04.967Z",
     "p1_id": "71148639731",
     "p2_id": "79105823914",
     "template_id": 1390041,
     "game_state": "Playing",
-    "current_turn": 13
+    "current_turn": 15
   },
   {
     "game_id": "44070361",
@@ -69,7 +60,7 @@
     "p2_id": "8222729424",
     "template_id": 1573495,
     "game_state": "Playing",
-    "current_turn": 5
+    "current_turn": 6
   },
   {
     "game_id": "44070362",
@@ -107,14 +98,6 @@
     "current_turn": 0
   },
   {
-    "game_id": "44079639",
-    "created_at": "2026-04-12T13:00:11.041Z",
-    "p1_id": "74149320612",
-    "p2_id": "23154545458",
-    "template_id": 1579662,
-    "game_state": "WaitingForPlayers"
-  },
-  {
     "game_id": "44080234",
     "created_at": "2026-04-12T14:38:06.834Z",
     "p1_id": "88110265403",
@@ -138,7 +121,7 @@
     "p2_id": "16127869941",
     "template_id": 1390041,
     "game_state": "Playing",
-    "current_turn": 4
+    "current_turn": 5
   },
   {
     "game_id": "44084622",
@@ -171,13 +154,29 @@
     "p1_id": "3346775331",
     "p2_id": "53134900057",
     "template_id": 1579662,
-    "game_state": "WaitingForPlayers"
+    "game_state": "Playing",
+    "current_turn": 0
   },
   {
     "game_id": "44087510",
     "created_at": "2026-04-13T13:24:40.555Z",
     "p1_id": "9313400553",
     "p2_id": "31104791368",
-    "template_id": 1579656
+    "template_id": 1579656,
+    "game_state": "WaitingForPlayers"
+  },
+  {
+    "game_id": "44088360",
+    "created_at": "2026-04-13T15:14:37.958Z",
+    "p1_id": "25126079448",
+    "p2_id": "74149320612",
+    "template_id": 1574451
+  },
+  {
+    "game_id": "44088362",
+    "created_at": "2026-04-13T15:14:38.527Z",
+    "p1_id": "23154545458",
+    "p2_id": "99110844848",
+    "template_id": 1390041
   }
 ]
