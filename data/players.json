@@ -179,9 +179,9 @@
     "name": "Word Walker",
     "elo": 764,
     "game_cap": 2,
-    "missed_games": 0,
-    "last_opponent": "53134900057",
-    "last_assigned_at": "2026-04-13T06:13:22.125Z"
+    "missed_games": 1,
+    "last_opponent": "99110844848",
+    "last_assigned_at": "2026-04-13T13:24:40.555Z"
   },
   "4543063534": {
     "name": "Farah",
@@ -565,7 +565,7 @@
     "game_cap": 2,
     "missed_games": 0,
     "last_assigned_at": "2026-04-13T06:13:22.125Z",
-    "last_opponent": "3346775331"
+    "last_opponent": "9313400553"
   },
   "8222729424": {
     "name": "Al AssAff",
@@ -620,7 +620,7 @@
     "elo": 898,
     "game_cap": 2,
     "missed_games": 4,
-    "last_assigned_at": "2026-03-23T05:38:51.317Z",
+    "last_assigned_at": "2026-04-13T13:24:40.555Z",
     "last_opponent": "74149320612"
   },
   "5540862349": {
