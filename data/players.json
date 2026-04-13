@@ -113,11 +113,11 @@
   },
   "79105823914": {
     "name": "krinid",
-    "elo": 986,
+    "elo": 976,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "9313400553",
-    "last_assigned_at": "2026-04-13T02:37:42.151Z"
+    "last_opponent": "71148639731",
+    "last_assigned_at": "2026-04-13T17:02:31.290Z"
   },
   "88110265403": {
     "name": "Crouton",
@@ -275,9 +275,9 @@
     "name": "incandwo",
     "elo": 1051,
     "game_cap": 2,
-    "missed_games": 0,
-    "last_assigned_at": "2026-04-13T02:37:41.071Z",
-    "last_opponent": "56133341636"
+    "missed_games": 1,
+    "last_assigned_at": "2026-04-13T17:02:30.687Z",
+    "last_opponent": "9780712014"
   },
   "93159203503": {
     "name": "President_Newsom",
@@ -353,18 +353,18 @@
   },
   "71148639731": {
     "name": "Nick",
-    "elo": 1171,
+    "elo": 1181,
     "game_cap": 2,
     "missed_games": 0,
     "last_assigned_at": "2026-04-12T02:32:13.839Z",
-    "last_opponent": "1382545505"
+    "last_opponent": "79105823914"
   },
   "71155120841": {
     "name": "Ventura",
     "elo": 1202,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-04-11T02:09:37.446Z",
+    "last_assigned_at": "2026-04-13T17:02:30.687Z",
     "last_opponent": "25126079448"
   },
   "6411877352": {
@@ -443,7 +443,7 @@
     "name": "Svarta Hingsten",
     "elo": 1133,
     "game_cap": 2,
-    "missed_games": 1,
+    "missed_games": 0,
     "last_assigned_at": "2026-04-13T15:14:37.958Z",
     "last_opponent": "23154545458"
   },
@@ -596,8 +596,8 @@
     "elo": 920,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-04-13T02:37:41.612Z",
-    "last_opponent": "9313400553"
+    "last_assigned_at": "2026-04-13T17:02:31.290Z",
+    "last_opponent": "14130113253"
   },
   "53134900057": {
     "name": "extelon",
