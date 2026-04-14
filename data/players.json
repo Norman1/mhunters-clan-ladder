@@ -443,9 +443,9 @@
     "name": "Svarta Hingsten",
     "elo": 1133,
     "game_cap": 2,
-    "missed_games": 0,
+    "missed_games": 1,
     "last_assigned_at": "2026-04-13T15:14:37.958Z",
-    "last_opponent": "23154545458"
+    "last_opponent": "25126079448"
   },
   "64114468853": {
     "name": "Wonkier",
@@ -517,7 +517,7 @@
     "game_cap": 2,
     "missed_games": 0,
     "last_assigned_at": "2026-04-14T13:24:30.471Z",
-    "last_opponent": "8222729424"
+    "last_opponent": "74149320612"
   },
   "89114164339": {
     "name": "Blacksmith",
