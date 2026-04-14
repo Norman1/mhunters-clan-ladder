@@ -100,7 +100,7 @@
     "elo": 767,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-04-11T20:33:09.969Z",
+    "last_assigned_at": "2026-04-14T07:59:56.509Z",
     "last_opponent": "16127869941"
   },
   "4180490094": {
@@ -513,11 +513,11 @@
   },
   "25126079448": {
     "name": "Adrian D'Agostino",
-    "elo": 807,
+    "elo": 828,
     "game_cap": 2,
     "missed_games": 0,
     "last_assigned_at": "2026-04-13T15:14:37.958Z",
-    "last_opponent": "71155120841"
+    "last_opponent": "8222729424"
   },
   "89114164339": {
     "name": "Blacksmith",
@@ -569,11 +569,11 @@
   },
   "8222729424": {
     "name": "Al AssAff",
-    "elo": 833,
+    "elo": 812,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-04-14T05:59:47.554Z",
-    "last_opponent": "79105823914"
+    "last_assigned_at": "2026-04-14T07:59:56.509Z",
+    "last_opponent": "25126079448"
   },
   "88117806994": {
     "name": "RameurA",
