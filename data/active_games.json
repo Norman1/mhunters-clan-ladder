@@ -154,7 +154,8 @@
     "p1_id": "16127869941",
     "p2_id": "8222729424",
     "template_id": 1573497,
-    "game_state": "WaitingForPlayers"
+    "game_state": "DistributingTerritories",
+    "current_turn": -1
   },
   {
     "game_id": "44095254",
@@ -170,6 +171,7 @@
     "created_at": "2026-04-14T13:24:30.471Z",
     "p1_id": "25126079448",
     "p2_id": "53134900057",
-    "template_id": 1573499
+    "template_id": 1573499,
+    "game_state": "WaitingForPlayers"
   }
 ]
