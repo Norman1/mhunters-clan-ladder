@@ -179,7 +179,7 @@
     "name": "Word Walker",
     "elo": 760,
     "game_cap": 2,
-    "missed_games": 1,
+    "missed_games": 0,
     "last_opponent": "71148639731",
     "last_assigned_at": "2026-04-15T15:04:22.374Z"
   },
@@ -356,7 +356,7 @@
     "elo": 1148,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-04-15T15:04:22.374Z",
+    "last_assigned_at": "2026-04-15T19:16:32.480Z",
     "last_opponent": "9313400553"
   },
   "71155120841": {
@@ -540,7 +540,7 @@
     "elo": 1000,
     "game_cap": 2,
     "missed_games": 5,
-    "last_assigned_at": "2026-03-18T18:58:22.665Z",
+    "last_assigned_at": "2026-04-15T19:16:32.480Z",
     "last_opponent": "71155120841"
   },
   "50144225272": {
