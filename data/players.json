@@ -57,11 +57,11 @@
   },
   "3346775331": {
     "name": "Gatsu12",
-    "elo": 1384,
+    "elo": 1387,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "89114164339",
-    "last_assigned_at": "2026-04-15T15:04:22.976Z"
+    "last_opponent": "53134900057",
+    "last_assigned_at": "2026-04-15T22:40:00.566Z"
   },
   "3428471447": {
     "name": "AyanM",
@@ -177,11 +177,11 @@
   },
   "9313400553": {
     "name": "Word Walker",
-    "elo": 760,
+    "elo": 791,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "71148639731",
-    "last_assigned_at": "2026-04-15T15:04:22.374Z"
+    "last_opponent": "99110844848",
+    "last_assigned_at": "2026-04-15T22:40:01.129Z"
   },
   "4543063534": {
     "name": "Farah",
@@ -513,11 +513,11 @@
   },
   "25126079448": {
     "name": "Adrian D'Agostino",
-    "elo": 828,
+    "elo": 856,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-04-15T05:59:42.388Z",
-    "last_opponent": "74149320612"
+    "last_assigned_at": "2026-04-15T22:40:01.129Z",
+    "last_opponent": "53134900057"
   },
   "89114164339": {
     "name": "Blacksmith",
@@ -561,11 +561,11 @@
   },
   "99110844848": {
     "name": "CrypticNeo1",
-    "elo": 967,
+    "elo": 936,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-04-13T22:42:17.755Z",
-    "last_opponent": "88110265403"
+    "last_assigned_at": "2026-04-15T22:40:00.566Z",
+    "last_opponent": "9313400553"
   },
   "8222729424": {
     "name": "Al AssAff",
@@ -601,11 +601,11 @@
   },
   "53134900057": {
     "name": "extelon",
-    "elo": 975,
+    "elo": 944,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-04-14T13:24:30.471Z",
-    "last_opponent": "8294358602"
+    "last_assigned_at": "2026-04-15T22:39:59.907Z",
+    "last_opponent": "25126079448"
   },
   "4379764745": {
     "name": "Malatya44",
