@@ -179,8 +179,8 @@
     "name": "Word Walker",
     "elo": 760,
     "game_cap": 2,
-    "missed_games": 0,
-    "last_opponent": "3591948853",
+    "missed_games": 1,
+    "last_opponent": "71148639731",
     "last_assigned_at": "2026-04-15T15:04:22.374Z"
   },
   "4543063534": {
@@ -357,7 +357,7 @@
     "game_cap": 2,
     "missed_games": 0,
     "last_assigned_at": "2026-04-15T15:04:22.374Z",
-    "last_opponent": "9780712014"
+    "last_opponent": "9313400553"
   },
   "71155120841": {
     "name": "Ventura",
