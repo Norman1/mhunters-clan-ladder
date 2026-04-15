@@ -60,8 +60,8 @@
     "elo": 1384,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "99110844848",
-    "last_assigned_at": "2026-04-13T06:13:22.717Z"
+    "last_opponent": "89114164339",
+    "last_assigned_at": "2026-04-15T15:04:22.976Z"
   },
   "3428471447": {
     "name": "AyanM",
@@ -181,7 +181,7 @@
     "game_cap": 2,
     "missed_games": 0,
     "last_opponent": "3591948853",
-    "last_assigned_at": "2026-04-13T22:42:17.755Z"
+    "last_assigned_at": "2026-04-15T15:04:22.374Z"
   },
   "4543063534": {
     "name": "Farah",
@@ -353,11 +353,11 @@
   },
   "71148639731": {
     "name": "Nick",
-    "elo": 1181,
+    "elo": 1148,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-04-13T19:13:32.239Z",
-    "last_opponent": "79105823914"
+    "last_assigned_at": "2026-04-15T15:04:22.374Z",
+    "last_opponent": "9780712014"
   },
   "71155120841": {
     "name": "Ventura",
@@ -523,9 +523,9 @@
     "name": "Blacksmith",
     "elo": 1000,
     "game_cap": 2,
-    "missed_games": 5,
+    "missed_games": 6,
     "last_assigned_at": "2026-04-12T14:38:07.397Z",
-    "last_opponent": "79105823914"
+    "last_opponent": "3346775331"
   },
   "7337119889": {
     "name": "Renegade",
@@ -593,11 +593,11 @@
   },
   "9780712014": {
     "name": "Acuna42",
-    "elo": 903,
+    "elo": 936,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-04-13T19:13:32.239Z",
-    "last_opponent": "79105823914"
+    "last_assigned_at": "2026-04-15T15:04:22.976Z",
+    "last_opponent": "71148639731"
   },
   "53134900057": {
     "name": "extelon",
