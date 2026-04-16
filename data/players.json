@@ -113,18 +113,18 @@
   },
   "79105823914": {
     "name": "krinid",
-    "elo": 1040,
+    "elo": 1034,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "53134900057",
-    "last_assigned_at": "2026-04-16T17:13:29.319Z"
+    "last_opponent": "88110265403",
+    "last_assigned_at": "2026-04-16T22:38:53.817Z"
   },
   "88110265403": {
     "name": "Crouton",
-    "elo": 1338,
+    "elo": 1344,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "99110844848",
+    "last_opponent": "79105823914",
     "last_assigned_at": "2026-04-14T02:30:58.368Z"
   },
   "84143567121": {
@@ -181,7 +181,7 @@
     "game_cap": 2,
     "missed_games": 0,
     "last_opponent": "25126079448",
-    "last_assigned_at": "2026-04-16T17:13:29.319Z"
+    "last_assigned_at": "2026-04-16T22:38:54.508Z"
   },
   "4543063534": {
     "name": "Farah",
@@ -356,7 +356,7 @@
     "elo": 1156,
     "game_cap": 2,
     "missed_games": 1,
-    "last_assigned_at": "2026-04-16T19:12:42.023Z",
+    "last_assigned_at": "2026-04-16T22:38:54.508Z",
     "last_opponent": "25126079448"
   },
   "71155120841": {
@@ -516,7 +516,7 @@
     "elo": 832,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-04-16T19:12:42.023Z",
+    "last_assigned_at": "2026-04-16T22:38:53.817Z",
     "last_opponent": "71148639731"
   },
   "89114164339": {
