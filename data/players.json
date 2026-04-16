@@ -113,11 +113,11 @@
   },
   "79105823914": {
     "name": "krinid",
-    "elo": 1024,
+    "elo": 1040,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "1382545505",
-    "last_assigned_at": "2026-04-16T02:36:02.092Z"
+    "last_opponent": "53134900057",
+    "last_assigned_at": "2026-04-16T17:13:29.319Z"
   },
   "88110265403": {
     "name": "Crouton",
@@ -181,7 +181,7 @@
     "game_cap": 2,
     "missed_games": 0,
     "last_opponent": "53134900057",
-    "last_assigned_at": "2026-04-15T22:40:01.129Z"
+    "last_assigned_at": "2026-04-16T17:13:29.319Z"
   },
   "4543063534": {
     "name": "Farah",
@@ -601,11 +601,11 @@
   },
   "53134900057": {
     "name": "extelon",
-    "elo": 956,
+    "elo": 940,
     "game_cap": 2,
     "missed_games": 0,
     "last_assigned_at": "2026-04-16T02:36:02.906Z",
-    "last_opponent": "9313400553"
+    "last_opponent": "79105823914"
   },
   "4379764745": {
     "name": "Malatya44",
