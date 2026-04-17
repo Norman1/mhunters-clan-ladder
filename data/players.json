@@ -97,11 +97,11 @@
   },
   "4155523061": {
     "name": "AGEHNT SMITH",
-    "elo": 767,
+    "elo": 750,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-04-14T07:59:56.509Z",
-    "last_opponent": "16127869941"
+    "last_assigned_at": "2026-04-17T09:16:50.596Z",
+    "last_opponent": "8222729424"
   },
   "4180490094": {
     "name": "Woololo",
@@ -356,7 +356,7 @@
     "elo": 1161,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-04-16T22:38:54.508Z",
+    "last_assigned_at": "2026-04-17T09:16:50.596Z",
     "last_opponent": "9313400553"
   },
   "71155120841": {
@@ -364,8 +364,8 @@
     "elo": 1209,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-04-15T05:59:41.607Z",
-    "last_opponent": "3428471447"
+    "last_assigned_at": "2026-04-17T09:16:51.354Z",
+    "last_opponent": "74149320612"
   },
   "6411877352": {
     "name": "Kratos",
@@ -443,9 +443,9 @@
     "name": "Svarta Hingsten",
     "elo": 1133,
     "game_cap": 2,
-    "missed_games": 0,
+    "missed_games": 1,
     "last_assigned_at": "2026-04-15T05:59:41.607Z",
-    "last_opponent": "25126079448"
+    "last_opponent": "71155120841"
   },
   "64114468853": {
     "name": "Wonkier",
@@ -569,11 +569,11 @@
   },
   "8222729424": {
     "name": "Al AssAff",
-    "elo": 812,
+    "elo": 829,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-04-14T07:59:56.509Z",
-    "last_opponent": "25126079448"
+    "last_assigned_at": "2026-04-17T09:16:51.354Z",
+    "last_opponent": "4155523061"
   },
   "88117806994": {
     "name": "RameurA",
