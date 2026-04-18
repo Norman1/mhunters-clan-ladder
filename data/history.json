@@ -11618,5 +11618,17 @@
     "template_id": 1573495,
     "finished_at": "2026-04-18T20:36:18.832Z",
     "note": "Timed Out (Lobby)"
+  },
+  {
+    "game_id": "44110484",
+    "created_at": "2026-04-16T02:36:02.906Z",
+    "p1_id": "1382545505",
+    "p2_id": "53134900057",
+    "winner_id": "53134900057",
+    "loser_id": "1382545505",
+    "finished_at": "2026-04-18T22:34:10.723Z",
+    "template_id": 1579659,
+    "elo_change": 21,
+    "turns": 2
   }
 ]
