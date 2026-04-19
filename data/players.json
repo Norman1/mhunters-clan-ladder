@@ -68,7 +68,7 @@
     "elo": 893,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-04-19T18:51:05.942Z",
+    "last_assigned_at": "2026-04-19T22:35:07.232Z",
     "last_opponent": "99110844848"
   },
   "3591948853": {
@@ -361,11 +361,11 @@
   },
   "71155120841": {
     "name": "Ventura",
-    "elo": 1209,
+    "elo": 1213,
     "game_cap": 2,
     "missed_games": 0,
     "last_assigned_at": "2026-04-17T09:16:51.354Z",
-    "last_opponent": "74149320612"
+    "last_opponent": "8222729424"
   },
   "6411877352": {
     "name": "Kratos",
@@ -563,17 +563,17 @@
     "name": "CrypticNeo1",
     "elo": 933,
     "game_cap": 2,
-    "missed_games": 1,
+    "missed_games": 0,
     "last_assigned_at": "2026-04-19T20:36:48.036Z",
     "last_opponent": "3428471447"
   },
   "8222729424": {
     "name": "Al AssAff",
-    "elo": 829,
+    "elo": 825,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-04-17T09:16:51.354Z",
-    "last_opponent": "4155523061"
+    "last_assigned_at": "2026-04-19T22:35:07.232Z",
+    "last_opponent": "71155120841"
   },
   "88117806994": {
     "name": "RameurA",
