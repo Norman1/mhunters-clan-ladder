@@ -356,7 +356,7 @@
     "elo": 1151,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-04-19T20:36:48.636Z",
+    "last_assigned_at": "2026-04-20T19:04:23.451Z",
     "last_opponent": "53134900057"
   },
   "71155120841": {
@@ -444,7 +444,7 @@
     "elo": 1122,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-04-20T02:37:50.769Z",
+    "last_assigned_at": "2026-04-20T19:04:22.861Z",
     "last_opponent": "71148639731"
   },
   "64114468853": {
@@ -489,11 +489,11 @@
   },
   "16127869941": {
     "name": "gg",
-    "elo": 1147,
+    "elo": 1152,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-04-14T05:59:47.554Z",
-    "last_opponent": "4155523061"
+    "last_assigned_at": "2026-04-20T19:04:22.119Z",
+    "last_opponent": "8222729424"
   },
   "4353717389": {
     "name": "Krys",
@@ -569,11 +569,11 @@
   },
   "8222729424": {
     "name": "Al AssAff",
-    "elo": 825,
+    "elo": 820,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-04-19T22:35:07.232Z",
-    "last_opponent": "71155120841"
+    "last_assigned_at": "2026-04-20T19:04:23.451Z",
+    "last_opponent": "16127869941"
   },
   "88117806994": {
     "name": "RameurA",
@@ -604,7 +604,7 @@
     "elo": 969,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-04-19T20:36:48.636Z",
+    "last_assigned_at": "2026-04-20T19:04:22.861Z",
     "last_opponent": "71148639731"
   },
   "4379764745": {
