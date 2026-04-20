@@ -121,10 +121,10 @@
   },
   "88110265403": {
     "name": "Crouton",
-    "elo": 1348,
+    "elo": 1360,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "25126079448",
+    "last_opponent": "23154545458",
     "last_assigned_at": "2026-04-18T07:06:34.397Z"
   },
   "84143567121": {
@@ -137,10 +137,10 @@
   },
   "23154545458": {
     "name": "Dark Magician Girl",
-    "elo": 1194,
+    "elo": 1182,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "74149320612",
+    "last_opponent": "88110265403",
     "last_assigned_at": "2026-04-13T15:14:38.527Z"
   },
   "9482920905": {
@@ -563,7 +563,7 @@
     "name": "CrypticNeo1",
     "elo": 933,
     "game_cap": 2,
-    "missed_games": 1,
+    "missed_games": 0,
     "last_assigned_at": "2026-04-20T02:37:48.305Z",
     "last_opponent": "4155523061"
   },
