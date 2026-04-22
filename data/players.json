@@ -57,11 +57,11 @@
   },
   "3346775331": {
     "name": "Gatsu12",
-    "elo": 1408,
+    "elo": 1426,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "25126079448",
-    "last_assigned_at": "2026-04-22T05:58:44.633Z"
+    "last_opponent": "88110265403",
+    "last_assigned_at": "2026-04-22T19:11:59.844Z"
   },
   "3428471447": {
     "name": "AyanM",
@@ -85,7 +85,7 @@
     "game_cap": 2,
     "missed_games": 3,
     "last_opponent": "56133341636",
-    "last_assigned_at": "2026-04-08T17:01:19.168Z"
+    "last_assigned_at": "2026-04-22T19:12:00.914Z"
   },
   "3737155555": {
     "name": "Jumpshott",
@@ -100,7 +100,7 @@
     "elo": 760,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-04-22T05:58:45.223Z",
+    "last_assigned_at": "2026-04-22T19:12:00.381Z",
     "last_opponent": "9780712014"
   },
   "4180490094": {
@@ -121,11 +121,11 @@
   },
   "88110265403": {
     "name": "Crouton",
-    "elo": 1372,
+    "elo": 1354,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "99110844848",
-    "last_assigned_at": "2026-04-22T05:58:44.633Z"
+    "last_opponent": "3346775331",
+    "last_assigned_at": "2026-04-22T19:11:59.260Z"
   },
   "84143567121": {
     "name": "Poldi",
@@ -377,11 +377,11 @@
   },
   "56133341636": {
     "name": "Bastian Pyornkrachzark",
-    "elo": 851,
+    "elo": 870,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-04-21T19:10:34.637Z",
-    "last_opponent": "9313400553"
+    "last_assigned_at": "2026-04-22T19:11:59.844Z",
+    "last_opponent": "16127869941"
   },
   "50127514525": {
     "name": "toont3",
@@ -489,11 +489,11 @@
   },
   "16127869941": {
     "name": "gg",
-    "elo": 1166,
+    "elo": 1172,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-04-22T16:59:10.664Z",
-    "last_opponent": "8222729424"
+    "last_assigned_at": "2026-04-22T19:12:00.381Z",
+    "last_opponent": "56133341636"
   },
   "4353717389": {
     "name": "Krys",
@@ -593,11 +593,11 @@
   },
   "9780712014": {
     "name": "Acuna42",
-    "elo": 944,
+    "elo": 919,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-04-22T16:59:10.664Z",
-    "last_opponent": "4155523061"
+    "last_assigned_at": "2026-04-22T19:12:00.914Z",
+    "last_opponent": "56133341636"
   },
   "53134900057": {
     "name": "extelon",
