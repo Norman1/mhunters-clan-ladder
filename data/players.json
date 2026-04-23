@@ -89,7 +89,7 @@
     "name": "BlackBart",
     "elo": 1054,
     "game_cap": 2,
-    "missed_games": 3,
+    "missed_games": 0,
     "last_opponent": "56133341636",
     "last_assigned_at": "2026-04-22T19:12:00.914Z"
   },
@@ -103,11 +103,11 @@
   },
   "4155523061": {
     "name": "AGEHNT SMITH",
-    "elo": 760,
+    "elo": 757,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-04-22T19:12:00.381Z",
-    "last_opponent": "99110844848"
+    "last_assigned_at": "2026-04-23T06:05:16.293Z",
+    "last_opponent": "16127869941"
   },
   "4180490094": {
     "name": "Woololo",
@@ -122,8 +122,8 @@
     "elo": 1042,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "71155120841",
-    "last_assigned_at": "2026-04-21T13:25:20.793Z"
+    "last_opponent": "74149320612",
+    "last_assigned_at": "2026-04-23T06:05:15.689Z"
   },
   "88110265403": {
     "name": "Crouton",
@@ -449,9 +449,9 @@
     "name": "Svarta Hingsten",
     "elo": 1122,
     "game_cap": 2,
-    "missed_games": 0,
+    "missed_games": 2,
     "last_assigned_at": "2026-04-20T19:04:22.861Z",
-    "last_opponent": "71148639731"
+    "last_opponent": "53134900057"
   },
   "64114468853": {
     "name": "Wonkier",
@@ -495,11 +495,11 @@
   },
   "16127869941": {
     "name": "gg",
-    "elo": 1172,
+    "elo": 1175,
     "game_cap": 2,
     "missed_games": 0,
     "last_assigned_at": "2026-04-22T19:12:00.381Z",
-    "last_opponent": "56133341636"
+    "last_opponent": "4155523061"
   },
   "4353717389": {
     "name": "Krys",
@@ -569,7 +569,7 @@
     "name": "CrypticNeo1",
     "elo": 965,
     "game_cap": 2,
-    "missed_games": 1,
+    "missed_games": 0,
     "last_assigned_at": "2026-04-23T02:34:45.936Z",
     "last_opponent": "4155523061"
   },
@@ -610,8 +610,8 @@
     "elo": 986,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-04-23T02:34:45.351Z",
-    "last_opponent": "23105988432"
+    "last_assigned_at": "2026-04-23T06:05:16.293Z",
+    "last_opponent": "74149320612"
   },
   "4379764745": {
     "name": "Malatya44",
