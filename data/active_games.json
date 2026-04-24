@@ -155,6 +155,7 @@
     "p1_id": "71155120841",
     "p2_id": "9780712014",
     "template_id": 1579662,
-    "game_state": "WaitingForPlayers"
+    "game_state": "DistributingTerritories",
+    "current_turn": -1
   }
 ]
