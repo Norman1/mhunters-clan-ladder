@@ -69,7 +69,7 @@
     "p2_id": "53134900057",
     "template_id": 1431579,
     "game_state": "Playing",
-    "current_turn": 0
+    "current_turn": 1
   },
   {
     "game_id": "44168376",
@@ -87,7 +87,7 @@
     "p2_id": "53134900057",
     "template_id": 1574451,
     "game_state": "Playing",
-    "current_turn": 3
+    "current_turn": 4
   },
   {
     "game_id": "44169201",
