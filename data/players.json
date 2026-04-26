@@ -89,7 +89,7 @@
     "name": "BlackBart",
     "elo": 1022,
     "game_cap": 2,
-    "missed_games": 1,
+    "missed_games": 0,
     "last_opponent": "93159203503",
     "last_assigned_at": "2026-04-26T16:41:31.213Z"
   },
