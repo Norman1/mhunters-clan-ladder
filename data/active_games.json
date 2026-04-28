@@ -60,7 +60,7 @@
     "p2_id": "8222729424",
     "template_id": 1579661,
     "game_state": "Playing",
-    "current_turn": 15
+    "current_turn": 16
   },
   {
     "game_id": "44199007",
@@ -117,7 +117,8 @@
     "p1_id": "9313400553",
     "p2_id": "71155120841",
     "template_id": 1579661,
-    "game_state": "WaitingForPlayers"
+    "game_state": "DistributingTerritories",
+    "current_turn": -1
   },
   {
     "game_id": "44207504",
@@ -140,27 +141,31 @@
     "created_at": "2026-04-28T06:28:00.695Z",
     "p1_id": "3631391841",
     "p2_id": "71148639731",
-    "template_id": 1579667
+    "template_id": 1579667,
+    "game_state": "WaitingForPlayers"
   },
   {
     "game_id": "44208199",
     "created_at": "2026-04-28T06:28:01.497Z",
     "p1_id": "3631391841",
     "p2_id": "3428471447",
-    "template_id": 1579659
+    "template_id": 1579659,
+    "game_state": "WaitingForPlayers"
   },
   {
     "game_id": "44208200",
     "created_at": "2026-04-28T06:28:02.076Z",
     "p1_id": "3428471447",
     "p2_id": "9313400553",
-    "template_id": 1574451
+    "template_id": 1574451,
+    "game_state": "WaitingForPlayers"
   },
   {
     "game_id": "44208201",
     "created_at": "2026-04-28T06:28:02.642Z",
     "p1_id": "16127869941",
     "p2_id": "1382545505",
-    "template_id": 1574451
+    "template_id": 1574451,
+    "game_state": "WaitingForPlayers"
   }
 ]
