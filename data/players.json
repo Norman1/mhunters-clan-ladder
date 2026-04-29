@@ -103,11 +103,11 @@
   },
   "4155523061": {
     "name": "AGEHNT SMITH",
-    "elo": 773,
+    "elo": 764,
     "game_cap": 2,
     "missed_games": 0,
     "last_assigned_at": "2026-04-29T21:04:14.835Z",
-    "last_opponent": "79105823914"
+    "last_opponent": "53134900057"
   },
   "4180490094": {
     "name": "Woololo",
@@ -123,7 +123,7 @@
     "game_cap": 2,
     "missed_games": 0,
     "last_opponent": "4155523061",
-    "last_assigned_at": "2026-04-28T02:50:29.442Z"
+    "last_assigned_at": "2026-04-29T22:56:05.091Z"
   },
   "88110265403": {
     "name": "Crouton",
@@ -359,19 +359,19 @@
   },
   "71148639731": {
     "name": "Nick",
-    "elo": 1150,
+    "elo": 1136,
     "game_cap": 2,
     "missed_games": 0,
     "last_assigned_at": "2026-04-29T10:04:22.852Z",
-    "last_opponent": "1382545505"
+    "last_opponent": "71155120841"
   },
   "71155120841": {
     "name": "Ventura",
-    "elo": 1257,
+    "elo": 1271,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-04-29T10:04:22.852Z",
-    "last_opponent": "9313400553"
+    "last_assigned_at": "2026-04-29T22:56:04.550Z",
+    "last_opponent": "71148639731"
   },
   "6411877352": {
     "name": "Kratos",
@@ -602,16 +602,16 @@
     "elo": 1013,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-04-29T19:24:35.881Z",
+    "last_assigned_at": "2026-04-29T22:56:05.091Z",
     "last_opponent": "3631391841"
   },
   "53134900057": {
     "name": "extelon",
-    "elo": 994,
+    "elo": 1003,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-04-29T15:55:37.313Z",
-    "last_opponent": "3631391841"
+    "last_assigned_at": "2026-04-29T22:56:04.550Z",
+    "last_opponent": "4155523061"
   },
   "4379764745": {
     "name": "Malatya44",
