@@ -67,7 +67,7 @@
     "game_cap": 2,
     "missed_games": 0,
     "last_opponent": "9780712014",
-    "last_assigned_at": "2026-04-28T17:45:43.584Z"
+    "last_assigned_at": "2026-04-29T21:04:14.835Z"
   },
   "3428471447": {
     "name": "AyanM",
@@ -89,8 +89,8 @@
     "name": "BlackBart",
     "elo": 1000,
     "game_cap": 2,
-    "missed_games": 1,
-    "last_opponent": "53134900057",
+    "missed_games": 2,
+    "last_opponent": "9780712014",
     "last_assigned_at": "2026-04-29T19:24:35.881Z"
   },
   "3737155555": {
@@ -103,11 +103,11 @@
   },
   "4155523061": {
     "name": "AGEHNT SMITH",
-    "elo": 782,
+    "elo": 773,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-04-29T15:55:37.313Z",
-    "last_opponent": "3631391841"
+    "last_assigned_at": "2026-04-29T21:04:14.835Z",
+    "last_opponent": "79105823914"
   },
   "4180490094": {
     "name": "Woololo",
@@ -119,10 +119,10 @@
   },
   "79105823914": {
     "name": "krinid",
-    "elo": 996,
+    "elo": 1005,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "71148639731",
+    "last_opponent": "4155523061",
     "last_assigned_at": "2026-04-28T02:50:29.442Z"
   },
   "88110265403": {
@@ -377,9 +377,9 @@
     "name": "Kratos",
     "elo": 986,
     "game_cap": 2,
-    "missed_games": 5,
+    "missed_games": 6,
     "last_assigned_at": "2026-04-29T13:54:58.710Z",
-    "last_opponent": "3631391841"
+    "last_opponent": "92131071479"
   },
   "56133341636": {
     "name": "Bastian Pyornkrachzark",
@@ -419,7 +419,7 @@
     "game_cap": 2,
     "missed_games": 6,
     "last_assigned_at": "2026-04-29T13:54:58.710Z",
-    "last_opponent": "5540862349"
+    "last_opponent": "6411877352"
   },
   "25149077292": {
     "name": "EVIL DRAG QUEEN",
@@ -603,7 +603,7 @@
     "game_cap": 2,
     "missed_games": 0,
     "last_assigned_at": "2026-04-29T19:24:35.881Z",
-    "last_opponent": "3346775331"
+    "last_opponent": "3631391841"
   },
   "53134900057": {
     "name": "extelon",
