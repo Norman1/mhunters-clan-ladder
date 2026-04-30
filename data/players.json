@@ -106,8 +106,8 @@
     "elo": 763,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-04-30T06:26:11.063Z",
-    "last_opponent": "3346775331"
+    "last_assigned_at": "2026-04-30T10:05:33.524Z",
+    "last_opponent": "4337497298"
   },
   "4180490094": {
     "name": "Woololo",
@@ -191,10 +191,10 @@
   },
   "4543063534": {
     "name": "Farah",
-    "elo": 931,
+    "elo": 915,
     "game_cap": 1,
     "missed_games": 0,
-    "last_opponent": "71155120841",
+    "last_opponent": "53134900057",
     "last_assigned_at": "2026-04-23T02:34:45.351Z"
   },
   "51156980238": {
@@ -367,11 +367,11 @@
   },
   "71155120841": {
     "name": "Ventura",
-    "elo": 1271,
+    "elo": 1279,
     "game_cap": 2,
     "missed_games": 0,
     "last_assigned_at": "2026-04-29T22:56:04.550Z",
-    "last_opponent": "71148639731"
+    "last_opponent": "53134900057"
   },
   "6411877352": {
     "name": "Kratos",
@@ -481,9 +481,9 @@
     "name": "Gnoransa",
     "elo": 959,
     "game_cap": 2,
-    "missed_games": 6,
+    "missed_games": 7,
     "last_assigned_at": "2026-04-30T02:50:58.648Z",
-    "last_opponent": "8222729424"
+    "last_opponent": "4155523061"
   },
   "23105988432": {
     "name": "Socrates",
@@ -607,11 +607,11 @@
   },
   "53134900057": {
     "name": "extelon",
-    "elo": 1003,
+    "elo": 1011,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-04-29T22:56:04.550Z",
-    "last_opponent": "4155523061"
+    "last_assigned_at": "2026-04-30T10:05:33.524Z",
+    "last_opponent": "71155120841"
   },
   "4379764745": {
     "name": "Malatya44",
