@@ -131,7 +131,7 @@
     "game_cap": 2,
     "missed_games": 0,
     "last_opponent": "56133341636",
-    "last_assigned_at": "2026-04-28T19:40:22.970Z"
+    "last_assigned_at": "2026-05-01T02:57:18.200Z"
   },
   "84143567121": {
     "name": "Poldi",
@@ -362,7 +362,7 @@
     "elo": 1158,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-04-30T22:52:35.683Z",
+    "last_assigned_at": "2026-05-01T02:57:18.200Z",
     "last_opponent": "3346775331"
   },
   "71155120841": {
@@ -519,11 +519,11 @@
   },
   "25126079448": {
     "name": "Adrian D'Agostino",
-    "elo": 847,
+    "elo": 832,
     "game_cap": 2,
     "missed_games": 0,
     "last_assigned_at": "2026-04-27T21:01:00.683Z",
-    "last_opponent": "9313400553"
+    "last_opponent": "99110844848"
   },
   "89114164339": {
     "name": "Blacksmith",
@@ -567,11 +567,11 @@
   },
   "99110844848": {
     "name": "CrypticNeo1",
-    "elo": 934,
+    "elo": 949,
     "game_cap": 2,
     "missed_games": 0,
     "last_assigned_at": "2026-04-27T19:20:26.436Z",
-    "last_opponent": "3631391841"
+    "last_opponent": "25126079448"
   },
   "8222729424": {
     "name": "Al AssAff",
