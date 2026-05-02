@@ -31,11 +31,11 @@
   },
   "1382545505": {
     "name": "Ree",
-    "elo": 979,
+    "elo": 975,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-05-01T19:10:38.837Z",
-    "last_opponent": "9313400553"
+    "last_assigned_at": "2026-05-02T02:38:29.204Z",
+    "last_opponent": "88110265403"
   },
   "1822261234": {
     "name": "fifi",
@@ -103,11 +103,11 @@
   },
   "4155523061": {
     "name": "AGEHNT SMITH",
-    "elo": 763,
+    "elo": 755,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-04-30T10:05:33.524Z",
-    "last_opponent": "4337497298"
+    "last_assigned_at": "2026-05-02T02:38:28.601Z",
+    "last_opponent": "53134900057"
   },
   "4180490094": {
     "name": "Woololo",
@@ -127,10 +127,10 @@
   },
   "88110265403": {
     "name": "Crouton",
-    "elo": 1354,
+    "elo": 1358,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "9313400553",
+    "last_opponent": "1382545505",
     "last_assigned_at": "2026-05-01T22:49:45.942Z"
   },
   "84143567121": {
@@ -187,7 +187,7 @@
     "game_cap": 2,
     "missed_games": 0,
     "last_opponent": "88110265403",
-    "last_assigned_at": "2026-05-01T22:49:45.385Z"
+    "last_assigned_at": "2026-05-02T02:38:27.259Z"
   },
   "4543063534": {
     "name": "Farah",
@@ -362,7 +362,7 @@
     "elo": 1160,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-05-01T16:57:03.759Z",
+    "last_assigned_at": "2026-05-02T02:38:27.259Z",
     "last_opponent": "79105823914"
   },
   "71155120841": {
@@ -599,19 +599,19 @@
   },
   "9780712014": {
     "name": "Acuna42",
-    "elo": 975,
+    "elo": 998,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-05-01T22:49:44.824Z",
-    "last_opponent": "56133341636"
+    "last_assigned_at": "2026-05-02T02:38:28.601Z",
+    "last_opponent": "53134900057"
   },
   "53134900057": {
     "name": "extelon",
-    "elo": 1011,
+    "elo": 996,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-04-30T17:20:22.672Z",
-    "last_opponent": "71155120841"
+    "last_assigned_at": "2026-05-02T02:38:29.204Z",
+    "last_opponent": "9780712014"
   },
   "4379764745": {
     "name": "Malatya44",
