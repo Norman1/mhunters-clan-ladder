@@ -131,7 +131,7 @@
     "game_cap": 2,
     "missed_games": 0,
     "last_opponent": "71155120841",
-    "last_assigned_at": "2026-05-02T06:05:51.257Z"
+    "last_assigned_at": "2026-05-02T18:58:07.251Z"
   },
   "84143567121": {
     "name": "Poldi",
@@ -367,11 +367,11 @@
   },
   "71155120841": {
     "name": "Ventura",
-    "elo": 1324,
+    "elo": 1329,
     "game_cap": 2,
     "missed_games": 0,
     "last_assigned_at": "2026-05-02T16:45:22.791Z",
-    "last_opponent": "88110265403"
+    "last_opponent": "9780712014"
   },
   "6411877352": {
     "name": "Kratos",
@@ -599,11 +599,11 @@
   },
   "9780712014": {
     "name": "Acuna42",
-    "elo": 985,
+    "elo": 980,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-05-02T16:45:22.791Z",
-    "last_opponent": "4155523061"
+    "last_assigned_at": "2026-05-02T18:58:07.251Z",
+    "last_opponent": "71155120841"
   },
   "53134900057": {
     "name": "extelon",
