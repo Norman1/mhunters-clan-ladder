@@ -27,7 +27,7 @@
     "game_cap": 2,
     "missed_games": 6,
     "last_assigned_at": "2026-05-03T14:48:47.518Z",
-    "last_opponent": "6630558043"
+    "last_opponent": "4180490094"
   },
   "1382545505": {
     "name": "Ree",
@@ -113,9 +113,9 @@
     "name": "Woololo",
     "elo": 1000,
     "game_cap": 2,
-    "missed_games": 6,
+    "missed_games": 7,
     "last_assigned_at": "2026-05-03T14:48:47.518Z",
-    "last_opponent": "5118531774"
+    "last_opponent": "266160220"
   },
   "79105823914": {
     "name": "krinid",
@@ -321,9 +321,9 @@
     "name": "SUPREME",
     "elo": 1000,
     "game_cap": 2,
-    "missed_games": 6,
+    "missed_games": 7,
     "last_assigned_at": "2026-05-03T14:48:46.398Z",
-    "last_opponent": "93159203503"
+    "last_opponent": "63114105399"
   },
   "63152422979": {
     "name": "mari",
@@ -355,7 +355,7 @@
     "game_cap": 2,
     "missed_games": 6,
     "last_assigned_at": "2026-05-03T14:48:46.398Z",
-    "last_opponent": "1822261234"
+    "last_opponent": "66141834893"
   },
   "71148639731": {
     "name": "Nick",
