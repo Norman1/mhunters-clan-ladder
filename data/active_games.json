@@ -42,7 +42,7 @@
     "p2_id": "3346775331",
     "template_id": 1390041,
     "game_state": "Playing",
-    "current_turn": 12
+    "current_turn": 13
   },
   {
     "game_id": "44234733",
@@ -60,7 +60,7 @@
     "p2_id": "71148639731",
     "template_id": 1573499,
     "game_state": "Playing",
-    "current_turn": 7
+    "current_turn": 8
   },
   {
     "game_id": "44239114",
@@ -248,6 +248,8 @@
     "created_at": "2026-05-04T19:27:10.139Z",
     "p1_id": "9313400553",
     "p2_id": "9780712014",
-    "template_id": 1573498
+    "template_id": 1573498,
+    "game_state": "Playing",
+    "current_turn": 0
   }
 ]
