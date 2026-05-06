@@ -193,8 +193,8 @@
     "name": "Farah",
     "elo": 915,
     "game_cap": 1,
-    "missed_games": 1,
-    "last_opponent": "23154545458",
+    "missed_games": 2,
+    "last_opponent": "71155120841",
     "last_assigned_at": "2026-05-03T18:58:22.718Z"
   },
   "51156980238": {
@@ -370,8 +370,8 @@
     "elo": 1334,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-05-03T18:58:22.718Z",
-    "last_opponent": "29146480207"
+    "last_assigned_at": "2026-05-06T19:44:54.187Z",
+    "last_opponent": "4543063534"
   },
   "6411877352": {
     "name": "Kratos",
@@ -490,7 +490,7 @@
     "elo": 885,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-05-05T21:01:31.453Z",
+    "last_assigned_at": "2026-05-06T19:44:54.187Z",
     "last_opponent": "74149320612"
   },
   "16127869941": {
