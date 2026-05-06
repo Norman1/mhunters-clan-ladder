@@ -31,11 +31,11 @@
   },
   "1382545505": {
     "name": "Ree",
-    "elo": 994,
+    "elo": 962,
     "game_cap": 2,
     "missed_games": 0,
     "last_assigned_at": "2026-05-05T22:53:57.190Z",
-    "last_opponent": "53134900057"
+    "last_opponent": "9313400553"
   },
   "1822261234": {
     "name": "fifi",
@@ -183,11 +183,11 @@
   },
   "9313400553": {
     "name": "Word Walker",
-    "elo": 764,
+    "elo": 796,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "3346775331",
-    "last_assigned_at": "2026-05-06T02:45:58.934Z"
+    "last_opponent": "1382545505",
+    "last_assigned_at": "2026-05-06T22:52:22.039Z"
   },
   "4543063534": {
     "name": "Farah",
@@ -370,7 +370,7 @@
     "elo": 1334,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-05-06T19:44:54.187Z",
+    "last_assigned_at": "2026-05-06T22:52:22.039Z",
     "last_opponent": "4543063534"
   },
   "6411877352": {
