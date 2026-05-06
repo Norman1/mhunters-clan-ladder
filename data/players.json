@@ -121,7 +121,7 @@
     "name": "krinid",
     "elo": 967,
     "game_cap": 2,
-    "missed_games": 1,
+    "missed_games": 0,
     "last_opponent": "56133341636",
     "last_assigned_at": "2026-05-06T02:45:57.753Z"
   },
@@ -569,7 +569,7 @@
     "name": "CrypticNeo1",
     "elo": 947,
     "game_cap": 2,
-    "missed_games": 1,
+    "missed_games": 0,
     "last_assigned_at": "2026-05-05T06:15:33.842Z",
     "last_opponent": "71148639731"
   },
