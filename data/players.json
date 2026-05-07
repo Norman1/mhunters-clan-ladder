@@ -265,9 +265,9 @@
     "name": "angrybeavers",
     "elo": 1000,
     "game_cap": 2,
-    "missed_games": 6,
+    "missed_games": 7,
     "last_assigned_at": "2026-05-04T10:12:35.600Z",
-    "last_opponent": "8222729424"
+    "last_opponent": "13151753517"
   },
   "29146480207": {
     "name": "Boris Grishenko",
@@ -297,9 +297,9 @@
     "name": "Marengo",
     "elo": 1000,
     "game_cap": 2,
-    "missed_games": 6,
+    "missed_games": 7,
     "last_assigned_at": "2026-05-04T10:12:35.600Z",
-    "last_opponent": "9313400553"
+    "last_opponent": "7499140988"
   },
   "6630558043": {
     "name": "Yobledore",
@@ -359,11 +359,11 @@
   },
   "71148639731": {
     "name": "Nick",
-    "elo": 1175,
+    "elo": 1141,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-05-06T02:45:56.997Z",
-    "last_opponent": "25126079448"
+    "last_assigned_at": "2026-05-07T10:23:21.938Z",
+    "last_opponent": "8222729424"
   },
   "71155120841": {
     "name": "Ventura",
@@ -495,11 +495,11 @@
   },
   "16127869941": {
     "name": "gg",
-    "elo": 1137,
+    "elo": 1102,
     "game_cap": 2,
     "missed_games": 0,
     "last_assigned_at": "2026-05-06T02:45:57.753Z",
-    "last_opponent": "53134900057"
+    "last_opponent": "25126079448"
   },
   "4353717389": {
     "name": "Krys",
@@ -519,11 +519,11 @@
   },
   "25126079448": {
     "name": "Adrian D'Agostino",
-    "elo": 809,
+    "elo": 844,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-05-06T02:45:56.997Z",
-    "last_opponent": "71148639731"
+    "last_assigned_at": "2026-05-07T10:23:21.938Z",
+    "last_opponent": "16127869941"
   },
   "89114164339": {
     "name": "Blacksmith",
@@ -575,11 +575,11 @@
   },
   "8222729424": {
     "name": "Al AssAff",
-    "elo": 867,
+    "elo": 901,
     "game_cap": 2,
     "missed_games": 0,
     "last_assigned_at": "2026-05-05T06:15:36.365Z",
-    "last_opponent": "99110844848"
+    "last_opponent": "71148639731"
   },
   "88117806994": {
     "name": "RameurA",
