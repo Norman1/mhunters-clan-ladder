@@ -127,10 +127,10 @@
   },
   "88110265403": {
     "name": "Crouton",
-    "elo": 1344,
+    "elo": 1346,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "79105823914",
+    "last_opponent": "56133341636",
     "last_assigned_at": "2026-05-05T19:17:46.925Z"
   },
   "84143567121": {
@@ -383,11 +383,11 @@
   },
   "56133341636": {
     "name": "Bastian Pyornkrachzark",
-    "elo": 866,
+    "elo": 864,
     "game_cap": 2,
     "missed_games": 0,
     "last_assigned_at": "2026-05-07T02:47:40.700Z",
-    "last_opponent": "9313400553"
+    "last_opponent": "88110265403"
   },
   "50127514525": {
     "name": "toont3",
