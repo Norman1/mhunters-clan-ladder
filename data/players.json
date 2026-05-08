@@ -89,8 +89,8 @@
     "name": "BlackBart",
     "elo": 1052,
     "game_cap": 2,
-    "missed_games": 0,
-    "last_opponent": "88110265403",
+    "missed_games": 1,
+    "last_opponent": "23105988432",
     "last_assigned_at": "2026-05-08T19:16:28.199Z"
   },
   "3737155555": {
@@ -491,7 +491,7 @@
     "game_cap": 2,
     "missed_games": 0,
     "last_assigned_at": "2026-05-08T19:16:28.199Z",
-    "last_opponent": "4155523061"
+    "last_opponent": "3631391841"
   },
   "16127869941": {
     "name": "gg",
