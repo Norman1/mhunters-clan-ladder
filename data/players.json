@@ -585,7 +585,7 @@
     "name": "RameurA",
     "elo": 947,
     "game_cap": 2,
-    "missed_games": 1,
+    "missed_games": 0,
     "last_assigned_at": "2026-05-05T22:53:55.960Z",
     "last_opponent": "53134900057"
   },
