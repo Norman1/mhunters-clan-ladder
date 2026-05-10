@@ -19,7 +19,7 @@
     "game_cap": 2,
     "missed_games": 159,
     "last_opponent": "84143567121",
-    "last_assigned_at": "2026-03-15T16:31:48.467Z"
+    "last_assigned_at": "2026-05-10T19:02:09.631Z"
   },
   "266160220": {
     "name": "(CZ-SK)eXitus",
@@ -139,7 +139,7 @@
     "game_cap": 2,
     "missed_games": 17,
     "last_opponent": "81598466",
-    "last_assigned_at": "2026-03-15T16:31:48.467Z"
+    "last_assigned_at": "2026-05-10T19:02:10.245Z"
   },
   "23154545458": {
     "name": "Dark Magician Girl",
@@ -195,7 +195,7 @@
     "game_cap": 1,
     "missed_games": 2,
     "last_opponent": "71155120841",
-    "last_assigned_at": "2026-05-03T18:58:22.718Z"
+    "last_assigned_at": "2026-05-10T19:02:09.631Z"
   },
   "51156980238": {
     "name": "cd",
@@ -367,11 +367,11 @@
   },
   "71155120841": {
     "name": "Ventura",
-    "elo": 1381,
+    "elo": 1384,
     "game_cap": 2,
     "missed_games": 0,
     "last_assigned_at": "2026-05-10T16:54:50.673Z",
-    "last_opponent": "16127869941"
+    "last_opponent": "9780712014"
   },
   "6411877352": {
     "name": "Kratos",
@@ -599,11 +599,11 @@
   },
   "9780712014": {
     "name": "Acuna42",
-    "elo": 958,
+    "elo": 955,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-05-09T20:41:49.109Z",
-    "last_opponent": "3631391841"
+    "last_assigned_at": "2026-05-10T19:02:10.245Z",
+    "last_opponent": "71155120841"
   },
   "53134900057": {
     "name": "extelon",
