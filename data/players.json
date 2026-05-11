@@ -91,7 +91,7 @@
     "game_cap": 2,
     "missed_games": 1,
     "last_opponent": "9780712014",
-    "last_assigned_at": "2026-05-11T03:27:48.630Z"
+    "last_assigned_at": "2026-05-11T17:53:22.936Z"
   },
   "3737155555": {
     "name": "Jumpshott",
@@ -106,7 +106,7 @@
     "elo": 767,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-05-10T22:46:22.688Z",
+    "last_assigned_at": "2026-05-11T17:53:22.398Z",
     "last_opponent": "3631391841"
   },
   "4180490094": {
@@ -137,7 +137,7 @@
     "name": "Poldi",
     "elo": 1042,
     "game_cap": 2,
-    "missed_games": 17,
+    "missed_games": 0,
     "last_opponent": "81598466",
     "last_assigned_at": "2026-05-10T19:02:10.245Z"
   },
@@ -183,11 +183,11 @@
   },
   "9313400553": {
     "name": "Word Walker",
-    "elo": 838,
+    "elo": 836,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "4155523061",
-    "last_assigned_at": "2026-05-10T22:46:23.773Z"
+    "last_opponent": "71155120841",
+    "last_assigned_at": "2026-05-11T17:53:22.398Z"
   },
   "4543063534": {
     "name": "Farah",
@@ -367,11 +367,11 @@
   },
   "71155120841": {
     "name": "Ventura",
-    "elo": 1387,
+    "elo": 1389,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-05-10T22:46:23.773Z",
-    "last_opponent": "3631391841"
+    "last_assigned_at": "2026-05-11T17:53:21.853Z",
+    "last_opponent": "9313400553"
   },
   "6411877352": {
     "name": "Kratos",
@@ -575,11 +575,11 @@
   },
   "8222729424": {
     "name": "Al AssAff",
-    "elo": 917,
+    "elo": 939,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-05-11T03:27:49.419Z",
-    "last_opponent": "25126079448"
+    "last_assigned_at": "2026-05-11T17:53:21.853Z",
+    "last_opponent": "9780712014"
   },
   "88117806994": {
     "name": "RameurA",
@@ -599,11 +599,11 @@
   },
   "9780712014": {
     "name": "Acuna42",
-    "elo": 955,
+    "elo": 933,
     "game_cap": 2,
     "missed_games": 0,
     "last_assigned_at": "2026-05-11T03:27:49.419Z",
-    "last_opponent": "3631391841"
+    "last_opponent": "8222729424"
   },
   "53134900057": {
     "name": "extelon",
@@ -626,7 +626,7 @@
     "elo": 898,
     "game_cap": 2,
     "missed_games": 5,
-    "last_assigned_at": "2026-04-13T13:24:40.555Z",
+    "last_assigned_at": "2026-05-11T17:53:22.936Z",
     "last_opponent": "9313400553"
   },
   "5540862349": {
