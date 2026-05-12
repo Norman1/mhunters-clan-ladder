@@ -83,7 +83,7 @@
     "game_cap": 2,
     "missed_games": 5,
     "last_assigned_at": "2026-05-12T02:53:09.581Z",
-    "last_opponent": "9313400553"
+    "last_opponent": "4379764745"
   },
   "3631391841": {
     "name": "BlackBart",
@@ -449,7 +449,7 @@
     "name": "Svarta Hingsten",
     "elo": 1139,
     "game_cap": 2,
-    "missed_games": 1,
+    "missed_games": 0,
     "last_assigned_at": "2026-05-12T14:23:07.527Z",
     "last_opponent": "9780712014"
   },
@@ -617,9 +617,9 @@
     "name": "Malatya44",
     "elo": 967,
     "game_cap": 2,
-    "missed_games": 4,
+    "missed_games": 5,
     "last_assigned_at": "2026-05-12T02:53:09.581Z",
-    "last_opponent": "14130113253"
+    "last_opponent": "3591948853"
   },
   "31104791368": {
     "name": "Iamtznu",
