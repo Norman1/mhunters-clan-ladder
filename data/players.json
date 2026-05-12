@@ -51,7 +51,7 @@
     "game_cap": 2,
     "missed_games": 21,
     "last_opponent": "9313400553",
-    "last_assigned_at": "2026-03-17T05:20:49.797Z"
+    "last_assigned_at": "2026-05-12T06:36:19.442Z"
   },
   "3330212221": {
     "name": "blue_stream",
@@ -282,7 +282,7 @@
     "elo": 1061,
     "game_cap": 2,
     "missed_games": 3,
-    "last_assigned_at": "2026-04-28T02:50:30.503Z",
+    "last_assigned_at": "2026-05-12T06:36:19.442Z",
     "last_opponent": "74149320612"
   },
   "93159203503": {
