@@ -370,7 +370,7 @@
     "elo": 1350,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-05-11T17:53:21.853Z",
+    "last_assigned_at": "2026-05-12T14:23:07.527Z",
     "last_opponent": "4155523061"
   },
   "6411877352": {
@@ -449,9 +449,9 @@
     "name": "Svarta Hingsten",
     "elo": 1139,
     "game_cap": 2,
-    "missed_games": 0,
-    "last_assigned_at": "2026-05-11T22:52:56.819Z",
-    "last_opponent": "53134900057"
+    "missed_games": 1,
+    "last_assigned_at": "2026-05-12T14:23:07.527Z",
+    "last_opponent": "9780712014"
   },
   "64114468853": {
     "name": "Wonkier",
@@ -603,7 +603,7 @@
     "game_cap": 2,
     "missed_games": 0,
     "last_assigned_at": "2026-05-11T22:52:57.365Z",
-    "last_opponent": "84143567121"
+    "last_opponent": "74149320612"
   },
   "53134900057": {
     "name": "extelon",
