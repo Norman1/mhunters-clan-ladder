@@ -367,11 +367,11 @@
   },
   "71155120841": {
     "name": "Ventura",
-    "elo": 1350,
+    "elo": 1353,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-05-12T14:23:07.527Z",
-    "last_opponent": "4155523061"
+    "last_assigned_at": "2026-05-12T20:01:01.928Z",
+    "last_opponent": "8222729424"
   },
   "6411877352": {
     "name": "Kratos",
@@ -575,11 +575,11 @@
   },
   "8222729424": {
     "name": "Al AssAff",
-    "elo": 939,
+    "elo": 936,
     "game_cap": 2,
     "missed_games": 0,
     "last_assigned_at": "2026-05-11T17:53:21.853Z",
-    "last_opponent": "9780712014"
+    "last_opponent": "71155120841"
   },
   "88117806994": {
     "name": "RameurA",
@@ -602,7 +602,7 @@
     "elo": 919,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-05-11T22:52:57.365Z",
+    "last_assigned_at": "2026-05-12T20:01:01.928Z",
     "last_opponent": "74149320612"
   },
   "53134900057": {
