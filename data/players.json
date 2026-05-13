@@ -31,11 +31,11 @@
   },
   "1382545505": {
     "name": "Ree",
-    "elo": 981,
+    "elo": 955,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-05-08T02:51:11.999Z",
-    "last_opponent": "9780712014"
+    "last_assigned_at": "2026-05-13T14:31:52.895Z",
+    "last_opponent": "56133341636"
   },
   "1822261234": {
     "name": "fifi",
@@ -171,15 +171,15 @@
     "game_cap": 2,
     "missed_games": 0,
     "last_opponent": "28867016",
-    "last_assigned_at": "2026-05-13T02:57:36.195Z"
+    "last_assigned_at": "2026-05-13T14:31:52.313Z"
   },
   "6823726918": {
     "name": "Andr0meda",
     "elo": 1089,
     "game_cap": 2,
-    "missed_games": 0,
-    "last_opponent": "58134761580",
-    "last_assigned_at": "2026-05-13T06:46:41.379Z"
+    "missed_games": 1,
+    "last_opponent": "8222729424",
+    "last_assigned_at": "2026-05-13T14:31:52.895Z"
   },
   "9313400553": {
     "name": "Word Walker",
@@ -383,11 +383,11 @@
   },
   "56133341636": {
     "name": "Bastian Pyornkrachzark",
-    "elo": 864,
+    "elo": 890,
     "game_cap": 2,
     "missed_games": 0,
     "last_assigned_at": "2026-05-08T02:51:11.999Z",
-    "last_opponent": "88110265403"
+    "last_opponent": "1382545505"
   },
   "50127514525": {
     "name": "toont3",
@@ -569,7 +569,7 @@
     "name": "CrypticNeo1",
     "elo": 945,
     "game_cap": 2,
-    "missed_games": 1,
+    "missed_games": 0,
     "last_assigned_at": "2026-05-13T02:57:36.938Z",
     "last_opponent": "8222729424"
   },
@@ -578,8 +578,8 @@
     "elo": 936,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-05-13T06:46:41.379Z",
-    "last_opponent": "99110844848"
+    "last_assigned_at": "2026-05-13T14:31:52.313Z",
+    "last_opponent": "6823726918"
   },
   "88117806994": {
     "name": "RameurA",
