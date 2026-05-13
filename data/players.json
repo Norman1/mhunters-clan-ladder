@@ -74,7 +74,7 @@
     "elo": 904,
     "game_cap": 2,
     "missed_games": 3,
-    "last_assigned_at": "2026-04-28T17:45:46.046Z",
+    "last_assigned_at": "2026-05-13T10:26:52.411Z",
     "last_opponent": "53134900057"
   },
   "3591948853": {
@@ -155,7 +155,7 @@
     "game_cap": 2,
     "missed_games": 0,
     "last_opponent": "28867016",
-    "last_assigned_at": "2026-05-11T03:27:51.085Z"
+    "last_assigned_at": "2026-05-13T10:26:52.411Z"
   },
   "8294358602": {
     "name": "Wolkenstern",
@@ -257,9 +257,9 @@
     "name": "Maddest",
     "elo": 1023,
     "game_cap": 2,
-    "missed_games": 6,
+    "missed_games": 7,
     "last_assigned_at": "2026-05-10T09:27:07.766Z",
-    "last_opponent": "25149077292"
+    "last_opponent": "53134900057"
   },
   "7499140988": {
     "name": "angrybeavers",
@@ -611,7 +611,7 @@
     "game_cap": 2,
     "missed_games": 0,
     "last_assigned_at": "2026-05-11T22:52:57.365Z",
-    "last_opponent": "74149320612"
+    "last_opponent": "4942304274"
   },
   "4379764745": {
     "name": "Malatya44",
