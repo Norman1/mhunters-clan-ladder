@@ -63,11 +63,11 @@
   },
   "3346775331": {
     "name": "Gatsu12",
-    "elo": 1387,
+    "elo": 1390,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "16127869941",
-    "last_assigned_at": "2026-05-13T23:04:18.678Z"
+    "last_opponent": "3631391841",
+    "last_assigned_at": "2026-05-14T14:09:35.221Z"
   },
   "3428471447": {
     "name": "AyanM",
@@ -87,10 +87,10 @@
   },
   "3631391841": {
     "name": "BlackBart",
-    "elo": 972,
+    "elo": 969,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "25126079448",
+    "last_opponent": "3346775331",
     "last_assigned_at": "2026-05-13T23:04:17.947Z"
   },
   "3737155555": {
@@ -103,11 +103,11 @@
   },
   "4155523061": {
     "name": "AGEHNT SMITH",
-    "elo": 828,
+    "elo": 820,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-05-14T06:45:39.756Z",
-    "last_opponent": "9313400553"
+    "last_assigned_at": "2026-05-14T14:09:35.221Z",
+    "last_opponent": "84143567121"
   },
   "4180490094": {
     "name": "Woololo",
@@ -135,11 +135,11 @@
   },
   "84143567121": {
     "name": "Poldi",
-    "elo": 1056,
+    "elo": 1064,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "23105988432",
-    "last_assigned_at": "2026-05-14T06:45:39.756Z"
+    "last_opponent": "4155523061",
+    "last_assigned_at": "2026-05-14T14:09:34.666Z"
   },
   "23154545458": {
     "name": "Dark Magician Girl",
@@ -523,7 +523,7 @@
     "game_cap": 2,
     "missed_games": 0,
     "last_assigned_at": "2026-05-14T03:22:59.540Z",
-    "last_opponent": "3631391841"
+    "last_opponent": "99110844848"
   },
   "89114164339": {
     "name": "Blacksmith",
@@ -569,9 +569,9 @@
     "name": "CrypticNeo1",
     "elo": 969,
     "game_cap": 2,
-    "missed_games": 0,
-    "last_assigned_at": "2026-05-14T03:22:59.540Z",
-    "last_opponent": "28867016"
+    "missed_games": 1,
+    "last_assigned_at": "2026-05-14T14:09:34.666Z",
+    "last_opponent": "25126079448"
   },
   "8222729424": {
     "name": "Al AssAff",
