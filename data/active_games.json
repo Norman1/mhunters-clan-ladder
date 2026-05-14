@@ -24,7 +24,7 @@
     "p2_id": "71148639731",
     "template_id": 1579657,
     "game_state": "Playing",
-    "current_turn": 11
+    "current_turn": 12
   },
   {
     "game_id": "44287078",
@@ -42,7 +42,7 @@
     "p2_id": "71148639731",
     "template_id": 1579660,
     "game_state": "Playing",
-    "current_turn": 6
+    "current_turn": 7
   },
   {
     "game_id": "44297735",
@@ -69,7 +69,7 @@
     "p2_id": "23154545458",
     "template_id": 1579665,
     "game_state": "Playing",
-    "current_turn": 0
+    "current_turn": 1
   },
   {
     "game_id": "44308050",
@@ -107,29 +107,12 @@
     "game_state": "WaitingForPlayers"
   },
   {
-    "game_id": "44326676",
-    "created_at": "2026-05-12T23:00:06.985Z",
-    "p1_id": "23105988432",
-    "p2_id": "84143567121",
-    "template_id": 1431579,
-    "game_state": "WaitingForPlayers"
-  },
-  {
     "game_id": "44327610",
     "created_at": "2026-05-13T02:57:36.195Z",
     "p1_id": "58134761580",
     "p2_id": "71155120841",
     "template_id": 1579661,
     "game_state": "WaitingForPlayers"
-  },
-  {
-    "game_id": "44327611",
-    "created_at": "2026-05-13T02:57:36.938Z",
-    "p1_id": "28867016",
-    "p2_id": "99110844848",
-    "template_id": 1579667,
-    "game_state": "Playing",
-    "current_turn": 1
   },
   {
     "game_id": "44329340",
@@ -188,27 +171,38 @@
     "p2_id": "25126079448",
     "template_id": 1390041,
     "game_state": "Playing",
-    "current_turn": 1
+    "current_turn": 5
   },
   {
     "game_id": "44334861",
     "created_at": "2026-05-13T23:04:17.947Z",
     "p1_id": "3631391841",
     "p2_id": "3346775331",
-    "template_id": 1579663
+    "template_id": 1579663,
+    "game_state": "Playing",
+    "current_turn": 2
   },
   {
     "game_id": "44334862",
     "created_at": "2026-05-13T23:04:18.678Z",
     "p1_id": "1382545505",
     "p2_id": "3346775331",
-    "template_id": 1579659
+    "template_id": 1579659,
+    "game_state": "WaitingForPlayers"
   },
   {
     "game_id": "44334863",
     "created_at": "2026-05-13T23:04:19.247Z",
     "p1_id": "9780712014",
     "p2_id": "16127869941",
-    "template_id": 1573499
+    "template_id": 1573499,
+    "game_state": "WaitingForPlayers"
+  },
+  {
+    "game_id": "44335946",
+    "created_at": "2026-05-14T03:22:59.540Z",
+    "p1_id": "99110844848",
+    "p2_id": "25126079448",
+    "template_id": 1579656
   }
 ]

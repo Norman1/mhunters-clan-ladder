@@ -7,10 +7,10 @@
   },
   "28867016": {
     "name": "Swisster",
-    "elo": 1019,
+    "elo": 995,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "58134761580",
+    "last_opponent": "99110844848",
     "last_assigned_at": "2026-05-13T02:57:36.938Z"
   },
   "81598466": {
@@ -138,7 +138,7 @@
     "elo": 1056,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "9780712014",
+    "last_opponent": "23105988432",
     "last_assigned_at": "2026-05-12T23:00:06.985Z"
   },
   "23154545458": {
@@ -489,9 +489,9 @@
     "name": "Socrates",
     "elo": 865,
     "game_cap": 2,
-    "missed_games": 0,
+    "missed_games": 1,
     "last_assigned_at": "2026-05-12T23:00:06.985Z",
-    "last_opponent": "99110844848"
+    "last_opponent": "84143567121"
   },
   "16127869941": {
     "name": "gg",
@@ -522,7 +522,7 @@
     "elo": 808,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-05-13T20:05:04.902Z",
+    "last_assigned_at": "2026-05-14T03:22:59.540Z",
     "last_opponent": "3631391841"
   },
   "89114164339": {
@@ -567,11 +567,11 @@
   },
   "99110844848": {
     "name": "CrypticNeo1",
-    "elo": 945,
+    "elo": 969,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-05-13T02:57:36.938Z",
-    "last_opponent": "8222729424"
+    "last_assigned_at": "2026-05-14T03:22:59.540Z",
+    "last_opponent": "28867016"
   },
   "8222729424": {
     "name": "Al AssAff",
