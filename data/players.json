@@ -90,8 +90,8 @@
     "elo": 969,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "3346775331",
-    "last_assigned_at": "2026-05-14T17:48:26.947Z"
+    "last_opponent": "99110844848",
+    "last_assigned_at": "2026-05-14T19:44:09.463Z"
   },
   "3737155555": {
     "name": "Jumpshott",
@@ -127,11 +127,11 @@
   },
   "88110265403": {
     "name": "Crouton",
-    "elo": 1321,
+    "elo": 1333,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "79105823914",
-    "last_assigned_at": "2026-05-09T19:00:32.507Z"
+    "last_opponent": "74149320612",
+    "last_assigned_at": "2026-05-14T19:44:09.463Z"
   },
   "84143567121": {
     "name": "Poldi",
@@ -177,7 +177,7 @@
     "name": "Andr0meda",
     "elo": 1066,
     "game_cap": 2,
-    "missed_games": 1,
+    "missed_games": 0,
     "last_opponent": "1382545505",
     "last_assigned_at": "2026-05-13T20:05:04.290Z"
   },
@@ -447,11 +447,11 @@
   },
   "74149320612": {
     "name": "Svarta Hingsten",
-    "elo": 1170,
+    "elo": 1158,
     "game_cap": 2,
     "missed_games": 0,
     "last_assigned_at": "2026-05-12T23:00:04.652Z",
-    "last_opponent": "71155120841"
+    "last_opponent": "88110265403"
   },
   "64114468853": {
     "name": "Wonkier",
@@ -570,8 +570,8 @@
     "elo": 969,
     "game_cap": 2,
     "missed_games": 1,
-    "last_assigned_at": "2026-05-14T17:48:26.947Z",
-    "last_opponent": "84143567121"
+    "last_assigned_at": "2026-05-14T19:44:08.867Z",
+    "last_opponent": "3631391841"
   },
   "8222729424": {
     "name": "Al AssAff",
