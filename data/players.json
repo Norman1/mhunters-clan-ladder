@@ -103,7 +103,7 @@
   },
   "4155523061": {
     "name": "AGEHNT SMITH",
-    "elo": 820,
+    "elo": 852,
     "game_cap": 2,
     "missed_games": 0,
     "last_assigned_at": "2026-05-14T14:09:35.221Z",
@@ -135,11 +135,11 @@
   },
   "84143567121": {
     "name": "Poldi",
-    "elo": 1064,
+    "elo": 1032,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "99110844848",
-    "last_assigned_at": "2026-05-14T17:48:28.558Z"
+    "last_opponent": "4155523061",
+    "last_assigned_at": "2026-05-15T06:54:58.796Z"
   },
   "23154545458": {
     "name": "Dark Magician Girl",
@@ -602,7 +602,7 @@
     "elo": 913,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-05-13T23:04:19.247Z",
+    "last_assigned_at": "2026-05-15T06:54:58.796Z",
     "last_opponent": "25126079448"
   },
   "53134900057": {
