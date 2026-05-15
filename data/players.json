@@ -15,11 +15,11 @@
   },
   "81598466": {
     "name": "Tim",
-    "elo": 977,
+    "elo": 972,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "4543063534",
-    "last_assigned_at": "2026-05-15T19:27:38.710Z"
+    "last_opponent": "71155120841",
+    "last_assigned_at": "2026-05-15T20:59:15.022Z"
   },
   "266160220": {
     "name": "(CZ-SK)eXitus",
@@ -143,10 +143,10 @@
   },
   "23154545458": {
     "name": "Dark Magician Girl",
-    "elo": 1140,
+    "elo": 1151,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "3346775331",
+    "last_opponent": "99110844848",
     "last_assigned_at": "2026-05-10T10:59:13.747Z"
   },
   "9482920905": {
@@ -367,11 +367,11 @@
   },
   "71155120841": {
     "name": "Ventura",
-    "elo": 1334,
+    "elo": 1339,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-05-15T17:26:09.116Z",
-    "last_opponent": "3631391841"
+    "last_assigned_at": "2026-05-15T20:59:14.452Z",
+    "last_opponent": "81598466"
   },
   "6411877352": {
     "name": "Kratos",
@@ -495,11 +495,11 @@
   },
   "16127869941": {
     "name": "gg",
-    "elo": 1101,
+    "elo": 1111,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-05-13T23:04:19.247Z",
-    "last_opponent": "3346775331"
+    "last_assigned_at": "2026-05-15T20:59:15.022Z",
+    "last_opponent": "9780712014"
   },
   "4353717389": {
     "name": "Krys",
@@ -567,11 +567,11 @@
   },
   "99110844848": {
     "name": "CrypticNeo1",
-    "elo": 969,
+    "elo": 958,
     "game_cap": 2,
     "missed_games": 0,
     "last_assigned_at": "2026-05-14T21:08:46.801Z",
-    "last_opponent": "88110265403"
+    "last_opponent": "23154545458"
   },
   "8222729424": {
     "name": "Al AssAff",
@@ -599,11 +599,11 @@
   },
   "9780712014": {
     "name": "Acuna42",
-    "elo": 913,
+    "elo": 903,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-05-15T06:54:58.796Z",
-    "last_opponent": "25126079448"
+    "last_assigned_at": "2026-05-15T20:59:14.452Z",
+    "last_opponent": "16127869941"
   },
   "53134900057": {
     "name": "extelon",
