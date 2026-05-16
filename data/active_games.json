@@ -202,13 +202,15 @@
     "created_at": "2026-05-16T09:39:31.449Z",
     "p1_id": "74149320612",
     "p2_id": "81598466",
-    "template_id": 1390041
+    "template_id": 1390041,
+    "game_state": "WaitingForPlayers"
   },
   {
     "game_id": "44353961",
     "created_at": "2026-05-16T09:39:32.821Z",
     "p1_id": "28867016",
     "p2_id": "58134761580",
-    "template_id": 1579656
+    "template_id": 1579656,
+    "game_state": "WaitingForPlayers"
   }
 ]
