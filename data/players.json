@@ -169,8 +169,8 @@
     "name": "ExFailures",
     "elo": 963,
     "game_cap": 2,
-    "missed_games": 0,
-    "last_opponent": "28867016",
+    "missed_games": 1,
+    "last_opponent": "71155120841",
     "last_assigned_at": "2026-05-13T14:31:52.313Z"
   },
   "6823726918": {
@@ -371,7 +371,7 @@
     "game_cap": 2,
     "missed_games": 0,
     "last_assigned_at": "2026-05-15T20:59:14.452Z",
-    "last_opponent": "81598466"
+    "last_opponent": "58134761580"
   },
   "6411877352": {
     "name": "Kratos",
