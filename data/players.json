@@ -7,19 +7,19 @@
   },
   "28867016": {
     "name": "Swisster",
-    "elo": 995,
+    "elo": 1024,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "99110844848",
-    "last_assigned_at": "2026-05-14T10:13:11.260Z"
+    "last_opponent": "74149320612",
+    "last_assigned_at": "2026-05-16T09:39:32.821Z"
   },
   "81598466": {
     "name": "Tim",
     "elo": 960,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "16127869941",
-    "last_assigned_at": "2026-05-16T02:49:57.276Z"
+    "last_opponent": "6823726918",
+    "last_assigned_at": "2026-05-16T09:39:31.449Z"
   },
   "266160220": {
     "name": "(CZ-SK)eXitus",
@@ -171,14 +171,14 @@
     "game_cap": 2,
     "missed_games": 1,
     "last_opponent": "71155120841",
-    "last_assigned_at": "2026-05-13T14:31:52.313Z"
+    "last_assigned_at": "2026-05-16T09:39:32.821Z"
   },
   "6823726918": {
     "name": "Andr0meda",
     "elo": 1041,
     "game_cap": 3,
-    "missed_games": 0,
-    "last_opponent": "25126079448",
+    "missed_games": 1,
+    "last_opponent": "81598466",
     "last_assigned_at": "2026-05-15T19:27:38.710Z"
   },
   "9313400553": {
@@ -447,11 +447,11 @@
   },
   "74149320612": {
     "name": "Svarta Hingsten",
-    "elo": 1158,
+    "elo": 1129,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-05-14T21:08:46.801Z",
-    "last_opponent": "88110265403"
+    "last_assigned_at": "2026-05-16T09:39:31.449Z",
+    "last_opponent": "28867016"
   },
   "64114468853": {
     "name": "Wonkier",
