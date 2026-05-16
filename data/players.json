@@ -135,11 +135,11 @@
   },
   "84143567121": {
     "name": "Poldi",
-    "elo": 1032,
+    "elo": 1045,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "4155523061",
-    "last_assigned_at": "2026-05-15T06:54:58.796Z"
+    "last_opponent": "9780712014",
+    "last_assigned_at": "2026-05-16T19:03:12.844Z"
   },
   "23154545458": {
     "name": "Dark Magician Girl",
@@ -183,10 +183,10 @@
   },
   "9313400553": {
     "name": "Word Walker",
-    "elo": 801,
+    "elo": 781,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "88110265403",
+    "last_opponent": "25126079448",
     "last_assigned_at": "2026-05-15T17:26:10.194Z"
   },
   "4543063534": {
@@ -519,11 +519,11 @@
   },
   "25126079448": {
     "name": "Adrian D'Agostino",
-    "elo": 793,
+    "elo": 813,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-05-15T17:26:10.194Z",
-    "last_opponent": "6823726918"
+    "last_assigned_at": "2026-05-16T19:03:12.844Z",
+    "last_opponent": "9313400553"
   },
   "89114164339": {
     "name": "Blacksmith",
@@ -599,11 +599,11 @@
   },
   "9780712014": {
     "name": "Acuna42",
-    "elo": 903,
+    "elo": 890,
     "game_cap": 2,
     "missed_games": 0,
     "last_assigned_at": "2026-05-15T20:59:14.452Z",
-    "last_opponent": "16127869941"
+    "last_opponent": "84143567121"
   },
   "53134900057": {
     "name": "extelon",
