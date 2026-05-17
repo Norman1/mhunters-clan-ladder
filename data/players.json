@@ -19,7 +19,7 @@
     "game_cap": 2,
     "missed_games": 0,
     "last_opponent": "8222729424",
-    "last_assigned_at": "2026-05-16T09:39:31.449Z"
+    "last_assigned_at": "2026-05-17T22:53:06.428Z"
   },
   "266160220": {
     "name": "(CZ-SK)eXitus",
@@ -63,11 +63,11 @@
   },
   "3346775331": {
     "name": "Gatsu12",
-    "elo": 1355,
+    "elo": 1356,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "1382545505",
-    "last_assigned_at": "2026-05-17T13:18:46.409Z"
+    "last_opponent": "9313400553",
+    "last_assigned_at": "2026-05-17T22:53:07.835Z"
   },
   "3428471447": {
     "name": "AyanM",
@@ -183,10 +183,10 @@
   },
   "9313400553": {
     "name": "Word Walker",
-    "elo": 781,
+    "elo": 780,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "9780712014",
+    "last_opponent": "3346775331",
     "last_assigned_at": "2026-05-17T13:18:47.004Z"
   },
   "4543063534": {
@@ -449,9 +449,9 @@
     "name": "Svarta Hingsten",
     "elo": 1129,
     "game_cap": 2,
-    "missed_games": 0,
-    "last_assigned_at": "2026-05-16T09:39:31.449Z",
-    "last_opponent": "28867016"
+    "missed_games": 1,
+    "last_assigned_at": "2026-05-17T22:53:07.025Z",
+    "last_opponent": "99110844848"
   },
   "64114468853": {
     "name": "Wonkier",
@@ -570,15 +570,15 @@
     "elo": 954,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-05-17T16:56:00.552Z",
-    "last_opponent": "88110265403"
+    "last_assigned_at": "2026-05-17T22:53:06.428Z",
+    "last_opponent": "74149320612"
   },
   "8222729424": {
     "name": "Al AssAff",
     "elo": 987,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-05-16T14:55:39.732Z",
+    "last_assigned_at": "2026-05-17T22:53:07.025Z",
     "last_opponent": "81598466"
   },
   "88117806994": {
@@ -602,7 +602,7 @@
     "elo": 862,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-05-17T19:07:15.895Z",
+    "last_assigned_at": "2026-05-17T22:53:07.835Z",
     "last_opponent": "25126079448"
   },
   "53134900057": {
