@@ -151,10 +151,10 @@
   },
   "9482920905": {
     "name": "Ethosys",
-    "elo": 1040,
+    "elo": 1062,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "53134900057",
+    "last_opponent": "6823726918",
     "last_assigned_at": "2026-05-17T20:50:19.575Z"
   },
   "8294358602": {
@@ -175,11 +175,11 @@
   },
   "6823726918": {
     "name": "Andr0meda",
-    "elo": 1081,
+    "elo": 1059,
     "game_cap": 3,
     "missed_games": 0,
-    "last_opponent": "16127869941",
-    "last_assigned_at": "2026-05-17T19:07:16.594Z"
+    "last_opponent": "9482920905",
+    "last_assigned_at": "2026-05-18T08:02:29.510Z"
   },
   "9313400553": {
     "name": "Word Walker",
@@ -569,8 +569,8 @@
     "name": "CrypticNeo1",
     "elo": 954,
     "game_cap": 2,
-    "missed_games": 1,
-    "last_assigned_at": "2026-05-17T22:53:06.428Z",
+    "missed_games": 0,
+    "last_assigned_at": "2026-05-18T08:02:29.510Z",
     "last_opponent": "81598466"
   },
   "8222729424": {
