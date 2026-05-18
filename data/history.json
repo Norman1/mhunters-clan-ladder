@@ -15038,5 +15038,14 @@
     "template_id": 1579665,
     "finished_at": "2026-05-18T21:11:19.797Z",
     "note": "Declined"
+  },
+  {
+    "game_id": "44368295",
+    "created_at": "2026-05-18T08:02:29.510Z",
+    "p1_id": "99110844848",
+    "p2_id": "6823726918",
+    "template_id": 1574451,
+    "finished_at": "2026-05-18T23:01:35.120Z",
+    "note": "Declined"
   }
 ]
