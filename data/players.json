@@ -135,11 +135,11 @@
   },
   "84143567121": {
     "name": "Poldi",
-    "elo": 1053,
+    "elo": 1067,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "25126079448",
-    "last_assigned_at": "2026-05-17T16:56:00.552Z"
+    "last_opponent": "99110844848",
+    "last_assigned_at": "2026-05-19T07:43:26.095Z"
   },
   "23154545458": {
     "name": "Dark Magician Girl",
@@ -183,11 +183,11 @@
   },
   "9313400553": {
     "name": "Word Walker",
-    "elo": 835,
+    "elo": 824,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "81598466",
-    "last_assigned_at": "2026-05-18T03:36:51.515Z"
+    "last_opponent": "53134900057",
+    "last_assigned_at": "2026-05-19T07:43:26.095Z"
   },
   "4543063534": {
     "name": "Farah",
@@ -567,11 +567,11 @@
   },
   "99110844848": {
     "name": "CrypticNeo1",
-    "elo": 954,
+    "elo": 940,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-05-18T23:01:38.695Z",
-    "last_opponent": "6823726918"
+    "last_assigned_at": "2026-05-19T07:43:27.266Z",
+    "last_opponent": "84143567121"
   },
   "8222729424": {
     "name": "Al AssAff",
@@ -607,11 +607,11 @@
   },
   "53134900057": {
     "name": "extelon",
-    "elo": 1001,
+    "elo": 1012,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-05-18T03:36:49.711Z",
-    "last_opponent": "9482920905"
+    "last_assigned_at": "2026-05-19T07:43:27.266Z",
+    "last_opponent": "9313400553"
   },
   "4379764745": {
     "name": "Malatya44",
