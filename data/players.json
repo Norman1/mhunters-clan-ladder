@@ -7,18 +7,18 @@
   },
   "28867016": {
     "name": "Swisster",
-    "elo": 996,
+    "elo": 1010,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "6823726918",
-    "last_assigned_at": "2026-05-19T21:18:11.184Z"
+    "last_opponent": "81598466",
+    "last_assigned_at": "2026-05-19T23:01:03.730Z"
   },
   "81598466": {
     "name": "Tim",
-    "elo": 913,
+    "elo": 875,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "74149320612",
+    "last_opponent": "28867016",
     "last_assigned_at": "2026-05-19T11:16:04.812Z"
   },
   "266160220": {
@@ -67,7 +67,7 @@
     "game_cap": 2,
     "missed_games": 0,
     "last_opponent": "6823726918",
-    "last_assigned_at": "2026-05-19T15:18:57.999Z"
+    "last_assigned_at": "2026-05-19T23:01:02.119Z"
   },
   "3428471447": {
     "name": "AyanM",
@@ -139,7 +139,7 @@
     "game_cap": 2,
     "missed_games": 0,
     "last_opponent": "6823726918",
-    "last_assigned_at": "2026-05-19T18:04:37.675Z"
+    "last_assigned_at": "2026-05-19T23:01:02.664Z"
   },
   "23154545458": {
     "name": "Dark Magician Girl",
@@ -183,11 +183,11 @@
   },
   "9313400553": {
     "name": "Word Walker",
-    "elo": 817,
+    "elo": 800,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "84143567121",
-    "last_assigned_at": "2026-05-19T21:18:11.184Z"
+    "last_opponent": "9780712014",
+    "last_assigned_at": "2026-05-19T23:01:02.664Z"
   },
   "4543063534": {
     "name": "Farah",
@@ -367,11 +367,11 @@
   },
   "71155120841": {
     "name": "Ventura",
-    "elo": 1347,
+    "elo": 1310,
     "game_cap": 2,
     "missed_games": 0,
     "last_assigned_at": "2026-05-19T11:16:03.641Z",
-    "last_opponent": "8222729424"
+    "last_opponent": "56133341636"
   },
   "6411877352": {
     "name": "Kratos",
@@ -383,11 +383,11 @@
   },
   "56133341636": {
     "name": "Bastian Pyornkrachzark",
-    "elo": 898,
+    "elo": 935,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-05-19T21:18:10.646Z",
-    "last_opponent": "6823726918"
+    "last_assigned_at": "2026-05-19T23:01:04.272Z",
+    "last_opponent": "71155120841"
   },
   "50127514525": {
     "name": "toont3",
@@ -599,11 +599,11 @@
   },
   "9780712014": {
     "name": "Acuna42",
-    "elo": 842,
+    "elo": 883,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-05-19T15:18:56.148Z",
-    "last_opponent": "3346775331"
+    "last_assigned_at": "2026-05-19T23:01:04.272Z",
+    "last_opponent": "9313400553"
   },
   "53134900057": {
     "name": "extelon",
