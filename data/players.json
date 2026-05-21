@@ -7,10 +7,10 @@
   },
   "28867016": {
     "name": "Swisster",
-    "elo": 1031,
+    "elo": 1017,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "99110844848",
+    "last_opponent": "84143567121",
     "last_assigned_at": "2026-05-21T07:51:20.402Z"
   },
   "81598466": {
@@ -135,11 +135,11 @@
   },
   "84143567121": {
     "name": "Poldi",
-    "elo": 1147,
+    "elo": 1161,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "9313400553",
-    "last_assigned_at": "2026-05-20T21:52:22.775Z"
+    "last_opponent": "28867016",
+    "last_assigned_at": "2026-05-21T11:22:57.675Z"
   },
   "23154545458": {
     "name": "Dark Magician Girl",
@@ -610,7 +610,7 @@
     "elo": 1028,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-05-19T07:43:27.266Z",
+    "last_assigned_at": "2026-05-21T11:22:57.675Z",
     "last_opponent": "99110844848"
   },
   "4379764745": {
