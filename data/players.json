@@ -7,11 +7,11 @@
   },
   "28867016": {
     "name": "Swisster",
-    "elo": 1017,
+    "elo": 991,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "84143567121",
-    "last_assigned_at": "2026-05-21T07:51:20.402Z"
+    "last_opponent": "1382545505",
+    "last_assigned_at": "2026-05-21T15:23:18.954Z"
   },
   "81598466": {
     "name": "Tim",
@@ -19,7 +19,7 @@
     "game_cap": 2,
     "missed_games": 0,
     "last_opponent": "1382545505",
-    "last_assigned_at": "2026-05-20T15:17:37.738Z"
+    "last_assigned_at": "2026-05-21T15:23:20.148Z"
   },
   "266160220": {
     "name": "(CZ-SK)eXitus",
@@ -31,11 +31,11 @@
   },
   "1382545505": {
     "name": "Ree",
-    "elo": 918,
+    "elo": 944,
     "game_cap": 2,
     "missed_games": 0,
     "last_assigned_at": "2026-05-21T07:51:20.402Z",
-    "last_opponent": "81598466"
+    "last_opponent": "28867016"
   },
   "1822261234": {
     "name": "fifi",
@@ -87,11 +87,11 @@
   },
   "3631391841": {
     "name": "BlackBart",
-    "elo": 971,
+    "elo": 956,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "23154545458",
-    "last_assigned_at": "2026-05-20T21:52:20.983Z"
+    "last_opponent": "9482920905",
+    "last_assigned_at": "2026-05-21T15:23:18.954Z"
   },
   "3737155555": {
     "name": "Jumpshott",
@@ -137,9 +137,9 @@
     "name": "Poldi",
     "elo": 1161,
     "game_cap": 2,
-    "missed_games": 0,
-    "last_opponent": "28867016",
-    "last_assigned_at": "2026-05-21T11:22:57.675Z"
+    "missed_games": 1,
+    "last_opponent": "53134900057",
+    "last_assigned_at": "2026-05-21T15:23:20.148Z"
   },
   "23154545458": {
     "name": "Dark Magician Girl",
@@ -151,10 +151,10 @@
   },
   "9482920905": {
     "name": "Ethosys",
-    "elo": 1055,
+    "elo": 1070,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "88110265403",
+    "last_opponent": "3631391841",
     "last_assigned_at": "2026-05-20T21:52:20.983Z"
   },
   "8294358602": {
@@ -611,7 +611,7 @@
     "game_cap": 2,
     "missed_games": 0,
     "last_assigned_at": "2026-05-21T11:22:57.675Z",
-    "last_opponent": "99110844848"
+    "last_opponent": "84143567121"
   },
   "4379764745": {
     "name": "Malatya44",
