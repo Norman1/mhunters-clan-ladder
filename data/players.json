@@ -10,7 +10,7 @@
     "elo": 1018,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "9313400553",
+    "last_opponent": "71148639731",
     "last_assigned_at": "2026-05-22T17:50:05.057Z"
   },
   "81598466": {
@@ -361,9 +361,9 @@
     "name": "Nick",
     "elo": 1133,
     "game_cap": 2,
-    "missed_games": 0,
+    "missed_games": 1,
     "last_assigned_at": "2026-05-22T17:50:05.057Z",
-    "last_opponent": "23105988432"
+    "last_opponent": "28867016"
   },
   "71155120841": {
     "name": "Ventura",
