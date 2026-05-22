@@ -569,7 +569,7 @@
     "name": "CrypticNeo1",
     "elo": 920,
     "game_cap": 2,
-    "missed_games": 2,
+    "missed_games": 0,
     "last_assigned_at": "2026-05-21T03:36:54.849Z",
     "last_opponent": "9313400553"
   },
