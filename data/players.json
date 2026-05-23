@@ -87,11 +87,11 @@
   },
   "3631391841": {
     "name": "BlackBart",
-    "elo": 938,
+    "elo": 964,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "28867016",
-    "last_assigned_at": "2026-05-22T17:50:02.875Z"
+    "last_opponent": "53134900057",
+    "last_assigned_at": "2026-05-23T19:07:55.409Z"
   },
   "3737155555": {
     "name": "Jumpshott",
@@ -123,7 +123,7 @@
     "game_cap": 2,
     "missed_games": 0,
     "last_opponent": "71155120841",
-    "last_assigned_at": "2026-05-23T06:32:40.889Z"
+    "last_assigned_at": "2026-05-23T19:07:55.954Z"
   },
   "88110265403": {
     "name": "Crouton",
@@ -145,9 +145,9 @@
     "name": "Dark Magician Girl",
     "elo": 1133,
     "game_cap": 2,
-    "missed_games": 1,
+    "missed_games": 0,
     "last_opponent": "71155120841",
-    "last_assigned_at": "2026-05-20T15:17:36.618Z"
+    "last_assigned_at": "2026-05-23T19:07:56.502Z"
   },
   "9482920905": {
     "name": "Ethosys",
@@ -367,11 +367,11 @@
   },
   "71155120841": {
     "name": "Ventura",
-    "elo": 1318,
+    "elo": 1324,
     "game_cap": 2,
     "missed_games": 0,
     "last_assigned_at": "2026-05-23T16:58:02.807Z",
-    "last_opponent": "23154545458"
+    "last_opponent": "53134900057"
   },
   "6411877352": {
     "name": "Kratos",
@@ -602,16 +602,16 @@
     "elo": 861,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-05-23T02:52:43.757Z",
+    "last_assigned_at": "2026-05-23T19:07:55.409Z",
     "last_opponent": "53134900057"
   },
   "53134900057": {
     "name": "extelon",
-    "elo": 1046,
+    "elo": 1014,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-05-23T16:58:02.807Z",
-    "last_opponent": "9780712014"
+    "last_assigned_at": "2026-05-23T19:07:56.502Z",
+    "last_opponent": "71155120841"
   },
   "4379764745": {
     "name": "Malatya44",
