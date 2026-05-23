@@ -145,8 +145,8 @@
     "name": "Dark Magician Girl",
     "elo": 1133,
     "game_cap": 2,
-    "missed_games": 0,
-    "last_opponent": "3631391841",
+    "missed_games": 1,
+    "last_opponent": "71155120841",
     "last_assigned_at": "2026-05-20T15:17:36.618Z"
   },
   "9482920905": {
@@ -370,8 +370,8 @@
     "elo": 1318,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-05-23T06:32:42.654Z",
-    "last_opponent": "79105823914"
+    "last_assigned_at": "2026-05-23T16:58:02.807Z",
+    "last_opponent": "23154545458"
   },
   "6411877352": {
     "name": "Kratos",
@@ -599,19 +599,19 @@
   },
   "9780712014": {
     "name": "Acuna42",
-    "elo": 872,
+    "elo": 861,
     "game_cap": 2,
     "missed_games": 0,
     "last_assigned_at": "2026-05-23T02:52:43.757Z",
-    "last_opponent": "1382545505"
+    "last_opponent": "53134900057"
   },
   "53134900057": {
     "name": "extelon",
-    "elo": 1035,
+    "elo": 1046,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-05-23T02:52:43.757Z",
-    "last_opponent": "3346775331"
+    "last_assigned_at": "2026-05-23T16:58:02.807Z",
+    "last_opponent": "9780712014"
   },
   "4379764745": {
     "name": "Malatya44",
