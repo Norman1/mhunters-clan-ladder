@@ -106,7 +106,7 @@
     "elo": 838,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-05-22T03:35:32.946Z",
+    "last_assigned_at": "2026-05-24T22:57:13.726Z",
     "last_opponent": "9313400553"
   },
   "4180490094": {
@@ -291,7 +291,7 @@
     "game_cap": 2,
     "missed_games": 5,
     "last_assigned_at": "2026-05-24T20:54:40.881Z",
-    "last_opponent": "3631391841"
+    "last_opponent": "99110844848"
   },
   "13151753517": {
     "name": "Marengo",
@@ -362,7 +362,7 @@
     "elo": 1142,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-05-23T06:32:40.889Z",
+    "last_assigned_at": "2026-05-24T22:57:12.958Z",
     "last_opponent": "99110844848"
   },
   "71155120841": {
@@ -569,9 +569,9 @@
     "name": "CrypticNeo1",
     "elo": 911,
     "game_cap": 2,
-    "missed_games": 0,
-    "last_assigned_at": "2026-05-24T20:54:40.881Z",
-    "last_opponent": "71148639731"
+    "missed_games": 1,
+    "last_assigned_at": "2026-05-24T22:57:13.726Z",
+    "last_opponent": "93159203503"
   },
   "8222729424": {
     "name": "Al AssAff",
