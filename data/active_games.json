@@ -33,7 +33,7 @@
     "p2_id": "56133341636",
     "template_id": 1579665,
     "game_state": "Playing",
-    "current_turn": 6
+    "current_turn": 7
   },
   {
     "game_id": "44392871",
@@ -69,7 +69,7 @@
     "p2_id": "23105988432",
     "template_id": 1573497,
     "game_state": "Playing",
-    "current_turn": 0
+    "current_turn": 1
   },
   {
     "game_id": "44408043",
@@ -95,7 +95,7 @@
     "p2_id": "71155120841",
     "template_id": 1579663,
     "game_state": "Playing",
-    "current_turn": 6
+    "current_turn": 9
   },
   {
     "game_id": "44409403",
@@ -124,15 +124,6 @@
     "game_state": "WaitingForPlayers"
   },
   {
-    "game_id": "44418330",
-    "created_at": "2026-05-24T16:59:43.679Z",
-    "p1_id": "88110265403",
-    "p2_id": "9780712014",
-    "template_id": 1573497,
-    "game_state": "Playing",
-    "current_turn": 3
-  },
-  {
     "game_id": "44419901",
     "created_at": "2026-05-24T20:54:38.697Z",
     "p1_id": "3631391841",
@@ -155,7 +146,7 @@
     "p2_id": "71148639731",
     "template_id": 1573498,
     "game_state": "Playing",
-    "current_turn": 1
+    "current_turn": 8
   },
   {
     "game_id": "44426705",
@@ -167,20 +158,24 @@
     "current_turn": -1
   },
   {
-    "game_id": "44426706",
-    "created_at": "2026-05-25T19:37:55.050Z",
-    "p1_id": "99110844848",
-    "p2_id": "28867016",
-    "template_id": 1579667,
-    "game_state": "WaitingForPlayers"
+    "game_id": "44428139",
+    "created_at": "2026-05-25T23:00:42.233Z",
+    "p1_id": "84143567121",
+    "p2_id": "4155523061",
+    "template_id": 1579658
   },
   {
-    "game_id": "44426707",
-    "created_at": "2026-05-25T19:37:56.288Z",
-    "p1_id": "3346775331",
-    "p2_id": "4155523061",
-    "template_id": 1579659,
-    "game_state": "DistributingTerritories",
-    "current_turn": -1
+    "game_id": "44428140",
+    "created_at": "2026-05-25T23:00:43.867Z",
+    "p1_id": "88110265403",
+    "p2_id": "28867016",
+    "template_id": 1579658
+  },
+  {
+    "game_id": "44428141",
+    "created_at": "2026-05-25T23:00:44.413Z",
+    "p1_id": "9780712014",
+    "p2_id": "99110844848",
+    "template_id": 1573499
   }
 ]
