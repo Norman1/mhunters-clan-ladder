@@ -90,8 +90,8 @@
     "elo": 965,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "71155120841",
-    "last_assigned_at": "2026-05-26T15:24:15.266Z"
+    "last_opponent": "23105988432",
+    "last_assigned_at": "2026-05-26T21:44:30.407Z"
   },
   "3737155555": {
     "name": "Jumpshott",
@@ -145,9 +145,9 @@
     "name": "Dark Magician Girl",
     "elo": 1110,
     "game_cap": 2,
-    "missed_games": 0,
-    "last_opponent": "16127869941",
-    "last_assigned_at": "2026-05-23T19:07:56.502Z"
+    "missed_games": 1,
+    "last_opponent": "53134900057",
+    "last_assigned_at": "2026-05-26T21:44:30.407Z"
   },
   "9482920905": {
     "name": "Ethosys",
@@ -489,9 +489,9 @@
     "name": "Socrates",
     "elo": 982,
     "game_cap": 2,
-    "missed_games": 0,
-    "last_assigned_at": "2026-05-26T18:24:36.723Z",
-    "last_opponent": "99110844848"
+    "missed_games": 1,
+    "last_assigned_at": "2026-05-26T21:44:29.848Z",
+    "last_opponent": "3631391841"
   },
   "16127869941": {
     "name": "gg",
@@ -611,7 +611,7 @@
     "game_cap": 2,
     "missed_games": 0,
     "last_assigned_at": "2026-05-23T19:07:56.502Z",
-    "last_opponent": "71155120841"
+    "last_opponent": "23154545458"
   },
   "4379764745": {
     "name": "Malatya44",
