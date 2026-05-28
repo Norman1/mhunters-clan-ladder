@@ -42,7 +42,7 @@
     "p2_id": "71155120841",
     "template_id": 1573498,
     "game_state": "Playing",
-    "current_turn": 8
+    "current_turn": 9
   },
   {
     "game_id": "44429353",
@@ -86,7 +86,7 @@
     "p2_id": "23154545458",
     "template_id": 1573495,
     "game_state": "Playing",
-    "current_turn": 1
+    "current_turn": 3
   },
   {
     "game_id": "44440422",
@@ -95,7 +95,7 @@
     "p2_id": "8222729424",
     "template_id": 1573499,
     "game_state": "Playing",
-    "current_turn": 1
+    "current_turn": 2
   },
   {
     "game_id": "44442357",
@@ -119,41 +119,51 @@
     "created_at": "2026-05-27T23:16:11.094Z",
     "p1_id": "25126079448",
     "p2_id": "3631391841",
-    "template_id": 1573495
+    "template_id": 1573495,
+    "game_state": "Playing",
+    "current_turn": 3
   },
   {
     "game_id": "44445087",
     "created_at": "2026-05-27T23:16:11.691Z",
     "p1_id": "84143567121",
     "p2_id": "1382545505",
-    "template_id": 1431579
+    "template_id": 1431579,
+    "game_state": "WaitingForPlayers"
   },
   {
     "game_id": "44445088",
     "created_at": "2026-05-27T23:16:12.292Z",
     "p1_id": "25126079448",
     "p2_id": "71155120841",
-    "template_id": 1573499
+    "template_id": 1573499,
+    "game_state": "Playing",
+    "current_turn": 1
   },
   {
     "game_id": "44445089",
     "created_at": "2026-05-27T23:16:12.897Z",
     "p1_id": "28867016",
     "p2_id": "4155523061",
-    "template_id": 1579663
+    "template_id": 1579663,
+    "game_state": "WaitingForPlayers"
   },
   {
     "game_id": "44445090",
     "created_at": "2026-05-27T23:16:13.488Z",
     "p1_id": "9313400553",
     "p2_id": "88110265403",
-    "template_id": 1579665
+    "template_id": 1579665,
+    "game_state": "DistributingTerritories",
+    "current_turn": -1
   },
   {
     "game_id": "44445091",
     "created_at": "2026-05-27T23:16:14.085Z",
     "p1_id": "9780712014",
     "p2_id": "81598466",
-    "template_id": 1579661
+    "template_id": 1579661,
+    "game_state": "Playing",
+    "current_turn": 4
   }
 ]
