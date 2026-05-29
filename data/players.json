@@ -66,8 +66,8 @@
     "elo": 1383,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "9780712014",
-    "last_assigned_at": "2026-05-26T18:24:35.541Z"
+    "last_opponent": "4543063534",
+    "last_assigned_at": "2026-05-29T03:32:12.147Z"
   },
   "3428471447": {
     "name": "AyanM",
@@ -123,7 +123,7 @@
     "game_cap": 2,
     "missed_games": 0,
     "last_opponent": "53134900057",
-    "last_assigned_at": "2026-05-28T21:54:18.575Z"
+    "last_assigned_at": "2026-05-29T03:32:12.147Z"
   },
   "88110265403": {
     "name": "Crouton",
@@ -193,8 +193,8 @@
     "name": "Farah",
     "elo": 898,
     "game_cap": 1,
-    "missed_games": 2,
-    "last_opponent": "16127869941",
+    "missed_games": 3,
+    "last_opponent": "3346775331",
     "last_assigned_at": "2026-05-26T03:28:44.013Z"
   },
   "51156980238": {
