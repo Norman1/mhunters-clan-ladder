@@ -367,11 +367,11 @@
   },
   "71155120841": {
     "name": "Ventura",
-    "elo": 1324,
+    "elo": 1326,
     "game_cap": 2,
     "missed_games": 0,
     "last_assigned_at": "2026-05-29T15:27:43.807Z",
-    "last_opponent": "9780712014"
+    "last_opponent": "25126079448"
   },
   "6411877352": {
     "name": "Kratos",
@@ -519,11 +519,11 @@
   },
   "25126079448": {
     "name": "Adrian D'Agostino",
-    "elo": 811,
+    "elo": 809,
     "game_cap": 2,
     "missed_games": 0,
     "last_assigned_at": "2026-05-31T13:43:01.692Z",
-    "last_opponent": "3631391841"
+    "last_opponent": "71155120841"
   },
   "89114164339": {
     "name": "Blacksmith",
