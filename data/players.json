@@ -34,7 +34,7 @@
     "elo": 972,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-05-28T18:35:38.868Z",
+    "last_assigned_at": "2026-05-31T13:43:02.293Z",
     "last_opponent": "53134900057"
   },
   "1822261234": {
@@ -87,11 +87,11 @@
   },
   "3631391841": {
     "name": "BlackBart",
-    "elo": 953,
+    "elo": 924,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "23154545458",
-    "last_assigned_at": "2026-05-29T21:50:51.125Z"
+    "last_opponent": "25126079448",
+    "last_assigned_at": "2026-05-31T13:43:02.293Z"
   },
   "3737155555": {
     "name": "Jumpshott",
@@ -139,7 +139,7 @@
     "game_cap": 2,
     "missed_games": 0,
     "last_opponent": "1382545505",
-    "last_assigned_at": "2026-05-28T18:35:39.935Z"
+    "last_assigned_at": "2026-05-31T13:43:00.788Z"
   },
   "23154545458": {
     "name": "Dark Magician Girl",
@@ -519,11 +519,11 @@
   },
   "25126079448": {
     "name": "Adrian D'Agostino",
-    "elo": 782,
+    "elo": 811,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-05-27T23:16:12.292Z",
-    "last_opponent": "1382545505"
+    "last_assigned_at": "2026-05-31T13:43:01.692Z",
+    "last_opponent": "3631391841"
   },
   "89114164339": {
     "name": "Blacksmith",
@@ -610,7 +610,7 @@
     "elo": 1004,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-05-28T18:35:38.868Z",
+    "last_assigned_at": "2026-05-31T13:43:00.788Z",
     "last_opponent": "1382545505"
   },
   "4379764745": {
