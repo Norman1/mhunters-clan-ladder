@@ -18,8 +18,8 @@
     "elo": 804,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "79105823914",
-    "last_assigned_at": "2026-06-01T03:58:58.392Z"
+    "last_opponent": "71155120841",
+    "last_assigned_at": "2026-06-01T15:55:37.851Z"
   },
   "266160220": {
     "name": "(CZ-SK)eXitus",
@@ -139,7 +139,7 @@
     "game_cap": 2,
     "missed_games": 0,
     "last_opponent": "4155523061",
-    "last_assigned_at": "2026-05-31T13:43:00.788Z"
+    "last_assigned_at": "2026-06-01T15:55:37.851Z"
   },
   "23154545458": {
     "name": "Dark Magician Girl",
@@ -183,11 +183,11 @@
   },
   "9313400553": {
     "name": "Word Walker",
-    "elo": 781,
+    "elo": 769,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "71148639731",
-    "last_assigned_at": "2026-05-31T03:44:37.529Z"
+    "last_opponent": "56133341636",
+    "last_assigned_at": "2026-06-01T15:55:36.759Z"
   },
   "4543063534": {
     "name": "Farah",
@@ -371,7 +371,7 @@
     "game_cap": 2,
     "missed_games": 0,
     "last_assigned_at": "2026-05-31T22:58:37.602Z",
-    "last_opponent": "25126079448"
+    "last_opponent": "81598466"
   },
   "6411877352": {
     "name": "Kratos",
@@ -383,11 +383,11 @@
   },
   "56133341636": {
     "name": "Bastian Pyornkrachzark",
-    "elo": 930,
+    "elo": 942,
     "game_cap": 2,
     "missed_games": 0,
     "last_assigned_at": "2026-05-28T18:35:38.327Z",
-    "last_opponent": "9780712014"
+    "last_opponent": "9313400553"
   },
   "50127514525": {
     "name": "toont3",
@@ -522,7 +522,7 @@
     "elo": 809,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-05-31T13:43:01.692Z",
+    "last_assigned_at": "2026-06-01T15:55:36.759Z",
     "last_opponent": "71155120841"
   },
   "89114164339": {
