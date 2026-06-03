@@ -74,7 +74,7 @@
     "elo": 904,
     "game_cap": 2,
     "missed_games": 4,
-    "last_assigned_at": "2026-05-13T10:26:52.411Z",
+    "last_assigned_at": "2026-06-03T16:46:42.712Z",
     "last_opponent": "9482920905"
   },
   "3591948853": {
@@ -279,11 +279,11 @@
   },
   "14130113253": {
     "name": "incandwo",
-    "elo": 1061,
+    "elo": 1054,
     "game_cap": 2,
-    "missed_games": 4,
+    "missed_games": 0,
     "last_assigned_at": "2026-06-02T08:36:46.848Z",
-    "last_opponent": "2590914675"
+    "last_opponent": "71155120841"
   },
   "93159203503": {
     "name": "President_Newsom",
@@ -367,18 +367,18 @@
   },
   "71155120841": {
     "name": "Ventura",
-    "elo": 1329,
+    "elo": 1336,
     "game_cap": 2,
     "missed_games": 0,
     "last_assigned_at": "2026-06-02T08:36:46.848Z",
-    "last_opponent": "9780712014"
+    "last_opponent": "14130113253"
   },
   "6411877352": {
     "name": "Kratos",
     "elo": 986,
     "game_cap": 2,
     "missed_games": 6,
-    "last_assigned_at": "2026-04-29T13:54:58.710Z",
+    "last_assigned_at": "2026-06-03T16:46:42.712Z",
     "last_opponent": "92131071479"
   },
   "56133341636": {
@@ -418,7 +418,7 @@
     "elo": 1000,
     "game_cap": 2,
     "missed_games": 6,
-    "last_assigned_at": "2026-04-29T13:54:58.710Z",
+    "last_assigned_at": "2026-06-03T16:46:42.159Z",
     "last_opponent": "6411877352"
   },
   "25149077292": {
@@ -474,7 +474,7 @@
     "elo": 1000,
     "game_cap": 2,
     "missed_games": 6,
-    "last_assigned_at": "2026-04-29T13:54:58.163Z",
+    "last_assigned_at": "2026-06-03T16:46:42.159Z",
     "last_opponent": "5540862349"
   },
   "4337497298": {
