@@ -313,9 +313,9 @@
     "name": "Fil",
     "elo": 1000,
     "game_cap": 2,
-    "missed_games": 6,
+    "missed_games": 7,
     "last_assigned_at": "2026-06-01T03:59:00.057Z",
-    "last_opponent": "8222729424"
+    "last_opponent": "74149320612"
   },
   "66141834893": {
     "name": "SUPREME",
@@ -449,9 +449,9 @@
     "name": "Svarta Hingsten",
     "elo": 1129,
     "game_cap": 2,
-    "missed_games": 3,
+    "missed_games": 4,
     "last_assigned_at": "2026-06-01T03:59:00.057Z",
-    "last_opponent": "8222729424"
+    "last_opponent": "20125423673"
   },
   "64114468853": {
     "name": "Wonkier",
