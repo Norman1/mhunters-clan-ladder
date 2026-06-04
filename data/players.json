@@ -11,7 +11,7 @@
     "game_cap": 2,
     "missed_games": 0,
     "last_opponent": "9780712014",
-    "last_assigned_at": "2026-06-03T04:01:20.140Z"
+    "last_assigned_at": "2026-06-04T23:07:32.736Z"
   },
   "81598466": {
     "name": "Tim",
@@ -87,11 +87,11 @@
   },
   "3631391841": {
     "name": "BlackBart",
-    "elo": 930,
+    "elo": 907,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "8222729424",
-    "last_assigned_at": "2026-06-04T16:53:20.084Z"
+    "last_opponent": "9780712014",
+    "last_assigned_at": "2026-06-04T23:07:32.736Z"
   },
   "3737155555": {
     "name": "Jumpshott",
@@ -123,7 +123,7 @@
     "game_cap": 2,
     "missed_games": 0,
     "last_opponent": "14130113253",
-    "last_assigned_at": "2026-06-04T12:43:26.901Z"
+    "last_assigned_at": "2026-06-04T23:07:31.883Z"
   },
   "88110265403": {
     "name": "Crouton",
@@ -599,11 +599,11 @@
   },
   "9780712014": {
     "name": "Acuna42",
-    "elo": 872,
+    "elo": 895,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-06-04T16:53:20.084Z",
-    "last_opponent": "28867016"
+    "last_assigned_at": "2026-06-04T23:07:31.883Z",
+    "last_opponent": "3631391841"
   },
   "53134900057": {
     "name": "extelon",
