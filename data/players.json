@@ -19,7 +19,7 @@
     "game_cap": 2,
     "missed_games": 0,
     "last_opponent": "4155523061",
-    "last_assigned_at": "2026-06-04T16:53:20.627Z"
+    "last_assigned_at": "2026-06-05T23:07:45.128Z"
   },
   "266160220": {
     "name": "(CZ-SK)eXitus",
@@ -31,11 +31,11 @@
   },
   "1382545505": {
     "name": "Ree",
-    "elo": 989,
+    "elo": 1000,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-06-03T10:56:48.734Z",
-    "last_opponent": "3631391841"
+    "last_assigned_at": "2026-06-05T23:07:47.009Z",
+    "last_opponent": "25126079448"
   },
   "1822261234": {
     "name": "fifi",
@@ -63,10 +63,10 @@
   },
   "3346775331": {
     "name": "Gatsu12",
-    "elo": 1418,
+    "elo": 1420,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "88110265403",
+    "last_opponent": "9780712014",
     "last_assigned_at": "2026-06-05T19:53:01.751Z"
   },
   "3428471447": {
@@ -130,8 +130,8 @@
     "elo": 1292,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "3346775331",
-    "last_assigned_at": "2026-06-05T16:28:44.912Z"
+    "last_opponent": "99110844848",
+    "last_assigned_at": "2026-06-05T23:07:47.009Z"
   },
   "84143567121": {
     "name": "Poldi",
@@ -519,11 +519,11 @@
   },
   "25126079448": {
     "name": "Adrian D'Agostino",
-    "elo": 811,
+    "elo": 800,
     "game_cap": 2,
     "missed_games": 0,
     "last_assigned_at": "2026-06-05T16:28:44.351Z",
-    "last_opponent": "9780712014"
+    "last_opponent": "1382545505"
   },
   "89114164339": {
     "name": "Blacksmith",
@@ -569,9 +569,9 @@
     "name": "CrypticNeo1",
     "elo": 920,
     "game_cap": 2,
-    "missed_games": 0,
+    "missed_games": 1,
     "last_assigned_at": "2026-06-05T16:28:44.912Z",
-    "last_opponent": "9313400553"
+    "last_opponent": "88110265403"
   },
   "8222729424": {
     "name": "Al AssAff",
@@ -599,11 +599,11 @@
   },
   "9780712014": {
     "name": "Acuna42",
-    "elo": 911,
+    "elo": 909,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-06-05T16:28:43.677Z",
-    "last_opponent": "25126079448"
+    "last_assigned_at": "2026-06-05T23:07:45.128Z",
+    "last_opponent": "3346775331"
   },
   "53134900057": {
     "name": "extelon",
