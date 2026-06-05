@@ -183,10 +183,10 @@
   },
   "9313400553": {
     "name": "Word Walker",
-    "elo": 743,
+    "elo": 774,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "28867016",
+    "last_opponent": "99110844848",
     "last_assigned_at": "2026-06-02T19:39:35.207Z"
   },
   "4543063534": {
@@ -567,11 +567,11 @@
   },
   "99110844848": {
     "name": "CrypticNeo1",
-    "elo": 951,
+    "elo": 920,
     "game_cap": 2,
     "missed_games": 0,
     "last_assigned_at": "2026-06-03T04:01:19.363Z",
-    "last_opponent": "23105988432"
+    "last_opponent": "9313400553"
   },
   "8222729424": {
     "name": "Al AssAff",
