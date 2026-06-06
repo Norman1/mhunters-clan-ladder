@@ -87,10 +87,10 @@
   },
   "3631391841": {
     "name": "BlackBart",
-    "elo": 893,
+    "elo": 915,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "28867016",
+    "last_opponent": "99110844848",
     "last_assigned_at": "2026-06-06T03:24:26.518Z"
   },
   "3737155555": {
@@ -567,11 +567,11 @@
   },
   "99110844848": {
     "name": "CrypticNeo1",
-    "elo": 920,
+    "elo": 898,
     "game_cap": 2,
     "missed_games": 0,
     "last_assigned_at": "2026-06-06T03:24:26.518Z",
-    "last_opponent": "88110265403"
+    "last_opponent": "3631391841"
   },
   "8222729424": {
     "name": "Al AssAff",
