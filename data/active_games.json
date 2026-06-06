@@ -80,14 +80,6 @@
     "game_state": "WaitingForPlayers"
   },
   {
-    "game_id": "44497801",
-    "created_at": "2026-06-03T16:46:42.712Z",
-    "p1_id": "3428471447",
-    "p2_id": "6411877352",
-    "template_id": 1579660,
-    "game_state": "WaitingForPlayers"
-  },
-  {
     "game_id": "44505980",
     "created_at": "2026-06-04T16:53:19.541Z",
     "p1_id": "84143567121",
@@ -147,14 +139,6 @@
     "game_state": "WaitingForPlayers"
   },
   {
-    "game_id": "44517946",
-    "created_at": "2026-06-06T03:24:24.813Z",
-    "p1_id": "28867016",
-    "p2_id": "88110265403",
-    "template_id": 1574451,
-    "game_state": "WaitingForPlayers"
-  },
-  {
     "game_id": "44517947",
     "created_at": "2026-06-06T03:24:25.977Z",
     "p1_id": "25126079448",
@@ -175,6 +159,14 @@
     "created_at": "2026-06-06T06:51:17.277Z",
     "p1_id": "25126079448",
     "p2_id": "3346775331",
-    "template_id": 1390041
+    "template_id": 1390041,
+    "game_state": "WaitingForPlayers"
+  },
+  {
+    "game_id": "44519285",
+    "created_at": "2026-06-06T10:02:34.556Z",
+    "p1_id": "28867016",
+    "p2_id": "1382545505",
+    "template_id": 1579667
   }
 ]
