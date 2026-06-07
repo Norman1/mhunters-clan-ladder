@@ -33,7 +33,7 @@
     "p2_id": "79105823914",
     "template_id": 1579663,
     "game_state": "Playing",
-    "current_turn": 4
+    "current_turn": 5
   },
   {
     "game_id": "44505983",
@@ -80,22 +80,13 @@
     "current_turn": 0
   },
   {
-    "game_id": "44520300",
-    "created_at": "2026-06-06T13:40:44.170Z",
-    "p1_id": "53134900057",
-    "p2_id": "9313400553",
-    "template_id": 1390041,
-    "game_state": "Playing",
-    "current_turn": 15
-  },
-  {
     "game_id": "44524782",
     "created_at": "2026-06-07T03:51:36.832Z",
     "p1_id": "28867016",
     "p2_id": "99110844848",
     "template_id": 1390041,
     "game_state": "Playing",
-    "current_turn": 0
+    "current_turn": 4
   },
   {
     "game_id": "44524783",
@@ -137,7 +128,8 @@
     "p1_id": "4155523061",
     "p2_id": "1382545505",
     "template_id": 1573495,
-    "game_state": "WaitingForPlayers"
+    "game_state": "Playing",
+    "current_turn": 0
   },
   {
     "game_id": "44528638",
@@ -145,7 +137,8 @@
     "p1_id": "4155523061",
     "p2_id": "28867016",
     "template_id": 1579665,
-    "game_state": "WaitingForPlayers"
+    "game_state": "Playing",
+    "current_turn": 1
   },
   {
     "game_id": "44529512",
@@ -153,7 +146,8 @@
     "p1_id": "53134900057",
     "p2_id": "84143567121",
     "template_id": 1573497,
-    "game_state": "WaitingForPlayers"
+    "game_state": "Playing",
+    "current_turn": 0
   },
   {
     "game_id": "44529513",
@@ -161,20 +155,23 @@
     "p1_id": "3346775331",
     "p2_id": "99110844848",
     "template_id": 1573499,
-    "game_state": "WaitingForPlayers"
+    "game_state": "Playing",
+    "current_turn": 2
   },
   {
     "game_id": "44530350",
     "created_at": "2026-06-07T21:11:27.971Z",
     "p1_id": "71148639731",
     "p2_id": "88110265403",
-    "template_id": 1574451
+    "template_id": 1574451,
+    "game_state": "WaitingForPlayers"
   },
   {
     "game_id": "44530351",
     "created_at": "2026-06-07T21:11:28.695Z",
     "p1_id": "16127869941",
     "p2_id": "84143567121",
-    "template_id": 1573495
+    "template_id": 1573495,
+    "game_state": "WaitingForPlayers"
   }
 ]
