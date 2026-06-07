@@ -131,15 +131,15 @@
     "game_cap": 2,
     "missed_games": 0,
     "last_opponent": "16127869941",
-    "last_assigned_at": "2026-06-07T15:23:13.524Z"
+    "last_assigned_at": "2026-06-07T21:11:27.971Z"
   },
   "84143567121": {
     "name": "Poldi",
-    "elo": 1228,
+    "elo": 1205,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "3346775331",
-    "last_assigned_at": "2026-06-07T19:21:05.985Z"
+    "last_opponent": "71148639731",
+    "last_assigned_at": "2026-06-07T21:11:28.695Z"
   },
   "23154545458": {
     "name": "Dark Magician Girl",
@@ -359,11 +359,11 @@
   },
   "71148639731": {
     "name": "Nick",
-    "elo": 1170,
+    "elo": 1193,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-06-07T17:15:06.462Z",
-    "last_opponent": "81598466"
+    "last_assigned_at": "2026-06-07T21:11:27.971Z",
+    "last_opponent": "84143567121"
   },
   "71155120841": {
     "name": "Ventura",
@@ -498,7 +498,7 @@
     "elo": 1121,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-06-06T17:12:48.051Z",
+    "last_assigned_at": "2026-06-07T21:11:28.695Z",
     "last_opponent": "88110265403"
   },
   "4353717389": {
