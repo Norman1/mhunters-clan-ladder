@@ -26,7 +26,7 @@
     "elo": 1000,
     "game_cap": 2,
     "missed_games": 6,
-    "last_assigned_at": "2026-05-03T14:48:47.518Z",
+    "last_assigned_at": "2026-06-07T15:23:14.075Z",
     "last_opponent": "4180490094"
   },
   "1382545505": {
@@ -35,7 +35,7 @@
     "game_cap": 2,
     "missed_games": 0,
     "last_assigned_at": "2026-06-07T13:50:28.078Z",
-    "last_opponent": "88110265403"
+    "last_opponent": "99110844848"
   },
   "1822261234": {
     "name": "fifi",
@@ -91,7 +91,7 @@
     "game_cap": 2,
     "missed_games": 0,
     "last_opponent": "99110844848",
-    "last_assigned_at": "2026-06-07T03:51:37.589Z"
+    "last_assigned_at": "2026-06-07T15:23:13.524Z"
   },
   "3737155555": {
     "name": "Jumpshott",
@@ -131,7 +131,7 @@
     "game_cap": 2,
     "missed_games": 0,
     "last_opponent": "1382545505",
-    "last_assigned_at": "2026-06-06T17:12:48.051Z"
+    "last_assigned_at": "2026-06-07T15:23:13.524Z"
   },
   "84143567121": {
     "name": "Poldi",
@@ -354,7 +354,7 @@
     "elo": 1000,
     "game_cap": 2,
     "missed_games": 6,
-    "last_assigned_at": "2026-05-03T14:48:46.398Z",
+    "last_assigned_at": "2026-06-07T15:23:14.075Z",
     "last_opponent": "66141834893"
   },
   "71148639731": {
@@ -569,9 +569,9 @@
     "name": "CrypticNeo1",
     "elo": 879,
     "game_cap": 2,
-    "missed_games": 0,
+    "missed_games": 1,
     "last_assigned_at": "2026-06-07T13:50:28.078Z",
-    "last_opponent": "3631391841"
+    "last_opponent": "1382545505"
   },
   "8222729424": {
     "name": "Al AssAff",
