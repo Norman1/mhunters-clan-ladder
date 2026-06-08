@@ -17129,5 +17129,14 @@
     "template_id": 1579662,
     "finished_at": "2026-06-08T18:24:48.489Z",
     "note": "Declined"
+  },
+  {
+    "game_id": "44516997",
+    "created_at": "2026-06-05T23:07:45.128Z",
+    "p1_id": "81598466",
+    "p2_id": "9780712014",
+    "template_id": 1573495,
+    "finished_at": "2026-06-08T23:11:01.912Z",
+    "note": "Timed Out (Lobby)"
   }
 ]

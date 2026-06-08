@@ -17,8 +17,8 @@
     "name": "Tim",
     "elo": 785,
     "game_cap": 2,
-    "missed_games": 1,
-    "last_opponent": "71148639731",
+    "missed_games": 2,
+    "last_opponent": "9780712014",
     "last_assigned_at": "2026-06-07T17:15:04.046Z"
   },
   "266160220": {
@@ -602,15 +602,15 @@
     "elo": 909,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-06-05T23:07:45.128Z",
-    "last_opponent": "3346775331"
+    "last_assigned_at": "2026-06-08T23:11:03.472Z",
+    "last_opponent": "81598466"
   },
   "53134900057": {
     "name": "extelon",
     "elo": 937,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-06-08T08:56:22.036Z",
+    "last_assigned_at": "2026-06-08T23:11:03.472Z",
     "last_opponent": "84143567121"
   },
   "4379764745": {
