@@ -139,7 +139,7 @@
     "game_cap": 2,
     "missed_games": 0,
     "last_opponent": "53134900057",
-    "last_assigned_at": "2026-06-08T18:24:49.950Z"
+    "last_assigned_at": "2026-06-08T21:48:57.572Z"
   },
   "23154545458": {
     "name": "Dark Magician Girl",
@@ -569,8 +569,8 @@
     "name": "CrypticNeo1",
     "elo": 877,
     "game_cap": 2,
-    "missed_games": 1,
-    "last_assigned_at": "2026-06-08T08:56:22.642Z",
+    "missed_games": 0,
+    "last_assigned_at": "2026-06-08T21:48:57.572Z",
     "last_opponent": "56133341636"
   },
   "8222729424": {
