@@ -7,11 +7,11 @@
   },
   "28867016": {
     "name": "Swisster",
-    "elo": 1078,
+    "elo": 1088,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "4155523061",
-    "last_assigned_at": "2026-06-08T18:24:49.950Z"
+    "last_opponent": "99110844848",
+    "last_assigned_at": "2026-06-09T03:26:04.985Z"
   },
   "81598466": {
     "name": "Tim",
@@ -63,10 +63,10 @@
   },
   "3346775331": {
     "name": "Gatsu12",
-    "elo": 1393,
+    "elo": 1394,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "99110844848",
+    "last_opponent": "25126079448",
     "last_assigned_at": "2026-06-08T03:56:35.891Z"
   },
   "3428471447": {
@@ -119,11 +119,11 @@
   },
   "79105823914": {
     "name": "krinid",
-    "elo": 946,
+    "elo": 917,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "14130113253",
-    "last_assigned_at": "2026-06-04T23:07:31.883Z"
+    "last_opponent": "9313400553",
+    "last_assigned_at": "2026-06-09T03:26:04.985Z"
   },
   "88110265403": {
     "name": "Crouton",
@@ -183,11 +183,11 @@
   },
   "9313400553": {
     "name": "Word Walker",
-    "elo": 783,
+    "elo": 812,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "53134900057",
-    "last_assigned_at": "2026-06-08T03:56:37.008Z"
+    "last_opponent": "79105823914",
+    "last_assigned_at": "2026-06-09T03:26:05.556Z"
   },
   "4543063534": {
     "name": "Farah",
@@ -519,11 +519,11 @@
   },
   "25126079448": {
     "name": "Adrian D'Agostino",
-    "elo": 778,
+    "elo": 777,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-06-06T06:51:17.277Z",
-    "last_opponent": "9313400553"
+    "last_assigned_at": "2026-06-09T03:26:05.556Z",
+    "last_opponent": "3346775331"
   },
   "89114164339": {
     "name": "Blacksmith",
@@ -567,11 +567,11 @@
   },
   "99110844848": {
     "name": "CrypticNeo1",
-    "elo": 877,
+    "elo": 867,
     "game_cap": 2,
     "missed_games": 0,
     "last_assigned_at": "2026-06-08T21:48:57.572Z",
-    "last_opponent": "56133341636"
+    "last_opponent": "28867016"
   },
   "8222729424": {
     "name": "Al AssAff",
