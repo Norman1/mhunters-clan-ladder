@@ -87,10 +87,10 @@
   },
   "3631391841": {
     "name": "BlackBart",
-    "elo": 922,
+    "elo": 919,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "9313400553",
+    "last_opponent": "71155120841",
     "last_assigned_at": "2026-06-11T03:54:53.392Z"
   },
   "3737155555": {
@@ -367,11 +367,11 @@
   },
   "71155120841": {
     "name": "Ventura",
-    "elo": 1359,
+    "elo": 1362,
     "game_cap": 2,
     "missed_games": 0,
     "last_assigned_at": "2026-06-11T03:54:53.392Z",
-    "last_opponent": "9313400553"
+    "last_opponent": "3631391841"
   },
   "6411877352": {
     "name": "Kratos",
@@ -443,7 +443,7 @@
     "game_cap": 2,
     "missed_games": 7,
     "last_assigned_at": "2026-06-10T16:57:16.578Z",
-    "last_opponent": "44147840330"
+    "last_opponent": "5540862349"
   },
   "74149320612": {
     "name": "Svarta Hingsten",
@@ -633,9 +633,9 @@
     "name": "Mortiis",
     "elo": 1000,
     "game_cap": 2,
-    "missed_games": 7,
+    "missed_games": 8,
     "last_assigned_at": "2026-06-10T16:57:16.578Z",
-    "last_opponent": "4471034885"
+    "last_opponent": "64126464642"
   },
   "5118531774": {
     "name": "krua (from Russia)",
