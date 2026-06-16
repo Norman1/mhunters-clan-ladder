@@ -159,9 +159,9 @@
     "name": "Ethosys",
     "elo": 1063,
     "game_cap": 2,
-    "missed_games": 0,
-    "last_opponent": "3631391841",
-    "last_assigned_at": "2026-06-12T23:15:51.831Z"
+    "missed_games": 1,
+    "last_opponent": "16127869941",
+    "last_assigned_at": "2026-06-16T04:01:40.066Z"
   },
   "8294358602": {
     "name": "Wolkenstern",
@@ -273,7 +273,7 @@
     "game_cap": 2,
     "missed_games": 7,
     "last_assigned_at": "2026-06-15T18:24:21.835Z",
-    "last_opponent": "13151753517"
+    "last_opponent": "31104791368"
   },
   "29146480207": {
     "name": "Boris Grishenko",
@@ -368,7 +368,7 @@
     "elo": 1200,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-06-12T16:43:12.332Z",
+    "last_assigned_at": "2026-06-16T04:01:40.066Z",
     "last_opponent": "56133341636"
   },
   "71155120841": {
@@ -505,7 +505,7 @@
     "game_cap": 2,
     "missed_games": 0,
     "last_assigned_at": "2026-06-12T23:15:51.831Z",
-    "last_opponent": "53134900057"
+    "last_opponent": "9482920905"
   },
   "4353717389": {
     "name": "Krys",
@@ -631,9 +631,9 @@
     "name": "Iamtznu",
     "elo": 898,
     "game_cap": 2,
-    "missed_games": 6,
+    "missed_games": 7,
     "last_assigned_at": "2026-06-15T18:24:21.835Z",
-    "last_opponent": "3631391841"
+    "last_opponent": "7499140988"
   },
   "5540862349": {
     "name": "Mortiis",

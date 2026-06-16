@@ -17768,5 +17768,23 @@
     "template_id": 1579665,
     "elo_change": 18,
     "turns": 5
+  },
+  {
+    "game_id": "44571381",
+    "created_at": "2026-06-12T23:15:51.831Z",
+    "p1_id": "16127869941",
+    "p2_id": "9482920905",
+    "template_id": 1573495,
+    "finished_at": "2026-06-16T04:01:37.888Z",
+    "note": "Timed Out (Lobby)"
+  },
+  {
+    "game_id": "44591780",
+    "created_at": "2026-06-15T18:24:21.835Z",
+    "p1_id": "7499140988",
+    "p2_id": "31104791368",
+    "template_id": 1431579,
+    "finished_at": "2026-06-16T04:01:38.971Z",
+    "note": "Declined"
   }
 ]
