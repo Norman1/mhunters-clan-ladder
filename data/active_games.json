@@ -60,16 +60,7 @@
     "p2_id": "3346775331",
     "template_id": 1573499,
     "game_state": "Playing",
-    "current_turn": 0
-  },
-  {
-    "game_id": "44581473",
-    "created_at": "2026-06-14T11:56:44.735Z",
-    "p1_id": "79105823914",
-    "p2_id": "25126079448",
-    "template_id": 1579659,
-    "game_state": "DistributingTerritories",
-    "current_turn": -1
+    "current_turn": 1
   },
   {
     "game_id": "44581475",
@@ -219,15 +210,6 @@
     "current_turn": 0
   },
   {
-    "game_id": "44599257",
-    "created_at": "2026-06-16T16:49:45.969Z",
-    "p1_id": "3631391841",
-    "p2_id": "71148639731",
-    "template_id": 1390041,
-    "game_state": "Playing",
-    "current_turn": 10
-  },
-  {
     "game_id": "44599258",
     "created_at": "2026-06-16T16:49:46.696Z",
     "p1_id": "3631391841",
@@ -241,7 +223,8 @@
     "p1_id": "16127869941",
     "p2_id": "88110265403",
     "template_id": 1390041,
-    "game_state": "WaitingForPlayers"
+    "game_state": "Playing",
+    "current_turn": 4
   },
   {
     "game_id": "44601288",
@@ -252,19 +235,32 @@
     "game_state": "WaitingForPlayers"
   },
   {
-    "game_id": "44601289",
-    "created_at": "2026-06-16T20:49:05.909Z",
-    "p1_id": "53134900057",
-    "p2_id": "9313400553",
-    "template_id": 1573495,
-    "game_state": "Playing",
-    "current_turn": 3
-  },
-  {
     "game_id": "44602139",
     "created_at": "2026-06-16T23:23:04.766Z",
     "p1_id": "9780712014",
     "p2_id": "71155120841",
-    "template_id": 1579660
+    "template_id": 1579660,
+    "game_state": "WaitingForPlayers"
+  },
+  {
+    "game_id": "44603217",
+    "created_at": "2026-06-17T04:03:00.863Z",
+    "p1_id": "79105823914",
+    "p2_id": "9313400553",
+    "template_id": 1573499
+  },
+  {
+    "game_id": "44603218",
+    "created_at": "2026-06-17T04:03:01.406Z",
+    "p1_id": "71155120841",
+    "p2_id": "71148639731",
+    "template_id": 1579667
+  },
+  {
+    "game_id": "44603219",
+    "created_at": "2026-06-17T04:03:01.943Z",
+    "p1_id": "53134900057",
+    "p2_id": "25126079448",
+    "template_id": 1579657
   }
 ]
