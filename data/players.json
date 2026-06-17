@@ -40,8 +40,8 @@
     "elo": 1039,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-06-14T17:19:54.234Z",
-    "last_opponent": "79105823914"
+    "last_assigned_at": "2026-06-17T15:27:00.369Z",
+    "last_opponent": "25149077292"
   },
   "1822261234": {
     "name": "fifi",
@@ -367,17 +367,17 @@
     "name": "Nick",
     "elo": 1209,
     "game_cap": 2,
-    "missed_games": 0,
+    "missed_games": 1,
     "last_assigned_at": "2026-06-17T04:03:01.406Z",
-    "last_opponent": "3631391841"
+    "last_opponent": "71155120841"
   },
   "71155120841": {
     "name": "Ventura",
     "elo": 1389,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-06-17T04:03:01.406Z",
-    "last_opponent": "3346775331"
+    "last_assigned_at": "2026-06-17T15:27:00.369Z",
+    "last_opponent": "71148639731"
   },
   "6411877352": {
     "name": "Kratos",
@@ -431,9 +431,9 @@
     "name": "EVIL DRAG QUEEN",
     "elo": 899,
     "game_cap": 2,
-    "missed_games": 6,
+    "missed_games": 7,
     "last_assigned_at": "2026-06-14T11:56:46.364Z",
-    "last_opponent": "99110844848"
+    "last_opponent": "1382545505"
   },
   "5520443420": {
     "name": "pottygoboomboom",
