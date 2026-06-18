@@ -303,9 +303,9 @@
     "name": "Marengo",
     "elo": 1000,
     "game_cap": 2,
-    "missed_games": 7,
+    "missed_games": 8,
     "last_assigned_at": "2026-06-15T12:11:06.027Z",
-    "last_opponent": "7499140988"
+    "last_opponent": "13130892902"
   },
   "6630558043": {
     "name": "Yobledore",
@@ -345,7 +345,7 @@
     "game_cap": 2,
     "missed_games": 7,
     "last_assigned_at": "2026-06-15T12:11:06.027Z",
-    "last_opponent": "5520443420"
+    "last_opponent": "13151753517"
   },
   "44147840330": {
     "name": "TMG",
