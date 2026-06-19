@@ -13,11 +13,11 @@
   },
   "28867016": {
     "name": "Swisster",
-    "elo": 1052,
+    "elo": 1080,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "3346775331",
-    "last_assigned_at": "2026-06-18T20:24:08.210Z"
+    "last_opponent": "84143567121",
+    "last_assigned_at": "2026-06-19T17:56:20.712Z"
   },
   "81598466": {
     "name": "Tim",
@@ -96,8 +96,8 @@
     "elo": 969,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "71148639731",
-    "last_assigned_at": "2026-06-18T16:55:32.384Z"
+    "last_opponent": "9482920905",
+    "last_assigned_at": "2026-06-19T17:56:20.712Z"
   },
   "3737155555": {
     "name": "Jumpshott",
@@ -141,7 +141,7 @@
   },
   "84143567121": {
     "name": "Poldi",
-    "elo": 1208,
+    "elo": 1180,
     "game_cap": 2,
     "missed_games": 0,
     "last_opponent": "28867016",
@@ -159,8 +159,8 @@
     "name": "Ethosys",
     "elo": 1056,
     "game_cap": 2,
-    "missed_games": 0,
-    "last_opponent": "88110265403",
+    "missed_games": 1,
+    "last_opponent": "3631391841",
     "last_assigned_at": "2026-06-19T15:13:23.524Z"
   },
   "8294358602": {
