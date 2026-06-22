@@ -296,7 +296,7 @@
     "elo": 1000,
     "game_cap": 2,
     "missed_games": 5,
-    "last_assigned_at": "2026-05-24T20:54:40.881Z",
+    "last_assigned_at": "2026-06-22T04:09:02.775Z",
     "last_opponent": "99110844848"
   },
   "13151753517": {
@@ -456,7 +456,7 @@
     "elo": 1129,
     "game_cap": 2,
     "missed_games": 4,
-    "last_assigned_at": "2026-06-01T03:59:00.057Z",
+    "last_assigned_at": "2026-06-22T04:09:02.775Z",
     "last_opponent": "20125423673"
   },
   "64114468853": {
