@@ -168,15 +168,15 @@
     "elo": 984,
     "game_cap": 2,
     "missed_games": 6,
-    "last_opponent": "88117806994",
+    "last_opponent": "58134761580",
     "last_assigned_at": "2026-06-20T17:25:33.622Z"
   },
   "58134761580": {
     "name": "ExFailures",
     "elo": 963,
     "game_cap": 2,
-    "missed_games": 4,
-    "last_opponent": "88117806994",
+    "missed_games": 5,
+    "last_opponent": "8294358602",
     "last_assigned_at": "2026-06-20T17:25:33.622Z"
   },
   "6823726918": {
