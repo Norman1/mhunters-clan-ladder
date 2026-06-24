@@ -137,7 +137,7 @@
     "game_cap": 2,
     "missed_games": 0,
     "last_opponent": "9313400553",
-    "last_assigned_at": "2026-06-23T23:07:48.409Z"
+    "last_assigned_at": "2026-06-24T10:48:21.335Z"
   },
   "84143567121": {
     "name": "Poldi",
@@ -161,7 +161,7 @@
     "game_cap": 2,
     "missed_games": 0,
     "last_opponent": "84143567121",
-    "last_assigned_at": "2026-06-19T19:51:04.796Z"
+    "last_assigned_at": "2026-06-24T10:48:21.335Z"
   },
   "8294358602": {
     "name": "Wolkenstern",
@@ -263,9 +263,9 @@
     "name": "Maddest",
     "elo": 1023,
     "game_cap": 2,
-    "missed_games": 7,
+    "missed_games": 8,
     "last_assigned_at": "2026-06-21T09:48:05.068Z",
-    "last_opponent": "53134900057"
+    "last_opponent": "71148639731"
   },
   "7499140988": {
     "name": "angrybeavers",
@@ -369,7 +369,7 @@
     "game_cap": 2,
     "missed_games": 0,
     "last_assigned_at": "2026-06-23T23:07:48.965Z",
-    "last_opponent": "88117806994"
+    "last_opponent": "4942304274"
   },
   "71155120841": {
     "name": "Ventura",
