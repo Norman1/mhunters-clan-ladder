@@ -13,11 +13,11 @@
   },
   "28867016": {
     "name": "Swisster",
-    "elo": 1090,
+    "elo": 1078,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "79105823914",
-    "last_assigned_at": "2026-06-22T20:46:30.007Z"
+    "last_opponent": "9313400553",
+    "last_assigned_at": "2026-06-24T17:53:19.109Z"
   },
   "81598466": {
     "name": "Tim",
@@ -141,19 +141,19 @@
   },
   "84143567121": {
     "name": "Poldi",
-    "elo": 1196,
+    "elo": 1200,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "25126079448",
-    "last_assigned_at": "2026-06-24T03:31:13.609Z"
+    "last_opponent": "9313400553",
+    "last_assigned_at": "2026-06-24T17:53:17.083Z"
   },
   "23154545458": {
     "name": "Dark Magician Girl",
-    "elo": 1148,
+    "elo": 1125,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "16127869941",
-    "last_assigned_at": "2026-06-20T14:01:08.739Z"
+    "last_opponent": "28867016",
+    "last_assigned_at": "2026-06-24T17:53:17.083Z"
   },
   "9482920905": {
     "name": "Ethosys",
@@ -189,10 +189,10 @@
   },
   "9313400553": {
     "name": "Word Walker",
-    "elo": 781,
+    "elo": 812,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "88110265403",
+    "last_opponent": "84143567121",
     "last_assigned_at": "2026-06-24T03:31:13.609Z"
   },
   "4543063534": {
@@ -368,7 +368,7 @@
     "elo": 1195,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-06-23T23:07:48.965Z",
+    "last_assigned_at": "2026-06-24T17:53:19.109Z",
     "last_opponent": "4942304274"
   },
   "71155120841": {
