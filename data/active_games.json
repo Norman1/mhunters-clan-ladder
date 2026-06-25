@@ -6,7 +6,7 @@
     "p2_id": "56133341636",
     "template_id": 1579665,
     "game_state": "Playing",
-    "current_turn": 5
+    "current_turn": 6
   },
   {
     "game_id": "44611982",
@@ -15,7 +15,7 @@
     "p2_id": "56133341636",
     "template_id": 1579661,
     "game_state": "Playing",
-    "current_turn": 4
+    "current_turn": 5
   },
   {
     "game_id": "44622166",
@@ -24,7 +24,7 @@
     "p2_id": "25126079448",
     "template_id": 1579660,
     "game_state": "Playing",
-    "current_turn": 7
+    "current_turn": 8
   },
   {
     "game_id": "44628801",
@@ -42,7 +42,7 @@
     "p2_id": "16127869941",
     "template_id": 1573498,
     "game_state": "Playing",
-    "current_turn": 7
+    "current_turn": 8
   },
   {
     "game_id": "44637365",
@@ -61,14 +61,6 @@
     "template_id": 1579667,
     "game_state": "Playing",
     "current_turn": 5
-  },
-  {
-    "game_id": "44639690",
-    "created_at": "2026-06-22T04:09:02.775Z",
-    "p1_id": "93159203503",
-    "p2_id": "74149320612",
-    "template_id": 1573495,
-    "game_state": "WaitingForPlayers"
   },
   {
     "game_id": "44643888",
@@ -131,24 +123,33 @@
     "game_state": "WaitingForPlayers"
   },
   {
-    "game_id": "44663941",
-    "created_at": "2026-06-25T03:29:08.907Z",
-    "p1_id": "71148639731",
-    "p2_id": "9313400553",
-    "template_id": 1579660
-  },
-  {
     "game_id": "44663942",
     "created_at": "2026-06-25T03:29:09.479Z",
     "p1_id": "3631391841",
     "p2_id": "28867016",
-    "template_id": 1579661
+    "template_id": 1579661,
+    "game_state": "WaitingForPlayers"
   },
   {
     "game_id": "44663943",
     "created_at": "2026-06-25T03:29:11.156Z",
     "p1_id": "16127869941",
     "p2_id": "71148639731",
-    "template_id": 1579658
+    "template_id": 1579658,
+    "game_state": "WaitingForPlayers"
+  },
+  {
+    "game_id": "44664822",
+    "created_at": "2026-06-25T07:40:36.307Z",
+    "p1_id": "53134900057",
+    "p2_id": "9313400553",
+    "template_id": 1573497
+  },
+  {
+    "game_id": "44664823",
+    "created_at": "2026-06-25T07:40:37.477Z",
+    "p1_id": "84143567121",
+    "p2_id": "1382545505",
+    "template_id": 1390041
   }
 ]
