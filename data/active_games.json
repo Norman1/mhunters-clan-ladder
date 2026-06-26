@@ -59,7 +59,7 @@
     "p2_id": "88110265403",
     "template_id": 1579661,
     "game_state": "Playing",
-    "current_turn": 0
+    "current_turn": 2
   },
   {
     "game_id": "44660751",
@@ -95,7 +95,7 @@
     "p2_id": "9482920905",
     "template_id": 1573498,
     "game_state": "Playing",
-    "current_turn": 4
+    "current_turn": 5
   },
   {
     "game_id": "44670758",
@@ -113,7 +113,7 @@
     "p2_id": "1382545505",
     "template_id": 1579663,
     "game_state": "Playing",
-    "current_turn": 0
+    "current_turn": 1
   },
   {
     "game_id": "44671921",
@@ -138,7 +138,8 @@
     "p1_id": "16127869941",
     "p2_id": "3631391841",
     "template_id": 1573499,
-    "game_state": "WaitingForPlayers"
+    "game_state": "DistributingTerritories",
+    "current_turn": -1
   },
   {
     "game_id": "44672753",
@@ -166,12 +167,10 @@
     "current_turn": -1
   },
   {
-    "game_id": "44676887",
-    "created_at": "2026-06-26T19:45:51.124Z",
+    "game_id": "44678056",
+    "created_at": "2026-06-26T23:04:41.115Z",
     "p1_id": "71155120841",
-    "p2_id": "81598466",
-    "template_id": 1579659,
-    "game_state": "DistributingTerritories",
-    "current_turn": -1
+    "p2_id": "14130113253",
+    "template_id": 1390041
   }
 ]
