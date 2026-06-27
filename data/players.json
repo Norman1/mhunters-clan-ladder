@@ -13,10 +13,10 @@
   },
   "28867016": {
     "name": "Swisster",
-    "elo": 1060,
+    "elo": 1073,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "53134900057",
+    "last_opponent": "3631391841",
     "last_assigned_at": "2026-06-27T03:21:59.840Z"
   },
   "81598466": {
@@ -93,10 +93,10 @@
   },
   "3631391841": {
     "name": "BlackBart",
-    "elo": 928,
+    "elo": 915,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "1382545505",
+    "last_opponent": "28867016",
     "last_assigned_at": "2026-06-26T07:51:10.192Z"
   },
   "3737155555": {
