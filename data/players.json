@@ -21,10 +21,10 @@
   },
   "81598466": {
     "name": "Tim",
-    "elo": 783,
+    "elo": 762,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "71155120841",
+    "last_opponent": "25126079448",
     "last_assigned_at": "2026-06-27T06:51:15.090Z"
   },
   "266160220": {
@@ -525,11 +525,11 @@
   },
   "25126079448": {
     "name": "Adrian D'Agostino",
-    "elo": 763,
+    "elo": 784,
     "game_cap": 2,
     "missed_games": 0,
     "last_assigned_at": "2026-06-27T13:40:39.412Z",
-    "last_opponent": "4543063534"
+    "last_opponent": "81598466"
   },
   "89114164339": {
     "name": "Blacksmith",
