@@ -40,7 +40,7 @@
     "elo": 1057,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-06-28T20:59:57.811Z",
+    "last_assigned_at": "2026-06-29T21:25:26.336Z",
     "last_opponent": "71148639731"
   },
   "1822261234": {
@@ -193,7 +193,7 @@
     "game_cap": 2,
     "missed_games": 0,
     "last_opponent": "3346775331",
-    "last_assigned_at": "2026-06-29T03:50:43.254Z"
+    "last_assigned_at": "2026-06-29T21:25:26.336Z"
   },
   "4543063534": {
     "name": "Farah",
@@ -367,7 +367,7 @@
     "name": "Nick",
     "elo": 1223,
     "game_cap": 2,
-    "missed_games": 1,
+    "missed_games": 0,
     "last_assigned_at": "2026-06-29T18:08:18.343Z",
     "last_opponent": "1382545505"
   },
