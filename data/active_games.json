@@ -60,7 +60,7 @@
     "p2_id": "3631391841",
     "template_id": 1573499,
     "game_state": "Playing",
-    "current_turn": 7
+    "current_turn": 8
   },
   {
     "game_id": "44673576",
@@ -143,13 +143,22 @@
     "created_at": "2026-06-29T03:50:42.602Z",
     "p1_id": "4155523061",
     "p2_id": "81598466",
-    "template_id": 1431579
+    "template_id": 1431579,
+    "game_state": "WaitingForPlayers"
   },
   {
     "game_id": "44693244",
     "created_at": "2026-06-29T03:50:43.254Z",
     "p1_id": "3346775331",
     "p2_id": "9313400553",
-    "template_id": 1579660
+    "template_id": 1579660,
+    "game_state": "WaitingForPlayers"
+  },
+  {
+    "game_id": "44694339",
+    "created_at": "2026-06-29T08:57:38.342Z",
+    "p1_id": "25126079448",
+    "p2_id": "89114164339",
+    "template_id": 1579659
   }
 ]
