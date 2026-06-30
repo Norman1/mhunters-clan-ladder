@@ -145,7 +145,7 @@
     "game_cap": 2,
     "missed_games": 0,
     "last_opponent": "28867016",
-    "last_assigned_at": "2026-06-28T19:17:51.472Z"
+    "last_assigned_at": "2026-06-30T19:55:29.341Z"
   },
   "23154545458": {
     "name": "Dark Magician Girl",
@@ -365,11 +365,11 @@
   },
   "71148639731": {
     "name": "Nick",
-    "elo": 1251,
+    "elo": 1259,
     "game_cap": 2,
     "missed_games": 0,
     "last_assigned_at": "2026-06-29T18:08:18.343Z",
-    "last_opponent": "3346775331"
+    "last_opponent": "53134900057"
   },
   "71155120841": {
     "name": "Ventura",
@@ -613,11 +613,11 @@
   },
   "53134900057": {
     "name": "extelon",
-    "elo": 1001,
+    "elo": 993,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-06-27T03:22:00.430Z",
-    "last_opponent": "28867016"
+    "last_assigned_at": "2026-06-30T19:55:29.341Z",
+    "last_opponent": "71148639731"
   },
   "4379764745": {
     "name": "Malatya44",
