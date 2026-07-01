@@ -45,15 +45,6 @@
     "current_turn": 2
   },
   {
-    "game_id": "44684299",
-    "created_at": "2026-06-27T21:02:00.182Z",
-    "p1_id": "81598466",
-    "p2_id": "9482920905",
-    "template_id": 1573497,
-    "game_state": "Playing",
-    "current_turn": 5
-  },
-  {
     "game_id": "44688562",
     "created_at": "2026-06-28T13:43:53.565Z",
     "p1_id": "71155120841",
@@ -104,7 +95,7 @@
     "p2_id": "25126079448",
     "template_id": 1573499,
     "game_state": "Playing",
-    "current_turn": 3
+    "current_turn": 5
   },
   {
     "game_id": "44702709",
@@ -162,13 +153,15 @@
     "created_at": "2026-07-01T03:44:40.964Z",
     "p1_id": "71148639731",
     "p2_id": "16127869941",
-    "template_id": 1579663
+    "template_id": 1579663,
+    "game_state": "WaitingForPlayers"
   },
   {
     "game_id": "44708614",
     "created_at": "2026-07-01T03:44:43.212Z",
     "p1_id": "3346775331",
     "p2_id": "23105988432",
-    "template_id": 1579663
+    "template_id": 1579663,
+    "game_state": "WaitingForPlayers"
   }
 ]
