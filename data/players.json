@@ -529,15 +529,15 @@
     "game_cap": 2,
     "missed_games": 0,
     "last_assigned_at": "2026-07-02T03:30:20.275Z",
-    "last_opponent": "3346775331"
+    "last_opponent": "89114164339"
   },
   "89114164339": {
     "name": "Blacksmith",
     "elo": 1000,
     "game_cap": 2,
-    "missed_games": 7,
+    "missed_games": 8,
     "last_assigned_at": "2026-06-29T08:57:38.342Z",
-    "last_opponent": "1382545505"
+    "last_opponent": "25126079448"
   },
   "7337119889": {
     "name": "Renegade",
