@@ -15,7 +15,7 @@
     "name": "Swisster",
     "elo": 1132,
     "game_cap": 2,
-    "missed_games": 1,
+    "missed_games": 0,
     "last_opponent": "23154545458",
     "last_assigned_at": "2026-07-03T19:20:15.830Z"
   },
@@ -153,7 +153,7 @@
     "game_cap": 2,
     "missed_games": 0,
     "last_opponent": "28867016",
-    "last_assigned_at": "2026-07-03T17:24:21.885Z"
+    "last_assigned_at": "2026-07-03T21:04:35.968Z"
   },
   "9482920905": {
     "name": "Ethosys",
@@ -368,7 +368,7 @@
     "elo": 1271,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-07-01T12:32:16.538Z",
+    "last_assigned_at": "2026-07-03T21:04:35.968Z",
     "last_opponent": "16127869941"
   },
   "71155120841": {
