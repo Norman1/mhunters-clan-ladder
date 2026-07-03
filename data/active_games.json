@@ -1,14 +1,5 @@
 [
   {
-    "game_id": "44628801",
-    "created_at": "2026-06-20T14:01:08.739Z",
-    "p1_id": "71155120841",
-    "p2_id": "23154545458",
-    "template_id": 1573497,
-    "game_state": "Playing",
-    "current_turn": 11
-  },
-  {
     "game_id": "44660751",
     "created_at": "2026-06-24T17:53:17.083Z",
     "p1_id": "23154545458",
@@ -42,7 +33,7 @@
     "p2_id": "1382545505",
     "template_id": 1579667,
     "game_state": "Playing",
-    "current_turn": 4
+    "current_turn": 6
   },
   {
     "game_id": "44699449",
@@ -69,7 +60,7 @@
     "p2_id": "9780712014",
     "template_id": 1573498,
     "game_state": "Playing",
-    "current_turn": 0
+    "current_turn": 3
   },
   {
     "game_id": "44705458",
@@ -77,8 +68,8 @@
     "p1_id": "88110265403",
     "p2_id": "9780712014",
     "template_id": 1579656,
-    "game_state": "DistributingTerritories",
-    "current_turn": -1
+    "game_state": "Playing",
+    "current_turn": 1
   },
   {
     "game_id": "44706396",
@@ -86,8 +77,8 @@
     "p1_id": "53134900057",
     "p2_id": "84143567121",
     "template_id": 1579657,
-    "game_state": "DistributingTerritories",
-    "current_turn": -1
+    "game_state": "Playing",
+    "current_turn": 0
   },
   {
     "game_id": "44708614",
@@ -136,7 +127,7 @@
     "p2_id": "8222729424",
     "template_id": 1573497,
     "game_state": "Playing",
-    "current_turn": 0
+    "current_turn": 1
   },
   {
     "game_id": "44722283",
@@ -161,6 +152,22 @@
     "created_at": "2026-07-03T14:01:08.542Z",
     "p1_id": "16127869941",
     "p2_id": "4155523061",
-    "template_id": 1573497
+    "template_id": 1573497,
+    "game_state": "DistributingTerritories",
+    "current_turn": -1
+  },
+  {
+    "game_id": "44728121",
+    "created_at": "2026-07-03T17:24:21.885Z",
+    "p1_id": "23154545458",
+    "p2_id": "28867016",
+    "template_id": 1574451
+  },
+  {
+    "game_id": "44728122",
+    "created_at": "2026-07-03T17:24:23.595Z",
+    "p1_id": "25126079448",
+    "p2_id": "71155120841",
+    "template_id": 1579665
   }
 ]

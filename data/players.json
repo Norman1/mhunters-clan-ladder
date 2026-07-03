@@ -17,7 +17,7 @@
     "game_cap": 2,
     "missed_games": 0,
     "last_opponent": "71155120841",
-    "last_assigned_at": "2026-07-03T02:52:35.813Z"
+    "last_assigned_at": "2026-07-03T17:24:21.885Z"
   },
   "81598466": {
     "name": "Tim",
@@ -149,11 +149,11 @@
   },
   "23154545458": {
     "name": "Dark Magician Girl",
-    "elo": 1125,
+    "elo": 1118,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "28867016",
-    "last_assigned_at": "2026-06-24T17:53:17.083Z"
+    "last_opponent": "71155120841",
+    "last_assigned_at": "2026-07-03T17:24:21.885Z"
   },
   "9482920905": {
     "name": "Ethosys",
@@ -373,11 +373,11 @@
   },
   "71155120841": {
     "name": "Ventura",
-    "elo": 1381,
+    "elo": 1388,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-07-03T02:52:35.813Z",
-    "last_opponent": "28867016"
+    "last_assigned_at": "2026-07-03T17:24:23.595Z",
+    "last_opponent": "23154545458"
   },
   "6411877352": {
     "name": "Kratos",
@@ -528,7 +528,7 @@
     "elo": 734,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-07-02T19:22:35.263Z",
+    "last_assigned_at": "2026-07-03T17:24:23.595Z",
     "last_opponent": "4155523061"
   },
   "89114164339": {
