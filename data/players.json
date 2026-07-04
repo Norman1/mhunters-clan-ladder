@@ -79,9 +79,9 @@
     "name": "AyanM",
     "elo": 904,
     "game_cap": 2,
-    "missed_games": 5,
+    "missed_games": 6,
     "last_assigned_at": "2026-07-01T23:13:55.424Z",
-    "last_opponent": "6411877352"
+    "last_opponent": "44134229332"
   },
   "3591948853": {
     "name": "jdg5201",
@@ -553,7 +553,7 @@
     "game_cap": 2,
     "missed_games": 7,
     "last_assigned_at": "2026-07-01T23:13:55.424Z",
-    "last_opponent": "84143567121"
+    "last_opponent": "3428471447"
   },
   "50144225272": {
     "name": "polar",
