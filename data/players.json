@@ -37,11 +37,11 @@
   },
   "1382545505": {
     "name": "Ree",
-    "elo": 1066,
+    "elo": 1072,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-06-29T21:25:26.336Z",
-    "last_opponent": "4155523061"
+    "last_assigned_at": "2026-07-04T06:45:37.779Z",
+    "last_opponent": "9313400553"
   },
   "1822261234": {
     "name": "fifi",
@@ -72,8 +72,8 @@
     "elo": 1347,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "25126079448",
-    "last_assigned_at": "2026-07-03T07:19:10.619Z"
+    "last_opponent": "23105988432",
+    "last_assigned_at": "2026-07-04T06:45:37.048Z"
   },
   "3428471447": {
     "name": "AyanM",
@@ -109,11 +109,11 @@
   },
   "4155523061": {
     "name": "AGEHNT SMITH",
-    "elo": 834,
+    "elo": 827,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-07-03T14:01:08.541Z",
-    "last_opponent": "1382545505"
+    "last_assigned_at": "2026-07-04T06:45:39.875Z",
+    "last_opponent": "16127869941"
   },
   "4180490094": {
     "name": "Woololo",
@@ -189,11 +189,11 @@
   },
   "9313400553": {
     "name": "Word Walker",
-    "elo": 780,
+    "elo": 774,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "3346775331",
-    "last_assigned_at": "2026-06-29T21:25:26.336Z"
+    "last_opponent": "1382545505",
+    "last_assigned_at": "2026-07-04T06:45:39.875Z"
   },
   "4543063534": {
     "name": "Farah",
@@ -495,17 +495,17 @@
     "name": "Socrates",
     "elo": 982,
     "game_cap": 2,
-    "missed_games": 4,
+    "missed_games": 5,
     "last_assigned_at": "2026-07-01T03:44:43.212Z",
-    "last_opponent": "3591948853"
+    "last_opponent": "3346775331"
   },
   "16127869941": {
     "name": "gg",
-    "elo": 1096,
+    "elo": 1103,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-07-03T14:01:08.541Z",
-    "last_opponent": "71148639731"
+    "last_assigned_at": "2026-07-04T06:45:37.779Z",
+    "last_opponent": "4155523061"
   },
   "4353717389": {
     "name": "Krys",
