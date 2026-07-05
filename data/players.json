@@ -25,7 +25,7 @@
     "game_cap": 2,
     "missed_games": 1,
     "last_opponent": "3631391841",
-    "last_assigned_at": "2026-07-02T07:30:42.657Z"
+    "last_assigned_at": "2026-07-05T07:24:25.692Z"
   },
   "266160220": {
     "name": "(CZ-SK)eXitus",
@@ -73,7 +73,7 @@
     "game_cap": 2,
     "missed_games": 0,
     "last_opponent": "53134900057",
-    "last_assigned_at": "2026-07-04T13:22:51.497Z"
+    "last_assigned_at": "2026-07-05T07:24:23.752Z"
   },
   "3428471447": {
     "name": "AyanM",
@@ -97,7 +97,7 @@
     "game_cap": 2,
     "missed_games": 0,
     "last_opponent": "81598466",
-    "last_assigned_at": "2026-07-01T23:13:53.663Z"
+    "last_assigned_at": "2026-07-05T07:24:23.752Z"
   },
   "3737155555": {
     "name": "Jumpshott",
@@ -616,7 +616,7 @@
     "elo": 993,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-07-04T13:22:51.497Z",
+    "last_assigned_at": "2026-07-05T07:24:25.692Z",
     "last_opponent": "3346775331"
   },
   "4379764745": {
