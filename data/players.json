@@ -69,11 +69,11 @@
   },
   "3346775331": {
     "name": "Gatsu12",
-    "elo": 1358,
+    "elo": 1330,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "3631391841",
-    "last_assigned_at": "2026-07-05T19:16:18.239Z"
+    "last_opponent": "84143567121",
+    "last_assigned_at": "2026-07-06T16:50:51.753Z"
   },
   "3428471447": {
     "name": "AyanM",
@@ -141,11 +141,11 @@
   },
   "84143567121": {
     "name": "Poldi",
-    "elo": 1215,
+    "elo": 1243,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "23154545458",
-    "last_assigned_at": "2026-07-05T19:16:18.239Z"
+    "last_opponent": "3346775331",
+    "last_assigned_at": "2026-07-06T16:50:50.640Z"
   },
   "23154545458": {
     "name": "Dark Magician Girl",
@@ -161,7 +161,7 @@
     "game_cap": 2,
     "missed_games": 0,
     "last_opponent": "3631391841",
-    "last_assigned_at": "2026-07-04T19:10:30.486Z"
+    "last_assigned_at": "2026-07-06T16:50:51.753Z"
   },
   "8294358602": {
     "name": "Wolkenstern",
@@ -608,7 +608,7 @@
     "elo": 871,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-07-05T17:08:51.697Z",
+    "last_assigned_at": "2026-07-06T16:50:50.640Z",
     "last_opponent": "3631391841"
   },
   "53134900057": {
