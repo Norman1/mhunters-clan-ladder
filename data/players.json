@@ -57,7 +57,7 @@
     "game_cap": 2,
     "missed_games": 21,
     "last_opponent": "14130113253",
-    "last_assigned_at": "2026-05-12T06:36:19.442Z"
+    "last_assigned_at": "2026-07-07T14:31:10.101Z"
   },
   "3330212221": {
     "name": "blue_stream",
@@ -365,19 +365,19 @@
   },
   "71148639731": {
     "name": "Nick",
-    "elo": 1271,
+    "elo": 1258,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-07-07T03:17:08.046Z",
-    "last_opponent": "23154545458"
+    "last_assigned_at": "2026-07-07T14:31:10.101Z",
+    "last_opponent": "71155120841"
   },
   "71155120841": {
     "name": "Ventura",
-    "elo": 1389,
+    "elo": 1402,
     "game_cap": 2,
     "missed_games": 0,
     "last_assigned_at": "2026-07-04T13:22:48.790Z",
-    "last_opponent": "25126079448"
+    "last_opponent": "71148639731"
   },
   "6411877352": {
     "name": "Kratos",
