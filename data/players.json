@@ -25,7 +25,7 @@
     "game_cap": 2,
     "missed_games": 0,
     "last_opponent": "53134900057",
-    "last_assigned_at": "2026-07-07T03:17:11.012Z"
+    "last_assigned_at": "2026-07-07T07:36:00.036Z"
   },
   "266160220": {
     "name": "(CZ-SK)eXitus",
@@ -136,8 +136,8 @@
     "elo": 1326,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "9780712014",
-    "last_assigned_at": "2026-07-06T21:27:55.097Z"
+    "last_opponent": "23154545458",
+    "last_assigned_at": "2026-07-07T07:36:00.660Z"
   },
   "84143567121": {
     "name": "Poldi",
@@ -151,8 +151,8 @@
     "name": "Dark Magician Girl",
     "elo": 1103,
     "game_cap": 2,
-    "missed_games": 1,
-    "last_opponent": "71148639731",
+    "missed_games": 3,
+    "last_opponent": "88110265403",
     "last_assigned_at": "2026-07-06T21:27:55.097Z"
   },
   "9482920905": {
@@ -193,7 +193,7 @@
     "game_cap": 2,
     "missed_games": 0,
     "last_opponent": "56133341636",
-    "last_assigned_at": "2026-07-04T06:45:39.875Z"
+    "last_assigned_at": "2026-07-07T07:36:00.036Z"
   },
   "4543063534": {
     "name": "Farah",
@@ -616,8 +616,8 @@
     "elo": 1002,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-07-07T03:17:09.355Z",
-    "last_opponent": "81598466"
+    "last_assigned_at": "2026-07-07T07:36:00.660Z",
+    "last_opponent": "23154545458"
   },
   "4379764745": {
     "name": "Malatya44",
