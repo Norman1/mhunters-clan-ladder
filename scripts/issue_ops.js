@@ -86,12 +86,44 @@ async function runIssueOps() {
             return;
         }
 
-        if (players[playerId]) {
+        if (players[playerId] && players[playerId].in_clan !== false) {
             console.log(`Player ${playerId} already exists.`);
             await postIssueComment(
                 `❌ Signup rejected: Player ID \`${playerId}\` is already registered as **${players[playerId].name}**.\n\n` +
                 `Use:\n- \`Update: ${playerId} Cap: ${MIN_GAME_CAP}-${MAX_GAME_CAP}\`\n- \`Remove: ${playerId}\``
             );
+        } else if (players[playerId]) {
+            // Departed player rejoining — verify clan membership, then reactivate
+            // (mirrors roster_sync's rejoiner handling; ELO and settings preserved).
+            let clanId;
+            try {
+                clanId = await fetchPlayerClanId(playerId);
+            } catch (err) {
+                console.error(`Could not verify clan membership for ${playerId}: ${err.message}`);
+                await postIssueComment(
+                    `❌ Could not verify your clan membership right now (profile lookup failed). ` +
+                    `Please retry in a few minutes by editing the issue title.`
+                );
+                return;
+            }
+
+            if (clanId !== CLAN_ID) {
+                console.log(`Reactivation rejected for ${playerId}: not in clan (found ${clanId || 'none'}).`);
+                await postIssueComment(
+                    `❌ Signup rejected: this ladder is only open to members of the **M'Hunters** clan, ` +
+                    `and player \`${playerId}\` is not currently a member.`
+                );
+                return;
+            }
+
+            players[playerId].in_clan = true;
+            delete players[playerId].departed_at;
+            console.log(`Reactivated returning player: ${playerId} as ${players[playerId].name}`);
+            await postIssueComment(
+                `✅ Welcome back, **${players[playerId].name}**! You have been reactivated on the ladder ` +
+                `with your previous rating (${players[playerId].elo} ELO).`
+            );
+            matched = true;
         } else {
             let clanId;
             try {
