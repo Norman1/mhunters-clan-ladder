@@ -1,6 +1,10 @@
 const fs = require('fs');
 const path = require('path');
 
+const { CLAN_ID } = require('./config');
+const { fetchClanRoster } = require('./clan_roster');
+const { deleteGame } = require('./api');
+
 const PLAYERS_FILE = path.join(__dirname, '../data/players.json');
 const ACTIVE_GAMES_FILE = path.join(__dirname, '../data/active_games.json');
 const HISTORY_FILE = path.join(__dirname, '../data/history.json');
@@ -114,5 +118,79 @@ async function voidLeaverGames(leaverIds, activeGames, history, deleteGameFn, no
 
     return remaining;
 }
+
+async function main() {
+    console.log('--- Starting Roster Sync ---');
+    const dryRun = process.argv.includes('--dry-run');
+
+    const players = loadJSON(PLAYERS_FILE);
+    const activeGames = loadJSON(ACTIVE_GAMES_FILE);
+    const history = loadJSON(HISTORY_FILE);
+
+    if (!players || !activeGames || !history) {
+        console.error('CRITICAL: Missing data files.');
+        process.exit(1);
+    }
+
+    let roster;
+    try {
+        roster = await fetchClanRoster(CLAN_ID);
+    } catch (err) {
+        // A flaky scrape must never block referee/matchmaker: skip the sync.
+        console.error(`Roster scrape failed, skipping sync: ${err.message}`);
+        return;
+    }
+    console.log(`Scraped ${roster.length} clan members.`);
+
+    const abortReason = shouldAbortSync(roster, players);
+    if (abortReason) {
+        console.error(`CIRCUIT BREAKER: aborting sync — ${abortReason}. No changes applied. If this is expected (e.g. a mass clan-membership change), apply the change manually via players.json or adjust the breaker thresholds in this file.`);
+        return;
+    }
+
+    const diff = computeRosterDiff(roster, players);
+    console.log(`New members: ${diff.newMembers.length}, leavers: ${diff.leavers.length}, rejoiners: ${diff.rejoiners.length}, renames: ${diff.renames.length}`);
+    diff.newMembers.forEach(m => console.log(`  + enroll ${m.name || m.id} (${m.id})`));
+    diff.leavers.forEach(id => console.log(`  - depart ${players[id].name} (${id})`));
+    diff.rejoiners.forEach(id => console.log(`  ~ rejoin ${players[id].name} (${id})`));
+    diff.renames.forEach(r => console.log(`  ~ rename ${players[r.id].name} -> ${r.name} (${r.id})`));
+
+    if (dryRun) {
+        console.log('DRY RUN: no changes written.');
+        return;
+    }
+
+    const nowIso = new Date().toISOString();
+
+    for (const m of diff.newMembers) {
+        players[String(m.id)] = {
+            name: m.name || `Player_${m.id}`,
+            elo: 1000,
+            game_cap: 2,
+            missed_games: 0,
+            in_clan: true
+        };
+    }
+    for (const id of diff.leavers) {
+        players[id].in_clan = false;
+        players[id].departed_at = nowIso;
+    }
+    for (const id of diff.rejoiners) {
+        players[id].in_clan = true;
+        delete players[id].departed_at;
+    }
+    for (const r of diff.renames) {
+        players[r.id].name = r.name;
+    }
+
+    const remainingGames = await voidLeaverGames(diff.leavers, activeGames, history, deleteGame, nowIso);
+
+    saveJSON(PLAYERS_FILE, players);
+    saveJSON(ACTIVE_GAMES_FILE, remainingGames);
+    saveJSON(HISTORY_FILE, history);
+    console.log('Roster sync complete.');
+}
+
+if (require.main === module) main();
 
 module.exports = { computeRosterDiff, shouldAbortSync, voidLeaverGames };
