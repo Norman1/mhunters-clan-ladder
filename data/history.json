@@ -19785,5 +19785,17 @@
     "template_id": 1579657,
     "finished_at": "2026-07-09T17:55:01.762Z",
     "note": "Left Clan"
+  },
+  {
+    "game_id": "44752267",
+    "created_at": "2026-07-07T03:17:11.012Z",
+    "p1_id": "3631391841",
+    "p2_id": "81598466",
+    "winner_id": "3631391841",
+    "loser_id": "81598466",
+    "finished_at": "2026-07-09T21:22:02.244Z",
+    "template_id": 1573497,
+    "elo_change": 9,
+    "turns": 5
   }
 ]
