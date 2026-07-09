@@ -133,7 +133,7 @@
   },
   "88110265403": {
     "name": "Crouton",
-    "elo": 1305,
+    "elo": 1340,
     "game_cap": 2,
     "missed_games": 0,
     "last_opponent": "53134900057",
@@ -613,7 +613,7 @@
   },
   "53134900057": {
     "name": "extelon",
-    "elo": 1027,
+    "elo": 992,
     "game_cap": 2,
     "missed_games": 0,
     "last_assigned_at": "2026-07-09T14:56:04.831Z",

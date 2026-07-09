@@ -19763,11 +19763,9 @@
     "created_at": "2026-07-09T07:45:38.683Z",
     "p1_id": "53134900057",
     "p2_id": "88110265403",
-    "winner_id": "53134900057",
-    "loser_id": "88110265403",
     "finished_at": "2026-07-09T14:56:03.469Z",
     "template_id": 1573497,
-    "elo_change": 35,
-    "turns": 4
+    "turns": 4,
+    "note": "Left Clan"
   }
 ]
