@@ -1,6 +1,6 @@
 require('dotenv').config();
 
-const BASE_URL = 'https://www.warzone.com/API';
+const BASE_URL = 'https://war.app/API';
 
 /**
  * Creates a game using the Warzone API.
