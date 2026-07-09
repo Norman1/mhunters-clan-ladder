@@ -3,13 +3,17 @@
     "name": "jman",
     "elo": 1000,
     "game_cap": 2,
-    "missed_games": 0
+    "missed_games": 0,
+    "in_clan": false,
+    "departed_at": "2026-07-09T17:55:01.762Z"
   },
   "430635": {
     "name": "Farah♦",
     "elo": 1000,
     "game_cap": 2,
-    "missed_games": 0
+    "missed_games": 0,
+    "in_clan": false,
+    "departed_at": "2026-07-09T17:55:01.762Z"
   },
   "28867016": {
     "name": "Swisster",
@@ -17,10 +21,10 @@
     "game_cap": 2,
     "missed_games": 0,
     "last_opponent": "71155120841",
-    "last_assigned_at": "2026-07-08T23:06:16.349Z"
+    "last_assigned_at": "2026-07-09T17:55:05.752Z"
   },
   "81598466": {
-    "name": "Tim",
+    "name": "Tim 🍌",
     "elo": 770,
     "game_cap": 2,
     "missed_games": 0,
@@ -145,10 +149,10 @@
     "game_cap": 2,
     "missed_games": 0,
     "last_opponent": "9780712014",
-    "last_assigned_at": "2026-07-06T16:50:50.640Z"
+    "last_assigned_at": "2026-07-09T17:55:05.204Z"
   },
   "23154545458": {
-    "name": "Dark Magician Girl",
+    "name": "Light",
     "elo": 1103,
     "game_cap": 2,
     "missed_games": 3,
@@ -196,7 +200,7 @@
     "last_assigned_at": "2026-07-09T02:53:47.833Z"
   },
   "4543063534": {
-    "name": "Farah",
+    "name": "Farah♦",
     "elo": 898,
     "game_cap": 1,
     "missed_games": 4,
@@ -368,7 +372,7 @@
     "elo": 1262,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-07-07T17:58:00.555Z",
+    "last_assigned_at": "2026-07-09T17:55:06.833Z",
     "last_opponent": "9780712014"
   },
   "71155120841": {
@@ -388,11 +392,11 @@
     "last_opponent": "3428471447"
   },
   "56133341636": {
-    "name": "Bastian Pyornkrachzark",
+    "name": "Bastian Pyornkrac...",
     "elo": 952,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-07-07T03:17:09.355Z",
+    "last_assigned_at": "2026-07-09T17:55:05.752Z",
     "last_opponent": "9313400553"
   },
   "50127514525": {
@@ -608,7 +612,7 @@
     "elo": 863,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-07-09T14:56:04.831Z",
+    "last_assigned_at": "2026-07-09T17:55:07.376Z",
     "last_opponent": "71148639731"
   },
   "53134900057": {
@@ -617,7 +621,9 @@
     "game_cap": 2,
     "missed_games": 0,
     "last_assigned_at": "2026-07-09T14:56:04.831Z",
-    "last_opponent": "88110265403"
+    "last_opponent": "88110265403",
+    "in_clan": false,
+    "departed_at": "2026-07-09T17:55:01.762Z"
   },
   "4379764745": {
     "name": "Malatya44",
@@ -650,5 +656,37 @@
     "missed_games": 7,
     "last_assigned_at": "2026-06-14T17:20:02.178Z",
     "last_opponent": "4180490094"
+  },
+  "89133991720": {
+    "name": "JJJ_Senior",
+    "elo": 1000,
+    "game_cap": 2,
+    "missed_games": 0,
+    "in_clan": true,
+    "last_assigned_at": "2026-07-09T17:55:06.293Z"
+  },
+  "4555082823": {
+    "name": "Super Smoove",
+    "elo": 1000,
+    "game_cap": 2,
+    "missed_games": 0,
+    "in_clan": true,
+    "last_assigned_at": "2026-07-09T17:55:04.662Z"
+  },
+  "5917719105": {
+    "name": "Norman",
+    "elo": 1000,
+    "game_cap": 2,
+    "missed_games": 0,
+    "in_clan": true,
+    "last_assigned_at": "2026-07-09T17:55:06.833Z"
+  },
+  "81138463364": {
+    "name": "jman",
+    "elo": 1000,
+    "game_cap": 2,
+    "missed_games": 0,
+    "in_clan": true,
+    "last_assigned_at": "2026-07-09T17:55:07.376Z"
   }
 }

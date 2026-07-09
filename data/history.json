@@ -19767,5 +19767,23 @@
     "template_id": 1573497,
     "turns": 4,
     "note": "Left Clan"
+  },
+  {
+    "game_id": "44752266",
+    "created_at": "2026-07-07T03:17:09.355Z",
+    "p1_id": "53134900057",
+    "p2_id": "56133341636",
+    "template_id": 1573498,
+    "finished_at": "2026-07-09T17:55:01.762Z",
+    "note": "Left Clan"
+  },
+  {
+    "game_id": "44770523",
+    "created_at": "2026-07-09T14:56:04.831Z",
+    "p1_id": "53134900057",
+    "p2_id": "9780712014",
+    "template_id": 1579657,
+    "finished_at": "2026-07-09T17:55:01.762Z",
+    "note": "Left Clan"
   }
 ]
