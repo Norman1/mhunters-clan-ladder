@@ -6,9 +6,7 @@ const PLAYERS_FILE = path.join(__dirname, '../data/players.json');
 const ACTIVE_GAMES_FILE = path.join(__dirname, '../data/active_games.json');
 const TEMPLATES_FILE = path.join(__dirname, '../data/templates.json');
 
-const UNRELIABLE_STRIKE_THRESHOLD = 2;
-const UNRELIABLE_MAX_COOLDOWN_WEEKS = 8;
-const UNRELIABLE_COOLDOWN_WEEK_MS = 7 * 24 * 60 * 60 * 1000;
+const { UNRELIABLE_STRIKE_THRESHOLD, getUnreliableCooldownMs } = require('./reliability');
 
 // --- Helper Functions ---
 
@@ -33,15 +31,6 @@ function parseDate(value) {
     if (!value) return null;
     const parsed = new Date(value);
     return Number.isNaN(parsed.getTime()) ? null : parsed;
-}
-
-function getUnreliableCooldownMs(missedGames) {
-    const weeks = Math.min(
-        UNRELIABLE_MAX_COOLDOWN_WEEKS,
-        Math.max(1, missedGames - (UNRELIABLE_STRIKE_THRESHOLD - 1))
-    );
-
-    return weeks * UNRELIABLE_COOLDOWN_WEEK_MS;
 }
 
 function getLastAssignedAt(id, players, activeGames) {
@@ -126,6 +115,7 @@ async function runMatchmaker() {
     });
 
     Object.entries(players).forEach(([id, p]) => {
+        if (p.in_clan === false) return; // departed clan members never get games
         const missedGames = Number(p.missed_games) || 0;
         const isReliable = missedGames < UNRELIABLE_STRIKE_THRESHOLD;
         const currentGames = playerGameCounts[id] || 0;
@@ -212,7 +202,7 @@ async function runMatchmaker() {
 
     // Calculate Ranks
     const rankedIds = Object.entries(players)
-        .filter(([, p]) => (Number(p.game_cap) || 0) > 0 && (Number(p.missed_games) || 0) < UNRELIABLE_STRIKE_THRESHOLD)
+        .filter(([, p]) => p.in_clan !== false && (Number(p.game_cap) || 0) > 0 && (Number(p.missed_games) || 0) < UNRELIABLE_STRIKE_THRESHOLD)
         .sort((a, b) => (Number(b[1].elo) || 0) - (Number(a[1].elo) || 0))
         .map(([id]) => String(id));
 
