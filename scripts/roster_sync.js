@@ -74,4 +74,45 @@ function shouldAbortSync(roster, players) {
     return null;
 }
 
-module.exports = { computeRosterDiff, shouldAbortSync };
+/**
+ * Voids all active games involving departed players.
+ * Lobby games are deleted via the API; in-progress games cannot be
+ * force-ended, so they are just untracked. All are archived as void.
+ * Does NOT strike or set last_opponent — the opponent did nothing wrong.
+ * @returns remaining active games (leaver games removed). Mutates `history`.
+ */
+async function voidLeaverGames(leaverIds, activeGames, history, deleteGameFn, nowIso) {
+    const leaverSet = new Set(leaverIds.map(String));
+    const remaining = [];
+
+    for (const game of activeGames) {
+        const hasLeaver = leaverSet.has(String(game.p1_id)) || leaverSet.has(String(game.p2_id));
+        if (!hasLeaver) {
+            remaining.push(game);
+            continue;
+        }
+
+        const inLobby = !game.game_state || game.game_state === 'WaitingForPlayers';
+        if (inLobby) {
+            try {
+                await deleteGameFn(game.game_id);
+            } catch (e) {
+                console.error(`Failed to delete game ${game.game_id} (may already be gone): ${e.message}`);
+            }
+        }
+
+        history.push({
+            game_id: game.game_id,
+            created_at: game.created_at,
+            p1_id: game.p1_id,
+            p2_id: game.p2_id,
+            template_id: game.template_id,
+            finished_at: nowIso,
+            note: 'Left Clan'
+        });
+    }
+
+    return remaining;
+}
+
+module.exports = { computeRosterDiff, shouldAbortSync, voidLeaverGames };

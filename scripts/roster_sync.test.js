@@ -124,3 +124,38 @@ test('duplicated roster entries do NOT dilute the enrollment breaker', () => {
     assert.ok(reason);
     assert.match(reason, /enroll/);
 });
+
+const { voidLeaverGames } = require('./roster_sync');
+
+test('voidLeaverGames deletes lobby games, untracks in-progress, archives all as Left Clan', async () => {
+    const activeGames = [
+        { game_id: 1, created_at: 'c1', p1_id: '333', p2_id: '111', template_id: 9, game_state: 'WaitingForPlayers' },
+        { game_id: 2, created_at: 'c2', p1_id: '111', p2_id: '333', template_id: 9, game_state: 'Playing' },
+        { game_id: 3, created_at: 'c3', p1_id: '333', p2_id: '222', template_id: 9 }, // no state yet = lobby
+        { game_id: 4, created_at: 'c4', p1_id: '111', p2_id: '222', template_id: 9, game_state: 'Playing' }, // no leaver
+    ];
+    const history = [];
+    const deleted = [];
+    const fakeDelete = async (id) => deleted.push(id);
+
+    const remaining = await voidLeaverGames(['333'], activeGames, history, fakeDelete, 'NOW');
+
+    assert.deepEqual(remaining.map(g => g.game_id), [4]);
+    assert.deepEqual(deleted, [1, 3]); // only lobby games get API deletion
+    assert.equal(history.length, 3);
+    assert.ok(history.every(h => h.note === 'Left Clan' && h.finished_at === 'NOW'));
+    assert.deepEqual(history.map(h => h.game_id), [1, 2, 3]);
+});
+
+test('voidLeaverGames survives a failing delete API call', async () => {
+    const activeGames = [
+        { game_id: 7, created_at: 'c', p1_id: '333', p2_id: '111', template_id: 9, game_state: 'WaitingForPlayers' },
+    ];
+    const history = [];
+    const failingDelete = async () => { throw new Error('already deleted'); };
+
+    const remaining = await voidLeaverGames(['333'], activeGames, history, failingDelete, 'NOW');
+
+    assert.deepEqual(remaining, []);
+    assert.equal(history.length, 1); // still archived as void
+});
