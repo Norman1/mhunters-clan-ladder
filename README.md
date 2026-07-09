@@ -18,21 +18,28 @@ If you do not see the latest changes on GitHub, double-check that your local wor
 ## How it Works
 
 The ladder is fully automated. A bot ("Norman") runs every 2 hours to:
-1.  **Matchmake**: Find two available players and create a game on Warzone.com.
+1.  **Sync Roster**: Enroll new M'Hunters clan members, retire players who left the clan (voiding their active games), and reactivate rejoiners.
 2.  **Referee**: Check for finished games, update ELO ratings, and track missed games.
+3.  **Matchmake**: Find two available players and create a game on War.app.
 
 ## How to Join & Play
 
 The ladder is controlled via **GitHub Issues**. You don't need to ask an admin to update your status; you just speak to the bot.
 
 ### 1. Join the Ladder
-To sign up, [Open a New Issue](https://github.com/Norman1/mhunters-clan-ladder/issues/new) with the title:
+
+**Automatic:** every M'Hunters clan member is enrolled automatically. The bot
+syncs the clan roster every 2 hours; new members start at 1000 ELO with a
+2-game cap. Leaving the clan retires you automatically (active ladder games
+are voided); rejoining the clan reactivates you with your old rating.
+
+**Instant (optional):** just joined the clan and can't wait for the next sync?
+[Open a New Issue](https://github.com/Norman1/mhunters-clan-ladder/issues/new) with the title:
 ```
 Signup: <Your_Warzone_ID> Name: <Your_Warzone_Username>
 ```
-*Example: `Signup: 1234567 Name: General_Risk`*
-
-If you're already registered, use **Update Your Game Cap** instead (duplicate signups are rejected).
+*Example: `Signup: 1234567 Name: General_Risk`* — clan membership is verified;
+non-members are rejected.
 
 ### 2. Update Your Game Cap
 Limit how many active ladder games you can have at once (Default is 2, Max is 3; set to 0 to pause).
@@ -42,11 +49,12 @@ Update: <Your_Warzone_ID> Cap: <GameLimit>
 ```
 *Example: `Update: 1234567 Cap: 3`*
 
-To remove yourself, open a new issue with the title:
+To opt out of receiving games, open a new issue with the title:
 ```
 Remove: <Your_Warzone_ID>
 ```
-*Example: `Remove: 1234567`*
+*Example: `Remove: 1234567`* — this sets your game cap to 0; your record and
+rating are kept, and you can come back anytime with `Update: <ID> Cap: 1-3`.
 
 ---
 
@@ -75,7 +83,7 @@ If a game is manually declined before it starts:
 ### 4. Inactivity Rules (Redemption Queue)
 The system tracks "Strikes" (Missed Games) to filter out inactive players.
 *   **Strike Limit**: A player is marked **Inactive** after accumulating **2 Consecutive Strikes**.
-*   **Cooldown**: Inactive players use a weekly backoff from **1 week** up to **8 weeks** (2 months), adding 1 week per consecutive strike after becoming inactive.
+*   **Cooldown**: Inactive players use an escalating backoff of **2 weeks per strike**, capped at **12 weeks** (~3 months).
 *   **One-Game Limit**: Inactive players are capped at **1 active game** until they become reliable again.
 *   **Redemption Queue**: Inactive players are **NOT** ignored. They are still matched, but with lower priority:
     *   The bot prioritizes matching **Active vs Active** players.

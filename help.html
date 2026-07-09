@@ -37,19 +37,32 @@
                 <span class="chip chip--info">Quick tips</span>
             </div>
             <div class="help-copy">
-                <h3>Sign up</h3>
-                <p>Open a new GitHub issue with the title:</p>
-                <pre><code>Signup: &lt;Your_Warzone_ID&gt; Name: &lt;Your_Warzone_Username&gt;</code></pre>
-                <p>Example: <code>Signup: 1234567 Name: General_Risk</code></p>
+                <h3>Joining the ladder</h3>
+                <p>You don't have to do anything — every M'Hunters clan member is enrolled
+                    automatically (the bot syncs the clan roster every 2 hours). New members
+                    start with 1000 ELO and a cap of 2 simultaneous games.</p>
+                <p>Want in immediately after joining the clan? Open a GitHub issue titled:</p>
+                <pre><code>Signup: &lt;Your_ID&gt; Name: &lt;Your_Username&gt;</code></pre>
+                <p>Clan membership is verified — non-members are rejected.</p>
+
+                <h3>Leaving the clan</h3>
+                <p>If you leave M'Hunters you are automatically retired from the ladder: no
+                    new games, active ladder games are voided, and you disappear from the
+                    leaderboard. Your history stays. If you rejoin the clan you are
+                    reactivated automatically with your old rating.</p>
 
                 <h3>Update your game cap</h3>
                 <p>Limits your simultaneous ladder games (default 2, max 3, set to 0 to pause).</p>
                 <pre><code>Update: &lt;Your_Warzone_ID&gt; Cap: &lt;GameLimit&gt;</code></pre>
                 <p>Example: <code>Update: 1234567 Cap: 3</code></p>
 
-                <h3>Remove yourself</h3>
+                <h3>Opting out</h3>
+                <p>Don't want ladder games? Set your cap to 0 (or use Remove) — you stay
+                    registered but receive no games. Ignoring or declining games works too:
+                    after 2 strikes the bot backs off, retrying with a single game every
+                    2–12 weeks (2 weeks per strike, capped at 12).</p>
                 <pre><code>Remove: &lt;Your_Warzone_ID&gt;</code></pre>
-                <p>Example: <code>Remove: 1234567</code></p>
+                <p>Example: <code>Remove: 1234567</code> (equivalent to <code>Update: 1234567 Cap: 0</code>)</p>
 
                 <h3>Add a map template (Admin)</h3>
                 <p>Adds a Warzone template to the ladder's random map pool.</p>
@@ -63,7 +76,7 @@
                 <h3>What to expect</h3>
                 <ul>
                     <li>The bot checks the ladder every few hours to create or clean up games.</li>
-                    <li>Missing two games in a row will mark you inactive until you join another match.</li>
+                    <li>Missing two games in a row marks you unreliable: the bot retries you with one game every 2–12 weeks (2 weeks per strike, up to 12) until you join again.</li>
                     <li>You can always re-activate by joining a game or updating your status.</li>
                 </ul>
 
