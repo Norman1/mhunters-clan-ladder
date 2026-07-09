@@ -1,5 +1,7 @@
 const fs = require('fs');
 const path = require('path');
+const { CLAN_ID } = require('./config');
+const { fetchPlayerClanId } = require('./clan_roster');
 
 const PLAYERS_FILE = path.join(__dirname, '../data/players.json');
 const TEMPLATES_FILE = path.join(__dirname, '../data/templates.json');
@@ -91,12 +93,34 @@ async function runIssueOps() {
                 `Use:\n- \`Update: ${playerId} Cap: ${MIN_GAME_CAP}-${MAX_GAME_CAP}\`\n- \`Remove: ${playerId}\``
             );
         } else {
+            let clanId;
+            try {
+                clanId = await fetchPlayerClanId(playerId);
+            } catch (err) {
+                console.error(`Could not verify clan membership for ${playerId}: ${err.message}`);
+                await postIssueComment(
+                    `❌ Could not verify your clan membership right now (profile lookup failed). ` +
+                    `Please retry in a few minutes by editing the issue title.`
+                );
+                return;
+            }
+
+            if (clanId !== CLAN_ID) {
+                console.log(`Signup rejected for ${playerId}: not in clan (found ${clanId || 'none'}).`);
+                await postIssueComment(
+                    `❌ Signup rejected: this ladder is only open to members of the **M'Hunters** clan, ` +
+                    `and player \`${playerId}\` is not currently a member.`
+                );
+                return;
+            }
+
             const playerName = requestedName || `Player_${playerId}`;
             players[playerId] = {
                 name: playerName,
                 elo: 1000,
                 game_cap: 2,
-                missed_games: 0
+                missed_games: 0,
+                in_clan: true
             };
             console.log(`Registered new player: ${playerId} as ${playerName}`);
             matched = true;
@@ -136,8 +160,13 @@ async function runIssueOps() {
         const playerId = match[1];
 
         if (players[playerId]) {
-            delete players[playerId];
-            console.log(`Removed player: ${playerId}`);
+            players[playerId].game_cap = 0;
+            console.log(`Opted out player: ${playerId} (game_cap set to 0)`);
+            await postIssueComment(
+                `✅ **${players[playerId].name}** has been opted out of the ladder (game cap set to 0). ` +
+                `No new games will be created. Existing games should still be finished.\n\n` +
+                `To come back, open an issue titled: \`Update: ${playerId} Cap: 1\` (up to 3).`
+            );
             matched = true;
         } else {
             console.error(`Player ${playerId} not found.`);
