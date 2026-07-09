@@ -75,7 +75,7 @@ function formatTurnsCompleted(apiValue) {
 
 function isVoidGame(entry) {
     const note = entry.note || '';
-    return note === 'Timed Out (Lobby)' || note === 'Declined' || note === 'Terminated';
+    return note === 'Timed Out (Lobby)' || note === 'Declined' || note === 'Terminated' || note === 'Left Clan';
 }
 
 function calculateEloClient(winnerElo, loserElo) {
@@ -201,7 +201,7 @@ function calculateRankChanges(players, history) {
 
     // Current ranks (active only)
     const currentActive = allPlayers
-        .filter(p => p.game_cap > 0 && p.missed_games < 2)
+        .filter(p => p.in_clan !== false && p.game_cap > 0 && p.missed_games < 2)
         .sort((a, b) => b.elo - a.elo);
     const currentRanks = new Map();
     currentActive.forEach((p, i) => currentRanks.set(p.id, i + 1));
@@ -232,7 +232,7 @@ function calculateRankChanges(players, history) {
 
     // Previous ranks
     const previousActive = allPlayers
-        .filter(p => p.game_cap > 0 && p.missed_games < 2)
+        .filter(p => p.in_clan !== false && p.game_cap > 0 && p.missed_games < 2)
         .map(p => ({ id: p.id, elo: previousElos[p.id] }))
         .sort((a, b) => b.elo - a.elo);
     const previousRanks = new Map();
@@ -483,8 +483,9 @@ function renderLeaderboard(players, history) {
     const last10 = calculateLast10(players, history);
 
     const allPlayers = Object.entries(players).map(([id, p]) => ({ ...p, id }));
-    const active = allPlayers.filter(p => p.game_cap > 0 && p.missed_games < 2).sort((a, b) => b.elo - a.elo);
-    const unranked = allPlayers.filter(p => p.game_cap == 0 || p.missed_games >= 2).sort((a, b) => b.elo - a.elo);
+    const members = allPlayers.filter(p => p.in_clan !== false);
+    const active = members.filter(p => p.game_cap > 0 && p.missed_games < 2).sort((a, b) => b.elo - a.elo);
+    const unranked = members.filter(p => p.game_cap == 0 || p.missed_games >= 2).sort((a, b) => b.elo - a.elo);
     const list = [...active, ...unranked];
 
     list.forEach((p) => {
