@@ -506,7 +506,6 @@ tr.peek .pk-next-badge {
   line-height: 0;
   margin: 0 1px;
 }
-tr.peek .pk-map,
 tr.peek .pk-line {
   font-family: var(--font-mono);
   font-weight: 500;
@@ -514,13 +513,62 @@ tr.peek .pk-line {
   line-height: 1.7;
   color: var(--muted);
 }
-tr.peek .pk-map__tag,
-tr.peek .pk-strong {
-  color: var(--white);
-  font-weight: 600;
-}
-tr.peek .pk-map__rec { color: var(--silver); font-weight: 600; }
 tr.peek .pk-dim { color: var(--dim); }
+
+/* last-10 W/L chips: 5 per row, newest game top-left */
+tr.peek .pk-chips {
+  display: grid;
+  grid-template-columns: repeat(5, 26px);
+  gap: 6px;
+  padding-top: 2px;
+}
+tr.peek .pk-chip {
+  width: 26px;
+  height: 26px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  font-family: var(--font-mono);
+  font-weight: 600;
+  font-size: 11px;
+  border-radius: 3px;
+  background: #1E2024;
+  border: 1px solid var(--line-soft);
+  cursor: default;
+}
+tr.peek .pk-chip.w {
+  color: var(--red);
+  border-color: rgba(210, 39, 48, 0.45);
+  background: rgba(210, 39, 48, 0.10);
+}
+tr.peek .pk-chip.l { color: var(--dim); }
+tr.peek .pk-chip:hover,
+tr.peek .pk-chip:focus-visible {
+  border-color: var(--silver);
+  outline: none;
+}
+
+/* chip detail tooltip — one shared element, fixed to the viewport */
+.pk-tip {
+  position: fixed;
+  z-index: 60;
+  background: #1B1D21;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  padding: 7px 11px 8px;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  line-height: 1.8;
+  color: var(--muted);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+  pointer-events: none;
+  white-space: nowrap;
+}
+.pk-tip .w { color: var(--red); font-weight: 600; }
+.pk-tip .l { color: var(--dim); font-weight: 600; }
+.pk-tip .tip-name { color: var(--white); font-weight: 600; }
+.pk-tip .tip-date { color: var(--dim); font-size: 10px; letter-spacing: 0.08em; }
 tr.peek .pk-live {
   display: block;
   font-family: var(--font-mono);

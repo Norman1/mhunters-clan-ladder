@@ -383,6 +383,7 @@
     if (state.peekOwner) state.peekOwner.setAttribute('aria-expanded', 'false');
     state.peekRow = null;
     state.peekOwner = null;
+    hideChipTip();
   }
 
   /* trajectory sparkline (R10: per-player domain, min 150-pt span, 1000 baseline).
@@ -433,23 +434,100 @@
     return col;
   }
 
-  function mapLine(label, m) {
-    var div = doc.createElement('div');
-    div.className = 'pk-map';
-    var b = doc.createElement('span');
-    b.className = 'pk-map__tag';
-    b.textContent = label;
-    div.appendChild(b);
-    var v = doc.createElement('span');
-    v.textContent = m ? ' ' + m.name + ' ' : ' — ';
-    div.appendChild(v);
-    if (m) {
-      var rec = doc.createElement('span');
-      rec.className = 'pk-map__rec';
-      rec.textContent = m.w + '–' + m.l;
-      div.appendChild(rec);
-    }
-    return div;
+  /* ---------- last-10 W/L chips + shared detail tooltip ---------- */
+  /* One fixed-position tooltip element serves every chip: hover/focus shows
+     it, tap shows it on touch (tap elsewhere dismisses), scroll hides it. */
+
+  var chipTip = { el: null, owner: null, game: null };
+
+  function ensureChipTip() {
+    if (chipTip.el) return chipTip.el;
+    var el = doc.createElement('div');
+    el.className = 'pk-tip';
+    el.style.display = 'none';
+    el.setAttribute('role', 'tooltip');
+    doc.body.appendChild(el);
+    doc.addEventListener('click', function (e) {
+      if (chipTip.owner && !chipTip.owner.contains(e.target)) hideChipTip();
+    });
+    /* scroll: keep the tip glued to its chip (focusing a chip can auto-scroll,
+       which must not dismiss the tip a keyboard user just opened) */
+    window.addEventListener('scroll', repositionChipTip, true);
+    window.addEventListener('resize', repositionChipTip);
+    chipTip.el = el;
+    return el;
+  }
+
+  function repositionChipTip() {
+    if (!chipTip.owner) return;
+    if (!doc.documentElement.contains(chipTip.owner)) { hideChipTip(); return; }
+    showChipTip(chipTip.owner, chipTip.game);
+  }
+
+  function hideChipTip() {
+    if (chipTip.el) chipTip.el.style.display = 'none';
+    chipTip.owner = null;
+    chipTip.game = null;
+  }
+
+  function showChipTip(chip, g) {
+    var el = ensureChipTip();
+    el.textContent = '';
+    var l1 = doc.createElement('div');
+    var res = doc.createElement('span');
+    res.className = g.won ? 'w' : 'l';
+    res.textContent = g.won ? 'W' : 'L';
+    l1.appendChild(res);
+    l1.appendChild(doc.createTextNode(' vs '));
+    var nm = doc.createElement('span');
+    nm.className = 'tip-name';
+    nm.textContent = g.opp;
+    l1.appendChild(nm);
+    el.appendChild(l1);
+    var l2 = doc.createElement('div');
+    var d = doc.createElement('span');
+    d.className = g.won ? 'w' : 'l';
+    d.textContent = (g.won ? '+' : '−') + g.change;
+    l2.appendChild(d);
+    l2.appendChild(doc.createTextNode(' · ' + g.map + (g.turns ? ' · ' + g.turns + ' TURNS' : '')));
+    el.appendChild(l2);
+    var l3 = doc.createElement('div');
+    l3.className = 'tip-date';
+    l3.textContent = startDateText(g.date) || '';
+    el.appendChild(l3);
+    /* measure, then place above the chip (below when clipped by the top) */
+    el.style.visibility = 'hidden';
+    el.style.display = 'block';
+    var r = chip.getBoundingClientRect();
+    var w = el.offsetWidth, h = el.offsetHeight;
+    var left = Math.max(8, Math.min(r.left + r.width / 2 - w / 2, window.innerWidth - w - 8));
+    var top = r.top - h - 8;
+    if (top < 8) top = r.bottom + 8;
+    el.style.left = left + 'px';
+    el.style.top = top + 'px';
+    el.style.visibility = '';
+    chipTip.owner = chip;
+    chipTip.game = g;
+  }
+
+  function chipEl(g) {
+    var b = doc.createElement('button');
+    b.type = 'button';
+    b.className = 'pk-chip ' + (g.won ? 'w' : 'l');
+    b.textContent = g.won ? 'W' : 'L';
+    b.setAttribute('aria-label',
+      (g.won ? 'Won' : 'Lost') + ' vs ' + g.opp + ', ' +
+      (g.won ? 'gained ' : 'lost ') + g.change + ' rating, ' + g.map +
+      (g.turns ? ', ' + g.turns + ' turns' : '') + ', ' + (startDateText(g.date) || ''));
+    b.addEventListener('mouseenter', function () { showChipTip(b, g); });
+    b.addEventListener('mouseleave', function () { if (chipTip.owner === b) hideChipTip(); });
+    b.addEventListener('focus', function () { showChipTip(b, g); });
+    b.addEventListener('blur', function () { if (chipTip.owner === b) hideChipTip(); });
+    b.addEventListener('click', function (e) {
+      e.stopPropagation();
+      showChipTip(b, g); /* always show — outside tap dismisses on touch */
+    });
+    return b;
   }
 
   function togglePeek(rowEl, p) {
@@ -480,11 +558,24 @@
     }
     inner.appendChild(cTraj);
 
-    // 2 — best/worst maps
-    var cMaps = peekSection('MAPS (MIN. 3 GAMES)');
-    cMaps.appendChild(mapLine('BEST', p.bestMap));
-    cMaps.appendChild(mapLine('WORST', p.worstMap));
-    inner.appendChild(cMaps);
+    // 2 — last 10 games as W/L chips (newest first; hover/tap for details)
+    var lastN = (p.gameLog || []).slice(0, 10);
+    var cForm = peekSection(
+      lastN.length >= 10 ? 'LAST 10 GAMES' :
+      lastN.length === 1 ? 'LAST GAME' :
+      lastN.length === 0 ? 'RECENT GAMES' : 'LAST ' + lastN.length + ' GAMES');
+    if (lastN.length) {
+      var chips = doc.createElement('div');
+      chips.className = 'pk-chips';
+      for (var ci = 0; ci < lastN.length; ci++) chips.appendChild(chipEl(lastN[ci]));
+      cForm.appendChild(chips);
+    } else {
+      var noneG = doc.createElement('div');
+      noneG.className = 'pk-line pk-dim';
+      noneG.textContent = 'NO GAMES YET';
+      cForm.appendChild(noneG);
+    }
+    inner.appendChild(cForm);
 
     // 3 — record + progress to next rank (with the next rank's badge)
     var cSvc = peekSection('RECORD');
