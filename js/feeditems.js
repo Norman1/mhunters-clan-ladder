@@ -190,13 +190,17 @@
     return a;
   }
 
-  function feedTimeSpan(iso, docRef) {
+  /* Attach the timestamp to a feed item. Date-style stamps ('July 10, 2026')
+     are much wider than relative ones ('6h') — the item gets a class that
+     reserves a wider right column so content never runs underneath. */
+  function attachFeedTime(item, iso, docRef) {
     var text = feedTime(iso);
-    if (!text) return docRef.createDocumentFragment();
+    if (!text) return;
     var span = docRef.createElement('span');
     span.className = 'feed-time';
     span.textContent = text;
-    return span;
+    if (text.indexOf(',') !== -1) item.classList.add('feed-item--dated');
+    item.appendChild(span);
   }
 
   /* result rows open the game on warzone.com. The row is a div[role=link]
@@ -258,7 +262,7 @@
     body.appendChild(sub);
 
     item.appendChild(body);
-    item.appendChild(feedTimeSpan(r.date, doc));
+    attachFeedTime(item, r.date, doc);
     return item;
   }
 
@@ -302,7 +306,7 @@
       body.appendChild(sub);
 
       div.appendChild(body);
-      div.appendChild(feedTimeSpan(g.date, doc));
+      attachFeedTime(div, g.date, doc);
       return div;
     }
 
@@ -344,7 +348,7 @@
     pbody.appendChild(psub);
 
     div.appendChild(pbody);
-    div.appendChild(feedTimeSpan(g.date, doc));
+    attachFeedTime(div, g.date, doc);
     return div;
   }
 

@@ -694,6 +694,12 @@ tr.row--hit td { animation: row-flash 1.6s ease-out 1; }
   white-space: nowrap;
 }
 
+/* date-style stamps ('July 10, 2026') are wide — dated items reserve a
+   wider right column so their content never runs underneath */
+#feed-list .feed-item--dated { padding-right: 98px; }
+#feed-list .feed-item--dated.feed-item--league,
+#feed-list .feed-item--dated.feed-item--rank { padding-right: 98px; }
+
 #feed-list .feed-item {
   position: relative;
   display: flex;

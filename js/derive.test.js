@@ -179,7 +179,14 @@ globalThis.LadderData.load().then((data) => {
     `got ${reserve.length}, expected ${expPaused + expInactive}`);
   assert('reserve ranks/delta7 all null', reserve.every((p) => p.rank === null && p.delta7 === null));
   assert('reserve statuses valid', reserve.every((p) => p.status === 'PAUSED' || p.status === 'INACTIVE'));
-  assert('reserve sorted by elo desc', reserve.every((p, i) => i === 0 || reserve[i - 1].elo >= p.elo));
+  assert('reserve sorted: played-before first, then elo desc', reserve.every((p, i) => {
+    if (i === 0) return true;
+    const prev = reserve[i - 1];
+    const prevPlayed = prev.gamesPlayed > 0 ? 0 : 1;
+    const curPlayed = p.gamesPlayed > 0 ? 0 : 1;
+    if (prevPlayed !== curPlayed) return prevPlayed < curPlayed;
+    return prev.elo >= p.elo;
+  }));
   assert('reserve missed is an int', reserve.every((p) => Number.isInteger(p.missed)));
 
   // ---- gazette ----

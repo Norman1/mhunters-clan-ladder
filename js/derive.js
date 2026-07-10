@@ -600,8 +600,12 @@
     });
     for (i = 0; i < active.length; i++) active[i].rank = i + 1;
 
-    // Reserve: elo desc (same secondary keys for stability)
+    // Reserve: players who have actually played come first (elo desc),
+    // never-played signups after them (also elo desc; same tiebreaks)
     reserve.sort(function (a, b) {
+      var ap = a.gamesPlayed > 0 ? 0 : 1;
+      var bp = b.gamesPlayed > 0 ? 0 : 1;
+      if (ap !== bp) return ap - bp;
       if (b.elo !== a.elo) return b.elo - a.elo;
       if (b.wins !== a.wins) return b.wins - a.wins;
       return a.name.localeCompare(b.name);
