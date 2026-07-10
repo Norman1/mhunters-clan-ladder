@@ -172,13 +172,13 @@
   }
 
 
-  /* the tiny Warzone clan-tag icon (21x15) rendered pixel-crisp */
+  /* the M'Hunters clan icon, downscaled from the hi-res source */
   function clanTagImg(docRef) {
     var img = docRef.createElement('img');
     img.className = 'clan-tag';
     img.src = 'assets/clan-tag.png';
     img.alt = '';
-    img.width = 21;
+    img.width = 16;
     img.height = 15;
     return img;
   }

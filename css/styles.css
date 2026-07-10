@@ -1062,12 +1062,11 @@ tr.row--hit td { animation: row-flash 1.6s ease-out 1; }
 }
 
 /* ----------------------------- clan tag icon ----------------------------- */
-/* the in-game Warzone clan icon (21x15) — always pixel-crisp, never scaled soft */
+/* the M'Hunters clan icon, served at 3x and downscaled for retina crispness */
 img.clan-tag {
   display: inline-block;
-  width: 21px;
+  width: 16px;
   height: 15px;
-  image-rendering: pixelated;
   vertical-align: baseline;
 }
 .page-title img.clan-tag { vertical-align: 0; }
