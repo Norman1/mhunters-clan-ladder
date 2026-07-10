@@ -1,0 +1,414 @@
+/* ============================================================
+   M'HUNTERS CLAN LADDER — GAMES page (track B)
+   LIVE | RESULTS tabs · filter toolbar · full archive rows.
+   Loads after css/styles.css; games-page-scoped rules only —
+   never redefines shared tokens or shared components.
+   ============================================================ */
+
+/* ----------------------------- utilities ----------------------------- */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* ----------------------------- tabs: LIVE | RESULTS ----------------------------- */
+/* segmented control at the top of the panel — Barlow Condensed, red
+   active underline echoing .mainnav__link.active */
+.gtabs {
+  display: flex;
+  align-items: flex-end;
+  gap: 26px;
+  padding: 12px 16px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.gtab {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 21px;
+  letter-spacing: 0.07em;
+  line-height: 1;
+  color: var(--muted);
+  padding: 6px 2px 10px;
+  border-bottom: 2px solid transparent;
+  margin-bottom: -1px; /* underline sits on the strip's border */
+  white-space: nowrap;
+  transition: color var(--speed) ease, border-color var(--speed) ease;
+}
+.gtab:hover { color: var(--white); }
+.gtab[aria-selected="true"] {
+  color: var(--white);
+  border-bottom-color: var(--red);
+}
+
+/* count badge inside a tab ('LIVE · 17') if rendered as a child span */
+.gtab .gtab__count,
+.gtab .count,
+.gtab small {
+  font-family: var(--font-mono);
+  font-weight: 600;
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  color: var(--dim);
+  margin-left: 6px;
+  vertical-align: 2px;
+}
+.gtab[aria-selected="true"] .gtab__count,
+.gtab[aria-selected="true"] .count,
+.gtab[aria-selected="true"] small { color: var(--muted); }
+
+/* ----------------------------- results toolbar ----------------------------- */
+#results-toolbar {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 12px 16px;
+  border-bottom: 1px solid var(--line);
+}
+
+/* inputs + select share the .search recipe from styles.css */
+#results-toolbar input,
+#results-toolbar select {
+  appearance: none;
+  -webkit-appearance: none;
+  background: transparent;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  padding: 8px 10px;
+  font-family: var(--font-mono);
+  font-weight: 600;
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  color: var(--white);
+  min-width: 0;
+  transition: border-color var(--speed) ease, box-shadow var(--speed) ease;
+}
+#results-toolbar input::placeholder { color: var(--dim); letter-spacing: 0.12em; }
+#results-toolbar input:hover,
+#results-toolbar select:hover { border-color: #3A3E46; }
+#results-toolbar input:focus,
+#results-toolbar select:focus {
+  outline: none;
+  border-color: var(--red);
+  box-shadow: 0 0 0 3px rgba(210, 39, 48, 0.14);
+}
+
+#filter-player { flex: 1 1 170px; max-width: 250px; }
+
+#filter-map {
+  flex: 0 1 170px;
+  padding-right: 26px;
+  cursor: pointer;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='5'%3E%3Cpath d='M0 0l4 5 4-5z' fill='%238A919C'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+}
+#filter-map option { background: var(--panel); color: var(--white); }
+
+/* month range */
+.gf-range { display: flex; align-items: center; gap: 6px; }
+.gf-dash { color: var(--dim); }
+#filter-from,
+#filter-to { width: 122px; }
+#filter-from::-webkit-calendar-picker-indicator,
+#filter-to::-webkit-calendar-picker-indicator { opacity: 0.55; cursor: pointer; }
+#filter-from:hover::-webkit-calendar-picker-indicator,
+#filter-to:hover::-webkit-calendar-picker-indicator { opacity: 1; }
+
+/* ghost clear button */
+#filter-clear {
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  padding: 8px 12px;
+  font-family: var(--font-mono);
+  font-weight: 600;
+  font-size: 10.5px;
+  letter-spacing: 0.14em;
+  color: var(--muted);
+  white-space: nowrap;
+  transition: color var(--speed) ease, border-color var(--speed) ease;
+}
+#filter-clear:hover { color: var(--white); border-color: #3A3E46; }
+
+/* count readout — '1,220 GAMES' / '312 GAMES · FILTERED' */
+#results-count {
+  margin-left: auto;
+  font-family: var(--font-mono);
+  font-weight: 600;
+  font-size: 10.5px;
+  letter-spacing: 0.12em;
+  color: var(--dim);
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+}
+
+/* ----------------------------- game rows (shared) ----------------------------- */
+/* rows are div[role=link] (built by js/games.js) — whole row opens the
+   game on warzone.com; names inside are real a.plink profile links */
+#results-list [role="link"],
+#live-list [role="link"] {
+  position: relative;
+  display: block;
+  padding: 10px 40px 10px 16px;
+  border-bottom: 1px solid var(--line-soft);
+  font-family: var(--font-mono);
+  font-weight: 500;
+  font-size: 12.5px;
+  line-height: 1.5;
+  color: var(--silver);
+  cursor: pointer;
+  transition: background-color var(--speed) ease;
+}
+#results-list [role="link"]:hover,
+#live-list [role="link"]:hover { background: #1B1D22; }
+#results-list [role="link"]:focus-visible,
+#live-list [role="link"]:focus-visible { outline-offset: -2px; }
+
+/* rows reserve a right column for the date (JUL 9 2026 / STARTED JUL 9 2026) */
+#results-list [role="link"] { padding-right: 116px; }
+#live-list [role="link"] { padding-right: 176px; }
+
+/* main line: WINNER 1342 def. LOSER 1262 / ● ANAME 1342 vs BNAME 1262 */
+#results-list .feed-result__line,
+#live-list .feed-result__line,
+#results-list .fr-line,
+#live-list .fr-line,
+#results-list .g-line,
+#live-list .g-line { color: var(--white); }
+
+#results-list .fr-winner,
+#live-list .fr-winner { font-weight: 600; }
+#results-list .fr-up { color: var(--red); font-weight: 600; }
+#results-list .fr-mid,
+#live-list .fr-mid { color: var(--dim); }
+#results-list .fr-loser { color: var(--muted); }
+#results-list .fr-down { color: #7E8B9B; }
+
+/* pre-game ratings sit dim beside the names ('—' for non-roster) */
+#results-list .fr-rating,
+#live-list .fr-rating,
+#results-list .g-rating,
+#live-list .g-rating,
+#results-list .lv-rating,
+#live-list .lv-rating {
+  color: var(--dim);
+  font-weight: 500;
+  font-variant-numeric: tabular-nums;
+  margin: 0 5px;
+}
+
+/* live marker dot */
+#live-list .live-dot,
+#live-list .lv-dot,
+#live-list .g-dot,
+#live-list .g-live-dot,
+#live-list .dot {
+  color: var(--red);
+  margin-right: 7px;
+}
+
+/* sub-line: map tag + T9 / PICKS / NOT STARTED + started/turn info */
+#results-list .feed-result__sub,
+#live-list .feed-result__sub,
+#results-list .fr-sub,
+#live-list .fr-sub,
+#results-list .g-sub,
+#live-list .g-sub {
+  color: var(--dim);
+  font-size: 11px;
+  letter-spacing: 0.05em;
+  margin-top: 3px;
+}
+
+/* bordered map tag (same look as the feed's) */
+#results-list .fr-map,
+#live-list .fr-map {
+  display: inline-block;
+  border: 1px solid var(--line);
+  border-radius: 3px;
+  padding: 1px 6px;
+  margin-right: 6px;
+  font-size: 10px;
+  letter-spacing: 0.06em;
+  color: var(--muted);
+  background: rgba(255, 255, 255, 0.02);
+}
+
+/* hover ↗ */
+#results-list .fr-go,
+#live-list .fr-go {
+  margin-left: 7px;
+  font-size: 10px;
+  color: var(--dim);
+  transition: color var(--speed) ease;
+}
+#results-list [role="link"]:hover .fr-go,
+#live-list [role="link"]:hover .fr-go { color: var(--red); }
+
+/* date column — 'JUL 9 2026' mono dim, right-aligned in the row */
+#results-list [role="link"] .fr-date,
+#results-list [role="link"] .g-date,
+#results-list [role="link"] .feed-time,
+#results-list [role="link"] time,
+#live-list [role="link"] .fr-date,
+#live-list [role="link"] .g-date,
+#live-list [role="link"] .feed-time,
+#live-list [role="link"] time {
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-family: var(--font-mono);
+  font-weight: 500;
+  font-size: 10.5px;
+  letter-spacing: 0.08em;
+  color: var(--dim);
+  white-space: nowrap;
+  text-transform: uppercase;
+}
+
+/* ----------------------------- month markers ----------------------------- */
+/* 'JULY 2026' mono dim divider whenever the month changes; catch-all keeps
+   whatever class js/games.js picks in the divider style (rows, skeletons,
+   empty/error blocks excluded) */
+#results-list .gmonth,
+#results-list .month-marker,
+#results-list .month-divider,
+#results-list .g-month,
+#results-list .feed-month,
+#results-list > div:not([role="link"]):not(.grow-skel):not(.gempty):not(.load-error) {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 18px 16px 8px;
+  font-family: var(--font-mono);
+  font-weight: 600;
+  font-size: 10px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--dim);
+  border-bottom: 0;
+  cursor: default;
+}
+#results-list .gmonth::after,
+#results-list .month-marker::after,
+#results-list .month-divider::after,
+#results-list .g-month::after,
+#results-list .feed-month::after,
+#results-list > div:not([role="link"]):not(.grow-skel):not(.gempty):not(.load-error)::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: var(--line-soft);
+}
+
+/* ----------------------------- empty states ----------------------------- */
+#live-empty,
+#results-empty {
+  padding: 46px 16px;
+  text-align: center;
+  font-family: var(--font-mono);
+  font-weight: 600;
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  color: var(--dim);
+}
+
+/* ----------------------------- sentinel / load more ----------------------------- */
+#results-sentinel { min-height: 1px; }
+
+/* LOAD MORE fallback (when IntersectionObserver is unavailable) */
+#results-sentinel button,
+#results-view .load-more,
+.games .load-more {
+  display: block;
+  margin: 14px auto 18px;
+  padding: 9px 24px;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  font-family: var(--font-mono);
+  font-weight: 600;
+  font-size: 10.5px;
+  letter-spacing: 0.14em;
+  color: var(--muted);
+  transition: color var(--speed) ease, border-color var(--speed) ease;
+}
+#results-sentinel button:hover,
+#results-view .load-more:hover,
+.games .load-more:hover { color: var(--white); border-color: #3A3E46; }
+
+/* ----------------------------- skeletons (pre-data) ----------------------------- */
+.grow-skel {
+  padding: 12px 16px 13px;
+  border-bottom: 1px solid var(--line-soft);
+}
+.grow-skel .sk { display: block; height: 11px; }
+.grow-skel .sk--sub { margin-top: 8px; height: 9px; opacity: 0.7; }
+
+/* ----------------------------- error state ----------------------------- */
+/* LADDER DATA UNREACHABLE — RETRY (rendered by js/games.js, app.js style) */
+.games .load-error,
+#results-list .load-error,
+#live-list .load-error {
+  display: block;
+  padding: 46px 16px;
+  text-align: center;
+  font-family: var(--font-mono);
+  font-weight: 600;
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  color: var(--muted);
+}
+.games .load-error a { color: var(--red); }
+.games .load-error a:hover { color: var(--red-hover); }
+
+/* ----------------------------- responsive < 900px ----------------------------- */
+@media (max-width: 899px) {
+  .gtabs { padding: 10px 12px 0; gap: 20px; }
+  .gtab { font-size: 19px; }
+
+  /* toolbar wraps: player filter takes its own row, the rest share width */
+  #results-toolbar { padding: 10px 12px; gap: 8px; }
+  #filter-player { flex: 1 1 100%; max-width: none; }
+  #filter-map { flex: 1 1 auto; }
+  .gf-range { flex: 0 1 auto; }
+  #filter-from,
+  #filter-to { width: 108px; }
+  #results-count { flex: 1 1 100%; text-align: right; margin-left: 0; }
+
+  /* rows: tighter padding, date drops under the sub-line */
+  #results-list [role="link"],
+  #live-list [role="link"] { padding: 10px 12px; }
+  #results-list [role="link"] .fr-date,
+  #results-list [role="link"] .g-date,
+  #results-list [role="link"] .feed-time,
+  #results-list [role="link"] time,
+  #live-list [role="link"] .fr-date,
+  #live-list [role="link"] .g-date,
+  #live-list [role="link"] .feed-time,
+  #live-list [role="link"] time {
+    position: static;
+    display: block;
+    transform: none;
+    margin-top: 4px;
+  }
+
+  #results-list .gmonth,
+  #results-list .month-marker,
+  #results-list .month-divider,
+  #results-list .g-month,
+  #results-list .feed-month,
+  #results-list > div:not([role="link"]):not(.grow-skel):not(.gempty):not(.load-error) {
+    padding: 16px 12px 7px;
+  }
+
+  .grow-skel { padding: 12px 12px 13px; }
+}

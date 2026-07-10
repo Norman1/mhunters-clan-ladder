@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>M'HUNTERS — Map</title>
+  <meta name="description" content="M'Hunters clan ladder — map detail: per-map ELO leaderboard, live games, and the full game history on this map.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Cinzel:wght@700&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="assets/clan-crest.png">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/maps.css">
+</head>
+<body>
+
+  <!-- Fixed full-page watermark (archer banner, steel-tinted) -->
+  <div class="watermark" aria-hidden="true"></div>
+
+  <!-- ===================== MASTHEAD ===================== -->
+  <header class="masthead">
+    <div class="masthead__inner">
+      <div class="brand">
+        <img class="brand__crest" src="assets/clan-crest.png" alt="M'Hunters clan crest" width="44" height="44">
+        <div class="brand__text">
+          <span class="brand__wordmark">M'HUNTERS</span>
+          <span class="brand__subtitle">1V1 CLAN LADDER</span>
+        </div>
+      </div>
+      <div class="masthead__right">
+        <div class="stats" role="status" aria-label="Ladder status">
+          <span class="stat" id="stat-active">— ACTIVE</span>
+          <span class="stat stat--games" id="stat-games">— GAMES</span>
+          <span class="stat stat--updated" id="stat-updated">Last Update —</span>
+        </div>
+        <nav class="mainnav" aria-label="Primary">
+          <a href="index.html" class="mainnav__link">STANDINGS</a>
+          <a href="games.html" class="mainnav__link">GAMES</a>
+          <a href="maps.html" class="mainnav__link active" aria-current="page">MAPS</a>
+          <a href="actions.html" class="mainnav__link">ACTIONS</a>
+          <a href="rules.html" class="mainnav__link">RULES</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main id="map-root" class="map-layout">
+
+    <a class="backlink" href="maps.html">← ALL MAPS</a>
+
+    <!-- ===================== MAP HERO (name + fact strip) ===================== -->
+    <section class="panel map-hero">
+      <div class="map-hero__head">
+        <h1 id="map-name"><span class="sk sk--mapname" aria-hidden="true"></span></h1>
+      </div>
+      <div id="map-facts" class="map-facts">
+        <!-- pre-data skeleton; js/map.js replaces the strip contents -->
+        <span class="fact" aria-hidden="true"><span class="sk" style="width:74px"></span><span class="sk" style="width:38px"></span></span>
+        <span class="fact" aria-hidden="true"><span class="sk" style="width:66px"></span><span class="sk" style="width:72px"></span></span>
+        <span class="fact" aria-hidden="true"><span class="sk" style="width:62px"></span><span class="sk" style="width:72px"></span></span>
+        <span class="fact" aria-hidden="true"><span class="sk" style="width:54px"></span><span class="sk" style="width:30px"></span></span>
+        <span class="fact" aria-hidden="true"><span class="sk" style="width:70px"></span><span class="sk" style="width:84px"></span></span>
+      </div>
+    </section>
+
+    <!-- ===================== MAP LEADERBOARD (per-map ELO) ===================== -->
+    <section class="panel">
+      <div class="toolbar">
+        <h2 class="page-title">LEADERBOARD</h2>
+      </div>
+      <div class="table-wrap">
+        <table class="standings-table map-board">
+          <thead>
+            <tr>
+              <th class="c-pos" scope="col">#</th>
+              <th class="c-player" scope="col">PLAYER</th>
+              <th class="c-mrating" scope="col">MAP RATING</th>
+              <th class="c-wl" scope="col">W–L</th>
+              <th class="c-mgames" scope="col">GAMES</th>
+            </tr>
+          </thead>
+          <tbody id="map-board-body">
+            <!-- pre-data skeleton; js/map.js replaces the tbody contents -->
+            <tr class="skeleton" aria-hidden="true">
+              <td><span class="sk" style="width:16px"></span></td>
+              <td><span class="sk" style="width:150px"></span></td>
+              <td><span class="sk" style="width:38px"></span></td>
+              <td><span class="sk" style="width:44px"></span></td>
+              <td><span class="sk" style="width:26px"></span></td>
+            </tr>
+            <tr class="skeleton" aria-hidden="true">
+              <td><span class="sk" style="width:16px"></span></td>
+              <td><span class="sk" style="width:118px"></span></td>
+              <td><span class="sk" style="width:38px"></span></td>
+              <td><span class="sk" style="width:44px"></span></td>
+              <td><span class="sk" style="width:26px"></span></td>
+            </tr>
+            <tr class="skeleton" aria-hidden="true">
+              <td><span class="sk" style="width:16px"></span></td>
+              <td><span class="sk" style="width:136px"></span></td>
+              <td><span class="sk" style="width:38px"></span></td>
+              <td><span class="sk" style="width:44px"></span></td>
+              <td><span class="sk" style="width:26px"></span></td>
+            </tr>
+            <tr class="skeleton" aria-hidden="true">
+              <td><span class="sk" style="width:16px"></span></td>
+              <td><span class="sk" style="width:104px"></span></td>
+              <td><span class="sk" style="width:38px"></span></td>
+              <td><span class="sk" style="width:44px"></span></td>
+              <td><span class="sk" style="width:26px"></span></td>
+            </tr>
+            <tr class="skeleton" aria-hidden="true">
+              <td><span class="sk" style="width:16px"></span></td>
+              <td><span class="sk" style="width:128px"></span></td>
+              <td><span class="sk" style="width:38px"></span></td>
+              <td><span class="sk" style="width:44px"></span></td>
+              <td><span class="sk" style="width:26px"></span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div id="map-board-empty" class="gempty" hidden>NO RANKINGS YET — 3 GAMES ON THIS MAP TO BE RANKED</div>
+    </section>
+
+    <!-- ===================== LIVE ON THIS MAP ===================== -->
+    <section class="panel">
+      <div class="toolbar">
+        <h2 class="page-title">LIVE</h2>
+      </div>
+      <div id="map-live-list">
+        <!-- pre-data skeleton; js/map.js replaces the list contents -->
+        <div class="grow-skel" aria-hidden="true">
+          <span class="sk" style="width:46%"></span>
+          <span class="sk sk--sub" style="width:30%"></span>
+        </div>
+        <div class="grow-skel" aria-hidden="true">
+          <span class="sk" style="width:38%"></span>
+          <span class="sk sk--sub" style="width:26%"></span>
+        </div>
+      </div>
+      <div id="map-live-empty" class="gempty" hidden>NO LIVE GAMES ON THIS MAP</div>
+    </section>
+
+    <!-- ===================== GAMES ON THIS MAP ===================== -->
+    <section class="panel">
+      <div class="toolbar">
+        <h2 class="page-title">GAMES</h2>
+      </div>
+      <div id="map-games-list">
+        <!-- pre-data skeleton; js/map.js replaces the list contents -->
+        <div class="grow-skel" aria-hidden="true">
+          <span class="sk" style="width:54%"></span>
+          <span class="sk sk--sub" style="width:34%"></span>
+        </div>
+        <div class="grow-skel" aria-hidden="true">
+          <span class="sk" style="width:42%"></span>
+          <span class="sk sk--sub" style="width:28%"></span>
+        </div>
+        <div class="grow-skel" aria-hidden="true">
+          <span class="sk" style="width:58%"></span>
+          <span class="sk sk--sub" style="width:31%"></span>
+        </div>
+        <div class="grow-skel" aria-hidden="true">
+          <span class="sk" style="width:47%"></span>
+          <span class="sk sk--sub" style="width:36%"></span>
+        </div>
+        <div class="grow-skel" aria-hidden="true">
+          <span class="sk" style="width:51%"></span>
+          <span class="sk sk--sub" style="width:27%"></span>
+        </div>
+        <div class="grow-skel" aria-hidden="true">
+          <span class="sk" style="width:40%"></span>
+          <span class="sk sk--sub" style="width:32%"></span>
+        </div>
+      </div>
+      <!-- lazy-load sentinel: IntersectionObserver target (js/map.js) -->
+      <div id="map-games-sentinel" aria-hidden="true"></div>
+    </section>
+
+    <!-- ===================== ERROR STATE ===================== -->
+    <div id="map-error" hidden>
+      <p class="err-msg">MAP NOT FOUND</p>
+      <a class="backlink" href="maps.html">← ALL MAPS</a>
+    </div>
+
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="site-footer">
+    <p class="colophon">M'HUNTERS · WARZONE CLAN 141</p>
+  </footer>
+
+  <!-- ===================== MOBILE TAB BAR ===================== -->
+  <nav class="tabbar" aria-label="Primary mobile">
+    <a href="index.html" class="tab">
+      <span class="tab__glyph" aria-hidden="true">▤</span>
+      <span class="tab__label">STANDINGS</span>
+    </a>
+    <a href="games.html" class="tab">
+      <span class="tab__glyph" aria-hidden="true">⚔</span>
+      <span class="tab__label">GAMES</span>
+    </a>
+    <a href="maps.html" class="tab active" aria-current="page">
+      <span class="tab__glyph" aria-hidden="true">◈</span>
+      <span class="tab__label">MAPS</span>
+    </a>
+    <a href="actions.html" class="tab">
+      <span class="tab__glyph" aria-hidden="true">⚙</span>
+      <span class="tab__label">ACTIONS</span>
+    </a>
+    <a href="rules.html" class="tab">
+      <span class="tab__glyph" aria-hidden="true">§</span>
+      <span class="tab__label">RULES</span>
+    </a>
+  </nav>
+
+  <script src="js/derive.js"></script>
+  <script src="js/insignia.js"></script>
+  <script src="js/map.js"></script>
+</body>
+</html>

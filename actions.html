@@ -1,126 +1,206 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>M'Hunters Ladder - Actions</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>M'HUNTERS — Actions</title>
+  <meta name="description" content="M'Hunters clan ladder — join the ladder or set your game cap; admin map-pool and player-removal controls.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Cinzel:wght@700&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="assets/clan-crest.png">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/actions.css">
 </head>
-
 <body>
 
-    <header class="hero">
-        <img src="images/banner.png" alt="M'Hunters Clan Ladder" class="banner-image">
-    </header>
+  <!-- Fixed full-page watermark (archer banner, steel-tinted) -->
+  <div class="watermark" aria-hidden="true"></div>
 
-    <nav class="site-nav">
-        <div class="site-nav__inner">
-            <a class="nav-logo" href="index.html">M'Hunters Ladder</a>
-            <div class="site-nav__links">
-                <a href="index.html">Home</a>
-                <a href="history.html">History</a>
-                <a href="templates.html">Templates</a>
-                <a class="active" href="actions.html">Actions</a>
-                <a href="help.html">Help</a>
-            </div>
+  <!-- ===================== MASTHEAD ===================== -->
+  <header class="masthead">
+    <div class="masthead__inner">
+      <div class="brand">
+        <img class="brand__crest" src="assets/clan-crest.png" alt="M'Hunters clan crest" width="44" height="44">
+        <div class="brand__text">
+          <span class="brand__wordmark">M'HUNTERS</span>
+          <span class="brand__subtitle">1V1 CLAN LADDER</span>
         </div>
-    </nav>
+      </div>
+      <div class="masthead__right">
+        <div class="stats" role="status" aria-label="Ladder status">
+          <span class="stat" id="stat-active">— ACTIVE</span>
+          <span class="stat stat--games" id="stat-games">— GAMES</span>
+          <span class="stat stat--updated" id="stat-updated">Last Update —</span>
+        </div>
+        <nav class="mainnav" aria-label="Primary">
+          <a href="index.html" class="mainnav__link">STANDINGS</a>
+          <a href="games.html" class="mainnav__link">GAMES</a>
+          <a href="maps.html" class="mainnav__link">MAPS</a>
+          <a href="#" class="mainnav__link active" aria-current="page">ACTIONS</a>
+          <a href="rules.html" class="mainnav__link">RULES</a>
+        </nav>
+      </div>
+    </div>
+  </header>
 
-    <main>
-        <section class="panel">
-            <div class="panel__header">
-                <div>
-                    <p class="eyebrow">Manage</p>
-                    <h2>Player actions</h2>
-                </div>
-                <span class="chip chip--info">Self-serve</span>
-            </div>
-            <div class="actions">
-                <div class="card">
-                    <h3>Join Ladder</h3>
-                    <p>Enrollment is automatic: every M'Hunters clan member is added to the
-                        ladder by the bot (checked every 2 hours). Just joined the clan and
-                        can't wait? Register instantly below.</p>
-                    <label for="join-name">War.app username</label>
-                    <input type="text" id="join-name" placeholder="Enter your username">
-                    <label for="join-id">Player ID</label>
-                    <input type="number" id="join-id" placeholder="Your Player ID" min="1" step="1">
-                    <button onclick="joinLadder()">Register Now</button>
-                    <small>Opens a GitHub issue. Membership is verified — clan members only.</small>
-                </div>
+  <main class="actions-main">
 
-                <div class="card">
-                    <h3>Update Game Cap</h3>
-                    <label for="update-id">Player ID</label>
-                    <input type="number" id="update-id" placeholder="Your Player ID" min="1" step="1">
-                    <label for="update-cap">Game cap</label>
-                    <select id="update-cap">
-                        <option value="0">Paused (0 Games)</option>
-                        <option value="1">1 Game</option>
-                        <option value="2" selected>2 Games (Default)</option>
-                        <option value="3">3 Games (Max)</option>
-                    </select>
-                    <button onclick="updateSettings()">Update Cap</button>
-                    <small>Opens a GitHub issue to change settings.</small>
-                </div>
-            </div>
-        </section>
+    <div class="actions-head">
+      <h1 class="page-title">ACTIONS</h1>
+    </div>
 
-        <section class="panel">
-            <div class="panel__header">
-                <div>
-                    <p class="eyebrow">Cleanup</p>
-                    <h2>Remove Player</h2>
-                </div>
-                <span class="chip chip--danger">Admin</span>
-            </div>
-            <div class="input-group">
-                <label for="remove-id">Player ID</label>
-                <div class="input-stack">
-                    <input type="number" id="remove-id" placeholder="Player ID" min="1" step="1">
-                    <button class="btn btn-danger" onclick="removePlayer()">Remove</button>
-                </div>
-                <p class="help-text">Opens a GitHub issue to request removal.</p>
-            </div>
-        </section>
+    <!-- ===================== PLAYER ACTIONS ===================== -->
+    <div class="af-grid">
 
-        <section class="panel">
-            <div class="panel__header">
-                <div>
-                    <p class="eyebrow">Manage</p>
-                    <h2>Map Templates</h2>
-                </div>
-                <span class="chip chip--info">Admin</span>
-            </div>
+      <!-- ---------- JOIN THE LADDER ---------- -->
+      <section class="panel af" aria-labelledby="join-title">
+        <h2 class="af__title" id="join-title">JOIN THE LADDER</h2>
+        <form class="af__form" id="form-join" novalidate autocomplete="off">
+          <div class="af__field">
+            <label class="af__label" for="join-name">WARZONE USERNAME</label>
+            <input class="af__input" id="join-name" type="text" placeholder="NAME"
+                   autocorrect="off" autocapitalize="off" spellcheck="false">
+            <p class="af__msg" id="join-name-msg" hidden></p>
+          </div>
+          <div class="af__field">
+            <label class="af__label" for="join-id">WARZONE ID</label>
+            <input class="af__input" id="join-id" type="text" inputmode="numeric"
+                   placeholder="ID" autocorrect="off" autocapitalize="off" spellcheck="false">
+            <p class="af__msg" id="join-id-msg" hidden></p>
+          </div>
+          <button class="btn btn--primary" id="join-submit" type="submit" disabled>JOIN THE LADDER</button>
+        </form>
+      </section>
 
-            <div id="templates-list" class="table-container">
-                <p>Loading templates...</p>
-            </div>
+      <!-- ---------- SET GAME CAP ---------- -->
+      <section class="panel af" aria-labelledby="cap-title">
+        <h2 class="af__title" id="cap-title">SET GAME CAP</h2>
+        <form class="af__form" id="form-cap" novalidate autocomplete="off">
+          <div class="af__field">
+            <label class="af__label" for="cap-player">PLAYER</label>
+            <input class="af__input" id="cap-player" type="text" placeholder="NAME OR ID"
+                   autocorrect="off" autocapitalize="off" spellcheck="false">
+            <div class="af__picks" id="cap-picks" hidden></div>
+            <div class="pchip" id="cap-chip" hidden></div>
+            <p class="af__msg" id="cap-msg" hidden></p>
+          </div>
+          <div class="af__field">
+            <label class="af__label" for="cap-select">CAP</label>
+            <select class="af__select" id="cap-select">
+              <option value="0">PAUSE</option>
+              <option value="1">1</option>
+              <option value="2" selected>2</option>
+              <option value="3">3</option>
+            </select>
+          </div>
+          <button class="btn btn--primary" id="cap-submit" type="submit" disabled>SET CAP</button>
+        </form>
+      </section>
 
-            <div class="actions" style="margin-top: 1.5rem;">
-                <div class="card">
-                    <h3>Add Template</h3>
-                    <label for="template-id">Template ID</label>
-                    <input type="number" id="template-id" placeholder="Warzone Template ID" min="1" step="1">
-                    <label for="template-name">Template Name</label>
-                    <input type="text" id="template-name" placeholder="e.g. Strategic 1v1">
-                    <button onclick="addTemplate()">Add Template</button>
-                    <small>Opens a GitHub issue to add a template.</small>
-                </div>
+    </div>
 
-                <div class="card">
-                    <h3>Remove Template</h3>
-                    <label for="remove-template-id">Template ID</label>
-                    <input type="number" id="remove-template-id" placeholder="Template ID" min="1" step="1">
-                    <button class="btn btn-danger" onclick="removeTemplate()">Remove Template</button>
-                    <small>Opens a GitHub issue to remove a template.</small>
-                </div>
-            </div>
-        </section>
-    </main>
+    <!-- ===================== ADMIN ===================== -->
+    <div class="admin-divider" role="separator" aria-label="Admin actions">ADMIN</div>
 
-    <script src="app.js"></script>
+    <div class="af-grid af-grid--admin">
+
+      <!-- ---------- ADD MAP ---------- -->
+      <section class="panel af" aria-labelledby="addmap-title">
+        <h2 class="af__title" id="addmap-title">ADD MAP</h2>
+        <form class="af__form" id="form-addmap" novalidate autocomplete="off">
+          <div class="af__field">
+            <label class="af__label" for="tmpl-id">TEMPLATE ID</label>
+            <input class="af__input" id="tmpl-id" type="text" inputmode="numeric"
+                   placeholder="ID" autocorrect="off" autocapitalize="off" spellcheck="false">
+            <p class="af__msg" id="tmpl-id-msg" hidden></p>
+          </div>
+          <div class="af__field">
+            <label class="af__label" for="tmpl-name">MAP NAME</label>
+            <input class="af__input" id="tmpl-name" type="text" placeholder="NAME"
+                   autocorrect="off" autocapitalize="off" spellcheck="false">
+          </div>
+          <button class="btn btn--primary" id="tmpl-submit" type="submit" disabled>ADD MAP</button>
+        </form>
+      </section>
+
+      <!-- ---------- REMOVE MAP ---------- -->
+      <section class="panel af" aria-labelledby="rmmap-title">
+        <h2 class="af__title" id="rmmap-title">REMOVE MAP</h2>
+        <form class="af__form" id="form-rmmap" novalidate autocomplete="off">
+          <div class="af__field">
+            <label class="af__label" for="rm-select">MAP</label>
+            <select class="af__select" id="rm-select">
+              <option value="">SELECT MAP</option>
+            </select>
+          </div>
+          <div class="af__field">
+            <label class="af__label" for="rm-id">TEMPLATE ID</label>
+            <input class="af__input" id="rm-id" type="text" inputmode="numeric"
+                   placeholder="ID" autocorrect="off" autocapitalize="off" spellcheck="false">
+            <p class="af__msg" id="rm-id-msg" hidden></p>
+          </div>
+          <button class="btn btn--danger" id="rm-submit" type="submit" disabled>REMOVE MAP</button>
+        </form>
+      </section>
+
+      <!-- ---------- REMOVE PLAYER ---------- -->
+      <section class="panel panel--danger af" aria-labelledby="rmplayer-title">
+        <h2 class="af__title" id="rmplayer-title">REMOVE PLAYER</h2>
+        <form class="af__form" id="form-rmplayer" novalidate autocomplete="off">
+          <div class="af__field">
+            <label class="af__label" for="rmplayer-player">PLAYER</label>
+            <input class="af__input" id="rmplayer-player" type="text" placeholder="NAME OR ID"
+                   autocorrect="off" autocapitalize="off" spellcheck="false">
+            <div class="af__picks" id="rmplayer-picks" hidden></div>
+            <div class="pchip" id="rmplayer-chip" hidden></div>
+            <p class="af__msg" id="rmplayer-msg" hidden></p>
+          </div>
+          <div class="af__field">
+            <label class="af__label" for="rmplayer-confirm">CONFIRM</label>
+            <input class="af__input af__input--confirm" id="rmplayer-confirm" type="text"
+                   placeholder="TYPE REMOVE TO CONFIRM"
+                   autocorrect="off" autocapitalize="off" spellcheck="false">
+          </div>
+          <button class="btn btn--danger" id="rmplayer-submit" type="submit" disabled>REMOVE PLAYER</button>
+        </form>
+      </section>
+
+    </div>
+
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="site-footer">
+    <p class="colophon">M'HUNTERS · WARZONE CLAN 141</p>
+  </footer>
+
+  <!-- ===================== MOBILE TAB BAR ===================== -->
+  <nav class="tabbar" aria-label="Primary mobile">
+    <a href="index.html" class="tab">
+      <span class="tab__glyph" aria-hidden="true">▤</span>
+      <span class="tab__label">STANDINGS</span>
+    </a>
+    <a href="games.html" class="tab">
+      <span class="tab__glyph" aria-hidden="true">⚔</span>
+      <span class="tab__label">GAMES</span>
+    </a>
+    <a href="maps.html" class="tab">
+      <span class="tab__glyph" aria-hidden="true">◈</span>
+      <span class="tab__label">MAPS</span>
+    </a>
+    <a href="#" class="tab active" aria-current="page">
+      <span class="tab__glyph" aria-hidden="true">⚙</span>
+      <span class="tab__label">ACTIONS</span>
+    </a>
+    <a href="rules.html" class="tab">
+      <span class="tab__glyph" aria-hidden="true">§</span>
+      <span class="tab__label">RULES</span>
+    </a>
+  </nav>
+
+  <script src="js/derive.js"></script>
+  <script src="js/insignia.js"></script>
+  <script src="js/actions.js"></script>
 </body>
-
 </html>

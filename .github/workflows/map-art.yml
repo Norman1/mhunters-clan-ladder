@@ -1,0 +1,52 @@
+name: Map Art Sweep
+
+# Capture card art for pool templates that don't have it yet.
+# Art can only be captured from a rendered game board, so brand-new
+# templates are picked up on the first run after their first game starts.
+
+on:
+  push:
+    paths:
+      - data/templates.json
+  schedule:
+    - cron: "0 6 * * 1" # weekly, monday 06:00 UTC
+  workflow_dispatch:
+
+concurrency:
+  group: map-art
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  sweep:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install capture dependencies
+        run: npm install --no-save puppeteer sharp
+
+      - name: Capture missing map art
+        env:
+          WZ_EMAIL: ${{ secrets.WZ_EMAIL }}
+          WZ_PASSWORD: ${{ secrets.WZ_PASSWORD }}
+        run: node scripts/capture_map_art.js
+
+      - name: Commit new art
+        run: |
+          git config user.name "Norman (Bot)"
+          git config user.email "norman-bot@users.noreply.github.com"
+          git add assets/maps
+          if git diff --cached --quiet; then
+            echo "no new art"
+          else
+            git commit -m "Map art: capture new pool templates"
+            git pull --rebase origin main
+            git push origin main
+          fi

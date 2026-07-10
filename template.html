@@ -1,62 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>M'Hunters Ladder - Template Detail</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <title>Moved — M'Hunters Ladder</title>
+  <script>
+    var id = new URLSearchParams(location.search).get('id');
+    location.replace('map.html' + (id ? '?t=' + encodeURIComponent(id) : ''));
+  </script>
+  <meta http-equiv="refresh" content="1; url=map.html">
 </head>
-
 <body>
-
-    <header class="hero">
-        <img src="images/banner.png" alt="M'Hunters Clan Ladder" class="banner-image">
-    </header>
-
-    <nav class="site-nav">
-        <div class="site-nav__inner">
-            <a class="nav-logo" href="index.html">M'Hunters Ladder</a>
-            <div class="site-nav__links">
-                <a href="index.html">Home</a>
-                <a href="history.html">History</a>
-                <a class="active" href="templates.html">Templates</a>
-                <a href="actions.html">Actions</a>
-                <a href="help.html">Help</a>
-            </div>
-        </div>
-    </nav>
-
-    <main>
-        <a class="back-link" href="templates.html">&#8592; All Templates</a>
-
-        <section class="panel">
-            <div class="panel__header">
-                <div>
-                    <p class="eyebrow">Rankings</p>
-                    <h2 id="template-heading">Loading...</h2>
-                </div>
-                <span class="chip chip--info">Template ELO</span>
-            </div>
-            <div id="template-records">
-                <p>Loading...</p>
-            </div>
-        </section>
-
-        <section class="panel">
-            <div class="panel__header">
-                <div>
-                    <p class="eyebrow">Match History</p>
-                    <h2>Games</h2>
-                </div>
-            </div>
-            <div id="template-games">
-                <p>Loading...</p>
-            </div>
-        </section>
-    </main>
-
-    <script src="app.js"></script>
+  <p>This page moved — <a href="map.html">continue to the ladder</a>.</p>
 </body>
-
 </html>

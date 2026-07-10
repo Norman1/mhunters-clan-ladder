@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>M'HUNTERS — Rules</title>
+  <meta name="description" content="M'Hunters clan ladder — the rulebook: joining, game caps, matchmaking, ELO, strikes, ranks, leagues, and the raw bot commands.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Cinzel:wght@700&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="assets/clan-crest.png">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/rules.css">
+</head>
+<body>
+
+  <!-- Fixed full-page watermark (archer banner, steel-tinted) -->
+  <div class="watermark" aria-hidden="true"></div>
+
+  <!-- ===================== MASTHEAD ===================== -->
+  <header class="masthead">
+    <div class="masthead__inner">
+      <div class="brand">
+        <img class="brand__crest" src="assets/clan-crest.png" alt="M'Hunters clan crest" width="44" height="44">
+        <div class="brand__text">
+          <span class="brand__wordmark">M'HUNTERS</span>
+          <span class="brand__subtitle">1V1 CLAN LADDER</span>
+        </div>
+      </div>
+      <div class="masthead__right">
+        <div class="stats" role="status" aria-label="Ladder status">
+          <span class="stat" id="stat-active">— ACTIVE</span>
+          <span class="stat stat--games" id="stat-games">— GAMES</span>
+          <span class="stat stat--updated" id="stat-updated">Last Update —</span>
+        </div>
+        <nav class="mainnav" aria-label="Primary">
+          <a href="index.html" class="mainnav__link">STANDINGS</a>
+          <a href="games.html" class="mainnav__link">GAMES</a>
+          <a href="maps.html" class="mainnav__link">MAPS</a>
+          <a href="actions.html" class="mainnav__link">ACTIONS</a>
+          <a href="#" class="mainnav__link active" aria-current="page">RULES</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main class="rules-main">
+
+    <div class="rules-head">
+      <h1 class="page-title">RULES</h1>
+    </div>
+
+    <!-- compact (non-sticky) table of contents strip -->
+    <nav class="rules-toc" aria-label="On this page">
+      <a href="#joining">JOINING</a>
+      <a href="#caps">GAME CAPS</a>
+      <a href="#matchmaking">MATCHMAKING</a>
+      <a href="#elo">RATING</a>
+      <a href="#strikes">STRIKES</a>
+      <a href="#comeback">COMING BACK</a>
+      <a href="#ranks">RANKS</a>
+      <a href="#leagues">LEAGUES</a>
+      <a href="#commands">COMMANDS</a>
+    </nav>
+
+    <!-- ===================== 01 JOINING ===================== -->
+    <section class="panel rules-panel" id="joining" aria-labelledby="joining-title">
+      <header class="rp-head">
+        <h2 class="rp-title" id="joining-title"><span class="rp-num">01</span>JOINING THE LADDER</h2>
+        <a class="rp-anchor" href="#joining" aria-label="Link to Joining the Ladder">#</a>
+      </header>
+      <div class="rp-body">
+        <p>The ladder is open to every member of the clan. Sign up from the
+          <span class="hl">ACTIONS</span> page — the form opens a pre-filled GitHub issue, and
+          <span class="hl">Norman</span>, the ladder bot, applies it within
+          <span class="hl">minutes</span>.</p>
+        <p>New players enter the standings immediately at a <span class="hl">1000</span> rating
+          — <span class="hl">Cobalt League</span>, rank <span class="hl">Recruit</span> — with a
+          <span class="hl">0–0</span> record. The first game follows on Norman's next
+          matchmaking run, within <span class="hl">~2 hours</span>.</p>
+      </div>
+    </section>
+
+    <!-- ===================== 02 GAME CAPS ===================== -->
+    <section class="panel rules-panel" id="caps" aria-labelledby="caps-title">
+      <header class="rp-head">
+        <h2 class="rp-title" id="caps-title"><span class="rp-num">02</span>GAME CAPS</h2>
+        <a class="rp-anchor" href="#caps" aria-label="Link to Game Caps">#</a>
+      </header>
+      <div class="rp-body">
+        <p>Your game cap is how many ladder games you can have running at once.</p>
+        <ul class="fact-list">
+          <li><span class="hl">0</span> — paused. You keep your rating and are listed under
+            <span class="hl">INACTIVE PLAYERS</span> until you raise the cap again.</li>
+          <li><span class="hl">1–3</span> — the allowed range. Default is
+            <span class="hl">2</span>, max is <span class="hl">3</span>.</li>
+          <li>Change it any time from the <span class="hl">ACTIONS</span> page.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===================== 03 MATCHMAKING & THE BOT ===================== -->
+    <section class="panel rules-panel" id="matchmaking" aria-labelledby="matchmaking-title">
+      <header class="rp-head">
+        <h2 class="rp-title" id="matchmaking-title"><span class="rp-num">03</span>MATCHMAKING &amp; THE BOT</h2>
+        <a class="rp-anchor" href="#matchmaking" aria-label="Link to Matchmaking and the Bot">#</a>
+      </header>
+      <div class="rp-body">
+        <p><span class="hl">Norman</span> runs every <span class="hl">2 hours</span> — each run he
+          creates new games between available players and referees the finished ones.</p>
+        <ul class="fact-list">
+          <li>Pairing prefers <span class="hl">active vs active</span>. Inactive players are still
+            matched — at lower priority, usually against other inactive players — in
+            <span class="hl">redemption games</span>.</li>
+          <li>A created game waits in its lobby. If it sits <span class="hl">3 days</span> without
+            both players joining, the bot deletes it and every player who hadn't joined receives a
+            <span class="hl-r">strike</span>.</li>
+          <li>Manually declining a game also counts as a <span class="hl-r">strike</span>.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===================== 04 RATING ===================== -->
+    <section class="panel rules-panel" id="elo" aria-labelledby="elo-title">
+      <header class="rp-head">
+        <h2 class="rp-title" id="elo-title"><span class="rp-num">04</span>RATING</h2>
+        <a class="rp-anchor" href="#elo" aria-label="Link to Rating">#</a>
+      </header>
+      <div class="rp-body">
+        <p>Ratings are <span class="hl">ELO</span> with <span class="hl">K&nbsp;=&nbsp;40</span>.
+          Everyone starts at <span class="hl">1000</span>.</p>
+        <div class="formula" aria-label="Expected score = 1 over 1 plus 10 to the power of opponent minus you, divided by 400">
+          EXPECTED&nbsp;=&nbsp;1&nbsp;/&nbsp;(1&nbsp;+&nbsp;10^((OPPONENT&nbsp;−&nbsp;YOU)&nbsp;/&nbsp;400))
+        </div>
+        <p>You gain more for beating stronger opponents — swings on the ladder have run from
+          <span class="hl">±1</span> to <span class="hl">±39</span>.</p>
+        <ul class="fact-list">
+          <li><span class="hl">Draws</span> (vote-to-end) change nothing.</li>
+          <li>A <span class="hl-r">surrender</span> or <span class="hl-r">boot</span> counts as a loss.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===================== 05 STRIKES & INACTIVITY ===================== -->
+    <section class="panel rules-panel" id="strikes" aria-labelledby="strikes-title">
+      <header class="rp-head">
+        <h2 class="rp-title" id="strikes-title"><span class="rp-num">05</span>STRIKES &amp; INACTIVITY</h2>
+        <a class="rp-anchor" href="#strikes" aria-label="Link to Strikes and Inactivity">#</a>
+      </header>
+      <div class="rp-body">
+        <ul class="fact-list">
+          <li><span class="hl-r">2 consecutive strikes</span> and you are marked
+            <span class="hl">INACTIVE</span> — hidden inside INACTIVE PLAYERS on the standings.
+            Your rating is kept.</li>
+          <li>Inactive players get an escalating matchmaking cooldown:
+            <span class="hl">2 weeks</span>, plus 2 weeks per further consecutive strike, capped at
+            <span class="hl">12 weeks</span>.</li>
+          <li>While inactive you are capped at <span class="hl">1 active game</span> until you return.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===================== 06 COMING BACK ===================== -->
+    <section class="panel rules-panel" id="comeback" aria-labelledby="comeback-title">
+      <header class="rp-head">
+        <h2 class="rp-title" id="comeback-title"><span class="rp-num">06</span>COMING BACK</h2>
+        <a class="rp-anchor" href="#comeback" aria-label="Link to Coming Back">#</a>
+      </header>
+      <div class="rp-body">
+        <p>There is no reactivate button. <span class="hl">Join any game</span> — even a redemption
+          game — and your strikes reset to <span class="hl">0</span> and you are active immediately.</p>
+      </div>
+    </section>
+
+    <!-- ===================== 07 MILITARY RANKS ===================== -->
+    <section class="panel rules-panel" id="ranks" aria-labelledby="ranks-title">
+      <header class="rp-head">
+        <h2 class="rp-title" id="ranks-title"><span class="rp-num">07</span>MILITARY RANKS</h2>
+        <a class="rp-anchor" href="#ranks" aria-label="Link to Military Ranks">#</a>
+      </header>
+      <div class="rp-body">
+        <p>Your rank tracks <span class="hl">career wins</span> on the ladder. Wins only — losses,
+          draws, and voided games never count, and ranks <span class="hl">never go down</span>.</p>
+        <div class="table-wrap">
+          <table class="rules-table" id="ranks-table">
+            <thead>
+              <tr>
+                <th class="c-ins"><span class="sr-only">Insignia</span></th>
+                <th class="c-name">RANK</th>
+                <th class="c-wins">WINS REQ</th>
+                <th class="c-count">HOLDERS</th>
+              </tr>
+            </thead>
+            <tbody id="ranks-body">
+              <tr class="tbl-skel"><td colspan="4">LOADING RANKS…</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="rp-note">THE INSIGNIA'S FRAME IS THE RANK · ITS COLOR IS THE LEAGUE</p>
+      </div>
+    </section>
+
+    <!-- ===================== 08 LEAGUES ===================== -->
+    <section class="panel rules-panel" id="leagues" aria-labelledby="leagues-title">
+      <header class="rp-head">
+        <h2 class="rp-title" id="leagues-title"><span class="rp-num">08</span>LEAGUES</h2>
+        <a class="rp-anchor" href="#leagues" aria-label="Link to Leagues">#</a>
+      </header>
+      <div class="rp-body">
+        <p>Your league is your current <span class="hl">ELO band</span>. Unlike ranks it moves both
+          ways — promotions <span class="hl">and</span> relegations, announced in the Feed.</p>
+        <div class="table-wrap">
+          <table class="rules-table" id="leagues-table">
+            <thead>
+              <tr>
+                <th class="c-ins"><span class="sr-only">Metal</span></th>
+                <th class="c-name">LEAGUE</th>
+                <th class="c-range">ELO</th>
+                <th class="c-count">PLAYERS</th>
+              </tr>
+            </thead>
+            <tbody id="leagues-body">
+              <tr class="tbl-skel"><td colspan="4">LOADING LEAGUES…</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <ul class="fact-list fact-list--notes">
+          <li>Everyone starts in <span class="hl">Cobalt</span> (1000).</li>
+          <li>Red belongs to <span class="hl-r">Warlord</span> alone.</li>
+          <li><span class="hl">Bloodsteel</span> has been reached — never held for long.
+            Nobody has ever touched <span class="hl-r">Warlord</span>.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===================== 09 COMMAND REFERENCE ===================== -->
+    <section class="panel rules-panel" id="commands" aria-labelledby="commands-title">
+      <header class="rp-head">
+        <h2 class="rp-title" id="commands-title"><span class="rp-num">09</span>COMMAND REFERENCE</h2>
+        <a class="rp-anchor" href="#commands" aria-label="Link to Command Reference">#</a>
+      </header>
+      <div class="rp-body">
+        <p>Every ladder action is a GitHub issue under the hood — the <span class="hl">ACTIONS</span>
+          page just writes them for you. Prefer the raw thing? Open a new issue at
+          <a class="ext" href="https://github.com/Norman1/mhunters-clan-ladder/issues/new"
+             target="_blank" rel="noopener">github.com/Norman1/mhunters-clan-ladder</a>
+          with one of these titles:</p>
+
+        <div class="cmd-list">
+          <div class="cmd">
+            <code>Signup: <span class="ph">&lt;Your_Warzone_ID&gt;</span> Name: <span class="ph">&lt;Your_Warzone_Username&gt;</span></code>
+            <button type="button" class="cmd-copy" aria-label="Copy signup command">COPY</button>
+          </div>
+          <div class="cmd">
+            <code>Update: <span class="ph">&lt;Your_Warzone_ID&gt;</span> Cap: <span class="ph">&lt;GameLimit&gt;</span></code>
+            <button type="button" class="cmd-copy" aria-label="Copy update cap command">COPY</button>
+          </div>
+          <div class="cmd">
+            <code>Remove: <span class="ph">&lt;Your_Warzone_ID&gt;</span></code>
+            <button type="button" class="cmd-copy" aria-label="Copy remove command">COPY</button>
+          </div>
+        </div>
+
+        <p class="cmd-group-label">ADMIN ONLY</p>
+        <div class="cmd-list">
+          <div class="cmd">
+            <code>AddTemplate: <span class="ph">&lt;TemplateID&gt;</span> Name: <span class="ph">&lt;MapName&gt;</span></code>
+            <button type="button" class="cmd-copy" aria-label="Copy add template command">COPY</button>
+          </div>
+          <div class="cmd">
+            <code>RemoveTemplate: <span class="ph">&lt;TemplateID&gt;</span></code>
+            <button type="button" class="cmd-copy" aria-label="Copy remove template command">COPY</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="site-footer">
+    <p class="colophon">M'HUNTERS · WARZONE CLAN 141</p>
+  </footer>
+
+  <!-- ===================== MOBILE TAB BAR ===================== -->
+  <nav class="tabbar" aria-label="Primary mobile">
+    <a href="index.html" class="tab">
+      <span class="tab__glyph" aria-hidden="true">▤</span>
+      <span class="tab__label">STANDINGS</span>
+    </a>
+    <a href="games.html" class="tab">
+      <span class="tab__glyph" aria-hidden="true">⚔</span>
+      <span class="tab__label">GAMES</span>
+    </a>
+    <a href="maps.html" class="tab">
+      <span class="tab__glyph" aria-hidden="true">◈</span>
+      <span class="tab__label">MAPS</span>
+    </a>
+    <a href="actions.html" class="tab">
+      <span class="tab__glyph" aria-hidden="true">⚙</span>
+      <span class="tab__label">ACTIONS</span>
+    </a>
+    <a href="#" class="tab active" aria-current="page">
+      <span class="tab__glyph" aria-hidden="true">§</span>
+      <span class="tab__label">RULES</span>
+    </a>
+  </nav>
+
+  <script src="js/derive.js"></script>
+  <script src="js/insignia.js"></script>
+  <script src="js/rules.js"></script>
+</body>
+</html>

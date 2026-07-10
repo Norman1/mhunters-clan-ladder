@@ -1,0 +1,285 @@
+/* ============================================================
+   M'HUNTERS CLAN LADDER — ACTIONS page
+   Player forms (join / cap) + admin map-pool and remove-player forms.
+   Loads after css/styles.css; actions-page-scoped rules only —
+   never redefines shared tokens or shared components.
+   ============================================================ */
+
+/* ----------------------------- page grid ----------------------------- */
+.af-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 18px;
+  align-items: start;
+}
+
+@media (min-width: 900px) {
+  .af-grid { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
+  /* the destructive remove-player panel gets the full row (admin grid) */
+  .af-grid .panel--danger { grid-column: 1 / -1; }
+}
+
+/* ----------------------------- panels ----------------------------- */
+.af__title {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  padding: 13px 16px;
+  border-bottom: 1px solid var(--line);
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 18px;
+  letter-spacing: 0.08em;
+  line-height: 1;
+  color: var(--white);
+}
+.af__title::before {
+  content: "";
+  width: 4px;
+  height: 14px;
+  background: var(--red);
+  border-radius: 1px;
+}
+
+.af__form {
+  padding: 15px 16px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+/* destructive treatment: red-bordered panel accent */
+.panel--danger {
+  border-color: rgba(210, 39, 48, 0.5);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.03),
+    inset 3px 0 0 var(--red),
+    0 10px 28px rgba(0, 0, 0, 0.35);
+}
+
+/* ----------------------------- fields ----------------------------- */
+.af__field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.af__label {
+  font-family: var(--font-mono);
+  font-weight: 600;
+  font-size: 9.5px;
+  letter-spacing: 0.16em;
+  color: var(--dim);
+}
+
+.af__input,
+.af__select {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 100%;
+  background: transparent;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  padding: 9px 11px;
+  font-family: var(--font-mono);
+  font-weight: 600;
+  font-size: 12px;
+  letter-spacing: 0.06em;
+  color: var(--white);
+  transition: border-color var(--speed) ease, box-shadow var(--speed) ease;
+}
+.af__input::placeholder { color: var(--dim); letter-spacing: 0.12em; }
+.af__input:hover,
+.af__select:hover { border-color: #3A3E46; }
+.af__input:focus,
+.af__select:focus {
+  outline: none;
+  border-color: var(--red);
+  box-shadow: 0 0 0 3px rgba(210, 39, 48, 0.14);
+}
+
+.af__select {
+  padding-right: 28px;
+  cursor: pointer;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='5'%3E%3Cpath d='M0 0l4 5 4-5z' fill='%238A919C'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 11px center;
+}
+.af__select option { background: var(--panel); color: var(--white); }
+
+/* ----------------------------- validation lines ----------------------------- */
+.af__msg {
+  font-family: var(--font-mono);
+  font-weight: 600;
+  font-size: 10px;
+  letter-spacing: 0.08em;
+  line-height: 1.6;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+.af__msg--error { color: var(--red); }
+.af__msg--warn  { color: var(--warn); }
+.af__msg--quiet { color: var(--muted); }
+
+.af__msg a {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.af__msg a:hover { color: var(--white); }
+
+/* ----------------------------- resolved chip ----------------------------- */
+.pchip {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  padding: 8px 12px;
+  min-width: 0;
+}
+.pchip__ins { flex: none; line-height: 0; }
+.pchip__ins svg { display: block; }
+.pchip__name {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: 0.02em;
+  color: var(--white);
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.pchip__meta {
+  margin-left: auto;
+  font-family: var(--font-mono);
+  font-weight: 600;
+  font-size: 10.5px;
+  letter-spacing: 0.1em;
+  color: var(--muted);
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+}
+
+/* ----------------------------- ambiguity picks ----------------------------- */
+.af__picks {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.pick {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  text-align: left;
+  background: transparent;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  padding: 7px 11px;
+  transition: border-color var(--speed) ease, background-color var(--speed) ease;
+}
+.pick:hover {
+  border-color: var(--red);
+  background: #1B1D22;
+}
+.pick__ins { flex: none; line-height: 0; }
+.pick__ins svg { display: block; }
+.pick__name {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 15px;
+  letter-spacing: 0.02em;
+  color: var(--white);
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.pick__meta {
+  margin-left: auto;
+  font-family: var(--font-mono);
+  font-weight: 600;
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  color: var(--dim);
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+}
+
+/* ----------------------------- buttons ----------------------------- */
+.btn {
+  align-self: flex-start;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 170px;
+  padding: 10px 22px;
+  border-radius: 4px;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 15px;
+  letter-spacing: 0.12em;
+  line-height: 1;
+  transition: background-color var(--speed) ease, border-color var(--speed) ease,
+              color var(--speed) ease;
+}
+
+.btn--primary {
+  background: var(--red);
+  color: #FFFFFF;
+}
+.btn--primary:hover:not(:disabled) { background: var(--red-hover); }
+
+.btn--danger {
+  background: transparent;
+  border: 1px solid var(--red);
+  color: var(--red);
+}
+.btn--danger:hover:not(:disabled) {
+  background: rgba(210, 39, 48, 0.14);
+  color: var(--red-hover);
+  border-color: var(--red-hover);
+}
+
+.btn:disabled {
+  cursor: not-allowed;
+  background: #24262B;
+  border-color: #24262B;
+  color: var(--dim);
+}
+.btn--danger:disabled {
+  background: transparent;
+  border-color: var(--line);
+  color: var(--dim);
+}
+
+/* ----------------------------- admin divider ----------------------------- */
+.admin-divider {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin: 8px 0 2px;
+  font-family: var(--font-mono);
+  font-weight: 600;
+  font-size: 10.5px;
+  letter-spacing: 0.34em;
+  color: var(--dim);
+}
+.admin-divider::before,
+.admin-divider::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: var(--line);
+}
+
+/* ----------------------------- responsive < 900px ----------------------------- */
+@media (max-width: 899px) {
+  .af__form { padding: 13px 12px 14px; gap: 12px; }
+  .af__title { padding: 12px 12px; font-size: 17px; }
+  .btn { align-self: stretch; width: 100%; }
+  .admin-divider { letter-spacing: 0.28em; }
+}

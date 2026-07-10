@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>M'HUNTERS — Clan Ladder — Player Profile</title>
+  <meta name="description" content="M'Hunters clan ladder — player profile: rating history, records, matchups, and the full game log.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Cinzel:wght@700&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="assets/clan-crest.png">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/profile.css">
+</head>
+<body>
+
+  <!-- Fixed full-page watermark (archer banner, steel-tinted) -->
+  <div class="watermark" aria-hidden="true"></div>
+
+  <!-- ===================== MASTHEAD ===================== -->
+  <header class="masthead">
+    <div class="masthead__inner">
+      <a class="brand" href="index.html" aria-label="M'Hunters — back to standings">
+        <img class="brand__crest" src="assets/clan-crest.png" alt="" width="44" height="44">
+        <div class="brand__text">
+          <span class="brand__wordmark">M'HUNTERS</span>
+          <span class="brand__subtitle">1V1 CLAN LADDER</span>
+        </div>
+      </a>
+      <div class="masthead__right">
+        <nav class="mainnav" aria-label="Primary">
+          <a href="index.html" class="mainnav__link active">STANDINGS</a>
+          <a href="games.html" class="mainnav__link">GAMES</a>
+          <a href="maps.html" class="mainnav__link">MAPS</a>
+          <a href="actions.html" class="mainnav__link">ACTIONS</a>
+          <a href="rules.html" class="mainnav__link">RULES</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main id="profile-root" class="profile-layout">
+
+    <a class="backlink" href="index.html">← STANDINGS</a>
+
+    <!-- ===================== HERO ===================== -->
+    <section class="panel" id="hero-section">
+      <div id="hero">
+        <div id="hero-insignia" class="hero__insignia">
+          <span class="sk sk--shield" aria-hidden="true"></span>
+        </div>
+        <div class="hero__id">
+          <h1 id="hero-name"><span class="sk sk--name" aria-hidden="true"></span></h1>
+          <div class="hero__rankline">
+            <span id="hero-rank"><span class="sk sk--rank" aria-hidden="true"></span></span>
+            <span id="hero-league"></span>
+          </div>
+          <div id="hero-meta"><span class="sk sk--meta" aria-hidden="true"></span></div>
+        </div>
+      </div>
+      <div class="hero-progress">
+        <div class="prog" id="prog-rank">
+          <div class="prog__label"></div>
+          <div class="prog__track"><div class="prog__fill"></div></div>
+        </div>
+        <div class="prog" id="prog-league">
+          <div class="prog__label"></div>
+          <div class="prog__track"><div class="prog__fill"></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CAREER STRIP ===================== -->
+    <div id="career-strip" class="career-strip" aria-label="Career statistics">
+      <div class="tile skeleton" aria-hidden="true"><span class="sk" style="width:64px"></span><span class="sk" style="width:44px;height:15px"></span></div>
+      <div class="tile skeleton" aria-hidden="true"><span class="sk" style="width:52px"></span><span class="sk" style="width:38px;height:15px"></span></div>
+      <div class="tile skeleton" aria-hidden="true"><span class="sk" style="width:70px"></span><span class="sk" style="width:50px;height:15px"></span></div>
+      <div class="tile skeleton" aria-hidden="true"><span class="sk" style="width:58px"></span><span class="sk" style="width:42px;height:15px"></span></div>
+    </div>
+
+    <!-- ===================== RATING CHART ===================== -->
+    <section class="panel">
+      <div class="toolbar">
+        <h2 class="page-title">RATING</h2>
+      </div>
+      <div id="rating-chart">
+        <div class="sk sk--chart" aria-hidden="true"></div>
+      </div>
+    </section>
+
+    <!-- ===================== RECORDS ===================== -->
+    <section class="panel">
+      <div class="toolbar">
+        <h2 class="page-title">RECORDS</h2>
+      </div>
+      <div id="records" class="records"></div>
+    </section>
+
+    <!-- ===================== OPPONENTS · MAPS ===================== -->
+    <div class="duo">
+      <section class="panel">
+        <div class="toolbar">
+          <h2 class="page-title">OPPONENTS</h2>
+        </div>
+        <div id="opponents-list" class="xp-list"></div>
+      </section>
+      <section class="panel">
+        <div class="toolbar">
+          <h2 class="page-title">MAPS</h2>
+        </div>
+        <div id="maps-list" class="xp-list"></div>
+      </section>
+    </div>
+
+    <!-- ===================== PROMOTION & LEAGUE HISTORY ===================== -->
+    <section class="panel">
+      <div class="toolbar">
+        <h2 class="page-title">HISTORY</h2>
+      </div>
+      <div id="timeline" class="timeline"></div>
+    </section>
+
+    <!-- ===================== GAME LOG ===================== -->
+    <section class="panel">
+      <div class="toolbar">
+        <h2 class="page-title">GAME LOG</h2>
+      </div>
+      <div class="table-wrap">
+        <table class="gamelog-table">
+          <thead>
+            <tr>
+              <th class="c-gdate" scope="col">DATE</th>
+              <th class="c-gopp" scope="col">OPPONENT</th>
+              <th class="c-gres" scope="col">RESULT</th>
+              <th class="c-gswing" scope="col">RATING CHANGE</th>
+              <th class="c-gmap" scope="col">MAP</th>
+              <th class="c-gturns" scope="col">TURNS</th>
+              <th class="c-glink" scope="col"><span class="visually-hidden">Game link</span></th>
+            </tr>
+          </thead>
+          <tbody id="gamelog-body">
+            <!-- pre-data skeleton; profile.js replaces the tbody contents -->
+            <tr class="skeleton" aria-hidden="true">
+              <td><span class="sk" style="width:66px"></span></td>
+              <td><span class="sk" style="width:130px"></span></td>
+              <td><span class="sk" style="width:16px"></span></td>
+              <td><span class="sk" style="width:28px"></span></td>
+              <td><span class="sk" style="width:90px"></span></td>
+              <td><span class="sk" style="width:20px"></span></td>
+              <td><span class="sk" style="width:14px"></span></td>
+            </tr>
+            <tr class="skeleton" aria-hidden="true">
+              <td><span class="sk" style="width:66px"></span></td>
+              <td><span class="sk" style="width:104px"></span></td>
+              <td><span class="sk" style="width:16px"></span></td>
+              <td><span class="sk" style="width:28px"></span></td>
+              <td><span class="sk" style="width:74px"></span></td>
+              <td><span class="sk" style="width:20px"></span></td>
+              <td><span class="sk" style="width:14px"></span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div id="gamelog-pager"></div>
+    </section>
+
+    <!-- ===================== STATUS ===================== -->
+    <section class="panel">
+      <div class="toolbar">
+        <h2 class="page-title">STATUS</h2>
+      </div>
+      <div id="reliability" class="reliability"></div>
+    </section>
+
+    <!-- ===================== ERROR STATE ===================== -->
+    <div id="profile-error" hidden>
+      <p class="err-msg">PLAYER NOT FOUND</p>
+      <a class="backlink" href="index.html">← STANDINGS</a>
+    </div>
+
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="site-footer">
+    <p class="colophon">M'HUNTERS · WARZONE CLAN 141</p>
+  </footer>
+
+  <!-- ===================== MOBILE TAB BAR ===================== -->
+  <nav class="tabbar" aria-label="Primary mobile">
+    <a href="index.html" class="tab active">
+      <span class="tab__glyph" aria-hidden="true">▤</span>
+      <span class="tab__label">STANDINGS</span>
+    </a>
+    <a href="games.html" class="tab">
+      <span class="tab__glyph" aria-hidden="true">⚔</span>
+      <span class="tab__label">GAMES</span>
+    </a>
+    <a href="maps.html" class="tab">
+      <span class="tab__glyph" aria-hidden="true">◈</span>
+      <span class="tab__label">MAPS</span>
+    </a>
+    <a href="actions.html" class="tab">
+      <span class="tab__glyph" aria-hidden="true">⚙</span>
+      <span class="tab__label">ACTIONS</span>
+    </a>
+    <a href="rules.html" class="tab">
+      <span class="tab__glyph" aria-hidden="true">§</span>
+      <span class="tab__label">RULES</span>
+    </a>
+  </nav>
+
+  <script src="js/derive.js"></script>
+  <script src="js/insignia.js"></script>
+  <script src="js/profile.js"></script>
+</body>
+</html>

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>M'HUNTERS — Maps</title>
+  <meta name="description" content="M'Hunters clan ladder — the map pool: games hosted, live games, and each map's current champion.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Cinzel:wght@700&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="assets/clan-crest.png">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/maps.css">
+</head>
+<body>
+
+  <!-- Fixed full-page watermark (archer banner, steel-tinted) -->
+  <div class="watermark" aria-hidden="true"></div>
+
+  <!-- ===================== MASTHEAD ===================== -->
+  <header class="masthead">
+    <div class="masthead__inner">
+      <div class="brand">
+        <img class="brand__crest" src="assets/clan-crest.png" alt="M'Hunters clan crest" width="44" height="44">
+        <div class="brand__text">
+          <span class="brand__wordmark">M'HUNTERS</span>
+          <span class="brand__subtitle">1V1 CLAN LADDER</span>
+        </div>
+      </div>
+      <div class="masthead__right">
+        <div class="stats" role="status" aria-label="Ladder status">
+          <span class="stat" id="stat-active">— ACTIVE</span>
+          <span class="stat stat--games" id="stat-games">— GAMES</span>
+          <span class="stat stat--updated" id="stat-updated">Last Update —</span>
+        </div>
+        <nav class="mainnav" aria-label="Primary">
+          <a href="index.html" class="mainnav__link">STANDINGS</a>
+          <a href="games.html" class="mainnav__link">GAMES</a>
+          <a href="#" class="mainnav__link active" aria-current="page">MAPS</a>
+          <a href="actions.html" class="mainnav__link">ACTIONS</a>
+          <a href="rules.html" class="mainnav__link">RULES</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main class="maps-main">
+
+    <!-- ===================== MAP POOL ===================== -->
+    <section class="maps">
+      <div class="maps-head">
+        <h1 class="page-title">MAPS <span id="maps-count" class="title-count">(— IN POOL)</span></h1>
+      </div>
+
+      <!-- segmented control: POOL | LEADERBOARD (games.html gtabs lineage) -->
+      <div class="mtabs" role="tablist" aria-label="Maps views">
+        <button type="button" id="tab-cards" class="mtab" role="tab"
+                aria-selected="true" aria-controls="cards-view">POOL</button>
+        <button type="button" id="tab-table" class="mtab" role="tab"
+                aria-selected="false" aria-controls="table-view">LEADERBOARD</button>
+      </div>
+
+      <!-- ---------- CARDS ---------- -->
+      <div id="cards-view" role="tabpanel" aria-labelledby="tab-cards" tabindex="0">
+      <div id="maps-grid" class="maps-grid">
+        <!-- pre-data skeleton cards; js/maps.js replaces the grid contents -->
+        <div class="mcard-skel" aria-hidden="true">
+          <span class="sk" style="width:62%"></span>
+          <span class="sk sk--sub" style="width:44%"></span>
+          <span class="sk sk--sub" style="width:70%"></span>
+        </div>
+        <div class="mcard-skel" aria-hidden="true">
+          <span class="sk" style="width:48%"></span>
+          <span class="sk sk--sub" style="width:38%"></span>
+          <span class="sk sk--sub" style="width:64%"></span>
+        </div>
+        <div class="mcard-skel" aria-hidden="true">
+          <span class="sk" style="width:70%"></span>
+          <span class="sk sk--sub" style="width:42%"></span>
+          <span class="sk sk--sub" style="width:58%"></span>
+        </div>
+        <div class="mcard-skel" aria-hidden="true">
+          <span class="sk" style="width:54%"></span>
+          <span class="sk sk--sub" style="width:36%"></span>
+          <span class="sk sk--sub" style="width:66%"></span>
+        </div>
+        <div class="mcard-skel" aria-hidden="true">
+          <span class="sk" style="width:66%"></span>
+          <span class="sk sk--sub" style="width:46%"></span>
+          <span class="sk sk--sub" style="width:60%"></span>
+        </div>
+        <div class="mcard-skel" aria-hidden="true">
+          <span class="sk" style="width:58%"></span>
+          <span class="sk sk--sub" style="width:40%"></span>
+          <span class="sk sk--sub" style="width:72%"></span>
+        </div>
+      </div>
+      </div>
+
+      <!-- ---------- TABLE ---------- -->
+      <div id="table-view" class="panel" role="tabpanel" aria-labelledby="tab-table" tabindex="0" hidden>
+        <div class="table-wrap">
+          <table class="standings-table maps-table">
+            <thead>
+              <tr>
+                <th class="c-map" scope="col" data-sort="map" title="Sort by map name">MAP</th>
+                <th class="c-games" scope="col" data-sort="games" title="Sort by games hosted">GAMES</th>
+                <th class="c-top" scope="col" data-sort="top" title="Sort by top player map rating">TOP PLAYER</th>
+                <th class="c-first" scope="col" data-sort="first" title="Sort by first played">FIRST PLAYED</th>
+                <th class="c-turns" scope="col" data-sort="turns" title="Sort by average turns">AVG TURNS</th>
+              </tr>
+            </thead>
+            <tbody id="maps-table-body">
+              <!-- pre-data skeleton; js/maps.js replaces the tbody contents -->
+              <tr class="skeleton" aria-hidden="true">
+                <td class="c-map"><span class="sk" style="width:140px"></span></td>
+                <td class="c-games"><span class="sk" style="width:34px"></span></td>
+                <td class="c-top"><span class="sk" style="width:110px"></span></td>
+                <td class="c-first"><span class="sk" style="width:80px"></span></td>
+                <td class="c-turns"><span class="sk" style="width:30px"></span></td>
+              </tr>
+              <tr class="skeleton" aria-hidden="true">
+                <td class="c-map"><span class="sk" style="width:110px"></span></td>
+                <td class="c-games"><span class="sk" style="width:34px"></span></td>
+                <td class="c-top"><span class="sk" style="width:90px"></span></td>
+                <td class="c-first"><span class="sk" style="width:80px"></span></td>
+                <td class="c-turns"><span class="sk" style="width:30px"></span></td>
+              </tr>
+              <tr class="skeleton" aria-hidden="true">
+                <td class="c-map"><span class="sk" style="width:160px"></span></td>
+                <td class="c-games"><span class="sk" style="width:34px"></span></td>
+                <td class="c-top"><span class="sk" style="width:120px"></span></td>
+                <td class="c-first"><span class="sk" style="width:80px"></span></td>
+                <td class="c-turns"><span class="sk" style="width:30px"></span></td>
+              </tr>
+              <tr class="skeleton" aria-hidden="true">
+                <td class="c-map"><span class="sk" style="width:120px"></span></td>
+                <td class="c-games"><span class="sk" style="width:34px"></span></td>
+                <td class="c-top"><span class="sk" style="width:100px"></span></td>
+                <td class="c-first"><span class="sk" style="width:80px"></span></td>
+                <td class="c-turns"><span class="sk" style="width:30px"></span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div id="maps-error" class="load-error" hidden>LADDER DATA UNREACHABLE — <a href="">RETRY</a></div>
+    </section>
+
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="site-footer">
+    <p class="colophon">M'HUNTERS · WARZONE CLAN 141</p>
+  </footer>
+
+  <!-- ===================== MOBILE TAB BAR ===================== -->
+  <nav class="tabbar" aria-label="Primary mobile">
+    <a href="index.html" class="tab">
+      <span class="tab__glyph" aria-hidden="true">▤</span>
+      <span class="tab__label">STANDINGS</span>
+    </a>
+    <a href="games.html" class="tab">
+      <span class="tab__glyph" aria-hidden="true">⚔</span>
+      <span class="tab__label">GAMES</span>
+    </a>
+    <a href="#" class="tab active" aria-current="page">
+      <span class="tab__glyph" aria-hidden="true">◈</span>
+      <span class="tab__label">MAPS</span>
+    </a>
+    <a href="actions.html" class="tab">
+      <span class="tab__glyph" aria-hidden="true">⚙</span>
+      <span class="tab__label">ACTIONS</span>
+    </a>
+    <a href="rules.html" class="tab">
+      <span class="tab__glyph" aria-hidden="true">§</span>
+      <span class="tab__label">RULES</span>
+    </a>
+  </nav>
+
+  <script src="js/derive.js"></script>
+  <script src="js/insignia.js"></script>
+  <script src="js/maps.js"></script>
+</body>
+</html>

@@ -1,0 +1,948 @@
+/* ============================================================
+   M'HUNTERS CLAN LADDER — PLAYER PROFILE styles (track B)
+   Loaded AFTER css/styles.css; reuses its custom properties,
+   .panel / .toolbar / .page-title / .sk / .table-wrap patterns.
+   Never edits styles.css — everything profile-specific lives here.
+   ============================================================ */
+
+/* ----------------------------- layout ----------------------------- */
+/* main.profile-layout inherits the base `main` column from styles.css */
+.profile-layout { gap: 16px; }
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+/* back link — mono, red hover */
+.backlink {
+  align-self: flex-start;
+  font-family: var(--font-mono);
+  font-weight: 600;
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  color: var(--muted);
+  transition: color var(--speed) ease;
+}
+.backlink:hover { color: var(--red); }
+
+/* error state classes (set on #profile-root by profile.js) hide the sections */
+#profile-root.is-error > :not(#profile-error):not(.backlink),
+#profile-root.error > :not(#profile-error):not(.backlink),
+#profile-root.not-found > :not(#profile-error):not(.backlink) { display: none; }
+
+/* ----------------------------- hero ----------------------------- */
+#hero {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 22px 20px 16px;
+}
+
+#hero-insignia {
+  flex: none;
+  width: 72px;
+  height: 72px;
+}
+#hero-insignia svg { display: block; width: 100%; height: 100%; }
+
+/* the hero military insignia NEVER animates — no glint, no fresh-honor
+   pulse. Guard against any pulse class leaking in from shared code. */
+#hero-insignia svg { animation: none !important; }
+
+.hero__id { min-width: 0; flex: 1; }
+
+#hero-name {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 34px;
+  letter-spacing: 0.03em;
+  line-height: 1.02;
+  color: var(--white);
+  overflow-wrap: anywhere;
+}
+
+.hero__rankline {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 7px;
+}
+
+#hero-rank {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 15px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--silver);
+}
+
+/* league badge — opaque metallic plate, same metal as the feed's league
+   banners. profile.js adds the global .lg-<key> class (styles.css) so the
+   --lg-a/--lg-b/--lg-c/--lg-t custom properties resolve here. */
+#hero-league {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--lg-t, var(--silver));
+  padding: 3px 10px;
+  border: 1px solid var(--lg-c, var(--line));
+  border-radius: 3px;
+  background: linear-gradient(100deg,
+    var(--lg-a, #565A61) 0%,
+    var(--lg-b, #4A4E55) 48%,
+    var(--lg-c, #34383E) 100%);
+}
+#hero-league:empty { display: none; }
+
+/* obsidian keeps its signature red rim */
+#hero-league.lg-obsidian { border-color: #D22730; }
+
+#hero-meta {
+  margin-top: 9px;
+  font-family: var(--font-mono);
+  font-weight: 600;
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  color: var(--dim);
+  text-transform: uppercase;
+}
+
+/* ----------------------------- progress bars ----------------------------- */
+.hero-progress {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px 24px;
+  padding: 4px 20px 20px;
+}
+
+.prog { min-width: 0; }
+
+.prog__label {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 10px;
+  min-height: 14px;
+  margin-bottom: 7px;
+  font-family: var(--font-mono);
+  font-weight: 600;
+  font-size: 10px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--dim);
+}
+.prog__label strong,
+.prog__label .strong { color: var(--silver); font-weight: 600; }
+
+.prog__track {
+  height: 6px;
+  border: 1px solid var(--line);
+  border-radius: 3px;
+  background: #101114;
+  overflow: hidden;
+}
+
+.prog__fill {
+  height: 100%;
+  width: 0%;
+  border-radius: 2px;
+  background: var(--silver); /* league fill recolored inline by profile.js */
+  transition: width 600ms ease;
+}
+#prog-rank .prog__fill { background: var(--red); }
+
+/* ----------------------------- career strip ----------------------------- */
+.career-strip {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+}
+
+#career-strip > * {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 6px;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 13px 15px 12px;
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.03),
+    0 6px 18px rgba(0, 0, 0, 0.25);
+}
+
+/* tile = mono label + Barlow value, in either DOM order: class hooks
+   (.tile-label/.tile-value, .k/.v) always win over the :where()-demoted
+   structural fallbacks (first child = label, last = value). */
+#career-strip > * > :where(:first-child),
+#career-strip .k,
+#career-strip .tile__label,
+#career-strip .tile-label {
+  display: block;
+  font-family: var(--font-mono);
+  font-weight: 600;
+  font-size: 9.5px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--dim);
+}
+#career-strip > * > :where(:last-child),
+#career-strip .v,
+#career-strip .tile__value,
+#career-strip .tile-value {
+  display: block;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 1.05;
+  color: var(--white);
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+#career-strip .v small,
+#career-strip .tile-value small {
+  font-family: var(--font-mono);
+  font-weight: 500;
+  font-size: 10px;
+  letter-spacing: 0.08em;
+  color: var(--dim);
+}
+/* streak accents inside a tile value */
+#career-strip .w { color: var(--red); }
+#career-strip .l { color: var(--steel-down); }
+
+/* skeleton tiles: keep the label/value shape */
+#career-strip > .skeleton .sk { display: block; }
+#career-strip > .skeleton .sk + .sk { margin-top: 9px; }
+#career-strip:has(> :not(.skeleton)) > .skeleton { display: none; }
+
+/* ----------------------------- rating chart ----------------------------- */
+#rating-chart {
+  padding: 14px 16px 16px;
+  min-height: 240px;
+}
+#rating-chart svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+#rating-chart .sk--chart {
+  display: block;
+  width: 100%;
+  height: 208px;
+  border-radius: 6px;
+}
+#rating-chart:has(svg) .sk--chart { display: none; }
+
+/* small print under the chart (axis note / band legend) */
+#rating-chart .chart-note,
+#rating-chart figcaption {
+  margin-top: 8px;
+  font-family: var(--font-mono);
+  font-size: 9.5px;
+  letter-spacing: 0.1em;
+  color: var(--dim);
+}
+
+/* ----------------------------- records ----------------------------- */
+/* two streak cards + a double-width TOP VICTORIES card */
+.records {
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr;
+  gap: 12px;
+  padding: 14px 16px 16px;
+}
+
+#records > * {
+  min-width: 0;
+  background: var(--card);
+  border: 1px solid var(--line-soft);
+  border-radius: 6px;
+  padding: 12px 14px 13px;
+}
+
+#records > * > :where(:first-child),
+#records .k,
+#records .rec-label {
+  display: block;
+  font-family: var(--font-mono);
+  font-weight: 600;
+  font-size: 9.5px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--dim);
+  margin-bottom: 8px;
+}
+
+#records .v,
+#records .rec-value,
+#records > * strong {
+  display: block;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 1.1;
+  color: var(--white);
+  font-variant-numeric: tabular-nums;
+}
+
+#records .rec-sub,
+#records .sub,
+#records time {
+  display: block;
+  margin-top: 4px;
+  font-family: var(--font-mono);
+  font-weight: 500;
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--dim);
+}
+
+/* top-victories list inside a record card */
+#records ol,
+#records ul { list-style: none; margin-top: 2px; }
+#records li {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 4px 0;
+  font-family: var(--font-mono);
+  font-weight: 500;
+  font-size: 11.5px;
+  color: var(--silver);
+  border-bottom: 1px solid var(--line-soft);
+}
+#records li:last-child { border-bottom: 0; }
+#records li .num,
+#records li b { color: var(--white); font-weight: 600; font-variant-numeric: tabular-nums; }
+#records li a { color: var(--silver); }
+#records li a:hover { color: var(--white); }
+
+/* top-victories rows (.rec-vic): one shared grid template — the fixed
+   tracks (rating/date/arrow) are constant and the fr tracks resolve
+   against the same card width, so columns align across every row:
+   OPPONENT · RATING · MAP · DATE · ↗ */
+#records .rec-vic {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) 4ch minmax(0, 1fr) 11ch 1.1em;
+  gap: 0 10px;
+  align-items: baseline;
+  padding: 4px 0;
+  font-family: var(--font-mono);
+  font-weight: 500;
+  font-size: 11.5px;
+  color: var(--silver);
+  border-bottom: 1px solid var(--line-soft);
+  transition: color var(--speed) ease;
+}
+#records .rec-vic:last-child { border-bottom: 0; }
+#records .rec-vic:hover { color: var(--white); }
+#records .rec-vic b,
+#records .rec-vic .num { color: var(--white); font-weight: 600; font-variant-numeric: tabular-nums; }
+#records .rec-vic .v-name {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+#records .rec-vic .v-rating {
+  text-align: right;
+  color: var(--white);
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+}
+#records .rec-vic .v-map {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: var(--dim);
+}
+#records .rec-vic .v-date {
+  text-align: right;
+  white-space: nowrap;
+  color: var(--dim);
+}
+#records .rec-vic .v-go { text-align: right; }
+
+/* streak / result accents inside record values */
+#records .w { color: var(--red); }
+#records .l { color: var(--steel-down); }
+
+/* ----------------------------- opponents · maps ----------------------------- */
+.duo {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 16px;
+  align-items: start;
+}
+@media (min-width: 900px) {
+  .duo { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .xp-list { max-height: 560px; overflow-y: auto; }
+}
+
+.xp-list { padding: 2px 0 4px; }
+
+/* click row: name · record · games · chevron */
+.xp-row {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 16px;
+  text-align: left;
+  border-bottom: 1px solid var(--line-soft);
+  font-family: var(--font-mono);
+  font-weight: 500;
+  font-size: 12px;
+  color: var(--muted);
+  cursor: pointer;
+  transition: background-color var(--speed) ease;
+}
+.xp-row:hover { background: #1B1D22; }
+.xp-row:focus-visible { outline: 2px solid var(--red); outline-offset: -2px; }
+
+.xp-row > :first-child,
+.xp-row .xp-name {
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 15px;
+  letter-spacing: 0.02em;
+  color: var(--white);
+}
+
+.xp-row .xp-record,
+.xp-row .xp-rec {
+  flex: none;
+  color: var(--silver);
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+.xp-row .xp-games,
+.xp-row .xp-count {
+  flex: none;
+  color: var(--dim);
+  font-size: 10.5px;
+  letter-spacing: 0.08em;
+  white-space: nowrap;
+}
+.xp-row .chevron,
+.xp-row .xp-chev {
+  flex: none;
+  color: var(--dim);
+  font-size: 12px;
+  line-height: 1;
+  transition: transform 200ms ease;
+}
+.xp-row[aria-expanded="true"] { background: #1B1D22; }
+.xp-row[aria-expanded="true"] .chevron,
+.xp-row[aria-expanded="true"] .xp-chev { transform: rotate(180deg); }
+
+/* expanded detail: darker inset area */
+.xp-detail {
+  padding: 12px 16px 13px;
+  background: #121316;
+  border-bottom: 1px solid var(--line-soft);
+  box-shadow: inset 0 6px 10px -8px rgba(0, 0, 0, 0.7);
+  font-family: var(--font-mono);
+  font-weight: 500;
+  font-size: 11.5px;
+  line-height: 1.6;
+  color: var(--muted);
+}
+.xp-detail .xp-stats,
+.xp-detail p { margin-bottom: 6px; }
+.xp-detail .xp-stats:last-child,
+.xp-detail p:last-child { margin-bottom: 0; }
+.xp-detail strong,
+.xp-detail .strong { color: var(--white); font-weight: 600; }
+.xp-detail .dim { color: var(--dim); }
+.xp-detail a:not(.plink) { color: var(--silver); }
+.xp-detail a:not(.plink):hover { color: var(--white); }
+
+/* mini game list inside the detail */
+.mini-log { margin-top: 4px; }
+.mini-log > * {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  padding: 5px 0;
+  border-bottom: 1px solid var(--line-soft);
+  font-family: var(--font-mono);
+  font-weight: 500;
+  font-size: 11px;
+  color: var(--silver);
+  text-decoration: none;
+}
+.mini-log > *:last-child { border-bottom: 0; }
+.mini-log time,
+.mini-log .ml-date {
+  flex: none;
+  color: var(--dim);
+  font-size: 10px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+.mini-log .w,
+.mini-log .win,
+.mini-log .up { color: var(--red); font-weight: 600; }
+.mini-log .l,
+.mini-log .loss,
+.mini-log .down { color: var(--steel-down); font-weight: 600; }
+.mini-log a:not(.plink) { color: var(--silver); }
+.mini-log a:not(.plink):hover { color: var(--white); }
+
+/* ----------------------------- timeline (promotion & league history) ----------------------------- */
+.timeline { padding: 6px 16px 10px; }
+
+.tl-entry {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  padding: 9px 0;
+  border-bottom: 1px solid var(--line-soft);
+  font-family: var(--font-mono);
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.55;
+  color: var(--silver);
+}
+.tl-entry:last-child { border-bottom: 0; }
+
+.tl-entry time,
+.tl-entry .tl-date {
+  flex: none;
+  width: 86px;
+  color: var(--dim);
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+/* colored marker: ★ rank (red) · ▲ up (silver) · ▼ down (steel) */
+.tl-entry .tl-mark {
+  flex: none;
+  width: 12px;
+  text-align: center;
+  font-size: 10px;
+  color: var(--silver);
+}
+.tl-entry .tl-mark--rank,
+.tl-entry .tl-mark--promotion,
+.tl-entry .tl-mark.rank,
+.tl-entry .tl-mark.promotion { color: var(--red); }
+.tl-entry .tl-mark--up,
+.tl-entry .tl-mark--ascension,
+.tl-entry .tl-mark.up,
+.tl-entry .tl-mark.ascension { color: var(--silver); }
+.tl-entry .tl-mark--down,
+.tl-entry .tl-mark--demotion,
+.tl-entry .tl-mark--relegation,
+.tl-entry .tl-mark.down,
+.tl-entry .tl-mark.demotion,
+.tl-entry .tl-mark.relegation { color: #7E8B9B; }
+
+.tl-entry .tl-text { min-width: 0; }
+.tl-entry .tl-text strong,
+.tl-entry strong { color: var(--white); font-weight: 600; }
+
+/* small league color chip (background set inline by profile.js) */
+.tl-chip,
+.lg-chip {
+  display: inline-block;
+  flex: none;
+  width: 9px;
+  height: 9px;
+  border-radius: 2px;
+  margin-right: 5px;
+  vertical-align: baseline;
+  transform: translateY(0.5px);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  background: var(--line);
+}
+
+.timeline .tl-empty {
+  padding: 12px 0 14px;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  color: var(--dim);
+}
+
+/* ----------------------------- game log ----------------------------- */
+.gamelog-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+.gamelog-table th {
+  font-family: var(--font-mono);
+  font-weight: 600;
+  font-size: 10px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--dim);
+  text-align: left;
+  padding: 10px 10px;
+  border-bottom: 1px solid var(--line);
+  white-space: nowrap;
+}
+.gamelog-table th.c-gres,
+.gamelog-table th.c-gswing,
+.gamelog-table th.c-gturns { text-align: center; }
+.gamelog-table th.c-glink { width: 40px; }
+
+.gamelog-table td {
+  height: 42px;
+  padding: 0 10px;
+  vertical-align: middle;
+  border-bottom: 1px solid var(--line-soft);
+  white-space: nowrap;
+  font-family: var(--font-mono);
+  font-weight: 500;
+  font-size: 12px;
+  color: var(--muted);
+}
+.gamelog-table tbody tr:last-child td { border-bottom: 0; }
+.gamelog-table tbody tr { transition: background-color var(--speed) ease; }
+.gamelog-table tbody tr:hover { background-color: #1B1D22; }
+
+/* 1 DATE */
+.gamelog-table td:nth-child(1) {
+  width: 96px;
+  color: var(--dim);
+  font-size: 11px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  font-variant-numeric: tabular-nums;
+}
+/* 2 OPPONENT — flexible, truncates */
+.gamelog-table td:nth-child(2) {
+  max-width: 0;
+  width: 99%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 15px;
+  letter-spacing: 0.02em;
+  color: var(--white);
+}
+.gamelog-table td:nth-child(2) small,
+.gamelog-table td:nth-child(2) .sub,
+.gamelog-table td:nth-child(2) .o-rating {
+  font-family: var(--font-mono);
+  font-weight: 500;
+  font-size: 9.5px;
+  letter-spacing: 0.08em;
+  color: var(--dim);
+  margin-left: 6px;
+}
+/* 3 RESULT */
+.gamelog-table td:nth-child(3) {
+  width: 62px;
+  text-align: center;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+}
+/* 4 SWING */
+.gamelog-table td:nth-child(4) {
+  width: 64px;
+  text-align: center;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+}
+/* result / swing coloring: win = red, loss = cold steel */
+.gamelog-table .w,
+.gamelog-table .win,
+.gamelog-table .up { color: var(--red); }
+.gamelog-table .l,
+.gamelog-table .loss,
+.gamelog-table .down { color: var(--steel-down); }
+/* 5 MAP */
+.gamelog-table td:nth-child(5) {
+  max-width: 190px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 11px;
+  letter-spacing: 0.04em;
+}
+.gamelog-table .map-tag {
+  display: inline-block;
+  border: 1px solid var(--line);
+  border-radius: 3px;
+  padding: 1px 6px;
+  font-size: 10px;
+  letter-spacing: 0.06em;
+  color: var(--muted);
+  background: rgba(255, 255, 255, 0.02);
+}
+/* 6 TURNS */
+.gamelog-table td:nth-child(6) {
+  width: 58px;
+  text-align: center;
+  color: var(--dim);
+  font-variant-numeric: tabular-nums;
+}
+/* 7 game link */
+.gamelog-table td:nth-child(7) {
+  width: 40px;
+  text-align: right;
+}
+.gamelog-table td:nth-child(7) a {
+  display: inline-block;
+  padding: 4px 2px;
+  font-size: 12px;
+  color: var(--dim);
+  transition: color var(--speed) ease;
+}
+.gamelog-table td:nth-child(7) a:hover { color: var(--red); }
+
+#gamelog-body:has(tr:not(.skeleton)) tr.skeleton { display: none; }
+
+/* empty log message row */
+#gamelog-body .empty td {
+  height: auto;
+  padding: 18px 10px;
+  text-align: center;
+  color: var(--dim);
+  letter-spacing: 0.1em;
+  white-space: normal;
+}
+
+/* pager: ghost buttons + 'PAGE X OF Y' */
+#gamelog-pager {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 10px 14px;
+  border-top: 1px solid var(--line);
+}
+#gamelog-pager:empty { display: none; }
+
+#gamelog-pager button {
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  padding: 6px 14px;
+  background: transparent;
+  font-family: var(--font-mono);
+  font-weight: 600;
+  font-size: 10.5px;
+  letter-spacing: 0.12em;
+  color: var(--muted);
+  transition: color var(--speed) ease, border-color var(--speed) ease, background-color var(--speed) ease;
+}
+#gamelog-pager button:hover:not(:disabled),
+#gamelog-pager button:hover:not([disabled]) {
+  color: var(--white);
+  border-color: var(--red);
+  background: rgba(210, 39, 48, 0.08);
+}
+#gamelog-pager button:disabled,
+#gamelog-pager button[disabled] {
+  opacity: 0.35;
+  cursor: default;
+}
+
+#gamelog-pager span,
+#gamelog-pager .pager-label {
+  font-family: var(--font-mono);
+  font-weight: 600;
+  font-size: 10px;
+  letter-spacing: 0.16em;
+  color: var(--dim);
+  white-space: nowrap;
+}
+
+/* ----------------------------- reliability ----------------------------- */
+.reliability { padding: 4px 16px 10px; }
+
+#reliability > * {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 14px;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--line-soft);
+  font-family: var(--font-mono);
+  font-weight: 500;
+  font-size: 12px;
+  color: var(--silver);
+}
+#reliability > *:last-child { border-bottom: 0; }
+
+#reliability > * > :where(:first-child),
+#reliability .k,
+#reliability .rel-k,
+#reliability .kv-key {
+  font-weight: 600;
+  font-size: 10px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--dim);
+}
+#reliability > * > :where(:last-child),
+#reliability .v,
+#reliability .rel-v,
+#reliability .kv-val {
+  text-align: right;
+  color: var(--silver);
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+}
+#reliability .v small,
+#reliability .rel-v small,
+#reliability .kv-val small { color: var(--dim); font-weight: 500; }
+
+/* status accents */
+#reliability .st-active { color: var(--white); }
+#reliability .st-paused { color: var(--warn); }
+#reliability .st-inactive { color: var(--dim); }
+#reliability .warn { color: var(--warn); }
+
+/* ----------------------------- error state ----------------------------- */
+#profile-error {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.03),
+    0 10px 28px rgba(0, 0, 0, 0.35);
+  text-align: center;
+  padding: 72px 20px 64px;
+}
+#profile-error .err-msg {
+  font-family: var(--font-mono);
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--silver);
+  margin-bottom: 20px;
+}
+#profile-error .err-msg::before {
+  content: "—";
+  color: var(--red);
+  margin-right: 12px;
+}
+#profile-error .err-msg::after {
+  content: "—";
+  color: var(--red);
+  margin-left: 12px;
+}
+#profile-error .backlink { align-self: center; }
+
+/* ----------------------------- skeletons (hero / chart) ----------------------------- */
+.sk--shield {
+  display: block;
+  width: 72px;
+  height: 72px;
+  border-radius: 12px;
+}
+.sk--name { width: 220px; height: 24px; max-width: 60vw; }
+.sk--rank { width: 120px; height: 11px; }
+.sk--meta { width: 160px; height: 10px; }
+
+#hero-insignia:has(svg) .sk--shield { display: none; }
+
+/* ----------------------------- responsive < 900px ----------------------------- */
+@media (max-width: 899px) {
+  .profile-layout { gap: 13px; }
+
+  #hero { gap: 14px; padding: 16px 14px 12px; }
+  #hero-insignia { width: 56px; height: 56px; }
+  .sk--shield { width: 56px; height: 56px; border-radius: 9px; }
+  #hero-name { font-size: 26px; }
+  #hero-rank { font-size: 13.5px; letter-spacing: 0.12em; }
+  #hero-meta { font-size: 10px; margin-top: 7px; }
+
+  .hero-progress { padding: 2px 14px 16px; gap: 12px 16px; }
+
+  /* tiles 2×2 */
+  .career-strip { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+  #career-strip > * { padding: 11px 13px 10px; }
+  #career-strip > * > :where(:last-child),
+  #career-strip .v,
+  #career-strip .tile__value,
+  #career-strip .tile-value { font-size: 19px; }
+
+  #rating-chart { padding: 12px 12px 14px; min-height: 200px; }
+  #rating-chart .sk--chart { height: 170px; }
+
+  .records { grid-template-columns: minmax(0, 1fr); gap: 10px; padding: 12px 12px 14px; }
+
+  .xp-row { padding: 9px 12px; gap: 10px; }
+  .xp-detail { padding: 10px 12px 11px; }
+
+  .timeline { padding: 4px 12px 8px; }
+  .tl-entry time,
+  .tl-entry .tl-date { width: 72px; font-size: 10px; }
+
+  /* tightened game log */
+  .gamelog-table th { padding: 9px 6px; font-size: 9px; letter-spacing: 0.1em; }
+  .gamelog-table td { padding: 0 6px; height: 40px; font-size: 11px; }
+  .gamelog-table td:nth-child(1) { width: 74px; font-size: 10px; }
+  .gamelog-table td:nth-child(2) { font-size: 14px; }
+  .gamelog-table td:nth-child(3) { width: 40px; }
+  .gamelog-table td:nth-child(4) { width: 46px; }
+  .gamelog-table td:nth-child(5) { max-width: 120px; font-size: 10px; }
+  .gamelog-table td:nth-child(6) { width: 44px; }
+  .gamelog-table td:nth-child(7) { width: 30px; }
+
+  #gamelog-pager { padding: 9px 10px; }
+  #gamelog-pager button { padding: 6px 10px; font-size: 10px; }
+
+  .reliability { padding: 2px 12px 8px; }
+
+  #profile-error { padding: 56px 16px 48px; }
+  #profile-error .err-msg { font-size: 13.5px; letter-spacing: 0.18em; }
+}
+
+/* narrow: progress bars stack */
+@media (max-width: 639px) {
+  .hero-progress { grid-template-columns: minmax(0, 1fr); }
+}
+
+/* very narrow: drop the TURNS column (6th), tighten MAP */
+@media (max-width: 519px) {
+  .gamelog-table th:nth-child(6),
+  .gamelog-table td:nth-child(6) { display: none; }
+  .gamelog-table td:nth-child(5) { max-width: 92px; }
+}
+
+/* ----------------------------- reduced motion ----------------------------- */
+/* styles.css already globally disables animation/transition under
+   prefers-reduced-motion; these guards keep profile.css self-sufficient. */
+@media (prefers-reduced-motion: reduce) {
+  #hero-insignia svg { animation: none; }
+  .prog__fill { transition: none; }
+}
