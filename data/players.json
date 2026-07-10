@@ -17,11 +17,11 @@
   },
   "28867016": {
     "name": "Swisster",
-    "elo": 1151,
+    "elo": 1136,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "71155120841",
-    "last_assigned_at": "2026-07-09T17:55:05.752Z"
+    "last_opponent": "84143567121",
+    "last_assigned_at": "2026-07-10T10:52:01.927Z"
   },
   "81598466": {
     "name": "Tim 🍌",
@@ -29,7 +29,7 @@
     "game_cap": 2,
     "missed_games": 0,
     "last_opponent": "9313400553",
-    "last_assigned_at": "2026-07-10T02:56:39.134Z"
+    "last_assigned_at": "2026-07-10T10:52:01.927Z"
   },
   "266160220": {
     "name": "(CZ-SK)eXitus",
@@ -41,11 +41,11 @@
   },
   "1382545505": {
     "name": "Ree",
-    "elo": 1041,
+    "elo": 1050,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-07-09T14:56:04.222Z",
-    "last_opponent": "88110265403"
+    "last_assigned_at": "2026-07-10T10:52:03.209Z",
+    "last_opponent": "8222729424"
   },
   "1822261234": {
     "name": "fifi",
@@ -101,7 +101,7 @@
     "game_cap": 2,
     "missed_games": 0,
     "last_opponent": "81598466",
-    "last_assigned_at": "2026-07-09T02:53:47.833Z"
+    "last_assigned_at": "2026-07-10T10:52:03.209Z"
   },
   "3737155555": {
     "name": "Jumpshott",
@@ -145,11 +145,11 @@
   },
   "84143567121": {
     "name": "Poldi",
-    "elo": 1247,
+    "elo": 1262,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "9780712014",
-    "last_assigned_at": "2026-07-09T17:55:05.204Z"
+    "last_opponent": "28867016",
+    "last_assigned_at": "2026-07-10T10:52:02.645Z"
   },
   "23154545458": {
     "name": "Light",
@@ -585,11 +585,11 @@
   },
   "8222729424": {
     "name": "Al AssAff",
-    "elo": 826,
+    "elo": 817,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-07-08T10:16:22.768Z",
-    "last_opponent": "79105823914"
+    "last_assigned_at": "2026-07-10T10:52:02.645Z",
+    "last_opponent": "1382545505"
   },
   "88117806994": {
     "name": "RameurA",
