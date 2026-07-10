@@ -73,11 +73,11 @@
   },
   "3346775331": {
     "name": "Gatsu12",
-    "elo": 1309,
+    "elo": 1311,
     "game_cap": 3,
     "missed_games": 0,
-    "last_opponent": "9482920905",
-    "last_assigned_at": "2026-07-10T17:47:03.476Z"
+    "last_opponent": "84143567121",
+    "last_assigned_at": "2026-07-10T19:25:38.739Z"
   },
   "3428471447": {
     "name": "AyanM",
@@ -97,11 +97,11 @@
   },
   "3631391841": {
     "name": "BlackBart",
-    "elo": 963,
+    "elo": 959,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "9313400553",
-    "last_assigned_at": "2026-07-10T14:24:25.051Z"
+    "last_opponent": "88110265403",
+    "last_assigned_at": "2026-07-10T19:25:38.147Z"
   },
   "3737155555": {
     "name": "Jumpshott",
@@ -113,11 +113,11 @@
   },
   "4155523061": {
     "name": "AGEHNT SMITH",
-    "elo": 802,
+    "elo": 800,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-07-09T14:56:04.222Z",
-    "last_opponent": "71155120841"
+    "last_assigned_at": "2026-07-10T19:25:39.326Z",
+    "last_opponent": "3346775331"
   },
   "4180490094": {
     "name": "Woololo",
@@ -137,19 +137,19 @@
   },
   "88110265403": {
     "name": "Crouton",
-    "elo": 1362,
+    "elo": 1366,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "71155120841",
-    "last_assigned_at": "2026-07-10T14:24:25.051Z"
+    "last_opponent": "3631391841",
+    "last_assigned_at": "2026-07-10T19:25:38.739Z"
   },
   "84143567121": {
     "name": "Poldi",
     "elo": 1269,
     "game_cap": 2,
-    "missed_games": 0,
-    "last_opponent": "5917719105",
-    "last_assigned_at": "2026-07-10T17:47:03.476Z"
+    "missed_games": 1,
+    "last_opponent": "3346775331",
+    "last_assigned_at": "2026-07-10T19:25:39.326Z"
   },
   "23154545458": {
     "name": "Light",
