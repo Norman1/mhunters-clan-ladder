@@ -677,7 +677,7 @@
   "5917719105": {
     "name": "Norman",
     "elo": 1000,
-    "game_cap": 2,
+    "game_cap": 0,
     "missed_games": 0,
     "in_clan": true,
     "last_assigned_at": "2026-07-09T17:55:06.833Z"
