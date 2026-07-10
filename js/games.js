@@ -296,7 +296,7 @@
     filtered: [],
     rendered: 0,        // rows of state.filtered already in the DOM
     lastIso: null,      // date of the last rendered row (month markers)
-    tab: 'results',
+    tab: 'live',
     io: null,
     ioFallback: false,  // sentinel acts as a LOAD MORE button
     filterTimer: null,
@@ -725,7 +725,7 @@
 
   function writeUrl() {
     var params = new URLSearchParams();
-    if (state.tab === 'live') params.set('tab', 'live');
+    if (state.tab === 'results') params.set('tab', 'results');
     var f = currentFilters();
     var p = textToParam(f.player, state.rosterList);
     if (p) params.set('p', p);
@@ -919,7 +919,7 @@
     wireSentinel();
     wireRowLinks($('results-list'));
     wireRowLinks($('live-list'));
-    setTab(readParams().get('tab') === 'live' ? 'live' : 'results', false);
+    setTab(readParams().get('tab') === 'results' ? 'results' : 'live', false);
     renderSkeleton();
 
     if (!window.LadderData || typeof window.LadderData.load !== 'function') {

@@ -54,13 +54,13 @@
       <!-- segmented control -->
       <div class="gtabs" role="tablist" aria-label="Games views">
         <button type="button" id="tab-live" class="gtab" role="tab"
-                aria-selected="false" aria-controls="live-view">LIVE</button>
+                aria-selected="true" aria-controls="live-view">LIVE</button>
         <button type="button" id="tab-results" class="gtab" role="tab"
-                aria-selected="true" aria-controls="results-view">RESULTS</button>
+                aria-selected="false" aria-controls="results-view">RESULTS</button>
       </div>
 
       <!-- ---------- LIVE ---------- -->
-      <div id="live-view" role="tabpanel" aria-labelledby="tab-live" tabindex="0" hidden>
+      <div id="live-view" role="tabpanel" aria-labelledby="tab-live" tabindex="0">
         <div id="live-list">
           <!-- pre-data skeleton; js/games.js replaces the list contents -->
           <div class="grow-skel" aria-hidden="true">
@@ -80,7 +80,7 @@
       </div>
 
       <!-- ---------- RESULTS ---------- -->
-      <div id="results-view" role="tabpanel" aria-labelledby="tab-results" tabindex="0">
+      <div id="results-view" role="tabpanel" aria-labelledby="tab-results" tabindex="0" hidden>
 
         <div id="results-toolbar">
           <input type="text" id="filter-player" list="player-options"
