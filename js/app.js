@@ -3,6 +3,7 @@
    Plain vanilla script (no modules). Depends on:
      window.LadderData (js/derive.js)  — LadderData.load()
      window.Insignia   (js/insignia.js) — Insignia.svg(rankIndex, leagueKey, sizePx)
+     window.FeedItems  (js/feeditems.js) — shared feed item renderers
    DOM contract (provided by index.html / track C):
      #standings-body #reserve-bar #reserve-count #reserve-section
      #reserve-body #gazette-list #search-input
@@ -74,24 +75,8 @@
     return Math.round((12 + ((c - 1) / 29) * 24) * 10) / 10;
   }
 
-  /* ISO date → 'JUL 9' (parses the date part directly; no TZ drift) */
-  function formatGazetteDate(iso) {
-    var m = /^(\d{4})-(\d{2})-(\d{2})/.exec(String(iso || ''));
-    if (m) {
-      var mo = parseInt(m[2], 10);
-      if (mo >= 1 && mo <= 12) return MONTHS[mo - 1] + ' ' + parseInt(m[3], 10);
-    }
-    var d = new Date(iso);
-    if (!isNaN(d.getTime())) return MONTHS[d.getMonth()] + ' ' + d.getDate();
-    return '';
-  }
-
-  function gazetteKindMarker(kind) {
-    if (kind === 'promotion') return '★';  // ★
-    if (kind === 'ascension') return '▲';  // ▲
-    if (kind === 'demotion') return '▼';   // ▼
-    return '·';                            // ·
-  }
+  /* (formatGazetteDate / gazetteKindMarker moved to js/feeditems.js —
+     consumed here via window.FeedItems) */
 
   function rankProgressText(p) {
     if (!p || p.winsToNextRank == null) return 'HIGHEST RANK PENDING';
@@ -163,14 +148,6 @@
     eq(streakFontSize(45), 36, 'streak size caps beyond 30');
     eq(streakFontSize(8), 17.8, 'streak size scales linearly (W8 → 17.8px)');
     eq(streakFontSize(0), null, 'no streak → no size');
-
-    eq(formatGazetteDate('2026-07-09'), 'JUL 9', 'gazette date plain');
-    eq(formatGazetteDate('2025-12-28T14:03:00Z'), 'DEC 28', 'gazette date with time');
-    eq(formatGazetteDate('junk'), '', 'gazette date junk → empty');
-
-    eq(gazetteKindMarker('promotion'), '★', 'promotion marker');
-    eq(gazetteKindMarker('ascension'), '▲', 'ascension marker');
-    eq(gazetteKindMarker('demotion'), '▼', 'demotion marker');
 
     eq(rankProgressText({ winsToNextRank: 10, rankIndex: 5 }),
       '10 WINS TO STAFF SERGEANT', 'rank progress plural');
@@ -636,207 +613,36 @@
     return isNaN(t) ? 0 : t;
   }
 
-  /* time since the event: '6h' under a day; older entries carry no timestamp */
-  function feedTime(iso) {
-    var t = tsOf(iso);
-    if (!t) return '';
-    var diff = Date.now() - t;
-    var mins = Math.floor(diff / 60000);
-    if (mins < 60) return Math.max(1, mins) + 'm';
-    var hours = Math.floor(mins / 60);
-    return hours < 24 ? hours + 'h' : '';
+  /* shared renderer context — js/feeditems.js contract. rosterIds reuses
+     state.leagueById, which covers every active + reserve id. */
+  function feedCtx() {
+    return {
+      posById: state.posById,
+      leagueById: state.leagueById,
+      honorTips: state.honorTips,
+      rosterIds: state.leagueById,
+      doc: doc
+    };
   }
 
-  function feedTimeSpan(iso) {
-    var text = feedTime(iso);
-    if (!text) return doc.createDocumentFragment();
-    var span = doc.createElement('span');
-    span.className = 'feed-time';
-    span.textContent = text;
-    return span;
-  }
-
-  function nameSpan(name, cls) {
-    var span = doc.createElement('span');
-    span.className = cls;
-    span.textContent = name;
-    return span;
-  }
-
-  /* current roster check — state.leagueById covers every active + reserve id */
-  function isRosterId(id) {
-    return id != null && state.leagueById[String(id)] !== undefined;
-  }
-
-  /* player-name node: <a.plink> to the profile when the id resolves to a
-     current roster player; plain span otherwise ('Former member' etc.) */
+  /* player-name node (peek live lines etc.) — delegates to the shared builder */
   function nameLink(name, cls, id) {
-    if (!isRosterId(id)) return nameSpan(name, cls);
-    var a = doc.createElement('a');
-    a.className = cls ? 'plink ' + cls : 'plink';
-    a.href = 'profile.html?p=' + encodeURIComponent(id);
-    a.textContent = name;
-    a.addEventListener('click', function (e) { e.stopPropagation(); });
-    return a;
-  }
-
-  /* result rows open the game on warzone.com. The row is a div[role=link]
-     (not an anchor: the names inside are real profile links and nested
-     anchors are invalid HTML) — click / Enter opens the game. */
-  function buildResultItem(r) {
-    var url = 'https://www.warzone.com/MultiPlayer?GameID=' + encodeURIComponent(r.gameId || '');
-    var item = doc.createElement('div');
-    item.className = 'feed-item feed-item--result';
-    item.setAttribute('role', 'link');
-    item.tabIndex = 0;
-    item.title = 'View this game on warzone.com';
-    item.addEventListener('click', function () {
-      window.open(url, '_blank', 'noopener');
-    });
-    item.addEventListener('keydown', function (e) {
-      if (e.key !== 'Enter') return;
-      if (e.target && e.target.closest && e.target.closest('a')) return;
-      e.preventDefault();
-      window.open(url, '_blank', 'noopener');
-    });
-
-    var body = doc.createElement('div');
-    body.className = 'feed-result';
-
-    var line = doc.createElement('div');
-    line.className = 'feed-result__line';
-    line.appendChild(nameLink(r.winner, 'fr-winner', r.winnerId));
-    var wch = doc.createElement('span');
-    wch.className = 'fr-up';
-    wch.textContent = ' +' + r.change + ' ';
-    line.appendChild(wch);
-    var mid = doc.createElement('span');
-    mid.className = 'fr-mid';
-    mid.textContent = 'defeats ';
-    line.appendChild(mid);
-    line.appendChild(nameLink(r.loser, 'fr-loser', r.loserId));
-    var lch = doc.createElement('span');
-    lch.className = 'fr-down';
-    lch.textContent = ' −' + r.change;
-    line.appendChild(lch);
-    body.appendChild(line);
-
-    var sub = doc.createElement('div');
-    sub.className = 'feed-result__sub';
-    var mapTag = doc.createElement('span');
-    mapTag.className = 'fr-map';
-    mapTag.textContent = r.map;
-    sub.appendChild(mapTag);
-    if (r.turns != null) {
-      sub.appendChild(doc.createTextNode(' ' + r.turns + ' Turns'));
-    }
-    var go = doc.createElement('span');
-    go.className = 'fr-go';
-    go.textContent = '↗';
-    go.setAttribute('aria-hidden', 'true');
-    sub.appendChild(go);
-    body.appendChild(sub);
-
-    item.appendChild(body);
-    item.appendChild(feedTimeSpan(r.date));
-    return item;
-  }
-
-  /* league changes: ceremony card — name + PROMOTED TO / RELEGATED TO, the new
-     league big and metallic beneath, card washed in the league's metal.
-     rank promotions: interim compact style (distinct treatment being designed). */
-  function buildHonorItem(g) {
-    var div = doc.createElement('div');
-    div.title = g.text || '';
-
-    if (g.kind === 'ascension' || g.kind === 'demotion') {
-      div.className = 'feed-item feed-item--honor feed-item--league lg-' + (g.leagueKey || 'steel');
-
-      var body = doc.createElement('div');
-      body.className = 'fh-body';
-
-      var line = doc.createElement('div');
-      line.className = 'fh-line';
-      var mark = doc.createElement('span');
-      mark.className = 'fh-mark';
-      mark.textContent = g.kind === 'ascension' ? '▲' : '▼';
-      line.appendChild(mark);
-      line.appendChild(nameLink(g.playerName, 'fh-name', g.playerId));
-      var action = doc.createElement('span');
-      action.className = 'fh-action';
-      action.textContent = g.kind === 'ascension' ? 'PROMOTED TO' : 'RELEGATED TO';
-      line.appendChild(action);
-      body.appendChild(line);
-
-      var word = doc.createElement('div');
-      word.className = 'fh-league-word';
-      word.textContent = (g.leagueName || '').toUpperCase() + ' LEAGUE';
-      body.appendChild(word);
-
-      var sub = doc.createElement('div');
-      sub.className = 'feed-result__sub';
-      sub.textContent = g.kind === 'ascension'
-        ? 'reached ' + g.boundary + ' ELO'
-        : 'fell below ' + g.boundary + ' ELO';
-      body.appendChild(sub);
-
-      div.appendChild(body);
-      div.appendChild(feedTimeSpan(g.date));
-      return div;
-    }
-
-    // rank promotion: certificate card in M'Hunters steel — shield large,
-    // ACHIEVED THE RANK OF, rank word in the engraved-steel wordmark gradient
-    div.className = 'feed-item feed-item--honor feed-item--rank';
-
-    var badge = doc.createElement('span');
-    badge.className = 'fh-badge fh-badge--cert';
-    try {
-      var tint = state.leagueById[String(g.playerId)] || 'steel';
-      badge.innerHTML = window.Insignia.svg(g.rankIndex, tint, 34);
-    } catch (err) { /* badge optional */ }
-    div.appendChild(badge);
-
-    var pbody = doc.createElement('div');
-    pbody.className = 'fh-body';
-    var pline = doc.createElement('div');
-    pline.className = 'fh-line';
-    var star = doc.createElement('span');
-    star.className = 'fh-mark fh-mark--star';
-    star.textContent = '★';
-    pline.appendChild(star);
-    pline.appendChild(nameLink(g.playerName, 'fh-name', g.playerId));
-    var paction = doc.createElement('span');
-    paction.className = 'fh-action';
-    paction.textContent = 'ACHIEVED THE RANK OF';
-    pline.appendChild(paction);
-    pbody.appendChild(pline);
-
-    var rword = doc.createElement('div');
-    rword.className = 'fh-rank-word';
-    rword.textContent = (g.rankName || '').toUpperCase();
-    pbody.appendChild(rword);
-
-    var psub = doc.createElement('div');
-    psub.className = 'feed-result__sub';
-    psub.textContent = g.threshold + ' career wins';
-    pbody.appendChild(psub);
-
-    div.appendChild(pbody);
-    div.appendChild(feedTimeSpan(g.date));
-    return div;
+    return window.FeedItems.nameLink(name, cls, id, feedCtx());
   }
 
   function renderFeed(gazette, results) {
     var list = $('feed-list');
     if (!list) return;
     list.textContent = '';
+    var ctx = feedCtx();
     var items = [];
     (gazette || []).forEach(function (g) { items.push({ at: tsOf(g.date), honor: g }); });
     (results || []).forEach(function (r) { items.push({ at: tsOf(r.date), result: r }); });
     items.sort(function (a, b) { return b.at - a.at; });
     items.slice(0, 30).forEach(function (it) {
-      list.appendChild(it.honor ? buildHonorItem(it.honor) : buildResultItem(it.result));
+      list.appendChild(it.honor
+        ? window.FeedItems.buildHonorItem(it.honor, ctx)
+        : window.FeedItems.buildResultItem(it.result, ctx));
     });
   }
 
@@ -853,12 +659,12 @@
 
       var date = doc.createElement('span');
       date.className = 'gz-date';
-      date.textContent = formatGazetteDate(g.date);
+      date.textContent = window.FeedItems.formatGazetteDate(g.date);
       div.appendChild(date);
 
       var kind = doc.createElement('span');
       kind.className = 'gz-kind gz-kind--' + (g.kind || 'unknown');
-      kind.textContent = gazetteKindMarker(g.kind);
+      kind.textContent = window.FeedItems.gazetteKindMarker(g.kind);
       div.appendChild(kind);
 
       var text = doc.createElement('span');
@@ -1060,7 +866,7 @@
       if (!g || !g.playerId) return;
       if (g.kind !== 'promotion' && g.kind !== 'ascension') return;
       var id = String(g.playerId);
-      if (!tips[id]) tips[id] = formatGazetteDate(g.date) + ' — ' + (g.text || '');
+      if (!tips[id]) tips[id] = window.FeedItems.formatGazetteDate(g.date) + ' — ' + (g.text || '');
     });
     return tips;
   }
@@ -1115,6 +921,12 @@
 
     if (!window.LadderData || typeof window.LadderData.load !== 'function') {
       console.error('[app] window.LadderData.load is missing — is js/derive.js loaded before js/app.js?');
+      renderError();
+      return;
+    }
+
+    if (!window.FeedItems || typeof window.FeedItems.buildResultItem !== 'function') {
+      console.error('[app] window.FeedItems is missing — is js/feeditems.js loaded before js/app.js?');
       renderError();
       return;
     }
