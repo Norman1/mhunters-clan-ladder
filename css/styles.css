@@ -1070,6 +1070,5 @@ img.clan-tag {
   image-rendering: pixelated;
   vertical-align: baseline;
 }
-.brand__wordmark img.clan-tag { vertical-align: 1px; margin-left: 2px; }
 .page-title img.clan-tag { vertical-align: 0; }
 #feed-list .fh-line img.clan-tag { flex: none; align-self: center; }
