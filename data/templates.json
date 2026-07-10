@@ -1,7 +1,10 @@
 [
   {
-    "id": 1390041,
-    "name": "Strat 1v1"
+    "id": 1587197,
+    "name": "Strategic 1v1",
+    "legacy_ids": [
+      1390041
+    ]
   },
   {
     "id": 1431579,
