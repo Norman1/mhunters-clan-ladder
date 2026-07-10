@@ -171,6 +171,18 @@
     return r[key] !== undefined;
   }
 
+
+  /* the tiny Warzone clan-tag icon (21x15) rendered pixel-crisp */
+  function clanTagImg(docRef) {
+    var img = docRef.createElement('img');
+    img.className = 'clan-tag';
+    img.src = 'assets/clan-tag.png';
+    img.alt = '';
+    img.width = 21;
+    img.height = 15;
+    return img;
+  }
+
   function nameSpan(name, cls, docRef) {
     var span = (docRef || document).createElement('span');
     span.className = cls || '';
@@ -286,6 +298,7 @@
       mark.className = 'fh-mark';
       mark.textContent = g.kind === 'ascension' ? '▲' : '▼';
       line.appendChild(mark);
+      line.appendChild(clanTagImg(doc));
       line.appendChild(nameLink(g.playerName, 'fh-name', g.playerId, ctx));
       var action = doc.createElement('span');
       action.className = 'fh-action';
@@ -330,6 +343,7 @@
     star.className = 'fh-mark fh-mark--star';
     star.textContent = '★';
     pline.appendChild(star);
+    pline.appendChild(clanTagImg(doc));
     pline.appendChild(nameLink(g.playerName, 'fh-name', g.playerId, ctx));
     var paction = doc.createElement('span');
     paction.className = 'fh-action';
