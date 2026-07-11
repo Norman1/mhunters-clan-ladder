@@ -373,7 +373,7 @@
     "game_cap": 2,
     "missed_games": 0,
     "last_assigned_at": "2026-07-09T17:55:06.833Z",
-    "last_opponent": "9780712014"
+    "last_opponent": "5917719105"
   },
   "71155120841": {
     "name": "Ventura",
@@ -678,10 +678,10 @@
     "name": "Norman",
     "elo": 993,
     "game_cap": 0,
-    "missed_games": 0,
+    "missed_games": 1,
     "in_clan": true,
     "last_assigned_at": "2026-07-09T17:55:06.833Z",
-    "last_opponent": "84143567121"
+    "last_opponent": "71148639731"
   },
   "81138463364": {
     "name": "jman",
