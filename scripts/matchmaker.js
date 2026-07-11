@@ -19,6 +19,17 @@ function saveJSON(filePath, data) {
     fs.writeFileSync(filePath, JSON.stringify(data, null, 2));
 }
 
+// Warzone rejects game names over 50 characters (CreateGame API limit), so
+// the template name is clipped when the full title would not fit.
+const GAME_NAME_MAX = 50;
+
+function ladderGameName(templateName) {
+    if (!templateName) return "M'Hunters Ladder";
+    const full = `M'Hunters Ladder: ${templateName}`;
+    if (full.length <= GAME_NAME_MAX) return full;
+    return `${full.slice(0, GAME_NAME_MAX - 3).trimEnd()}...`;
+}
+
 function shuffle(array) {
     for (let i = array.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
@@ -243,7 +254,7 @@ IMPORTANT: Please join this game even if your opponent declines! This is how the
 
 You can change your ladder settings online via https://norman1.github.io/mhunters-clan-ladder/ or you can ask in our clans discord for someone to do it for you.`;
 
-            const result = await createGame(template.id, playersPayload, "M'Hunters Ladder", description);
+            const result = await createGame(template.id, playersPayload, ladderGameName(template.name), description);
 
             console.log(`Game Created! ID: ${result.gameID}`);
 
