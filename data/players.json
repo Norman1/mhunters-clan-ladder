@@ -99,8 +99,8 @@
     "name": "BlackBart",
     "elo": 939,
     "game_cap": 2,
-    "missed_games": 0,
-    "last_opponent": "3346775331",
+    "missed_games": 2,
+    "last_opponent": "8222729424",
     "last_assigned_at": "2026-07-11T02:33:32.665Z"
   },
   "3737155555": {
@@ -161,11 +161,11 @@
   },
   "9482920905": {
     "name": "Ethosys",
-    "elo": 1104,
+    "elo": 1079,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "25126079448",
-    "last_assigned_at": "2026-07-11T02:33:30.993Z"
+    "last_opponent": "89133991720",
+    "last_assigned_at": "2026-07-11T06:11:55.783Z"
   },
   "8294358602": {
     "name": "Wolkenstern",
@@ -508,8 +508,8 @@
     "elo": 1132,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-07-11T02:33:30.426Z",
-    "last_opponent": "56133341636"
+    "last_assigned_at": "2026-07-11T06:11:55.012Z",
+    "last_opponent": "3631391841"
   },
   "4353717389": {
     "name": "Krys",
@@ -588,8 +588,8 @@
     "elo": 832,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-07-11T02:33:32.665Z",
-    "last_opponent": "25126079448"
+    "last_assigned_at": "2026-07-11T06:11:55.783Z",
+    "last_opponent": "3631391841"
   },
   "88117806994": {
     "name": "RameurA",
@@ -659,12 +659,12 @@
   },
   "89133991720": {
     "name": "JJJ_Senior",
-    "elo": 1012,
+    "elo": 1037,
     "game_cap": 2,
     "missed_games": 0,
     "in_clan": true,
-    "last_assigned_at": "2026-07-10T02:56:40.401Z",
-    "last_opponent": "9780712014"
+    "last_assigned_at": "2026-07-11T06:11:55.012Z",
+    "last_opponent": "9482920905"
   },
   "4555082823": {
     "name": "Super Smoove",
