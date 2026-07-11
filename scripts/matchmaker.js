@@ -25,7 +25,7 @@ const GAME_NAME_MAX = 50;
 
 function ladderGameName(templateName) {
     if (!templateName) return "M'Hunters Ladder";
-    const full = `M'Hunters Ladder: ${templateName}`;
+    const full = `MH Ladder: ${templateName}`;
     if (full.length <= GAME_NAME_MAX) return full;
     return `${full.slice(0, GAME_NAME_MAX - 3).trimEnd()}...`;
 }
