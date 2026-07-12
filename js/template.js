@@ -291,6 +291,9 @@
       ':where(#map-board-body tr.mb-row){cursor:pointer}',
       ':where(#map-board-body tr.mb-row:hover td){background:#1B1D22}',
       ':where(#map-board-body tr.mb-expand td){padding:0;background:#17181C}',
+      ':where(.xg-res.w){color:var(--red,#D22730);font-weight:600}',
+      ':where(.xg-res.l){color:var(--dim,#8A919C);font-weight:600}',
+      ':where(.xg-turns){font-family:"IBM Plex Mono",monospace;font-size:.85em;color:var(--dim,#8A919C)}',
       /* game / live rows — same anatomy + look as games.html */
       ':where(#map-games-list .g-row,#map-live-list .g-row,.mb-expand-list .g-row){position:relative;display:block;',
       'padding:10px 110px 10px 12px;border-bottom:1px solid var(--line-soft,#222429);',
@@ -628,6 +631,46 @@
     return out;
   }
 
+  /* expansion game row, from the expanded player's perspective — the player
+     and the template are implied by the row, so neither is restated:
+     'WIN vs. gg +22 T8 ↗' / 'LOSS vs. Socrates −8 T12 ↗' + date right */
+  function buildExpandRow(r, playerId) {
+    var won = String(r.winnerId) === String(playerId);
+    var item = rowShell(r.gameId);
+
+    var line = doc.createElement('div');
+    line.className = 'feed-result__line';
+    var res = doc.createElement('span');
+    res.className = 'xg-res ' + (won ? 'w' : 'l');
+    res.textContent = won ? 'WIN' : 'LOSS';
+    line.appendChild(res);
+    var vs = doc.createElement('span');
+    vs.className = 'fr-mid';
+    vs.textContent = ' vs. ';
+    line.appendChild(vs);
+    line.appendChild(nameLink(won ? r.loser : r.winner, 'fr-winner',
+                              won ? r.loserId : r.winnerId));
+    var delta = doc.createElement('span');
+    delta.className = won ? 'fr-up' : 'fr-down';
+    delta.textContent = ' ' + (won ? '+' : '−') + r.change;
+    line.appendChild(delta);
+    if (r.turns != null) {
+      var turns = doc.createElement('span');
+      turns.className = 'xg-turns';
+      turns.textContent = ' T' + r.turns;
+      line.appendChild(turns);
+    }
+    var go = doc.createElement('span');
+    go.className = 'fr-go';
+    go.textContent = ' ↗';
+    go.setAttribute('aria-hidden', 'true');
+    line.appendChild(go);
+    item.appendChild(line);
+
+    item.appendChild(dateSpan(formatDate(r.date)));
+    return item;
+  }
+
   function closeBoardGames() {
     if (state.expandRow && state.expandRow.parentNode) {
       state.expandRow.parentNode.removeChild(state.expandRow);
@@ -652,7 +695,7 @@
     var games = playerGamesOnTemplate(entry.id);
     if (games.length) {
       games.forEach(function (r) {
-        list.appendChild(buildResultRow(r));
+        list.appendChild(buildExpandRow(r, entry.id));
       });
       wireRowLinks(list);
     } else {

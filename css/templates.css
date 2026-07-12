@@ -493,6 +493,16 @@
 .map-board .mb-expand-list .g-row:last-child { border-bottom: 0; }
 .map-board .mb-expand-list .mg-empty { padding: 1.2em 1em; }
 
+/* expansion rows: 'WIN vs. gg +22 T8' — result word carries the W/L color */
+.mb-expand-list .xg-res { font-weight: 600; letter-spacing: 0.04em; }
+.mb-expand-list .xg-res.w { color: var(--red); }
+.mb-expand-list .xg-res.l { color: var(--dim); }
+.mb-expand-list .xg-turns {
+  font-family: var(--font-mono);
+  font-size: 0.85em;
+  color: var(--dim);
+}
+
 /* ----------------------------- live + game rows ----------------------------- */
 /* echo games.css: rows are div[role=link] built by js/map.js — whole row
    opens the game on warzone.com; names inside are real a.plink links */
