@@ -145,11 +145,11 @@
   },
   "84143567121": {
     "name": "Poldi",
-    "elo": 1269,
+    "elo": 1272,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "3346775331",
-    "last_assigned_at": "2026-07-10T19:25:39.326Z"
+    "last_opponent": "8222729424",
+    "last_assigned_at": "2026-07-12T20:45:43.715Z"
   },
   "23154545458": {
     "name": "Light",
@@ -195,9 +195,9 @@
     "name": "Word Walker",
     "elo": 790,
     "game_cap": 2,
-    "missed_games": 0,
-    "last_opponent": "88110265403",
-    "last_assigned_at": "2026-07-12T19:04:21.351Z"
+    "missed_games": 1,
+    "last_opponent": "9780712014",
+    "last_assigned_at": "2026-07-12T20:45:44.287Z"
   },
   "4543063534": {
     "name": "Farah♦",
@@ -585,11 +585,11 @@
   },
   "8222729424": {
     "name": "Al AssAff",
-    "elo": 832,
+    "elo": 829,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-07-11T06:11:55.783Z",
-    "last_opponent": "3631391841"
+    "last_assigned_at": "2026-07-12T20:45:44.287Z",
+    "last_opponent": "84143567121"
   },
   "88117806994": {
     "name": "RameurA",
@@ -612,8 +612,8 @@
     "elo": 851,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-07-12T19:04:21.351Z",
-    "last_opponent": "81138463364"
+    "last_assigned_at": "2026-07-12T20:45:43.715Z",
+    "last_opponent": "9313400553"
   },
   "53134900057": {
     "name": "extelon",
