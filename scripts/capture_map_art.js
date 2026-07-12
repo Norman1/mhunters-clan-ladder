@@ -69,6 +69,9 @@ function buildResolver(templates) {
   });
   const page = await browser.newPage();
   await page.setViewport({ width: 1600, height: 1100 });
+  // a real-browser UA: the default headless UA advertises HeadlessChrome,
+  // which login pages are far more likely to block from a datacenter IP
+  await page.setUserAgent('Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36');
 
   // ---- login ----
   await page.goto('https://www.warzone.com/LogIn', { waitUntil: 'domcontentloaded', timeout: 30000 });
@@ -89,7 +92,14 @@ function buildResolver(templates) {
   if (!clicked) { await page.focus(passSel); await page.keyboard.press('Enter'); }
   await new Promise(r => setTimeout(r, 6000));
   const signedIn = await page.evaluate(() => /signed in as|sign out/i.test(document.body.innerText));
-  if (!signedIn) { console.error('login failed'); await browser.close(); process.exit(2); }
+  if (!signedIn) {
+    // say WHY: bot-challenge text, "wrong password", maintenance page, etc.
+    const diag = await page.evaluate(() =>
+      document.body.innerText.slice(0, 400).replace(/\n+/g, ' | '));
+    console.error('login failed. page says:', diag || '(empty page)');
+    await browser.close();
+    process.exit(2);
+  }
   console.log('logged in ok');
 
   let captured = 0;

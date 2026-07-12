@@ -9,7 +9,7 @@ on:
     paths:
       - data/templates.json
   schedule:
-    - cron: "0 6 * * 1" # weekly, monday 06:00 UTC
+    - cron: "0 6 * * *" # daily 06:00 UTC — new-template art lands within a day of its first game
   workflow_dispatch:
 
 concurrency:
