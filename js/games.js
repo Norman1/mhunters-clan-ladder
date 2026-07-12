@@ -793,7 +793,7 @@
     sel.textContent = '';
     var all = doc.createElement('option');
     all.value = '';
-    all.textContent = 'ALL MAPS';
+    all.textContent = 'ALL TEMPLATES';
     sel.appendChild(all);
     maps.forEach(function (m) {
       var opt = doc.createElement('option');

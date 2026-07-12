@@ -518,7 +518,7 @@
     });
   }
 
-  /* ---------- ADD MAP (admin) ---------- */
+  /* ---------- ADD TEMPLATE (admin) ---------- */
 
   var tmplId, tmplName, tmplIdMsg, tmplSubmit;
 
@@ -556,7 +556,7 @@
     });
   }
 
-  /* ---------- REMOVE MAP (admin) ---------- */
+  /* ---------- REMOVE TEMPLATE (admin) ---------- */
 
   var rmSelect, rmId, rmIdMsg, rmSubmit;
 
@@ -571,7 +571,7 @@
     rmSelect.textContent = '';
     var ph = doc.createElement('option');
     ph.value = '';
-    ph.textContent = 'SELECT MAP';
+    ph.textContent = 'SELECT TEMPLATE';
     rmSelect.appendChild(ph);
     state.maps.forEach(function (m) {
       var opt = doc.createElement('option');

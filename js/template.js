@@ -1,16 +1,16 @@
 /* ============================================================
-   M'Hunters Clan Ladder — Map detail wiring (Track C)
+   M'Hunters Clan Ladder — Template detail wiring (Track C)
    Plain vanilla script (no modules). Depends on:
      window.LadderData (js/derive.js) — LadderData.load()
        → data.maps (per-pool-template entries, track A)
        → data.allResults / data.live entries carry templateId
-   DOM contract (provided by map.html / track B):
+   DOM contract (provided by template.html / track B):
      #map-name · #map-facts · #map-board-body · #map-board-empty
      #map-live-list · #map-live-empty
      #map-games-list · #map-games-sentinel · #map-error
-   URL: map.html?t=<templateId> (legacy ids resolve through the
+   URL: template.html?t=<templateId> — legacy ?id= accepted (legacy template ids resolve through the
    data layer's resolver when it exposes one).
-   Self-test: `node js/map.js` runs the pure-helper test suite.
+   Self-test: `node js/template.js` runs the pure-helper test suite.
    ============================================================ */
 
 (function () {
@@ -152,7 +152,7 @@
       }
     };
 
-    console.log('map.js pure-helper self-test');
+    console.log('template.js pure-helper self-test');
 
     // dates
     eq(formatDate('2025-12-16T01:40:32.270Z'), 'DEC 16 2025', "formatDate → 'DEC 16 2025'");
@@ -252,12 +252,14 @@
     lastIso: null,
     io: null,
     ioFallback: false,  // sentinel acts as a LOAD MORE button
-    loaded: false
+    loaded: false,
+    expandRow: null,    // injected tr.mb-expand (one at a time)
+    expandOwner: null   // the tr.mb-row that owns it
   };
 
   /* Zero-specificity fallback styles for everything map.js creates
      (rows, board cells, facts, month markers, skeletons, error state).
-     css/maps.css owns the real look — :where() keeps these at
+     css/templates.css owns the real look — :where() keeps these at
      specificity 0 so it always wins. */
   function injectTransientStyles() {
     if ($('map-transient-styles')) return;
@@ -285,11 +287,15 @@
       ':where(#map-board-body .mb-wl){font-family:"IBM Plex Mono",monospace;white-space:nowrap}',
       ':where(#map-board-body .mb-games){font-family:"IBM Plex Mono",monospace;color:var(--dim,#8A919C)}',
       ':where(#map-board-body .mb-former){color:var(--muted,#9AA1AB)}',
+      /* expandable board rows (player games on this template) */
+      ':where(#map-board-body tr.mb-row){cursor:pointer}',
+      ':where(#map-board-body tr.mb-row:hover td){background:#1B1D22}',
+      ':where(#map-board-body tr.mb-expand td){padding:0;background:#17181C}',
       /* game / live rows — same anatomy + look as games.html */
-      ':where(#map-games-list .g-row,#map-live-list .g-row){position:relative;display:block;',
+      ':where(#map-games-list .g-row,#map-live-list .g-row,.mb-expand-list .g-row){position:relative;display:block;',
       'padding:10px 110px 10px 12px;border-bottom:1px solid var(--line-soft,#222429);',
       'cursor:pointer;font-size:13px}',
-      ':where(#map-games-list .g-row:hover,#map-live-list .g-row:hover){background:#1B1D22}',
+      ':where(#map-games-list .g-row:hover,#map-live-list .g-row:hover,.mb-expand-list .g-row:hover){background:#1B1D22}',
       ':where(.g-row .feed-result__line){color:var(--white,#EDEFF2)}',
       ':where(.g-row .fr-winner){font-weight:600}',
       ':where(.g-row .fr-up){color:var(--red,#D22730);font-weight:600}',
@@ -304,7 +310,8 @@
       ':where(.g-row .fr-map){border:1px solid var(--line,#2A2D33);border-radius:3px;',
       'padding:1px 6px;white-space:nowrap}',
       ':where(.g-row .fr-go){color:var(--line,#2A2D33)}',
-      ':where(#map-games-list .g-row:hover .fr-go,#map-live-list .g-row:hover .fr-go){color:var(--red,#D22730)}',
+      ':where(#map-games-list .g-row:hover .fr-go,#map-live-list .g-row:hover .fr-go,',
+      '.mb-expand-list .g-row:hover .fr-go){color:var(--red,#D22730)}',
       ':where(.g-row .g-date){position:absolute;top:12px;right:12px;',
       'font-family:"IBM Plex Mono",monospace;font-size:10.5px;color:var(--dim,#8A919C);',
       'letter-spacing:.05em;white-space:nowrap}',
@@ -516,7 +523,7 @@
     var list = $('map-live-list');
     var empty = $('map-live-empty');
     if (empty && !empty.textContent.trim()) {
-      empty.textContent = 'NO LIVE GAMES ON THIS MAP';
+      empty.textContent = 'NO LIVE GAMES ON THIS TEMPLATE';
     }
     if (!list) return;
     list.textContent = '';
@@ -547,7 +554,7 @@
       value.className = 'fact__value';
       value.textContent = f.value;
       if (f.label === 'MOST ACTIVE' && m.mostActive && m.mostActive.games != null) {
-        value.title = m.mostActive.games + ' games on this map';
+        value.title = m.mostActive.games + ' games on this template';
       }
       item.appendChild(value);
       strip.appendChild(item);
@@ -564,9 +571,15 @@
   }
 
   /* rank number plain (no medals, no insignia — locked decision);
-     departed players listed but NOT linked to a profile */
+     departed players listed but NOT linked to a profile.
+     Rows expand in place (standings-peek pattern) to the player's full
+     game list on this template. */
   function buildBoardRow(entry, rankNum) {
     var tr = doc.createElement('tr');
+    tr.className = 'mb-row';
+    tr.tabIndex = 0;
+    tr.setAttribute('aria-expanded', 'false');
+    tr.title = 'Show games on this template';
     tr.appendChild(td('mb-rank', String(rankNum)));
 
     var player = doc.createElement('td');
@@ -589,16 +602,81 @@
     tr.appendChild(td('mb-rating', String(entry.rating)));
     tr.appendChild(td('mb-wl', wlText(entry.w, entry.l)));
     tr.appendChild(td('mb-games', fmtInt(entry.games)));
+
+    /* name links keep navigating; anywhere else on the row toggles */
+    tr.addEventListener('click', function (e) {
+      if (e.target && e.target.closest && e.target.closest('a')) return;
+      toggleBoardGames(tr, entry);
+    });
+    tr.addEventListener('keydown', function (e) {
+      if (e.key !== 'Enter' && e.key !== ' ') return;
+      if (e.target && e.target.closest && e.target.closest('a')) return;
+      e.preventDefault();
+      toggleBoardGames(tr, entry);
+    });
     return tr;
+  }
+
+  /* every decisive game this player fought on this template (newest first) */
+  function playerGamesOnTemplate(playerId) {
+    var key = String(playerId == null ? '' : playerId);
+    var out = [];
+    for (var i = 0; i < state.games.length; i++) {
+      var r = state.games[i];
+      if (String(r.winnerId) === key || String(r.loserId) === key) out.push(r);
+    }
+    return out;
+  }
+
+  function closeBoardGames() {
+    if (state.expandRow && state.expandRow.parentNode) {
+      state.expandRow.parentNode.removeChild(state.expandRow);
+    }
+    if (state.expandOwner) state.expandOwner.setAttribute('aria-expanded', 'false');
+    state.expandRow = null;
+    state.expandOwner = null;
+  }
+
+  function toggleBoardGames(tr, entry) {
+    if (state.expandOwner === tr) { closeBoardGames(); return; }
+    closeBoardGames();
+
+    var xr = doc.createElement('tr');
+    xr.className = 'mb-expand';
+    var cell = doc.createElement('td');
+    cell.className = 'mb-expand-cell';
+    cell.colSpan = 5;
+
+    var list = doc.createElement('div');
+    list.className = 'mb-expand-list';
+    var games = playerGamesOnTemplate(entry.id);
+    if (games.length) {
+      games.forEach(function (r) {
+        list.appendChild(buildResultRow(r));
+      });
+      wireRowLinks(list);
+    } else {
+      var none = doc.createElement('div');
+      none.className = 'mg-empty';
+      none.textContent = 'NO FINISHED GAMES ON THIS TEMPLATE';
+      list.appendChild(none);
+    }
+    cell.appendChild(list);
+    xr.appendChild(cell);
+    tr.insertAdjacentElement('afterend', xr);
+    tr.setAttribute('aria-expanded', 'true');
+    state.expandRow = xr;
+    state.expandOwner = tr;
   }
 
   function renderBoard(board) {
     var body = $('map-board-body');
     var empty = $('map-board-empty');
     if (empty) {
-      empty.textContent = 'NO RANKINGS YET — 3 GAMES ON THIS MAP TO BE RANKED';
+      empty.textContent = 'NO RANKINGS YET — 3 GAMES ON THIS TEMPLATE TO BE RANKED';
     }
     if (!body) return;
+    closeBoardGames();
     body.textContent = '';
     board = board || [];
     if (!board.length) {
@@ -675,7 +753,7 @@
     if (!state.filtered.length) {
       var note = doc.createElement('div');
       note.className = 'mg-empty';
-      note.textContent = 'NO GAMES ON THIS MAP YET';
+      note.textContent = 'NO GAMES ON THIS TEMPLATE YET';
       appendToGames(note);
       updateSentinel();
       return;
@@ -772,7 +850,7 @@
   }
 
   /* page-level error slot (#map-error) hosts both failure modes:
-     unknown template id → MAP NOT FOUND, fetch failure → RETRY */
+     unknown template id → TEMPLATE NOT FOUND, fetch failure → RETRY */
   function showPageError(kind) {
     clearAllZones();
     var err = $('map-error');
@@ -780,9 +858,9 @@
     err.textContent = '';
     var a = doc.createElement('a');
     if (kind === 'notfound') {
-      err.appendChild(doc.createTextNode('MAP NOT FOUND — '));
-      a.href = 'maps.html';
-      a.textContent = 'ALL MAPS';
+      err.appendChild(doc.createTextNode('TEMPLATE NOT FOUND — '));
+      a.href = 'templates.html';
+      a.textContent = 'ALL TEMPLATES';
     } else {
       err.appendChild(doc.createTextNode('LADDER DATA UNREACHABLE — '));
       a.href = '#';
@@ -800,7 +878,9 @@
 
   function readTemplateParam() {
     try {
-      var t = new URLSearchParams(window.location.search).get('t');
+      var q = new URLSearchParams(window.location.search);
+      var t = q.get('t');
+      if (t == null) t = q.get('id'); // legacy template.html?id= deep links
       return t == null ? '' : t.trim();
     } catch (err) {
       return '';
@@ -871,7 +951,7 @@
     renderSkeleton();
 
     if (!window.LadderData || typeof window.LadderData.load !== 'function') {
-      console.error('[map] window.LadderData.load is missing — is js/derive.js loaded before js/map.js?');
+      console.error('[map] window.LadderData.load is missing — is js/derive.js loaded before js/template.js?');
       showPageError('load');
       return;
     }

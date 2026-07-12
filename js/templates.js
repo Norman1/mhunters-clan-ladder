@@ -1,23 +1,23 @@
 /* ============================================================
-   M'Hunters Clan Ladder — Maps pool index wiring (Track C)
+   M'Hunters Clan Ladder — Templates pool index wiring (Track C)
    Plain vanilla script (no modules). Depends on:
      window.LadderData (js/derive.js) — LadderData.load()
        → data.maps: [{ id, name, games, liveCount, firstPlayed,
                        lastPlayed, avgTurns, mostActive, topPlayer,
                        board }] sorted games desc (track A)
-   DOM contract (provided by maps.html / track B):
+   DOM contract (provided by templates.html / track B):
      #maps-count (page-title '(17 IN POOL)' badge)
      #tab-cards #tab-table (CARDS | TABLE segmented control)
      #cards-view > #maps-grid (cards container) · #maps-error (hidden)
      #table-view > .maps-table > #maps-table-body (comparison table)
-   Card = <a href="map.html?t=<id>"> with map name, '<games> GAMES',
+   Card = <a href="template.html?t=<id>"> with map name, '<games> GAMES',
    '● <n> LIVE' (red, only when >0), 'TOP PLAYER: <name> <rating>' or
    'NO RANKINGS YET'.
-   Table = MAP · GAMES · TOP PLAYER · FIRST PLAYED · AVG TURNS, sortable
+   Table = TEMPLATE · GAMES · TOP PLAYER · FIRST PLAYED · AVG TURNS, sortable
    headers (index.html pattern, GAMES desc default, nulls always last).
    URL param: ?view=table (CARDS is the unmarked default) via
    history.replaceState — deep links work.
-   Self-test: `node js/maps.js` runs the pure-helper test suite.
+   Self-test: `node js/templates.js` runs the pure-helper test suite.
    ============================================================ */
 
 (function () {
@@ -49,7 +49,7 @@
   }
 
   function detailUrl(id) {
-    return 'map.html?t=' + encodeURIComponent(id == null ? '' : id);
+    return 'template.html?t=' + encodeURIComponent(id == null ? '' : id);
   }
 
   /* page title count: '(17 IN POOL)' — '(— IN POOL)' pre-data */
@@ -60,7 +60,7 @@
   var MONTHS = ['JAN', 'FEB', 'MAR', 'APR', 'MAY', 'JUN',
                 'JUL', 'AUG', 'SEP', 'OCT', 'NOV', 'DEC'];
 
-  /* ISO date → 'DEC 19 2025' (js/map.js twin — parses the date part
+  /* ISO date → 'DEC 19 2025' (js/template.js twin — parses the date part
      directly, no TZ drift); '—' when the map has never been played */
   function firstPlayedText(iso) {
     var m = /^(\d{4})-(\d{2})-(\d{2})/.exec(String(iso || ''));
@@ -144,7 +144,7 @@
       }
     };
 
-    console.log('maps.js pure-helper self-test');
+    console.log('templates.js pure-helper self-test');
 
     eq(fmtInt(1220), '1,220', 'fmtInt groups thousands');
     eq(fmtInt(0), '0', 'fmtInt zero');
@@ -162,9 +162,9 @@
       'topText names the #1 with map rating');
     eq(topText(null), 'NO RANKINGS YET', 'topText null → NO RANKINGS YET');
 
-    eq(detailUrl('1390041'), 'map.html?t=1390041', 'detailUrl plain id');
-    eq(detailUrl('a b'), 'map.html?t=a%20b', 'detailUrl encodes');
-    eq(detailUrl(null), 'map.html?t=', 'detailUrl null-safe');
+    eq(detailUrl('1390041'), 'template.html?t=1390041', 'detailUrl plain id');
+    eq(detailUrl('a b'), 'template.html?t=a%20b', 'detailUrl encodes');
+    eq(detailUrl(null), 'template.html?t=', 'detailUrl null-safe');
 
     eq(rotationText(17), '(17 IN POOL)', 'rotationText 17 maps');
     eq(rotationText(null), '(— IN POOL)', 'rotationText pre-data em-dash');
@@ -232,7 +232,7 @@
   };
 
   /* Zero-specificity fallback styles for everything maps.js creates.
-     css/maps.css (track B) owns the real look — :where() keeps these at
+     css/templates.css (track B) owns the real look — :where() keeps these at
      specificity 0 so it always wins. */
   function injectTransientStyles() {
     if ($('maps-transient-styles')) return;
@@ -575,7 +575,7 @@
   }
 
   function init() {
-    doc.title = "M'HUNTERS — Maps";
+    doc.title = "M'HUNTERS — Templates";
     injectTransientStyles();
     renderSkeleton();
 
@@ -585,7 +585,7 @@
     updateSortHeaders();
 
     if (!window.LadderData || typeof window.LadderData.load !== 'function') {
-      console.error('[maps] window.LadderData.load is missing — is js/derive.js loaded before js/maps.js?');
+      console.error('[maps] window.LadderData.load is missing — is js/derive.js loaded before js/templates.js?');
       renderLoadError();
       return;
     }

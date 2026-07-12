@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>M'HUNTERS — Actions</title>
-  <meta name="description" content="M'Hunters clan ladder — join the ladder or set your game cap; admin map-pool and player-removal controls.">
+  <meta name="description" content="M'Hunters clan ladder — join the ladder or set your game cap; admin template-pool and player-removal controls.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Cinzel:wght@700&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
@@ -36,7 +36,7 @@
         <nav class="mainnav" aria-label="Primary">
           <a href="index.html" class="mainnav__link">STANDINGS</a>
           <a href="games.html" class="mainnav__link">GAMES</a>
-          <a href="maps.html" class="mainnav__link">MAPS</a>
+          <a href="templates.html" class="mainnav__link">TEMPLATES</a>
           <a href="#" class="mainnav__link active" aria-current="page">ACTIONS</a>
           <a href="rules.html" class="mainnav__link">RULES</a>
         </nav>
@@ -105,9 +105,9 @@
 
     <div class="af-grid af-grid--admin">
 
-      <!-- ---------- ADD MAP ---------- -->
+      <!-- ---------- ADD TEMPLATE ---------- -->
       <section class="panel af" aria-labelledby="addmap-title">
-        <h2 class="af__title" id="addmap-title">ADD MAP</h2>
+        <h2 class="af__title" id="addmap-title">ADD TEMPLATE</h2>
         <form class="af__form" id="form-addmap" novalidate autocomplete="off">
           <div class="af__field">
             <label class="af__label" for="tmpl-id">TEMPLATE ID</label>
@@ -116,22 +116,22 @@
             <p class="af__msg" id="tmpl-id-msg" hidden></p>
           </div>
           <div class="af__field">
-            <label class="af__label" for="tmpl-name">MAP NAME</label>
+            <label class="af__label" for="tmpl-name">TEMPLATE NAME</label>
             <input class="af__input" id="tmpl-name" type="text" placeholder="NAME"
                    autocorrect="off" autocapitalize="off" spellcheck="false">
           </div>
-          <button class="btn btn--primary" id="tmpl-submit" type="submit" disabled>ADD MAP</button>
+          <button class="btn btn--primary" id="tmpl-submit" type="submit" disabled>ADD TEMPLATE</button>
         </form>
       </section>
 
-      <!-- ---------- REMOVE MAP ---------- -->
+      <!-- ---------- REMOVE TEMPLATE ---------- -->
       <section class="panel af" aria-labelledby="rmmap-title">
-        <h2 class="af__title" id="rmmap-title">REMOVE MAP</h2>
+        <h2 class="af__title" id="rmmap-title">REMOVE TEMPLATE</h2>
         <form class="af__form" id="form-rmmap" novalidate autocomplete="off">
           <div class="af__field">
-            <label class="af__label" for="rm-select">MAP</label>
+            <label class="af__label" for="rm-select">TEMPLATE</label>
             <select class="af__select" id="rm-select">
-              <option value="">SELECT MAP</option>
+              <option value="">SELECT TEMPLATE</option>
             </select>
           </div>
           <div class="af__field">
@@ -140,7 +140,7 @@
                    placeholder="ID" autocorrect="off" autocapitalize="off" spellcheck="false">
             <p class="af__msg" id="rm-id-msg" hidden></p>
           </div>
-          <button class="btn btn--danger" id="rm-submit" type="submit" disabled>REMOVE MAP</button>
+          <button class="btn btn--danger" id="rm-submit" type="submit" disabled>REMOVE TEMPLATE</button>
         </form>
       </section>
 
@@ -185,9 +185,9 @@
       <span class="tab__glyph" aria-hidden="true">⚔</span>
       <span class="tab__label">GAMES</span>
     </a>
-    <a href="maps.html" class="tab">
+    <a href="templates.html" class="tab">
       <span class="tab__glyph" aria-hidden="true">◈</span>
-      <span class="tab__label">MAPS</span>
+      <span class="tab__label">TEMPLATES</span>
     </a>
     <a href="#" class="tab active" aria-current="page">
       <span class="tab__glyph" aria-hidden="true">⚙</span>

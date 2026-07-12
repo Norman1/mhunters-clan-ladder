@@ -439,7 +439,7 @@
 .map-board td:nth-child(2) .departed,
 .map-board td:nth-child(2) .former { color: var(--muted); }
 
-/* MAP RATING — Barlow 700; the map-specific rating, NOT global elo */
+/* TEMPLATE RATING — Barlow 700; the template-specific rating, NOT global elo */
 .map-board td:nth-child(3) {
   width: 96px;
   min-width: 76px;
@@ -475,7 +475,23 @@
   font-variant-numeric: tabular-nums;
 }
 
-/* board rows aren't clickable — no pointer, hover tint only via tr.row if used */
+/* board rows expand in place to the player's games on this template
+   (standings-peek pattern: darker well, red spine) */
+.map-board tbody tr.mb-row { cursor: pointer; }
+.map-board tbody tr.mb-row:hover td,
+.map-board tbody tr.mb-row[aria-expanded="true"] td { background: #1B1D22; }
+.map-board tr.mb-expand td.mb-expand-cell {
+  width: auto;
+  min-width: 0;
+  max-width: none;
+  padding: 0;
+  text-align: left;
+  background: #17181C;
+  border-left: 3px solid var(--red);
+  border-bottom: 1px solid var(--line);
+}
+.map-board .mb-expand-list .g-row:last-child { border-bottom: 0; }
+.map-board .mb-expand-list .mg-empty { padding: 1.2em 1em; }
 
 /* ----------------------------- live + game rows ----------------------------- */
 /* echo games.css: rows are div[role=link] built by js/map.js — whole row
