@@ -371,7 +371,7 @@
     "name": "Nick",
     "elo": 1262,
     "game_cap": 2,
-    "missed_games": 1,
+    "missed_games": 0,
     "last_assigned_at": "2026-07-12T06:32:12.418Z",
     "last_opponent": "3346775331"
   },
