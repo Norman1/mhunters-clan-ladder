@@ -21,12 +21,13 @@
     'Sergeant', 'Staff Sergeant', 'Sergeant First Class', 'Master Sergeant',
     'First Sergeant', 'Sergeant Major', 'Command Sgt. Major',
     'Second Lieutenant', 'First Lieutenant', 'Captain', 'Major',
-    'Lieutenant Colonel', 'Colonel', 'Brigadier General', 'Major General',
-    'Lieutenant General', 'General', 'General of the Army'
+    'Lieutenant Colonel', 'Colonel', '1 Star General', '2 Star General',
+    '3 Star General', '4 Star General', '5 Star General'
   ];
 
   var LEAGUES = [
-    { key: 'flint',      name: 'Flint',      lo: -Infinity },
+    { key: 'lumber',     name: 'Lumber',     lo: -Infinity },
+    { key: 'stone',      name: 'Stone',      lo: 800 },
     { key: 'iron',       name: 'Iron',       lo: 850 },
     { key: 'steel',      name: 'Steel',      lo: 900 },
     { key: 'cobalt',     name: 'Cobalt',     lo: 1000 },

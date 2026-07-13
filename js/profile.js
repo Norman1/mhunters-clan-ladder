@@ -31,12 +31,13 @@
     'Sergeant', 'Staff Sergeant', 'Sergeant First Class', 'Master Sergeant',
     'First Sergeant', 'Sergeant Major', 'Command Sgt. Major',
     'Second Lieutenant', 'First Lieutenant', 'Captain', 'Major',
-    'Lieutenant Colonel', 'Colonel', 'Brigadier General', 'Major General',
-    'Lieutenant General', 'General', 'General of the Army'
+    'Lieutenant Colonel', 'Colonel', '1 Star General', '2 Star General',
+    '3 Star General', '4 Star General', '5 Star General'
   ];
 
   var LEAGUES = [
-    { key: 'flint',      name: 'Flint',      lo: -Infinity },
+    { key: 'lumber',     name: 'Lumber',     lo: -Infinity },
+    { key: 'stone',      name: 'Stone',      lo: 800 },
     { key: 'iron',       name: 'Iron',       lo: 850 },
     { key: 'steel',      name: 'Steel',      lo: 900 },
     { key: 'cobalt',     name: 'Cobalt',     lo: 1000 },
@@ -55,8 +56,8 @@
 
   var GAME_URL = 'https://www.warzone.com/MultiPlayer?GameID=';
   var PER_PAGE = 20;
-  /* Flint has no lower bound; the progress bar needs a finite span,
-     so it uses a nominal 150-pt window below the Iron floor. */
+  /* Lumber has no lower bound; the progress bar needs a finite span,
+     so it uses a nominal 150-pt window below the Stone floor. */
   var FLINT_SPAN = 150;
   /* Obsidian's metal (#24262C) is illegible on the dark plate —
      swap to steel-dim for text/fills (contract rule). */
@@ -470,11 +471,13 @@
       'leagueProgress electrum → gold');
     eq(leagueProgress(1500), { label: 'TOP LEAGUE', frac: 1 }, 'leagueProgress warlord');
     eq(leagueProgress(1650), { label: 'TOP LEAGUE', frac: 1 }, 'leagueProgress above warlord');
-    eq(leagueProgress(800), { label: '50 PTS TO IRON LEAGUE', frac: 100 / 150 },
-      'leagueProgress flint uses nominal window');
-    eq(leagueProgress(600), { label: '250 PTS TO IRON LEAGUE', frac: 0 },
-      'leagueProgress deep flint clamps to 0');
-    eq(leagueProgress(849), { label: '1 PT TO IRON LEAGUE', frac: 149 / 150 },
+    eq(leagueProgress(800), { label: '50 PTS TO IRON LEAGUE', frac: 0 },
+      'leagueProgress exactly at stone floor');
+    eq(leagueProgress(700), { label: '100 PTS TO STONE LEAGUE', frac: 50 / 150 },
+      'leagueProgress lumber uses nominal window');
+    eq(leagueProgress(600), { label: '200 PTS TO STONE LEAGUE', frac: 0 },
+      'leagueProgress deep lumber clamps to 0');
+    eq(leagueProgress(849), { label: '1 PT TO IRON LEAGUE', frac: 49 / 50 },
       'leagueProgress singular PT');
     eq(leagueProgress(1000), { label: '50 PTS TO SILVER LEAGUE', frac: 0 },
       'leagueProgress exactly at cobalt floor');
@@ -550,7 +553,7 @@
       ['cobalt', 'silver'], 'floorsInDomain 930–1080');
     eq(floorsInDomain(1290, 1550).map(function (l) { return l.key; }),
       ['obsidian', 'bloodsteel', 'warlord'], 'floorsInDomain top end');
-    eq(floorsInDomain(-2000, 500), [], 'floorsInDomain none (flint has no floor)');
+    eq(floorsInDomain(-2000, 500), [], 'floorsInDomain none (lumber has no floor)');
 
     /* y-axis ticks (round values inside the domain, at most 5) */
     eq(yTicks(930, 1080), [950, 1000, 1050], 'yTicks 150 span → 50s');
@@ -603,8 +606,8 @@
       [{ key: 'warlord', lo: 1520, hi: 1600 }],
       'leagueBandsInDomain open-ended warlord');
     eq(leagueBandsInDomain(400, 700),
-      [{ key: 'flint', lo: 400, hi: 700 }],
-      'leagueBandsInDomain flint below all floors');
+      [{ key: 'lumber', lo: 400, hi: 700 }],
+      'leagueBandsInDomain lumber below all floors');
 
     /* grouping */
     var glog = [
@@ -925,7 +928,7 @@
       lg.textContent = String(p.leagueName || '').toUpperCase() + ' LEAGUE';
       /* opaque metallic plate: the global .lg-<key> class supplies the
          --lg-* custom properties; profile.css paints the badge */
-      lg.className = 'lg-' + (p.league || 'flint');
+      lg.className = 'lg-' + (p.league || 'lumber');
     }
     setText('hero-meta', heroMeta(p));
   }

@@ -109,6 +109,8 @@
 
 /* obsidian keeps its signature red rim */
 #hero-league.lg-obsidian { border-color: #D22730; }
+/* bloodsteel coloring always ships with a red border */
+#hero-league.lg-bloodsteel { border-color: #D22730; }
 
 #hero-meta {
   margin-top: 9px;

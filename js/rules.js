@@ -30,22 +30,22 @@
     'Sergeant', 'Staff Sergeant', 'Sergeant First Class', 'Master Sergeant',
     'First Sergeant', 'Sergeant Major', 'Command Sgt. Major',
     'Second Lieutenant', 'First Lieutenant', 'Captain', 'Major',
-    'Lieutenant Colonel', 'Colonel', 'Brigadier General', 'Major General',
-    'Lieutenant General', 'General', 'General of the Army'
+    'Lieutenant Colonel', 'Colonel', '1 Star General', '2 Star General',
+    '3 Star General', '4 Star General', '5 Star General'
   ];
 
   var LEAGUE_KEYS = [
-    'flint', 'iron', 'steel', 'cobalt', 'silver', 'platinum',
+    'lumber', 'stone', 'iron', 'steel', 'cobalt', 'silver', 'platinum',
     'electrum', 'gold', 'crown', 'obsidian', 'bloodsteel', 'warlord'
   ];
 
   var LEAGUE_NAMES = [
-    'Flint', 'Iron', 'Steel', 'Cobalt', 'Silver', 'Platinum',
+    'Lumber', 'Stone', 'Iron', 'Steel', 'Cobalt', 'Silver', 'Platinum',
     'Electrum', 'Gold', 'Crown Gold', 'Obsidian', 'Bloodsteel', 'Warlord'
   ];
 
   var LEAGUE_FLOORS = [
-    -Infinity, 850, 900, 1000, 1050, 1100, 1150, 1200, 1250, 1300, 1400, 1500
+    -Infinity, 800, 850, 900, 1000, 1050, 1100, 1150, 1200, 1250, 1300, 1400, 1500
   ];
 
   /* ------------------------------------------------------------
@@ -56,7 +56,7 @@
     return Number(n || 0).toLocaleString('en-US');
   }
 
-  /* ELO band label for league i: 'below 850' · '850–899' · … · '1500+' */
+  /* ELO band label for league i: 'below 800' · '850–899' · … · '1500+' */
   function rangeLabel(i, floors) {
     floors = floors || LEAGUE_FLOORS;
     if (i <= 0) return 'below ' + floors[1];
@@ -116,16 +116,17 @@
 
     console.log('rules.js pure-helper self-test');
 
-    eq(rangeLabel(0), 'below 850', 'rangeLabel bottom → below 850');
-    eq(rangeLabel(1), '850–899', 'rangeLabel iron → 850–899');
-    eq(rangeLabel(3), '1000–1049', 'rangeLabel cobalt → 1000–1049');
-    eq(rangeLabel(9), '1300–1399', 'rangeLabel obsidian → 1300–1399');
-    eq(rangeLabel(11), '1500+', 'rangeLabel top → 1500+');
+    eq(rangeLabel(0), 'below 800', 'rangeLabel bottom → below 800');
+    eq(rangeLabel(1), '800–849', 'rangeLabel stone → 800–849');
+    eq(rangeLabel(2), '850–899', 'rangeLabel iron → 850–899');
+    eq(rangeLabel(4), '1000–1049', 'rangeLabel cobalt → 1000–1049');
+    eq(rangeLabel(10), '1300–1399', 'rangeLabel obsidian → 1300–1399');
+    eq(rangeLabel(12), '1500+', 'rangeLabel top → 1500+');
     eq(rangeLabel(2, [-Infinity, 10, 20, 30]), '20–29', 'rangeLabel honors custom floors');
 
     var fakePlayers = [
       { rankIndex: 0, league: 'cobalt', elo: 1000 },
-      { rankIndex: 0, league: 'flint', elo: 812 },
+      { rankIndex: 0, league: 'stone', elo: 812 },
       { rankIndex: 4, league: 'obsidian', elo: 1369 },
       { rankIndex: 22, league: 'warlord', elo: 1520 },
       { rankIndex: 99, league: 'nope', elo: 905 },     // clamps + elo fallback
@@ -140,13 +141,13 @@
     eq(countByRank(null).length, 23, 'countByRank null-safe');
 
     var lc = countByLeague(fakePlayers);
-    eq(lc.length, 12, 'countByLeague returns 12 buckets');
-    eq(lc[3], 2, 'countByLeague cobalt bucket (missing key → start elo 1000)');
-    eq(lc[0], 1, 'countByLeague flint bucket');
-    eq(lc[2], 1, 'countByLeague unknown key falls back to elo (steel 905)');
-    eq(lc[9], 1, 'countByLeague obsidian bucket');
-    eq(lc[11], 1, 'countByLeague warlord bucket');
-    eq(countByLeague([]).join(''), '000000000000', 'countByLeague empty → zeros');
+    eq(lc.length, 13, 'countByLeague returns 13 buckets');
+    eq(lc[4], 2, 'countByLeague cobalt bucket (missing key → start elo 1000)');
+    eq(lc[1], 1, 'countByLeague stone bucket');
+    eq(lc[3], 1, 'countByLeague unknown key falls back to elo (steel 905)');
+    eq(lc[10], 1, 'countByLeague obsidian bucket');
+    eq(lc[12], 1, 'countByLeague warlord bucket');
+    eq(countByLeague([]).join(''), '0000000000000', 'countByLeague empty → zeros');
 
     console.log(failures === 0
       ? 'ALL ' + checks + ' CHECKS PASSED'

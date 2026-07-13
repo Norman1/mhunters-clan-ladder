@@ -867,9 +867,10 @@ tr.row--hit td { animation: row-flash 1.6s ease-out 1; }
 }
 #feed-list .feed-item--rank .feed-result__sub { margin-left: 18px; }
 
-/* the twelve metals — a/b/c = banner gradient stops · t = text · sub = secondary
+/* the thirteen tiers — a/b/c = banner gradient stops · t = text · sub = secondary
    text · hi = engraving bevel under the big word · time = timestamp color */
-.lg-flint      { --lg-a: #565A61; --lg-b: #4A4E55; --lg-c: #34383E; --lg-t: #E3E6EA; --lg-sub: rgba(255,255,255,.52); --lg-time: rgba(255,255,255,.45); --lg-hi: rgba(0,0,0,.4); }
+.lg-lumber     { --lg-a: #84674A; --lg-b: #6E5439; --lg-c: #513C27; --lg-t: #F1E9DE; --lg-sub: rgba(255,248,238,.55); --lg-time: rgba(255,248,238,.48); --lg-hi: rgba(0,0,0,.38); }
+.lg-stone      { --lg-a: #565A61; --lg-b: #4A4E55; --lg-c: #34383E; --lg-t: #E3E6EA; --lg-sub: rgba(255,255,255,.52); --lg-time: rgba(255,255,255,.45); --lg-hi: rgba(0,0,0,.4); }
 .lg-iron       { --lg-a: #75797F; --lg-b: #65696F; --lg-c: #4D5157; --lg-t: #F0F2F4; --lg-sub: rgba(255,255,255,.55); --lg-time: rgba(255,255,255,.48); --lg-hi: rgba(0,0,0,.35); }
 .lg-steel      { --lg-a: #A5B1BE; --lg-b: #8496A7; --lg-c: #6E7D8D; --lg-t: #10151B; --lg-sub: rgba(10,14,19,.6);  --lg-time: rgba(10,14,19,.55); --lg-hi: rgba(255,255,255,.25); }
 .lg-cobalt     { --lg-a: #B4C7DE; --lg-b: #97AECB; --lg-c: #7F97B5; --lg-t: #0E1420; --lg-sub: rgba(10,16,26,.6);  --lg-time: rgba(10,16,26,.55); --lg-hi: rgba(255,255,255,.3); }
@@ -891,6 +892,11 @@ tr.row--hit td { animation: row-flash 1.6s ease-out 1; }
   border-color: #3A3D45;
   border-left-color: #D22730;
   box-shadow: inset 0 0 16px rgba(210, 39, 48, 0.14);
+}
+
+/* bloodsteel coloring always ships with a red border */
+#feed-list .feed-item--league.lg-bloodsteel {
+  border-color: #D22730;
 }
 
 /* results */

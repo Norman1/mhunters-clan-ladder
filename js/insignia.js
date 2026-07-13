@@ -17,12 +17,13 @@
     'Sergeant', 'Staff Sergeant', 'Sergeant First Class', 'Master Sergeant',
     'First Sergeant', 'Sergeant Major', 'Command Sgt. Major',
     'Second Lieutenant', 'First Lieutenant', 'Captain', 'Major',
-    'Lieutenant Colonel', 'Colonel', 'Brigadier General', 'Major General',
-    'Lieutenant General', 'General', 'General of the Army'
+    'Lieutenant Colonel', 'Colonel', '1 Star General', '2 Star General',
+    '3 Star General', '4 Star General', '5 Star General'
   ];
 
   var LEAGUES = {
-    flint:      { name: 'Flint',      color: '#4A4E55', lo: -Infinity },
+    lumber:     { name: 'Lumber',     color: '#74573B', lo: -Infinity },
+    stone:      { name: 'Stone',      color: '#4A4E55', lo: 800 },
     iron:       { name: 'Iron',       color: '#65696F', lo: 850 },
     steel:      { name: 'Steel',      color: '#7E8B9B', lo: 900 },
     cobalt:     { name: 'Cobalt',     color: '#91A8C4', lo: 1000 },
@@ -69,7 +70,7 @@
   function darken(hex, t) { return mix(hex, '#000000', t); }
 
   function leagueColor(key) {
-    return (LEAGUES[key] || LEAGUES.flint).color;
+    return (LEAGUES[key] || LEAGUES.lumber).color;
   }
 
   /* Gradient stops: lighter top -> base -> darker bottom. */
@@ -306,7 +307,7 @@
     var ri = Math.floor(Number(rankIndex));
     if (!isFinite(ri)) ri = 0;
     ri = Math.max(0, Math.min(22, ri));
-    var lk = LEAGUES[leagueKey] ? leagueKey : 'flint';
+    var lk = LEAGUES[leagueKey] ? leagueKey : 'lumber';
     var size = Number(sizePx);
     if (!isFinite(size) || size <= 0) size = 40;
 
@@ -367,7 +368,7 @@
     var count = 0;
 
     if (RANKS.length !== 23) fails.push('RANKS length ' + RANKS.length + ' !== 23');
-    if (leagues.length !== 12) fails.push('LEAGUES length ' + leagues.length + ' !== 12');
+    if (leagues.length !== 13) fails.push('LEAGUES length ' + leagues.length + ' !== 13');
     leagues.forEach(function (k) {
       if (!/^#[0-9A-F]{6}$/i.test(leagueColor(k))) fails.push('leagueColor(' + k + ') not hex: ' + leagueColor(k));
     });
@@ -422,7 +423,7 @@
       fails.slice(0, 40).forEach(function (f) { console.error('  - ' + f); });
       if (typeof process !== 'undefined') process.exitCode = 1;
     } else {
-      console.log('insignia self-check OK: ' + count + ' svgs (23 ranks x 12 leagues x ' + sizes.length +
+      console.log('insignia self-check OK: ' + count + ' svgs (23 ranks x 13 leagues x ' + sizes.length +
                   ' sizes), ' + Object.keys(allIds).length + ' unique gradient ids, all coords finite and in-viewBox, ' +
                   'obsidian rim + bloodsteel ramp present, fallback calls clean.');
     }
