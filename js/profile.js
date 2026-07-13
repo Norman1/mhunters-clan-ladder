@@ -27,9 +27,9 @@
   ];
 
   var RANK_NAMES = [
-    'Recruit', 'Private', 'Private First Class', 'Specialist', 'Corporal',
-    'Sergeant', 'Staff Sergeant', 'Sergeant First Class', 'Master Sergeant',
-    'First Sergeant', 'Sergeant Major', 'Command Sgt. Major',
+    'Recruit', 'Private', 'Private First Class', 'Trooper', 'Corporal',
+    'Gunner', 'Sharpshooter', 'Pathfinder', 'Ranger',
+    'Raider', 'Commando', 'Shock Trooper',
     'Second Lieutenant', 'First Lieutenant', 'Captain', 'Major',
     'Lieutenant Colonel', 'Colonel', '1 Star General', '2 Star General',
     '3 Star General', '4 Star General', '5 Star General'
@@ -456,8 +456,8 @@
     eq(fmtDate(null), '', 'fmtDate null → empty');
 
     /* rank progress */
-    eq(rankProgress(33), { label: '17 WINS TO SPECIALIST', frac: (33 - 25) / 25 },
-      'rankProgress 33 wins (PFC → Specialist)');
+    eq(rankProgress(33), { label: '17 WINS TO TROOPER', frac: (33 - 25) / 25 },
+      'rankProgress 33 wins (PFC → Trooper)');
     eq(rankProgress(0), { label: '10 WINS TO PRIVATE', frac: 0 }, 'rankProgress 0 wins');
     eq(rankProgress(24), { label: '1 WIN TO PRIVATE FIRST CLASS', frac: 14 / 15 },
       'rankProgress singular WIN');

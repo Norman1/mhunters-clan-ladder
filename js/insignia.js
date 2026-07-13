@@ -13,9 +13,9 @@
   /* ---------- rank + league tables ---------- */
 
   var RANKS = [
-    'Recruit', 'Private', 'Private First Class', 'Specialist', 'Corporal',
-    'Sergeant', 'Staff Sergeant', 'Sergeant First Class', 'Master Sergeant',
-    'First Sergeant', 'Sergeant Major', 'Command Sgt. Major',
+    'Recruit', 'Private', 'Private First Class', 'Trooper', 'Corporal',
+    'Gunner', 'Sharpshooter', 'Pathfinder', 'Ranger',
+    'Raider', 'Commando', 'Shock Trooper',
     'Second Lieutenant', 'First Lieutenant', 'Captain', 'Major',
     'Lieutenant Colonel', 'Colonel', '1 Star General', '2 Star General',
     '3 Star General', '4 Star General', '5 Star General'
@@ -173,15 +173,15 @@
   var ENLISTED = {
     1:  { ch: 1, slim: true },                        // Private
     2:  { ch: 1 },                                    // PFC
-    3:  { ch: 1, rock: 1 },                           // Specialist
+    3:  { ch: 1, rock: 1 },                           // Trooper
     4:  { ch: 2 },                                    // Corporal
-    5:  { ch: 3 },                                    // Sergeant
-    6:  { ch: 3, tight: true },                       // Staff Sergeant
-    7:  { ch: 3, rock: 1 },                           // Sgt First Class
-    8:  { ch: 3, rock: 2 },                           // Master Sergeant
-    9:  { ch: 3, rock: 2, loz: true },                // First Sergeant
-    10: { ch: 3, rock: 2, star: true },               // Sergeant Major
-    11: { ch: 3, rock: 2, star: true, wreath: true }  // Command Sgt. Major
+    5:  { ch: 3 },                                    // Gunner
+    6:  { ch: 3, tight: true },                       // Sharpshooter
+    7:  { ch: 3, rock: 1 },                           // Pathfinder
+    8:  { ch: 3, rock: 2 },                           // Ranger
+    9:  { ch: 3, rock: 2, loz: true },                // Raider
+    10: { ch: 3, rock: 2, star: true },               // Commando
+    11: { ch: 3, rock: 2, star: true, wreath: true }  // Shock Trooper
   };
 
   function enlisted(spec) {

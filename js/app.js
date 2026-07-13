@@ -19,9 +19,9 @@
      ------------------------------------------------------------ */
 
   var RANK_NAMES = [
-    'Recruit', 'Private', 'Private First Class', 'Specialist', 'Corporal',
-    'Sergeant', 'Staff Sergeant', 'Sergeant First Class', 'Master Sergeant',
-    'First Sergeant', 'Sergeant Major', 'Command Sgt. Major',
+    'Recruit', 'Private', 'Private First Class', 'Trooper', 'Corporal',
+    'Gunner', 'Sharpshooter', 'Pathfinder', 'Ranger',
+    'Raider', 'Commando', 'Shock Trooper',
     'Second Lieutenant', 'First Lieutenant', 'Captain', 'Major',
     'Lieutenant Colonel', 'Colonel', '1 Star General', '2 Star General',
     '3 Star General', '4 Star General', '5 Star General'
@@ -150,7 +150,7 @@
     eq(streakFontSize(0), null, 'no streak → no size');
 
     eq(rankProgressText({ winsToNextRank: 10, rankIndex: 5 }),
-      '10 WINS TO STAFF SERGEANT', 'rank progress plural');
+      '10 WINS TO SHARPSHOOTER', 'rank progress plural');
     eq(rankProgressText({ winsToNextRank: 1, rankIndex: 0 }),
       '1 WIN TO PRIVATE', 'rank progress singular');
     eq(rankProgressText({ winsToNextRank: null, rankIndex: 22 }),
