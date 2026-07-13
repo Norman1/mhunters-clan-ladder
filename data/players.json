@@ -21,7 +21,7 @@
     "game_cap": 2,
     "missed_games": 0,
     "last_opponent": "9780712014",
-    "last_assigned_at": "2026-07-13T11:09:19.493Z"
+    "last_assigned_at": "2026-07-13T17:53:59.758Z"
   },
   "81598466": {
     "name": "Tim 🍌",
@@ -137,11 +137,11 @@
   },
   "88110265403": {
     "name": "Crouton",
-    "elo": 1360,
+    "elo": 1375,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "9313400553",
-    "last_assigned_at": "2026-07-12T19:04:20.601Z"
+    "last_opponent": "71148639731",
+    "last_assigned_at": "2026-07-13T17:54:00.598Z"
   },
   "84143567121": {
     "name": "Poldi",
@@ -369,11 +369,11 @@
   },
   "71148639731": {
     "name": "Nick",
-    "elo": 1262,
+    "elo": 1247,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-07-12T06:32:12.418Z",
-    "last_opponent": "3346775331"
+    "last_assigned_at": "2026-07-13T17:53:59.758Z",
+    "last_opponent": "88110265403"
   },
   "71155120841": {
     "name": "Ventura",
@@ -612,7 +612,7 @@
     "elo": 845,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-07-13T11:09:19.493Z",
+    "last_assigned_at": "2026-07-13T17:54:00.598Z",
     "last_opponent": "28867016"
   },
   "53134900057": {
