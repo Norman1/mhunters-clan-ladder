@@ -867,7 +867,7 @@ tr.row--hit td { animation: row-flash 1.6s ease-out 1; }
 }
 #feed-list .feed-item--rank .feed-result__sub { margin-left: 18px; }
 
-/* the thirteen tiers — a/b/c = banner gradient stops · t = text · sub = secondary
+/* the ten tiers — a/b/c = banner gradient stops · t = text · sub = secondary
    text · hi = engraving bevel under the big word · time = timestamp color */
 .lg-lumber     { --lg-a: #84674A; --lg-b: #6E5439; --lg-c: #513C27; --lg-t: #F1E9DE; --lg-sub: rgba(255,248,238,.55); --lg-time: rgba(255,248,238,.48); --lg-hi: rgba(0,0,0,.38); }
 .lg-stone      { --lg-a: #565A61; --lg-b: #4A4E55; --lg-c: #34383E; --lg-t: #E3E6EA; --lg-sub: rgba(255,255,255,.52); --lg-time: rgba(255,255,255,.45); --lg-hi: rgba(0,0,0,.4); }
@@ -875,10 +875,7 @@ tr.row--hit td { animation: row-flash 1.6s ease-out 1; }
 .lg-steel      { --lg-a: #A5B1BE; --lg-b: #8496A7; --lg-c: #6E7D8D; --lg-t: #10151B; --lg-sub: rgba(10,14,19,.6);  --lg-time: rgba(10,14,19,.55); --lg-hi: rgba(255,255,255,.25); }
 .lg-cobalt     { --lg-a: #B4C7DE; --lg-b: #97AECB; --lg-c: #7F97B5; --lg-t: #0E1420; --lg-sub: rgba(10,16,26,.6);  --lg-time: rgba(10,16,26,.55); --lg-hi: rgba(255,255,255,.3); }
 .lg-silver     { --lg-a: #E4E9EF; --lg-b: #C6CFD9; --lg-c: #AAB3BE; --lg-t: #14181D; --lg-sub: rgba(12,16,21,.58); --lg-time: rgba(12,16,21,.52); --lg-hi: rgba(255,255,255,.5); }
-.lg-platinum   { --lg-a: #FFFFFF; --lg-b: #ECF0F5; --lg-c: #CBD2DB; --lg-t: #14181D; --lg-sub: rgba(12,16,21,.55); --lg-time: rgba(12,16,21,.5);  --lg-hi: rgba(255,255,255,.7); }
-.lg-electrum   { --lg-a: #F4ECC5; --lg-b: #E5D8A6; --lg-c: #C9BA80; --lg-t: #211A08; --lg-sub: rgba(30,24,8,.58);  --lg-time: rgba(30,24,8,.52);  --lg-hi: rgba(255,255,255,.45); }
 .lg-gold       { --lg-a: #F2DC8E; --lg-b: #E0C167; --lg-c: #CBA23F; --lg-t: #241C06; --lg-sub: rgba(32,25,7,.6);   --lg-time: rgba(32,25,7,.55);  --lg-hi: rgba(255,255,255,.4); }
-.lg-crown      { --lg-a: #ECC46A; --lg-b: #D3A047; --lg-c: #B57F26; --lg-t: #1F1504; --lg-sub: rgba(28,19,4,.6);   --lg-time: rgba(28,19,4,.55);  --lg-hi: rgba(255,255,255,.35); }
 .lg-obsidian   { --lg-a: #2E3138; --lg-b: #1E2026; --lg-c: #101216; --lg-t: #C6CDD6; --lg-sub: rgba(255,255,255,.45); --lg-time: rgba(255,255,255,.4); --lg-hi: rgba(0,0,0,.6); }
 .lg-bloodsteel { --lg-a: #D8DDE3; --lg-b: #B56A6E; --lg-c: #96343B; --lg-t: #16090B; --lg-sub: rgba(20,8,10,.62);  --lg-time: rgba(255,255,255,.55); --lg-hi: rgba(255,255,255,.3); }
 .lg-warlord    { --lg-a: #E4404A; --lg-b: #C21F29; --lg-c: #8E121B; --lg-t: #FFF6F6; --lg-sub: rgba(255,246,246,.62); --lg-time: rgba(255,246,246,.55); --lg-hi: rgba(0,0,0,.3); }

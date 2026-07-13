@@ -35,17 +35,17 @@
   ];
 
   var LEAGUE_KEYS = [
-    'lumber', 'stone', 'iron', 'steel', 'cobalt', 'silver', 'platinum',
-    'electrum', 'gold', 'crown', 'obsidian', 'bloodsteel', 'warlord'
+    'lumber', 'stone', 'iron', 'steel', 'cobalt', 'silver',
+    'gold', 'obsidian', 'bloodsteel', 'warlord'
   ];
 
   var LEAGUE_NAMES = [
-    'Lumber', 'Stone', 'Iron', 'Steel', 'Cobalt', 'Silver', 'Platinum',
-    'Electrum', 'Gold', 'Crown Gold', 'Obsidian', 'Bloodsteel', 'Warlord'
+    'Lumber', 'Stone', 'Iron', 'Steel', 'Cobalt', 'Silver',
+    'Gold', 'Obsidian', 'Bloodsteel', 'Warlord'
   ];
 
   var LEAGUE_FLOORS = [
-    -Infinity, 800, 850, 900, 1000, 1050, 1100, 1150, 1200, 1250, 1300, 1400, 1500
+    -Infinity, 700, 800, 900, 1000, 1100, 1200, 1300, 1400, 1500
   ];
 
   /* ------------------------------------------------------------
@@ -116,12 +116,12 @@
 
     console.log('rules.js pure-helper self-test');
 
-    eq(rangeLabel(0), 'below 800', 'rangeLabel bottom → below 800');
-    eq(rangeLabel(1), '800–849', 'rangeLabel stone → 800–849');
-    eq(rangeLabel(2), '850–899', 'rangeLabel iron → 850–899');
-    eq(rangeLabel(4), '1000–1049', 'rangeLabel cobalt → 1000–1049');
-    eq(rangeLabel(10), '1300–1399', 'rangeLabel obsidian → 1300–1399');
-    eq(rangeLabel(12), '1500+', 'rangeLabel top → 1500+');
+    eq(rangeLabel(0), 'below 700', 'rangeLabel bottom → below 700');
+    eq(rangeLabel(1), '700–799', 'rangeLabel stone → 700–799');
+    eq(rangeLabel(2), '800–899', 'rangeLabel iron → 800–899');
+    eq(rangeLabel(4), '1000–1099', 'rangeLabel cobalt → 1000–1099');
+    eq(rangeLabel(7), '1300–1399', 'rangeLabel obsidian → 1300–1399');
+    eq(rangeLabel(9), '1500+', 'rangeLabel top → 1500+');
     eq(rangeLabel(2, [-Infinity, 10, 20, 30]), '20–29', 'rangeLabel honors custom floors');
 
     var fakePlayers = [
@@ -141,13 +141,13 @@
     eq(countByRank(null).length, 23, 'countByRank null-safe');
 
     var lc = countByLeague(fakePlayers);
-    eq(lc.length, 13, 'countByLeague returns 13 buckets');
+    eq(lc.length, 10, 'countByLeague returns 10 buckets');
     eq(lc[4], 2, 'countByLeague cobalt bucket (missing key → start elo 1000)');
     eq(lc[1], 1, 'countByLeague stone bucket');
     eq(lc[3], 1, 'countByLeague unknown key falls back to elo (steel 905)');
-    eq(lc[10], 1, 'countByLeague obsidian bucket');
-    eq(lc[12], 1, 'countByLeague warlord bucket');
-    eq(countByLeague([]).join(''), '0000000000000', 'countByLeague empty → zeros');
+    eq(lc[7], 1, 'countByLeague obsidian bucket');
+    eq(lc[9], 1, 'countByLeague warlord bucket');
+    eq(countByLeague([]).join(''), '0000000000', 'countByLeague empty → zeros');
 
     console.log(failures === 0
       ? 'ALL ' + checks + ' CHECKS PASSED'

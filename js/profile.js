@@ -37,15 +37,12 @@
 
   var LEAGUES = [
     { key: 'lumber',     name: 'Lumber',     lo: -Infinity },
-    { key: 'stone',      name: 'Stone',      lo: 800 },
-    { key: 'iron',       name: 'Iron',       lo: 850 },
+    { key: 'stone',      name: 'Stone',      lo: 700 },
+    { key: 'iron',       name: 'Iron',       lo: 800 },
     { key: 'steel',      name: 'Steel',      lo: 900 },
     { key: 'cobalt',     name: 'Cobalt',     lo: 1000 },
-    { key: 'silver',     name: 'Silver',     lo: 1050 },
-    { key: 'platinum',   name: 'Platinum',   lo: 1100 },
-    { key: 'electrum',   name: 'Electrum',   lo: 1150 },
+    { key: 'silver',     name: 'Silver',     lo: 1100 },
     { key: 'gold',       name: 'Gold',       lo: 1200 },
-    { key: 'crown',      name: 'Crown Gold', lo: 1250 },
     { key: 'obsidian',   name: 'Obsidian',   lo: 1300 },
     { key: 'bloodsteel', name: 'Bloodsteel', lo: 1400 },
     { key: 'warlord',    name: 'Warlord',    lo: 1500 }
@@ -467,19 +464,19 @@
       'rankProgress exactly at threshold');
 
     /* league progress */
-    eq(leagueProgress(1152), { label: '48 PTS TO GOLD LEAGUE', frac: (1152 - 1150) / 50 },
-      'leagueProgress electrum → gold');
+    eq(leagueProgress(1152), { label: '48 PTS TO GOLD LEAGUE', frac: (1152 - 1100) / 100 },
+      'leagueProgress silver → gold');
     eq(leagueProgress(1500), { label: 'TOP LEAGUE', frac: 1 }, 'leagueProgress warlord');
     eq(leagueProgress(1650), { label: 'TOP LEAGUE', frac: 1 }, 'leagueProgress above warlord');
-    eq(leagueProgress(800), { label: '50 PTS TO IRON LEAGUE', frac: 0 },
-      'leagueProgress exactly at stone floor');
-    eq(leagueProgress(700), { label: '100 PTS TO STONE LEAGUE', frac: 50 / 150 },
+    eq(leagueProgress(800), { label: '100 PTS TO STEEL LEAGUE', frac: 0 },
+      'leagueProgress exactly at iron floor');
+    eq(leagueProgress(600), { label: '100 PTS TO STONE LEAGUE', frac: 50 / 150 },
       'leagueProgress lumber uses nominal window');
-    eq(leagueProgress(600), { label: '200 PTS TO STONE LEAGUE', frac: 0 },
+    eq(leagueProgress(500), { label: '200 PTS TO STONE LEAGUE', frac: 0 },
       'leagueProgress deep lumber clamps to 0');
-    eq(leagueProgress(849), { label: '1 PT TO IRON LEAGUE', frac: 49 / 50 },
+    eq(leagueProgress(899), { label: '1 PT TO STEEL LEAGUE', frac: 99 / 100 },
       'leagueProgress singular PT');
-    eq(leagueProgress(1000), { label: '50 PTS TO SILVER LEAGUE', frac: 0 },
+    eq(leagueProgress(1000), { label: '100 PTS TO SILVER LEAGUE', frac: 0 },
       'leagueProgress exactly at cobalt floor');
 
     /* longest win streak (gameLog is newest first; oldest→newest walk) */
@@ -550,7 +547,7 @@
 
     /* league floors in domain */
     eq(floorsInDomain(930, 1080).map(function (l) { return l.key; }),
-      ['cobalt', 'silver'], 'floorsInDomain 930–1080');
+      ['cobalt'], 'floorsInDomain 930–1080');
     eq(floorsInDomain(1290, 1550).map(function (l) { return l.key; }),
       ['obsidian', 'bloodsteel', 'warlord'], 'floorsInDomain top end');
     eq(floorsInDomain(-2000, 500), [], 'floorsInDomain none (lumber has no floor)');
@@ -599,8 +596,7 @@
     /* league bands in domain (chart zone fills) */
     eq(leagueBandsInDomain(930, 1080),
       [{ key: 'steel', lo: 930, hi: 1000 },
-       { key: 'cobalt', lo: 1000, hi: 1050 },
-       { key: 'silver', lo: 1050, hi: 1080 }],
+       { key: 'cobalt', lo: 1000, hi: 1080 }],
       'leagueBandsInDomain clips bands to the domain');
     eq(leagueBandsInDomain(1520, 1600),
       [{ key: 'warlord', lo: 1520, hi: 1600 }],

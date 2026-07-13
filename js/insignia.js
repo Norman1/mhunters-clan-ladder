@@ -23,15 +23,12 @@
 
   var LEAGUES = {
     lumber:     { name: 'Lumber',     color: '#74573B', lo: -Infinity },
-    stone:      { name: 'Stone',      color: '#4A4E55', lo: 800 },
-    iron:       { name: 'Iron',       color: '#65696F', lo: 850 },
+    stone:      { name: 'Stone',      color: '#4A4E55', lo: 700 },
+    iron:       { name: 'Iron',       color: '#65696F', lo: 800 },
     steel:      { name: 'Steel',      color: '#7E8B9B', lo: 900 },
     cobalt:     { name: 'Cobalt',     color: '#91A8C4', lo: 1000 },
-    silver:     { name: 'Silver',     color: '#BEC7D1', lo: 1050 },
-    platinum:   { name: 'Platinum',   color: '#E9EDF2', lo: 1100 },
-    electrum:   { name: 'Electrum',   color: '#E2D5A0', lo: 1150 },
+    silver:     { name: 'Silver',     color: '#BEC7D1', lo: 1100 },
     gold:       { name: 'Gold',       color: '#DCBB5C', lo: 1200 },
-    crown:      { name: 'Crown Gold', color: '#C89238', lo: 1250 },
     obsidian:   { name: 'Obsidian',   color: '#24262C', lo: 1300 },
     bloodsteel: { name: 'Bloodsteel', color: '#B56A6E', lo: 1400 },
     warlord:    { name: 'Warlord',    color: '#D22730', lo: 1500 }
@@ -368,7 +365,7 @@
     var count = 0;
 
     if (RANKS.length !== 23) fails.push('RANKS length ' + RANKS.length + ' !== 23');
-    if (leagues.length !== 13) fails.push('LEAGUES length ' + leagues.length + ' !== 13');
+    if (leagues.length !== 10) fails.push('LEAGUES length ' + leagues.length + ' !== 10');
     leagues.forEach(function (k) {
       if (!/^#[0-9A-F]{6}$/i.test(leagueColor(k))) fails.push('leagueColor(' + k + ') not hex: ' + leagueColor(k));
     });
@@ -423,7 +420,7 @@
       fails.slice(0, 40).forEach(function (f) { console.error('  - ' + f); });
       if (typeof process !== 'undefined') process.exitCode = 1;
     } else {
-      console.log('insignia self-check OK: ' + count + ' svgs (23 ranks x 13 leagues x ' + sizes.length +
+      console.log('insignia self-check OK: ' + count + ' svgs (23 ranks x 10 leagues x ' + sizes.length +
                   ' sizes), ' + Object.keys(allIds).length + ' unique gradient ids, all coords finite and in-viewBox, ' +
                   'obsidian rim + bloodsteel ramp present, fallback calls clean.');
     }
