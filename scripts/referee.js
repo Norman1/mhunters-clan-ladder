@@ -17,6 +17,19 @@ function saveJSON(filePath, data) {
     fs.writeFileSync(filePath, JSON.stringify(data, null, 2));
 }
 
+// The Warzone API reports times as 'M/D/YYYY HH:mm:ss' in UTC (verified:
+// a game's 'created' matches our creation stamp to the second). Convert to
+// ISO so finished_at reflects the game's real end, not our polling time.
+// Any parse surprise falls back to the provided default.
+function apiTimeToIso(apiTime, fallbackIso) {
+    const m = /^(\d{1,2})\/(\d{1,2})\/(\d{4}) (\d{1,2}):(\d{2}):(\d{2})$/.exec(String(apiTime || '').trim());
+    if (!m) return fallbackIso;
+    const [mo, day, yr, hh, mm, ss] = m.slice(1).map(Number);
+    if (mo < 1 || mo > 12 || day < 1 || day > 31 || hh > 23 || mm > 59 || ss > 59) return fallbackIso;
+    const d = new Date(Date.UTC(yr, mo - 1, day, hh, mm, ss));
+    return isNaN(d.getTime()) ? fallbackIso : d.toISOString();
+}
+
 function calculateElo(winnerElo, loserElo) {
     const K = 40;
     const expectedWinner = 1 / (1 + Math.pow(10, (loserElo - winnerElo) / 400));
@@ -271,7 +284,8 @@ async function runReferee() {
                     p2_id: game.p2_id,
                     winner_id: winnerId,
                     loser_id: loserId,
-                    finished_at: now.toISOString(),
+                    // the game's actual end (its last turn), not our poll time
+                    finished_at: apiTimeToIso(status.lastTurnTime, now.toISOString()),
                     template_id: game.template_id,
                     elo_change: game.elo_change, // Undefined if draw
                     turns: numberOfTurns,
