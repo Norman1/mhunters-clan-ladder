@@ -76,8 +76,8 @@
     "elo": 1350,
     "game_cap": 3,
     "missed_games": 0,
-    "last_opponent": "71155120841",
-    "last_assigned_at": "2026-07-13T20:56:07.302Z"
+    "last_opponent": "25126079448",
+    "last_assigned_at": "2026-07-14T06:10:07.617Z"
   },
   "3428471447": {
     "name": "AyanM",
@@ -396,8 +396,8 @@
     "elo": 941,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-07-11T02:33:31.547Z",
-    "last_opponent": "16127869941"
+    "last_assigned_at": "2026-07-14T06:10:07.617Z",
+    "last_opponent": "25126079448"
   },
   "50127514525": {
     "name": "toont3",
@@ -531,9 +531,9 @@
     "name": "Adrian D'Agostino",
     "elo": 710,
     "game_cap": 2,
-    "missed_games": 0,
+    "missed_games": 2,
     "last_assigned_at": "2026-07-11T02:33:31.547Z",
-    "last_opponent": "9482920905"
+    "last_opponent": "56133341636"
   },
   "89114164339": {
     "name": "Blacksmith",
