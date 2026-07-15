@@ -73,11 +73,11 @@
   },
   "3346775331": {
     "name": "Gatsu12",
-    "elo": 1337,
+    "elo": 1339,
     "game_cap": 3,
     "missed_games": 0,
-    "last_opponent": "9780712014",
-    "last_assigned_at": "2026-07-15T13:41:07.330Z"
+    "last_opponent": "9313400553",
+    "last_assigned_at": "2026-07-15T22:57:17.185Z"
   },
   "3428471447": {
     "name": "AyanM",
@@ -132,24 +132,24 @@
     "elo": 883,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "16127869941",
-    "last_assigned_at": "2026-07-15T20:59:07.545Z"
+    "last_opponent": "84143567121",
+    "last_assigned_at": "2026-07-15T22:57:17.769Z"
   },
   "88110265403": {
     "name": "Crouton",
-    "elo": 1395,
+    "elo": 1396,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "89133991720",
-    "last_assigned_at": "2026-07-15T20:59:06.835Z"
+    "last_opponent": "9313400553",
+    "last_assigned_at": "2026-07-15T22:57:17.769Z"
   },
   "84143567121": {
     "name": "Poldi",
     "elo": 1281,
     "game_cap": 2,
-    "missed_games": 0,
-    "last_opponent": "71155120841",
-    "last_assigned_at": "2026-07-15T20:59:08.734Z"
+    "missed_games": 1,
+    "last_opponent": "79105823914",
+    "last_assigned_at": "2026-07-15T22:57:17.185Z"
   },
   "23154545458": {
     "name": "Light",
@@ -193,10 +193,10 @@
   },
   "9313400553": {
     "name": "Word Walker",
-    "elo": 805,
+    "elo": 802,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "71148639731",
+    "last_opponent": "3346775331",
     "last_assigned_at": "2026-07-15T13:41:06.784Z"
   },
   "4543063534": {
