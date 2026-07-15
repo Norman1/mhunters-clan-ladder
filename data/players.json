@@ -129,11 +129,11 @@
   },
   "79105823914": {
     "name": "krinid",
-    "elo": 891,
+    "elo": 883,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "3346775331",
-    "last_assigned_at": "2026-07-15T13:41:06.187Z"
+    "last_opponent": "16127869941",
+    "last_assigned_at": "2026-07-15T20:59:07.545Z"
   },
   "88110265403": {
     "name": "Crouton",
@@ -141,15 +141,15 @@
     "game_cap": 2,
     "missed_games": 0,
     "last_opponent": "89133991720",
-    "last_assigned_at": "2026-07-14T20:59:18.785Z"
+    "last_assigned_at": "2026-07-15T20:59:06.835Z"
   },
   "84143567121": {
     "name": "Poldi",
-    "elo": 1277,
+    "elo": 1281,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "9780712014",
-    "last_assigned_at": "2026-07-13T20:56:07.966Z"
+    "last_opponent": "71155120841",
+    "last_assigned_at": "2026-07-15T20:59:08.734Z"
   },
   "23154545458": {
     "name": "Light",
@@ -377,11 +377,11 @@
   },
   "71155120841": {
     "name": "Ventura",
-    "elo": 1336,
+    "elo": 1332,
     "game_cap": 3,
     "missed_games": 0,
-    "last_assigned_at": "2026-07-13T20:56:07.966Z",
-    "last_opponent": "3346775331"
+    "last_assigned_at": "2026-07-15T20:59:08.135Z",
+    "last_opponent": "84143567121"
   },
   "6411877352": {
     "name": "Kratos",
@@ -505,11 +505,11 @@
   },
   "16127869941": {
     "name": "gg",
-    "elo": 1132,
+    "elo": 1140,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-07-11T06:11:55.012Z",
-    "last_opponent": "3631391841"
+    "last_assigned_at": "2026-07-15T20:59:08.135Z",
+    "last_opponent": "79105823914"
   },
   "4353717389": {
     "name": "Krys",
@@ -661,9 +661,9 @@
     "name": "JJJ_Senior",
     "elo": 1037,
     "game_cap": 2,
-    "missed_games": 1,
+    "missed_games": 0,
     "in_clan": true,
-    "last_assigned_at": "2026-07-12T19:04:20.601Z",
+    "last_assigned_at": "2026-07-15T20:59:08.734Z",
     "last_opponent": "88110265403"
   },
   "4555082823": {
