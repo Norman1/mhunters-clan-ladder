@@ -20469,5 +20469,14 @@
     "template_id": 1579658,
     "elo_change": 17,
     "turns": -1
+  },
+  {
+    "game_id": "44818960",
+    "created_at": "2026-07-16T02:30:50.205Z",
+    "p1_id": "9780712014",
+    "p2_id": "9313400553",
+    "template_id": 1574451,
+    "finished_at": "2026-07-16T06:16:41.883Z",
+    "note": "Declined"
   }
 ]
