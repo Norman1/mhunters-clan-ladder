@@ -381,7 +381,7 @@
     "game_cap": 3,
     "missed_games": 0,
     "last_assigned_at": "2026-07-16T15:38:06.967Z",
-    "last_opponent": "88110265403"
+    "last_opponent": "9780712014"
   },
   "6411877352": {
     "name": "Kratos",
@@ -611,9 +611,9 @@
     "name": "Acuna42",
     "elo": 821,
     "game_cap": 2,
-    "missed_games": 0,
+    "missed_games": 1,
     "last_assigned_at": "2026-07-16T15:38:06.967Z",
-    "last_opponent": "9313400553"
+    "last_opponent": "71155120841"
   },
   "53134900057": {
     "name": "extelon",
