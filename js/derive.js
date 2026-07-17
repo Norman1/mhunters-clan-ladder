@@ -548,8 +548,14 @@
         wins: s.wins,
         losses: s.losses,
         winRate: gamesPlayed > 0 ? Math.round((s.wins / gamesPlayed) * 100) : 0,
-        // rolling form: wins among the player's last 100 decisive games
-        winsLast100: s.games.slice(-100).reduce(function (n, g) { return n + (g.won ? 1 : 0); }, 0),
+        // rolling form: win rate over the player's last 100 decisive games
+        // (over all games while under 100 played; 0 with no games)
+        winRateLast100: (function () {
+          var last = s.games.slice(-100);
+          if (!last.length) return 0;
+          var w = last.reduce(function (n, g) { return n + (g.won ? 1 : 0); }, 0);
+          return Math.round((w / last.length) * 100);
+        })(),
         gamesPlayed: gamesPlayed,
         peak: s.peak,
         rankName: RANK_NAMES[rankIdx],
