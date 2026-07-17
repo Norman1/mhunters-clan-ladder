@@ -386,6 +386,39 @@
     hideChipTip();
   }
 
+  /* Monotone-cubic (Fritsch–Carlson) smoothing: a gently curved path through
+     every point with no overshoot — peaks stay peaks. Twin in js/profile.js. */
+  function smoothPathD(xs, ys) {
+    var n = xs.length, i;
+    if (n < 2) return '';
+    if (n === 2) {
+      return 'M' + xs[0].toFixed(1) + ' ' + ys[0].toFixed(1) +
+             'L' + xs[1].toFixed(1) + ' ' + ys[1].toFixed(1);
+    }
+    var dx = [], m = [];
+    for (i = 0; i < n - 1; i++) {
+      dx.push(xs[i + 1] - xs[i]);
+      m.push(dx[i] ? (ys[i + 1] - ys[i]) / dx[i] : 0);
+    }
+    var t = [m[0]];
+    for (i = 1; i < n - 1; i++) {
+      if (m[i - 1] * m[i] <= 0) t.push(0);
+      else {
+        var w1 = 2 * dx[i] + dx[i - 1], w2 = dx[i] + 2 * dx[i - 1];
+        t.push((w1 + w2) / (w1 / m[i - 1] + w2 / m[i]));
+      }
+    }
+    t.push(m[n - 2]);
+    var d = 'M' + xs[0].toFixed(1) + ' ' + ys[0].toFixed(1);
+    for (i = 0; i < n - 1; i++) {
+      var h3 = dx[i] / 3;
+      d += 'C' + (xs[i] + h3).toFixed(1) + ' ' + (ys[i] + t[i] * h3).toFixed(1) +
+           ' ' + (xs[i + 1] - h3).toFixed(1) + ' ' + (ys[i + 1] - t[i + 1] * h3).toFixed(1) +
+           ' ' + xs[i + 1].toFixed(1) + ' ' + ys[i + 1].toFixed(1);
+    }
+    return d;
+  }
+
   /* trajectory sparkline (R10: per-player domain, min 150-pt span, 1000 baseline).
      Fluid width: viewBox scales to the cell, strokes stay crisp. */
   function trajectorySVG(traj, width, height) {
@@ -400,9 +433,10 @@
     var span = Math.max(hi - lo, 150);
     lo = mid - span / 2; hi = mid + span / 2;
     var y = function (v) { return pad + (hi - v) / (hi - lo) * (h - pad * 2); };
-    var pts = [];
+    var xs = [], ys = [];
     for (var i = 0; i < traj.length; i++) {
-      pts.push((pad + i * (w - pad * 2) / (traj.length - 1)).toFixed(1) + ',' + y(traj[i]).toFixed(1));
+      xs.push(pad + i * (w - pad * 2) / (traj.length - 1));
+      ys.push(y(traj[i]));
     }
     var base = '';
     if (1000 >= lo && 1000 <= hi) {
@@ -412,7 +446,7 @@
     }
     return '<svg viewBox="0 0 ' + w + ' ' + h + '" width="100%" height="' + h +
       '" preserveAspectRatio="none" aria-hidden="true">' + base +
-      '<polyline points="' + pts.join(' ') + '" fill="none" stroke="#C6CDD6" stroke-width="1.6" vector-effect="non-scaling-stroke"/></svg>';
+      '<path d="' + smoothPathD(xs, ys) + '" fill="none" stroke="#C6CDD6" stroke-width="1.6" vector-effect="non-scaling-stroke"/></svg>';
   }
 
   /* 'DEC 16 2025' from an ISO date */

@@ -126,6 +126,39 @@
     };
   }
 
+  /* Monotone-cubic (Fritsch–Carlson) smoothing: a gently curved path through
+     every point with no overshoot — peaks stay peaks. Twin in js/app.js. */
+  function smoothPathD(xs, ys) {
+    var n = xs.length, i;
+    if (n < 2) return '';
+    if (n === 2) {
+      return 'M' + xs[0].toFixed(1) + ' ' + ys[0].toFixed(1) +
+             'L' + xs[1].toFixed(1) + ' ' + ys[1].toFixed(1);
+    }
+    var dx = [], m = [];
+    for (i = 0; i < n - 1; i++) {
+      dx.push(xs[i + 1] - xs[i]);
+      m.push(dx[i] ? (ys[i + 1] - ys[i]) / dx[i] : 0);
+    }
+    var t = [m[0]];
+    for (i = 1; i < n - 1; i++) {
+      if (m[i - 1] * m[i] <= 0) t.push(0);
+      else {
+        var w1 = 2 * dx[i] + dx[i - 1], w2 = dx[i] + 2 * dx[i - 1];
+        t.push((w1 + w2) / (w1 / m[i - 1] + w2 / m[i]));
+      }
+    }
+    t.push(m[n - 2]);
+    var d = 'M' + xs[0].toFixed(1) + ' ' + ys[0].toFixed(1);
+    for (i = 0; i < n - 1; i++) {
+      var h3 = dx[i] / 3;
+      d += 'C' + (xs[i] + h3).toFixed(1) + ' ' + (ys[i] + t[i] * h3).toFixed(1) +
+           ' ' + (xs[i + 1] - h3).toFixed(1) + ' ' + (ys[i + 1] - t[i + 1] * h3).toFixed(1) +
+           ' ' + xs[i + 1].toFixed(1) + ' ' + ys[i + 1].toFixed(1);
+    }
+    return d;
+  }
+
   /* Longest run of the given result, walking the log oldest → newest
      (gameLog arrives newest first, so iterate from the tail).
      Returns { len, start, end } — start/end are the first/last game
@@ -481,6 +514,15 @@
       'leagueProgress singular PT');
     eq(leagueProgress(1000), { label: '100 PTS TO SILVER LEAGUE', frac: 0 },
       'leagueProgress exactly at cobalt floor');
+
+    /* smooth path (monotone cubic) */
+    eq(smoothPathD([0, 10], [5, 8]), 'M0.0 5.0L10.0 8.0', 'smoothPathD 2 pts → straight segment');
+    var sp = smoothPathD([0, 10, 20], [0, 10, 0]);
+    eq(sp.slice(0, 1) === 'M' && sp.indexOf('C') > 0, true, 'smoothPathD 3+ pts → cubic path');
+    eq(sp.indexOf('20.0 0.0') > 0, true, 'smoothPathD ends at the last point');
+    eq((sp.match(/-?\d+\.\d/g) || []).every(function (v) { return parseFloat(v) >= -0.01 && parseFloat(v) <= 20.01; }),
+      true, 'smoothPathD never overshoots the data range');
+    eq(smoothPathD([0], [1]), '', 'smoothPathD single point → empty');
 
     /* longest win streak (gameLog is newest first; oldest→newest walk) */
     var W = function (r) { return { won: true, oppRating: r || 1000 }; };
@@ -1082,12 +1124,13 @@
         '" stroke="#3A3D45" stroke-width="1" vector-effect="non-scaling-stroke"/>');
     });
 
-    /* trajectory */
-    var pts = [];
+    /* trajectory — gently smoothed (monotone cubic; no overshoot) */
+    var sxs = [], sys = [];
     for (var i = 0; i < traj.length; i++) {
-      pts.push(x(i).toFixed(1) + ',' + y(traj[i]).toFixed(1));
+      sxs.push(x(i));
+      sys.push(y(traj[i]));
     }
-    parts.push('<polyline points="' + pts.join(' ') +
+    parts.push('<path d="' + smoothPathD(sxs, sys) +
       '" fill="none" stroke="#C6CDD6" stroke-width="1.8" vector-effect="non-scaling-stroke"/>');
     parts.push('</svg>');
 
