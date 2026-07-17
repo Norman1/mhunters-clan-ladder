@@ -111,10 +111,10 @@
 #hero-league.lg-obsidian { border-color: #D22730; }
 /* bloodsteel coloring always ships with a red border */
 #hero-league.lg-bloodsteel { border-color: #D22730; }
-/* god of war badge radiates its saiyan aura */
+/* god of war badge burns with its crimson saiyan aura */
 #hero-league.lg-god {
-  border-color: #FFE066;
-  box-shadow: 0 0 14px rgba(255, 215, 94, 0.5), inset 0 0 12px rgba(255, 255, 255, 0.35);
+  border-color: #FF7B2E;
+  box-shadow: 0 0 14px rgba(255, 70, 20, 0.6), inset 0 0 12px rgba(255, 214, 140, 0.4);
 }
 
 #hero-meta {

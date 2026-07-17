@@ -32,7 +32,7 @@
     obsidian:   { name: 'Obsidian',   color: '#24262C', lo: 1300 },
     bloodsteel: { name: 'Bloodsteel', color: '#B56A6E', lo: 1400 },
     warlord:    { name: 'Warlord',    color: '#D22730', lo: 1500 },
-    god:        { name: 'God of War', color: '#FFD75E', lo: 1600 }
+    god:        { name: 'God of War', color: '#FF6229', lo: 1600 }
   };
 
   /* ---------- color helpers ---------- */
@@ -73,8 +73,8 @@
 
   /* Gradient stops: lighter top -> base -> darker bottom. */
   function leagueStops(key) {
-    // God of War: white-hot core flaring into saiyan gold — energy, not metal
-    if (key === 'god') return ['#FFFFFF', '#FFD75E', '#DB9A18'];
+    // God of War: white-hot core igniting into super-saiyan crimson fire
+    if (key === 'god') return ['#FFF3C4', '#FF7B2E', '#C6160D'];
     if (key === 'bloodsteel') return ['#C4CAD2', '#B56A6E', '#96343B']; // silver bleeding into red
     var base = leagueColor(key);
     // Obsidian: black metal, but lifted enough to read against the dark plate at 18px.
@@ -408,7 +408,7 @@
           if (ri > 0 && (s.match(/<path/g) || []).length < 4) fails.push(label + ': device paths missing');
           if (lk === 'obsidian' && s.indexOf('#D22730') === -1) fails.push(label + ': obsidian red rim missing');
           if (lk === 'bloodsteel' && s.indexOf('#C4CAD2') === -1) fails.push(label + ': bloodsteel silver stop missing');
-          if (lk === 'god' && s.indexOf('#FFFFFF') === -1) fails.push(label + ': god white-hot stop missing');
+          if (lk === 'god' && s.indexOf('#FFF3C4') === -1) fails.push(label + ': god white-hot stop missing');
         }
       }
     }
