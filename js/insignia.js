@@ -31,7 +31,8 @@
     gold:       { name: 'Gold',       color: '#DCBB5C', lo: 1200 },
     obsidian:   { name: 'Obsidian',   color: '#24262C', lo: 1300 },
     bloodsteel: { name: 'Bloodsteel', color: '#B56A6E', lo: 1400 },
-    warlord:    { name: 'Warlord',    color: '#D22730', lo: 1500 }
+    warlord:    { name: 'Warlord',    color: '#D22730', lo: 1500 },
+    god:        { name: 'God of War', color: '#FFD75E', lo: 1600 }
   };
 
   /* ---------- color helpers ---------- */
@@ -72,6 +73,8 @@
 
   /* Gradient stops: lighter top -> base -> darker bottom. */
   function leagueStops(key) {
+    // God of War: white-hot core flaring into saiyan gold — energy, not metal
+    if (key === 'god') return ['#FFFFFF', '#FFD75E', '#DB9A18'];
     if (key === 'bloodsteel') return ['#C4CAD2', '#B56A6E', '#96343B']; // silver bleeding into red
     var base = leagueColor(key);
     // Obsidian: black metal, but lifted enough to read against the dark plate at 18px.
@@ -365,7 +368,7 @@
     var count = 0;
 
     if (RANKS.length !== 23) fails.push('RANKS length ' + RANKS.length + ' !== 23');
-    if (leagues.length !== 10) fails.push('LEAGUES length ' + leagues.length + ' !== 10');
+    if (leagues.length !== 11) fails.push('LEAGUES length ' + leagues.length + ' !== 11');
     leagues.forEach(function (k) {
       if (!/^#[0-9A-F]{6}$/i.test(leagueColor(k))) fails.push('leagueColor(' + k + ') not hex: ' + leagueColor(k));
     });
@@ -405,6 +408,7 @@
           if (ri > 0 && (s.match(/<path/g) || []).length < 4) fails.push(label + ': device paths missing');
           if (lk === 'obsidian' && s.indexOf('#D22730') === -1) fails.push(label + ': obsidian red rim missing');
           if (lk === 'bloodsteel' && s.indexOf('#C4CAD2') === -1) fails.push(label + ': bloodsteel silver stop missing');
+          if (lk === 'god' && s.indexOf('#FFFFFF') === -1) fails.push(label + ': god white-hot stop missing');
         }
       }
     }
@@ -420,7 +424,7 @@
       fails.slice(0, 40).forEach(function (f) { console.error('  - ' + f); });
       if (typeof process !== 'undefined') process.exitCode = 1;
     } else {
-      console.log('insignia self-check OK: ' + count + ' svgs (23 ranks x 10 leagues x ' + sizes.length +
+      console.log('insignia self-check OK: ' + count + ' svgs (23 ranks x 11 leagues x ' + sizes.length +
                   ' sizes), ' + Object.keys(allIds).length + ' unique gradient ids, all coords finite and in-viewBox, ' +
                   'obsidian rim + bloodsteel ramp present, fallback calls clean.');
     }

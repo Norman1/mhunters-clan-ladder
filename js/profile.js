@@ -45,7 +45,8 @@
     { key: 'gold',       name: 'Gold',       lo: 1200 },
     { key: 'obsidian',   name: 'Obsidian',   lo: 1300 },
     { key: 'bloodsteel', name: 'Bloodsteel', lo: 1400 },
-    { key: 'warlord',    name: 'Warlord',    lo: 1500 }
+    { key: 'warlord',    name: 'Warlord',    lo: 1500 },
+    { key: 'god',        name: 'God of War', lo: 1600 }
   ];
 
   var MONTHS = ['JAN', 'FEB', 'MAR', 'APR', 'MAY', 'JUN',
@@ -466,7 +467,9 @@
     /* league progress */
     eq(leagueProgress(1152), { label: '48 PTS TO GOLD LEAGUE', frac: (1152 - 1100) / 100 },
       'leagueProgress silver → gold');
-    eq(leagueProgress(1500), { label: 'TOP LEAGUE', frac: 1 }, 'leagueProgress warlord');
+    eq(leagueProgress(1500), { label: '100 PTS TO GOD OF WAR LEAGUE', frac: 0 },
+      'leagueProgress warlord climbs toward god of war');
+    eq(leagueProgress(1600), { label: 'TOP LEAGUE', frac: 1 }, 'leagueProgress god of war');
     eq(leagueProgress(1650), { label: 'TOP LEAGUE', frac: 1 }, 'leagueProgress above warlord');
     eq(leagueProgress(800), { label: '100 PTS TO STEEL LEAGUE', frac: 0 },
       'leagueProgress exactly at iron floor');

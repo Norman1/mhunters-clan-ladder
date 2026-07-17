@@ -867,7 +867,7 @@ tr.row--hit td { animation: row-flash 1.6s ease-out 1; }
 }
 #feed-list .feed-item--rank .feed-result__sub { margin-left: 18px; }
 
-/* the ten tiers — a/b/c = banner gradient stops · t = text · sub = secondary
+/* the eleven tiers — a/b/c = banner gradient stops · t = text · sub = secondary
    text · hi = engraving bevel under the big word · time = timestamp color */
 .lg-lumber     { --lg-a: #84674A; --lg-b: #6E5439; --lg-c: #513C27; --lg-t: #F1E9DE; --lg-sub: rgba(255,248,238,.55); --lg-time: rgba(255,248,238,.48); --lg-hi: rgba(0,0,0,.38); }
 .lg-stone      { --lg-a: #565A61; --lg-b: #4A4E55; --lg-c: #34383E; --lg-t: #E3E6EA; --lg-sub: rgba(255,255,255,.52); --lg-time: rgba(255,255,255,.45); --lg-hi: rgba(0,0,0,.4); }
@@ -879,6 +879,7 @@ tr.row--hit td { animation: row-flash 1.6s ease-out 1; }
 .lg-obsidian   { --lg-a: #2E3138; --lg-b: #1E2026; --lg-c: #101216; --lg-t: #C6CDD6; --lg-sub: rgba(255,255,255,.45); --lg-time: rgba(255,255,255,.4); --lg-hi: rgba(0,0,0,.6); }
 .lg-bloodsteel { --lg-a: #D8DDE3; --lg-b: #B56A6E; --lg-c: #96343B; --lg-t: #16090B; --lg-sub: rgba(20,8,10,.62);  --lg-time: rgba(255,255,255,.55); --lg-hi: rgba(255,255,255,.3); }
 .lg-warlord    { --lg-a: #E4404A; --lg-b: #C21F29; --lg-c: #8E121B; --lg-t: #FFF6F6; --lg-sub: rgba(255,246,246,.62); --lg-time: rgba(255,246,246,.55); --lg-hi: rgba(0,0,0,.3); }
+.lg-god        { --lg-a: #FFFFFF; --lg-b: #FFE066; --lg-c: #F0A500; --lg-t: #3A2800; --lg-sub: rgba(58,40,0,.62); --lg-time: rgba(58,40,0,.55); --lg-hi: rgba(255,255,255,.75); }
 
 /* bordered cards: compensate the 1px border so timestamps align with plain rows */
 #feed-list .feed-item--league .feed-time,
@@ -894,6 +895,22 @@ tr.row--hit td { animation: row-flash 1.6s ease-out 1; }
 /* bloodsteel coloring always ships with a red border */
 #feed-list .feed-item--league.lg-bloodsteel {
   border-color: #D22730;
+}
+
+/* god of war: the ascension banner radiates — white-hot core, saiyan aura */
+#feed-list .feed-item--league.lg-god {
+  border-color: #FFE066;
+  box-shadow:
+    0 0 18px rgba(255, 215, 94, 0.4),
+    inset 0 0 22px rgba(255, 255, 255, 0.35);
+  animation: god-aura 2.4s ease-in-out infinite;
+}
+@keyframes god-aura {
+  0%, 100% { box-shadow: 0 0 18px rgba(255, 215, 94, 0.4),  inset 0 0 22px rgba(255, 255, 255, 0.35); }
+  50%      { box-shadow: 0 0 30px rgba(255, 215, 94, 0.65), inset 0 0 26px rgba(255, 255, 255, 0.5); }
+}
+@media (prefers-reduced-motion: reduce) {
+  #feed-list .feed-item--league.lg-god { animation: none; }
 }
 
 /* results */

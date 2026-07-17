@@ -35,7 +35,8 @@
     { key: 'gold',       name: 'Gold',       lo: 1200 },
     { key: 'obsidian',   name: 'Obsidian',   lo: 1300 },
     { key: 'bloodsteel', name: 'Bloodsteel', lo: 1400 },
-    { key: 'warlord',    name: 'Warlord',    lo: 1500 }
+    { key: 'warlord',    name: 'Warlord',    lo: 1500 },
+    { key: 'god',        name: 'God of War', lo: 1600 }
   ];
 
   var VOID_NOTES = { 'Timed Out (Lobby)': true, 'Declined': true, 'Terminated': true };

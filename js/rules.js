@@ -36,16 +36,16 @@
 
   var LEAGUE_KEYS = [
     'lumber', 'stone', 'iron', 'steel', 'cobalt', 'silver',
-    'gold', 'obsidian', 'bloodsteel', 'warlord'
+    'gold', 'obsidian', 'bloodsteel', 'warlord', 'god'
   ];
 
   var LEAGUE_NAMES = [
     'Lumber', 'Stone', 'Iron', 'Steel', 'Cobalt', 'Silver',
-    'Gold', 'Obsidian', 'Bloodsteel', 'Warlord'
+    'Gold', 'Obsidian', 'Bloodsteel', 'Warlord', 'God of War'
   ];
 
   var LEAGUE_FLOORS = [
-    -Infinity, 700, 800, 900, 1000, 1100, 1200, 1300, 1400, 1500
+    -Infinity, 700, 800, 900, 1000, 1100, 1200, 1300, 1400, 1500, 1600
   ];
 
   /* ------------------------------------------------------------
@@ -121,7 +121,8 @@
     eq(rangeLabel(2), '800–899', 'rangeLabel iron → 800–899');
     eq(rangeLabel(4), '1000–1099', 'rangeLabel cobalt → 1000–1099');
     eq(rangeLabel(7), '1300–1399', 'rangeLabel obsidian → 1300–1399');
-    eq(rangeLabel(9), '1500+', 'rangeLabel top → 1500+');
+    eq(rangeLabel(9), '1500–1599', 'rangeLabel warlord → 1500–1599');
+    eq(rangeLabel(10), '1600+', 'rangeLabel top → 1600+');
     eq(rangeLabel(2, [-Infinity, 10, 20, 30]), '20–29', 'rangeLabel honors custom floors');
 
     var fakePlayers = [
@@ -141,13 +142,13 @@
     eq(countByRank(null).length, 23, 'countByRank null-safe');
 
     var lc = countByLeague(fakePlayers);
-    eq(lc.length, 10, 'countByLeague returns 10 buckets');
+    eq(lc.length, 11, 'countByLeague returns 11 buckets');
     eq(lc[4], 2, 'countByLeague cobalt bucket (missing key → start elo 1000)');
     eq(lc[1], 1, 'countByLeague stone bucket');
     eq(lc[3], 1, 'countByLeague unknown key falls back to elo (steel 905)');
     eq(lc[7], 1, 'countByLeague obsidian bucket');
     eq(lc[9], 1, 'countByLeague warlord bucket');
-    eq(countByLeague([]).join(''), '0000000000', 'countByLeague empty → zeros');
+    eq(countByLeague([]).join(''), '00000000000', 'countByLeague empty → zeros');
 
     console.log(failures === 0
       ? 'ALL ' + checks + ' CHECKS PASSED'
