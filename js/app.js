@@ -271,7 +271,7 @@
   function buildWinRateCell(p) {
     var td = doc.createElement('td');
     td.className = 'c-winrate';
-    td.textContent = (p.gamesPlayed > 0 && p.winRate != null) ? p.winRate + '%' : '—';
+    td.textContent = (p.gamesPlayed > 0 && p.winsLast100 != null) ? String(p.winsLast100) : '—';
     return td;
   }
 
@@ -882,7 +882,7 @@
     player: { dir: 1,  cmp: function (a, b) { return normalizeName(a.name) < normalizeName(b.name) ? -1 : 1; } },
     rating: { dir: -1, cmp: function (a, b) { return (a.elo || 0) - (b.elo || 0); } },
     winrate: { dir: -1, cmp: function (a, b) {
-      var d = (a.winRate || 0) - (b.winRate || 0);
+      var d = (a.winsLast100 || 0) - (b.winsLast100 || 0);
       return d !== 0 ? d : (a.gamesPlayed || 0) - (b.gamesPlayed || 0);
     } },
     delta:  { dir: -1, cmp: function (a, b) { return (a.delta7 || 0) - (b.delta7 || 0); } },
