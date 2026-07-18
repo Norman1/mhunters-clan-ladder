@@ -42,7 +42,9 @@ jobs:
 
       - name: Capture missing map art
         env:
-          WZ_EMAIL: ${{ secrets.WZ_EMAIL }}
+          # the capture signs into war.app with a member login (email+password
+          # pair) — distinct from the engine's bot-account API credentials
+          WZ_EMAIL: ${{ secrets.WZ_LOGIN_EMAIL }}
           WZ_PASSWORD: ${{ secrets.WZ_PASSWORD }}
           PW_FP: ${{ inputs.pw_fp }}
           EMAIL_FP: ${{ inputs.email_fp }}
