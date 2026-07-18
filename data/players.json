@@ -163,7 +163,7 @@
     "name": "Ethosys",
     "elo": 1086,
     "game_cap": 2,
-    "missed_games": 1,
+    "missed_games": 0,
     "last_opponent": "28867016",
     "last_assigned_at": "2026-07-18T09:24:07.385Z"
   },
