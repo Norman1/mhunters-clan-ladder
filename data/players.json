@@ -44,7 +44,7 @@
     "elo": 1068,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-07-17T06:14:24.237Z",
+    "last_assigned_at": "2026-07-18T06:04:07.904Z",
     "last_opponent": "88110265403"
   },
   "1822261234": {
@@ -113,11 +113,11 @@
   },
   "4155523061": {
     "name": "AGEHNT SMITH",
-    "elo": 784,
+    "elo": 765,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-07-17T06:14:22.884Z",
-    "last_opponent": "1382545505"
+    "last_assigned_at": "2026-07-18T06:04:07.904Z",
+    "last_opponent": "9313400553"
   },
   "4180490094": {
     "name": "Woololo",
@@ -193,10 +193,10 @@
   },
   "9313400553": {
     "name": "Word Walker",
-    "elo": 801,
+    "elo": 820,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "88110265403",
+    "last_opponent": "4155523061",
     "last_assigned_at": "2026-07-17T06:14:24.237Z"
   },
   "4543063534": {
