@@ -20,8 +20,8 @@
     "elo": 1138,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "56133341636",
-    "last_assigned_at": "2026-07-16T20:56:09.178Z"
+    "last_opponent": "9482920905",
+    "last_assigned_at": "2026-07-18T09:24:08.229Z"
   },
   "81598466": {
     "name": "Tim 🍌",
@@ -163,9 +163,9 @@
     "name": "Ethosys",
     "elo": 1086,
     "game_cap": 2,
-    "missed_games": 0,
-    "last_opponent": "9313400553",
-    "last_assigned_at": "2026-07-15T06:12:43.404Z"
+    "missed_games": 1,
+    "last_opponent": "28867016",
+    "last_assigned_at": "2026-07-18T09:24:07.385Z"
   },
   "8294358602": {
     "name": "Wolkenstern",
@@ -369,19 +369,19 @@
   },
   "71148639731": {
     "name": "Nick",
-    "elo": 1286,
+    "elo": 1268,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-07-17T17:10:18.047Z",
-    "last_opponent": "3346775331"
+    "last_assigned_at": "2026-07-18T09:24:08.229Z",
+    "last_opponent": "71155120841"
   },
   "71155120841": {
     "name": "Ventura",
-    "elo": 1316,
+    "elo": 1334,
     "game_cap": 3,
     "missed_games": 0,
-    "last_assigned_at": "2026-07-16T20:56:08.616Z",
-    "last_opponent": "9780712014"
+    "last_assigned_at": "2026-07-18T09:24:07.385Z",
+    "last_opponent": "71148639731"
   },
   "6411877352": {
     "name": "Kratos",
