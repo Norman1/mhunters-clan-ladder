@@ -7,9 +7,10 @@ name: Map Art Sweep
 on:
   push:
     paths:
-      - data/templates.json
+      - data/templates.json # new template added to the pool
+      - data/history.json   # new results — an artless template may just have had its first game
   schedule:
-    - cron: "0 6 * * *" # daily 06:00 UTC — new-template art lands within a day of its first game
+    - cron: "0 6 * * *" # daily 06:00 UTC backstop
   workflow_dispatch:
 
 concurrency:
