@@ -451,8 +451,20 @@
   font-variant-numeric: tabular-nums;
 }
 
-/* W–L — mono */
+/* LAST 10 — win rate over the newest 10 games on this template */
 .map-board td:nth-child(4) {
+  width: 72px;
+  min-width: 56px;
+  text-align: center;
+  font-family: var(--font-mono);
+  font-weight: 600;
+  font-size: 12px;
+  color: var(--muted);
+  font-variant-numeric: tabular-nums;
+}
+
+/* W–L — mono */
+.map-board td:nth-child(5) {
   width: 76px;
   min-width: 60px;
   text-align: center;
@@ -464,7 +476,7 @@
 }
 
 /* GAMES — dim */
-.map-board td:nth-child(5) {
+.map-board td:nth-child(6) {
   width: 64px;
   min-width: 52px;
   text-align: center;
@@ -805,8 +817,9 @@
   .map-board td:nth-child(1) { width: 32px; min-width: 28px; font-size: 13px; }
   .map-board td:nth-child(2) { font-size: 15px; }
   .map-board td:nth-child(3) { width: 74px; min-width: 56px; font-size: 15.5px; }
-  .map-board td:nth-child(4) { width: 58px; min-width: 48px; font-size: 11px; }
-  .map-board td:nth-child(5) { width: 48px; min-width: 40px; font-size: 11px; }
+  .map-board td:nth-child(4) { width: 52px; min-width: 44px; font-size: 11px; }
+  .map-board td:nth-child(5) { width: 54px; min-width: 44px; font-size: 11px; }
+  .map-board td:nth-child(6) { width: 44px; min-width: 38px; font-size: 11px; }
 
   /* rows: tighter padding, date drops under the sub-line */
   #map-games-list [role="link"],

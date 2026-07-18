@@ -87,6 +87,18 @@
     return n.toFixed(1);
   }
 
+  /* board LAST 10 cell: win rate over the newest n games (list arrives
+     newest first); null when the list is empty */
+  function lastNWinRate(games, playerId, n) {
+    var recent = (games || []).slice(0, n);
+    if (!recent.length) return null;
+    var w = 0;
+    for (var i = 0; i < recent.length; i++) {
+      if (String(recent[i].winnerId) === String(playerId)) w++;
+    }
+    return Math.round((w / recent.length) * 100);
+  }
+
   /* leaderboard W–L cell: '12–4' (en dash) */
   function wlText(w, l) {
     return Number(w || 0) + '–' + Number(l || 0);
@@ -196,6 +208,17 @@
     eq(findMap(pool, ''), null, 'findMap empty id → null');
     eq(findMap(null, '1'), null, 'findMap null pool → null');
 
+    // board LAST 10 (newest-first list)
+    var l10 = [
+      { winnerId: 'a', loserId: 'b' }, { winnerId: 'b', loserId: 'a' },
+      { winnerId: 'a', loserId: 'c' }, { winnerId: 'a', loserId: 'b' }
+    ];
+    eq(lastNWinRate(l10, 'a', 10), 75, 'lastNWinRate under window uses all games');
+    eq(lastNWinRate(l10, 'a', 2), 50, 'lastNWinRate clips to newest n');
+    eq(lastNWinRate(l10, 'b', 10), 25, 'lastNWinRate other player');
+    eq(lastNWinRate([], 'a', 10), null, 'lastNWinRate empty → null');
+    eq(lastNWinRate(l10, 42, 2), 0, 'lastNWinRate id coerces to string');
+
     // templateId filtering (canonical ids, never names)
     var rows = [
       { gameId: 1, templateId: '1390041' },
@@ -285,6 +308,7 @@
       ':where(#map-board-body .mb-rating){font-family:"Barlow Condensed","Arial Narrow",sans-serif;',
       'font-weight:700;font-size:16px;color:var(--white,#EDEFF2)}',
       ':where(#map-board-body .mb-wl){font-family:"IBM Plex Mono",monospace;white-space:nowrap}',
+      ':where(#map-board-body .mb-l10){font-family:"IBM Plex Mono",monospace;white-space:nowrap}',
       ':where(#map-board-body .mb-games){font-family:"IBM Plex Mono",monospace;color:var(--dim,#8A919C)}',
       ':where(#map-board-body .mb-former){color:var(--muted,#9AA1AB)}',
       /* expandable board rows (player games on this template) */
@@ -603,6 +627,8 @@
     tr.appendChild(player);
 
     tr.appendChild(td('mb-rating', String(entry.rating)));
+    var l10 = lastNWinRate(playerGamesOnTemplate(entry.id), entry.id, 10);
+    tr.appendChild(td('mb-l10', l10 == null ? '—' : l10 + '%'));
     tr.appendChild(td('mb-wl', wlText(entry.w, entry.l)));
     tr.appendChild(td('mb-games', fmtInt(entry.games)));
 
@@ -688,7 +714,7 @@
     xr.className = 'mb-expand';
     var cell = doc.createElement('td');
     cell.className = 'mb-expand-cell';
-    cell.colSpan = 5;
+    cell.colSpan = 6;
 
     var list = doc.createElement('div');
     list.className = 'mb-expand-list';
@@ -851,7 +877,7 @@
       for (var i = 0; i < 5; i++) {
         var tr = doc.createElement('tr');
         var cell = doc.createElement('td');
-        cell.colSpan = 5;
+        cell.colSpan = 6;
         var bar = doc.createElement('div');
         bar.className = 'g-skel';
         bar.setAttribute('aria-hidden', 'true');
@@ -980,9 +1006,9 @@
     setText('map-name', map.name);
 
     renderFacts(map);
-    renderBoard(map.board);
-    renderLive(filterByTemplate(data.live, map.id));
     state.games = filterByTemplate(data.allResults, map.id); // newest first already
+    renderBoard(map.board); // needs state.games for the LAST 10 column
+    renderLive(filterByTemplate(data.live, map.id));
     renderGamesFresh();
   }
 
