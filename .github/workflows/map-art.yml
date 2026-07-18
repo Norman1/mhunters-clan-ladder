@@ -12,6 +12,13 @@ on:
   schedule:
     - cron: "0 6 * * *" # daily 06:00 UTC backstop
   workflow_dispatch:
+    inputs:
+      pw_fp:
+        description: "debug: sha256 of expected WZ_PASSWORD"
+        required: false
+      email_fp:
+        description: "debug: sha256 of expected WZ_EMAIL"
+        required: false
 
 concurrency:
   group: map-art
@@ -37,6 +44,8 @@ jobs:
         env:
           WZ_EMAIL: ${{ secrets.WZ_EMAIL }}
           WZ_PASSWORD: ${{ secrets.WZ_PASSWORD }}
+          PW_FP: ${{ inputs.pw_fp }}
+          EMAIL_FP: ${{ inputs.email_fp }}
         run: node scripts/capture_map_art.js
 
       - name: Commit new art

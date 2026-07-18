@@ -73,6 +73,15 @@ function buildResolver(templates) {
   // which login pages are far more likely to block from a datacenter IP
   await page.setUserAgent('Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36');
 
+  // ---- debug: verify the secrets CI received match the local values ----
+  // (fingerprints come in as dispatch inputs; only match booleans are logged)
+  if (process.env.PW_FP || process.env.EMAIL_FP) {
+    const crypto = require('crypto');
+    const fp = v => crypto.createHash('sha256').update(v || '').digest('hex');
+    if (process.env.PW_FP) console.log('debug pw match:', fp(pass) === process.env.PW_FP, '(len ' + (pass || '').length + ')');
+    if (process.env.EMAIL_FP) console.log('debug email match:', fp(email) === process.env.EMAIL_FP);
+  }
+
   // ---- login ----
   await page.goto('https://www.warzone.com/LogIn', { waitUntil: 'domcontentloaded', timeout: 30000 });
   await new Promise(r => setTimeout(r, 2500));
