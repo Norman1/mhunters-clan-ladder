@@ -41,11 +41,11 @@
   },
   "1382545505": {
     "name": "Ree",
-    "elo": 1068,
+    "elo": 1036,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-07-18T06:04:07.904Z",
-    "last_opponent": "88110265403"
+    "last_assigned_at": "2026-07-19T02:36:42.510Z",
+    "last_opponent": "9313400553"
   },
   "1822261234": {
     "name": "fifi",
@@ -149,7 +149,7 @@
     "game_cap": 2,
     "missed_games": 0,
     "last_opponent": "89133991720",
-    "last_assigned_at": "2026-07-15T22:57:17.185Z"
+    "last_assigned_at": "2026-07-19T02:36:42.510Z"
   },
   "23154545458": {
     "name": "Light",
@@ -193,11 +193,11 @@
   },
   "9313400553": {
     "name": "Word Walker",
-    "elo": 820,
+    "elo": 852,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "4155523061",
-    "last_assigned_at": "2026-07-17T06:14:24.237Z"
+    "last_opponent": "1382545505",
+    "last_assigned_at": "2026-07-19T02:36:43.319Z"
   },
   "4543063534": {
     "name": "Farah♦",
@@ -661,9 +661,9 @@
     "name": "JJJ_Senior",
     "elo": 1037,
     "game_cap": 2,
-    "missed_games": 1,
+    "missed_games": 0,
     "in_clan": true,
-    "last_assigned_at": "2026-07-15T20:59:08.734Z",
+    "last_assigned_at": "2026-07-19T02:36:43.319Z",
     "last_opponent": "84143567121"
   },
   "4555082823": {
