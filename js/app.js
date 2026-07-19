@@ -106,7 +106,7 @@
     return {
       active: (meta.activeCount || 0) + ' ACTIVE',
       games: Number(meta.gamesPlayed || 0).toLocaleString('en-US') + ' GAMES',
-      updated: 'Last Update ' + String(meta.lastUpdatedText || '—').toLowerCase()
+      updated: 'Last Activity ' + String(meta.lastUpdatedText || '—').toLowerCase()
     };
   }
 
@@ -163,7 +163,7 @@
     eq(reserveCountText({ pausedCount: 2, inactiveCount: 59 }), '2 PAUSED · 59 INACTIVE', 'reserve count');
 
     eq(mastheadTexts({ activeCount: 21, liveCount: 17, gamesPlayed: 1220, lastUpdatedText: '2H AGO' }),
-      { active: '21 ACTIVE', games: '1,220 GAMES', updated: 'Last Update 2h ago' },
+      { active: '21 ACTIVE', games: '1,220 GAMES', updated: 'Last Activity 2h ago' },
       'masthead texts');
 
     console.log(failures === 0
