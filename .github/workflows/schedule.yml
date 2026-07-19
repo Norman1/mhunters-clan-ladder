@@ -2,7 +2,7 @@ name: Ladder Engine
 
 on:
   schedule:
-    - cron: '0 */2 * * *' # Run every 2 hours
+    - cron: '17 * * * *' # hourly at :17 — GitHub drops/delays top-of-hour crons, so run more often than needed at an off-peak minute
   workflow_dispatch: # Allow manual run
 
 permissions:
