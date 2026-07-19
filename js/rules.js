@@ -176,7 +176,7 @@
     meta = meta || {};
     setText('stat-active', (meta.activeCount || 0) + ' ACTIVE');
     setText('stat-games', fmtInt(meta.gamesPlayed) + ' GAMES');
-    setText('stat-updated', 'Last Activity ' + String(meta.lastUpdatedText || '—').toLowerCase());
+    setText('stat-updated', 'Last Update ' + String(meta.lastUpdatedText || '—').toLowerCase());
   }
 
   /* ---------- league metal chip gradient ---------- */

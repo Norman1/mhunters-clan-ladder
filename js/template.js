@@ -367,7 +367,7 @@
     meta = meta || {};
     setText('stat-active', (meta.activeCount || 0) + ' ACTIVE');
     setText('stat-games', Number(meta.gamesPlayed || 0).toLocaleString('en-US') + ' GAMES');
-    setText('stat-updated', 'Last Activity ' + String(meta.lastUpdatedText || '—').toLowerCase());
+    setText('stat-updated', 'Last Update ' + String(meta.lastUpdatedText || '—').toLowerCase());
     var live = $('stat-live');
     if (live && live.parentNode) live.parentNode.removeChild(live);
   }
