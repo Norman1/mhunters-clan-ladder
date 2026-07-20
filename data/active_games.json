@@ -129,7 +129,8 @@
     "p1_id": "28867016",
     "p2_id": "89133991720",
     "template_id": 1579657,
-    "game_state": "WaitingForPlayers"
+    "game_state": "Playing",
+    "current_turn": 0
   },
   {
     "game_id": "44848627",
