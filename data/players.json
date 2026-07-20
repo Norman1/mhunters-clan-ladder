@@ -129,18 +129,18 @@
   },
   "79105823914": {
     "name": "krinid",
-    "elo": 900,
+    "elo": 898,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "9780712014",
+    "last_opponent": "88110265403",
     "last_assigned_at": "2026-07-16T02:30:50.955Z"
   },
   "88110265403": {
     "name": "Crouton",
-    "elo": 1418,
+    "elo": 1420,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "1382545505",
+    "last_opponent": "79105823914",
     "last_assigned_at": "2026-07-17T17:10:17.334Z"
   },
   "84143567121": {
