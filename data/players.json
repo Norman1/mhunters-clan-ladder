@@ -132,8 +132,8 @@
     "elo": 871,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "3346775331",
-    "last_assigned_at": "2026-07-20T22:12:57.475Z"
+    "last_opponent": "9780712014",
+    "last_assigned_at": "2026-07-21T14:21:22.175Z"
   },
   "88110265403": {
     "name": "Crouton",
@@ -396,7 +396,7 @@
     "elo": 943,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-07-16T20:56:08.616Z",
+    "last_assigned_at": "2026-07-21T14:21:22.175Z",
     "last_opponent": "9780712014"
   },
   "50127514525": {
@@ -611,9 +611,9 @@
     "name": "Acuna42",
     "elo": 821,
     "game_cap": 2,
-    "missed_games": 0,
+    "missed_games": 1,
     "last_assigned_at": "2026-07-20T22:12:57.475Z",
-    "last_opponent": "56133341636"
+    "last_opponent": "79105823914"
   },
   "53134900057": {
     "name": "extelon",
