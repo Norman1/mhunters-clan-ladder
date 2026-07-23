@@ -140,8 +140,8 @@
     "elo": 1422,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "9313400553",
-    "last_assigned_at": "2026-07-21T20:36:37.581Z"
+    "last_opponent": "9780712014",
+    "last_assigned_at": "2026-07-23T14:30:36.636Z"
   },
   "84143567121": {
     "name": "Poldi",
@@ -161,11 +161,11 @@
   },
   "9482920905": {
     "name": "Ethosys",
-    "elo": 1086,
+    "elo": 1093,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "71155120841",
-    "last_assigned_at": "2026-07-21T09:39:42.403Z"
+    "last_opponent": "8222729424",
+    "last_assigned_at": "2026-07-23T14:30:37.388Z"
   },
   "8294358602": {
     "name": "Wolkenstern",
@@ -196,8 +196,8 @@
     "elo": 900,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "88110265403",
-    "last_assigned_at": "2026-07-21T20:36:38.323Z"
+    "last_opponent": "9780712014",
+    "last_assigned_at": "2026-07-23T14:30:37.388Z"
   },
   "4543063534": {
     "name": "Farah♦",
@@ -585,11 +585,11 @@
   },
   "8222729424": {
     "name": "Al AssAff",
-    "elo": 807,
+    "elo": 800,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-07-22T09:38:48.011Z",
-    "last_opponent": "4155523061"
+    "last_assigned_at": "2026-07-23T14:30:36.636Z",
+    "last_opponent": "9482920905"
   },
   "88117806994": {
     "name": "RameurA",
@@ -611,9 +611,9 @@
     "name": "Acuna42",
     "elo": 821,
     "game_cap": 2,
-    "missed_games": 1,
+    "missed_games": 3,
     "last_assigned_at": "2026-07-21T20:36:38.323Z",
-    "last_opponent": "79105823914"
+    "last_opponent": "9313400553"
   },
   "53134900057": {
     "name": "extelon",
