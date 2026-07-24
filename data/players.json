@@ -377,11 +377,11 @@
   },
   "71155120841": {
     "name": "Ventura",
-    "elo": 1312,
+    "elo": 1318,
     "game_cap": 3,
     "missed_games": 0,
     "last_assigned_at": "2026-07-23T18:37:54.185Z",
-    "last_opponent": "56133341636"
+    "last_opponent": "89133991720"
   },
   "6411877352": {
     "name": "Kratos",
@@ -659,12 +659,12 @@
   },
   "89133991720": {
     "name": "JJJ_Senior",
-    "elo": 1021,
+    "elo": 1015,
     "game_cap": 2,
     "missed_games": 0,
     "in_clan": true,
     "last_assigned_at": "2026-07-22T23:17:25.465Z",
-    "last_opponent": "16127869941"
+    "last_opponent": "71155120841"
   },
   "4555082823": {
     "name": "Super Smoove",
