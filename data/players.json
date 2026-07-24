@@ -25,10 +25,10 @@
   },
   "81598466": {
     "name": "Tim 🍌",
-    "elo": 782,
+    "elo": 780,
     "game_cap": 2,
-    "missed_games": 2,
-    "last_opponent": "28867016",
+    "missed_games": 0,
+    "last_opponent": "71155120841",
     "last_assigned_at": "2026-07-24T11:56:11.849Z"
   },
   "266160220": {
@@ -377,11 +377,11 @@
   },
   "71155120841": {
     "name": "Ventura",
-    "elo": 1318,
+    "elo": 1320,
     "game_cap": 3,
     "missed_games": 0,
     "last_assigned_at": "2026-07-24T11:56:11.849Z",
-    "last_opponent": "89133991720"
+    "last_opponent": "81598466"
   },
   "6411877352": {
     "name": "Kratos",
