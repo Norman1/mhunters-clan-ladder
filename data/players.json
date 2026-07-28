@@ -25,11 +25,11 @@
   },
   "81598466": {
     "name": "Tim 🍌",
-    "elo": 772,
+    "elo": 770,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "89133991720",
-    "last_assigned_at": "2026-07-27T15:13:02.723Z"
+    "last_opponent": "3346775331",
+    "last_assigned_at": "2026-07-28T03:34:16.663Z"
   },
   "266160220": {
     "name": "(CZ-SK)eXitus",
@@ -73,11 +73,11 @@
   },
   "3346775331": {
     "name": "Gatsu12",
-    "elo": 1306,
+    "elo": 1308,
     "game_cap": 3,
     "missed_games": 0,
-    "last_opponent": "71155120841",
-    "last_assigned_at": "2026-07-27T15:13:02.723Z"
+    "last_opponent": "81598466",
+    "last_assigned_at": "2026-07-28T03:34:16.110Z"
   },
   "3428471447": {
     "name": "AyanM",
@@ -129,19 +129,19 @@
   },
   "79105823914": {
     "name": "krinid",
-    "elo": 866,
+    "elo": 890,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "28867016",
-    "last_assigned_at": "2026-07-27T18:47:08.755Z"
+    "last_opponent": "56133341636",
+    "last_assigned_at": "2026-07-28T03:34:15.560Z"
   },
   "88110265403": {
     "name": "Crouton",
-    "elo": 1396,
+    "elo": 1398,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "3346775331",
-    "last_assigned_at": "2026-07-27T07:49:37.058Z"
+    "last_opponent": "9313400553",
+    "last_assigned_at": "2026-07-28T03:34:16.110Z"
   },
   "84143567121": {
     "name": "Poldi",
@@ -193,11 +193,11 @@
   },
   "9313400553": {
     "name": "Word Walker",
-    "elo": 896,
+    "elo": 894,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "71148639731",
-    "last_assigned_at": "2026-07-27T07:49:37.058Z"
+    "last_opponent": "88110265403",
+    "last_assigned_at": "2026-07-28T03:34:14.918Z"
   },
   "4543063534": {
     "name": "Farah♦",
@@ -291,9 +291,9 @@
     "name": "incandwo",
     "elo": 1054,
     "game_cap": 2,
-    "missed_games": 3,
+    "missed_games": 4,
     "last_assigned_at": "2026-07-25T00:16:06.237Z",
-    "last_opponent": "71155120841"
+    "last_opponent": "81598466"
   },
   "93159203503": {
     "name": "President_Newsom",
@@ -393,11 +393,11 @@
   },
   "56133341636": {
     "name": "Bastian Pyornkrac...",
-    "elo": 939,
+    "elo": 915,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-07-26T21:11:44.314Z",
-    "last_opponent": "81138463364"
+    "last_assigned_at": "2026-07-28T03:34:16.663Z",
+    "last_opponent": "79105823914"
   },
   "50127514525": {
     "name": "toont3",
