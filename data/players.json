@@ -27,9 +27,9 @@
     "name": "Tim 🍌",
     "elo": 770,
     "game_cap": 2,
-    "missed_games": 0,
-    "last_opponent": "3346775331",
-    "last_assigned_at": "2026-07-28T03:34:16.663Z"
+    "missed_games": 1,
+    "last_opponent": "9313400553",
+    "last_assigned_at": "2026-07-28T06:40:01.157Z"
   },
   "266160220": {
     "name": "(CZ-SK)eXitus",
@@ -196,8 +196,8 @@
     "elo": 894,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "88110265403",
-    "last_assigned_at": "2026-07-28T03:34:14.918Z"
+    "last_opponent": "81598466",
+    "last_assigned_at": "2026-07-28T06:40:00.330Z"
   },
   "4543063534": {
     "name": "Farah♦",
@@ -369,11 +369,11 @@
   },
   "71148639731": {
     "name": "Nick",
-    "elo": 1271,
+    "elo": 1276,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-07-26T21:11:44.314Z",
-    "last_opponent": "9313400553"
+    "last_assigned_at": "2026-07-28T06:40:01.157Z",
+    "last_opponent": "56133341636"
   },
   "71155120841": {
     "name": "Ventura",
@@ -393,11 +393,11 @@
   },
   "56133341636": {
     "name": "Bastian Pyornkrac...",
-    "elo": 915,
+    "elo": 910,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-07-28T03:34:16.663Z",
-    "last_opponent": "79105823914"
+    "last_assigned_at": "2026-07-28T06:40:00.330Z",
+    "last_opponent": "71148639731"
   },
   "50127514525": {
     "name": "toont3",
