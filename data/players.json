@@ -43,9 +43,9 @@
     "name": "Ree",
     "elo": 1034,
     "game_cap": 2,
-    "missed_games": 1,
+    "missed_games": 2,
     "last_assigned_at": "2026-07-28T14:36:45.828Z",
-    "last_opponent": "16127869941"
+    "last_opponent": "89133991720"
   },
   "1822261234": {
     "name": "fifi",
@@ -664,7 +664,7 @@
     "missed_games": 0,
     "in_clan": true,
     "last_assigned_at": "2026-07-29T03:37:01.570Z",
-    "last_opponent": "88110265403"
+    "last_opponent": "1382545505"
   },
   "4555082823": {
     "name": "Super Smoove",
