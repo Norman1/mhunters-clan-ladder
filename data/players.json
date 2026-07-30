@@ -145,10 +145,10 @@
   },
   "84143567121": {
     "name": "Poldi",
-    "elo": 1261,
+    "elo": 1265,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "71155120841",
+    "last_opponent": "9313400553",
     "last_assigned_at": "2026-07-26T15:21:02.696Z"
   },
   "23154545458": {
@@ -193,10 +193,10 @@
   },
   "9313400553": {
     "name": "Word Walker",
-    "elo": 894,
+    "elo": 890,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "81598466",
+    "last_opponent": "84143567121",
     "last_assigned_at": "2026-07-28T06:40:00.330Z"
   },
   "4543063534": {
