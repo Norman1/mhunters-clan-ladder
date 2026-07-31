@@ -42,7 +42,7 @@
     "p2_id": "81598466",
     "template_id": 1573497,
     "game_state": "Playing",
-    "current_turn": 5
+    "current_turn": 6
   },
   {
     "game_id": "44913710",
@@ -101,8 +101,8 @@
     "p1_id": "88110265403",
     "p2_id": "71155120841",
     "template_id": 1579657,
-    "game_state": "DistributingTerritories",
-    "current_turn": -1
+    "game_state": "Playing",
+    "current_turn": 0
   },
   {
     "game_id": "44934565",
