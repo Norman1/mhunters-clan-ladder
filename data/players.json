@@ -25,10 +25,10 @@
   },
   "81598466": {
     "name": "Tim 🍌",
-    "elo": 770,
+    "elo": 758,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "28867016",
+    "last_opponent": "56133341636",
     "last_assigned_at": "2026-07-28T22:16:52.408Z"
   },
   "266160220": {
@@ -193,10 +193,10 @@
   },
   "9313400553": {
     "name": "Word Walker",
-    "elo": 888,
+    "elo": 910,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "71155120841",
+    "last_opponent": "56133341636",
     "last_assigned_at": "2026-07-30T22:19:02.320Z"
   },
   "4543063534": {
@@ -393,11 +393,11 @@
   },
   "56133341636": {
     "name": "Bastian Pyornkrac...",
-    "elo": 910,
+    "elo": 900,
     "game_cap": 2,
     "missed_games": 0,
     "last_assigned_at": "2026-07-28T06:40:00.330Z",
-    "last_opponent": "71148639731"
+    "last_opponent": "9313400553"
   },
   "50127514525": {
     "name": "toont3",
