@@ -25,11 +25,11 @@
   },
   "81598466": {
     "name": "Tim 🍌",
-    "elo": 758,
+    "elo": 782,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "56133341636",
-    "last_assigned_at": "2026-08-01T11:35:01.426Z"
+    "last_opponent": "8222729424",
+    "last_assigned_at": "2026-08-01T21:09:01.053Z"
   },
   "266160220": {
     "name": "(CZ-SK)eXitus",
@@ -163,9 +163,9 @@
     "name": "Ethosys",
     "elo": 1093,
     "game_cap": 2,
-    "missed_games": 0,
-    "last_opponent": "71155120841",
-    "last_assigned_at": "2026-07-29T19:42:17.864Z"
+    "missed_games": 1,
+    "last_opponent": "89133991720",
+    "last_assigned_at": "2026-08-01T21:09:01.053Z"
   },
   "8294358602": {
     "name": "Wolkenstern",
@@ -585,11 +585,11 @@
   },
   "8222729424": {
     "name": "Al AssAff",
-    "elo": 833,
+    "elo": 809,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-07-28T22:16:52.408Z",
-    "last_opponent": "28867016"
+    "last_assigned_at": "2026-08-01T21:09:00.308Z",
+    "last_opponent": "81598466"
   },
   "88117806994": {
     "name": "RameurA",
@@ -663,8 +663,8 @@
     "game_cap": 2,
     "missed_games": 0,
     "in_clan": true,
-    "last_assigned_at": "2026-08-01T17:13:59.267Z",
-    "last_opponent": "16127869941"
+    "last_assigned_at": "2026-08-01T21:09:00.308Z",
+    "last_opponent": "9482920905"
   },
   "4555082823": {
     "name": "Super Smoove",
