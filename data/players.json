@@ -148,7 +148,7 @@
     "elo": 1265,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "9313400553",
+    "last_opponent": "16127869941",
     "last_assigned_at": "2026-07-30T20:35:09.125Z"
   },
   "23154545458": {
@@ -507,9 +507,9 @@
     "name": "gg",
     "elo": 1147,
     "game_cap": 2,
-    "missed_games": 1,
+    "missed_games": 2,
     "last_assigned_at": "2026-08-01T17:13:58.469Z",
-    "last_opponent": "89133991720"
+    "last_opponent": "84143567121"
   },
   "4353717389": {
     "name": "Krys",

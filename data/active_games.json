@@ -27,14 +27,6 @@
     "current_turn": 7
   },
   {
-    "game_id": "44934563",
-    "created_at": "2026-07-30T20:35:07.610Z",
-    "p1_id": "16127869941",
-    "p2_id": "84143567121",
-    "template_id": 1579659,
-    "game_state": "WaitingForPlayers"
-  },
-  {
     "game_id": "44934565",
     "created_at": "2026-07-30T20:35:09.125Z",
     "p1_id": "84143567121",
