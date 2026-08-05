@@ -27,7 +27,7 @@
     "name": "Tim 🍌",
     "elo": 767,
     "game_cap": 2,
-    "missed_games": 1,
+    "missed_games": 0,
     "last_opponent": "9313400553",
     "last_assigned_at": "2026-08-05T06:41:27.540Z"
   },
@@ -147,7 +147,7 @@
     "name": "Poldi",
     "elo": 1304,
     "game_cap": 2,
-    "missed_games": 1,
+    "missed_games": 0,
     "last_opponent": "3346775331",
     "last_assigned_at": "2026-08-05T06:41:29.028Z"
   },
