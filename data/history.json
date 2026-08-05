@@ -21672,5 +21672,23 @@
     "template_id": 1579663,
     "finished_at": "2026-08-05T03:31:24.172Z",
     "note": "Declined"
+  },
+  {
+    "game_id": "44973759",
+    "created_at": "2026-08-05T03:31:25.218Z",
+    "p1_id": "3346775331",
+    "p2_id": "84143567121",
+    "template_id": 1573498,
+    "finished_at": "2026-08-05T06:41:26.233Z",
+    "note": "Declined"
+  },
+  {
+    "game_id": "44973760",
+    "created_at": "2026-08-05T03:31:25.826Z",
+    "p1_id": "9313400553",
+    "p2_id": "81598466",
+    "template_id": 1573497,
+    "finished_at": "2026-08-05T06:41:26.413Z",
+    "note": "Declined"
   }
 ]
