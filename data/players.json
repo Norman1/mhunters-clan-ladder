@@ -585,11 +585,11 @@
   },
   "8222729424": {
     "name": "Al AssAff",
-    "elo": 816,
+    "elo": 848,
     "game_cap": 2,
     "missed_games": 0,
     "last_assigned_at": "2026-08-04T19:55:35.575Z",
-    "last_opponent": "74149320612"
+    "last_opponent": "89133991720"
   },
   "88117806994": {
     "name": "RameurA",
@@ -659,12 +659,12 @@
   },
   "89133991720": {
     "name": "JJJ_Senior",
-    "elo": 1053,
+    "elo": 1021,
     "game_cap": 2,
     "missed_games": 0,
     "in_clan": true,
     "last_assigned_at": "2026-08-05T06:41:27.540Z",
-    "last_opponent": "9313400553"
+    "last_opponent": "8222729424"
   },
   "4555082823": {
     "name": "Super Smoove",
