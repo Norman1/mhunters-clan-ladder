@@ -136,6 +136,7 @@
     "p1_id": "3346775331",
     "p2_id": "71155120841",
     "template_id": 1579659,
-    "game_state": "WaitingForPlayers"
+    "game_state": "DistributingTerritories",
+    "current_turn": -1
   }
 ]
