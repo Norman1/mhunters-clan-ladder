@@ -76,8 +76,8 @@
     "elo": 1354,
     "game_cap": 3,
     "missed_games": 0,
-    "last_opponent": "9313400553",
-    "last_assigned_at": "2026-08-05T20:39:26.361Z"
+    "last_opponent": "23154545458",
+    "last_assigned_at": "2026-08-07T00:14:49.095Z"
   },
   "3428471447": {
     "name": "AyanM",
@@ -155,17 +155,17 @@
     "name": "Light",
     "elo": 1103,
     "game_cap": 2,
-    "missed_games": 3,
-    "last_opponent": "88110265403",
+    "missed_games": 4,
+    "last_opponent": "3346775331",
     "last_assigned_at": "2026-08-03T23:18:52.023Z"
   },
   "9482920905": {
     "name": "Ethosys",
-    "elo": 1093,
+    "elo": 1083,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "89133991720",
-    "last_assigned_at": "2026-08-01T21:09:01.053Z"
+    "last_opponent": "71148639731",
+    "last_assigned_at": "2026-08-07T00:14:48.285Z"
   },
   "8294358602": {
     "name": "Wolkenstern",
@@ -369,11 +369,11 @@
   },
   "71148639731": {
     "name": "Nick",
-    "elo": 1276,
+    "elo": 1286,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-07-31T14:37:55.257Z",
-    "last_opponent": "1382545505"
+    "last_assigned_at": "2026-08-07T00:14:49.095Z",
+    "last_opponent": "9482920905"
   },
   "71155120841": {
     "name": "Ventura",
@@ -588,7 +588,7 @@
     "elo": 842,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-08-04T19:55:35.575Z",
+    "last_assigned_at": "2026-08-07T00:14:48.285Z",
     "last_opponent": "28867016"
   },
   "88117806994": {
