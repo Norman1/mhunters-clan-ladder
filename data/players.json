@@ -25,10 +25,10 @@
   },
   "81598466": {
     "name": "Tim 🍌",
-    "elo": 759,
+    "elo": 754,
     "game_cap": 2,
-    "missed_games": 0,
-    "last_opponent": "89133991720",
+    "missed_games": 1,
+    "last_opponent": "74149320612",
     "last_assigned_at": "2026-08-08T09:53:52.953Z"
   },
   "266160220": {
@@ -77,7 +77,7 @@
     "game_cap": 3,
     "missed_games": 0,
     "last_opponent": "79105823914",
-    "last_assigned_at": "2026-08-08T15:45:23.672Z"
+    "last_assigned_at": "2026-08-08T18:57:35.482Z"
   },
   "3428471447": {
     "name": "AyanM",
@@ -116,7 +116,7 @@
     "elo": 696,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-08-03T23:18:50.851Z",
+    "last_assigned_at": "2026-08-08T18:57:35.482Z",
     "last_opponent": "79105823914"
   },
   "4180490094": {
@@ -133,7 +133,7 @@
     "game_cap": 2,
     "missed_games": 0,
     "last_opponent": "4155523061",
-    "last_assigned_at": "2026-08-08T15:45:24.474Z"
+    "last_assigned_at": "2026-08-08T18:57:34.718Z"
   },
   "88110265403": {
     "name": "Crouton",
@@ -161,10 +161,10 @@
   },
   "9482920905": {
     "name": "Ethosys",
-    "elo": 1083,
+    "elo": 1088,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "71148639731",
+    "last_opponent": "81598466",
     "last_assigned_at": "2026-08-07T00:14:48.285Z"
   },
   "8294358602": {
@@ -460,8 +460,8 @@
     "elo": 1172,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-08-08T09:53:52.953Z",
-    "last_opponent": "84143567121"
+    "last_assigned_at": "2026-08-08T18:57:34.718Z",
+    "last_opponent": "81598466"
   },
   "64114468853": {
     "name": "Wonkier",

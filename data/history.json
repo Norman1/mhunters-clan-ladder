@@ -21906,5 +21906,26 @@
     "template_id": 1579657,
     "elo_change": 9,
     "turns": 7
+  },
+  {
+    "game_id": "44949388",
+    "created_at": "2026-08-01T21:09:01.053Z",
+    "p1_id": "9482920905",
+    "p2_id": "81598466",
+    "winner_id": "9482920905",
+    "loser_id": "81598466",
+    "finished_at": "2026-08-08T17:49:14.000Z",
+    "template_id": 1579662,
+    "elo_change": 5,
+    "turns": 7
+  },
+  {
+    "game_id": "44997773",
+    "created_at": "2026-08-08T09:53:52.953Z",
+    "p1_id": "74149320612",
+    "p2_id": "81598466",
+    "template_id": 1587197,
+    "finished_at": "2026-08-08T18:57:33.467Z",
+    "note": "Declined"
   }
 ]
