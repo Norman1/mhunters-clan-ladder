@@ -29,7 +29,7 @@
     "game_cap": 2,
     "missed_games": 0,
     "last_opponent": "89133991720",
-    "last_assigned_at": "2026-08-05T06:41:27.540Z"
+    "last_assigned_at": "2026-08-08T09:53:52.953Z"
   },
   "266160220": {
     "name": "(CZ-SK)eXitus",
@@ -145,10 +145,10 @@
   },
   "84143567121": {
     "name": "Poldi",
-    "elo": 1304,
+    "elo": 1275,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "3346775331",
+    "last_opponent": "74149320612",
     "last_assigned_at": "2026-08-05T06:41:29.028Z"
   },
   "23154545458": {
@@ -457,11 +457,11 @@
   },
   "74149320612": {
     "name": "Svarta Hingsten",
-    "elo": 1143,
+    "elo": 1172,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-08-07T17:07:15.433Z",
-    "last_opponent": "9313400553"
+    "last_assigned_at": "2026-08-08T09:53:52.953Z",
+    "last_opponent": "84143567121"
   },
   "64114468853": {
     "name": "Wonkier",
