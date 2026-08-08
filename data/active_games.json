@@ -116,13 +116,15 @@
     "created_at": "2026-08-08T18:57:34.718Z",
     "p1_id": "79105823914",
     "p2_id": "74149320612",
-    "template_id": 1579659
+    "template_id": 1579659,
+    "game_state": "WaitingForPlayers"
   },
   {
     "game_id": "45000703",
     "created_at": "2026-08-08T18:57:35.482Z",
     "p1_id": "3346775331",
     "p2_id": "4155523061",
-    "template_id": 1431579
+    "template_id": 1431579,
+    "game_state": "WaitingForPlayers"
   }
 ]
