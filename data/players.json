@@ -25,10 +25,10 @@
   },
   "81598466": {
     "name": "Tim 🍌",
-    "elo": 767,
+    "elo": 759,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "9313400553",
+    "last_opponent": "89133991720",
     "last_assigned_at": "2026-08-05T06:41:27.540Z"
   },
   "266160220": {
@@ -197,7 +197,7 @@
     "game_cap": 2,
     "missed_games": 0,
     "last_opponent": "4543063534",
-    "last_assigned_at": "2026-08-08T04:21:00.016Z"
+    "last_assigned_at": "2026-08-08T07:13:36.602Z"
   },
   "4543063534": {
     "name": "Farah♦",
@@ -659,12 +659,12 @@
   },
   "89133991720": {
     "name": "JJJ_Senior",
-    "elo": 1021,
+    "elo": 1029,
     "game_cap": 2,
     "missed_games": 0,
     "in_clan": true,
-    "last_assigned_at": "2026-08-06T12:18:31.847Z",
-    "last_opponent": "8222729424"
+    "last_assigned_at": "2026-08-08T07:13:36.602Z",
+    "last_opponent": "81598466"
   },
   "4555082823": {
     "name": "Super Smoove",
