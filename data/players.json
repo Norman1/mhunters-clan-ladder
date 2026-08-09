@@ -29,7 +29,7 @@
     "game_cap": 2,
     "missed_games": 1,
     "last_opponent": "74149320612",
-    "last_assigned_at": "2026-08-08T09:53:52.953Z"
+    "last_assigned_at": "2026-08-09T05:57:45.420Z"
   },
   "266160220": {
     "name": "(CZ-SK)eXitus",
@@ -165,7 +165,7 @@
     "game_cap": 2,
     "missed_games": 0,
     "last_opponent": "81598466",
-    "last_assigned_at": "2026-08-07T00:14:48.285Z"
+    "last_assigned_at": "2026-08-09T05:57:46.233Z"
   },
   "8294358602": {
     "name": "Wolkenstern",
@@ -193,11 +193,11 @@
   },
   "9313400553": {
     "name": "Word Walker",
-    "elo": 895,
+    "elo": 882,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "4543063534",
-    "last_assigned_at": "2026-08-08T07:13:36.602Z"
+    "last_opponent": "89133991720",
+    "last_assigned_at": "2026-08-09T05:57:46.233Z"
   },
   "4543063534": {
     "name": "Farah♦",
@@ -659,12 +659,12 @@
   },
   "89133991720": {
     "name": "JJJ_Senior",
-    "elo": 1029,
+    "elo": 1042,
     "game_cap": 2,
     "missed_games": 0,
     "in_clan": true,
-    "last_assigned_at": "2026-08-08T07:13:36.602Z",
-    "last_opponent": "81598466"
+    "last_assigned_at": "2026-08-09T05:57:45.420Z",
+    "last_opponent": "9313400553"
   },
   "4555082823": {
     "name": "Super Smoove",
