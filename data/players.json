@@ -27,8 +27,8 @@
     "name": "Tim 🍌",
     "elo": 754,
     "game_cap": 2,
-    "missed_games": 1,
-    "last_opponent": "74149320612",
+    "missed_games": 3,
+    "last_opponent": "79105823914",
     "last_assigned_at": "2026-08-09T14:52:01.031Z"
   },
   "266160220": {
@@ -132,8 +132,8 @@
     "elo": 925,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "74149320612",
-    "last_assigned_at": "2026-08-09T14:52:01.031Z"
+    "last_opponent": "81598466",
+    "last_assigned_at": "2026-08-09T22:49:16.983Z"
   },
   "88110265403": {
     "name": "Crouton",
@@ -663,8 +663,8 @@
     "game_cap": 2,
     "missed_games": 0,
     "in_clan": true,
-    "last_assigned_at": "2026-08-09T05:57:45.420Z",
-    "last_opponent": "9313400553"
+    "last_assigned_at": "2026-08-09T22:49:16.983Z",
+    "last_opponent": "81598466"
   },
   "4555082823": {
     "name": "Super Smoove",
