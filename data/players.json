@@ -77,7 +77,7 @@
     "game_cap": 3,
     "missed_games": 0,
     "last_opponent": "71155120841",
-    "last_assigned_at": "2026-08-08T18:57:35.482Z"
+    "last_assigned_at": "2026-08-10T02:33:50.493Z"
   },
   "3428471447": {
     "name": "AyanM",
@@ -163,8 +163,8 @@
     "name": "Ethosys",
     "elo": 1088,
     "game_cap": 2,
-    "missed_games": 0,
-    "last_opponent": "81598466",
+    "missed_games": 1,
+    "last_opponent": "8222729424",
     "last_assigned_at": "2026-08-09T05:57:46.233Z"
   },
   "8294358602": {
@@ -588,8 +588,8 @@
     "elo": 842,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-08-07T03:15:30.189Z",
-    "last_opponent": "28867016"
+    "last_assigned_at": "2026-08-10T02:33:50.493Z",
+    "last_opponent": "9482920905"
   },
   "88117806994": {
     "name": "RameurA",
