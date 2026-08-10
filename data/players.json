@@ -17,10 +17,10 @@
   },
   "28867016": {
     "name": "Swisster",
-    "elo": 1114,
+    "elo": 1137,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "79105823914",
+    "last_opponent": "74149320612",
     "last_assigned_at": "2026-08-07T17:07:15.433Z"
   },
   "81598466": {
@@ -457,11 +457,11 @@
   },
   "74149320612": {
     "name": "Svarta Hingsten",
-    "elo": 1172,
+    "elo": 1149,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-08-09T16:53:56.425Z",
-    "last_opponent": "79105823914"
+    "last_assigned_at": "2026-08-10T20:03:29.907Z",
+    "last_opponent": "28867016"
   },
   "64114468853": {
     "name": "Wonkier",
@@ -588,7 +588,7 @@
     "elo": 840,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-08-10T02:33:50.493Z",
+    "last_assigned_at": "2026-08-10T20:03:29.907Z",
     "last_opponent": "3346775331"
   },
   "88117806994": {
