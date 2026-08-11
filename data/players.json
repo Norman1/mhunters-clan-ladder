@@ -19,8 +19,8 @@
     "name": "Swisster",
     "elo": 1152,
     "game_cap": 2,
-    "missed_games": 0,
-    "last_opponent": "89133991720",
+    "missed_games": 1,
+    "last_opponent": "56133341636",
     "last_assigned_at": "2026-08-11T04:39:24.665Z"
   },
   "81598466": {
@@ -397,7 +397,7 @@
     "game_cap": 2,
     "missed_games": 0,
     "last_assigned_at": "2026-08-11T04:39:24.665Z",
-    "last_opponent": "4155523061"
+    "last_opponent": "28867016"
   },
   "50127514525": {
     "name": "toont3",
