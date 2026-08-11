@@ -17,11 +17,11 @@
   },
   "28867016": {
     "name": "Swisster",
-    "elo": 1137,
+    "elo": 1152,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "74149320612",
-    "last_assigned_at": "2026-08-10T21:57:29.636Z"
+    "last_opponent": "89133991720",
+    "last_assigned_at": "2026-08-11T04:39:24.665Z"
   },
   "81598466": {
     "name": "Tim 🍌",
@@ -113,11 +113,11 @@
   },
   "4155523061": {
     "name": "AGEHNT SMITH",
-    "elo": 695,
+    "elo": 726,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-08-08T18:57:35.482Z",
-    "last_opponent": "3346775331"
+    "last_assigned_at": "2026-08-11T04:39:26.105Z",
+    "last_opponent": "56133341636"
   },
   "4180490094": {
     "name": "Woololo",
@@ -196,8 +196,8 @@
     "elo": 882,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "89133991720",
-    "last_assigned_at": "2026-08-09T05:57:46.233Z"
+    "last_opponent": "25126079448",
+    "last_assigned_at": "2026-08-11T04:39:25.490Z"
   },
   "4543063534": {
     "name": "Farah♦",
@@ -393,11 +393,11 @@
   },
   "56133341636": {
     "name": "Bastian Pyornkrac...",
-    "elo": 900,
+    "elo": 869,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-08-04T18:03:04.669Z",
-    "last_opponent": "16127869941"
+    "last_assigned_at": "2026-08-11T04:39:24.665Z",
+    "last_opponent": "4155523061"
   },
   "50127514525": {
     "name": "toont3",
@@ -531,9 +531,9 @@
     "name": "Adrian D'Agostino",
     "elo": 710,
     "game_cap": 2,
-    "missed_games": 2,
+    "missed_games": 3,
     "last_assigned_at": "2026-08-08T04:21:00.016Z",
-    "last_opponent": "3631391841"
+    "last_opponent": "9313400553"
   },
   "89114164339": {
     "name": "Blacksmith",
@@ -659,12 +659,12 @@
   },
   "89133991720": {
     "name": "JJJ_Senior",
-    "elo": 1042,
+    "elo": 1027,
     "game_cap": 2,
     "missed_games": 0,
     "in_clan": true,
-    "last_assigned_at": "2026-08-09T22:49:16.983Z",
-    "last_opponent": "81598466"
+    "last_assigned_at": "2026-08-11T04:39:26.105Z",
+    "last_opponent": "28867016"
   },
   "4555082823": {
     "name": "Super Smoove",
