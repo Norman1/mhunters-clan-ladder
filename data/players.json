@@ -21,7 +21,7 @@
     "game_cap": 2,
     "missed_games": 0,
     "last_opponent": "8222729424",
-    "last_assigned_at": "2026-08-12T02:43:26.040Z"
+    "last_assigned_at": "2026-08-12T17:11:26.847Z"
   },
   "81598466": {
     "name": "Tim 🍌",
@@ -380,8 +380,8 @@
     "elo": 1352,
     "game_cap": 3,
     "missed_games": 0,
-    "last_assigned_at": "2026-08-11T09:13:02.748Z",
-    "last_opponent": "3346775331"
+    "last_assigned_at": "2026-08-12T17:11:26.847Z",
+    "last_opponent": "74149320612"
   },
   "6411877352": {
     "name": "Kratos",
@@ -459,9 +459,9 @@
     "name": "Svarta Hingsten",
     "elo": 1149,
     "game_cap": 2,
-    "missed_games": 1,
+    "missed_games": 2,
     "last_assigned_at": "2026-08-12T02:43:25.268Z",
-    "last_opponent": "8222729424"
+    "last_opponent": "71155120841"
   },
   "64114468853": {
     "name": "Wonkier",
