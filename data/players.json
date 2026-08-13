@@ -387,9 +387,9 @@
     "name": "Kratos",
     "elo": 986,
     "game_cap": 2,
-    "missed_games": 6,
+    "missed_games": 7,
     "last_assigned_at": "2026-08-12T22:02:02.791Z",
-    "last_opponent": "3428471447"
+    "last_opponent": "74149320612"
   },
   "56133341636": {
     "name": "Bastian Pyornkrac...",
@@ -461,7 +461,7 @@
     "game_cap": 2,
     "missed_games": 0,
     "last_assigned_at": "2026-08-12T22:02:02.791Z",
-    "last_opponent": "71155120841"
+    "last_opponent": "6411877352"
   },
   "64114468853": {
     "name": "Wonkier",
