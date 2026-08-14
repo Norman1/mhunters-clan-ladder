@@ -117,7 +117,7 @@
     "game_cap": 2,
     "missed_games": 0,
     "last_assigned_at": "2026-08-13T13:46:05.499Z",
-    "last_opponent": "9313400553"
+    "last_opponent": "89133991720"
   },
   "4180490094": {
     "name": "Woololo",
@@ -661,10 +661,10 @@
     "name": "JJJ_Senior",
     "elo": 1027,
     "game_cap": 2,
-    "missed_games": 0,
+    "missed_games": 1,
     "in_clan": true,
     "last_assigned_at": "2026-08-11T04:39:26.105Z",
-    "last_opponent": "28867016"
+    "last_opponent": "4155523061"
   },
   "4555082823": {
     "name": "Super Smoove",
