@@ -17,11 +17,11 @@
   },
   "28867016": {
     "name": "Swisster",
-    "elo": 1146,
+    "elo": 1154,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "8222729424",
-    "last_assigned_at": "2026-08-13T21:02:08.452Z"
+    "last_opponent": "9313400553",
+    "last_assigned_at": "2026-08-14T13:41:39.810Z"
   },
   "81598466": {
     "name": "Tim 🍌",
@@ -116,7 +116,7 @@
     "elo": 714,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-08-13T13:46:05.499Z",
+    "last_assigned_at": "2026-08-14T13:41:39.810Z",
     "last_opponent": "89133991720"
   },
   "4180490094": {
@@ -193,11 +193,11 @@
   },
   "9313400553": {
     "name": "Word Walker",
-    "elo": 892,
+    "elo": 884,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "3346775331",
-    "last_assigned_at": "2026-08-13T21:02:07.666Z"
+    "last_opponent": "28867016",
+    "last_assigned_at": "2026-08-14T13:41:38.990Z"
   },
   "4543063534": {
     "name": "Farah♦",
@@ -663,7 +663,7 @@
     "game_cap": 2,
     "missed_games": 0,
     "in_clan": true,
-    "last_assigned_at": "2026-08-11T04:39:26.105Z",
+    "last_assigned_at": "2026-08-14T13:41:38.990Z",
     "last_opponent": "4155523061"
   },
   "4555082823": {
