@@ -103,5 +103,12 @@
     "p2_id": "9313400553",
     "template_id": 1587201,
     "game_state": "WaitingForPlayers"
+  },
+  {
+    "game_id": "45047482",
+    "created_at": "2026-08-15T08:44:49.311Z",
+    "p1_id": "88110265403",
+    "p2_id": "28867016",
+    "template_id": 1579660
   }
 ]
