@@ -148,7 +148,7 @@
     "elo": 1215,
     "game_cap": 2,
     "missed_games": 1,
-    "last_opponent": "3346775331",
+    "last_opponent": "99110844848",
     "last_assigned_at": "2026-08-16T21:34:11.288Z"
   },
   "23154545458": {
@@ -579,9 +579,9 @@
     "name": "CrypticNeo1",
     "elo": 860,
     "game_cap": 2,
-    "missed_games": 0,
+    "missed_games": 1,
     "last_assigned_at": "2026-08-16T21:34:11.288Z",
-    "last_opponent": "71155120841"
+    "last_opponent": "84143567121"
   },
   "8222729424": {
     "name": "Al AssAff",
