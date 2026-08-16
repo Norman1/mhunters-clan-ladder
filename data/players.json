@@ -73,10 +73,10 @@
   },
   "3346775331": {
     "name": "Gatsu12",
-    "elo": 1427,
+    "elo": 1394,
     "game_cap": 3,
     "missed_games": 0,
-    "last_opponent": "84143567121",
+    "last_opponent": "74149320612",
     "last_assigned_at": "2026-08-14T20:44:50.131Z"
   },
   "3428471447": {
@@ -457,11 +457,11 @@
   },
   "74149320612": {
     "name": "Svarta Hingsten",
-    "elo": 1149,
+    "elo": 1182,
     "game_cap": 2,
     "missed_games": 0,
     "last_assigned_at": "2026-08-13T10:21:44.742Z",
-    "last_opponent": "6411877352"
+    "last_opponent": "3346775331"
   },
   "64114468853": {
     "name": "Wonkier",
