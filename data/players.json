@@ -137,10 +137,10 @@
   },
   "88110265403": {
     "name": "Crouton",
-    "elo": 1332,
+    "elo": 1355,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "28867016",
+    "last_opponent": "71155120841",
     "last_assigned_at": "2026-08-16T15:34:49.109Z"
   },
   "84143567121": {
@@ -377,11 +377,11 @@
   },
   "71155120841": {
     "name": "Ventura",
-    "elo": 1393,
+    "elo": 1370,
     "game_cap": 3,
     "missed_games": 0,
     "last_assigned_at": "2026-08-16T16:41:42.631Z",
-    "last_opponent": "71148639731"
+    "last_opponent": "88110265403"
   },
   "6411877352": {
     "name": "Kratos",
@@ -579,7 +579,7 @@
     "name": "CrypticNeo1",
     "elo": 860,
     "game_cap": 2,
-    "missed_games": 1,
+    "missed_games": 0,
     "last_assigned_at": "2026-08-17T13:04:50.483Z",
     "last_opponent": "9313400553"
   },
