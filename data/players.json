@@ -73,10 +73,10 @@
   },
   "3346775331": {
     "name": "Gatsu12",
-    "elo": 1413,
+    "elo": 1415,
     "game_cap": 3,
     "missed_games": 0,
-    "last_opponent": "74149320612",
+    "last_opponent": "56133341636",
     "last_assigned_at": "2026-08-17T23:16:02.672Z"
   },
   "3428471447": {
@@ -393,11 +393,11 @@
   },
   "56133341636": {
     "name": "Bastian Pyornkrac...",
-    "elo": 887,
+    "elo": 885,
     "game_cap": 2,
     "missed_games": 0,
     "last_assigned_at": "2026-08-17T04:01:14.900Z",
-    "last_opponent": "9313400553"
+    "last_opponent": "3346775331"
   },
   "50127514525": {
     "name": "toont3",
