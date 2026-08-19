@@ -17,11 +17,11 @@
   },
   "28867016": {
     "name": "Swisster",
-    "elo": 1166,
+    "elo": 1197,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "88110265403",
-    "last_assigned_at": "2026-08-18T21:46:09.989Z"
+    "last_opponent": "71155120841",
+    "last_assigned_at": "2026-08-19T22:46:41.442Z"
   },
   "81598466": {
     "name": "Tim 🍌",
@@ -73,11 +73,11 @@
   },
   "3346775331": {
     "name": "Gatsu12",
-    "elo": 1417,
+    "elo": 1418,
     "game_cap": 3,
     "missed_games": 0,
-    "last_opponent": "8222729424",
-    "last_assigned_at": "2026-08-19T13:54:52.010Z"
+    "last_opponent": "4155523061",
+    "last_assigned_at": "2026-08-19T22:46:39.414Z"
   },
   "3428471447": {
     "name": "AyanM",
@@ -113,11 +113,11 @@
   },
   "4155523061": {
     "name": "AGEHNT SMITH",
-    "elo": 737,
+    "elo": 736,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-08-19T01:52:30.662Z",
-    "last_opponent": "58134761580"
+    "last_assigned_at": "2026-08-19T22:46:41.442Z",
+    "last_opponent": "3346775331"
   },
   "4180490094": {
     "name": "Woololo",
@@ -132,8 +132,8 @@
     "elo": 934,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "71155120841",
-    "last_assigned_at": "2026-08-19T01:52:31.405Z"
+    "last_opponent": "99110844848",
+    "last_assigned_at": "2026-08-19T22:46:40.221Z"
   },
   "88110265403": {
     "name": "Crouton",
@@ -193,11 +193,11 @@
   },
   "9313400553": {
     "name": "Word Walker",
-    "elo": 836,
+    "elo": 825,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "28867016",
-    "last_assigned_at": "2026-08-17T23:16:03.268Z"
+    "last_opponent": "89133991720",
+    "last_assigned_at": "2026-08-19T22:46:40.835Z"
   },
   "4543063534": {
     "name": "Farah♦",
@@ -377,11 +377,11 @@
   },
   "71155120841": {
     "name": "Ventura",
-    "elo": 1373,
+    "elo": 1342,
     "game_cap": 3,
     "missed_games": 0,
-    "last_assigned_at": "2026-08-18T21:46:09.989Z",
-    "last_opponent": "79105823914"
+    "last_assigned_at": "2026-08-19T22:46:42.063Z",
+    "last_opponent": "28867016"
   },
   "6411877352": {
     "name": "Kratos",
@@ -579,9 +579,9 @@
     "name": "CrypticNeo1",
     "elo": 858,
     "game_cap": 2,
-    "missed_games": 0,
-    "last_assigned_at": "2026-08-19T01:52:31.405Z",
-    "last_opponent": "3346775331"
+    "missed_games": 1,
+    "last_assigned_at": "2026-08-19T22:46:42.063Z",
+    "last_opponent": "79105823914"
   },
   "8222729424": {
     "name": "Al AssAff",
@@ -659,12 +659,12 @@
   },
   "89133991720": {
     "name": "JJJ_Senior",
-    "elo": 1001,
+    "elo": 1012,
     "game_cap": 2,
     "missed_games": 0,
     "in_clan": true,
-    "last_assigned_at": "2026-08-19T01:52:30.662Z",
-    "last_opponent": "79105823914"
+    "last_assigned_at": "2026-08-19T22:46:40.221Z",
+    "last_opponent": "9313400553"
   },
   "4555082823": {
     "name": "Super Smoove",
