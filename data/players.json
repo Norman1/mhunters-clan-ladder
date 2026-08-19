@@ -129,10 +129,10 @@
   },
   "79105823914": {
     "name": "krinid",
-    "elo": 937,
+    "elo": 934,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "89133991720",
+    "last_opponent": "71155120841",
     "last_assigned_at": "2026-08-19T01:52:31.405Z"
   },
   "88110265403": {
@@ -377,11 +377,11 @@
   },
   "71155120841": {
     "name": "Ventura",
-    "elo": 1370,
+    "elo": 1373,
     "game_cap": 3,
     "missed_games": 0,
     "last_assigned_at": "2026-08-18T21:46:09.989Z",
-    "last_opponent": "88117806994"
+    "last_opponent": "79105823914"
   },
   "6411877352": {
     "name": "Kratos",
