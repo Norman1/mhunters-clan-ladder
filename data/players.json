@@ -197,7 +197,7 @@
     "game_cap": 2,
     "missed_games": 0,
     "last_opponent": "71155120841",
-    "last_assigned_at": "2026-08-19T22:46:40.835Z"
+    "last_assigned_at": "2026-08-20T17:44:57.277Z"
   },
   "4543063534": {
     "name": "Farah♦",
@@ -381,7 +381,7 @@
     "game_cap": 3,
     "missed_games": 0,
     "last_assigned_at": "2026-08-19T22:46:42.063Z",
-    "last_opponent": "9313400553"
+    "last_opponent": "99110844848"
   },
   "6411877352": {
     "name": "Kratos",
@@ -579,9 +579,9 @@
     "name": "CrypticNeo1",
     "elo": 858,
     "game_cap": 2,
-    "missed_games": 0,
-    "last_assigned_at": "2026-08-19T22:46:42.063Z",
-    "last_opponent": "79105823914"
+    "missed_games": 1,
+    "last_assigned_at": "2026-08-20T17:44:57.277Z",
+    "last_opponent": "71155120841"
   },
   "8222729424": {
     "name": "Al AssAff",
