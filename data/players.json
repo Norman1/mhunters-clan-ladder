@@ -197,7 +197,7 @@
     "game_cap": 2,
     "missed_games": 0,
     "last_opponent": "99110844848",
-    "last_assigned_at": "2026-08-20T23:39:26.911Z"
+    "last_assigned_at": "2026-08-21T03:15:36.655Z"
   },
   "4543063534": {
     "name": "Farah♦",
@@ -380,7 +380,7 @@
     "elo": 1344,
     "game_cap": 3,
     "missed_games": 0,
-    "last_assigned_at": "2026-08-19T22:46:42.063Z",
+    "last_assigned_at": "2026-08-21T03:15:36.655Z",
     "last_opponent": "99110844848"
   },
   "6411877352": {
@@ -579,7 +579,7 @@
     "name": "CrypticNeo1",
     "elo": 858,
     "game_cap": 2,
-    "missed_games": 1,
+    "missed_games": 0,
     "last_assigned_at": "2026-08-20T17:44:57.277Z",
     "last_opponent": "9313400553"
   },
