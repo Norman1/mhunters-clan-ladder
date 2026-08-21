@@ -91,9 +91,9 @@
     "name": "jdg5201",
     "elo": 903,
     "game_cap": 2,
-    "missed_games": 6,
+    "missed_games": 7,
     "last_assigned_at": "2026-08-18T21:46:11.195Z",
-    "last_opponent": "23105988432"
+    "last_opponent": "9780712014"
   },
   "3631391841": {
     "name": "BlackBart",
@@ -195,10 +195,10 @@
   },
   "9313400553": {
     "name": "Word Walker",
-    "elo": 817,
+    "elo": 813,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "99110844848",
+    "last_opponent": "71155120841",
     "last_assigned_at": "2026-08-21T20:40:37.244Z"
   },
   "4543063534": {
@@ -379,11 +379,11 @@
   },
   "71155120841": {
     "name": "Ventura",
-    "elo": 1359,
+    "elo": 1363,
     "game_cap": 3,
     "missed_games": 0,
     "last_assigned_at": "2026-08-21T20:40:37.842Z",
-    "last_opponent": "8222729424"
+    "last_opponent": "9313400553"
   },
   "6411877352": {
     "name": "Kratos",
@@ -615,7 +615,7 @@
     "game_cap": 2,
     "missed_games": 3,
     "last_assigned_at": "2026-08-18T21:46:11.195Z",
-    "last_opponent": "9313400553"
+    "last_opponent": "3591948853"
   },
   "53134900057": {
     "name": "extelon",
