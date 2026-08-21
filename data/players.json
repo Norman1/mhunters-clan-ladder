@@ -193,10 +193,10 @@
   },
   "9313400553": {
     "name": "Word Walker",
-    "elo": 819,
+    "elo": 817,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "28867016",
+    "last_opponent": "71155120841",
     "last_assigned_at": "2026-08-21T17:44:19.955Z"
   },
   "4543063534": {
@@ -377,11 +377,11 @@
   },
   "71155120841": {
     "name": "Ventura",
-    "elo": 1344,
+    "elo": 1346,
     "game_cap": 3,
     "missed_games": 0,
     "last_assigned_at": "2026-08-21T08:57:26.176Z",
-    "last_opponent": "99110844848"
+    "last_opponent": "9313400553"
   },
   "6411877352": {
     "name": "Kratos",
