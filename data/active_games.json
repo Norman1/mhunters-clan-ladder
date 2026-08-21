@@ -120,5 +120,12 @@
     "template_id": 1587198,
     "game_state": "DistributingTerritories",
     "current_turn": -1
+  },
+  {
+    "game_id": "45088340",
+    "created_at": "2026-08-21T08:57:26.176Z",
+    "p1_id": "8222729424",
+    "p2_id": "71155120841",
+    "template_id": 1587198
   }
 ]
