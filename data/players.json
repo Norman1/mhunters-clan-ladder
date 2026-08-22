@@ -101,7 +101,7 @@
     "game_cap": 2,
     "missed_games": 3,
     "last_opponent": "25126079448",
-    "last_assigned_at": "2026-07-25T03:40:24.977Z"
+    "last_assigned_at": "2026-08-22T16:39:41.247Z"
   },
   "3737155555": {
     "name": "Jumpshott",
@@ -137,10 +137,10 @@
   },
   "88110265403": {
     "name": "Crouton",
-    "elo": 1382,
+    "elo": 1383,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "71148639731",
+    "last_opponent": "8222729424",
     "last_assigned_at": "2026-08-22T03:06:49.546Z"
   },
   "84143567121": {
@@ -587,11 +587,11 @@
   },
   "8222729424": {
     "name": "Al AssAff",
-    "elo": 799,
+    "elo": 798,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-08-21T20:40:36.061Z",
-    "last_opponent": "71155120841"
+    "last_assigned_at": "2026-08-22T16:39:41.247Z",
+    "last_opponent": "88110265403"
   },
   "88117806994": {
     "name": "RameurA",
