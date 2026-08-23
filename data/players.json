@@ -672,10 +672,10 @@
     "name": "Super Smoove",
     "elo": 1000,
     "game_cap": 2,
-    "missed_games": 3,
+    "missed_games": 4,
     "in_clan": true,
     "last_assigned_at": "2026-08-20T18:58:41.083Z",
-    "last_opponent": "71155120841"
+    "last_opponent": "81138463364"
   },
   "5917719105": {
     "name": "Norman",
@@ -690,9 +690,9 @@
     "name": "jman",
     "elo": 1000,
     "game_cap": 2,
-    "missed_games": 3,
+    "missed_games": 4,
     "in_clan": true,
     "last_assigned_at": "2026-08-20T18:58:41.083Z",
-    "last_opponent": "56133341636"
+    "last_opponent": "4555082823"
   }
 }
