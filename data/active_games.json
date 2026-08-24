@@ -108,6 +108,7 @@
     "created_at": "2026-08-24T14:01:51.428Z",
     "p1_id": "9313400553",
     "p2_id": "8222729424",
-    "template_id": 1579657
+    "template_id": 1579657,
+    "game_state": "WaitingForPlayers"
   }
 ]
