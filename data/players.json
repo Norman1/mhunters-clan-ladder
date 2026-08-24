@@ -113,11 +113,11 @@
   },
   "4155523061": {
     "name": "AGEHNT SMITH",
-    "elo": 736,
+    "elo": 729,
     "game_cap": 2,
     "missed_games": 0,
     "last_assigned_at": "2026-08-19T22:46:41.442Z",
-    "last_opponent": "3346775331"
+    "last_opponent": "89133991720"
   },
   "4180490094": {
     "name": "Woololo",
@@ -661,12 +661,12 @@
   },
   "89133991720": {
     "name": "JJJ_Senior",
-    "elo": 1012,
+    "elo": 1019,
     "game_cap": 2,
     "missed_games": 0,
     "in_clan": true,
     "last_assigned_at": "2026-08-22T23:34:48.884Z",
-    "last_opponent": "79105823914"
+    "last_opponent": "4155523061"
   },
   "4555082823": {
     "name": "Super Smoove",
