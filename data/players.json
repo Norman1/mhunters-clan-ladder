@@ -73,11 +73,11 @@
   },
   "3346775331": {
     "name": "Gatsu12",
-    "elo": 1436,
+    "elo": 1452,
     "game_cap": 3,
     "missed_games": 0,
-    "last_opponent": "9313400553",
-    "last_assigned_at": "2026-08-24T17:46:26.094Z"
+    "last_opponent": "71155120841",
+    "last_assigned_at": "2026-08-24T21:43:35.673Z"
   },
   "3428471447": {
     "name": "AyanM",
@@ -379,11 +379,11 @@
   },
   "71155120841": {
     "name": "Ventura",
-    "elo": 1366,
+    "elo": 1350,
     "game_cap": 3,
     "missed_games": 0,
     "last_assigned_at": "2026-08-24T05:53:11.017Z",
-    "last_opponent": "79105823914"
+    "last_opponent": "3346775331"
   },
   "6411877352": {
     "name": "Kratos",
@@ -398,7 +398,7 @@
     "elo": 876,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-08-22T03:06:50.393Z",
+    "last_assigned_at": "2026-08-24T21:43:35.673Z",
     "last_opponent": "84143567121"
   },
   "50127514525": {
