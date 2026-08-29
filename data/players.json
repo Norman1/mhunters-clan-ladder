@@ -21,7 +21,7 @@
     "game_cap": 2,
     "missed_games": 0,
     "last_opponent": "71155120841",
-    "last_assigned_at": "2026-08-28T05:22:59.672Z"
+    "last_assigned_at": "2026-08-29T21:43:37.972Z"
   },
   "81598466": {
     "name": "Tim 🍌",
@@ -140,8 +140,8 @@
     "elo": 1348,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "92131071479",
-    "last_assigned_at": "2026-08-29T18:28:00.328Z"
+    "last_opponent": "9313400553",
+    "last_assigned_at": "2026-08-29T21:43:37.972Z"
   },
   "84143567121": {
     "name": "Poldi",
@@ -197,8 +197,8 @@
     "name": "Word Walker",
     "elo": 865,
     "game_cap": 2,
-    "missed_games": 0,
-    "last_opponent": "4471034885",
+    "missed_games": 2,
+    "last_opponent": "71155120841",
     "last_assigned_at": "2026-08-29T18:28:01.046Z"
   },
   "4543063534": {
@@ -383,7 +383,7 @@
     "game_cap": 3,
     "missed_games": 0,
     "last_assigned_at": "2026-08-29T18:28:01.046Z",
-    "last_opponent": "28867016"
+    "last_opponent": "9313400553"
   },
   "6411877352": {
     "name": "Kratos",
