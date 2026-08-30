@@ -20,8 +20,8 @@
     "elo": 1173,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "71155120841",
-    "last_assigned_at": "2026-08-29T21:43:37.972Z"
+    "last_opponent": "89133991720",
+    "last_assigned_at": "2026-08-30T12:52:55.281Z"
   },
   "81598466": {
     "name": "Tim 🍌",
@@ -113,11 +113,11 @@
   },
   "4155523061": {
     "name": "AGEHNT SMITH",
-    "elo": 725,
+    "elo": 723,
     "game_cap": 2,
     "missed_games": 0,
     "last_assigned_at": "2026-08-29T02:10:32.859Z",
-    "last_opponent": "71155120841"
+    "last_opponent": "84143567121"
   },
   "4180490094": {
     "name": "Woololo",
@@ -145,11 +145,11 @@
   },
   "84143567121": {
     "name": "Poldi",
-    "elo": 1258,
+    "elo": 1260,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "3346775331",
-    "last_assigned_at": "2026-08-30T06:38:49.566Z"
+    "last_opponent": "4155523061",
+    "last_assigned_at": "2026-08-30T12:52:55.281Z"
   },
   "23154545458": {
     "name": "Light",
@@ -663,10 +663,10 @@
     "name": "JJJ_Senior",
     "elo": 1015,
     "game_cap": 2,
-    "missed_games": 1,
+    "missed_games": 2,
     "in_clan": true,
     "last_assigned_at": "2026-08-29T09:01:59.786Z",
-    "last_opponent": "23105988432"
+    "last_opponent": "28867016"
   },
   "4555082823": {
     "name": "Super Smoove",
