@@ -35,9 +35,9 @@
     "name": "(CZ-SK)eXitus",
     "elo": 1000,
     "game_cap": 2,
-    "missed_games": 7,
+    "missed_games": 8,
     "last_assigned_at": "2026-08-30T17:28:42.603Z",
-    "last_opponent": "63114105399"
+    "last_opponent": "4155523061"
   },
   "1382545505": {
     "name": "Ree",
@@ -116,8 +116,8 @@
     "elo": 714,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-09-01T21:46:22.227Z",
-    "last_opponent": "79105823914"
+    "last_assigned_at": "2026-09-02T18:41:31.183Z",
+    "last_opponent": "266160220"
   },
   "4180490094": {
     "name": "Woololo",
@@ -141,7 +141,7 @@
     "game_cap": 2,
     "missed_games": 0,
     "last_opponent": "71155120841",
-    "last_assigned_at": "2026-09-01T21:46:20.803Z"
+    "last_assigned_at": "2026-09-02T18:41:31.931Z"
   },
   "84143567121": {
     "name": "Poldi",
@@ -382,7 +382,7 @@
     "elo": 1407,
     "game_cap": 3,
     "missed_games": 0,
-    "last_assigned_at": "2026-08-31T20:04:05.942Z",
+    "last_assigned_at": "2026-09-02T18:41:31.183Z",
     "last_opponent": "88110265403"
   },
   "6411877352": {
@@ -648,7 +648,7 @@
     "elo": 1000,
     "game_cap": 2,
     "missed_games": 8,
-    "last_assigned_at": "2026-06-10T16:57:16.578Z",
+    "last_assigned_at": "2026-09-02T18:41:31.931Z",
     "last_opponent": "64126464642"
   },
   "5118531774": {
