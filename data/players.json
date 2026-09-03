@@ -365,9 +365,9 @@
     "name": "thecloser_",
     "elo": 1000,
     "game_cap": 2,
-    "missed_games": 7,
+    "missed_games": 8,
     "last_assigned_at": "2026-08-30T23:29:28.654Z",
-    "last_opponent": "266160220"
+    "last_opponent": "89133991720"
   },
   "71148639731": {
     "name": "Nick",
@@ -398,7 +398,7 @@
     "elo": 869,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-08-31T20:04:05.942Z",
+    "last_assigned_at": "2026-09-03T00:15:01.146Z",
     "last_opponent": "3346775331"
   },
   "50127514525": {
@@ -665,8 +665,8 @@
     "game_cap": 2,
     "missed_games": 0,
     "in_clan": true,
-    "last_assigned_at": "2026-09-01T05:06:12.777Z",
-    "last_opponent": "3346775331"
+    "last_assigned_at": "2026-09-03T00:15:01.146Z",
+    "last_opponent": "63114105399"
   },
   "4555082823": {
     "name": "Super Smoove",
