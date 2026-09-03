@@ -129,19 +129,19 @@
   },
   "79105823914": {
     "name": "krinid",
-    "elo": 950,
+    "elo": 928,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "4155523061",
+    "last_opponent": "8294358602",
     "last_assigned_at": "2026-09-01T21:46:22.831Z"
   },
   "88110265403": {
     "name": "Crouton",
-    "elo": 1343,
+    "elo": 1347,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "71155120841",
-    "last_assigned_at": "2026-09-02T18:41:31.931Z"
+    "last_opponent": "79105823914",
+    "last_assigned_at": "2026-09-03T04:34:40.397Z"
   },
   "84143567121": {
     "name": "Poldi",
@@ -171,11 +171,11 @@
   },
   "8294358602": {
     "name": "Wolkenstern",
-    "elo": 984,
+    "elo": 1002,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "58134761580",
-    "last_assigned_at": "2026-09-01T21:46:22.831Z"
+    "last_opponent": "79105823914",
+    "last_assigned_at": "2026-09-03T04:34:40.397Z"
   },
   "58134761580": {
     "name": "ExFailures",
