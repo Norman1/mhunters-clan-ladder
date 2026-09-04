@@ -73,10 +73,10 @@
   },
   "3346775331": {
     "name": "Gatsu12",
-    "elo": 1406,
+    "elo": 1415,
     "game_cap": 3,
     "missed_games": 0,
-    "last_opponent": "93159203503",
+    "last_opponent": "71148639731",
     "last_assigned_at": "2026-09-04T09:43:23.703Z"
   },
   "3428471447": {
@@ -371,11 +371,11 @@
   },
   "71148639731": {
     "name": "Nick",
-    "elo": 1187,
+    "elo": 1178,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-09-03T14:34:02.109Z",
-    "last_opponent": "28867016"
+    "last_assigned_at": "2026-09-04T14:21:09.451Z",
+    "last_opponent": "3346775331"
   },
   "71155120841": {
     "name": "Ventura",
@@ -665,7 +665,7 @@
     "game_cap": 2,
     "missed_games": 1,
     "in_clan": true,
-    "last_assigned_at": "2026-09-03T00:15:01.146Z",
+    "last_assigned_at": "2026-09-04T14:21:09.451Z",
     "last_opponent": "74149320612"
   },
   "4555082823": {
