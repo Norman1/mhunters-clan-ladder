@@ -17,11 +17,11 @@
   },
   "28867016": {
     "name": "Swisster",
-    "elo": 1185,
+    "elo": 1169,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "71148639731",
-    "last_assigned_at": "2026-09-03T14:34:01.376Z"
+    "last_opponent": "84143567121",
+    "last_assigned_at": "2026-09-05T20:26:11.919Z"
   },
   "81598466": {
     "name": "Tim 🍌",
@@ -113,11 +113,11 @@
   },
   "4155523061": {
     "name": "AGEHNT SMITH",
-    "elo": 714,
+    "elo": 713,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-09-02T18:41:31.183Z",
-    "last_opponent": "266160220"
+    "last_assigned_at": "2026-09-05T20:26:13.322Z",
+    "last_opponent": "71155120841"
   },
   "4180490094": {
     "name": "Woololo",
@@ -140,16 +140,16 @@
     "elo": 1315,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "16127869941",
-    "last_assigned_at": "2026-09-03T21:42:21.512Z"
+    "last_opponent": "5540862349",
+    "last_assigned_at": "2026-09-05T20:26:13.322Z"
   },
   "84143567121": {
     "name": "Poldi",
-    "elo": 1260,
+    "elo": 1276,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "4155523061",
-    "last_assigned_at": "2026-08-30T12:52:55.281Z"
+    "last_opponent": "28867016",
+    "last_assigned_at": "2026-09-05T20:26:12.721Z"
   },
   "23154545458": {
     "name": "Light",
@@ -379,11 +379,11 @@
   },
   "71155120841": {
     "name": "Ventura",
-    "elo": 1407,
+    "elo": 1408,
     "game_cap": 3,
     "missed_games": 0,
-    "last_assigned_at": "2026-09-02T18:41:31.183Z",
-    "last_opponent": "88110265403"
+    "last_assigned_at": "2026-09-05T20:26:12.721Z",
+    "last_opponent": "4155523061"
   },
   "6411877352": {
     "name": "Kratos",
@@ -647,9 +647,9 @@
     "name": "Mortiis",
     "elo": 1000,
     "game_cap": 2,
-    "missed_games": 8,
+    "missed_games": 9,
     "last_assigned_at": "2026-09-02T18:41:31.931Z",
-    "last_opponent": "64126464642"
+    "last_opponent": "88110265403"
   },
   "5118531774": {
     "name": "krua (from Russia)",
