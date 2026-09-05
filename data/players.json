@@ -76,7 +76,7 @@
     "elo": 1415,
     "game_cap": 3,
     "missed_games": 0,
-    "last_opponent": "99110844848",
+    "last_opponent": "44147840330",
     "last_assigned_at": "2026-09-05T00:04:38.101Z"
   },
   "3428471447": {
@@ -357,9 +357,9 @@
     "name": "TMG",
     "elo": 1000,
     "game_cap": 2,
-    "missed_games": 7,
+    "missed_games": 8,
     "last_assigned_at": "2026-09-02T21:48:51.226Z",
-    "last_opponent": "13128957162"
+    "last_opponent": "3346775331"
   },
   "63114105399": {
     "name": "thecloser_",
@@ -453,9 +453,9 @@
     "name": "Leo",
     "elo": 1000,
     "game_cap": 2,
-    "missed_games": 7,
+    "missed_games": 8,
     "last_assigned_at": "2026-09-02T21:48:50.559Z",
-    "last_opponent": "5540862349"
+    "last_opponent": "13128957162"
   },
   "74149320612": {
     "name": "Svarta Hingsten",
@@ -477,9 +477,9 @@
     "name": "Warlord",
     "elo": 980,
     "game_cap": 2,
-    "missed_games": 7,
+    "missed_games": 8,
     "last_assigned_at": "2026-09-02T21:48:50.559Z",
-    "last_opponent": "44147840330"
+    "last_opponent": "64126464642"
   },
   "4471034885": {
     "name": "matt8.3",
