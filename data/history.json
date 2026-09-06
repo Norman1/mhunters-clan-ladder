@@ -23571,5 +23571,14 @@
     "template_id": 1579667,
     "elo_change": 33,
     "turns": 2
+  },
+  {
+    "game_id": "45183889",
+    "created_at": "2026-09-03T18:37:39.616Z",
+    "p1_id": "8294358602",
+    "p2_id": "4337497298",
+    "template_id": 1587198,
+    "finished_at": "2026-09-06T19:09:50.388Z",
+    "note": "Timed Out (Lobby)"
   }
 ]
