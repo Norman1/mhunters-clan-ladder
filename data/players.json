@@ -28,7 +28,7 @@
     "elo": 754,
     "game_cap": 2,
     "missed_games": 3,
-    "last_opponent": "79105823914",
+    "last_opponent": "25149077292",
     "last_assigned_at": "2026-09-06T17:01:57.237Z"
   },
   "266160220": {
@@ -113,11 +113,11 @@
   },
   "4155523061": {
     "name": "AGEHNT SMITH",
-    "elo": 713,
+    "elo": 712,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-09-05T20:26:13.322Z",
-    "last_opponent": "71155120841"
+    "last_assigned_at": "2026-09-09T18:35:10.776Z",
+    "last_opponent": "88110265403"
   },
   "4180490094": {
     "name": "Woololo",
@@ -137,11 +137,11 @@
   },
   "88110265403": {
     "name": "Crouton",
-    "elo": 1315,
+    "elo": 1316,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "5540862349",
-    "last_assigned_at": "2026-09-05T20:26:13.322Z"
+    "last_opponent": "4155523061",
+    "last_assigned_at": "2026-09-09T18:35:11.424Z"
   },
   "84143567121": {
     "name": "Poldi",
@@ -149,7 +149,7 @@
     "game_cap": 2,
     "missed_games": 0,
     "last_opponent": "71155120841",
-    "last_assigned_at": "2026-09-05T20:26:12.721Z"
+    "last_assigned_at": "2026-09-09T18:35:10.776Z"
   },
   "23154545458": {
     "name": "Light",
@@ -382,7 +382,7 @@
     "elo": 1421,
     "game_cap": 3,
     "missed_games": 0,
-    "last_assigned_at": "2026-09-05T20:26:12.721Z",
+    "last_assigned_at": "2026-09-09T18:35:11.424Z",
     "last_opponent": "84143567121"
   },
   "6411877352": {
@@ -437,9 +437,9 @@
     "name": "EVIL DRAG QUEEN",
     "elo": 899,
     "game_cap": 2,
-    "missed_games": 7,
+    "missed_games": 8,
     "last_assigned_at": "2026-09-06T17:01:57.237Z",
-    "last_opponent": "1382545505"
+    "last_opponent": "81598466"
   },
   "5520443420": {
     "name": "pottygoboomboom",
