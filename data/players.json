@@ -21,7 +21,7 @@
     "game_cap": 2,
     "missed_games": 0,
     "last_opponent": "79105823914",
-    "last_assigned_at": "2026-09-05T20:26:11.919Z"
+    "last_assigned_at": "2026-09-10T21:37:27.780Z"
   },
   "81598466": {
     "name": "Tim 🍌",
@@ -73,11 +73,11 @@
   },
   "3346775331": {
     "name": "Gatsu12",
-    "elo": 1382,
+    "elo": 1387,
     "game_cap": 3,
     "missed_games": 0,
-    "last_opponent": "16127869941",
-    "last_assigned_at": "2026-09-06T17:01:56.659Z"
+    "last_opponent": "8294358602",
+    "last_assigned_at": "2026-09-10T21:37:27.201Z"
   },
   "3428471447": {
     "name": "AyanM",
@@ -171,11 +171,11 @@
   },
   "8294358602": {
     "name": "Wolkenstern",
-    "elo": 1030,
+    "elo": 1025,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "4337497298",
-    "last_assigned_at": "2026-09-06T23:53:06.043Z"
+    "last_opponent": "3346775331",
+    "last_assigned_at": "2026-09-10T21:37:27.780Z"
   },
   "58134761580": {
     "name": "ExFailures",
@@ -277,9 +277,9 @@
     "name": "angrybeavers",
     "elo": 1000,
     "game_cap": 2,
-    "missed_games": 7,
+    "missed_games": 8,
     "last_assigned_at": "2026-09-07T19:57:44.268Z",
-    "last_opponent": "31104791368"
+    "last_opponent": "13151753517"
   },
   "29146480207": {
     "name": "Boris Grishenko",
@@ -309,9 +309,9 @@
     "name": "Marengo",
     "elo": 1000,
     "game_cap": 2,
-    "missed_games": 8,
+    "missed_games": 9,
     "last_assigned_at": "2026-09-07T19:57:44.268Z",
-    "last_opponent": "13130892902"
+    "last_opponent": "7499140988"
   },
   "6630558043": {
     "name": "Yobledore",
@@ -349,9 +349,9 @@
     "name": "Houle",
     "elo": 1000,
     "game_cap": 2,
-    "missed_games": 7,
+    "missed_games": 8,
     "last_assigned_at": "2026-09-07T19:57:43.427Z",
-    "last_opponent": "13151753517"
+    "last_opponent": "31104791368"
   },
   "44147840330": {
     "name": "TMG",
@@ -639,9 +639,9 @@
     "name": "Iamtznu",
     "elo": 898,
     "game_cap": 2,
-    "missed_games": 7,
+    "missed_games": 8,
     "last_assigned_at": "2026-09-07T19:57:43.427Z",
-    "last_opponent": "7499140988"
+    "last_opponent": "13130892902"
   },
   "5540862349": {
     "name": "Mortiis",

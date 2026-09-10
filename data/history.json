@@ -23811,5 +23811,35 @@
     "template_id": 1587201,
     "elo_change": 7,
     "turns": 6
+  },
+  {
+    "game_id": "45187715",
+    "created_at": "2026-09-04T09:43:23.703Z",
+    "p1_id": "8294358602",
+    "p2_id": "3346775331",
+    "winner_id": "3346775331",
+    "loser_id": "8294358602",
+    "finished_at": "2026-09-10T21:09:07.000Z",
+    "template_id": 1587201,
+    "elo_change": 5,
+    "turns": 3
+  },
+  {
+    "game_id": "45211915",
+    "created_at": "2026-09-07T19:57:43.427Z",
+    "p1_id": "31104791368",
+    "p2_id": "13130892902",
+    "template_id": 1587197,
+    "finished_at": "2026-09-10T21:37:26.117Z",
+    "note": "Timed Out (Lobby)"
+  },
+  {
+    "game_id": "45211917",
+    "created_at": "2026-09-07T19:57:44.268Z",
+    "p1_id": "7499140988",
+    "p2_id": "13151753517",
+    "template_id": 1579663,
+    "finished_at": "2026-09-10T21:37:26.220Z",
+    "note": "Timed Out (Lobby)"
   }
 ]
