@@ -17,10 +17,10 @@
   },
   "28867016": {
     "name": "Swisster",
-    "elo": 1169,
+    "elo": 1197,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "84143567121",
+    "last_opponent": "88110265403",
     "last_assigned_at": "2026-09-05T20:26:11.919Z"
   },
   "81598466": {
@@ -85,7 +85,7 @@
     "game_cap": 2,
     "missed_games": 6,
     "last_assigned_at": "2026-09-10T00:14:19.371Z",
-    "last_opponent": "44134229332"
+    "last_opponent": "84143567121"
   },
   "3591948853": {
     "name": "jdg5201",
@@ -137,19 +137,19 @@
   },
   "88110265403": {
     "name": "Crouton",
-    "elo": 1316,
+    "elo": 1288,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "4155523061",
-    "last_assigned_at": "2026-09-09T18:35:11.424Z"
+    "last_opponent": "28867016",
+    "last_assigned_at": "2026-09-10T04:43:09.454Z"
   },
   "84143567121": {
     "name": "Poldi",
     "elo": 1263,
     "game_cap": 2,
-    "missed_games": 0,
-    "last_opponent": "4155523061",
-    "last_assigned_at": "2026-09-10T00:14:19.371Z"
+    "missed_games": 1,
+    "last_opponent": "3428471447",
+    "last_assigned_at": "2026-09-10T04:43:09.454Z"
   },
   "23154545458": {
     "name": "Light",
