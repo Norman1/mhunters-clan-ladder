@@ -73,11 +73,11 @@
   },
   "3346775331": {
     "name": "Gatsu12",
-    "elo": 1399,
+    "elo": 1401,
     "game_cap": 3,
     "missed_games": 0,
-    "last_opponent": "79105823914",
-    "last_assigned_at": "2026-09-12T13:36:32.152Z"
+    "last_opponent": "56133341636",
+    "last_assigned_at": "2026-09-15T01:27:38.672Z"
   },
   "3428471447": {
     "name": "AyanM",
@@ -116,8 +116,8 @@
     "elo": 720,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-09-14T22:30:10.057Z",
-    "last_opponent": "71155120841"
+    "last_assigned_at": "2026-09-15T01:27:37.890Z",
+    "last_opponent": "71148639731"
   },
   "4180490094": {
     "name": "Woololo",
@@ -373,9 +373,9 @@
     "name": "Nick",
     "elo": 1129,
     "game_cap": 2,
-    "missed_games": 0,
-    "last_assigned_at": "2026-09-14T22:30:09.393Z",
-    "last_opponent": "9313400553"
+    "missed_games": 1,
+    "last_assigned_at": "2026-09-15T01:27:38.672Z",
+    "last_opponent": "4155523061"
   },
   "71155120841": {
     "name": "Ventura",
@@ -395,11 +395,11 @@
   },
   "56133341636": {
     "name": "Bastian Pyornkrac...",
-    "elo": 867,
+    "elo": 865,
     "game_cap": 2,
     "missed_games": 0,
     "last_assigned_at": "2026-09-11T09:40:14.232Z",
-    "last_opponent": "71155120841"
+    "last_opponent": "3346775331"
   },
   "50127514525": {
     "name": "toont3",
