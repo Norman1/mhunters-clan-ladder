@@ -116,8 +116,8 @@
     "elo": 720,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-09-15T01:27:37.890Z",
-    "last_opponent": "71148639731"
+    "last_assigned_at": "2026-09-15T07:43:09.003Z",
+    "last_opponent": "84143567121"
   },
   "4180490094": {
     "name": "Woololo",
@@ -147,8 +147,8 @@
     "name": "Poldi",
     "elo": 1293,
     "game_cap": 2,
-    "missed_games": 0,
-    "last_opponent": "9313400553",
+    "missed_games": 1,
+    "last_opponent": "4155523061",
     "last_assigned_at": "2026-09-14T22:30:10.057Z"
   },
   "23154545458": {
@@ -373,7 +373,7 @@
     "name": "Nick",
     "elo": 1129,
     "game_cap": 2,
-    "missed_games": 1,
+    "missed_games": 0,
     "last_assigned_at": "2026-09-15T01:27:38.672Z",
     "last_opponent": "4155523061"
   },
@@ -398,7 +398,7 @@
     "elo": 865,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-09-11T09:40:14.232Z",
+    "last_assigned_at": "2026-09-15T07:43:09.003Z",
     "last_opponent": "3346775331"
   },
   "50127514525": {
