@@ -587,11 +587,11 @@
   },
   "8222729424": {
     "name": "Al AssAff",
-    "elo": 806,
+    "elo": 826,
     "game_cap": 2,
     "missed_games": 0,
     "last_assigned_at": "2026-09-16T16:53:49.574Z",
-    "last_opponent": "71155120841"
+    "last_opponent": "9780712014"
   },
   "88117806994": {
     "name": "RameurA",
@@ -611,11 +611,11 @@
   },
   "9780712014": {
     "name": "Acuna42",
-    "elo": 804,
+    "elo": 784,
     "game_cap": 2,
     "missed_games": 0,
     "last_assigned_at": "2026-09-17T01:24:17.381Z",
-    "last_opponent": "9313400553"
+    "last_opponent": "8222729424"
   },
   "53134900057": {
     "name": "extelon",
