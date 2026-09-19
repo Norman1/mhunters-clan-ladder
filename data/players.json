@@ -73,10 +73,10 @@
   },
   "3346775331": {
     "name": "Gatsu12",
-    "elo": 1415,
+    "elo": 1416,
     "game_cap": 3,
     "missed_games": 0,
-    "last_opponent": "88110265403",
+    "last_opponent": "4155523061",
     "last_assigned_at": "2026-09-18T00:17:18.155Z"
   },
   "3428471447": {
@@ -113,11 +113,11 @@
   },
   "4155523061": {
     "name": "AGEHNT SMITH",
-    "elo": 720,
+    "elo": 719,
     "game_cap": 2,
     "missed_games": 0,
     "last_assigned_at": "2026-09-15T07:43:09.003Z",
-    "last_opponent": "84143567121"
+    "last_opponent": "3346775331"
   },
   "4180490094": {
     "name": "Woololo",
