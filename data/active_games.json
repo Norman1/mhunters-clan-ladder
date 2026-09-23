@@ -36,22 +36,13 @@
     "current_turn": 5
   },
   {
-    "game_id": "45299217",
-    "created_at": "2026-09-20T11:24:55.730Z",
-    "p1_id": "84143567121",
-    "p2_id": "8222729424",
-    "template_id": 1579661,
-    "game_state": "Playing",
-    "current_turn": 14
-  },
-  {
     "game_id": "45304213",
     "created_at": "2026-09-21T04:59:37.109Z",
     "p1_id": "56133341636",
     "p2_id": "71148639731",
     "template_id": 1579665,
     "game_state": "Playing",
-    "current_turn": 1
+    "current_turn": 2
   },
   {
     "game_id": "45307735",
@@ -69,7 +60,7 @@
     "p2_id": "88110265403",
     "template_id": 1579660,
     "game_state": "Playing",
-    "current_turn": 4
+    "current_turn": 6
   },
   {
     "game_id": "45309415",
@@ -78,15 +69,6 @@
     "p2_id": "89114164339",
     "template_id": 1579658,
     "game_state": "WaitingForPlayers"
-  },
-  {
-    "game_id": "45315799",
-    "created_at": "2026-09-22T18:53:45.064Z",
-    "p1_id": "71155120841",
-    "p2_id": "88110265403",
-    "template_id": 1579667,
-    "game_state": "Playing",
-    "current_turn": 5
   },
   {
     "game_id": "45315801",
@@ -111,20 +93,38 @@
     "created_at": "2026-09-23T16:56:38.354Z",
     "p1_id": "71148639731",
     "p2_id": "16127869941",
-    "template_id": 1587201
+    "template_id": 1587201,
+    "game_state": "WaitingForPlayers"
   },
   {
     "game_id": "45322377",
     "created_at": "2026-09-23T16:56:39.159Z",
     "p1_id": "71155120841",
     "p2_id": "28867016",
-    "template_id": 1587201
+    "template_id": 1587201,
+    "game_state": "Playing",
+    "current_turn": 6
   },
   {
     "game_id": "45322378",
     "created_at": "2026-09-23T16:56:39.818Z",
     "p1_id": "4155523061",
     "p2_id": "3346775331",
-    "template_id": 1573497
+    "template_id": 1573497,
+    "game_state": "WaitingForPlayers"
+  },
+  {
+    "game_id": "45323968",
+    "created_at": "2026-09-23T20:21:04.141Z",
+    "p1_id": "88110265403",
+    "p2_id": "8222729424",
+    "template_id": 1579659
+  },
+  {
+    "game_id": "45323969",
+    "created_at": "2026-09-23T20:21:04.950Z",
+    "p1_id": "84143567121",
+    "p2_id": "71155120841",
+    "template_id": 1579657
   }
 ]
