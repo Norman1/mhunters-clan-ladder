@@ -17,10 +17,10 @@
   },
   "28867016": {
     "name": "Swisster",
-    "elo": 1151,
+    "elo": 1182,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "16127869941",
+    "last_opponent": "71155120841",
     "last_assigned_at": "2026-09-23T16:56:39.159Z"
   },
   "81598466": {
@@ -379,11 +379,11 @@
   },
   "71155120841": {
     "name": "Ventura",
-    "elo": 1367,
+    "elo": 1336,
     "game_cap": 3,
     "missed_games": 0,
-    "last_assigned_at": "2026-09-23T20:21:04.950Z",
-    "last_opponent": "88110265403"
+    "last_assigned_at": "2026-09-23T23:41:01.163Z",
+    "last_opponent": "28867016"
   },
   "6411877352": {
     "name": "Kratos",
@@ -558,7 +558,7 @@
     "elo": 1000,
     "game_cap": 2,
     "missed_games": 7,
-    "last_assigned_at": "2026-07-01T23:13:55.424Z",
+    "last_assigned_at": "2026-09-23T23:41:01.163Z",
     "last_opponent": "3428471447"
   },
   "50144225272": {
