@@ -77,7 +77,7 @@
     "game_cap": 3,
     "missed_games": 0,
     "last_opponent": "84143567121",
-    "last_assigned_at": "2026-09-25T13:45:50.521Z"
+    "last_assigned_at": "2026-09-25T22:19:37.888Z"
   },
   "3428471447": {
     "name": "AyanM",
@@ -129,19 +129,19 @@
   },
   "79105823914": {
     "name": "krinid",
-    "elo": 984,
+    "elo": 979,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "89114164339",
+    "last_opponent": "88110265403",
     "last_assigned_at": "2026-09-25T07:47:14.659Z"
   },
   "88110265403": {
     "name": "Crouton",
-    "elo": 1319,
+    "elo": 1324,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "8222729424",
-    "last_assigned_at": "2026-09-25T01:29:26.443Z"
+    "last_opponent": "79105823914",
+    "last_assigned_at": "2026-09-25T22:19:37.888Z"
   },
   "84143567121": {
     "name": "Poldi",
