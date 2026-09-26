@@ -137,11 +137,11 @@
   },
   "88110265403": {
     "name": "Crouton",
-    "elo": 1324,
+    "elo": 1326,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "79105823914",
-    "last_assigned_at": "2026-09-25T22:19:37.888Z"
+    "last_opponent": "8222729424",
+    "last_assigned_at": "2026-09-26T19:51:15.550Z"
   },
   "84143567121": {
     "name": "Poldi",
@@ -199,7 +199,7 @@
     "game_cap": 2,
     "missed_games": 0,
     "last_opponent": "79105823914",
-    "last_assigned_at": "2026-09-26T01:32:21.827Z"
+    "last_assigned_at": "2026-09-26T19:51:15.550Z"
   },
   "4543063534": {
     "name": "Farah♦",
@@ -587,7 +587,7 @@
   },
   "8222729424": {
     "name": "Al AssAff",
-    "elo": 813,
+    "elo": 811,
     "game_cap": 2,
     "missed_games": 0,
     "last_assigned_at": "2026-09-25T01:29:27.148Z",
