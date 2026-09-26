@@ -133,7 +133,7 @@
     "game_cap": 2,
     "missed_games": 0,
     "last_opponent": "88110265403",
-    "last_assigned_at": "2026-09-25T07:47:14.659Z"
+    "last_assigned_at": "2026-09-26T01:32:21.827Z"
   },
   "88110265403": {
     "name": "Crouton",
@@ -171,10 +171,10 @@
   },
   "8294358602": {
     "name": "Wolkenstern",
-    "elo": 1042,
+    "elo": 1052,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "88110265403",
+    "last_opponent": "9313400553",
     "last_assigned_at": "2026-09-18T18:27:53.999Z"
   },
   "58134761580": {
@@ -195,11 +195,11 @@
   },
   "9313400553": {
     "name": "Word Walker",
-    "elo": 862,
+    "elo": 852,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "9780712014",
-    "last_assigned_at": "2026-09-18T18:27:53.999Z"
+    "last_opponent": "8294358602",
+    "last_assigned_at": "2026-09-26T01:32:21.827Z"
   },
   "4543063534": {
     "name": "Farah♦",
