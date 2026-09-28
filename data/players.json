@@ -171,7 +171,7 @@
   },
   "8294358602": {
     "name": "Wolkenstern",
-    "elo": 1052,
+    "elo": 1062,
     "game_cap": 2,
     "missed_games": 0,
     "last_opponent": "9313400553",
@@ -195,10 +195,10 @@
   },
   "9313400553": {
     "name": "Word Walker",
-    "elo": 850,
+    "elo": 840,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "88110265403",
+    "last_opponent": "8294358602",
     "last_assigned_at": "2026-09-26T19:51:15.550Z"
   },
   "4543063534": {
