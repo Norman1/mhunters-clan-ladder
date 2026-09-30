@@ -77,7 +77,7 @@
     "game_cap": 3,
     "missed_games": 0,
     "last_opponent": "71155120841",
-    "last_assigned_at": "2026-09-30T13:41:53.170Z"
+    "last_assigned_at": "2026-09-30T19:18:22.398Z"
   },
   "3428471447": {
     "name": "AyanM",
@@ -395,11 +395,11 @@
   },
   "56133341636": {
     "name": "Bastian Pyornkrac...",
-    "elo": 854,
+    "elo": 871,
     "game_cap": 2,
     "missed_games": 0,
     "last_assigned_at": "2026-09-28T21:59:39.103Z",
-    "last_opponent": "71148639731"
+    "last_opponent": "8222729424"
   },
   "50127514525": {
     "name": "toont3",
@@ -587,11 +587,11 @@
   },
   "8222729424": {
     "name": "Al AssAff",
-    "elo": 809,
+    "elo": 792,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-09-29T15:50:13.014Z",
-    "last_opponent": "71155120841"
+    "last_assigned_at": "2026-09-30T19:18:22.398Z",
+    "last_opponent": "56133341636"
   },
   "88117806994": {
     "name": "RameurA",
