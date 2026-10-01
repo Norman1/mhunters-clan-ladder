@@ -21,7 +21,7 @@
     "game_cap": 2,
     "missed_games": 0,
     "last_opponent": "71155120841",
-    "last_assigned_at": "2026-09-30T00:26:16.442Z"
+    "last_assigned_at": "2026-10-01T18:56:53.102Z"
   },
   "81598466": {
     "name": "Tim 🍌",
@@ -43,9 +43,9 @@
     "name": "Ree",
     "elo": 1017,
     "game_cap": 2,
-    "missed_games": 1,
+    "missed_games": 2,
     "last_assigned_at": "2026-09-30T13:41:53.966Z",
-    "last_opponent": "4155523061"
+    "last_opponent": "9313400553"
   },
   "1822261234": {
     "name": "fifi",
@@ -198,8 +198,8 @@
     "elo": 840,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "8294358602",
-    "last_assigned_at": "2026-09-28T21:59:39.103Z"
+    "last_opponent": "1382545505",
+    "last_assigned_at": "2026-10-01T18:56:53.102Z"
   },
   "4543063534": {
     "name": "Farah♦",
