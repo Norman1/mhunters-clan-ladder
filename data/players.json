@@ -21,7 +21,7 @@
     "game_cap": 2,
     "missed_games": 0,
     "last_opponent": "9313400553",
-    "last_assigned_at": "2026-10-01T18:56:53.102Z"
+    "last_assigned_at": "2026-10-03T12:32:56.827Z"
   },
   "81598466": {
     "name": "Tim 🍌",
@@ -76,8 +76,8 @@
     "elo": 1504,
     "game_cap": 3,
     "missed_games": 0,
-    "last_opponent": "71155120841",
-    "last_assigned_at": "2026-09-30T19:18:22.398Z"
+    "last_opponent": "4543063534",
+    "last_assigned_at": "2026-10-03T12:32:56.827Z"
   },
   "3428471447": {
     "name": "AyanM",
@@ -205,8 +205,8 @@
     "name": "Farah♦",
     "elo": 898,
     "game_cap": 1,
-    "missed_games": 5,
-    "last_opponent": "9313400553",
+    "missed_games": 6,
+    "last_opponent": "3346775331",
     "last_assigned_at": "2026-09-30T06:42:02.602Z"
   },
   "51156980238": {
