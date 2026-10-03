@@ -197,8 +197,8 @@
     "name": "Word Walker",
     "elo": 834,
     "game_cap": 2,
-    "missed_games": 0,
-    "last_opponent": "28867016",
+    "missed_games": 1,
+    "last_opponent": "71155120841",
     "last_assigned_at": "2026-10-03T17:16:03.402Z"
   },
   "4543063534": {
@@ -383,7 +383,7 @@
     "game_cap": 3,
     "missed_games": 0,
     "last_assigned_at": "2026-10-03T17:16:03.402Z",
-    "last_opponent": "1382545505"
+    "last_opponent": "9313400553"
   },
   "6411877352": {
     "name": "Kratos",
