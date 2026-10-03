@@ -99,8 +99,8 @@
     "name": "BlackBart",
     "elo": 939,
     "game_cap": 2,
-    "missed_games": 4,
-    "last_opponent": "8222729424",
+    "missed_games": 5,
+    "last_opponent": "88110265403",
     "last_assigned_at": "2026-10-03T17:16:04.546Z"
   },
   "3737155555": {
@@ -140,8 +140,8 @@
     "elo": 1293,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "84143567121",
-    "last_assigned_at": "2026-10-03T17:16:04.546Z"
+    "last_opponent": "3631391841",
+    "last_assigned_at": "2026-10-03T23:02:32.360Z"
   },
   "84143567121": {
     "name": "Poldi",
@@ -197,9 +197,9 @@
     "name": "Word Walker",
     "elo": 834,
     "game_cap": 2,
-    "missed_games": 1,
+    "missed_games": 0,
     "last_opponent": "71155120841",
-    "last_assigned_at": "2026-10-03T17:16:03.402Z"
+    "last_assigned_at": "2026-10-03T23:02:32.360Z"
   },
   "4543063534": {
     "name": "Farah♦",
