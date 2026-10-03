@@ -42,7 +42,7 @@
     "p2_id": "88110265403",
     "template_id": 1579663,
     "game_state": "Playing",
-    "current_turn": 3
+    "current_turn": 4
   },
   {
     "game_id": "45364912",
@@ -134,6 +134,7 @@
     "created_at": "2026-10-02T20:43:40.726Z",
     "p1_id": "9780712014",
     "p2_id": "99110844848",
-    "template_id": 1579659
+    "template_id": 1579659,
+    "game_state": "WaitingForPlayers"
   }
 ]
