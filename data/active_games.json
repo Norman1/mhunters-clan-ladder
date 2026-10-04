@@ -24,7 +24,7 @@
     "p2_id": "56133341636",
     "template_id": 1579663,
     "game_state": "Playing",
-    "current_turn": 2
+    "current_turn": 3
   },
   {
     "game_id": "45364911",
@@ -33,7 +33,7 @@
     "p2_id": "88110265403",
     "template_id": 1579663,
     "game_state": "Playing",
-    "current_turn": 8
+    "current_turn": 9
   },
   {
     "game_id": "45364912",
@@ -42,7 +42,7 @@
     "p2_id": "8222729424",
     "template_id": 1587197,
     "game_state": "Playing",
-    "current_turn": 8
+    "current_turn": 11
   },
   {
     "game_id": "45371541",
@@ -51,16 +51,7 @@
     "p2_id": "3346775331",
     "template_id": 1573499,
     "game_state": "Playing",
-    "current_turn": 0
-  },
-  {
-    "game_id": "45373822",
-    "created_at": "2026-09-30T19:18:22.398Z",
-    "p1_id": "8222729424",
-    "p2_id": "3346775331",
-    "template_id": 1587201,
-    "game_state": "Playing",
-    "current_turn": 6
+    "current_turn": 2
   },
   {
     "game_id": "45378294",
@@ -69,7 +60,7 @@
     "p2_id": "56133341636",
     "template_id": 1587200,
     "game_state": "Playing",
-    "current_turn": 0
+    "current_turn": 2
   },
   {
     "game_id": "45384240",
@@ -121,7 +112,7 @@
     "p2_id": "3346775331",
     "template_id": 1573495,
     "game_state": "Playing",
-    "current_turn": 2
+    "current_turn": 3
   },
   {
     "game_id": "45394563",
@@ -133,11 +124,17 @@
     "current_turn": -1
   },
   {
-    "game_id": "45396560",
-    "created_at": "2026-10-03T23:02:32.360Z",
-    "p1_id": "88110265403",
+    "game_id": "45398673",
+    "created_at": "2026-10-04T09:45:39.589Z",
+    "p1_id": "3346775331",
+    "p2_id": "71155120841",
+    "template_id": 1579662
+  },
+  {
+    "game_id": "45398674",
+    "created_at": "2026-10-04T09:45:40.273Z",
+    "p1_id": "8222729424",
     "p2_id": "9313400553",
-    "template_id": 1579667,
-    "game_state": "WaitingForPlayers"
+    "template_id": 1579660
   }
 ]
