@@ -29,7 +29,7 @@
     "game_cap": 2,
     "missed_games": 3,
     "last_opponent": "25149077292",
-    "last_assigned_at": "2026-09-06T17:01:57.237Z"
+    "last_assigned_at": "2026-10-04T19:36:12.101Z"
   },
   "266160220": {
     "name": "(CZ-SK)eXitus",
@@ -73,11 +73,11 @@
   },
   "3346775331": {
     "name": "Gatsu12",
-    "elo": 1509,
+    "elo": 1480,
     "game_cap": 3,
     "missed_games": 0,
-    "last_opponent": "28867016",
-    "last_assigned_at": "2026-10-04T15:21:36.026Z"
+    "last_opponent": "71155120841",
+    "last_assigned_at": "2026-10-04T19:36:11.528Z"
   },
   "3428471447": {
     "name": "AyanM",
@@ -379,11 +379,11 @@
   },
   "71155120841": {
     "name": "Ventura",
-    "elo": 1349,
+    "elo": 1378,
     "game_cap": 3,
     "missed_games": 0,
-    "last_assigned_at": "2026-10-04T09:45:39.589Z",
-    "last_opponent": "9313400553"
+    "last_assigned_at": "2026-10-04T19:36:12.101Z",
+    "last_opponent": "3346775331"
   },
   "6411877352": {
     "name": "Kratos",
@@ -582,7 +582,7 @@
     "elo": 890,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-10-04T15:21:36.580Z",
+    "last_assigned_at": "2026-10-04T19:36:11.528Z",
     "last_opponent": "9780712014"
   },
   "8222729424": {
