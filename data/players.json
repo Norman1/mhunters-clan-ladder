@@ -29,7 +29,7 @@
     "game_cap": 2,
     "missed_games": 0,
     "last_opponent": "71155120841",
-    "last_assigned_at": "2026-10-04T23:08:15.530Z"
+    "last_assigned_at": "2026-10-05T09:01:35.409Z"
   },
   "266160220": {
     "name": "(CZ-SK)eXitus",
@@ -116,8 +116,8 @@
     "elo": 694,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-10-02T08:33:15.231Z",
-    "last_opponent": "79105823914"
+    "last_assigned_at": "2026-10-05T09:01:35.409Z",
+    "last_opponent": "81138463364"
   },
   "4180490094": {
     "name": "Woololo",
@@ -690,9 +690,9 @@
     "name": "jman",
     "elo": 1000,
     "game_cap": 2,
-    "missed_games": 4,
+    "missed_games": 5,
     "in_clan": true,
     "last_assigned_at": "2026-10-02T08:33:15.231Z",
-    "last_opponent": "4555082823"
+    "last_opponent": "4155523061"
   }
 }
