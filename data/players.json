@@ -73,10 +73,10 @@
   },
   "3346775331": {
     "name": "Gatsu12",
-    "elo": 1480,
+    "elo": 1481,
     "game_cap": 3,
     "missed_games": 0,
-    "last_opponent": "71148639731",
+    "last_opponent": "9313400553",
     "last_assigned_at": "2026-10-06T00:48:34.361Z"
   },
   "3428471447": {
@@ -195,10 +195,10 @@
   },
   "9313400553": {
     "name": "Word Walker",
-    "elo": 812,
+    "elo": 811,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "8222729424",
+    "last_opponent": "3346775331",
     "last_assigned_at": "2026-10-06T00:48:34.361Z"
   },
   "4543063534": {
@@ -373,7 +373,7 @@
     "name": "Nick",
     "elo": 1160,
     "game_cap": 2,
-    "missed_games": 1,
+    "missed_games": 0,
     "last_assigned_at": "2026-10-06T07:33:39.341Z",
     "last_opponent": "8222729424"
   },
