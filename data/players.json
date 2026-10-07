@@ -73,10 +73,10 @@
   },
   "3346775331": {
     "name": "Gatsu12",
-    "elo": 1481,
+    "elo": 1482,
     "game_cap": 3,
     "missed_games": 0,
-    "last_opponent": "9313400553",
+    "last_opponent": "99110844848",
     "last_assigned_at": "2026-10-06T20:18:44.163Z"
   },
   "3428471447": {
@@ -579,11 +579,11 @@
   },
   "99110844848": {
     "name": "CrypticNeo1",
-    "elo": 886,
+    "elo": 885,
     "game_cap": 2,
     "missed_games": 0,
     "last_assigned_at": "2026-10-06T20:18:45.371Z",
-    "last_opponent": "88110265403"
+    "last_opponent": "3346775331"
   },
   "8222729424": {
     "name": "Al AssAff",
@@ -649,7 +649,9 @@
     "game_cap": 2,
     "missed_games": 9,
     "last_assigned_at": "2026-09-02T18:41:31.931Z",
-    "last_opponent": "88110265403"
+    "last_opponent": "88110265403",
+    "in_clan": false,
+    "departed_at": "2026-10-07T00:41:17.432Z"
   },
   "5118531774": {
     "name": "krua (from Russia)",
