@@ -15,7 +15,7 @@
     "p2_id": "8294358602",
     "template_id": 1587200,
     "game_state": "Playing",
-    "current_turn": 5
+    "current_turn": 7
   },
   {
     "game_id": "45359888",
@@ -34,15 +34,6 @@
     "template_id": 1587197,
     "game_state": "Playing",
     "current_turn": 12
-  },
-  {
-    "game_id": "45371541",
-    "created_at": "2026-09-30T13:41:53.170Z",
-    "p1_id": "4155523061",
-    "p2_id": "3346775331",
-    "template_id": 1573499,
-    "game_state": "Playing",
-    "current_turn": 9
   },
   {
     "game_id": "45378294",
@@ -68,15 +59,6 @@
     "p1_id": "84143567121",
     "p2_id": "79105823914",
     "template_id": 1431579,
-    "game_state": "Playing",
-    "current_turn": 0
-  },
-  {
-    "game_id": "45394563",
-    "created_at": "2026-10-03T17:16:04.000Z",
-    "p1_id": "84143567121",
-    "p2_id": "28867016",
-    "template_id": 1579667,
     "game_state": "Playing",
     "current_turn": 0
   },
@@ -117,21 +99,40 @@
     "current_turn": -1
   },
   {
-    "game_id": "45417527",
-    "created_at": "2026-10-06T20:18:44.824Z",
-    "p1_id": "28867016",
-    "p2_id": "88110265403",
-    "template_id": 1573495,
-    "game_state": "Playing",
-    "current_turn": 9
-  },
-  {
     "game_id": "45417528",
     "created_at": "2026-10-06T20:18:45.371Z",
     "p1_id": "99110844848",
     "p2_id": "9313400553",
     "template_id": 1573499,
     "game_state": "Playing",
-    "current_turn": 3
+    "current_turn": 4
+  },
+  {
+    "game_id": "45422527",
+    "created_at": "2026-10-07T14:29:48.036Z",
+    "p1_id": "84143567121",
+    "p2_id": "4155523061",
+    "template_id": 1579658
+  },
+  {
+    "game_id": "45422528",
+    "created_at": "2026-10-07T14:29:48.710Z",
+    "p1_id": "3346775331",
+    "p2_id": "88110265403",
+    "template_id": 1579665
+  },
+  {
+    "game_id": "45422529",
+    "created_at": "2026-10-07T14:29:49.270Z",
+    "p1_id": "99110844848",
+    "p2_id": "28867016",
+    "template_id": 1574451
+  },
+  {
+    "game_id": "45422530",
+    "created_at": "2026-10-07T14:29:49.833Z",
+    "p1_id": "3346775331",
+    "p2_id": "28867016",
+    "template_id": 1573498
   }
 ]
