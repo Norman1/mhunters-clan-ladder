@@ -76,7 +76,7 @@
     "elo": 1447,
     "game_cap": 3,
     "missed_games": 0,
-    "last_opponent": "8294358602",
+    "last_opponent": "79105823914",
     "last_assigned_at": "2026-10-11T15:39:12.901Z"
   },
   "3428471447": {
@@ -131,8 +131,8 @@
     "name": "krinid",
     "elo": 1004,
     "game_cap": 2,
-    "missed_games": 0,
-    "last_opponent": "84143567121",
+    "missed_games": 1,
+    "last_opponent": "3346775331",
     "last_assigned_at": "2026-10-11T15:39:12.901Z"
   },
   "88110265403": {
@@ -173,7 +173,7 @@
     "name": "Wolkenstern",
     "elo": 1038,
     "game_cap": 2,
-    "missed_games": 1,
+    "missed_games": 0,
     "last_opponent": "3346775331",
     "last_assigned_at": "2026-10-11T15:39:12.195Z"
   },
