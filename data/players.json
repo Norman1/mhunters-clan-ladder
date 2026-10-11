@@ -129,10 +129,10 @@
   },
   "79105823914": {
     "name": "krinid",
-    "elo": 1010,
+    "elo": 1004,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "8294358602",
+    "last_opponent": "84143567121",
     "last_assigned_at": "2026-10-09T20:53:09.417Z"
   },
   "88110265403": {
@@ -145,10 +145,10 @@
   },
   "84143567121": {
     "name": "Poldi",
-    "elo": 1316,
+    "elo": 1322,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "28867016",
+    "last_opponent": "79105823914",
     "last_assigned_at": "2026-10-07T14:29:48.036Z"
   },
   "23154545458": {
