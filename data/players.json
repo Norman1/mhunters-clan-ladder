@@ -25,10 +25,10 @@
   },
   "81598466": {
     "name": "Tim 🍌",
-    "elo": 790,
+    "elo": 781,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "8222729424",
+    "last_opponent": "79105823914",
     "last_assigned_at": "2026-10-11T23:40:49.714Z"
   },
   "266160220": {
@@ -129,10 +129,10 @@
   },
   "79105823914": {
     "name": "krinid",
-    "elo": 1004,
+    "elo": 1013,
     "game_cap": 2,
-    "missed_games": 1,
-    "last_opponent": "3346775331",
+    "missed_games": 0,
+    "last_opponent": "81598466",
     "last_assigned_at": "2026-10-11T23:40:49.714Z"
   },
   "88110265403": {
