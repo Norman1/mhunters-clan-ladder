@@ -199,7 +199,7 @@
     "game_cap": 2,
     "missed_games": 0,
     "last_opponent": "81598466",
-    "last_assigned_at": "2026-10-14T01:56:35.192Z"
+    "last_assigned_at": "2026-10-14T13:42:41.005Z"
   },
   "4543063534": {
     "name": "Farah♦",
@@ -379,11 +379,11 @@
   },
   "71155120841": {
     "name": "Ventura",
-    "elo": 1389,
+    "elo": 1400,
     "game_cap": 3,
     "missed_games": 0,
-    "last_assigned_at": "2026-10-12T05:54:31.513Z",
-    "last_opponent": "56133341636"
+    "last_assigned_at": "2026-10-14T13:42:41.005Z",
+    "last_opponent": "16127869941"
   },
   "6411877352": {
     "name": "Kratos",
@@ -507,11 +507,11 @@
   },
   "16127869941": {
     "name": "gg",
-    "elo": 1216,
+    "elo": 1205,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-10-02T08:33:14.065Z",
-    "last_opponent": "74149320612"
+    "last_assigned_at": "2026-10-14T13:42:40.267Z",
+    "last_opponent": "71155120841"
   },
   "4353717389": {
     "name": "Krys",
