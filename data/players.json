@@ -25,11 +25,11 @@
   },
   "81598466": {
     "name": "Tim 🍌",
-    "elo": 744,
+    "elo": 740,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "84143567121",
-    "last_assigned_at": "2026-10-16T22:50:11.849Z"
+    "last_opponent": "71148639731",
+    "last_assigned_at": "2026-10-17T06:55:33.810Z"
   },
   "266160220": {
     "name": "(CZ-SK)eXitus",
@@ -141,7 +141,7 @@
     "game_cap": 2,
     "missed_games": 0,
     "last_opponent": "8294358602",
-    "last_assigned_at": "2026-10-16T11:21:03.946Z"
+    "last_assigned_at": "2026-10-17T06:55:33.810Z"
   },
   "84143567121": {
     "name": "Poldi",
@@ -173,9 +173,9 @@
     "name": "Wolkenstern",
     "elo": 1032,
     "game_cap": 2,
-    "missed_games": 1,
+    "missed_games": 0,
     "last_opponent": "88110265403",
-    "last_assigned_at": "2026-10-16T11:21:03.946Z"
+    "last_assigned_at": "2026-10-17T06:55:33.102Z"
   },
   "58134761580": {
     "name": "ExFailures",
@@ -371,11 +371,11 @@
   },
   "71148639731": {
     "name": "Nick",
-    "elo": 1147,
+    "elo": 1151,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-10-14T18:37:41.677Z",
-    "last_opponent": "79105823914"
+    "last_assigned_at": "2026-10-17T06:55:33.102Z",
+    "last_opponent": "81598466"
   },
   "71155120841": {
     "name": "Ventura",
