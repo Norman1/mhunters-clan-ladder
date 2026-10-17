@@ -140,7 +140,7 @@
     "elo": 1274,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "81598466",
+    "last_opponent": "8294358602",
     "last_assigned_at": "2026-10-16T11:21:03.946Z"
   },
   "84143567121": {
@@ -173,8 +173,8 @@
     "name": "Wolkenstern",
     "elo": 1032,
     "game_cap": 2,
-    "missed_games": 0,
-    "last_opponent": "84143567121",
+    "missed_games": 1,
+    "last_opponent": "88110265403",
     "last_assigned_at": "2026-10-16T11:21:03.946Z"
   },
   "58134761580": {
