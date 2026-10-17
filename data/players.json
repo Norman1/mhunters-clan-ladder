@@ -17,11 +17,11 @@
   },
   "28867016": {
     "name": "Swisster",
-    "elo": 1105,
+    "elo": 1068,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "8222729424",
-    "last_assigned_at": "2026-10-10T22:30:51.486Z"
+    "last_opponent": "4155523061",
+    "last_assigned_at": "2026-10-17T11:36:28.321Z"
   },
   "81598466": {
     "name": "Tim 🍌",
@@ -73,11 +73,11 @@
   },
   "3346775331": {
     "name": "Gatsu12",
-    "elo": 1476,
+    "elo": 1491,
     "game_cap": 3,
     "missed_games": 0,
-    "last_opponent": "8222729424",
-    "last_assigned_at": "2026-10-14T22:18:13.293Z"
+    "last_opponent": "71155120841",
+    "last_assigned_at": "2026-10-17T11:36:28.321Z"
   },
   "3428471447": {
     "name": "AyanM",
@@ -113,11 +113,11 @@
   },
   "4155523061": {
     "name": "AGEHNT SMITH",
-    "elo": 678,
+    "elo": 715,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-10-14T18:37:42.278Z",
-    "last_opponent": "88110265403"
+    "last_assigned_at": "2026-10-17T11:36:28.864Z",
+    "last_opponent": "28867016"
   },
   "4180490094": {
     "name": "Woololo",
@@ -174,8 +174,8 @@
     "elo": 1032,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "88110265403",
-    "last_assigned_at": "2026-10-17T06:55:33.102Z"
+    "last_opponent": "71148639731",
+    "last_assigned_at": "2026-10-17T11:36:28.864Z"
   },
   "58134761580": {
     "name": "ExFailures",
@@ -373,17 +373,17 @@
     "name": "Nick",
     "elo": 1151,
     "game_cap": 2,
-    "missed_games": 0,
-    "last_assigned_at": "2026-10-17T06:55:33.102Z",
-    "last_opponent": "81598466"
+    "missed_games": 1,
+    "last_assigned_at": "2026-10-17T11:36:27.651Z",
+    "last_opponent": "8294358602"
   },
   "71155120841": {
     "name": "Ventura",
-    "elo": 1385,
+    "elo": 1370,
     "game_cap": 3,
     "missed_games": 0,
-    "last_assigned_at": "2026-10-14T22:18:13.293Z",
-    "last_opponent": "9313400553"
+    "last_assigned_at": "2026-10-17T11:36:27.651Z",
+    "last_opponent": "3346775331"
   },
   "6411877352": {
     "name": "Kratos",
