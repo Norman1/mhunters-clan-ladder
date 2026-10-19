@@ -17,11 +17,11 @@
   },
   "28867016": {
     "name": "Swisster",
-    "elo": 1075,
+    "elo": 1066,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "56133341636",
-    "last_assigned_at": "2026-10-19T06:14:09.451Z"
+    "last_opponent": "88110265403",
+    "last_assigned_at": "2026-10-19T23:39:13.557Z"
   },
   "81598466": {
     "name": "Tim 🍌",
@@ -77,7 +77,7 @@
     "game_cap": 3,
     "missed_games": 0,
     "last_opponent": "79105823914",
-    "last_assigned_at": "2026-10-18T20:40:21.694Z"
+    "last_assigned_at": "2026-10-19T23:39:13.557Z"
   },
   "3428471447": {
     "name": "AyanM",
@@ -137,11 +137,11 @@
   },
   "88110265403": {
     "name": "Crouton",
-    "elo": 1289,
+    "elo": 1298,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "71148639731",
-    "last_assigned_at": "2026-10-18T20:40:22.322Z"
+    "last_opponent": "28867016",
+    "last_assigned_at": "2026-10-19T23:39:12.918Z"
   },
   "84143567121": {
     "name": "Poldi",
@@ -293,9 +293,9 @@
     "name": "incandwo",
     "elo": 1054,
     "game_cap": 2,
-    "missed_games": 4,
+    "missed_games": 5,
     "last_assigned_at": "2026-10-17T15:32:13.976Z",
-    "last_opponent": "25126079448"
+    "last_opponent": "71148639731"
   },
   "93159203503": {
     "name": "President_Newsom",
@@ -374,8 +374,8 @@
     "elo": 1138,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-10-19T06:14:09.451Z",
-    "last_opponent": "8294358602"
+    "last_assigned_at": "2026-10-19T23:39:12.918Z",
+    "last_opponent": "14130113253"
   },
   "71155120841": {
     "name": "Ventura",
