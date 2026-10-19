@@ -173,8 +173,8 @@
     "name": "Wolkenstern",
     "elo": 1061,
     "game_cap": 2,
-    "missed_games": 1,
-    "last_opponent": "9780712014",
+    "missed_games": 0,
+    "last_opponent": "71148639731",
     "last_assigned_at": "2026-10-18T23:10:17.910Z"
   },
   "58134761580": {
@@ -373,9 +373,9 @@
     "name": "Nick",
     "elo": 1138,
     "game_cap": 2,
-    "missed_games": 0,
+    "missed_games": 1,
     "last_assigned_at": "2026-10-18T23:10:17.910Z",
-    "last_opponent": "88110265403"
+    "last_opponent": "8294358602"
   },
   "71155120841": {
     "name": "Ventura",
