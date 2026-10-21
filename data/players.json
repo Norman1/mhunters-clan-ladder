@@ -27,9 +27,9 @@
     "name": "Tim 🍌",
     "elo": 735,
     "game_cap": 2,
-    "missed_games": 0,
-    "last_opponent": "16127869941",
-    "last_assigned_at": "2026-10-21T07:37:16.113Z"
+    "missed_games": 1,
+    "last_opponent": "3346775331",
+    "last_assigned_at": "2026-10-21T22:19:31.889Z"
   },
   "266160220": {
     "name": "(CZ-SK)eXitus",
@@ -76,7 +76,7 @@
     "elo": 1474,
     "game_cap": 3,
     "missed_games": 0,
-    "last_opponent": "4155523061",
+    "last_opponent": "81598466",
     "last_assigned_at": "2026-10-20T22:18:47.924Z"
   },
   "3428471447": {
@@ -398,7 +398,7 @@
     "elo": 912,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-10-19T06:14:08.888Z",
+    "last_assigned_at": "2026-10-21T22:19:31.889Z",
     "last_opponent": "84143567121"
   },
   "50127514525": {
