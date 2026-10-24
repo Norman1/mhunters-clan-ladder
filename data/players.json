@@ -129,10 +129,10 @@
   },
   "79105823914": {
     "name": "krinid",
-    "elo": 968,
+    "elo": 982,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "3346775331",
+    "last_opponent": "9313400553",
     "last_assigned_at": "2026-10-19T19:20:45.549Z"
   },
   "88110265403": {
@@ -195,10 +195,10 @@
   },
   "9313400553": {
     "name": "Word Walker",
-    "elo": 865,
+    "elo": 851,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "84143567121",
+    "last_opponent": "79105823914",
     "last_assigned_at": "2026-10-19T19:20:45.549Z"
   },
   "4543063534": {
