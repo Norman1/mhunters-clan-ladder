@@ -24,7 +24,7 @@
     "p2_id": "4155523061",
     "template_id": 1573499,
     "game_state": "Playing",
-    "current_turn": 4
+    "current_turn": 5
   },
   {
     "game_id": "45505261",
@@ -51,7 +51,7 @@
     "p2_id": "88110265403",
     "template_id": 1587200,
     "game_state": "Playing",
-    "current_turn": 1
+    "current_turn": 2
   },
   {
     "game_id": "45515511",
@@ -104,7 +104,7 @@
     "p2_id": "88110265403",
     "template_id": 1573499,
     "game_state": "Playing",
-    "current_turn": 0
+    "current_turn": 1
   },
   {
     "game_id": "45541063",
@@ -121,7 +121,8 @@
     "p1_id": "28867016",
     "p2_id": "56133341636",
     "template_id": 1579659,
-    "game_state": "WaitingForPlayers"
+    "game_state": "DistributingTerritories",
+    "current_turn": -1
   },
   {
     "game_id": "45545355",
