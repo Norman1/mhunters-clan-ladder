@@ -138,11 +138,11 @@
   },
   "79105823914": {
     "name": "krinid",
-    "elo": 982,
+    "elo": 954,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "58134761580",
-    "last_assigned_at": "2026-10-27T20:09:41.105Z"
+    "last_opponent": "8222729424",
+    "last_assigned_at": "2026-10-30T20:46:56.807Z"
   },
   "88110265403": {
     "name": "Crouton",
@@ -156,7 +156,7 @@
     "name": "Poldi",
     "elo": 1271,
     "game_cap": 2,
-    "missed_games": 1,
+    "missed_games": 0,
     "last_opponent": "56133341636",
     "last_assigned_at": "2026-10-30T15:55:33.495Z"
   },
@@ -174,8 +174,8 @@
     "name": "Ethosys",
     "elo": 1118,
     "game_cap": 2,
-    "missed_games": 2,
-    "last_opponent": "71148639731",
+    "missed_games": 3,
+    "last_opponent": "71155120841",
     "last_assigned_at": "2026-10-27T20:09:40.493Z"
   },
   "8294358602": {
@@ -391,8 +391,8 @@
     "elo": 1372,
     "game_cap": 3,
     "missed_games": 0,
-    "last_assigned_at": "2026-10-30T15:55:33.495Z",
-    "last_opponent": "8222729424"
+    "last_assigned_at": "2026-10-30T20:46:56.807Z",
+    "last_opponent": "9482920905"
   },
   "6411877352": {
     "name": "Kratos",
@@ -596,11 +596,11 @@
   },
   "8222729424": {
     "name": "Al AssAff",
-    "elo": 830,
+    "elo": 858,
     "game_cap": 2,
     "missed_games": 0,
     "last_assigned_at": "2026-10-30T15:55:32.838Z",
-    "last_opponent": "71155120841"
+    "last_opponent": "79105823914"
   },
   "88117806994": {
     "name": "RameurA",
