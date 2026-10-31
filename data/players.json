@@ -21,7 +21,7 @@
     "game_cap": 2,
     "missed_games": 0,
     "last_opponent": "4155523061",
-    "last_assigned_at": "2026-10-26T00:21:54.853Z"
+    "last_assigned_at": "2026-10-31T22:28:42.720Z"
   },
   "81598466": {
     "name": "Tim 🍌",
@@ -149,7 +149,7 @@
     "elo": 1318,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "71155120841",
+    "last_opponent": "16127869941",
     "last_assigned_at": "2026-10-28T18:51:34.902Z"
   },
   "84143567121": {
@@ -518,9 +518,9 @@
     "name": "gg",
     "elo": 1196,
     "game_cap": 2,
-    "missed_games": 0,
-    "last_assigned_at": "2026-10-30T01:57:40.912Z",
-    "last_opponent": "84143567121"
+    "missed_games": 1,
+    "last_assigned_at": "2026-10-31T22:28:42.720Z",
+    "last_opponent": "88110265403"
   },
   "4353717389": {
     "name": "Krys",
