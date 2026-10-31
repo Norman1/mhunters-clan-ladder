@@ -17,10 +17,10 @@
   },
   "28867016": {
     "name": "Swisster",
-    "elo": 1092,
+    "elo": 1097,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "9313400553",
+    "last_opponent": "4155523061",
     "last_assigned_at": "2026-10-26T00:21:54.853Z"
   },
   "81598466": {
@@ -122,11 +122,11 @@
   },
   "4155523061": {
     "name": "AGEHNT SMITH",
-    "elo": 747,
+    "elo": 742,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-10-29T21:49:08.721Z",
-    "last_opponent": "71155120841"
+    "last_assigned_at": "2026-10-31T18:33:12.599Z",
+    "last_opponent": "28867016"
   },
   "4180490094": {
     "name": "Woololo",
@@ -599,7 +599,7 @@
     "elo": 858,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-10-30T15:55:32.838Z",
+    "last_assigned_at": "2026-10-31T18:33:12.599Z",
     "last_opponent": "79105823914"
   },
   "88117806994": {
