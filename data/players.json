@@ -709,7 +709,7 @@
   "56114135921": {
     "name": "Johnny Silverhand",
     "elo": 1000,
-    "game_cap": 2,
+    "game_cap": 0,
     "missed_games": 0,
     "in_clan": true,
     "last_assigned_at": "2026-10-29T16:55:44.865Z"
