@@ -82,11 +82,11 @@
   },
   "3346775331": {
     "name": "Gatsu12",
-    "elo": 1414,
+    "elo": 1426,
     "game_cap": 3,
     "missed_games": 0,
-    "last_opponent": "9313400553",
-    "last_assigned_at": "2026-10-29T21:49:08.721Z"
+    "last_opponent": "84143567121",
+    "last_assigned_at": "2026-11-01T16:02:05.809Z"
   },
   "3428471447": {
     "name": "AyanM",
@@ -149,16 +149,16 @@
     "elo": 1318,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "16127869941",
-    "last_assigned_at": "2026-11-01T09:15:08.520Z"
+    "last_opponent": "71148639731",
+    "last_assigned_at": "2026-11-01T16:02:05.168Z"
   },
   "84143567121": {
     "name": "Poldi",
-    "elo": 1271,
+    "elo": 1259,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "56133341636",
-    "last_assigned_at": "2026-10-30T15:55:33.495Z"
+    "last_opponent": "3346775331",
+    "last_assigned_at": "2026-11-01T16:02:05.168Z"
   },
   "23154545458": {
     "name": "Light",
@@ -207,7 +207,7 @@
     "elo": 813,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "3346775331",
+    "last_opponent": "56114135921",
     "last_assigned_at": "2026-10-29T21:49:08.007Z"
   },
   "4543063534": {
@@ -382,9 +382,9 @@
     "name": "Nick",
     "elo": 1183,
     "game_cap": 2,
-    "missed_games": 0,
-    "last_assigned_at": "2026-11-01T09:15:08.520Z",
-    "last_opponent": "1382545505"
+    "missed_games": 1,
+    "last_assigned_at": "2026-11-01T16:02:05.809Z",
+    "last_opponent": "88110265403"
   },
   "71155120841": {
     "name": "Ventura",
@@ -710,8 +710,9 @@
     "name": "Johnny Silverhand",
     "elo": 1000,
     "game_cap": 0,
-    "missed_games": 0,
+    "missed_games": 1,
     "in_clan": true,
-    "last_assigned_at": "2026-10-29T16:55:44.865Z"
+    "last_assigned_at": "2026-10-29T16:55:44.865Z",
+    "last_opponent": "9313400553"
   }
 }
