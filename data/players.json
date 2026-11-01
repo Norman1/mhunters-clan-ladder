@@ -52,9 +52,9 @@
     "name": "Ree",
     "elo": 1017,
     "game_cap": 2,
-    "missed_games": 3,
+    "missed_games": 4,
     "last_assigned_at": "2026-10-29T02:26:42.117Z",
-    "last_opponent": "71155120841"
+    "last_opponent": "71148639731"
   },
   "1822261234": {
     "name": "fifi",
@@ -150,7 +150,7 @@
     "game_cap": 2,
     "missed_games": 0,
     "last_opponent": "16127869941",
-    "last_assigned_at": "2026-10-28T18:51:34.902Z"
+    "last_assigned_at": "2026-11-01T09:15:08.520Z"
   },
   "84143567121": {
     "name": "Poldi",
@@ -383,8 +383,8 @@
     "elo": 1183,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-10-30T08:37:52.147Z",
-    "last_opponent": "9482920905"
+    "last_assigned_at": "2026-11-01T09:15:08.520Z",
+    "last_opponent": "1382545505"
   },
   "71155120841": {
     "name": "Ventura",
