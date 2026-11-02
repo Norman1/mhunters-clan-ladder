@@ -41,12 +41,12 @@
   },
   "1248916572": {
     "name": "Venus Angelic",
-    "elo": 990,
+    "elo": 999,
     "game_cap": 2,
     "missed_games": 0,
     "in_clan": true,
-    "last_assigned_at": "2026-11-02T07:40:38.886Z",
-    "last_opponent": "71148639731"
+    "last_assigned_at": "2026-11-02T18:20:11.100Z",
+    "last_opponent": "9780712014"
   },
   "1382545505": {
     "name": "Ree",
@@ -382,17 +382,17 @@
     "name": "Nick",
     "elo": 1193,
     "game_cap": 2,
-    "missed_games": 0,
-    "last_assigned_at": "2026-11-02T07:40:38.070Z",
-    "last_opponent": "1248916572"
+    "missed_games": 1,
+    "last_assigned_at": "2026-11-02T18:20:11.925Z",
+    "last_opponent": "71155120841"
   },
   "71155120841": {
     "name": "Ventura",
     "elo": 1372,
     "game_cap": 3,
     "missed_games": 0,
-    "last_assigned_at": "2026-11-02T07:40:38.070Z",
-    "last_opponent": "16127869941"
+    "last_assigned_at": "2026-11-02T18:20:11.100Z",
+    "last_opponent": "71148639731"
   },
   "6411877352": {
     "name": "Kratos",
@@ -620,11 +620,11 @@
   },
   "9780712014": {
     "name": "Acuna42",
-    "elo": 763,
+    "elo": 754,
     "game_cap": 2,
-    "missed_games": 2,
-    "last_assigned_at": "2026-11-02T07:40:38.886Z",
-    "last_opponent": "8294358602"
+    "missed_games": 0,
+    "last_assigned_at": "2026-11-02T18:20:11.925Z",
+    "last_opponent": "1248916572"
   },
   "53134900057": {
     "name": "extelon",
