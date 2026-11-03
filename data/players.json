@@ -82,10 +82,10 @@
   },
   "3346775331": {
     "name": "Gatsu12",
-    "elo": 1427,
+    "elo": 1428,
     "game_cap": 3,
     "missed_games": 0,
-    "last_opponent": "9313400553",
+    "last_opponent": "4155523061",
     "last_assigned_at": "2026-11-03T01:34:29.914Z"
   },
   "3428471447": {
@@ -122,11 +122,11 @@
   },
   "4155523061": {
     "name": "AGEHNT SMITH",
-    "elo": 742,
+    "elo": 741,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-10-31T18:33:12.599Z",
-    "last_opponent": "28867016"
+    "last_assigned_at": "2026-11-03T17:50:34.816Z",
+    "last_opponent": "3346775331"
   },
   "4180490094": {
     "name": "Woololo",
@@ -208,7 +208,7 @@
     "game_cap": 2,
     "missed_games": 0,
     "last_opponent": "3346775331",
-    "last_assigned_at": "2026-11-01T20:29:58.180Z"
+    "last_assigned_at": "2026-11-03T17:50:34.816Z"
   },
   "4543063534": {
     "name": "Farah♦",
@@ -622,7 +622,7 @@
     "name": "Acuna42",
     "elo": 754,
     "game_cap": 2,
-    "missed_games": 1,
+    "missed_games": 0,
     "last_assigned_at": "2026-11-03T01:34:30.453Z",
     "last_opponent": "71148639731"
   },
