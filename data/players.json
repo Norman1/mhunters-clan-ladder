@@ -82,11 +82,11 @@
   },
   "3346775331": {
     "name": "Gatsu12",
-    "elo": 1426,
+    "elo": 1427,
     "game_cap": 3,
     "missed_games": 0,
-    "last_opponent": "56114135921",
-    "last_assigned_at": "2026-11-01T20:29:58.180Z"
+    "last_opponent": "9313400553",
+    "last_assigned_at": "2026-11-03T01:34:29.914Z"
   },
   "3428471447": {
     "name": "AyanM",
@@ -138,11 +138,11 @@
   },
   "79105823914": {
     "name": "krinid",
-    "elo": 954,
+    "elo": 951,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "8222729424",
-    "last_assigned_at": "2026-10-30T20:46:56.807Z"
+    "last_opponent": "71155120841",
+    "last_assigned_at": "2026-11-03T01:34:29.309Z"
   },
   "88110265403": {
     "name": "Crouton",
@@ -204,10 +204,10 @@
   },
   "9313400553": {
     "name": "Word Walker",
-    "elo": 813,
+    "elo": 812,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "56114135921",
+    "last_opponent": "3346775331",
     "last_assigned_at": "2026-11-01T20:29:58.180Z"
   },
   "4543063534": {
@@ -382,17 +382,17 @@
     "name": "Nick",
     "elo": 1193,
     "game_cap": 2,
-    "missed_games": 1,
-    "last_assigned_at": "2026-11-02T18:20:11.925Z",
-    "last_opponent": "71155120841"
+    "missed_games": 0,
+    "last_assigned_at": "2026-11-03T01:34:29.914Z",
+    "last_opponent": "9780712014"
   },
   "71155120841": {
     "name": "Ventura",
-    "elo": 1372,
+    "elo": 1375,
     "game_cap": 3,
     "missed_games": 0,
-    "last_assigned_at": "2026-11-02T18:20:11.100Z",
-    "last_opponent": "71148639731"
+    "last_assigned_at": "2026-11-03T01:34:30.453Z",
+    "last_opponent": "79105823914"
   },
   "6411877352": {
     "name": "Kratos",
@@ -622,9 +622,9 @@
     "name": "Acuna42",
     "elo": 754,
     "game_cap": 2,
-    "missed_games": 0,
-    "last_assigned_at": "2026-11-02T18:20:11.925Z",
-    "last_opponent": "1248916572"
+    "missed_games": 1,
+    "last_assigned_at": "2026-11-03T01:34:30.453Z",
+    "last_opponent": "71148639731"
   },
   "53134900057": {
     "name": "extelon",
