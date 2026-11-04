@@ -382,16 +382,16 @@
     "name": "Nick",
     "elo": 1185,
     "game_cap": 2,
-    "missed_games": 1,
-    "last_assigned_at": "2026-11-04T14:39:23.868Z",
-    "last_opponent": "28867016"
+    "missed_games": 0,
+    "last_assigned_at": "2026-11-04T21:19:22.195Z",
+    "last_opponent": "9780712014"
   },
   "71155120841": {
     "name": "Ventura",
     "elo": 1336,
     "game_cap": 3,
     "missed_games": 0,
-    "last_assigned_at": "2026-11-03T01:34:30.453Z",
+    "last_assigned_at": "2026-11-04T21:19:22.195Z",
     "last_opponent": "9780712014"
   },
   "6411877352": {
@@ -622,9 +622,9 @@
     "name": "Acuna42",
     "elo": 793,
     "game_cap": 2,
-    "missed_games": 0,
+    "missed_games": 1,
     "last_assigned_at": "2026-11-04T14:39:23.868Z",
-    "last_opponent": "71155120841"
+    "last_opponent": "71148639731"
   },
   "53134900057": {
     "name": "extelon",
