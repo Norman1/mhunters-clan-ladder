@@ -204,14 +204,28 @@
 
   /* Attach the timestamp to a feed item. Date-style stamps ('July 10, 2026')
      are much wider than relative ones ('6h') — the item gets a class that
-     reserves a wider right column so content never runs underneath. */
+     reserves a wider right column so content never runs underneath. Dated
+     stamps also carry a compact form ('JUL 10'); on phones the stamp sits
+     in the row's flex flow showing only the compact form, so scaled-up
+     fonts wrap the text instead of printing over it. */
   function attachFeedTime(item, iso, docRef) {
     var text = feedTime(iso);
     if (!text) return;
     var span = docRef.createElement('span');
     span.className = 'feed-time';
-    span.textContent = text;
-    if (text.indexOf(',') !== -1) item.classList.add('feed-item--dated');
+    if (text.indexOf(',') !== -1) {
+      item.classList.add('feed-item--dated');
+      var full = docRef.createElement('span');
+      full.className = 'ft-full';
+      full.textContent = text;
+      span.appendChild(full);
+      var brief = docRef.createElement('span');
+      brief.className = 'ft-brief';
+      brief.textContent = formatGazetteDate(iso);
+      span.appendChild(brief);
+    } else {
+      span.textContent = text;
+    }
     item.appendChild(span);
   }
 

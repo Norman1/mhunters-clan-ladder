@@ -790,6 +790,31 @@ tr.row--hit td { animation: row-flash 1.6s ease-out 1; }
 #feed-list .feed-item--dated.feed-item--league,
 #feed-list .feed-item--dated.feed-item--rank { padding-right: 98px; }
 
+/* dated stamps carry both forms; desktop shows the full date */
+#feed-list .ft-brief { display: none; }
+
+/* phones: the stamp leaves the overlay and joins the row's flex flow in its
+   compact form ('JUL 10'). In flow it occupies real width, so OS-scaled
+   fonts make the text wrap — it can never print over the content. */
+@media (max-width: 899px) {
+  #feed-list .feed-time {
+    position: static;
+    flex: none;
+    margin-left: auto;
+    align-self: flex-start;
+    margin-top: 3px;
+  }
+  #feed-list .ft-full { display: none; }
+  #feed-list .ft-brief { display: inline; }
+  #feed-list .feed-item,
+  #feed-list .feed-item--dated { padding-right: 0; }
+  #feed-list .feed-item--league,
+  #feed-list .feed-item--dated.feed-item--league { padding-right: 10px; }
+  #feed-list .feed-item--rank,
+  #feed-list .feed-item--dated.feed-item--rank { padding-right: 12px; }
+  #feed-list .feed-result { flex: 1; }
+}
+
 #feed-list .feed-item {
   position: relative;
   display: flex;
