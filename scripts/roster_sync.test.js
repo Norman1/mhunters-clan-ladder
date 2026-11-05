@@ -159,3 +159,38 @@ test('voidLeaverGames survives a failing delete API call', async () => {
     assert.deepEqual(remaining, []);
     assert.equal(history.length, 1); // still archived as void
 });
+
+// ---- clipped-name resolution (clan page clips names over ~20 chars) ----
+
+const { resolveClippedNames } = require('./roster_sync');
+
+test('resolveClippedNames replaces clipped names from the profile and leaves others alone', async () => {
+    const r = [
+        { id: '1', name: 'Short Name' },
+        { id: '2', name: 'Bastian Pyornkrac...' },
+        { id: '3', name: null },
+    ];
+    const calls = [];
+    await resolveClippedNames(r, async id => { calls.push(id); return 'Bastian Pyornkrachzark'; });
+    assert.deepEqual(calls, ['2']);
+    assert.equal(r[0].name, 'Short Name');
+    assert.equal(r[1].name, 'Bastian Pyornkrachzark');
+    assert.equal(r[2].name, null);
+});
+
+test('a failed full-name lookup nulls the scraped name so the diff never renames to it', async () => {
+    const r = [{ id: '2', name: 'Bastian Pyornkrac...' }];
+    await resolveClippedNames(r, async () => { throw new Error('boom'); });
+    assert.equal(r[0].name, null);
+
+    const diff = computeRosterDiff(r, { '2': { name: 'Bastian Pyornkrachzark', elo: 1000 } });
+    assert.deepEqual(diff.renames, []);
+    assert.deepEqual(diff.leavers, []);
+});
+
+test('a stored full name is not renamed back once the scraped clipped name is resolved', async () => {
+    const r = [{ id: '2', name: 'Bastian Pyornkrac...' }];
+    await resolveClippedNames(r, async () => 'Bastian Pyornkrachzark');
+    const diff = computeRosterDiff(r, { '2': { name: 'Bastian Pyornkrachzark', elo: 1000 } });
+    assert.deepEqual(diff.renames, []);
+});

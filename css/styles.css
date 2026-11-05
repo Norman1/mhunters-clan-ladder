@@ -367,7 +367,7 @@ tr.row:hover { background-color: #1B1D22; }
   color: var(--white);
   max-width: 0;         /* flexible column: absorbs spare table width */
   width: 99%;
-  min-width: 142px;     /* fits the longest roster name — the table scrolls
+  min-width: 170px;     /* fits the longest roster name — the table scrolls
                            sideways rather than truncate a name */
   overflow: hidden;
   text-overflow: ellipsis;
@@ -1108,7 +1108,7 @@ tr.row--hit td { animation: row-flash 1.6s ease-out 1; }
   .standings-table td.c-pos { width: 28px; min-width: 26px; font-size: 13px; }
   .standings-table td.c-insignia { width: 32px; min-width: 30px; }
   .standings-table td.c-clan { width: 26px; min-width: 24px; }
-  .standings-table td.c-player { font-size: 15px; min-width: 132px; }
+  .standings-table td.c-player { font-size: 15px; min-width: 162px; }
   .standings-table td.c-rating { width: 56px; min-width: 44px; font-size: 15.5px; }
   .standings-table .c-delta { width: 30px; min-width: 24px; font-size: 10.5px; }
   /* "LAST 100" may wrap to two lines so the column can shrink to its cells */

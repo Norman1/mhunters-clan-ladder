@@ -153,4 +153,30 @@ async function fetchPlayerClanInfo(playerId) {
     return { clanId: block[1], clanName: name || null, iconUrl: icon ? icon[1] : null };
 }
 
-module.exports = { fetchClanRoster, fetchPlayerClanId, fetchPlayerClanInfo };
+/* Minimal HTML-entity decoder for the handful of forms war.app titles use
+   (numeric references like &#x2666; plus the five named basics). */
+function decodeEntities(s) {
+    return s
+        .replace(/&#x([0-9a-f]+);/gi, (_, h) => String.fromCodePoint(parseInt(h, 16)))
+        .replace(/&#(\d+);/g, (_, d) => String.fromCodePoint(Number(d)))
+        .replace(/&quot;/g, '"').replace(/&#39;|&apos;/g, "'")
+        .replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&amp;/g, '&');
+}
+
+/**
+ * Returns the player's full display name from their profile page, or null
+ * if it cannot be parsed. The clan page clips names over ~20 characters
+ * ("Bastian Pyornkrac...") but the profile <title> always carries the
+ * full name ("<name> - War.app - ..."). Throws on network/HTTP failure.
+ */
+async function fetchPlayerName(playerId) {
+    const res = await fetch(profilePageUrl(playerId), { redirect: 'follow' });
+    if (!res.ok) throw new Error(`Profile fetch failed for ${playerId}: HTTP ${res.status}`);
+    const html = await res.text();
+    const m = html.match(/<title>([\s\S]*?) - War\.app/);
+    if (!m) return null;
+    const name = decodeEntities(m[1].trim());
+    return name || null;
+}
+
+module.exports = { fetchClanRoster, fetchPlayerClanId, fetchPlayerClanInfo, fetchPlayerName };

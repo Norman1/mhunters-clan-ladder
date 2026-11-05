@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require('path');
 
 const { CLAN_ID } = require('./config');
-const { fetchClanRoster } = require('./clan_roster');
+const { fetchClanRoster, fetchPlayerName } = require('./clan_roster');
 const { deleteGame } = require('./api');
 const { isLadderEligible } = require('./player_eligibility');
 
@@ -56,6 +56,29 @@ function computeRosterDiff(roster, players) {
     }
 
     return { newMembers, leavers, rejoiners, renames };
+}
+
+/**
+ * The clan page clips display names over ~20 characters to "…rac...";
+ * resolve those from the player's profile page, which carries the full
+ * name. A failed or empty lookup nulls the scraped name so the diff
+ * neither enrolls under nor renames to a clipped name (new members fall
+ * back to Player_<id>; renames require a truthy scraped name).
+ * Mutates and returns `roster`.
+ */
+async function resolveClippedNames(roster, fetchName = fetchPlayerName) {
+    for (const member of roster) {
+        if (!member.name || !member.name.endsWith('...')) continue;
+        try {
+            const full = await fetchName(member.id);
+            console.log(`Resolved clipped name '${member.name}' -> '${full}' (${member.id})`);
+            member.name = full;
+        } catch (err) {
+            console.error(`Full-name lookup failed for ${member.id}: ${err.message}`);
+            member.name = null;
+        }
+    }
+    return roster;
 }
 
 /**
@@ -173,6 +196,8 @@ async function main() {
     }
     console.log(`Scraped ${roster.length} clan members.`);
 
+    await resolveClippedNames(roster);
+
     const abortReason = shouldAbortSync(roster, players);
     if (abortReason) {
         console.error(`CIRCUIT BREAKER: aborting sync — ${abortReason}. No changes applied. If this is expected (e.g. a mass clan-membership change), apply the change manually via players.json or adjust the breaker thresholds in this file.`);
@@ -204,4 +229,4 @@ async function main() {
 
 if (require.main === module) main();
 
-module.exports = { computeRosterDiff, shouldAbortSync, applyRosterDiff, voidLeaverGames };
+module.exports = { computeRosterDiff, shouldAbortSync, applyRosterDiff, voidLeaverGames, resolveClippedNames };
