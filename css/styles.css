@@ -144,6 +144,16 @@ main, .site-footer { position: relative; z-index: 1; }
   text-shadow: 0 1px 0 rgba(0, 0, 0, 0.35);
 }
 
+/* "& FRIENDS" add-on: same face as the wordmark but smaller and quieter —
+   its own solid color overrides the transparent gradient-clip fill */
+.brand__wordmark .brand__friends {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  color: var(--muted);
+  white-space: nowrap;
+}
+
 .brand__subtitle {
   font-family: var(--font-mono);
   font-weight: 600;
@@ -1089,6 +1099,7 @@ tr.row--hit td { animation: row-flash 1.6s ease-out 1; }
   .masthead__inner { padding: 10px 14px; gap: 10px; }
   .brand__crest { width: 32px; height: 32px; }
   .brand__wordmark { font-size: 17px; }
+  .brand__wordmark .brand__friends { font-size: 10px; letter-spacing: 0.14em; }
   .brand__subtitle { font-size: 8px; letter-spacing: 0.2em; }
   .masthead__right { gap: 0; }
   .mainnav { display: none; }           /* tab bar takes over */
