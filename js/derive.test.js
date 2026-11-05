@@ -46,7 +46,8 @@ const rawTemplates = JSON.parse(fs.readFileSync(path.join(ROOT, 'data/templates.
 
 const VOID_NOTES = { 'Timed Out (Lobby)': true, 'Declined': true, 'Terminated': true };
 const tsafe = (iso) => { const t = Date.parse(iso); return isNaN(t) ? 0 : t; };
-const onRoster = (pid) => !!(rawPlayers[pid] && rawPlayers[pid].in_clan !== false);
+const onRoster = (pid) => !!(rawPlayers[pid] &&
+  (rawPlayers[pid].in_clan !== false || rawPlayers[pid].guest === true));
 
 // Decisive game = has p1_id AND winner_id, note not in the void set.
 const decisiveRaw = rawHistory
@@ -54,7 +55,7 @@ const decisiveRaw = rawHistory
   .sort((a, b) => tsafe(a.finished_at) - tsafe(b.finished_at));
 const expGames = decisiveRaw.length;
 
-// Roster classification (same rules as the site): in_clan !== false only;
+// Roster classification: clan members or permanently admitted guests;
 // missed_games >= 2 -> INACTIVE (wins over) game_cap === 0 -> PAUSED; else ACTIVE.
 let expActive = 0;
 let expPaused = 0;
@@ -62,7 +63,7 @@ let expInactive = 0;
 let expTopElo = -Infinity;
 for (const id of Object.keys(rawPlayers)) {
   const pl = rawPlayers[id];
-  if (pl.in_clan === false) continue;
+  if (!onRoster(id)) continue;
   if (pl.missed_games >= 2) expInactive++;
   else if (pl.game_cap === 0) expPaused++;
   else { expActive++; if (pl.elo > expTopElo) expTopElo = pl.elo; }

@@ -4,6 +4,7 @@ const path = require('path');
 const { CLAN_ID } = require('./config');
 const { fetchClanRoster } = require('./clan_roster');
 const { deleteGame } = require('./api');
+const { isLadderEligible } = require('./player_eligibility');
 
 const PLAYERS_FILE = path.join(__dirname, '../data/players.json');
 const ACTIVE_GAMES_FILE = path.join(__dirname, '../data/active_games.json');
@@ -63,19 +64,49 @@ function computeRosterDiff(roster, players) {
 function shouldAbortSync(roster, players) {
     if (!roster || roster.length === 0) return 'roster scrape returned no members';
 
-    const inClanCount = Object.values(players).filter(p => p.in_clan !== false).length;
+    const inClanCount = Object.values(players).filter(p => p.in_clan !== false && p.guest !== true).length;
     const { leavers, newMembers } = computeRosterDiff(roster, players);
+    const ordinaryLeavers = leavers.filter(id => players[id].guest !== true);
 
-    if (inClanCount > 0 && leavers.length / inClanCount > MAX_DEPART_FRACTION) {
-        return `would mark ${leavers.length} of ${inClanCount} registered players departed`;
+    if (inClanCount > 0 && ordinaryLeavers.length / inClanCount > MAX_DEPART_FRACTION) {
+        return `would mark ${ordinaryLeavers.length} of ${inClanCount} registered players departed`;
     }
 
-    const uniqueCount = new Set(roster.map(m => String(m.id))).size;
-    if (newMembers.length / uniqueCount > MAX_NEW_FRACTION) {
+    // Known guests must not dilute either safety ratio, even after joining
+    // the clan. They need no automatic enrollment or retirement.
+    const uniqueCount = new Set(roster.filter(m => players[String(m.id)]?.guest !== true)
+        .map(m => String(m.id))).size;
+    if (uniqueCount > 0 && newMembers.length / uniqueCount > MAX_NEW_FRACTION) {
         return `would enroll ${newMembers.length} new players from a roster of ${uniqueCount}`;
     }
 
     return null;
+}
+
+// Update factual membership for everyone, retaining independent guest grants.
+// Only players who lose ladder eligibility have their games voided by the sync.
+function applyRosterDiff(players, diff, nowIso) {
+    for (const m of diff.newMembers) {
+        players[String(m.id)] = {
+            name: m.name || `Player_${m.id}`,
+            elo: 1000,
+            game_cap: 2,
+            missed_games: 0,
+            in_clan: true
+        };
+    }
+    for (const id of diff.leavers) {
+        players[id].in_clan = false;
+        players[id].departed_at = nowIso;
+    }
+    for (const id of diff.rejoiners) {
+        players[id].in_clan = true;
+        delete players[id].departed_at;
+    }
+    for (const r of diff.renames) {
+        players[r.id].name = r.name;
+    }
+    return diff.leavers.filter(id => !isLadderEligible(players[id]));
 }
 
 /**
@@ -162,28 +193,8 @@ async function main() {
 
     const nowIso = new Date().toISOString();
 
-    for (const m of diff.newMembers) {
-        players[String(m.id)] = {
-            name: m.name || `Player_${m.id}`,
-            elo: 1000,
-            game_cap: 2,
-            missed_games: 0,
-            in_clan: true
-        };
-    }
-    for (const id of diff.leavers) {
-        players[id].in_clan = false;
-        players[id].departed_at = nowIso;
-    }
-    for (const id of diff.rejoiners) {
-        players[id].in_clan = true;
-        delete players[id].departed_at;
-    }
-    for (const r of diff.renames) {
-        players[r.id].name = r.name;
-    }
-
-    const remainingGames = await voidLeaverGames(diff.leavers, activeGames, history, deleteGame, nowIso);
+    const retiredIds = applyRosterDiff(players, diff, nowIso);
+    const remainingGames = await voidLeaverGames(retiredIds, activeGames, history, deleteGame, nowIso);
 
     saveJSON(PLAYERS_FILE, players);
     saveJSON(ACTIVE_GAMES_FILE, remainingGames);
@@ -193,4 +204,4 @@ async function main() {
 
 if (require.main === module) main();
 
-module.exports = { computeRosterDiff, shouldAbortSync, voidLeaverGames };
+module.exports = { computeRosterDiff, shouldAbortSync, applyRosterDiff, voidLeaverGames };

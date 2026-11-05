@@ -1,6 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 const { createGame } = require('./api');
+const { isLadderEligible } = require('./player_eligibility');
 
 const PLAYERS_FILE = path.join(__dirname, '../data/players.json');
 const ACTIVE_GAMES_FILE = path.join(__dirname, '../data/active_games.json');
@@ -126,7 +127,7 @@ async function runMatchmaker() {
     });
 
     Object.entries(players).forEach(([id, p]) => {
-        if (p.in_clan === false) return; // departed clan members never get games
+        if (!isLadderEligible(p)) return;
         const missedGames = Number(p.missed_games) || 0;
         const isReliable = missedGames < UNRELIABLE_STRIKE_THRESHOLD;
         const currentGames = playerGameCounts[id] || 0;
@@ -213,7 +214,7 @@ async function runMatchmaker() {
 
     // Calculate Ranks
     const rankedIds = Object.entries(players)
-        .filter(([, p]) => p.in_clan !== false && (Number(p.game_cap) || 0) > 0 && (Number(p.missed_games) || 0) < UNRELIABLE_STRIKE_THRESHOLD)
+        .filter(([, p]) => isLadderEligible(p) && (Number(p.game_cap) || 0) > 0 && (Number(p.missed_games) || 0) < UNRELIABLE_STRIKE_THRESHOLD)
         .sort((a, b) => (Number(b[1].elo) || 0) - (Number(a[1].elo) || 0))
         .map(([id]) => String(id));
 
@@ -252,7 +253,7 @@ Contender 2: ${p2.name}, ${rankLabel2} with ${p2.elo} Elo
 
 IMPORTANT: Please join this game even if your opponent declines! This is how the ladder knows you are active. Active players get matched against other active players.
 
-You can change your ladder settings online via https://norman1.github.io/mhunters-clan-ladder/ or you can ask in our clans discord for someone to do it for you.`;
+Ask a ladder maintainer to change your settings via https://norman1.github.io/mhunters-clan-ladder/ . You can reach the maintainers in our clan Discord.`;
 
             const result = await createGame(template.id, playersPayload, ladderGameName(template.name), description);
 
@@ -285,4 +286,6 @@ You can change your ladder settings online via https://norman1.github.io/mhunter
     console.log('Matchmaker run complete.');
 }
 
-runMatchmaker();
+if (require.main === module) runMatchmaker();
+
+module.exports = { runMatchmaker };

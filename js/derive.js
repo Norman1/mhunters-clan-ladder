@@ -48,6 +48,11 @@
    * Small helpers
    * ---------------------------------------------------------------- */
 
+  // Mirrors scripts/player_eligibility.js for the static browser data layer.
+  function isLadderEligible(player) {
+    return !!player && (player.in_clan !== false || player.guest === true);
+  }
+
   // Decisive game = has p1_id AND winner_id, and is not a void.
   // Voids and stubs (no p1_id) are NEVER games.
   function isDecisive(g) {
@@ -446,7 +451,7 @@
         var row = { id: pid, name: pName, rating: mp.rating, w: mp.w, l: mp.l, games: n };
         // Departed players stay on the board (their games happened) but the
         // UI must skip profile links for them.
-        if (!players[pid] || players[pid].in_clan === false) row.departed = true;
+        if (!isLadderEligible(players[pid])) row.departed = true;
         board.push(row);
       }
       board.sort(function (x, y) {
@@ -542,6 +547,8 @@
         liveGames: liveListByPlayer[pid] || [],
         id: pid,
         name: p.name,
+        guest: p.guest === true,
+        inClan: p.in_clan !== false,
         elo: p.elo,                       // stored elo is display truth
         rank: null,                       // assigned below for actives
         delta7: null,                     // assigned below for actives
@@ -580,10 +587,9 @@
     for (id in players) {
       if (!Object.prototype.hasOwnProperty.call(players, id)) continue;
       var pl = players[id];
-      // Departed clan members (roster sync marks in_clan: false) are excluded
-      // from standings AND inactive players entirely; their name stays
-      // resolvable for past results via playerName().
-      if (pl.in_clan === false) continue;
+      // Clan members and admitted guests participate; other departed players
+      // stay resolvable in history but are excluded from the current ladder.
+      if (!isLadderEligible(pl)) continue;
       var e = buildEntry(id);
       if (pl.missed_games >= 2) {
         e.status = 'INACTIVE';

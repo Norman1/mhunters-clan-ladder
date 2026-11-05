@@ -97,6 +97,7 @@ for (const action of ['opened', 'edited']) {
         });
     }
     for (const title of ['Signup: 123 Name: Player', 'Update: 123 Cap: 3', 'Remove: 123',
+        'AdmitGuest: 123 Cap: 2 Name: Friend', 'RevokeGuest: 123',
         'AddTemplate: 123 Name: Map', 'RemoveTemplate: 123', '$(echo injected)\n::notice::untrusted']) {
         test(`${action}: command text cannot bypass rejected permissions: ${JSON.stringify(title)}`, async () => {
             const result = await authorize({ action, title, lookup: username => permission(username, 'read') });

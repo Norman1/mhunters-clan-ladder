@@ -18,13 +18,15 @@ If you do not see the latest changes on GitHub, double-check that your local wor
 ## How it Works
 
 The ladder is fully automated. A bot ("Norman") runs every 2 hours to:
-1.  **Sync Roster**: Enroll new M'Hunters clan members, retire players who left the clan (voiding their active games), and reactivate rejoiners.
+1.  **Sync Roster**: Enroll new M'Hunters clan members, retire ordinary players who left the clan (voiding their active games), and reactivate rejoiners. Permanently admitted guests remain eligible independently of clan membership.
 2.  **Referee**: Check for finished games, update ELO ratings, and track missed games.
 3.  **Matchmake**: Find two available players and create a game on War.app.
 
 ## How to Join & Play
 
-The ladder is controlled via **GitHub Issues**. You don't need to ask an admin to update your status; you just speak to the bot.
+The ladder is controlled via **GitHub Issues**. All mutating commands require
+current repository write access (write, maintain or admin). Ask a maintainer
+to submit commands for you; opening an issue alone does not grant access.
 
 ### 1. Join the Ladder
 
@@ -55,6 +57,27 @@ Remove: <Your_Warzone_ID>
 ```
 *Example: `Remove: 1234567`* — this sets your game cap to 0; your record and
 rating are kept, and you can come back anytime with `Update: <ID> Cap: 1-3`.
+
+### 3. Permanent Guests (Maintainers)
+
+Admit a friend independently of M'Hunters membership with:
+```
+AdmitGuest: <PlayerID> Cap: <0-3> Name: <Name>
+```
+For example: `AdmitGuest: 33160357416 Cap: 2 Name: Marcus Aurelius`.
+New guests start at 1000 ELO with no missed games. Existing players retain
+their rating, history, strikes and cooldowns; the supplied name and cap are
+updated. `guest: true` grants eligibility independently of the factual
+`in_clan` flag. Clan sync still updates membership but never retires guests
+or voids their games solely for leaving/being outside the clan.
+
+To remove this permanent grant, submit `RevokeGuest: <PlayerID>`. The bot
+checks current clan membership before applying the change; if lookup fails,
+the grant remains unchanged. Clan members remain eligible normally, while
+outsiders stop receiving new games. Existing games finish normally; records
+and caps are preserved. `Remove` and cap 0 only pause play and never revoke
+guest admission. A revoked outsider can return through another guest grant
+or ordinary clan enrollment.
 
 ---
 

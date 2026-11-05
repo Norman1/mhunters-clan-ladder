@@ -2,6 +2,7 @@ const fs = require('fs');
 const path = require('path');
 const { CLAN_ID } = require('./config');
 const { fetchPlayerClanId } = require('./clan_roster');
+const { isLadderEligible } = require('./player_eligibility');
 
 const PLAYERS_FILE = path.join(__dirname, '../data/players.json');
 const TEMPLATES_FILE = path.join(__dirname, '../data/templates.json');
@@ -86,7 +87,7 @@ async function runIssueOps() {
             return;
         }
 
-        if (players[playerId] && players[playerId].in_clan !== false) {
+        if (isLadderEligible(players[playerId])) {
             console.log(`Player ${playerId} already exists.`);
             await postIssueComment(
                 `❌ Signup rejected: Player ID \`${playerId}\` is already registered as **${players[playerId].name}**.\n\n` +
@@ -208,6 +209,54 @@ async function runIssueOps() {
         }
     }
 
+    // Guest grants are independent of clan membership. All IssueOps commands
+    // are restricted to repository maintainers by the workflow authorization.
+    else if (/^AdmitGuest:\s*(\d+)\s+Cap:\s*(\d+)\s+Name:\s*(.+)$/i.test(title)) {
+        const match = title.match(/^AdmitGuest:\s*(\d+)\s+Cap:\s*(\d+)\s+Name:\s*(.+)$/i);
+        const [, playerId, capText, nameText] = match;
+        const cap = Number(capText);
+        const name = nameText.trim();
+        if (!Number.isInteger(cap) || cap < MIN_GAME_CAP || cap > MAX_GAME_CAP || !name) {
+            await postIssueComment(`❌ Guest admission rejected: provide a name and cap ${MIN_GAME_CAP}-${MAX_GAME_CAP}.`);
+            return;
+        }
+        if (!players[playerId]) {
+            players[playerId] = { elo: 1000, missed_games: 0, in_clan: false };
+        }
+        Object.assign(players[playerId], { name, game_cap: cap, guest: true });
+        matched = true;
+        await postIssueComment(
+            `✅ **${name}** has permanent guest admission with game cap ${cap}. ` +
+            `Clan membership is not required. Rating, history and reliability are preserved. ` +
+            `Use \`RevokeGuest: ${playerId}\` to revoke admission or \`Remove: ${playerId}\` to pause.`
+        );
+    }
+    else if (/^RevokeGuest:\s*(\d+)$/i.test(title)) {
+        const playerId = title.match(/^RevokeGuest:\s*(\d+)$/i)[1];
+        const player = players[playerId];
+        if (!player || player.guest !== true) {
+            await postIssueComment(`❌ Guest revocation rejected: Player ID \`${playerId}\` has no guest admission.`);
+            return;
+        }
+        let clanId;
+        try {
+            clanId = await fetchPlayerClanId(playerId);
+        } catch {
+            await postIssueComment('❌ Could not verify clan membership. Guest admission is unchanged; please retry.');
+            return;
+        }
+        delete player.guest;
+        player.in_clan = clanId === CLAN_ID;
+        if (player.in_clan) delete player.departed_at;
+        else player.departed_at = player.departed_at || new Date().toISOString();
+        matched = true;
+        await postIssueComment(
+            `✅ Guest admission revoked for **${player.name}**. ` +
+            (player.in_clan ? 'The player remains eligible as a clan member. ' : 'The player will receive no new games. ') +
+            'Rating, history and cap are preserved. Existing games can finish normally.'
+        );
+    }
+
     // 4. AddTemplate: [TemplateID] Name: [Name]
     else if (/^AddTemplate:\s*(\d+)\s+Name:\s*(.+)$/i.test(title)) {
         const match = title.match(/^AddTemplate:\s*(\d+)\s+Name:\s*(.+)$/i);
@@ -267,6 +316,8 @@ async function runIssueOps() {
             `- \`Signup: <PlayerID> Name: <Warzone_Username>\`\n` +
             `- \`Update: <PlayerID> Cap: ${MIN_GAME_CAP}-${MAX_GAME_CAP}\`\n` +
             `- \`Remove: <PlayerID>\`\n` +
+            `- \`AdmitGuest: <PlayerID> Cap: ${MIN_GAME_CAP}-${MAX_GAME_CAP} Name: <Name>\`\n` +
+            `- \`RevokeGuest: <PlayerID>\`\n` +
             `- \`AddTemplate: <TemplateID> Name: <MapName>\`\n` +
             `- \`RemoveTemplate: <TemplateID>\``
         );
@@ -278,4 +329,6 @@ async function runIssueOps() {
     }
 }
 
-runIssueOps();
+if (require.main === module) runIssueOps();
+
+module.exports = { runIssueOps };

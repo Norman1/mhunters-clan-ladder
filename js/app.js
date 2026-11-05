@@ -305,6 +305,13 @@
     }
     name.textContent = String(p.name || '').toUpperCase();
     td.appendChild(name);
+    if (p.guest) {
+      var guest = doc.createElement('span');
+      guest.className = 'sub guest-label';
+      guest.textContent = 'GUEST';
+      guest.title = 'Permanent guest admission; clan membership is not required';
+      td.appendChild(guest);
+    }
     if (withStatus) {
       var badge = doc.createElement('span');
       badge.className = 'p-status p-status--' + String(p.status || 'inactive').toLowerCase();

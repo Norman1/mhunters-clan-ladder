@@ -48,6 +48,7 @@
 
     <div class="actions-head">
       <h1 class="page-title">ACTIONS</h1>
+      <p>All issue commands require repository write access. Ask a maintainer to make changes for you.</p>
     </div>
 
     <!-- ===================== PLAYER ACTIONS ===================== -->
@@ -104,6 +105,21 @@
     <div class="admin-divider" role="separator" aria-label="Admin actions">ADMIN</div>
 
     <div class="af-grid af-grid--admin">
+
+      <section class="panel af" aria-labelledby="guest-title">
+        <h2 class="af__title" id="guest-title">GUEST PLAYERS</h2>
+        <div class="af__form">
+          <p>Maintainers can permanently admit friends without requiring clan membership.
+            Open a GitHub issue with either command below, replacing the placeholders.</p>
+          <code>AdmitGuest: &lt;ID&gt; Cap: 2 Name: &lt;Name&gt;</code>
+          <code>RevokeGuest: &lt;ID&gt;</code>
+          <p>Caps from 0 to 3 are supported. Cap 0 or Remove only pauses a guest;
+            it does not revoke admission. Revocation stops new games for outsiders;
+            clan members stay eligible and existing games can finish.</p>
+          <a class="btn btn--primary" href="https://github.com/Norman1/mhunters-clan-ladder/issues/new"
+             target="_blank" rel="noopener">OPEN GUEST COMMAND ISSUE</a>
+        </div>
+      </section>
 
       <!-- ---------- ADD TEMPLATE ---------- -->
       <section class="panel af" aria-labelledby="addmap-title">

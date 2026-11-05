@@ -82,8 +82,8 @@
   }
 
   /* Signup id check against the RAW players map (departed entries included).
-     in_clan !== false → current member (block); in_clan === false → departed
-     (rejoin fine); unknown id → free. */
+     Clan members and admitted guests are registered; other departed players
+     may rejoin. Unknown id → free. */
   function checkJoinId(id, playersRaw) {
     var key = String(id == null ? '' : id).trim();
     if (!playersRaw || !Object.prototype.hasOwnProperty.call(playersRaw, key)) {
@@ -91,7 +91,7 @@
     }
     var p = playersRaw[key];
     return {
-      status: p.in_clan === false ? 'departed' : 'registered',
+      status: p.in_clan === false && p.guest !== true ? 'departed' : 'registered',
       name: p.name || null
     };
   }
@@ -246,12 +246,15 @@
     // signup id checks (raw players map, departed included)
     var raw = {
       '28867016': { name: 'Swisster', elo: 1151 },
-      '4555082823': { name: 'Super Smoove', elo: 1003, in_clan: false }
+      '4555082823': { name: 'Super Smoove', elo: 1003, in_clan: false },
+      '33160357416': { name: 'Marcus Aurelius', elo: 1000, in_clan: false, guest: true }
     };
     eq(checkJoinId('28867016', raw), { status: 'registered', name: 'Swisster' },
       'join check: current member id blocks');
     eq(checkJoinId('4555082823', raw), { status: 'departed', name: 'Super Smoove' },
       'join check: departed id → welcome back');
+    eq(checkJoinId('33160357416', raw), { status: 'registered', name: 'Marcus Aurelius' },
+      'join check: an outside guest is already registered');
     eq(checkJoinId('99', raw), { status: 'free', name: null },
       'join check: unknown id is free');
     eq(checkJoinId('99', null), { status: 'free', name: null },

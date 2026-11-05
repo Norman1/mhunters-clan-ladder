@@ -419,7 +419,8 @@
      strip, never here. */
   function heroMeta(p) {
     p = p || {};
-    return p.rank != null ? '#' + p.rank : statusVal(p);
+    var label = p.rank != null ? '#' + p.rank : statusVal(p);
+    return label + (p.guest ? ' · GUEST' : '');
   }
 
   /* streak {type,count} → { text:'W2', cls:'w' } / em-dash when none */
@@ -712,6 +713,9 @@
       'PAUSED', 'heroMeta reserve paused');
     eq(heroMeta({ rank: null, status: 'INACTIVE', missed: 4, elo: 987 }),
       'INACTIVE · 4 MISSED', 'heroMeta reserve inactive');
+    eq(heroMeta({ rank: 3, guest: true }), '#3 · GUEST', 'heroMeta marks ranked guests');
+    eq(heroMeta({ rank: null, status: 'PAUSED', guest: true }),
+      'PAUSED · GUEST', 'heroMeta marks paused guests');
 
     /* streak + swing */
     eq(streakText({ type: 'W', count: 2 }), { text: 'W2', cls: 'w' }, 'streakText W2');
