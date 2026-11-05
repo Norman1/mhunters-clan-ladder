@@ -12,15 +12,68 @@ jobs:
       issues: write
     
     steps:
+      - name: Authorize IssueOps
+        id: authorize
+        uses: actions/github-script@v7
+        env:
+          TRIGGERING_ACTOR: ${{ github.triggering_actor }}
+        with:
+          script: |
+            core.setOutput('allowed', 'false');
+            const deny = () => core.setFailed(
+              'IssueOps denied: the issue event sender and the run initiator must both ' +
+              'have current repository write access. Missing or unverifiable permissions deny execution.'
+            );
+            const sender = context.payload.sender;
+            const actor = context.actor;
+            const initiator = process.env.TRIGGERING_ACTOR;
+            const validLogin = value => typeof value === 'string' && value.length > 0;
+            if (context.eventName !== 'issues' ||
+                !['opened', 'edited'].includes(context.payload.action) ||
+                !validLogin(sender?.login) || !Number.isSafeInteger(sender?.id) || sender.id <= 0 ||
+                !validLogin(actor) || !validLogin(initiator) ||
+                sender.login.toLowerCase() !== actor.toLowerCase()) {
+              deny();
+              return;
+            }
+            try {
+              // Check live permissions, never author_association or the issue author.
+              // GitHub maps maintain to write in this endpoint's base permission.
+              // Re-runs must reauthorize both the original event and the new initiator.
+              const users = new Set([sender.login.toLowerCase(), initiator.toLowerCase()]);
+              for (const username of users) {
+                const response = await github.rest.repos.getCollaboratorPermissionLevel({
+                  ...context.repo,
+                  username
+                });
+                const data = response.data;
+                if (response.status !== 200 ||
+                    !['write', 'admin'].includes(data?.permission) ||
+                    !validLogin(data?.user?.login) || data.user.login.toLowerCase() !== username ||
+                    !Number.isSafeInteger(data?.user?.id) || data.user.id <= 0 ||
+                    (username === sender.login.toLowerCase() && data.user.id !== sender.id)) {
+                  deny();
+                  return;
+                }
+              }
+              core.setOutput('allowed', 'true');
+            } catch {
+              // Do not expose API error bodies, tokens, or user-controlled issue text.
+              deny();
+            }
+
       - name: Checkout Repo
+        if: steps.authorize.outputs.allowed == 'true'
         uses: actions/checkout@v4
 
       - name: Setup Node
+        if: steps.authorize.outputs.allowed == 'true'
         uses: actions/setup-node@v4
         with:
           node-version: '18'
 
       - name: Run IssueOps Script
+        if: steps.authorize.outputs.allowed == 'true'
         env:
           ISSUE_TITLE: ${{ github.event.issue.title }}
           ISSUE_NUMBER: ${{ github.event.issue.number }}
@@ -28,6 +81,7 @@ jobs:
         run: node scripts/issue_ops.js
 
       - name: Commit Changes
+        if: steps.authorize.outputs.allowed == 'true'
         run: |
           git config --global user.name "Norman (Bot)"
           git config --global user.email "norman-bot@users.noreply.github.com"
