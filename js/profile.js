@@ -966,7 +966,25 @@
         console.warn('[profile] Insignia.svg failed', err);
       }
     }
-    setText('hero-name', String(p.name || '').toUpperCase());
+    /* the name deep-links to the player's war.app profile */
+    var nameEl = $('hero-name');
+    if (nameEl && p.id != null) {
+      nameEl.textContent = '';
+      var warLink = doc.createElement('a');
+      warLink.href = 'https://war.app/Profile?p=' + encodeURIComponent(p.id);
+      warLink.target = '_blank';
+      warLink.rel = 'noopener';
+      warLink.title = 'Open war.app profile';
+      warLink.textContent = String(p.name || '').toUpperCase();
+      var go = doc.createElement('span');
+      go.className = 'hero-name__go';
+      go.setAttribute('aria-hidden', 'true');
+      go.textContent = '↗';
+      warLink.appendChild(go);
+      nameEl.appendChild(warLink);
+    } else {
+      setText('hero-name', String(p.name || '').toUpperCase());
+    }
     setText('hero-rank', String(p.rankName || '').toUpperCase());
     var lg = $('hero-league');
     if (lg) {
