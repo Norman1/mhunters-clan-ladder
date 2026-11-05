@@ -199,7 +199,7 @@ main, .site-footer { position: relative; z-index: 1; }
 
 /* ----------------------------- layout / panels ----------------------------- */
 main {
-  max-width: 980px;
+  max-width: 1160px;   /* matches the masthead; keeps full player names visible */
   margin: 0 auto;
   padding: 24px 20px 40px;
   display: flex;
@@ -272,7 +272,20 @@ main {
 .search::-webkit-search-cancel-button { -webkit-appearance: none; }
 
 /* ----------------------------- table base ----------------------------- */
-.table-wrap { overflow-x: auto; }
+/* Horizontally scrollable when the table outgrows the viewport (narrow
+   screens): the trailing columns scroll while player names stay untruncated.
+   Edge shadows (attachment scroll) appear only on the overflowing side;
+   panel-colored covers (attachment local) hide them at rest. */
+.table-wrap {
+  overflow-x: auto;
+  background:
+    linear-gradient(to right, var(--panel) 35%, rgba(23, 24, 28, 0)) left / 28px 100%,
+    linear-gradient(to left, var(--panel) 35%, rgba(23, 24, 28, 0)) right / 28px 100%,
+    radial-gradient(farthest-side at 0 50%, rgba(0, 0, 0, 0.55), transparent) left / 16px 100%,
+    radial-gradient(farthest-side at 100% 50%, rgba(0, 0, 0, 0.55), transparent) right / 16px 100%;
+  background-repeat: no-repeat;
+  background-attachment: local, local, scroll, scroll;
+}
 
 .standings-table {
   width: 100%;
@@ -352,8 +365,10 @@ tr.row:hover { background-color: #1B1D22; }
   font-size: 16px;
   letter-spacing: 0.02em;
   color: var(--white);
-  max-width: 0;         /* lets the flexible column truncate instead of pushing */
+  max-width: 0;         /* flexible column: absorbs spare table width */
   width: 99%;
+  min-width: 142px;     /* fits the longest roster name — the table scrolls
+                           sideways rather than truncate a name */
   overflow: hidden;
   text-overflow: ellipsis;
 }
@@ -728,7 +743,9 @@ tr.row--hit td { animation: row-flash 1.6s ease-out 1; }
   gap: 18px;
   align-items: start;
 }
-@media (min-width: 900px) {
+/* the feed moves beside the table only when the table keeps enough room
+   for untruncated player names; below this the feed stacks underneath */
+@media (min-width: 1100px) {
   .layout { grid-template-columns: minmax(0, 1fr) 370px; }
   .col-feed {
     position: sticky;
@@ -1091,7 +1108,7 @@ tr.row--hit td { animation: row-flash 1.6s ease-out 1; }
   .standings-table td.c-pos { width: 28px; min-width: 26px; font-size: 13px; }
   .standings-table td.c-insignia { width: 32px; min-width: 30px; }
   .standings-table td.c-clan { width: 26px; min-width: 24px; }
-  .standings-table td.c-player { font-size: 15px; }
+  .standings-table td.c-player { font-size: 15px; min-width: 132px; }
   .standings-table td.c-rating { width: 56px; min-width: 44px; font-size: 15.5px; }
   .standings-table .c-delta { width: 30px; min-width: 24px; font-size: 10.5px; }
   /* "LAST 100" may wrap to two lines so the column can shrink to its cells */
@@ -1101,6 +1118,9 @@ tr.row--hit td { animation: row-flash 1.6s ease-out 1; }
 
   tr.peek td { padding: 11px 12px; }
   tr.peek .peek-stats { gap: 14px; row-gap: 8px; }
+  /* the peek spans the (possibly overflowing) table — pin its content to
+     the visible viewport so quick-peek never needs sideways scrolling */
+  tr.peek .peek-grid { position: sticky; left: 6px; max-width: calc(100vw - 56px); }
 
   /* tab bar */
   .tabbar {
