@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>M'HUNTERS — Actions</title>
-  <meta name="description" content="M'Hunters clan ladder — join the ladder or set your game cap; admin template-pool and player-removal controls.">
+  <meta name="description" content="M'Hunters clan ladder — set game caps, add or remove guest players, and manage templates.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Cinzel:wght@700&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
@@ -48,31 +48,13 @@
 
     <div class="actions-head">
       <h1 class="page-title">ACTIONS</h1>
-      <p>All issue commands require repository write access. Ask a maintainer to make changes for you.</p>
+      <p>Clan members enroll automatically each hour, at :17.</p>
+      <p>Each action opens a prepared GitHub issue. Review it and click <strong>Submit new issue</strong>
+        on GitHub to apply the change. Repository write access is required; otherwise ask a maintainer.</p>
     </div>
 
     <!-- ===================== PLAYER ACTIONS ===================== -->
-    <div class="af-grid">
-
-      <!-- ---------- JOIN THE LADDER ---------- -->
-      <section class="panel af" aria-labelledby="join-title">
-        <h2 class="af__title" id="join-title">JOIN THE LADDER</h2>
-        <form class="af__form" id="form-join" novalidate autocomplete="off">
-          <div class="af__field">
-            <label class="af__label" for="join-name">WARZONE USERNAME</label>
-            <input class="af__input" id="join-name" type="text" placeholder="NAME"
-                   autocorrect="off" autocapitalize="off" spellcheck="false">
-            <p class="af__msg" id="join-name-msg" hidden></p>
-          </div>
-          <div class="af__field">
-            <label class="af__label" for="join-id">WARZONE ID</label>
-            <input class="af__input" id="join-id" type="text" inputmode="numeric"
-                   placeholder="ID" autocorrect="off" autocapitalize="off" spellcheck="false">
-            <p class="af__msg" id="join-id-msg" hidden></p>
-          </div>
-          <button class="btn btn--primary" id="join-submit" type="submit" disabled>JOIN THE LADDER</button>
-        </form>
-      </section>
+    <div class="af-grid af-grid--single">
 
       <!-- ---------- SET GAME CAP ---------- -->
       <section class="panel af" aria-labelledby="cap-title">
@@ -89,7 +71,7 @@
           <div class="af__field">
             <label class="af__label" for="cap-select">CAP</label>
             <select class="af__select" id="cap-select">
-              <option value="0">PAUSE</option>
+              <option value="0">PAUSE (0)</option>
               <option value="1">1</option>
               <option value="2" selected>2</option>
               <option value="3">3</option>
@@ -107,18 +89,55 @@
     <div class="af-grid af-grid--admin">
 
       <section class="panel af" aria-labelledby="guest-title">
-        <h2 class="af__title" id="guest-title">GUEST PLAYERS</h2>
-        <div class="af__form">
-          <p>Maintainers can permanently admit friends without requiring clan membership.
-            Open a GitHub issue with either command below, replacing the placeholders.</p>
-          <code>AdmitGuest: &lt;ID&gt; Cap: 2 Name: &lt;Name&gt;</code>
-          <code>RevokeGuest: &lt;ID&gt;</code>
-          <p>Caps from 0 to 3 are supported. Cap 0 or Remove only pauses a guest;
-            it does not revoke admission. Revocation stops new games for outsiders;
-            clan members stay eligible and existing games can finish.</p>
-          <a class="btn btn--primary" href="https://github.com/Norman1/mhunters-clan-ladder/issues/new"
-             target="_blank" rel="noopener">OPEN GUEST COMMAND ISSUE</a>
-        </div>
+        <h2 class="af__title" id="guest-title">ADD GUEST PLAYER</h2>
+        <form class="af__form" id="form-guest" novalidate autocomplete="off">
+          <p>Admit a friend permanently, even outside the clan. Their rating and history are preserved.</p>
+          <div class="af__field">
+            <label class="af__label" for="guest-id">WAR.APP PLAYER ID</label>
+            <input class="af__input" id="guest-id" type="text" inputmode="numeric" placeholder="PLAYER ID"
+                   autocorrect="off" autocapitalize="off" spellcheck="false">
+            <p class="af__msg" id="guest-id-msg" hidden></p>
+          </div>
+          <div class="af__field">
+            <label class="af__label" for="guest-name">DISPLAY NAME</label>
+            <input class="af__input" id="guest-name" type="text" placeholder="NAME"
+                   autocorrect="off" autocapitalize="off" spellcheck="false">
+            <p class="af__msg" id="guest-name-msg" hidden></p>
+          </div>
+          <div class="af__field">
+            <label class="af__label" for="guest-cap">GAME CAP</label>
+            <select class="af__select" id="guest-cap">
+              <option value="0">PAUSE (0)</option>
+              <option value="1">1</option>
+              <option value="2" selected>2</option>
+              <option value="3">3</option>
+            </select>
+          </div>
+          <button class="btn btn--primary" id="guest-submit" type="submit" disabled>ADD GUEST PLAYER</button>
+        </form>
+      </section>
+
+      <section class="panel af" aria-labelledby="revoke-title">
+        <h2 class="af__title" id="revoke-title">REMOVE GUEST PLAYER</h2>
+        <form class="af__form" id="form-revoke" novalidate autocomplete="off">
+          <p>Revoke permanent guest admission. Players outside the clan stop receiving new games;
+            clan members stay eligible. Rating, history and existing games are preserved.
+            To pause instead, use Set Game Cap — Pause (0).</p>
+          <div class="af__field">
+            <label class="af__label" for="revoke-player">EXISTING GUEST</label>
+            <input class="af__input" id="revoke-player" type="text" placeholder="GUEST NAME OR ID"
+                   autocorrect="off" autocapitalize="off" spellcheck="false">
+            <div class="af__picks" id="revoke-picks" hidden></div>
+            <div class="pchip" id="revoke-chip" hidden></div>
+            <p class="af__msg" id="revoke-msg" hidden></p>
+          </div>
+          <div class="af__field">
+            <label class="af__label" for="revoke-confirm">TYPE REMOVE TO CONFIRM GUEST REMOVAL</label>
+            <input class="af__input af__input--confirm" id="revoke-confirm" type="text" placeholder="REMOVE"
+                   autocorrect="off" autocapitalize="off" spellcheck="false">
+          </div>
+          <button class="btn btn--danger" id="revoke-submit" type="submit" disabled>REMOVE GUEST PLAYER</button>
+        </form>
       </section>
 
       <!-- ---------- ADD TEMPLATE ---------- -->
@@ -160,27 +179,6 @@
         </form>
       </section>
 
-      <!-- ---------- REMOVE PLAYER ---------- -->
-      <section class="panel panel--danger af" aria-labelledby="rmplayer-title">
-        <h2 class="af__title" id="rmplayer-title">REMOVE PLAYER</h2>
-        <form class="af__form" id="form-rmplayer" novalidate autocomplete="off">
-          <div class="af__field">
-            <label class="af__label" for="rmplayer-player">PLAYER</label>
-            <input class="af__input" id="rmplayer-player" type="text" placeholder="NAME OR ID"
-                   autocorrect="off" autocapitalize="off" spellcheck="false">
-            <div class="af__picks" id="rmplayer-picks" hidden></div>
-            <div class="pchip" id="rmplayer-chip" hidden></div>
-            <p class="af__msg" id="rmplayer-msg" hidden></p>
-          </div>
-          <div class="af__field">
-            <label class="af__label" for="rmplayer-confirm">CONFIRM</label>
-            <input class="af__input af__input--confirm" id="rmplayer-confirm" type="text"
-                   placeholder="TYPE REMOVE TO CONFIRM"
-                   autocorrect="off" autocapitalize="off" spellcheck="false">
-          </div>
-          <button class="btn btn--danger" id="rmplayer-submit" type="submit" disabled>REMOVE PLAYER</button>
-        </form>
-      </section>
 
     </div>
 

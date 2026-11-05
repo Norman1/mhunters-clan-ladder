@@ -17,7 +17,7 @@ If you do not see the latest changes on GitHub, double-check that your local wor
 
 ## How it Works
 
-The ladder is fully automated. A bot ("Norman") runs every 2 hours to:
+The ladder is fully automated. A bot ("Norman") is scheduled each hour at :17 to:
 1.  **Sync Roster**: Enroll new M'Hunters clan members, retire ordinary players who left the clan (voiding their active games), and reactivate rejoiners. Permanently admitted guests remain eligible independently of clan membership.
 2.  **Referee**: Check for finished games, update ELO ratings, and track missed games.
 3.  **Matchmake**: Find two available players and create a game on War.app.
@@ -28,56 +28,49 @@ The ladder is controlled via **GitHub Issues**. All mutating commands require
 current repository write access (write, maintain or admin). Ask a maintainer
 to submit commands for you; opening an issue alone does not grant access.
 
-### 1. Join the Ladder
+### 1. Automatic Enrollment
 
 **Automatic:** every M'Hunters clan member is enrolled automatically. The bot
-syncs the clan roster every 2 hours; new members start at 1000 ELO with a
+syncs the clan roster each hour at :17; new members start at 1000 ELO with a
 2-game cap. Leaving the clan retires you automatically (active ladder games
 are voided); rejoining the clan reactivates you with your old rating.
 
-**Instant (optional):** just joined the clan and can't wait for the next sync?
-[Open a New Issue](https://github.com/Norman1/mhunters-clan-ladder/issues/new) with the title:
-```
-Signup: <Your_Warzone_ID> Name: <Your_Warzone_Username>
-```
-*Example: `Signup: 1234567 Name: General_Risk`* — clan membership is verified;
-non-members are rejected.
-
 ### 2. Update Your Game Cap
-Limit how many active ladder games you can have at once (Default is 2, Max is 3; set to 0 to pause).
-To change it, [Open a New Issue](https://github.com/Norman1/mhunters-clan-ladder/issues/new) with the title:
-```
-Update: <Your_Warzone_ID> Cap: <GameLimit>
-```
-*Example: `Update: 1234567 Cap: 3`*
 
-To opt out of receiving games, open a new issue with the title:
-```
-Remove: <Your_Warzone_ID>
-```
-*Example: `Remove: 1234567`* — this sets your game cap to 0; your record and
-rating are kept, and you can come back anytime with `Update: <ID> Cap: 1-3`.
+On the [Actions page](https://norman1.github.io/mhunters-clan-ladder/actions.html),
+select the player under **Set Game Cap**, choose 0–3, and click **Set Cap**.
+The button opens a prepared GitHub issue. Review it and click **Submit new issue**
+on GitHub to apply the change. A maintainer with repository write access must
+submit it. Choose **Pause (0)** to stop new games while preserving admission,
+rating and history; choose 1–3 to resume.
 
 ### 3. Permanent Guests (Maintainers)
 
-Admit a friend independently of M'Hunters membership with:
-```
-AdmitGuest: <PlayerID> Cap: <0-3> Name: <Name>
-```
-For example: `AdmitGuest: 33160357416 Cap: 2 Name: Marcus Aurelius`.
+On the Actions page, use **Add Guest Player**: enter the War.app player ID,
+display name and game cap (default 2). Click **Add Guest Player**, then review
+and submit the prepared issue on GitHub. No command composition or JSON editing
+is needed.
+
+Use **Remove Guest Player** to revoke admission: find the existing guest by name
+or ID, check the selected player, type `REMOVE`, then click **Remove Guest Player**
+and submit the prepared GitHub issue. This revokes the guest exception rather
+than setting the cap to 0.
+
 New guests start at 1000 ELO with no missed games. Existing players retain
 their rating, history, strikes and cooldowns; the supplied name and cap are
 updated. `guest: true` grants eligibility independently of the factual
 `in_clan` flag. Clan sync still updates membership but never retires guests
 or voids their games solely for leaving/being outside the clan.
 
-To remove this permanent grant, submit `RevokeGuest: <PlayerID>`. The bot
-checks current clan membership before applying the change; if lookup fails,
+When removing a guest, the bot checks current clan membership before applying
+the change; if lookup fails,
 the grant remains unchanged. Clan members remain eligible normally, while
 outsiders stop receiving new games. Existing games finish normally; records
-and caps are preserved. `Remove` and cap 0 only pause play and never revoke
-guest admission. A revoked outsider can return through another guest grant
-or ordinary clan enrollment.
+and caps are preserved. Cap 0 only pauses play and never revokes guest admission.
+A revoked outsider can return through another guest grant or ordinary clan enrollment.
+
+Legacy `Signup` and `Remove` issue commands remain supported for compatibility;
+normal clan enrollment is automatic and pauses use **Set Game Cap → Pause (0)**.
 
 ---
 

@@ -1,6 +1,6 @@
 /* ============================================================
    M'HUNTERS CLAN LADDER — ACTIONS page
-   Player forms (join / cap) + admin map-pool and remove-player forms.
+   Game caps, guest admission/removal, and template-pool forms.
    Loads after css/styles.css; actions-page-scoped rules only —
    never redefines shared tokens or shared components.
    ============================================================ */
@@ -15,8 +15,7 @@
 
 @media (min-width: 900px) {
   .af-grid { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
-  /* the destructive remove-player panel gets the full row (admin grid) */
-  .af-grid .panel--danger { grid-column: 1 / -1; }
+  .af-grid--single { grid-template-columns: minmax(0, 1fr); }
 }
 
 /* ----------------------------- panels ----------------------------- */

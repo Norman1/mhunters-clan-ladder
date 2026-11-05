@@ -4,14 +4,14 @@
      window.LadderData (js/derive.js) — LadderData.load()
      window.Insignia  (js/insignia.js) — Insignia.svg()
    DOM contract (provided by actions.html):
-     #form-join   #join-name #join-name-msg #join-id #join-id-msg #join-submit
+     #form-guest  #guest-id #guest-name #guest-cap #guest-submit
+     #form-revoke #revoke-player #revoke-picks #revoke-chip #revoke-msg
+                  #revoke-confirm #revoke-submit
      #form-cap    #cap-player #cap-picks #cap-chip #cap-msg #cap-select #cap-submit
      #form-addmap #tmpl-id #tmpl-id-msg #tmpl-name #tmpl-submit
      #form-rmmap  #rm-select #rm-id #rm-id-msg #rm-submit
-     #form-rmplayer #rmplayer-player #rmplayer-picks #rmplayer-chip
-                  #rmplayer-msg #rmplayer-confirm #rmplayer-submit
-   If LadderData fails to load the forms degrade silently to
-   format-only validation (numeric id, non-empty name).
+   Removal requires a loaded guest list. Other forms can use format-only
+   validation when data is unavailable. Each action prepares a GitHub issue.
    Self-test: `node js/actions.js` runs the pure-helper test suite.
    ============================================================ */
 
@@ -25,9 +25,9 @@
   var ISSUE_BASE = 'https://github.com/Norman1/mhunters-clan-ladder/issues/new?title=';
 
   /* title builders — byte-exact bot command formats */
-  function signupTitle(id, name) { return 'Signup: ' + id + ' Name: ' + name; }
+  function admitGuestTitle(id, name, cap) { return 'AdmitGuest: ' + id + ' Cap: ' + cap + ' Name: ' + name; }
   function capTitle(id, cap) { return 'Update: ' + id + ' Cap: ' + cap; }
-  function removeTitle(id) { return 'Remove: ' + id; }
+  function revokeGuestTitle(id) { return 'RevokeGuest: ' + id; }
   function addTemplateTitle(id, name) { return 'AddTemplate: ' + id + ' Name: ' + name; }
   function removeTemplateTitle(id) { return 'RemoveTemplate: ' + id; }
 
@@ -50,7 +50,8 @@
 
   /* Warzone player id: digits only; observed roster ids run 2–11 digits */
   function isValidWzId(s) {
-    return /^[0-9]{2,11}$/.test(String(s == null ? '' : s).trim());
+    var id = String(s == null ? '' : s).trim();
+    return /^[0-9]{2,11}$/.test(id) && /[1-9]/.test(id);
   }
 
   /* Warzone template id: digits only, non-zero (current pool ids are 7 digits) */
@@ -81,19 +82,24 @@
     return { resolved: null, picks: pool.slice(0, 8) };
   }
 
-  /* Signup id check against the RAW players map (departed entries included).
-     Clan members and admitted guests are registered; other departed players
-     may rejoin. Unknown id → free. */
-  function checkJoinId(id, playersRaw) {
-    var key = String(id == null ? '' : id).trim();
-    if (!playersRaw || !Object.prototype.hasOwnProperty.call(playersRaw, key)) {
-      return { status: 'free', name: null };
-    }
-    var p = playersRaw[key];
-    return {
-      status: p.in_clan === false && p.guest !== true ? 'departed' : 'registered',
-      name: p.name || null
-    };
+  function isValidCap(cap) {
+    return ['0', '1', '2', '3'].indexOf(String(cap)) !== -1;
+  }
+
+  function validGuestFields(id, name, cap) {
+    return isValidWzId(id) && typeof name === 'string' &&
+      name.trim().length > 0 && !/[\r\n]/.test(name) && isValidCap(cap);
+  }
+
+  // Only explicitly admitted guests can be selected for guest removal.
+  // Use derived entries for display when available, raw data as a fallback.
+  function guestRoster(raw, roster) {
+    return Object.keys(raw || {}).filter(function (id) {
+      return raw[id].guest === true;
+    }).map(function (id) {
+      return (roster || []).find(function (p) { return String(p.id) === id; }) ||
+        { id: id, name: raw[id].name, cap: raw[id].game_cap, elo: raw[id].elo, status: 'GUEST' };
+    });
   }
 
   /* Folded-equality name collision against current members; the colliding
@@ -131,12 +137,8 @@
     return pos + ' · CAP ' + cap;
   }
 
-  /* chip meta line: '12–8 · 1042' (record W–L, rating) */
-  function removeChipMeta(entry) {
-    var w = entry.wins != null ? entry.wins : 0;
-    var l = entry.losses != null ? entry.losses : 0;
-    var elo = entry.elo != null ? entry.elo : '—';
-    return w + '–' + l + ' · ' + elo;
+  function guestChipMeta(entry) {
+    return 'ID ' + entry.id + ' · GUEST · CAP ' + (entry.cap != null ? entry.cap : '—');
   }
 
   /* pick meta line: position/status + rating */
@@ -147,8 +149,8 @@
     return pos + ' · ' + (entry.elo != null ? entry.elo : '—');
   }
 
-  /* remove gate: the confirm field must spell REMOVE (case-insensitive) */
-  function removeConfirmed(text) {
+  /* Guest removal requires an explicit REMOVE confirmation. */
+  function guestRemovalConfirmed(text) {
     return String(text == null ? '' : text).trim().toUpperCase() === 'REMOVE';
   }
 
@@ -171,24 +173,24 @@
     console.log('actions.js pure-helper self-test');
 
     // title builders — byte-exact
-    eq(signupTitle('430635', 'Farah♦'), 'Signup: 430635 Name: Farah♦', 'signup title');
+    eq(admitGuestTitle('430635', 'Farah♦', '2'), 'AdmitGuest: 430635 Cap: 2 Name: Farah♦', 'admit guest title');
     eq(capTitle('49', '2'), 'Update: 49 Cap: 2', 'cap title');
     eq(capTitle('49', 0), 'Update: 49 Cap: 0', 'cap title PAUSE (0)');
-    eq(removeTitle('28867016'), 'Remove: 28867016', 'remove title');
+    eq(revokeGuestTitle('28867016'), 'RevokeGuest: 28867016', 'revoke guest title');
     eq(addTemplateTitle('1390041', 'Strat 1v1'), 'AddTemplate: 1390041 Name: Strat 1v1',
       'add-template title');
     eq(removeTemplateTitle('1390041'), 'RemoveTemplate: 1390041', 'remove-template title');
 
     // issue URLs — byte-exact incl. unicode percent-encoding (♦ = %E2%99%A6)
-    eq(issueUrl(signupTitle('430635', 'Farah♦')),
-      'https://github.com/Norman1/mhunters-clan-ladder/issues/new?title=Signup%3A%20430635%20Name%3A%20Farah%E2%99%A6',
-      'signup url encodes unicode name byte-exact');
+    eq(issueUrl(admitGuestTitle('430635', 'Farah♦', '2')),
+      'https://github.com/Norman1/mhunters-clan-ladder/issues/new?title=AdmitGuest%3A%20430635%20Cap%3A%202%20Name%3A%20Farah%E2%99%A6',
+      'guest url encodes unicode name byte-exact');
     eq(issueUrl(capTitle('28867016', '1')),
       'https://github.com/Norman1/mhunters-clan-ladder/issues/new?title=Update%3A%2028867016%20Cap%3A%201',
       'cap url encodes colon + spaces');
-    eq(issueUrl(removeTitle('49')),
-      'https://github.com/Norman1/mhunters-clan-ladder/issues/new?title=Remove%3A%2049',
-      'remove url');
+    eq(issueUrl(revokeGuestTitle('49')),
+      'https://github.com/Norman1/mhunters-clan-ladder/issues/new?title=RevokeGuest%3A%2049',
+      'revoke guest url');
     eq(issueUrl(addTemplateTitle('1573498', 'Imperium Romanum - 35/85')),
       'https://github.com/Norman1/mhunters-clan-ladder/issues/new?title=AddTemplate%3A%201573498%20Name%3A%20Imperium%20Romanum%20-%2035%2F85',
       'add-template url encodes slash in map name');
@@ -243,22 +245,27 @@
     eq(resolveLookup('farah', []), { resolved: null, picks: [] },
       'lookup: empty roster (degraded) → nothing');
 
-    // signup id checks (raw players map, departed included)
+    // Guest admission fields and the removal candidate list.
+    eq(validGuestFields('33160357416', 'Marcus Aurelius', '2'), true, 'valid guest fields');
+    eq(validGuestFields('33160357416', '  ', '2'), false, 'empty guest name rejected');
+    eq(validGuestFields('33160357416', 'Name\nOther', '2'), false, 'multiline name rejected');
+    eq(validGuestFields('bad', 'Friend', '2'), false, 'invalid guest id rejected');
+    eq(validGuestFields('00', 'Friend', '2'), false, 'zero guest id rejected');
+    eq(validGuestFields('123', 'Friend', '0'), true, 'admit guest paused');
+    eq(validGuestFields('123', 'Friend', '3'), true, 'admit guest cap three');
+    eq(validGuestFields('123', 'Friend', '4'), false, 'guest cap four rejected');
+    eq(validGuestFields('123', 'Friend', ''), false, 'empty guest cap rejected');
     var raw = {
-      '28867016': { name: 'Swisster', elo: 1151 },
-      '4555082823': { name: 'Super Smoove', elo: 1003, in_clan: false },
-      '33160357416': { name: 'Marcus Aurelius', elo: 1000, in_clan: false, guest: true }
+      '12': { name: 'Member' },
+      '34': { name: 'Guest', guest: true, game_cap: 0, in_clan: false },
+      '56': { name: 'Clan Guest', guest: true, in_clan: true },
+      '78': { name: 'Revoked', guest: false, in_clan: false }
     };
-    eq(checkJoinId('28867016', raw), { status: 'registered', name: 'Swisster' },
-      'join check: current member id blocks');
-    eq(checkJoinId('4555082823', raw), { status: 'departed', name: 'Super Smoove' },
-      'join check: departed id → welcome back');
-    eq(checkJoinId('33160357416', raw), { status: 'registered', name: 'Marcus Aurelius' },
-      'join check: an outside guest is already registered');
-    eq(checkJoinId('99', raw), { status: 'free', name: null },
-      'join check: unknown id is free');
-    eq(checkJoinId('99', null), { status: 'free', name: null },
-      'join check: no data (degraded) → free');
+    eq(guestRoster(raw, []).map(function (p) { return p.id; }), ['34', '56'],
+      'guest lookup excludes ordinary members and revoked guests');
+    eq(guestRoster(raw, [ {id: '34', name: 'Derived'} ])[0].name, 'Derived',
+      'guest lookup uses derived display details');
+    eq(guestRoster(null, []), [], 'unavailable data produces no removal candidates');
 
     // name collision (folded equality, non-blocking)
     eq(nameCollision('FARAH', roster).name, 'Farah♦',
@@ -280,15 +287,15 @@
     eq(capChipMeta({ status: 'ACTIVE', rank: 6, cap: 2 }), '#6 · CAP 2', 'cap chip: active');
     eq(capChipMeta({ status: 'PAUSED', rank: null, cap: 0 }), 'PAUSED · CAP 0',
       'cap chip: reserve shows status');
-    eq(removeChipMeta({ wins: 41, losses: 23, elo: 1151 }), '41–23 · 1151', 'remove chip meta');
+    eq(guestChipMeta({ id: '34', cap: 2 }), 'ID 34 · GUEST · CAP 2', 'guest chip meta');
     eq(pickMeta({ status: 'INACTIVE', rank: null, elo: 898 }), 'INACTIVE · 898', 'pick meta');
 
     // remove gate
-    eq(removeConfirmed('REMOVE'), true, 'remove gate: REMOVE passes');
-    eq(removeConfirmed(' remove '), true, 'remove gate: case/space-insensitive');
-    eq(removeConfirmed('REMOV'), false, 'remove gate: partial fails');
-    eq(removeConfirmed('LEAVE'), false, 'remove gate: old LEAVE word fails');
-    eq(removeConfirmed(''), false, 'remove gate: empty fails');
+    eq(guestRemovalConfirmed('REMOVE'), true, 'remove gate: REMOVE passes');
+    eq(guestRemovalConfirmed(' remove '), true, 'remove gate: case/space-insensitive');
+    eq(guestRemovalConfirmed('REMOV'), false, 'remove gate: partial fails');
+    eq(guestRemovalConfirmed('LEAVE'), false, 'remove gate: old LEAVE word fails');
+    eq(guestRemovalConfirmed(''), false, 'remove gate: empty fails');
 
     console.log(failures === 0
       ? 'ALL ' + checks + ' CHECKS PASSED'
@@ -306,8 +313,10 @@
   function $(id) { return doc.getElementById(id); }
 
   var state = {
-    roster: [],     // derived entries, active + reserve (current members)
+    roster: [],     // derived entries, active + reserve
     rawPlayers: null, // raw players.json map (departed entries included)
+    guests: [],
+    guestListStatus: 'loading',
     maps: []        // data.maps (current pool)
   };
 
@@ -334,13 +343,6 @@
       el.appendChild(typeof p === 'string' ? doc.createTextNode(p) : p);
     }
     el.hidden = false;
-  }
-
-  function profileLink(id, name) {
-    var a = doc.createElement('a');
-    a.href = 'profile.html?p=' + encodeURIComponent(id);
-    a.textContent = name;
-    return a;
   }
 
   /* ---------- chips + picks ---------- */
@@ -370,9 +372,9 @@
     chipEl.hidden = false;
   }
 
-  /* One name-or-id lookup widget (SET CAP and REMOVE PLAYER both use this).
-     Degraded mode (roster never loaded): a well-formed numeric id counts
-     as resolved — format-only validation, no roster chip data. */
+  /* Shared name-or-id lookup widget for cap changes and guest removal.
+     Cap changes accept a numeric id if roster loading fails. Guest removal
+     always requires a match in the successfully loaded guest list. */
   function lookupWidget(opts) {
     var input = $(opts.input);
     var picksEl = $(opts.picks);
@@ -411,7 +413,7 @@
         b.appendChild(name);
         var meta = doc.createElement('span');
         meta.className = 'pick__meta';
-        meta.textContent = pickMeta(entry);
+        meta.textContent = opts.requireKnown ? guestChipMeta(entry) : pickMeta(entry);
         b.appendChild(meta);
         b.addEventListener('click', function () { settle(entry); });
         picksEl.appendChild(b);
@@ -425,17 +427,24 @@
       var q = input.value.trim();
       if (!q) { settle(null); return; }
 
-      if (!state.roster.length) {
+      var roster = opts.roster ? opts.roster() : state.roster;
+      if (opts.requireKnown && state.guestListStatus !== 'loaded') {
+        settle(null);
+        setMsg(msgEl, 'quiet', [state.guestListStatus === 'loading'
+          ? 'LOADING GUESTS…' : 'GUEST LIST UNAVAILABLE — RELOAD TO RETRY']);
+        return;
+      }
+      if (!roster.length && !opts.requireKnown) {
         // degraded: format-only — a valid numeric id resolves as itself
         settle(isValidWzId(q) ? { id: q, name: q, degraded: true } : null);
         return;
       }
 
-      var res = resolveLookup(q, state.roster);
+      var res = resolveLookup(q, roster);
       if (res.resolved) { settle(res.resolved); return; }
       if (res.picks.length) { showPicks(res.picks); return; }
       settle(null);
-      setMsg(msgEl, 'error', ['NO MATCHING PLAYER']);
+      setMsg(msgEl, 'error', [opts.requireKnown ? 'NO MATCHING GUEST' : 'NO MATCHING PLAYER']);
     }
 
     input.addEventListener('input', update);
@@ -443,52 +452,45 @@
     return w;
   }
 
-  /* ---------- JOIN THE LADDER ---------- */
+  /* ---------- ADD GUEST PLAYER ---------- */
 
-  var joinName, joinId, joinNameMsg, joinIdMsg, joinSubmit;
+  var guestId, guestName, guestCap, guestIdMsg, guestNameMsg, guestSubmit;
 
-  function validateJoin() {
-    var name = joinName.value.trim();
-    var id = joinId.value.trim();
-    var blocked = false;
-
-    clearMsg(joinIdMsg);
+  function validateGuest() {
+    var id = guestId.value.trim();
+    var name = guestName.value.trim();
+    clearMsg(guestIdMsg);
+    clearMsg(guestNameMsg);
     if (id && !isValidWzId(id)) {
-      setMsg(joinIdMsg, 'error', ['INVALID WARZONE ID']);
-      blocked = true;
-    } else if (id) {
-      var check = checkJoinId(id, state.rawPlayers);
-      if (check.status === 'registered') {
-        setMsg(joinIdMsg, 'error', ['ALREADY REGISTERED — ', profileLink(id, check.name)]);
-        blocked = true;
-      } else if (check.status === 'departed') {
-        setMsg(joinIdMsg, 'quiet', ['WELCOME BACK, ' + check.name]);
-      }
+      setMsg(guestIdMsg, 'error', ['INVALID WAR.APP PLAYER ID']);
+    } else if (id && state.rawPlayers && state.rawPlayers[id]) {
+      var existing = state.rawPlayers[id];
+      setMsg(guestIdMsg, 'quiet', [existing.guest === true
+        ? 'ALREADY A GUEST — THIS UPDATES NAME AND CAP'
+        : 'EXISTING PLAYER — RATING AND HISTORY ARE KEPT']);
     }
-
-    clearMsg(joinNameMsg);
-    if (name) {
-      var clash = nameCollision(name, state.roster);
-      if (clash) {
-        setMsg(joinNameMsg, 'warn', ['A PLAYER NAMED ' + clash.name + ' ALREADY EXISTS']);
-      }
+    var clash = nameCollision(name, state.roster);
+    if (clash && String(clash.id) !== id) {
+      setMsg(guestNameMsg, 'warn', ['ANOTHER PLAYER IS NAMED ' + clash.name]);
     }
-
-    joinSubmit.disabled = !(name && isValidWzId(id) && !blocked);
+    guestSubmit.disabled = !validGuestFields(id, name, guestCap.value);
   }
 
-  function wireJoin() {
-    joinName = $('join-name');
-    joinId = $('join-id');
-    joinNameMsg = $('join-name-msg');
-    joinIdMsg = $('join-id-msg');
-    joinSubmit = $('join-submit');
-    joinName.addEventListener('input', validateJoin);
-    joinId.addEventListener('input', validateJoin);
-    $('form-join').addEventListener('submit', function (e) {
+  function wireGuest() {
+    guestId = $('guest-id');
+    guestName = $('guest-name');
+    guestCap = $('guest-cap');
+    guestIdMsg = $('guest-id-msg');
+    guestNameMsg = $('guest-name-msg');
+    guestSubmit = $('guest-submit');
+    guestId.addEventListener('input', validateGuest);
+    guestName.addEventListener('input', validateGuest);
+    guestCap.addEventListener('change', validateGuest);
+    $('form-guest').addEventListener('submit', function (e) {
       e.preventDefault();
-      if (joinSubmit.disabled) return;
-      openIssue(signupTitle(joinId.value.trim(), joinName.value.trim()));
+      validateGuest();
+      if (guestSubmit.disabled) return;
+      openIssue(admitGuestTitle(guestId.value.trim(), guestName.value.trim(), guestCap.value));
     });
   }
 
@@ -504,7 +506,7 @@
       capSelect.value = String(r.cap);
     }
     if (!r) capPrefilledFor = null;
-    capSubmit.disabled = !r;
+    capSubmit.disabled = !r || !isValidCap(capSelect.value);
   }
 
   function wireCap() {
@@ -514,8 +516,10 @@
       input: 'cap-player', picks: 'cap-picks', chip: 'cap-chip', msg: 'cap-msg',
       meta: capChipMeta, onChange: validateCap
     });
+    capSelect.addEventListener('change', validateCap);
     $('form-cap').addEventListener('submit', function (e) {
       e.preventDefault();
+      validateCap();
       if (capSubmit.disabled || !capWidget.resolved) return;
       openIssue(capTitle(capWidget.resolved.id, capSelect.value));
     });
@@ -605,26 +609,34 @@
     });
   }
 
-  /* ---------- REMOVE PLAYER (admin) ---------- */
+  /* ---------- REMOVE GUEST PLAYER ---------- */
 
-  var rmpWidget, rmpConfirm, rmpSubmit;
+  var revokeWidget, revokeConfirm, revokeSubmit, revokeSelectedId = null;
 
-  function validateRemovePlayer() {
-    rmpSubmit.disabled = !(rmpWidget.resolved && removeConfirmed(rmpConfirm.value));
+  function validateRevoke() {
+    var selected = revokeWidget.resolved;
+    var id = selected ? selected.id : null;
+    if (id !== revokeSelectedId) {
+      revokeConfirm.value = '';
+      revokeSelectedId = id;
+    }
+    revokeSubmit.disabled = !(selected && guestRemovalConfirmed(revokeConfirm.value));
   }
 
-  function wireRemovePlayer() {
-    rmpConfirm = $('rmplayer-confirm');
-    rmpSubmit = $('rmplayer-submit');
-    rmpWidget = lookupWidget({
-      input: 'rmplayer-player', picks: 'rmplayer-picks', chip: 'rmplayer-chip',
-      msg: 'rmplayer-msg', meta: removeChipMeta, onChange: validateRemovePlayer
+  function wireRevoke() {
+    revokeConfirm = $('revoke-confirm');
+    revokeSubmit = $('revoke-submit');
+    revokeWidget = lookupWidget({
+      input: 'revoke-player', picks: 'revoke-picks', chip: 'revoke-chip', msg: 'revoke-msg',
+      meta: guestChipMeta, onChange: validateRevoke,
+      roster: function () { return state.guests; }, requireKnown: true
     });
-    rmpConfirm.addEventListener('input', validateRemovePlayer);
-    $('form-rmplayer').addEventListener('submit', function (e) {
+    revokeConfirm.addEventListener('input', validateRevoke);
+    $('form-revoke').addEventListener('submit', function (e) {
       e.preventDefault();
-      if (rmpSubmit.disabled || !rmpWidget.resolved) return;
-      openIssue(removeTitle(rmpWidget.resolved.id));
+      validateRevoke();
+      if (revokeSubmit.disabled || !revokeWidget.resolved) return;
+      openIssue(revokeGuestTitle(revokeWidget.resolved.id));
     });
   }
 
@@ -644,42 +656,50 @@
   /* ---------- boot ---------- */
 
   function revalidateAll() {
-    validateJoin();
+    validateGuest();
     capWidget.update();
     validateAddMap();
     validateRemoveMap();
-    rmpWidget.update();
+    revokeWidget.update();
   }
 
   function onData(data) {
     state.roster = (data.active || []).concat(data.reserve || []);
     state.maps = data.maps || [];
+    state.guests = guestRoster(state.rawPlayers, state.roster);
     fillStats(data.meta || {});
     fillPoolSelect();
     revalidateAll(); // anything typed before the data arrived
   }
 
   function boot() {
-    wireJoin();
+    wireGuest();
     wireCap();
     wireAddMap();
     wireRemoveMap();
-    wireRemovePlayer();
+    wireRevoke();
 
-    // Data loads upgrade validation from format-only to full roster checks;
-    // failures degrade silently (forms stay usable on format alone).
+    // Cap/template forms tolerate missing data; removal only accepts known guests.
     if (window.LadderData && typeof window.LadderData.load === 'function') {
-      window.LadderData.load().then(onData).catch(function () { /* degrade silently */ });
+      window.LadderData.load().then(onData).catch(function () { /* use raw guest data */ });
     }
     fetch('data/players.json')
-      .then(function (r) { return r.ok ? r.json() : null; })
-      .then(function (raw) {
-        if (raw) {
-          state.rawPlayers = raw;
-          validateJoin();
-        }
+      .then(function (r) {
+        if (!r.ok) throw new Error('Player list unavailable');
+        return r.json();
       })
-      .catch(function () { /* degrade silently */ });
+      .then(function (raw) {
+        if (!raw || typeof raw !== 'object' || Array.isArray(raw)) throw new Error('Invalid player list');
+        state.rawPlayers = raw;
+        state.guestListStatus = 'loaded';
+        state.guests = guestRoster(raw, state.roster);
+        validateGuest();
+        revokeWidget.update();
+      })
+      .catch(function () {
+        state.guestListStatus = 'failed';
+        revokeWidget.update();
+      });
   }
 
   if (doc.readyState === 'loading') {

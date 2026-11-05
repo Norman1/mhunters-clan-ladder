@@ -70,9 +70,10 @@
         <a class="rp-anchor" href="#joining" aria-label="Link to Joining the Ladder">#</a>
       </header>
       <div class="rp-body">
-        <p>Clan members enroll automatically. Maintainers can also admit friends as permanent
+        <p>Clan members enroll automatically each hour at :17. Maintainers can also admit friends as permanent
           guests, independently of clan membership. The <span class="hl">ACTIONS</span> page
-          opens GitHub issues; all commands require repository write access.</p>
+          provides Add Guest Player and Remove Guest Player forms. Each form opens a prepared GitHub issue;
+          a maintainer must review it and click Submit new issue on GitHub.</p>
         <p>New players enter the standings immediately at a <span class="hl">1000</span> rating
           — <span class="hl">Cobalt League</span>, rank <span class="hl">Recruit</span> — with a
           <span class="hl">0–0</span> record. The first game follows on Norman's next
@@ -87,7 +88,8 @@
         <a class="rp-anchor" href="#caps" aria-label="Link to Game Caps">#</a>
       </header>
       <div class="rp-body">
-        <p>Your game cap is how many ladder games you can have running at once.</p>
+        <p>Your game cap is how many ladder games you can have running at once.
+          Set Game Cap — Pause (0) stops new games without revoking guest admission.</p>
         <ul class="fact-list">
           <li><span class="hl">0</span> — paused. You keep your rating and are listed under
             <span class="hl">INACTIVE PLAYERS</span> until you raise the cap again.</li>
@@ -241,7 +243,9 @@
         <a class="rp-anchor" href="#commands" aria-label="Link to Command Reference">#</a>
       </header>
       <div class="rp-body">
-        <p>Every ladder action is a GitHub issue under the hood — the <span class="hl">ACTIONS</span>
+        <p>The Actions forms prepare these titles automatically. Review and submit the issue
+          on GitHub to apply the change. The reference below is optional.
+          Every ladder action is a GitHub issue under the hood — the <span class="hl">ACTIONS</span>
           page just writes them for you. Prefer the raw thing? Open a new issue at
           <a class="ext" href="https://github.com/Norman1/mhunters-clan-ladder/issues/new"
              target="_blank" rel="noopener">github.com/Norman1/mhunters-clan-ladder</a>
@@ -251,16 +255,8 @@
 
         <div class="cmd-list">
           <div class="cmd">
-            <code>Signup: <span class="ph">&lt;Your_Warzone_ID&gt;</span> Name: <span class="ph">&lt;Your_Warzone_Username&gt;</span></code>
-            <button type="button" class="cmd-copy" aria-label="Copy signup command">COPY</button>
-          </div>
-          <div class="cmd">
             <code>Update: <span class="ph">&lt;Your_Warzone_ID&gt;</span> Cap: <span class="ph">&lt;GameLimit&gt;</span></code>
             <button type="button" class="cmd-copy" aria-label="Copy update cap command">COPY</button>
-          </div>
-          <div class="cmd">
-            <code>Remove: <span class="ph">&lt;Your_Warzone_ID&gt;</span></code>
-            <button type="button" class="cmd-copy" aria-label="Copy remove command">COPY</button>
           </div>
         </div>
 
@@ -283,7 +279,7 @@
             <button type="button" class="cmd-copy" aria-label="Copy remove template command">COPY</button>
           </div>
         </div>
-        <p>Guest admission survives leaving the clan. Remove or cap 0 only pauses new games.
+        <p>Guest admission survives leaving the clan. Set Game Cap — Pause (0) only pauses new games.
           RevokeGuest removes the guest grant after checking current clan membership: clan
           members stay eligible, outsiders receive no new games, and existing games finish normally.
           Ratings and history are preserved.</p>

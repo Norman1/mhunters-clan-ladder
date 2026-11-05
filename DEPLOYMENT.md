@@ -31,7 +31,7 @@ This system is designed to be "serverless", running entirely on GitHub Actions a
 -   `active_games.json`: Tracks running games.
 
 ### Workflows
--   `schedule.yml`: Controls how often the Matchmaker and Referee run (default: every 2 hours).
+-   `schedule.yml`: Controls how often the Matchmaker and Referee run (hourly at :17).
 
 ## 3. Branch & Deployment Workflow
 
