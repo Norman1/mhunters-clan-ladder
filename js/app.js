@@ -288,6 +288,32 @@
     return td;
   }
 
+  /* Clan cell: members show the M'Hunters icon; an admitted guest shows
+     their own clan's icon (mirrored by the engine into data/clan-icons/).
+     Clanless guests — and guests whose icon isn't mirrored yet — get a dash. */
+  function buildClanCell(p) {
+    var td = doc.createElement('td');
+    td.className = 'c-clan';
+    var clan = p.inClan
+      ? { id: '141', name: "M'Hunters" }
+      : (p.clan && p.clan.id ? p.clan : null);
+    if (!clan) {
+      td.textContent = '—';
+      td.title = p.guest ? 'Guest · no clan' : 'No clan';
+      return td;
+    }
+    td.title = p.inClan ? clan.name : 'Guest · ' + clan.name;
+    var img = doc.createElement('img');
+    img.alt = clan.name;
+    img.loading = 'lazy';
+    img.addEventListener('error', function () {
+      td.textContent = '—';
+    });
+    img.src = 'data/clan-icons/' + encodeURIComponent(clan.id) + '.png';
+    td.appendChild(img);
+    return td;
+  }
+
   function buildPlayerCell(p, withStatus) {
     var td = doc.createElement('td');
     td.className = 'c-player';
@@ -305,13 +331,6 @@
     }
     name.textContent = String(p.name || '').toUpperCase();
     td.appendChild(name);
-    if (p.guest) {
-      var guest = doc.createElement('span');
-      guest.className = 'sub guest-label';
-      guest.textContent = 'GUEST';
-      guest.title = 'Permanent guest admission; clan membership is not required';
-      td.appendChild(guest);
-    }
     if (withStatus) {
       var badge = doc.createElement('span');
       badge.className = 'p-status p-status--' + String(p.status || 'inactive').toLowerCase();
@@ -345,6 +364,7 @@
     tr.appendChild(pos);
 
     tr.appendChild(buildInsigniaCell(p));
+    tr.appendChild(buildClanCell(p));
     tr.appendChild(buildPlayerCell(p, false));
 
     var rating = doc.createElement('td');
@@ -369,6 +389,7 @@
     tr.appendChild(pos);
 
     tr.appendChild(buildInsigniaCell(p));
+    tr.appendChild(buildClanCell(p));
     tr.appendChild(buildPlayerCell(p, true));
 
     var rating = doc.createElement('td');
@@ -878,7 +899,7 @@
     var tbody = $('standings-body');
     if (!tbody) return;
     tbody.textContent = '';
-    var cells = ['c-delta', 'c-pos', 'c-insignia', 'c-player', 'c-rating', 'c-winrate', 'c-streak'];
+    var cells = ['c-delta', 'c-pos', 'c-insignia', 'c-clan', 'c-player', 'c-rating', 'c-winrate', 'c-streak'];
     for (var i = 0; i < 8; i++) {
       var tr = doc.createElement('tr');
       tr.className = 'row skeleton';
@@ -900,7 +921,7 @@
     tbody.textContent = '';
     var tr = doc.createElement('tr');
     var td = doc.createElement('td');
-    td.colSpan = 6;
+    td.colSpan = 8;
     td.className = 'load-error';
     td.appendChild(doc.createTextNode('LADDER DATA UNREACHABLE — '));
     var a = doc.createElement('a');

@@ -549,6 +549,9 @@
         name: p.name,
         guest: p.guest === true,
         inClan: p.in_clan !== false,
+        // Guest players carry their own clan (synced by the engine); members
+        // never need one — the UI shows the M'Hunters crest for them.
+        clan: p.clan ? { id: String(p.clan.id), name: String(p.clan.name || '') } : null,
         elo: p.elo,                       // stored elo is display truth
         rank: null,                       // assigned below for actives
         delta7: null,                     // assigned below for actives

@@ -45,6 +45,11 @@ jobs:
           WZ_API_TOKEN: ${{ secrets.WZ_API_TOKEN }}
         run: node scripts/roster_sync.js
 
+      - name: Sync Guest Clans
+        continue-on-error: true
+        timeout-minutes: 5
+        run: node scripts/guest_clan_sync.js
+
       - name: Run Referee
         env:
           WZ_EMAIL: ${{ secrets.WZ_EMAIL }}

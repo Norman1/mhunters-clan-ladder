@@ -133,4 +133,24 @@ async function fetchPlayerClanId(playerId) {
     return m ? m[1] : null;
 }
 
-module.exports = { fetchClanRoster, fetchPlayerClanId };
+/**
+ * Returns the clan block from a player's profile page as
+ * { clanId, clanName, iconUrl } (clanName/iconUrl null when the page omits
+ * them), or null for a clanless player. Plain fetch — no browser needed.
+ * Throws on network/HTTP failure.
+ */
+async function fetchPlayerClanInfo(playerId) {
+    const res = await fetch(profilePageUrl(playerId), { redirect: 'follow' });
+    if (!res.ok) throw new Error(`Profile fetch failed for ${playerId}: HTTP ${res.status}`);
+    const html = await res.text();
+    // Anchored to the profile's "Part of clan:" block, which renders as:
+    //   Part of clan:
+    //   <a href="/Clans/?ID=671"><img ... src=".../Data/Clans/671/Icon/439519665.png" />Undisputed</a>
+    const block = html.match(/Part of clan:[\s\S]{0,400}?<a href="\/?Clans\/\?ID=(\d+)">([\s\S]*?)<\/a>/);
+    if (!block) return null;
+    const icon = block[2].match(/src="([^"?]*\/Icon\/[^"?]+)[^"]*"/);
+    const name = block[2].replace(/<[^>]*>/g, '').trim();
+    return { clanId: block[1], clanName: name || null, iconUrl: icon ? icon[1] : null };
+}
+
+module.exports = { fetchClanRoster, fetchPlayerClanId, fetchPlayerClanInfo };

@@ -330,6 +330,21 @@ tr.row:hover { background-color: #1B1D22; }
 .standings-table td.c-insignia svg,
 .standings-table td.c-insignia img { display: inline-block; vertical-align: middle; }
 
+/* column: clan (war.app icons are ~15px tall; guests show their own clan) */
+.standings-table td.c-clan {
+  width: 38px;
+  min-width: 32px;
+  text-align: center;
+  color: var(--dim);
+  cursor: help;
+}
+.standings-table td.c-clan img {
+  display: inline-block;
+  vertical-align: middle;
+  max-width: 26px;
+  max-height: 16px;
+}
+
 /* column: player */
 .standings-table td.c-player {
   font-family: var(--font-display);
@@ -1069,14 +1084,18 @@ tr.row--hit td { animation: row-flash 1.6s ease-out 1; }
   .page-title { font-size: 20px; }
   .search { width: 150px; padding: 7px 10px; font-size: 10.5px; }
 
-  /* tightened table */
-  .standings-table th { padding: 9px 6px; font-size: 9px; letter-spacing: 0.1em; }
-  .standings-table td { padding: 0 6px; }
-  .standings-table td.c-pos { width: 32px; min-width: 28px; font-size: 13px; }
-  .standings-table td.c-insignia { width: 34px; min-width: 30px; }
+  /* tightened table (paddings/widths sized so all 8 columns fit a 375px
+     viewport without horizontal scroll) */
+  .standings-table th { padding: 9px 4px; font-size: 9px; letter-spacing: 0.1em; }
+  .standings-table td { padding: 0 4px; }
+  .standings-table td.c-pos { width: 28px; min-width: 26px; font-size: 13px; }
+  .standings-table td.c-insignia { width: 32px; min-width: 30px; }
+  .standings-table td.c-clan { width: 26px; min-width: 24px; }
   .standings-table td.c-player { font-size: 15px; }
   .standings-table td.c-rating { width: 56px; min-width: 44px; font-size: 15.5px; }
   .standings-table .c-delta { width: 30px; min-width: 24px; font-size: 10.5px; }
+  /* "LAST 100" may wrap to two lines so the column can shrink to its cells */
+  .standings-table th.c-winrate { white-space: normal; line-height: 1.3; }
   .standings-table td.c-winrate { width: 46px; min-width: 40px; font-size: 11px; }
   .standings-table td.c-streak { width: 44px; min-width: 36px; font-size: 11px; }
 

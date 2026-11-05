@@ -722,7 +722,12 @@
     "missed_games": 0,
     "in_clan": false,
     "guest": true,
-    "last_assigned_at": "2026-11-05T15:35:18.726Z"
+    "last_assigned_at": "2026-11-05T15:35:18.726Z",
+    "clan": {
+      "id": "962",
+      "name": "Stackers",
+      "icon_v": "626818011.png"
+    }
   },
   "65112512029": {
     "elo": 1000,
@@ -730,6 +735,11 @@
     "in_clan": false,
     "name": "Loup Duk",
     "game_cap": 2,
-    "guest": true
+    "guest": true,
+    "clan": {
+      "id": "671",
+      "name": "Undisputed",
+      "icon_v": "439519665.png"
+    }
   }
 }
