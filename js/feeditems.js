@@ -202,12 +202,11 @@
     return a;
   }
 
-  /* Attach the timestamp to a feed item. Date-style stamps ('July 10, 2026')
-     are much wider than relative ones ('6h') — the item gets a class that
-     reserves a wider right column so content never runs underneath. Dated
-     stamps also carry a compact form ('JUL 10'); on phones the stamp sits
-     in the row's flex flow showing only the compact form, so scaled-up
-     fonts wrap the text instead of printing over it. */
+  /* Attach the timestamp to a feed item. The stamp is a flex child in the
+     row (never an overlay), so scaled-up fonts wrap the entry's text
+     instead of printing over it. Date-style stamps carry both a full form
+     ('July 10, 2026', wide screens) and a compact one ('JUL 10', phones);
+     CSS picks per breakpoint. */
   function attachFeedTime(item, iso, docRef) {
     var text = feedTime(iso);
     if (!text) return;

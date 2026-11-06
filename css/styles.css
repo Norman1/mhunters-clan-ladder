@@ -772,47 +772,27 @@ tr.row--hit td { animation: row-flash 1.6s ease-out 1; }
 #feed-list { padding: 4px 16px 0; }
 .feed .gazette__footer { margin: 6px 16px 14px; }
 
-/* per-item timestamp ('6h'), absolutely positioned so every entry's time
-   sits in the same right-hand column regardless of the entry's own padding */
+/* per-item timestamp ('6h' / 'July 10, 2026' / 'JUL 10'): a flex child on
+   the row's right, never an absolute overlay — in flow it occupies real
+   width, so browser minimum-font-size settings and OS font scaling wrap
+   the entry's text instead of letting the stamp print over it */
 #feed-list .feed-time {
-  position: absolute;
-  top: 10px;
-  right: 4px;
+  flex: none;
+  margin-left: auto;
+  align-self: flex-start;
+  margin-top: 3px;
   font-size: 9.5px;
   letter-spacing: 0.06em;
   color: var(--lg-time, var(--dim));
   white-space: nowrap;
 }
 
-/* date-style stamps ('July 10, 2026') are wide — dated items reserve a
-   wider right column so their content never runs underneath */
-#feed-list .feed-item--dated { padding-right: 98px; }
-#feed-list .feed-item--dated.feed-item--league,
-#feed-list .feed-item--dated.feed-item--rank { padding-right: 98px; }
-
-/* dated stamps carry both forms; desktop shows the full date */
+/* dated stamps carry both forms; wide screens show the full date,
+   phones the compact 'JUL 10' */
 #feed-list .ft-brief { display: none; }
-
-/* phones: the stamp leaves the overlay and joins the row's flex flow in its
-   compact form ('JUL 10'). In flow it occupies real width, so OS-scaled
-   fonts make the text wrap — it can never print over the content. */
 @media (max-width: 899px) {
-  #feed-list .feed-time {
-    position: static;
-    flex: none;
-    margin-left: auto;
-    align-self: flex-start;
-    margin-top: 3px;
-  }
   #feed-list .ft-full { display: none; }
   #feed-list .ft-brief { display: inline; }
-  #feed-list .feed-item,
-  #feed-list .feed-item--dated { padding-right: 0; }
-  #feed-list .feed-item--league,
-  #feed-list .feed-item--dated.feed-item--league { padding-right: 10px; }
-  #feed-list .feed-item--rank,
-  #feed-list .feed-item--dated.feed-item--rank { padding-right: 12px; }
-  #feed-list .feed-result { flex: 1; }
 }
 
 #feed-list .feed-item {
@@ -825,7 +805,7 @@ tr.row--hit td { animation: row-flash 1.6s ease-out 1; }
   font-size: 12px;
   line-height: 1.5;
   color: var(--silver);
-  padding: 8px 34px 8px 0;
+  padding: 8px 0;
   border-bottom: 1px solid var(--line-soft);
 }
 #feed-list .feed-item:last-child { border-bottom: 0; }
@@ -875,7 +855,7 @@ tr.row--hit td { animation: row-flash 1.6s ease-out 1; }
   border: 1px solid var(--lg-c);
   border-left: 3px solid var(--lg-c);
   background: linear-gradient(100deg, var(--lg-a) 0%, var(--lg-b) 48%, var(--lg-c) 100%);
-  padding: 9px 34px 9px 10px;
+  padding: 9px 10px;
   margin: 5px 0;
 }
 #feed-list .fh-mark { flex: none; font-size: 10px; color: var(--lg-t); }
@@ -913,7 +893,7 @@ tr.row--hit td { animation: row-flash 1.6s ease-out 1; }
     inset 0 0 0 3px #131417,
     inset 0 0 0 4px rgba(198, 205, 214, 0.35);
   background: linear-gradient(160deg, #1B1D21, #131417 70%);
-  padding: 11px 34px 11px 12px;
+  padding: 11px 12px;
   margin: 5px 0;
 }
 #feed-list .fh-badge--cert { flex: none; line-height: 0; }
@@ -948,10 +928,6 @@ tr.row--hit td { animation: row-flash 1.6s ease-out 1; }
 .lg-warlord    { --lg-a: #E4404A; --lg-b: #C21F29; --lg-c: #8E121B; --lg-t: #FFF6F6; --lg-sub: rgba(255,246,246,.62); --lg-time: rgba(255,246,246,.55); --lg-hi: rgba(0,0,0,.3); }
 .lg-god        { --lg-a: #FFE9A8; --lg-b: #FF6A2A; --lg-c: #B3160B; --lg-t: #2B0700; --lg-sub: rgba(43,7,0,.68); --lg-time: rgba(43,7,0,.6); --lg-hi: rgba(255,255,255,.55); }
 
-/* bordered cards: compensate the 1px border so timestamps align with plain rows */
-#feed-list .feed-item--league .feed-time,
-#feed-list .feed-item--rank .feed-time { right: 3px; }
-
 /* obsidian's banner carries its signature red rim */
 #feed-list .feed-item--league.lg-obsidian {
   border-color: #3A3D45;
@@ -981,7 +957,7 @@ tr.row--hit td { animation: row-flash 1.6s ease-out 1; }
 }
 
 /* results */
-#feed-list .feed-result { min-width: 0; }
+#feed-list .feed-result { min-width: 0; flex: 1; }
 #feed-list .feed-result__line { color: var(--white); }
 #feed-list .fr-winner { font-weight: 600; }
 #feed-list .fr-up   { color: var(--red); font-weight: 600; }
