@@ -184,7 +184,7 @@
     "game_cap": 2,
     "missed_games": 0,
     "last_opponent": "9313400553",
-    "last_assigned_at": "2026-10-30T01:57:41.490Z"
+    "last_assigned_at": "2026-11-06T00:14:12.272Z"
   },
   "58134761580": {
     "name": "ExFailures",
@@ -206,8 +206,8 @@
     "name": "Word Walker",
     "elo": 818,
     "game_cap": 2,
-    "missed_games": 0,
-    "last_opponent": "4155523061",
+    "missed_games": 1,
+    "last_opponent": "8222729424",
     "last_assigned_at": "2026-11-05T18:43:50.730Z"
   },
   "4543063534": {
@@ -599,8 +599,8 @@
     "elo": 894,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-11-05T18:43:50.730Z",
-    "last_opponent": "4155523061"
+    "last_assigned_at": "2026-11-06T00:14:12.272Z",
+    "last_opponent": "9313400553"
   },
   "88117806994": {
     "name": "RameurA",
