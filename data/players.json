@@ -408,8 +408,8 @@
     "elo": 903,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-11-04T14:39:23.274Z",
-    "last_opponent": "8222729424"
+    "last_assigned_at": "2026-11-07T07:07:50.819Z",
+    "last_opponent": "23105988432"
   },
   "50127514525": {
     "name": "toont3",
@@ -511,9 +511,9 @@
     "name": "Socrates",
     "elo": 982,
     "game_cap": 2,
-    "missed_games": 6,
+    "missed_games": 7,
     "last_assigned_at": "2026-11-04T06:15:53.888Z",
-    "last_opponent": "89133991720"
+    "last_opponent": "56133341636"
   },
   "16127869941": {
     "name": "gg",
@@ -624,7 +624,7 @@
     "elo": 793,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-11-06T15:12:12.124Z",
+    "last_assigned_at": "2026-11-07T07:07:50.819Z",
     "last_opponent": "28867016"
   },
   "53134900057": {
