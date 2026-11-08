@@ -17,10 +17,10 @@
   },
   "28867016": {
     "name": "Swisster",
-    "elo": 1154,
+    "elo": 1158,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "8222729424",
+    "last_opponent": "9780712014",
     "last_assigned_at": "2026-11-08T16:42:37.107Z"
   },
   "81598466": {
@@ -636,11 +636,11 @@
   },
   "9780712014": {
     "name": "Acuna42",
-    "elo": 779,
+    "elo": 775,
     "game_cap": 2,
-    "missed_games": 1,
+    "missed_games": 0,
     "last_assigned_at": "2026-11-08T16:42:37.107Z",
-    "last_opponent": "1477223682"
+    "last_opponent": "28867016"
   },
   "53134900057": {
     "name": "extelon",
