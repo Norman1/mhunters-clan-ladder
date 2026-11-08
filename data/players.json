@@ -63,7 +63,13 @@
     "in_clan": false,
     "name": "koning",
     "game_cap": 2,
-    "guest": true
+    "guest": true,
+    "clan": {
+      "id": "671",
+      "name": "Undisputed",
+      "icon_v": "439519665.png"
+    },
+    "last_assigned_at": "2026-11-08T10:18:22.214Z"
   },
   "1822261234": {
     "name": "fifi",
@@ -397,11 +403,11 @@
   },
   "71155120841": {
     "name": "Ventura",
-    "elo": 1312,
+    "elo": 1324,
     "game_cap": 3,
     "missed_games": 0,
-    "last_assigned_at": "2026-11-06T15:12:11.201Z",
-    "last_opponent": "84143567121"
+    "last_assigned_at": "2026-11-08T10:18:21.617Z",
+    "last_opponent": "16127869941"
   },
   "6411877352": {
     "name": "Kratos",
@@ -413,11 +419,11 @@
   },
   "56133341636": {
     "name": "Bastian Pyornkrachzark",
-    "elo": 903,
+    "elo": 917,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-11-07T07:07:50.819Z",
-    "last_opponent": "23105988432"
+    "last_assigned_at": "2026-11-08T10:18:20.870Z",
+    "last_opponent": "9780712014"
   },
   "50127514525": {
     "name": "toont3",
@@ -525,11 +531,11 @@
   },
   "16127869941": {
     "name": "gg",
-    "elo": 1171,
+    "elo": 1159,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-11-05T18:43:51.276Z",
-    "last_opponent": "9780712014"
+    "last_assigned_at": "2026-11-08T10:18:20.870Z",
+    "last_opponent": "71155120841"
   },
   "4353717389": {
     "name": "Krys",
@@ -629,11 +635,11 @@
   },
   "9780712014": {
     "name": "Acuna42",
-    "elo": 793,
+    "elo": 779,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-11-07T07:07:50.819Z",
-    "last_opponent": "28867016"
+    "last_assigned_at": "2026-11-08T10:18:22.214Z",
+    "last_opponent": "56133341636"
   },
   "53134900057": {
     "name": "extelon",
