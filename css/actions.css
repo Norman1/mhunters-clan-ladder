@@ -209,6 +209,7 @@
 }
 
 /* ----------------------------- buttons ----------------------------- */
+a.btn { text-decoration: none; }
 .btn {
   align-self: flex-start;
   display: inline-flex;
