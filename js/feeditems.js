@@ -361,23 +361,16 @@
   /* league changes: ceremony card — name + PROMOTED TO / RELEGATED TO, the new
      league big and metallic beneath, card washed in the league's metal.
      rank promotions: interim compact style (distinct treatment being designed). */
-  /* 'GOLD → ORICHALCUM': the old value small and faded, the new one big.
-     A league's old value is a small chip in that league's metal. */
-  function fromTo(doc, prev, next, wordCls, prevLeagueKey) {
+  /* 'GOLD → ORICHALCUM'. Leagues: both values are chips in their league's
+     metal. Otherwise the new value is the big word. */
+  function fromTo(doc, prev, next, wordCls, prevLeagueKey, nextLeagueKey) {
     var wrap = doc.createElement('span');
     wrap.className = 'fh-change';
     if (prev) {
       var from = doc.createElement('span');
-      from.className = 'fh-from' + (prevLeagueKey ? ' fh-from--league' : '');
+      from.className = 'fh-from';
       from.textContent = String(prev).toUpperCase();
-      if (prevLeagueKey && window.Insignia && typeof window.Insignia.leagueStops === 'function') {
-        var st = window.Insignia.leagueStops(prevLeagueKey);
-        from.style.background = 'linear-gradient(120deg, ' + st[0] + ', ' + st[1] + ' 55%, ' + st[2] + ')';
-        // dark text on bright metals, light text on dark ones
-        var h = st[1].replace('#', '');
-        var lum = 0.299 * parseInt(h.slice(0, 2), 16) + 0.587 * parseInt(h.slice(2, 4), 16) + 0.114 * parseInt(h.slice(4, 6), 16);
-        from.style.color = lum > 140 ? '#15161A' : '#F2F4F6';
-      }
+      if (prevLeagueKey) paintLeagueChip(from, prevLeagueKey);
       wrap.appendChild(from);
       var arrow = doc.createElement('span');
       arrow.className = 'fh-arrow';
@@ -388,8 +381,25 @@
     var word = doc.createElement('span');
     word.className = 'fh-word ' + wordCls;
     word.textContent = next;
+    if (nextLeagueKey) {
+      // league cards: the new league is the same metal chip as the old one
+      word.className = 'fh-from';
+      paintLeagueChip(word, nextLeagueKey);
+    }
     wrap.appendChild(word);
     return wrap;
+  }
+
+  /* a league name as a small chip in that league's metal */
+  function paintLeagueChip(el, key) {
+    el.className += ' fh-from--league';
+    if (!window.Insignia || typeof window.Insignia.leagueStops !== 'function') return;
+    var st = window.Insignia.leagueStops(key);
+    el.style.background = 'linear-gradient(120deg, ' + st[0] + ', ' + st[1] + ' 55%, ' + st[2] + ')';
+    // dark text on bright metals, light text on dark ones
+    var h = st[1].replace('#', '');
+    var lum = 0.299 * parseInt(h.slice(0, 2), 16) + 0.587 * parseInt(h.slice(2, 4), 16) + 0.114 * parseInt(h.slice(4, 6), 16);
+    el.style.color = lum > 140 ? '#15161A' : '#F2F4F6';
   }
 
   /* small label across the top of an honor card: '▲ LEAGUE PROMOTION' */
@@ -419,7 +429,7 @@
       div.appendChild(clanTagImg(doc));
       div.appendChild(nameLink(g.playerName, 'fh-name', g.playerId, ctx));
       div.appendChild(fromTo(doc, g.prevLeagueName, (g.leagueName || '').toUpperCase(),
-        'fh-league-word', g.prevLeagueKey));
+        '', g.prevLeagueKey, g.leagueKey || 'steel'));
       attachFeedTime(div, g.date, doc);
       return div;
     }

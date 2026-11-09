@@ -937,11 +937,6 @@ tr.row--hit td { animation: row-flash 1.6s ease-out 1; }
   color: var(--lg-t, var(--silver));
   opacity: 0.82;
 }
-#feed-list .fh-league-word {
-  letter-spacing: 0.14em;
-  color: var(--lg-t);
-  text-shadow: 0 1px 0 var(--lg-hi, transparent);
-}
 
 /* rank promotion: certificate card in M'Hunters steel — double silver frame,
    large shield, rank word in the engraved-steel wordmark gradient, red star */
@@ -1045,10 +1040,6 @@ tr.row--hit td { animation: row-flash 1.6s ease-out 1; }
 #feed-list .feed-item--down .fh-name { color: #AEB5BE; }
 #feed-list .feed-item--down .fh-mark { color: color-mix(in srgb, var(--lg-a) 60%, #8A929C); }
 #feed-list .feed-item--down .fh-arrow { color: var(--dim); }
-#feed-list .feed-item--down .fh-league-word {
-  color: color-mix(in srgb, var(--lg-a) 55%, #C9CED4);
-  text-shadow: none;
-}
 #feed-list .feed-item--down .feed-time { color: var(--dim); }
 
 /* results: scoreboard — winner bright with a red bar on top, loser dimmed
