@@ -790,5 +790,13 @@
     "name": "doopadoo",
     "game_cap": 2,
     "guest": true
+  },
+  "7992098821": {
+    "elo": 1000,
+    "missed_games": 0,
+    "in_clan": false,
+    "name": "5p4c3m4n",
+    "game_cap": 2,
+    "guest": true
   }
 }
