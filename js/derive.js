@@ -247,8 +247,6 @@
             playerName: name,
             rankIndex: rankAfter,
             rankName: RANK_NAMES[rankAfter],
-            prevRankIndex: rankBefore,
-            prevRankName: RANK_NAMES[rankBefore],
             threshold: RANK_THRESHOLDS[rankAfter]
           });
         }

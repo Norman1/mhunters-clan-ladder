@@ -398,7 +398,8 @@
     div.title = g.text || '';
 
     if (g.kind === 'ascension' || g.kind === 'demotion') {
-      div.className = 'feed-item feed-item--honor feed-item--league lg-' + (g.leagueKey || 'steel');
+      div.className = 'feed-item feed-item--honor feed-item--league lg-' + (g.leagueKey || 'steel') +
+        (g.kind === 'ascension' ? ' feed-item--up' : ' feed-item--down');
 
       var mark = doc.createElement('span');
       mark.className = 'fh-mark';
@@ -414,7 +415,7 @@
     }
 
     // rank promotion: certificate card in M'Hunters steel — new shield,
-    // name, then OLD RANK → NEW RANK in the engraved-steel wordmark gradient
+    // 'NAME is now a RANK' + the win count that earned it
     div.className = 'feed-item feed-item--honor feed-item--rank';
 
     var badge = doc.createElement('span');
@@ -427,7 +428,25 @@
 
     div.appendChild(clanTagImg(doc));
     div.appendChild(nameLink(g.playerName, 'fh-name', g.playerId, ctx));
-    div.appendChild(fromTo(doc, g.prevRankName, (g.rankName || '').toUpperCase(), 'fh-rank-word', null));
+    // reads as a sentence: NAME is now a RANK, then the wins that earned it
+    var rank = String(g.rankName || '');
+    var change = doc.createElement('span');
+    change.className = 'fh-change fh-change--rank';
+    var says = doc.createElement('span');
+    says.className = 'fh-says';
+    says.textContent = 'is now ' + (/^[aeiou]/i.test(rank) ? 'an' : 'a');
+    change.appendChild(says);
+    var word = doc.createElement('span');
+    word.className = 'fh-word fh-rank-word';
+    word.textContent = rank.toUpperCase();
+    change.appendChild(word);
+    if (g.threshold != null) {
+      var wins = doc.createElement('span');
+      wins.className = 'fh-wins';
+      wins.textContent = Number(g.threshold).toLocaleString('en-US') + (g.threshold === 1 ? ' WIN' : ' WINS');
+      change.appendChild(wins);
+    }
+    div.appendChild(change);
     attachFeedTime(div, g.date, doc);
     return div;
   }

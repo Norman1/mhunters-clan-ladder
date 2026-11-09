@@ -944,7 +944,30 @@ tr.row--hit td { animation: row-flash 1.6s ease-out 1; }
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-#feed-list .feed-item--rank .fh-from { color: var(--muted); }
+/* rank sentence: name sits next to 'is now a', rank big, wins after */
+#feed-list .fh-change--rank { margin-left: 0; flex: 1; min-width: 0; gap: 8px; }
+#feed-list .fh-change--rank .fh-wins { margin-left: auto; }
+@media (max-width: 560px) {
+  /* phones: name + date on top, 'is now a RANK · WINS' on its own line */
+  #feed-list .fh-change--rank { order: 5; flex-basis: 100%; padding-left: 4px; }
+  #feed-list .feed-item--rank .feed-time { margin-left: auto; align-self: center; margin-top: 0; }
+  #feed-list .feed-item--rank .fh-rank-word { min-width: 0; overflow: hidden; text-overflow: ellipsis; }
+}
+#feed-list .fh-says {
+  font-size: 12px;
+  font-style: italic;
+  color: var(--muted);
+}
+#feed-list .fh-wins {
+  font-family: var(--font-mono);
+  font-weight: 600;
+  font-size: 9.5px;
+  letter-spacing: 0.12em;
+  color: var(--silver);
+  padding: 2px 6px;
+  border: 1px solid rgba(198, 205, 214, 0.3);
+  border-radius: 3px;
+}
 
 /* the twelve tiers — a/b/c = banner gradient stops · t = text · sub = secondary
    text · hi = engraving bevel under the big word · time = timestamp color */
@@ -981,6 +1004,31 @@ tr.row--hit td { animation: row-flash 1.6s ease-out 1; }
 @media (prefers-reduced-motion: reduce) {
   #feed-list .feed-item--league.lg-plasma { animation: none; }
 }
+
+/* promotion vs relegation. Up: polished metal with a lit top edge.
+   Down: the same metal tarnished — a dark plate with only a trace of the
+   league colour, so the bright old-league chip shows what was lost. */
+#feed-list .feed-item--league.feed-item--up {
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.55), 0 1px 3px rgba(0, 0, 0, 0.35);
+}
+#feed-list .feed-item--up .fh-mark { font-size: 12px; }
+#feed-list .feed-item--league.feed-item--down {
+  background: linear-gradient(100deg,
+    color-mix(in srgb, var(--lg-b) 24%, #16181C) 0%,
+    color-mix(in srgb, var(--lg-c) 12%, #121317) 100%);
+  border-color: color-mix(in srgb, var(--lg-b) 40%, #1A1C20);
+  border-left-color: color-mix(in srgb, var(--lg-b) 65%, #1A1C20);
+  box-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.45);
+  animation: none;
+}
+#feed-list .feed-item--down .fh-name { color: #AEB5BE; }
+#feed-list .feed-item--down .fh-mark { color: color-mix(in srgb, var(--lg-a) 60%, #8A929C); }
+#feed-list .feed-item--down .fh-arrow { color: var(--dim); }
+#feed-list .feed-item--down .fh-league-word {
+  color: color-mix(in srgb, var(--lg-a) 55%, #C9CED4);
+  text-shadow: none;
+}
+#feed-list .feed-item--down .feed-time { color: var(--dim); }
 
 /* results: scoreboard — winner bright with a red bar on top, loser dimmed
    beneath; time, map, and turns stacked on the right */
