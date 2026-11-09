@@ -3,6 +3,7 @@
 //
 //   node scripts/stamp_assets.js          rewrite the pages
 //   node scripts/stamp_assets.js --check  exit 1 if any fingerprint is stale
+//   node scripts/stamp_assets.js --list   rewrite, printing only the pages changed
 //
 // The pre-commit hook in .githooks runs this automatically.
 const fs = require('fs');
@@ -46,7 +47,11 @@ if (require.main === module) {
     }
   } else {
     for (const page of pages) fs.writeFileSync(path.join(ROOT, page), changed[page]);
-    console.log(pages.length ? 'Stamped: ' + pages.join(', ') : 'Asset fingerprints up to date.');
+    if (process.argv.includes('--list')) {
+      if (pages.length) console.log(pages.join('\n'));   // for the pre-commit hook
+    } else {
+      console.log(pages.length ? 'Stamped: ' + pages.join(', ') : 'Asset fingerprints up to date.');
+    }
   }
 }
 

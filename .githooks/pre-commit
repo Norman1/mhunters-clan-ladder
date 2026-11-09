@@ -1,0 +1,6 @@
+#!/bin/sh
+# Refresh the ?v= fingerprints on js/css links and stage only the pages it updates.
+# Enable once per clone with: git config core.hooksPath .githooks
+pages=$(node scripts/stamp_assets.js --list) || exit 1
+[ -n "$pages" ] && echo "$pages" | xargs git add --
+exit 0

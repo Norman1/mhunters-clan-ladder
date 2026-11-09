@@ -59,3 +59,4 @@ After pushing, GitHub Pages will redeploy automatically from the updated branch.
 
 -   **Install Dependencies**: `npm install`
 -   **Manual Run**: `node scripts/matchmaker.js`
+-   **Asset version tags**: pages link scripts and styles as `file.js?v=<hash>` so browsers always load the latest copy. Enable the commit hook once per clone with `git config core.hooksPath .githooks`; it refreshes the tags on every commit. Without the hook, run `npm run stamp` after editing anything in `js/` or `css/` (`npm test` fails if a tag is stale).
