@@ -775,7 +775,9 @@ tr.row--hit td { animation: row-flash 1.6s ease-out 1; }
 
 /* ----------------------------- feed (honors + results) ----------------------------- */
 .feed { padding: 0; }
-#feed-list { padding: 4px 16px 0; }
+/* layout below follows the feed's own width (narrow column on the
+   standings page, full width on feed.html), not the screen's */
+#feed-list { padding: 4px 16px 0; container-type: inline-size; }
 .feed .gazette__footer { margin: 6px 16px 14px; }
 
 /* per-item timestamp ('6h' / 'July 10, 2026' / 'JUL 10'): a flex child on
@@ -947,8 +949,8 @@ tr.row--hit td { animation: row-flash 1.6s ease-out 1; }
 /* rank sentence: name, 'has achieved the rank of', rank big, wins after */
 #feed-list .fh-change--rank { margin-left: 0; flex: 1; min-width: 0; gap: 8px; }
 #feed-list .fh-change--rank .fh-wins { margin-left: auto; }
-@media (max-width: 560px) {
-  /* phones: name + date on top, 'has achieved the rank of RANK · WINS' on its own line */
+@container (max-width: 680px) {
+  /* narrow feeds: name + date on top, 'has achieved the rank of RANK · WINS' below */
   #feed-list .fh-change--rank { order: 5; flex-basis: 100%; padding-left: 4px; }
   #feed-list .feed-item--rank .feed-time { margin-left: auto; align-self: center; margin-top: 0; }
   #feed-list .fh-change--rank { flex-wrap: wrap; row-gap: 6px; }
@@ -1110,8 +1112,8 @@ tr.row--hit td { animation: row-flash 1.6s ease-out 1; }
 #feed-list .fr-when .feed-time { margin: 0; white-space: nowrap; }
 /* earlier-year items: the year sits under the day */
 #feed-list .feed-time__year { display: block; margin-top: 2px; opacity: 0.7; }
-@media (max-width: 560px) {
-  /* phones: give the map pill room; names are short and ellipsize anyway */
+@container (max-width: 560px) {
+  /* narrow feeds: give the map pill room; names are short and ellipsize anyway */
   #feed-list .fr-meta { flex-basis: 54%; gap: 8px; }
   #feed-list .feed-item--result { gap: 8px; }
 }
