@@ -1,0 +1,37 @@
+name: Engine Relay
+
+# GitHub's own cron is best-effort: the hourly engine schedule actually ran
+# ~4-5 times a day. Manual starts (workflow_dispatch) run right away, so this
+# relay stays open ~5 hours, starts the engine once an hour, then starts the
+# next relay. The cron below only restarts the chain if it ever breaks.
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '41 */3 * * *' # backup: restart the relay if the chain stopped
+
+permissions:
+  actions: write # start the engine and the next relay
+
+concurrency:
+  group: engine-relay
+  cancel-in-progress: false # a new relay waits for the running one, never interrupts it
+
+jobs:
+  relay:
+    runs-on: ubuntu-latest
+    timeout-minutes: 330 # under GitHub's 6-hour job limit
+    env:
+      GH_TOKEN: ${{ github.token }}
+      REPO: ${{ github.repository }}
+    steps:
+      - name: Start the engine once an hour
+        run: |
+          for i in 1 2 3 4 5; do
+            gh workflow run schedule.yml -R "$REPO" --ref main || echo "could not start the engine this hour"
+            sleep 3600
+          done
+
+      - name: Start the next relay
+        if: success() || failure()
+        run: gh workflow run relay.yml -R "$REPO" --ref main

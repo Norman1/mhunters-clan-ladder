@@ -32,6 +32,7 @@ This system is designed to be "serverless", running entirely on GitHub Actions a
 
 ### Workflows
 -   `schedule.yml`: Controls how often the Matchmaker and Referee run (hourly at :17).
+-   `relay.yml`: Starts `schedule.yml` once an hour. GitHub's own cron is best-effort and skips most hourly runs, so the relay keeps one run open ~5 hours, starts the engine hourly, then starts the next relay. Its own cron (every 3 hours) only restarts the chain if it breaks.
 
 ## 3. Branch & Deployment Workflow
 
