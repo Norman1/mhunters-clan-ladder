@@ -5,8 +5,11 @@
    Exposes:
      window.FeedItems = {
        feedTime(iso[, nowMs]),       // '6m' / '6h' / 'July 10, 2026'
+       feedStamp(iso[, nowMs]),      // row stamp {main:'6h'/'NOV 7', year:''/'2025'}
        buildResultItem(r, ctx),      // result row (opens warzone.com)
        buildHonorItem(g, ctx),       // honor card (league / rank)
+       buildDayHeader(iso, ctx),     // 'TODAY' / 'YESTERDAY' / 'NOV 8' divider
+       dayKey(iso), dayLabel(iso[, nowMs]),
        // shared internals the page scripts also consume:
        formatGazetteDate(iso),       // 'JUL 9' (honor tooltips/labels)
        gazetteKindMarker(kind),      // ★ ▲ ▼ ·
@@ -70,6 +73,21 @@
     return formatFullDate(iso);
   }
 
+  /* row stamp: '6m' / '6h' under 24h, then the local day ('NOV 7').
+     Items from an earlier year also get year: '2025', shown under the day. */
+  function feedStamp(iso, nowMs) {
+    var t = tsOf(iso);
+    if (!t) return { main: '', year: '' };
+    var now = typeof nowMs === 'number' ? nowMs : Date.now();
+    if (now - t < 86400000) return { main: feedTime(iso, now), year: '' };
+    var d = new Date(t);
+    var y = d.getFullYear();
+    return {
+      main: MONTHS[d.getMonth()] + ' ' + d.getDate(),
+      year: y === new Date(now).getFullYear() ? '' : String(y)
+    };
+  }
+
   /* ISO date → 'JUL 9' (parses the date part directly; no TZ drift) */
   function formatGazetteDate(iso) {
     var m = /^(\d{4})-(\d{2})-(\d{2})/.exec(String(iso || ''));
@@ -80,6 +98,31 @@
     var d = new Date(iso);
     if (!isNaN(d.getTime())) return MONTHS[d.getMonth()] + ' ' + d.getDate();
     return '';
+  }
+
+  /* local calendar day of an ISO time → 'YYYY-MM-DD' ('' when unparseable) */
+  function dayKey(iso) {
+    var t = tsOf(iso);
+    if (!t) return '';
+    var d = new Date(t);
+    var mo = d.getMonth() + 1, da = d.getDate();
+    return d.getFullYear() + '-' + (mo < 10 ? '0' : '') + mo + '-' + (da < 10 ? '0' : '') + da;
+  }
+
+  /* day-header label: 'TODAY' / 'YESTERDAY' / 'NOV 8' / 'DEC 28, 2025'
+     (year only when it isn't the current one). nowMs is injectable. */
+  function dayLabel(iso, nowMs) {
+    var t = tsOf(iso);
+    if (!t) return '';
+    var now = new Date(typeof nowMs === 'number' ? nowMs : Date.now());
+    var today = dayKey(now.toISOString());
+    var yest = dayKey(new Date(now.getFullYear(), now.getMonth(), now.getDate() - 1, 12).toISOString());
+    var key = dayKey(iso);
+    if (key === today) return 'TODAY';
+    if (key === yest) return 'YESTERDAY';
+    var d = new Date(t);
+    var label = MONTHS[d.getMonth()] + ' ' + d.getDate();
+    return d.getFullYear() === now.getFullYear() ? label : label + ', ' + d.getFullYear();
   }
 
   function gazetteKindMarker(kind) {
@@ -130,6 +173,13 @@
       'January,February,March,April,May,June,July,August,September,October,November,December',
       'feedTime full month names Jan–Dec');
 
+    // feedStamp — relative under 24h, local day after, year only when different
+    var NOWL = new Date(2026, 6, 10, 12).getTime();
+    eq(feedStamp(new Date(2026, 6, 10, 6).toISOString(), NOWL), { main: '6h', year: '' }, 'feedStamp 6h');
+    eq(feedStamp(new Date(2026, 6, 7, 15).toISOString(), NOWL), { main: 'JUL 7', year: '' }, 'feedStamp this year → JUL 7');
+    eq(feedStamp(new Date(2025, 11, 28, 15).toISOString(), NOWL), { main: 'DEC 28', year: '2025' }, 'feedStamp last year → DEC 28 + 2025');
+    eq(feedStamp('junk', NOWL), { main: '', year: '' }, 'feedStamp junk → empty');
+
     // feedTime — null-safety
     eq(feedTime(null, NOW), '', 'feedTime null → empty');
     eq(feedTime(undefined, NOW), '', 'feedTime undefined → empty');
@@ -139,6 +189,17 @@
     eq(formatGazetteDate('2026-07-09'), 'JUL 9', 'gazette date plain');
     eq(formatGazetteDate('2025-12-28T14:03:00Z'), 'DEC 28', 'gazette date with time');
     eq(formatGazetteDate('junk'), '', 'gazette date junk → empty');
+
+    // day headers (local time — built from local dates so any TZ passes)
+    var LNOW = new Date(2026, 10, 9, 15, 0).getTime();
+    var at = function (y, m, d, h) { return new Date(y, m, d, h, 0).toISOString(); };
+    eq(dayLabel(at(2026, 10, 9, 1), LNOW), 'TODAY', 'dayLabel same day → TODAY');
+    eq(dayLabel(at(2026, 10, 8, 23), LNOW), 'YESTERDAY', 'dayLabel previous day → YESTERDAY');
+    eq(dayLabel(at(2026, 10, 6, 9), LNOW), 'NOV 6', 'dayLabel this year → NOV 6');
+    eq(dayLabel(at(2025, 11, 28, 9), LNOW), 'DEC 28, 2025', 'dayLabel other year adds the year');
+    eq(dayLabel(at(2026, 0, 1, 9), new Date(2026, 0, 2, 9).getTime()), 'YESTERDAY', 'dayLabel yesterday across a month');
+    eq(dayLabel('junk', LNOW), '', 'dayLabel junk → empty');
+    eq(dayKey(at(2026, 6, 4, 13)), '2026-07-04', 'dayKey local date');
 
     eq(gazetteKindMarker('promotion'), '★', 'promotion marker');
     eq(gazetteKindMarker('ascension'), '▲', 'ascension marker');
@@ -202,30 +263,31 @@
     return a;
   }
 
-  /* Attach the timestamp to a feed item. The stamp is a flex child in the
-     row (never an overlay), so scaled-up fonts wrap the entry's text
-     instead of printing over it. Date-style stamps carry both a full form
-     ('July 10, 2026', wide screens) and a compact one ('JUL 10', phones);
-     CSS picks per breakpoint. */
+  /* Attach the row stamp ('6h' / 'NOV 7', plus the year under it for
+     items from an earlier year) to a feed item. */
   function attachFeedTime(item, iso, docRef) {
-    var text = feedTime(iso);
-    if (!text) return;
+    var st = feedStamp(iso);
+    if (!st.main) return;
     var span = docRef.createElement('span');
     span.className = 'feed-time';
-    if (text.indexOf(',') !== -1) {
-      item.classList.add('feed-item--dated');
-      var full = docRef.createElement('span');
-      full.className = 'ft-full';
-      full.textContent = text;
-      span.appendChild(full);
-      var brief = docRef.createElement('span');
-      brief.className = 'ft-brief';
-      brief.textContent = formatGazetteDate(iso);
-      span.appendChild(brief);
-    } else {
-      span.textContent = text;
+    span.textContent = st.main;
+    if (st.year) {
+      var yr = docRef.createElement('span');
+      yr.className = 'feed-time__year';
+      yr.textContent = st.year;
+      span.appendChild(yr);
+      span.setAttribute('aria-label', st.main + ' ' + st.year);
     }
     item.appendChild(span);
+  }
+
+  /* 'TODAY' / 'YESTERDAY' / 'NOV 8' divider placed above each day's items */
+  function buildDayHeader(iso, ctx) {
+    var div = ctxDoc(ctx).createElement('div');
+    div.className = 'feed-day';
+    div.setAttribute('role', 'separator');
+    div.textContent = dayLabel(iso);
+    return div;
   }
 
   /* result rows open the game on warzone.com. The row is a div[role=link]
@@ -249,51 +311,87 @@
       window.open(url, '_blank', 'noopener');
     });
 
-    var body = doc.createElement('div');
-    body.className = 'feed-result';
+    // scoreboard: winner bright on top, loser dimmed beneath
+    var board = doc.createElement('div');
+    board.className = 'fr-board';
+    board.appendChild(side(r.winner, r.winnerId, 'fr-side fr-side--win', '+' + r.change));
+    board.appendChild(side(r.loser, r.loserId, 'fr-side fr-side--lose', '−' + r.change));
+    item.setAttribute('aria-label', r.winner + ' beat ' + r.loser + ', ' + r.change + ' points, on ' + r.map);
 
-    var line = doc.createElement('div');
-    line.className = 'feed-result__line';
-    line.appendChild(nameLink(r.winner, 'fr-winner', r.winnerId, ctx));
-    var wch = doc.createElement('span');
-    wch.className = 'fr-up';
-    wch.textContent = ' +' + r.change + ' ';
-    line.appendChild(wch);
-    var mid = doc.createElement('span');
-    mid.className = 'fr-mid';
-    mid.textContent = 'defeats ';
-    line.appendChild(mid);
-    line.appendChild(nameLink(r.loser, 'fr-loser', r.loserId, ctx));
-    var lch = doc.createElement('span');
-    lch.className = 'fr-down';
-    lch.textContent = ' −' + r.change;
-    line.appendChild(lch);
-    body.appendChild(line);
-
-    var sub = doc.createElement('div');
-    sub.className = 'feed-result__sub';
-    var mapTag = doc.createElement('span');
-    mapTag.className = 'fr-map';
-    mapTag.textContent = r.map;
-    sub.appendChild(mapTag);
+    // right side: map over turns, centred across both rows so it belongs to
+    // the game rather than either player; time in its own column
+    var meta = doc.createElement('div');
+    meta.className = 'fr-meta';
+    var where = doc.createElement('span');
+    where.className = 'fr-where';
+    where.title = r.map + (r.turns != null ? ' · ' + r.turns + ' turns' : '');
+    var mapName = doc.createElement('span');
+    mapName.className = 'fr-map';
+    mapName.textContent = r.map;
+    where.appendChild(mapName);
     if (r.turns != null) {
-      sub.appendChild(doc.createTextNode(' ' + r.turns + ' Turns'));
+      var turns = doc.createElement('span');
+      turns.className = 'fr-turns';
+      turns.textContent = r.turns + (r.turns === 1 ? ' TURN' : ' TURNS');
+      where.appendChild(turns);
     }
-    var go = doc.createElement('span');
-    go.className = 'fr-go';
-    go.textContent = '↗';
-    go.setAttribute('aria-hidden', 'true');
-    sub.appendChild(go);
-    body.appendChild(sub);
+    meta.appendChild(where);
+    var when = doc.createElement('span');
+    when.className = 'fr-when';
+    attachFeedTime(when, r.date, doc);
+    meta.appendChild(when);
 
-    item.appendChild(body);
-    attachFeedTime(item, r.date, doc);
+    function side(name, id, cls, swing) {
+      var row = doc.createElement('div');
+      row.className = cls;
+      row.appendChild(nameLink(name, 'fr-name', id, ctx));
+      var sw = doc.createElement('span');
+      sw.className = 'fr-swing';
+      sw.textContent = swing;
+      row.appendChild(sw);
+      return row;
+    }
+
+    item.appendChild(board);
+    item.appendChild(meta);
     return item;
+
   }
 
   /* league changes: ceremony card — name + PROMOTED TO / RELEGATED TO, the new
      league big and metallic beneath, card washed in the league's metal.
      rank promotions: interim compact style (distinct treatment being designed). */
+  /* 'GOLD → ORICHALCUM': the old value small and faded, the new one big.
+     A league's old value is a small chip in that league's metal. */
+  function fromTo(doc, prev, next, wordCls, prevLeagueKey) {
+    var wrap = doc.createElement('span');
+    wrap.className = 'fh-change';
+    if (prev) {
+      var from = doc.createElement('span');
+      from.className = 'fh-from' + (prevLeagueKey ? ' fh-from--league' : '');
+      from.textContent = String(prev).toUpperCase();
+      if (prevLeagueKey && window.Insignia && typeof window.Insignia.leagueStops === 'function') {
+        var st = window.Insignia.leagueStops(prevLeagueKey);
+        from.style.background = 'linear-gradient(120deg, ' + st[0] + ', ' + st[1] + ' 55%, ' + st[2] + ')';
+        // dark text on bright metals, light text on dark ones
+        var h = st[1].replace('#', '');
+        var lum = 0.299 * parseInt(h.slice(0, 2), 16) + 0.587 * parseInt(h.slice(2, 4), 16) + 0.114 * parseInt(h.slice(4, 6), 16);
+        from.style.color = lum > 140 ? '#15161A' : '#F2F4F6';
+      }
+      wrap.appendChild(from);
+      var arrow = doc.createElement('span');
+      arrow.className = 'fh-arrow';
+      arrow.setAttribute('aria-label', 'to');
+      arrow.textContent = '→';
+      wrap.appendChild(arrow);
+    }
+    var word = doc.createElement('span');
+    word.className = 'fh-word ' + wordCls;
+    word.textContent = next;
+    wrap.appendChild(word);
+    return wrap;
+  }
+
   function buildHonorItem(g, ctx) {
     var doc = ctxDoc(ctx);
     var div = doc.createElement('div');
@@ -302,42 +400,21 @@
     if (g.kind === 'ascension' || g.kind === 'demotion') {
       div.className = 'feed-item feed-item--honor feed-item--league lg-' + (g.leagueKey || 'steel');
 
-      var body = doc.createElement('div');
-      body.className = 'fh-body';
-
-      var line = doc.createElement('div');
-      line.className = 'fh-line';
       var mark = doc.createElement('span');
       mark.className = 'fh-mark';
       mark.textContent = g.kind === 'ascension' ? '▲' : '▼';
-      line.appendChild(mark);
-      line.appendChild(clanTagImg(doc));
-      line.appendChild(nameLink(g.playerName, 'fh-name', g.playerId, ctx));
-      var action = doc.createElement('span');
-      action.className = 'fh-action';
-      action.textContent = g.kind === 'ascension' ? 'PROMOTED TO' : 'RELEGATED TO';
-      line.appendChild(action);
-      body.appendChild(line);
-
-      var word = doc.createElement('div');
-      word.className = 'fh-league-word';
-      word.textContent = (g.leagueName || '').toUpperCase() + ' LEAGUE';
-      body.appendChild(word);
-
-      var sub = doc.createElement('div');
-      sub.className = 'feed-result__sub';
-      sub.textContent = g.kind === 'ascension'
-        ? 'reached ' + g.boundary + ' ELO'
-        : 'fell below ' + g.boundary + ' ELO';
-      body.appendChild(sub);
-
-      div.appendChild(body);
+      mark.setAttribute('aria-label', g.kind === 'ascension' ? 'Promoted to' : 'Relegated to');
+      div.appendChild(mark);
+      div.appendChild(clanTagImg(doc));
+      div.appendChild(nameLink(g.playerName, 'fh-name', g.playerId, ctx));
+      div.appendChild(fromTo(doc, g.prevLeagueName, (g.leagueName || '').toUpperCase(),
+        'fh-league-word', g.prevLeagueKey));
       attachFeedTime(div, g.date, doc);
       return div;
     }
 
-    // rank promotion: certificate card in M'Hunters steel — shield large,
-    // ACHIEVED THE RANK OF, rank word in the engraved-steel wordmark gradient
+    // rank promotion: certificate card in M'Hunters steel — new shield,
+    // name, then OLD RANK → NEW RANK in the engraved-steel wordmark gradient
     div.className = 'feed-item feed-item--honor feed-item--rank';
 
     var badge = doc.createElement('span');
@@ -348,41 +425,21 @@
     } catch (err) { /* badge optional */ }
     div.appendChild(badge);
 
-    var pbody = doc.createElement('div');
-    pbody.className = 'fh-body';
-    var pline = doc.createElement('div');
-    pline.className = 'fh-line';
-    var star = doc.createElement('span');
-    star.className = 'fh-mark fh-mark--star';
-    star.textContent = '★';
-    pline.appendChild(star);
-    pline.appendChild(clanTagImg(doc));
-    pline.appendChild(nameLink(g.playerName, 'fh-name', g.playerId, ctx));
-    var paction = doc.createElement('span');
-    paction.className = 'fh-action';
-    paction.textContent = 'ACHIEVED THE RANK OF';
-    pline.appendChild(paction);
-    pbody.appendChild(pline);
-
-    var rword = doc.createElement('div');
-    rword.className = 'fh-rank-word';
-    rword.textContent = (g.rankName || '').toUpperCase();
-    pbody.appendChild(rword);
-
-    var psub = doc.createElement('div');
-    psub.className = 'feed-result__sub';
-    psub.textContent = g.threshold + ' career wins';
-    pbody.appendChild(psub);
-
-    div.appendChild(pbody);
+    div.appendChild(clanTagImg(doc));
+    div.appendChild(nameLink(g.playerName, 'fh-name', g.playerId, ctx));
+    div.appendChild(fromTo(doc, g.prevRankName, (g.rankName || '').toUpperCase(), 'fh-rank-word', null));
     attachFeedTime(div, g.date, doc);
     return div;
   }
 
   window.FeedItems = {
     feedTime: feedTime,
+    feedStamp: feedStamp,
     buildResultItem: buildResultItem,
     buildHonorItem: buildHonorItem,
+    buildDayHeader: buildDayHeader,
+    dayKey: dayKey,
+    dayLabel: dayLabel,
     formatGazetteDate: formatGazetteDate,
     gazetteKindMarker: gazetteKindMarker,
     nameLink: nameLink,

@@ -21,9 +21,6 @@
      Pure helpers (no DOM — testable in node)
      ------------------------------------------------------------ */
 
-  var MONTHS_FULL = ['JANUARY', 'FEBRUARY', 'MARCH', 'APRIL', 'MAY', 'JUNE',
-                     'JULY', 'AUGUST', 'SEPTEMBER', 'OCTOBER', 'NOVEMBER', 'DECEMBER'];
-
   function tsOf(iso) {
     var t = Date.parse(iso);
     return isNaN(t) ? 0 : t;
@@ -46,27 +43,6 @@
       return (b.at - a.at) || (a.pri - b.pri) || (a.ord - b.ord);
     });
     return items;
-  }
-
-  /* ISO date → 'YYYY-MM' month key ('' when unparseable) */
-  function monthKey(iso) {
-    var m = /^(\d{4})-(\d{2})/.exec(String(iso || ''));
-    return m ? m[1] + '-' + m[2] : '';
-  }
-
-  /* 'YYYY-MM' → 'JULY 2026' month-divider label */
-  function monthLabel(key) {
-    var m = /^(\d{4})-(\d{2})$/.exec(String(key || ''));
-    if (!m) return '';
-    var mo = parseInt(m[2], 10);
-    if (mo < 1 || mo > 12) return '';
-    return MONTHS_FULL[mo - 1] + ' ' + m[1];
-  }
-
-  /* month divider goes BETWEEN consecutive rendered items — never above the first */
-  function monthChanged(prevIso, iso) {
-    if (!prevIso) return false;
-    return monthKey(prevIso) !== monthKey(iso);
   }
 
   /* chunking math: index one past the last row of the next chunk */
@@ -137,18 +113,6 @@
     eq(chunkEnd(0, 60, 25), 25, 'short stream: single partial chunk');
     eq(Math.ceil(1300 / 60), 22, '1,300 items → 22 chunks');
 
-    // month dividers
-    eq(monthChanged(null, '2026-07-09'), false, 'divider: never above the first item');
-    eq(monthChanged('2026-07-30T10:00:00Z', '2026-07-01T10:00:00Z'), false,
-      'divider: same month → none');
-    eq(monthChanged('2026-07-02T10:00:00Z', '2026-06-28T10:00:00Z'), true,
-      'divider: month rolls over');
-    eq(monthChanged('2026-01-05T10:00:00Z', '2025-12-28T10:00:00Z'), true,
-      'divider: year boundary');
-    eq(monthKey('2026-07-09T01:02:03Z'), '2026-07', 'monthKey from ISO');
-    eq(monthLabel('2026-07'), 'JULY 2026', "month label 'JULY 2026'");
-    eq(monthLabel('2025-12'), 'DECEMBER 2025', "month label 'DECEMBER 2025'");
-    eq(monthLabel('junk'), '', 'month label junk → empty');
 
     console.log(failures === 0
       ? 'ALL ' + checks + ' CHECKS PASSED'
@@ -168,7 +132,7 @@
   var state = {
     stream: [],        // merged wrappers, newest first
     rendered: 0,       // wrappers already in the DOM
-    lastIso: null,     // date of the last rendered item (month dividers)
+    lastDay: '',       // day of the last rendered item (day headers)
     ctx: null,         // shared FeedItems context
     io: null,
     ioFallback: false, // sentinel acts as a LOAD MORE button
@@ -188,13 +152,6 @@
       ':where(.feed-skel){display:block;height:40px;margin:8px 0;border-radius:4px;',
       'background:var(--line-soft,#222429);animation:feed-sk 1.2s ease-in-out infinite}',
       '@keyframes feed-sk{50%{opacity:.4}}',
-      /* 'JULY 2026' mono divider — games.css month-marker look, inside #feed-list */
-      ':where(#feed-list .feed-month){display:flex;align-items:center;gap:10px;',
-      'padding:18px 0 8px;font-family:"IBM Plex Mono",monospace;font-weight:600;',
-      'font-size:10px;letter-spacing:.18em;text-transform:uppercase;',
-      'color:var(--dim,#8A919C);cursor:default}',
-      ':where(#feed-list .feed-month)::after{content:"";flex:1;height:1px;',
-      'background:var(--line-soft,#222429)}',
       ':where(.load-error){font-family:"IBM Plex Mono",monospace;color:var(--muted,#9AA1AB);',
       'text-align:center;padding:2em 1em;letter-spacing:.05em}',
       ':where(.load-error) a{color:var(--red,#D22730)}',
@@ -259,15 +216,7 @@
     };
   }
 
-  /* ---------- stream rendering (chunked + month dividers) ---------- */
-
-  function buildMonthDivider(iso) {
-    var div = doc.createElement('div');
-    div.className = 'feed-month';
-    div.textContent = monthLabel(monthKey(iso));
-    div.setAttribute('role', 'separator');
-    return div;
-  }
+  /* ---------- stream rendering (chunked + day headers) ---------- */
 
   function updateSentinel() {
     var s = $('feed-sentinel');
@@ -287,11 +236,12 @@
     var frag = doc.createDocumentFragment();
     for (var i = state.rendered; i < end; i++) {
       var it = state.stream[i];
-      if (monthChanged(state.lastIso, it.date)) frag.appendChild(buildMonthDivider(it.date));
+      var day = window.FeedItems.dayKey(it.date);
+      if (day && day !== state.lastDay) frag.appendChild(window.FeedItems.buildDayHeader(it.date, state.ctx));
+      state.lastDay = day;
       frag.appendChild(it.honor
         ? window.FeedItems.buildHonorItem(it.honor, state.ctx)
         : window.FeedItems.buildResultItem(it.result, state.ctx));
-      state.lastIso = it.date;
     }
     list.appendChild(frag);
     state.rendered = end;
@@ -371,7 +321,7 @@
     // the full archive (allResults); capped results is a safety net only
     state.stream = mergeStream(data.gazette, data.allResults || data.results || []);
     state.rendered = 0;
-    state.lastIso = null;
+    state.lastDay = '';
     state.loaded = true;
     renderMasthead(data.meta);
     var list = $('feed-list');

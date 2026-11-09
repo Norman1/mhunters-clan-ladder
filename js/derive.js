@@ -247,6 +247,8 @@
             playerName: name,
             rankIndex: rankAfter,
             rankName: RANK_NAMES[rankAfter],
+            prevRankIndex: rankBefore,
+            prevRankName: RANK_NAMES[rankBefore],
             threshold: RANK_THRESHOLDS[rankAfter]
           });
         }
@@ -264,6 +266,8 @@
               playerName: name,
               leagueKey: LEAGUES[leagueAfter].key,
               leagueName: LEAGUES[leagueAfter].name,
+              prevLeagueKey: LEAGUES[leagueBefore].key,
+              prevLeagueName: LEAGUES[leagueBefore].name,
               boundary: LEAGUES[leagueAfter].lo
             });
           } else {
@@ -276,6 +280,8 @@
               playerName: name,
               leagueKey: LEAGUES[leagueAfter].key,
               leagueName: LEAGUES[leagueAfter].name,
+              prevLeagueKey: LEAGUES[leagueBefore].key,
+              prevLeagueName: LEAGUES[leagueBefore].name,
               boundary: LEAGUES[leagueBefore].lo
             });
           }

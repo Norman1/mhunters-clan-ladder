@@ -798,7 +798,12 @@
     (gazette || []).forEach(function (g) { items.push({ at: tsOf(g.date), honor: g }); });
     (results || []).forEach(function (r) { items.push({ at: tsOf(r.date), result: r }); });
     items.sort(function (a, b) { return b.at - a.at; });
+    var lastDay = '';
     items.slice(0, 30).forEach(function (it) {
+      var iso = it.honor ? it.honor.date : it.result.date;
+      var day = window.FeedItems.dayKey(iso);
+      if (day && day !== lastDay) list.appendChild(window.FeedItems.buildDayHeader(iso, ctx));
+      lastDay = day;
       list.appendChild(it.honor
         ? window.FeedItems.buildHonorItem(it.honor, ctx)
         : window.FeedItems.buildResultItem(it.result, ctx));

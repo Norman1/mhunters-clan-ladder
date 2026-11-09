@@ -793,13 +793,27 @@ tr.row--hit td { animation: row-flash 1.6s ease-out 1; }
   white-space: nowrap;
 }
 
-/* dated stamps carry both forms; wide screens show the full date,
-   phones the compact 'JUL 10' */
-#feed-list .ft-brief { display: none; }
-@media (max-width: 899px) {
-  #feed-list .ft-full { display: none; }
-  #feed-list .ft-brief { display: inline; }
+/* day headers ('TODAY' / 'YESTERDAY' / 'NOV 8') above each day's items;
+   rows under them only carry a relative stamp when under 24h old */
+#feed-list .feed-day {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 0 6px;
+  font-family: var(--font-mono);
+  font-weight: 600;
+  font-size: 10px;
+  letter-spacing: 0.18em;
+  color: var(--dim);
+  cursor: default;
 }
+#feed-list .feed-day::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: var(--line-soft);
+}
+#feed-list .feed-day:first-child { padding-top: 8px; }
 
 #feed-list .feed-item {
   position: relative;
@@ -827,14 +841,6 @@ tr.row--hit td { animation: row-flash 1.6s ease-out 1; }
 }
 #feed-list a.feed-item:hover,
 #feed-list .feed-item--result:hover { background: #1B1D22; }
-#feed-list .fr-go {
-  margin-left: 7px;
-  font-size: 10px;
-  color: var(--dim);
-  transition: color var(--speed) ease;
-}
-#feed-list a.feed-item:hover .fr-go,
-#feed-list .feed-item--result:hover .fr-go { color: var(--red); }
 
 #feed-list .gz-kind { flex: none; font-size: 10px; width: 12px; text-align: center; }
 #feed-list .gz-kind--promotion { color: var(--red); }
@@ -856,6 +862,41 @@ tr.row--hit td { animation: row-flash 1.6s ease-out 1; }
 
 /* league ceremony banner: FULLY OPAQUE metal — the row IS the league's metal.
    name + PROMOTED TO / RELEGATED TO, league word big beneath, engraved. */
+#feed-list .feed-item--honor { flex-wrap: wrap; row-gap: 4px; }
+#feed-list .fh-name {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+/* OLD → NEW: old value small and faded, new value big */
+#feed-list .fh-change {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  white-space: nowrap;
+}
+#feed-list .fh-change + .feed-time { margin-left: 6px; align-self: center; margin-top: 0; }
+#feed-list .fh-from {
+  font-family: var(--font-mono);
+  font-weight: 600;
+  font-size: 9.5px;
+  letter-spacing: 0.12em;
+  color: var(--lg-sub, var(--muted));
+}
+#feed-list .fh-from--league {
+  padding: 2px 6px;
+  border-radius: 3px;
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.35), 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+#feed-list .fh-arrow { font-size: 12px; color: var(--lg-sub, var(--dim)); }
+#feed-list .fh-word {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1;
+}
 #feed-list .feed-item--league {
   border-radius: 4px;
   border: 1px solid var(--lg-c);
@@ -876,18 +917,9 @@ tr.row--hit td { animation: row-flash 1.6s ease-out 1; }
   opacity: 0.82;
 }
 #feed-list .fh-league-word {
-  margin: 3px 0 1px 18px;
-  font-family: var(--font-display);
-  font-weight: 700;
-  font-size: 19px;
-  line-height: 1.05;
   letter-spacing: 0.14em;
   color: var(--lg-t);
   text-shadow: 0 1px 0 var(--lg-hi, transparent);
-}
-#feed-list .feed-item--league .feed-result__sub {
-  margin-left: 18px;
-  color: var(--lg-sub);
 }
 
 /* rank promotion: certificate card in M'Hunters steel — double silver frame,
@@ -903,22 +935,16 @@ tr.row--hit td { animation: row-flash 1.6s ease-out 1; }
   margin: 5px 0;
 }
 #feed-list .fh-badge--cert { flex: none; line-height: 0; }
-#feed-list .fh-mark--star { color: var(--red); }
 #feed-list .feed-item--rank .fh-name { color: var(--white); }
 #feed-list .feed-item--rank .fh-action { color: var(--silver); opacity: 0.9; }
 #feed-list .fh-rank-word {
-  margin: 3px 0 1px 18px;
-  font-family: var(--font-display);
-  font-weight: 700;
-  font-size: 19px;
-  line-height: 1.05;
   letter-spacing: 0.16em;
   background: linear-gradient(180deg, #EDF0F4, #98A1AC 55%, #DDE3EA);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-#feed-list .feed-item--rank .feed-result__sub { margin-left: 18px; }
+#feed-list .feed-item--rank .fh-from { color: var(--muted); }
 
 /* the twelve tiers — a/b/c = banner gradient stops · t = text · sub = secondary
    text · hi = engraving bevel under the big word · time = timestamp color */
@@ -956,30 +982,89 @@ tr.row--hit td { animation: row-flash 1.6s ease-out 1; }
   #feed-list .feed-item--league.lg-plasma { animation: none; }
 }
 
-/* results */
-#feed-list .feed-result { min-width: 0; flex: 1; }
-#feed-list .feed-result__line { color: var(--white); }
-#feed-list .fr-winner { font-weight: 600; }
-#feed-list .fr-up   { color: var(--red); font-weight: 600; }
-#feed-list .fr-mid  { color: var(--dim); }
-#feed-list .fr-loser { color: var(--muted); }
-#feed-list .fr-down { color: #7E8B9B; }
-#feed-list .feed-result__sub {
-  color: var(--dim);
-  font-size: 11px;
-  letter-spacing: 0.05em;
-  margin-top: 3px;
+/* results: scoreboard — winner bright with a red bar on top, loser dimmed
+   beneath; time, map, and turns stacked on the right */
+#feed-list .feed-item--result { gap: 12px; }
+#feed-list .fr-board {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
 }
-#feed-list .fr-map {
-  display: inline-block;
-  border: 1px solid var(--line);
-  border-radius: 3px;
-  padding: 1px 6px;
-  margin-right: 6px;
+#feed-list .fr-side {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 10px;
+  padding-left: 9px;
+}
+#feed-list .fr-side--win { color: var(--white); font-weight: 700; box-shadow: inset 2px 0 0 var(--red); }
+#feed-list .fr-side--lose { color: var(--muted); }
+#feed-list .fr-name {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+#feed-list .fr-swing {
+  flex: none;
+  font-family: var(--font-mono);
+  font-size: 11.5px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+#feed-list .fr-side--win .fr-swing { color: var(--red); }
+#feed-list .fr-side--lose .fr-swing { color: #7E8B9B; }
+#feed-list .fr-meta {
+  /* fixed column so every row's swing numbers line up */
+  flex: 0 0 clamp(130px, 38%, 230px);
+  min-width: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+}
+#feed-list .fr-where {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3px;
   font-size: 10px;
   letter-spacing: 0.06em;
-  color: var(--muted);
+  line-height: 1.2;
+}
+#feed-list .fr-map {
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  padding: 1px 7px;
+  border: 1px solid var(--line);
+  border-radius: 3px;
   background: rgba(255, 255, 255, 0.02);
+  color: var(--muted);
+}
+#feed-list .fr-turns {
+  font-size: 9px;
+  letter-spacing: 0.12em;
+  color: var(--dim);
+}
+#feed-list .fr-when { flex: 0 0 6.5ch; text-align: right; }
+#feed-list .fr-when .feed-time { margin: 0; white-space: nowrap; }
+/* earlier-year items: the year sits under the day */
+#feed-list .feed-time__year { display: block; margin-top: 2px; opacity: 0.7; }
+@media (max-width: 560px) {
+  /* phones: give the map pill room; names are short and ellipsize anyway */
+  #feed-list .fr-meta { flex-basis: 54%; gap: 8px; }
+  #feed-list .feed-item--result { gap: 8px; }
 }
 
 /* ----------------------------- gazette ----------------------------- */
