@@ -48,9 +48,6 @@
 
     <div class="actions-head">
       <h1 class="page-title">ACTIONS</h1>
-      <p>Clan members enroll automatically each hour, at :17.</p>
-      <p>Each action opens a prepared GitHub issue. Review it and click <strong>Submit new issue</strong>
-        on GitHub to apply the change. Repository write access is required; otherwise ask a maintainer.</p>
     </div>
 
     <!-- ===================== PLAYER ACTIONS ===================== -->
@@ -58,7 +55,7 @@
 
       <!-- ---------- SET GAME CAP ---------- -->
       <section class="panel af" aria-labelledby="cap-title">
-        <h2 class="af__title" id="cap-title">SET GAME CAP</h2>
+        <h2 class="af__title" id="cap-title">SET GAME CAP OR PAUSE PARTICIPATION</h2>
         <form class="af__form" id="form-cap" novalidate autocomplete="off">
           <div class="af__field">
             <label class="af__label" for="cap-player">PLAYER</label>
@@ -91,7 +88,7 @@
       <section class="panel af" aria-labelledby="guest-title">
         <h2 class="af__title" id="guest-title">ADD GUEST PLAYER</h2>
         <form class="af__form" id="form-guest" novalidate autocomplete="off">
-          <p>Admit a friend permanently, even outside the clan. Their rating and history are preserved.</p>
+          <p>Add a player outside the M'Hunters clan.</p>
           <div class="af__field">
             <label class="af__label" for="guest-id">WAR.APP PLAYER ID</label>
             <input class="af__input" id="guest-id" type="text" inputmode="numeric" placeholder="PLAYER ID"
@@ -120,9 +117,7 @@
       <section class="panel af" aria-labelledby="revoke-title">
         <h2 class="af__title" id="revoke-title">REMOVE GUEST PLAYER</h2>
         <form class="af__form" id="form-revoke" novalidate autocomplete="off">
-          <p>Revoke permanent guest admission. Players outside the clan stop receiving new games;
-            clan members stay eligible. Rating, history and existing games are preserved.
-            To pause instead, use Set Game Cap — Pause (0).</p>
+          <p>Remove a player outside the M'Hunters clan.</p>
           <div class="af__field">
             <label class="af__label" for="revoke-player">EXISTING GUEST</label>
             <input class="af__input" id="revoke-player" type="text" placeholder="GUEST NAME OR ID"

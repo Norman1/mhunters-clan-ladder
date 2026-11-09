@@ -6,7 +6,7 @@
      window.Insignia (js/insignia.js) — Insignia.svg(ri,'steel',22),
        Insignia.leagueColor(key) for the league metal chips
    DOM contract (rules.html):
-     #ranks-body · #leagues-body · .cmd/.cmd-copy blocks ·
+     #ranks-body · #leagues-body ·
      #stat-active · #stat-games · #stat-updated
    The tables render immediately with '—' counts; live counts
    fill in when the data arrives. Data failure keeps the dashes.
@@ -291,62 +291,12 @@
     body.appendChild(frag);
   }
 
-  /* ---------- click-to-copy command blocks ---------- */
-
-  function copyText(text) {
-    if (navigator.clipboard && navigator.clipboard.writeText) {
-      return navigator.clipboard.writeText(text);
-    }
-    return new Promise(function (resolve, reject) {
-      var ta = doc.createElement('textarea');
-      ta.value = text;
-      ta.setAttribute('readonly', '');
-      ta.style.position = 'fixed';
-      ta.style.left = '-9999px';
-      doc.body.appendChild(ta);
-      ta.select();
-      try {
-        if (doc.execCommand('copy')) resolve();
-        else reject(new Error('execCommand copy refused'));
-      } catch (e) {
-        reject(e);
-      } finally {
-        doc.body.removeChild(ta);
-      }
-    });
-  }
-
-  function wireCopyButtons() {
-    var btns = doc.querySelectorAll('.cmd-copy');
-    Array.prototype.forEach.call(btns, function (btn) {
-      var timer = null;
-      btn.addEventListener('click', function () {
-        var code = btn.parentNode ? btn.parentNode.querySelector('code') : null;
-        var text = code ? code.textContent : '';
-        var done = function (label, copied) {
-          btn.textContent = label;
-          btn.classList.toggle('copied', copied);
-          if (timer) clearTimeout(timer);
-          timer = setTimeout(function () {
-            btn.textContent = 'COPY';
-            btn.classList.remove('copied');
-          }, 1400);
-        };
-        copyText(text).then(
-          function () { done('COPIED', true); },
-          function () { done('FAILED', false); }
-        );
-      });
-    });
-  }
-
   /* ---------- main ---------- */
 
   function init() {
     // Tables render immediately (counts pending) — page works without data.
     renderRanks(null);
     renderLeagues(null);
-    wireCopyButtons();
 
     if (!window.LadderData || typeof window.LadderData.load !== 'function') {
       console.warn('[rules] window.LadderData.load is missing — is js/derive.js loaded before js/rules.js?');
