@@ -415,7 +415,7 @@
     }
 
     // rank promotion: certificate card in M'Hunters steel — new shield,
-    // 'NAME is now a RANK' + the win count that earned it
+    // 'NAME has achieved the rank of RANK' + the win count that earned it
     div.className = 'feed-item feed-item--honor feed-item--rank';
 
     var badge = doc.createElement('span');
@@ -428,13 +428,13 @@
 
     div.appendChild(clanTagImg(doc));
     div.appendChild(nameLink(g.playerName, 'fh-name', g.playerId, ctx));
-    // reads as a sentence: NAME is now a RANK, then the wins that earned it
+    // reads as a sentence: NAME has achieved the rank of RANK, then the wins
     var rank = String(g.rankName || '');
     var change = doc.createElement('span');
     change.className = 'fh-change fh-change--rank';
     var says = doc.createElement('span');
     says.className = 'fh-says';
-    says.textContent = 'is now ' + (/^[aeiou]/i.test(rank) ? 'an' : 'a');
+    says.textContent = 'has achieved the rank of';
     change.appendChild(says);
     var word = doc.createElement('span');
     word.className = 'fh-word fh-rank-word';

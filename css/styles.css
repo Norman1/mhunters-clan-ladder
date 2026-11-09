@@ -944,14 +944,15 @@ tr.row--hit td { animation: row-flash 1.6s ease-out 1; }
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-/* rank sentence: name sits next to 'is now a', rank big, wins after */
+/* rank sentence: name, 'has achieved the rank of', rank big, wins after */
 #feed-list .fh-change--rank { margin-left: 0; flex: 1; min-width: 0; gap: 8px; }
 #feed-list .fh-change--rank .fh-wins { margin-left: auto; }
 @media (max-width: 560px) {
-  /* phones: name + date on top, 'is now a RANK · WINS' on its own line */
+  /* phones: name + date on top, 'has achieved the rank of RANK · WINS' on its own line */
   #feed-list .fh-change--rank { order: 5; flex-basis: 100%; padding-left: 4px; }
   #feed-list .feed-item--rank .feed-time { margin-left: auto; align-self: center; margin-top: 0; }
-  #feed-list .feed-item--rank .fh-rank-word { min-width: 0; overflow: hidden; text-overflow: ellipsis; }
+  #feed-list .fh-change--rank { flex-wrap: wrap; row-gap: 6px; }
+  #feed-list .fh-change--rank .fh-says { flex-basis: 100%; }
 }
 #feed-list .fh-says {
   font-size: 12px;
