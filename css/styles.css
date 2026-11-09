@@ -1258,14 +1258,27 @@ tr.row--hit td { animation: row-flash 1.6s ease-out 1; }
   .page-title { font-size: 20px; }
   .search { width: 150px; padding: 7px 10px; font-size: 10.5px; }
 
-  /* tightened table (paddings/widths sized so all 8 columns fit a 375px
-     viewport without horizontal scroll) */
+  /* tightened table: everything through RATING fits a 320px+ phone; the
+     last two columns may scroll */
   .standings-table th { padding: 9px 4px; font-size: 9px; letter-spacing: 0.1em; }
   .standings-table td { padding: 0 4px; }
   .standings-table td.c-pos { width: 28px; min-width: 26px; font-size: 13px; }
   .standings-table td.c-insignia { width: 32px; min-width: 30px; }
   .standings-table td.c-clan { width: 26px; min-width: 24px; }
-  .standings-table td.c-player { font-size: 15px; min-width: 162px; }
+  /* long names wrap to a second line instead of pushing RATING off-screen
+     (names are never truncated) */
+  .standings-table td.c-player {
+    font-size: 15px;
+    width: auto;
+    max-width: none;
+    min-width: 0;
+    white-space: normal;
+    overflow-wrap: break-word;
+    line-height: 1.12;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+  .standings-table td.c-player a.plink { display: inline-block; max-width: 8.5em; vertical-align: middle; }
   .standings-table td.c-rating { width: 56px; min-width: 44px; font-size: 15.5px; }
   .standings-table .c-delta { width: 30px; min-width: 24px; font-size: 10.5px; }
   /* "LAST 100" may wrap to two lines so the column can shrink to its cells */
