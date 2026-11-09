@@ -58,7 +58,7 @@
     "last_opponent": "71148639731"
   },
   "1477223682": {
-    "elo": 1000,
+    "elo": 995,
     "missed_games": 0,
     "in_clan": false,
     "name": "koning",
@@ -69,8 +69,8 @@
       "name": "Undisputed",
       "icon_v": "439519665.png"
     },
-    "last_assigned_at": "2026-11-08T16:42:37.796Z",
-    "last_opponent": "9780712014"
+    "last_assigned_at": "2026-11-09T17:22:21.018Z",
+    "last_opponent": "71155120841"
   },
   "1822261234": {
     "name": "fifi",
@@ -154,27 +154,27 @@
   },
   "79105823914": {
     "name": "krinid",
-    "elo": 958,
-    "game_cap": 2,
-    "missed_games": 0,
-    "last_opponent": "9780712014",
-    "last_assigned_at": "2026-11-09T00:52:34.720Z"
-  },
-  "88110265403": {
-    "name": "Crouton",
-    "elo": 1322,
-    "game_cap": 2,
-    "missed_games": 0,
-    "last_opponent": "79105823914",
-    "last_assigned_at": "2026-11-06T15:12:12.742Z"
-  },
-  "84143567121": {
-    "name": "Poldi",
-    "elo": 1283,
+    "elo": 954,
     "game_cap": 2,
     "missed_games": 0,
     "last_opponent": "71155120841",
-    "last_assigned_at": "2026-11-05T18:43:50.190Z"
+    "last_assigned_at": "2026-11-09T17:22:19.833Z"
+  },
+  "88110265403": {
+    "name": "Crouton",
+    "elo": 1340,
+    "game_cap": 2,
+    "missed_games": 0,
+    "last_opponent": "84143567121",
+    "last_assigned_at": "2026-11-09T17:22:18.578Z"
+  },
+  "84143567121": {
+    "name": "Poldi",
+    "elo": 1265,
+    "game_cap": 2,
+    "missed_games": 0,
+    "last_opponent": "88110265403",
+    "last_assigned_at": "2026-11-09T17:22:22.204Z"
   },
   "23154545458": {
     "name": "Light",
@@ -404,11 +404,11 @@
   },
   "71155120841": {
     "name": "Ventura",
-    "elo": 1324,
+    "elo": 1333,
     "game_cap": 3,
     "missed_games": 0,
-    "last_assigned_at": "2026-11-08T10:18:21.617Z",
-    "last_opponent": "16127869941"
+    "last_assigned_at": "2026-11-09T17:22:23.981Z",
+    "last_opponent": "1477223682"
   },
   "6411877352": {
     "name": "Kratos",
@@ -638,20 +638,25 @@
     "name": "Acuna42",
     "elo": 764,
     "game_cap": 2,
-    "missed_games": 0,
+    "missed_games": 2,
     "last_assigned_at": "2026-11-09T07:57:19.219Z",
-    "last_opponent": "79105823914"
+    "last_opponent": "95151481274"
   },
   "53134900057": {
     "name": "extelon",
     "elo": 992,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-07-09T14:56:04.831Z",
+    "last_assigned_at": "2026-11-09T17:22:22.794Z",
     "last_opponent": "88110265403",
     "in_clan": false,
     "departed_at": "2026-07-09T17:55:01.762Z",
-    "guest": true
+    "guest": true,
+    "clan": {
+      "id": "671",
+      "name": "Undisputed",
+      "icon_v": "439519665.png"
+    }
   },
   "4379764745": {
     "name": "Malatya44",
@@ -773,7 +778,8 @@
       "name": "Undisputed",
       "icon_v": "439519665.png"
     },
-    "last_assigned_at": "2026-11-09T07:57:19.219Z"
+    "last_assigned_at": "2026-11-09T17:22:20.429Z",
+    "last_opponent": "9780712014"
   },
   "4957355558": {
     "elo": 1000,
@@ -781,7 +787,13 @@
     "in_clan": false,
     "name": "tjerk",
     "game_cap": 2,
-    "guest": true
+    "guest": true,
+    "clan": {
+      "id": "671",
+      "name": "Undisputed",
+      "icon_v": "439519665.png"
+    },
+    "last_assigned_at": "2026-11-09T17:22:20.429Z"
   },
   "94113453772": {
     "elo": 1000,
@@ -789,7 +801,13 @@
     "in_clan": false,
     "name": "doopadoo",
     "game_cap": 2,
-    "guest": true
+    "guest": true,
+    "clan": {
+      "id": "671",
+      "name": "Undisputed",
+      "icon_v": "439519665.png"
+    },
+    "last_assigned_at": "2026-11-09T17:22:23.981Z"
   },
   "7992098821": {
     "elo": 1000,
@@ -797,7 +815,13 @@
     "in_clan": false,
     "name": "5p4c3m4n",
     "game_cap": 2,
-    "guest": true
+    "guest": true,
+    "clan": {
+      "id": "671",
+      "name": "Undisputed",
+      "icon_v": "439519665.png"
+    },
+    "last_assigned_at": "2026-11-09T17:22:21.604Z"
   },
   "38118104339": {
     "elo": 1000,
@@ -805,7 +829,13 @@
     "in_clan": false,
     "name": "ouchudied",
     "game_cap": 2,
-    "guest": true
+    "guest": true,
+    "clan": {
+      "id": "671",
+      "name": "Undisputed",
+      "icon_v": "439519665.png"
+    },
+    "last_assigned_at": "2026-11-09T17:22:22.794Z"
   },
   "55103688501": {
     "elo": 1000,
@@ -813,7 +843,13 @@
     "in_clan": false,
     "name": "weus",
     "game_cap": 2,
-    "guest": true
+    "guest": true,
+    "clan": {
+      "id": "671",
+      "name": "Undisputed",
+      "icon_v": "439519665.png"
+    },
+    "last_assigned_at": "2026-11-09T17:22:21.604Z"
   },
   "57143563837": {
     "elo": 1000,
@@ -821,6 +857,12 @@
     "in_clan": false,
     "name": "slack",
     "game_cap": 2,
-    "guest": true
+    "guest": true,
+    "clan": {
+      "id": "671",
+      "name": "Undisputed",
+      "icon_v": "439519665.png"
+    },
+    "last_assigned_at": "2026-11-09T17:22:23.385Z"
   }
 }
