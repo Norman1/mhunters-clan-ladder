@@ -170,7 +170,9 @@
 
     for (i = 0; i < decisive.length; i++) {
       g = decisive[i];
+      // winner's gain; loser's loss (games before the dynamic-K switch store only the gain)
       var change = typeof g.elo_change === 'number' ? g.elo_change : 0;
+      var loss = typeof g.elo_loss === 'number' ? g.elo_loss : change;
       var when = g.finished_at;
 
       var pair = [
@@ -195,6 +197,7 @@
         loser: playerName(g.loser_id),
         lRating: g.loser_id ? beforeRating[g.loser_id] : null,
         change: Math.abs(change),
+        loss: Math.abs(loss),
         map: mapName(g.template_id),
         templateId: resolveTemplateId(g.template_id),
         turns: (typeof g.turns === 'number' && g.turns >= 1) ? g.turns : null
@@ -205,23 +208,24 @@
         if (!pid) continue;
         var s = st(pid);
         var won = pair[k].won;
+        var delta = won ? change : loss;
         var oppId = pair[1 - k].pid || null;
 
         var leagueBefore = leagueIndexForElo(s.rating);
         var rankBefore = rankIndexForWins(s.wins);
 
-        s.rating += won ? change : -change;
+        s.rating += won ? delta : -delta;
         if (won) s.wins += 1; else s.losses += 1;
         if (s.rating > s.peak) { s.peak = s.rating; s.peakAt = when; }
         if (!s.firstIso) s.firstIso = when;
-        s.games.push({ won: won, change: change, at: ts(when) });
+        s.games.push({ won: won, change: delta, at: ts(when) });
         s.traj.push(s.rating);
         s.log.push({
           date: when,
           oppId: oppId,
           opp: playerName(oppId),
           won: won,
-          change: Math.abs(change),
+          change: Math.abs(delta),
           map: mapName(g.template_id),
           turns: (typeof g.turns === 'number' && g.turns >= 1) ? g.turns : null,
           gameId: g.game_id,
@@ -695,6 +699,7 @@
         winnerId: g.winner_id,
         loserId: g.loser_id,
         change: typeof g.elo_change === 'number' ? g.elo_change : 0,
+        loss: typeof g.elo_loss === 'number' ? g.elo_loss : (typeof g.elo_change === 'number' ? g.elo_change : 0),
         map: mapName(g.template_id),
         turns: (typeof g.turns === 'number' && g.turns >= 1) ? g.turns : null,
         gameId: g.game_id

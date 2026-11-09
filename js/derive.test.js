@@ -79,10 +79,12 @@ function recFor(pid) {
 }
 for (const g of decisiveRaw) {
   const change = typeof g.elo_change === 'number' ? g.elo_change : 0;
+  // dynamic-K games store the loser's own loss; older games reuse the gain
+  const loss = typeof g.elo_loss === 'number' ? g.elo_loss : change;
   for (const [pid, won] of [[g.winner_id, true], [g.loser_id, false]]) {
     if (!pid) continue;
     const r = recFor(pid);
-    r.rating += won ? change : -change;
+    r.rating += won ? change : -loss;
     if (won) r.wins++; else r.losses++;
     if (r.rating > r.peak) { r.peak = r.rating; r.peakIso = g.finished_at; }
     if (!r.firstIso) r.firstIso = g.finished_at;

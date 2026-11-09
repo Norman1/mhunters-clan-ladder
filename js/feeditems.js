@@ -315,8 +315,9 @@
     var board = doc.createElement('div');
     board.className = 'fr-board';
     board.appendChild(side(r.winner, r.winnerId, 'fr-side fr-side--win', '+' + r.change));
-    board.appendChild(side(r.loser, r.loserId, 'fr-side fr-side--lose', '−' + r.change));
-    item.setAttribute('aria-label', r.winner + ' beat ' + r.loser + ', ' + r.change + ' points, on ' + r.map);
+    var lost = (r.loss != null ? r.loss : r.change);
+    board.appendChild(side(r.loser, r.loserId, 'fr-side fr-side--lose', '−' + lost));
+    item.setAttribute('aria-label', r.winner + ' beat ' + r.loser + ', +' + r.change + ' / −' + lost + ' points, on ' + r.map);
 
     // right side: map over turns, centred across both rows so it belongs to
     // the game rather than either player; time in its own column

@@ -1,6 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 const { pollGameStatus, deleteGame } = require('./api');
+const { calculateElo, countDecisiveGames } = require('./rating');
 
 const PLAYERS_FILE = path.join(__dirname, '../data/players.json');
 const ACTIVE_GAMES_FILE = path.join(__dirname, '../data/active_games.json');
@@ -28,17 +29,6 @@ function apiTimeToIso(apiTime, fallbackIso) {
     if (mo < 1 || mo > 12 || day < 1 || day > 31 || hh > 23 || mm > 59 || ss > 59) return fallbackIso;
     const d = new Date(Date.UTC(yr, mo - 1, day, hh, mm, ss));
     return isNaN(d.getTime()) ? fallbackIso : d.toISOString();
-}
-
-function calculateElo(winnerElo, loserElo) {
-    const K = 40;
-    const expectedWinner = 1 / (1 + Math.pow(10, (loserElo - winnerElo) / 400));
-    const expectedLoser = 1 / (1 + Math.pow(10, (winnerElo - loserElo) / 400));
-
-    const newWinnerElo = Math.round(winnerElo + K * (1 - expectedWinner));
-    const newLoserElo = Math.round(loserElo + K * (0 - expectedLoser));
-
-    return { newWinnerElo, newLoserElo };
 }
 
 // --- Main Referee Logic ---
@@ -242,17 +232,22 @@ async function runReferee() {
 
                     if (players[winnerId] && players[loserId]) {
                         // Update ELO
-                        const { newWinnerElo, newLoserElo } = calculateElo(players[winnerId].elo, players[loserId].elo);
-
-                        const eloChange = newWinnerElo - players[winnerId].elo; // Positive value
+                        // K depends on each player's experience (games before this one)
+                        const { newWinnerElo, newLoserElo, gain, loss } = calculateElo(
+                            players[winnerId].elo,
+                            players[loserId].elo,
+                            countDecisiveGames(history, winnerId),
+                            countDecisiveGames(history, loserId)
+                        );
 
                         players[winnerId].elo = newWinnerElo;
                         players[loserId].elo = newLoserElo;
 
-                        console.log(`ELO Update: ${winnerId} (${newWinnerElo}) vs ${loserId} (${newLoserElo})`);
+                        console.log(`ELO Update: ${winnerId} (${newWinnerElo}, +${gain}) vs ${loserId} (${newLoserElo}, -${loss})`);
 
-                        // Save change for history (attach to history object later)
-                        game.elo_change = eloChange;
+                        // Save changes for history: winner's gain and loser's loss
+                        game.elo_change = gain;
+                        game.elo_loss = loss;
                     }
                 }
 
@@ -287,7 +282,8 @@ async function runReferee() {
                     // the game's actual end (its last turn), not our poll time
                     finished_at: apiTimeToIso(status.lastTurnTime, now.toISOString()),
                     template_id: game.template_id,
-                    elo_change: game.elo_change, // Undefined if draw
+                    elo_change: game.elo_change, // winner's gain; undefined if draw
+                    elo_loss: game.elo_loss, // loser's loss; undefined if draw
                     turns: numberOfTurns,
                     note: winnerId ? undefined : "Draw"
                 });

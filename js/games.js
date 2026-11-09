@@ -461,7 +461,7 @@
     line.appendChild(ratingSpan(r.lRating));
     var down = doc.createElement('span');
     down.className = 'fr-down';
-    down.textContent = '−' + r.change;
+    down.textContent = '−' + (r.loss != null ? r.loss : r.change);
     line.appendChild(down);
     item.appendChild(line);
 

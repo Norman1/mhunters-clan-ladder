@@ -467,7 +467,7 @@
     line.appendChild(ratingSpan(r.lRating));
     var down = doc.createElement('span');
     down.className = 'fr-down';
-    down.textContent = '−' + r.change;
+    down.textContent = '−' + (r.loss != null ? r.loss : r.change);
     line.appendChild(down);
     item.appendChild(line);
 
@@ -678,7 +678,7 @@
                               won ? r.loserId : r.winnerId));
     var delta = doc.createElement('span');
     delta.className = won ? 'fr-up' : 'fr-down';
-    delta.textContent = ' ' + (won ? '+' : '−') + r.change;
+    delta.textContent = ' ' + (won ? '+' + r.change : '−' + (r.loss != null ? r.loss : r.change));
     line.appendChild(delta);
     if (r.turns != null) {
       var turns = doc.createElement('span');
