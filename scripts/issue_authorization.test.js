@@ -63,7 +63,7 @@ function denied(result) {
 test('the gate precedes and explicitly guards every downstream step', () => {
     assert.match(workflow, /types: \[opened, edited\]/);
     assert.match(gate, /^Authorize IssueOps\n        id: authorize\n/);
-    assert.match(gate, /uses: actions\/github-script@v7/);
+    assert.match(gate, /uses: actions\/github-script@v9/);
     assert.match(gate, /TRIGGERING_ACTOR: \$\{\{ github.triggering_actor \}\}/);
     assert.equal(steps.length, 5);
     for (const step of steps.slice(1)) {
