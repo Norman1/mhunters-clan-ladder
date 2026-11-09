@@ -392,6 +392,19 @@
     return wrap;
   }
 
+  /* small label across the top of an honor card: '▲ LEAGUE PROMOTION' */
+  function cardTitle(doc, mark, text) {
+    var t = doc.createElement('div');
+    t.className = 'fh-title';
+    var m = doc.createElement('span');
+    m.className = 'fh-mark';
+    m.setAttribute('aria-hidden', 'true');
+    m.textContent = mark;
+    t.appendChild(m);
+    t.appendChild(doc.createTextNode(text));
+    return t;
+  }
+
   function buildHonorItem(g, ctx) {
     var doc = ctxDoc(ctx);
     var div = doc.createElement('div');
@@ -401,11 +414,8 @@
       div.className = 'feed-item feed-item--honor feed-item--league lg-' + (g.leagueKey || 'steel') +
         (g.kind === 'ascension' ? ' feed-item--up' : ' feed-item--down');
 
-      var mark = doc.createElement('span');
-      mark.className = 'fh-mark';
-      mark.textContent = g.kind === 'ascension' ? '▲' : '▼';
-      mark.setAttribute('aria-label', g.kind === 'ascension' ? 'Promoted to' : 'Relegated to');
-      div.appendChild(mark);
+      div.appendChild(cardTitle(doc, g.kind === 'ascension' ? '▲' : '▼',
+        g.kind === 'ascension' ? 'LEAGUE PROMOTION' : 'LEAGUE RELEGATION'));
       div.appendChild(clanTagImg(doc));
       div.appendChild(nameLink(g.playerName, 'fh-name', g.playerId, ctx));
       div.appendChild(fromTo(doc, g.prevLeagueName, (g.leagueName || '').toUpperCase(),
@@ -417,6 +427,7 @@
     // rank promotion: certificate card in M'Hunters steel — new shield,
     // 'NAME has achieved the rank of RANK' + the win count that earned it
     div.className = 'feed-item feed-item--honor feed-item--rank';
+    div.appendChild(cardTitle(doc, '▲', 'RANK PROMOTION'));
 
     var badge = doc.createElement('span');
     badge.className = 'fh-badge fh-badge--cert';
