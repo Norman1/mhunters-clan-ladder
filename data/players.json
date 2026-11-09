@@ -759,5 +759,13 @@
       "icon_v": "439519665.png"
     },
     "last_assigned_at": "2026-11-05T18:43:50.190Z"
+  },
+  "95151481274": {
+    "elo": 1000,
+    "missed_games": 0,
+    "in_clan": false,
+    "name": "rivancaleb",
+    "game_cap": 2,
+    "guest": true
   }
 }
