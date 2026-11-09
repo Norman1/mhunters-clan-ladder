@@ -172,9 +172,9 @@
     "name": "Poldi",
     "elo": 1265,
     "game_cap": 2,
-    "missed_games": 1,
+    "missed_games": 0,
     "last_opponent": "53134900057",
-    "last_assigned_at": "2026-11-09T17:22:22.204Z"
+    "last_assigned_at": "2026-11-09T20:12:29.483Z"
   },
   "23154545458": {
     "name": "Light",
@@ -647,7 +647,7 @@
     "elo": 992,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-11-09T17:22:22.794Z",
+    "last_assigned_at": "2026-11-09T20:12:30.114Z",
     "last_opponent": "84143567121",
     "in_clan": false,
     "departed_at": "2026-07-09T17:55:01.762Z",
@@ -810,7 +810,7 @@
     "last_assigned_at": "2026-11-09T17:22:23.981Z"
   },
   "7992098821": {
-    "elo": 1000,
+    "elo": 980,
     "missed_games": 0,
     "in_clan": false,
     "name": "5p4c3m4n",
@@ -821,7 +821,8 @@
       "name": "Undisputed",
       "icon_v": "439519665.png"
     },
-    "last_assigned_at": "2026-11-09T17:22:21.604Z"
+    "last_assigned_at": "2026-11-09T20:12:29.483Z",
+    "last_opponent": "55103688501"
   },
   "38118104339": {
     "elo": 1000,
@@ -838,7 +839,7 @@
     "last_assigned_at": "2026-11-09T17:22:22.794Z"
   },
   "55103688501": {
-    "elo": 1000,
+    "elo": 1020,
     "missed_games": 0,
     "in_clan": false,
     "name": "weus",
@@ -849,7 +850,8 @@
       "name": "Undisputed",
       "icon_v": "439519665.png"
     },
-    "last_assigned_at": "2026-11-09T17:22:21.604Z"
+    "last_assigned_at": "2026-11-09T20:12:30.114Z",
+    "last_opponent": "7992098821"
   },
   "57143563837": {
     "elo": 1000,
