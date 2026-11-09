@@ -806,5 +806,13 @@
     "name": "ouchudied",
     "game_cap": 2,
     "guest": true
+  },
+  "55103688501": {
+    "elo": 1000,
+    "missed_games": 0,
+    "in_clan": false,
+    "name": "weus",
+    "game_cap": 2,
+    "guest": true
   }
 }
