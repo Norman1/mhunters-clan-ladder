@@ -174,7 +174,7 @@
     "game_cap": 2,
     "missed_games": 0,
     "last_opponent": "7992098821",
-    "last_assigned_at": "2026-11-09T20:12:29.483Z"
+    "last_assigned_at": "2026-11-09T23:12:34.415Z"
   },
   "23154545458": {
     "name": "Light",
@@ -782,7 +782,7 @@
     "last_opponent": "9780712014"
   },
   "4957355558": {
-    "elo": 1000,
+    "elo": 1019,
     "missed_games": 0,
     "in_clan": false,
     "name": "tjerk",
@@ -793,7 +793,8 @@
       "name": "Undisputed",
       "icon_v": "439519665.png"
     },
-    "last_assigned_at": "2026-11-09T17:22:20.429Z"
+    "last_assigned_at": "2026-11-09T23:12:34.415Z",
+    "last_opponent": "7992098821"
   },
   "94113453772": {
     "elo": 1000,
@@ -810,7 +811,7 @@
     "last_assigned_at": "2026-11-09T17:22:23.981Z"
   },
   "7992098821": {
-    "elo": 980,
+    "elo": 961,
     "missed_games": 0,
     "in_clan": false,
     "name": "5p4c3m4n",
@@ -822,7 +823,7 @@
       "icon_v": "439519665.png"
     },
     "last_assigned_at": "2026-11-09T20:12:29.483Z",
-    "last_opponent": "84143567121"
+    "last_opponent": "4957355558"
   },
   "38118104339": {
     "elo": 1000,
