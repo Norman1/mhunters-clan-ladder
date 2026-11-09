@@ -23,7 +23,8 @@
 
   var RANK_THRESHOLDS = [
     0, 10, 25, 50, 75, 100, 150, 200, 250, 300, 350, 400,
-    450, 500, 600, 700, 800, 900, 1000, 1250, 1500, 2000, 2500
+    450, 500, 600, 700, 800, 900, 1000, 1250, 1500, 2000, 2500,
+    3500, 5000
   ];
 
   var RANK_NAMES = [
@@ -32,21 +33,23 @@
     'Raider', 'Commando', 'Shock Trooper',
     'Second Lieutenant', 'First Lieutenant', 'Captain', 'Major',
     'Lieutenant Colonel', 'Colonel', '1 Star General', '2 Star General',
-    '3 Star General', '4 Star General', '5 Star General'
+    '3 Star General', '4 Star General', '5 Star General',
+    'Warlord', 'God of War'
   ];
 
   var LEAGUES = [
-    { key: 'lumber',     name: 'Lumber',     lo: -Infinity },
+    { key: 'clay',       name: 'Clay',       lo: -Infinity },
+    { key: 'lumber',     name: 'Lumber',     lo: 600 },
     { key: 'stone',      name: 'Stone',      lo: 700 },
     { key: 'iron',       name: 'Iron',       lo: 800 },
     { key: 'steel',      name: 'Steel',      lo: 900 },
     { key: 'cobalt',     name: 'Cobalt',     lo: 1000 },
     { key: 'silver',     name: 'Silver',     lo: 1100 },
     { key: 'gold',       name: 'Gold',       lo: 1200 },
-    { key: 'obsidian',   name: 'Obsidian',   lo: 1300 },
+    { key: 'orichalcum', name: 'Orichalcum', lo: 1300 },
     { key: 'bloodsteel', name: 'Bloodsteel', lo: 1400 },
-    { key: 'warlord',    name: 'Warlord',    lo: 1500 },
-    { key: 'god',        name: 'God of War', lo: 1600 }
+    { key: 'magma',      name: 'Magma',      lo: 1500 },
+    { key: 'plasma',     name: 'Plasma',     lo: 1600 }
   ];
 
   var MONTHS = ['JAN', 'FEB', 'MAR', 'APR', 'MAY', 'JUN',
@@ -54,12 +57,9 @@
 
   var GAME_URL = 'https://www.warzone.com/MultiPlayer?GameID=';
   var PER_PAGE = 20;
-  /* Lumber has no lower bound; the progress bar needs a finite span,
-     so it uses a nominal 150-pt window below the Stone floor. */
+  /* Clay has no lower bound; the progress bar needs a finite span,
+     so it uses a nominal 150-pt window below the Lumber floor. */
   var FLINT_SPAN = 150;
-  /* Obsidian's metal (#24262C) is illegible on the dark plate —
-     swap to steel-dim for text/fills (contract rule). */
-  var OBSIDIAN_LEGIBLE = '#8A919C';
 
   /* ------------------------------------------------------------
      Pure helpers (no DOM — testable in node)
@@ -109,7 +109,7 @@
   }
 
   /* League progress bar: fill over the elo span between the current
-     league floor and the next floor. Warlord → top league, full bar. */
+     league floor and the next floor. Plasma → top league, full bar. */
   function leagueProgress(elo) {
     var e = typeof elo === 'number' && isFinite(elo) ? elo : 1000;
     var idx = leagueIndexForElo(e);
@@ -319,8 +319,8 @@
   }
 
   /* League bands intersecting the chart domain, clipped to [lo, hi].
-     Each band spans a league floor → the next floor (flint opens at
-     -Infinity, warlord at +Infinity). */
+     Each band spans a league floor → the next floor (clay opens at
+     -Infinity, plasma at +Infinity). */
   function leagueBandsInDomain(lo, hi) {
     var out = [];
     for (var i = 0; i < LEAGUES.length; i++) {
@@ -493,7 +493,8 @@
     eq(rankProgress(0), { label: '10 WINS TO PRIVATE', frac: 0 }, 'rankProgress 0 wins');
     eq(rankProgress(24), { label: '1 WIN TO PRIVATE FIRST CLASS', frac: 14 / 15 },
       'rankProgress singular WIN');
-    eq(rankProgress(2500), { label: 'HIGHEST RANK', frac: 1 }, 'rankProgress at cap');
+    eq(rankProgress(2500), { label: '1000 WINS TO WARLORD', frac: 0 }, 'rankProgress 5 Star → Warlord');
+    eq(rankProgress(5000), { label: 'HIGHEST RANK', frac: 1 }, 'rankProgress at cap');
     eq(rankProgress(9999), { label: 'HIGHEST RANK', frac: 1 }, 'rankProgress beyond cap');
     eq(rankProgress(10), { label: '15 WINS TO PRIVATE FIRST CLASS', frac: 0 },
       'rankProgress exactly at threshold');
@@ -501,16 +502,18 @@
     /* league progress */
     eq(leagueProgress(1152), { label: '48 PTS TO GOLD LEAGUE', frac: (1152 - 1100) / 100 },
       'leagueProgress silver → gold');
-    eq(leagueProgress(1500), { label: '100 PTS TO GOD OF WAR LEAGUE', frac: 0 },
-      'leagueProgress warlord climbs toward god of war');
-    eq(leagueProgress(1600), { label: 'TOP LEAGUE', frac: 1 }, 'leagueProgress god of war');
-    eq(leagueProgress(1650), { label: 'TOP LEAGUE', frac: 1 }, 'leagueProgress above warlord');
+    eq(leagueProgress(1500), { label: '100 PTS TO PLASMA LEAGUE', frac: 0 },
+      'leagueProgress magma climbs toward plasma');
+    eq(leagueProgress(1600), { label: 'TOP LEAGUE', frac: 1 }, 'leagueProgress plasma');
+    eq(leagueProgress(1650), { label: 'TOP LEAGUE', frac: 1 }, 'leagueProgress above plasma');
     eq(leagueProgress(800), { label: '100 PTS TO STEEL LEAGUE', frac: 0 },
       'leagueProgress exactly at iron floor');
-    eq(leagueProgress(600), { label: '100 PTS TO STONE LEAGUE', frac: 50 / 150 },
-      'leagueProgress lumber uses nominal window');
-    eq(leagueProgress(500), { label: '200 PTS TO STONE LEAGUE', frac: 0 },
-      'leagueProgress deep lumber clamps to 0');
+    eq(leagueProgress(650), { label: '50 PTS TO STONE LEAGUE', frac: 50 / 100 },
+      'leagueProgress lumber 600–699');
+    eq(leagueProgress(500), { label: '100 PTS TO LUMBER LEAGUE', frac: 50 / 150 },
+      'leagueProgress clay uses nominal window');
+    eq(leagueProgress(400), { label: '200 PTS TO LUMBER LEAGUE', frac: 0 },
+      'leagueProgress deep clay clamps to 0');
     eq(leagueProgress(899), { label: '1 PT TO STEEL LEAGUE', frac: 99 / 100 },
       'leagueProgress singular PT');
     eq(leagueProgress(1000), { label: '100 PTS TO SILVER LEAGUE', frac: 0 },
@@ -595,8 +598,8 @@
     eq(floorsInDomain(930, 1080).map(function (l) { return l.key; }),
       ['cobalt'], 'floorsInDomain 930–1080');
     eq(floorsInDomain(1290, 1550).map(function (l) { return l.key; }),
-      ['obsidian', 'bloodsteel', 'warlord'], 'floorsInDomain top end');
-    eq(floorsInDomain(-2000, 500), [], 'floorsInDomain none (lumber has no floor)');
+      ['orichalcum', 'bloodsteel', 'magma'], 'floorsInDomain top end');
+    eq(floorsInDomain(-2000, 500), [], 'floorsInDomain none (clay has no floor)');
 
     /* y-axis ticks (round values inside the domain, at most 5) */
     eq(yTicks(930, 1080), [950, 1000, 1050], 'yTicks 150 span → 50s');
@@ -645,11 +648,12 @@
        { key: 'cobalt', lo: 1000, hi: 1080 }],
       'leagueBandsInDomain clips bands to the domain');
     eq(leagueBandsInDomain(1520, 1600),
-      [{ key: 'warlord', lo: 1520, hi: 1600 }],
-      'leagueBandsInDomain open-ended warlord');
+      [{ key: 'magma', lo: 1520, hi: 1600 }],
+      'leagueBandsInDomain open-ended magma');
     eq(leagueBandsInDomain(400, 700),
-      [{ key: 'lumber', lo: 400, hi: 700 }],
-      'leagueBandsInDomain lumber below all floors');
+      [{ key: 'clay', lo: 400, hi: 600 },
+       { key: 'lumber', lo: 600, hi: 700 }],
+      'leagueBandsInDomain clay below all floors');
 
     /* grouping */
     var glog = [
@@ -765,11 +769,6 @@
       }
     } catch (err) { /* fall through */ }
     return '#7E8B9B';
-  }
-
-  /* Obsidian metal is near-black — swap for legibility on text/fills. */
-  function legibleLeagueColor(key) {
-    return key === 'obsidian' ? OBSIDIAN_LEGIBLE : leagueColor(key);
   }
 
   function gameLink(gameId) {
@@ -960,7 +959,7 @@
       /* the hero insignia never pulses — no fresh-honor class here */
       try {
         if (window.Insignia && typeof window.Insignia.svg === 'function') {
-          ins.innerHTML = window.Insignia.svg(p.rankIndex, p.league, 72);
+          ins.innerHTML = window.Insignia.svg(p.rankIndex, p.league, 88);
         }
       } catch (err) {
         console.warn('[profile] Insignia.svg failed', err);
@@ -991,8 +990,11 @@
       lg.textContent = String(p.leagueName || '').toUpperCase() + ' LEAGUE';
       /* opaque metallic plate: the global .lg-<key> class supplies the
          --lg-* custom properties; profile.css paints the badge */
-      lg.className = 'lg-' + (p.league || 'lumber');
+      lg.className = 'lg-' + (p.league || 'clay');
     }
+    /* tint the hero card with the league's metal (profile.css) */
+    var heroSec = $('hero-section');
+    if (heroSec) heroSec.className = 'panel hero--league lg-' + (p.league || 'clay');
     setText('hero-meta', heroMeta(p));
   }
 
@@ -1015,7 +1017,7 @@
 
   function renderProgress(p) {
     renderBar($('prog-rank'), rankProgress(p.wins), '');
-    renderBar($('prog-league'), leagueProgress(p.elo), legibleLeagueColor(p.league));
+    renderBar($('prog-league'), leagueProgress(p.elo), leagueColor(p.league));
   }
 
   /* ---------- career strip ---------- */
@@ -1168,7 +1170,7 @@
       var lab = el('span', 'chart-lab', f.name.toUpperCase());
       lab.style.top = (y(f.lo) / H * 100).toFixed(2) + '%';
       lab.style.left = ((W - padR) / W * 100).toFixed(2) + '%';
-      lab.style.color = legibleLeagueColor(f.key);
+      lab.style.color = leagueColor(f.key);
       wrap.appendChild(lab);
     });
 

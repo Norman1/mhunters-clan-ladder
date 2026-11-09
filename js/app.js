@@ -24,7 +24,8 @@
     'Raider', 'Commando', 'Shock Trooper',
     'Second Lieutenant', 'First Lieutenant', 'Captain', 'Major',
     'Lieutenant Colonel', 'Colonel', '1 Star General', '2 Star General',
-    '3 Star General', '4 Star General', '5 Star General'
+    '3 Star General', '4 Star General', '5 Star General',
+    'Warlord', 'God of War'
   ];
 
   var MONTHS = ['JAN', 'FEB', 'MAR', 'APR', 'MAY', 'JUN',
@@ -153,7 +154,7 @@
       '10 WINS TO SHARPSHOOTER', 'rank progress plural');
     eq(rankProgressText({ winsToNextRank: 1, rankIndex: 0 }),
       '1 WIN TO PRIVATE', 'rank progress singular');
-    eq(rankProgressText({ winsToNextRank: null, rankIndex: 22 }),
+    eq(rankProgressText({ winsToNextRank: null, rankIndex: 24 }),
       'HIGHEST RANK PENDING', 'rank progress at cap');
 
     eq(statusText({ status: 'PAUSED', missed: 0 }), 'PAUSED', 'status paused clean');
@@ -342,6 +343,11 @@
 
   function decorateRow(tr, p) {
     if (p.freshHonor) tr.classList.add('row--fresh');
+    /* league metal edge on the row's left side (painted by styles.css) */
+    if (window.Insignia && typeof window.Insignia.leagueStops === 'function' && p.league) {
+      var c = window.Insignia.leagueStops(p.league)[1];
+      tr.style.setProperty('--lg-edge', 'linear-gradient(' + c + ', ' + c + ')');
+    }
     tr.dataset.playerId = String(p.id != null ? p.id : '');
     tr.setAttribute('aria-expanded', 'false');
     tr.tabIndex = 0;

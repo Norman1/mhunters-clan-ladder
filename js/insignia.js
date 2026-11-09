@@ -18,21 +18,23 @@
     'Raider', 'Commando', 'Shock Trooper',
     'Second Lieutenant', 'First Lieutenant', 'Captain', 'Major',
     'Lieutenant Colonel', 'Colonel', '1 Star General', '2 Star General',
-    '3 Star General', '4 Star General', '5 Star General'
+    '3 Star General', '4 Star General', '5 Star General',
+    'Warlord', 'God of War'
   ];
 
   var LEAGUES = {
-    lumber:     { name: 'Lumber',     color: '#74573B', lo: -Infinity },
+    clay:       { name: 'Clay',       color: '#6B4433', lo: -Infinity },
+    lumber:     { name: 'Lumber',     color: '#74573B', lo: 600 },
     stone:      { name: 'Stone',      color: '#4A4E55', lo: 700 },
     iron:       { name: 'Iron',       color: '#65696F', lo: 800 },
     steel:      { name: 'Steel',      color: '#7E8B9B', lo: 900 },
     cobalt:     { name: 'Cobalt',     color: '#91A8C4', lo: 1000 },
     silver:     { name: 'Silver',     color: '#BEC7D1', lo: 1100 },
     gold:       { name: 'Gold',       color: '#DCBB5C', lo: 1200 },
-    obsidian:   { name: 'Obsidian',   color: '#24262C', lo: 1300 },
+    orichalcum: { name: 'Orichalcum', color: '#D08A4E', lo: 1300 },
     bloodsteel: { name: 'Bloodsteel', color: '#B56A6E', lo: 1400 },
-    warlord:    { name: 'Warlord',    color: '#D22730', lo: 1500 },
-    god:        { name: 'God of War', color: '#FF6229', lo: 1600 }
+    magma:      { name: 'Magma',      color: '#D22730', lo: 1500 },
+    plasma:     { name: 'Plasma',     color: '#FF6229', lo: 1600 }
   };
 
   /* ---------- color helpers ---------- */
@@ -68,17 +70,19 @@
   function darken(hex, t) { return mix(hex, '#000000', t); }
 
   function leagueColor(key) {
-    return (LEAGUES[key] || LEAGUES.lumber).color;
+    return (LEAGUES[key] || LEAGUES.clay).color;
   }
 
   /* Gradient stops: lighter top -> base -> darker bottom. */
   function leagueStops(key) {
-    // God of War: white-hot core igniting into super-saiyan crimson fire
-    if (key === 'god') return ['#FFF3C4', '#FF7B2E', '#C6160D'];
+    // Plasma: white-hot core igniting into crimson fire
+    if (key === 'plasma') return ['#FFF3C4', '#FF7B2E', '#C6160D'];
     if (key === 'bloodsteel') return ['#C4CAD2', '#B56A6E', '#96343B']; // silver bleeding into red
     var base = leagueColor(key);
-    // Obsidian: black metal, but lifted enough to read against the dark plate at 18px.
-    if (key === 'obsidian') return [lighten(base, 0.40), lighten(base, 0.10), darken(base, 0.5)];
+    // Orichalcum: red-gold, bright gold top cooling to copper.
+    if (key === 'orichalcum') return ['#F0C98A', '#D08A4E', '#9A5A2C'];
+    // Magma: glowing crust over dark red.
+    if (key === 'magma') return ['#F07A6E', '#D22730', '#7E1218'];
     return [lighten(base, 0.34), base, darken(base, 0.34)];
   }
 
@@ -149,6 +153,90 @@
             'Q' + n(32 + ox + bow) + ' ' + n(cy) + ' ' + n(32 + ox) + ' ' + n(cy - half);
     return '<path d="' + L + R + '" fill="none" stroke="url(#@G@)" stroke-width="1.6" stroke-linecap="round"/>';
   }
+
+  /* Rotate points about (cx, cy) by deg; returns a closed path. */
+  function polyD(pts, deg, cx, cy) {
+    var a = (deg || 0) * Math.PI / 180, c = Math.cos(a), s = Math.sin(a);
+    return 'M' + pts.map(function (p) {
+      var dx = p[0] - cx, dy = p[1] - cy;
+      return n(cx + dx * c - dy * s) + ' ' + n(cy + dx * s + dy * c);
+    }).join('L') + 'Z';
+  }
+
+  /* Upright sword centered on x=32: tip at y, blade length len. */
+  function swordPts(y, len, bw, gw) {
+    var b = y + len;                         // blade base
+    return [
+      [32, y], [32 + bw, y + 3], [32 + bw, b], [32 + gw, b], [32 + gw, b + 2],
+      [33.1, b + 2], [33.1, b + 6], [34.2, b + 7.2], [32, b + 9], [29.8, b + 7.2],
+      [30.9, b + 6], [30.9, b + 2], [32 - gw, b + 2], [32 - gw, b], [32 - bw, b],
+      [32 - bw, y + 3]
+    ];
+  }
+
+  /* Laurel leaf: narrow lozenge at (cx, cy) along angle deg. */
+  function leafD(cx, cy, len, w, deg) {
+    return polyD([[cx, cy - len / 2], [cx + w / 2, cy], [cx, cy + len / 2], [cx - w / 2, cy]], deg, cx, cy);
+  }
+
+  /* Laurel wreath: two branches of leaves rising from the bottom of a circle. */
+  function laurelD(cx, cy, r, count, step) {
+    var d = '';
+    count = count || 6; step = step || 21;
+    for (var side = -1; side <= 1; side += 2) {
+      for (var i = 0; i < count; i++) {
+        var phi = 28 + i * step;                // degrees up from the bottom
+        var a = phi * Math.PI / 180;
+        var x = cx + side * r * Math.sin(a), y = cy + r * Math.cos(a);
+        d += leafD(x, y, 6.2, 2.7, side * (90 - phi) + side * 22);
+      }
+    }
+    return d;
+  }
+
+  /* Sun rays fanning from (cx, cy) between angles a0..a1 (degrees, 270 = up),
+     alternating long and short. */
+  function raysD(cx, cy, r0, rLong, rShort, a0, a1, count) {
+    var d = '';
+    for (var i = 0; i < count; i++) {
+      var a = (a0 + (a1 - a0) * i / (count - 1)) * Math.PI / 180;
+      var r1 = i % 2 === 0 ? rLong : rShort, hw = 0.15;
+      d += 'M' + n(cx + r0 * Math.cos(a - hw)) + ' ' + n(cy + r0 * Math.sin(a - hw)) +
+           'L' + n(cx + r1 * Math.cos(a)) + ' ' + n(cy + r1 * Math.sin(a)) +
+           'L' + n(cx + r0 * Math.cos(a + hw)) + ' ' + n(cy + r0 * Math.sin(a + hw)) + 'Z';
+    }
+    return d;
+  }
+
+  /* A device drawn on top of other metal: engraved shadow, metal fill,
+     and a dark outline so it separates from what sits behind it. */
+  function overlay(d) {
+    return '<path d="' + d + '" transform="translate(0 0.9)" fill="rgba(0,0,0,0.55)"/>' +
+           '<path d="' + d + '" fill="url(#@G@)" stroke="rgba(8,9,11,0.85)" stroke-width="1.3" stroke-linejoin="round"/>';
+  }
+
+  /* Small dark inset dot (crown jewels). */
+  function dotX(cx, cy, r) {
+    return '<circle cx="' + n(cx) + '" cy="' + n(cy) + '" r="' + n(r) + '" fill="rgba(8,9,11,0.7)"/>';
+  }
+
+  /* Horned war helm: dome, brow, nose guard, cheek guards, two upswept horns. */
+  var HELM =
+    'M25.8 41C25.8 32 28.4 27 32 26.6C35.6 27 38.2 32 38.2 41L38.2 45L35.6 45L35.6 40.8' +
+    'L33.1 40.8L33.1 46L30.9 46L30.9 40.8L28.4 40.8L28.4 45L25.8 45Z' +
+    'M28.8 27.6C25.2 26.6 24.4 22.4 26.4 17.2C26.9 21 28.6 23.6 30.8 25.3Z' +
+    'M35.2 27.6C38.8 26.6 39.6 22.4 37.6 17.2C37.1 21 35.4 23.6 33.2 25.3Z';
+
+  /* Filled circle as an absolute-coordinate path. */
+  function orbD(cx, cy, r) {
+    return 'M' + n(cx - r) + ' ' + n(cy) + 'A' + n(r) + ' ' + n(r) + ' 0 1 0 ' + n(cx + r) + ' ' + n(cy) +
+           'A' + n(r) + ' ' + n(r) + ' 0 1 0 ' + n(cx - r) + ' ' + n(cy) + 'Z';
+  }
+
+  /* Five-point crown with orb tips and a jeweled band. */
+  var CROWN =
+    'M22 43L22 37.5L19.8 27.5L26 32.5L32 23.5L38 32.5L44.2 27.5L42 37.5L42 43Z' +
+    orbD(19.8, 27.5, 1.9) + orbD(32, 22.6, 2) + orbD(44.2, 27.5, 1.9);
 
   /* ---------- fixed officer paths (centered ~ (32, 31.5)) ---------- */
 
@@ -287,6 +375,22 @@
              starD(39.8, 30.4, 4.1) + starD(47, 36.2, 4.1),
           x: ''
         };
+      case 23: // Warlord: horned war helm over crossed swords, 5-star arc above
+        return {
+          d: starD(19.5, 16, 2.8) + starD(25.5, 12.6, 2.8) + starD(32, 11.4, 2.8) +
+             starD(38.5, 12.6, 2.8) + starD(44.5, 16, 2.8) +
+             polyD(swordPts(23, 21, 2, 5.4), -50, 32, 44) +
+             polyD(swordPts(23, 21, 2, 5.4), 50, 32, 44),
+          x: overlay(HELM) +
+             '<path d="M26.2 35.6L37.8 35.6" stroke="rgba(8,9,11,0.6)" stroke-width="1"/>'
+        };
+      case 24: // God of War: radiant crown inside a laurel wreath
+        return {
+          d: raysD(32, 36, 13, 21, 17.5, 212, 328, 9) + laurelD(32, 35, 16.5, 4, 22),
+          x: overlay(CROWN) +
+             '<path d="M22.4 37.6L41.6 37.6" stroke="rgba(8,9,11,0.6)" stroke-width="1"/>' +
+             dotX(26.5, 40.3, 1.1) + dotX(32, 40.3, 1.3) + dotX(37.5, 40.3, 1.1)
+        };
     }
     return { d: '', x: '' };
   }
@@ -306,8 +410,8 @@
   function svg(rankIndex, leagueKey, sizePx) {
     var ri = Math.floor(Number(rankIndex));
     if (!isFinite(ri)) ri = 0;
-    ri = Math.max(0, Math.min(22, ri));
-    var lk = LEAGUES[leagueKey] ? leagueKey : 'lumber';
+    ri = Math.max(0, Math.min(RANKS.length - 1, ri));
+    var lk = LEAGUES[leagueKey] ? leagueKey : 'clay';
     var size = Number(sizePx);
     if (!isFinite(size) || size <= 0) size = 40;
 
@@ -320,10 +424,6 @@
             LEAGUES[lk].name + ' league">';
     o += '<defs>' + grad(gid, leagueStops(lk)) + grad(pid, PLATE) + '</defs>';
 
-    // Obsidian: clan-red rim accent painted beneath the league border.
-    if (lk === 'obsidian') {
-      o += '<path d="' + SHIELD + '" fill="none" stroke="#D22730" stroke-width="4.4" stroke-linejoin="round"/>';
-    }
     // Shield plate + league-gradient border.
     o += '<path d="' + SHIELD + '" fill="url(#' + pid + ')" stroke="url(#' + gid + ')" stroke-width="2.5" stroke-linejoin="round"/>';
     // Inner bevel line for engraved depth.
@@ -343,6 +443,7 @@
   var Insignia = {
     svg: svg,
     leagueColor: leagueColor,
+    leagueStops: leagueStops,
     LEAGUES: LEAGUES,
     RANKS: RANKS
   };
@@ -367,13 +468,13 @@
     var allIds = {};
     var count = 0;
 
-    if (RANKS.length !== 23) fails.push('RANKS length ' + RANKS.length + ' !== 23');
-    if (leagues.length !== 11) fails.push('LEAGUES length ' + leagues.length + ' !== 11');
+    if (RANKS.length !== 25) fails.push('RANKS length ' + RANKS.length + ' !== 25');
+    if (leagues.length !== 12) fails.push('LEAGUES length ' + leagues.length + ' !== 12');
     leagues.forEach(function (k) {
       if (!/^#[0-9A-F]{6}$/i.test(leagueColor(k))) fails.push('leagueColor(' + k + ') not hex: ' + leagueColor(k));
     });
 
-    for (var ri = 0; ri < 23; ri++) {
+    for (var ri = 0; ri < RANKS.length; ri++) {
       for (var li = 0; li < leagues.length; li++) {
         for (var si = 0; si < sizes.length; si++) {
           var lk = leagues[li], size = sizes[si];
@@ -406,15 +507,14 @@
           // device presence
           if (ri === 0 && (s.match(/<circle/g) || []).length < 2) fails.push(label + ': recruit disc missing');
           if (ri > 0 && (s.match(/<path/g) || []).length < 4) fails.push(label + ': device paths missing');
-          if (lk === 'obsidian' && s.indexOf('#D22730') === -1) fails.push(label + ': obsidian red rim missing');
           if (lk === 'bloodsteel' && s.indexOf('#C4CAD2') === -1) fails.push(label + ': bloodsteel silver stop missing');
-          if (lk === 'god' && s.indexOf('#FFF3C4') === -1) fails.push(label + ': god white-hot stop missing');
+          if (lk === 'plasma' && s.indexOf('#FFF3C4') === -1) fails.push(label + ': plasma white-hot stop missing');
         }
       }
     }
 
     // fallback behavior must never throw or emit junk
-    var weird = [svg(-5, 'nope', 18), svg(99, undefined, 0), svg('x', 'warlord', 64)];
+    var weird = [svg(-5, 'nope', 18), svg(99, undefined, 0), svg('x', 'magma', 64)];
     for (var wi = 0; wi < weird.length; wi++) {
       if (/NaN|Infinity|undefined/.test(weird[wi])) fails.push('fallback call ' + wi + ' emitted junk');
     }
@@ -424,9 +524,9 @@
       fails.slice(0, 40).forEach(function (f) { console.error('  - ' + f); });
       if (typeof process !== 'undefined') process.exitCode = 1;
     } else {
-      console.log('insignia self-check OK: ' + count + ' svgs (23 ranks x 11 leagues x ' + sizes.length +
+      console.log('insignia self-check OK: ' + count + ' svgs (' + RANKS.length + ' ranks x ' + leagues.length + ' leagues x ' + sizes.length +
                   ' sizes), ' + Object.keys(allIds).length + ' unique gradient ids, all coords finite and in-viewBox, ' +
-                  'obsidian rim + bloodsteel ramp present, fallback calls clean.');
+                  'bloodsteel + plasma ramps present, fallback calls clean.');
     }
   }
 })();

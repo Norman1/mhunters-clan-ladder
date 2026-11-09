@@ -13,7 +13,8 @@
 
   var RANK_THRESHOLDS = [
     0, 10, 25, 50, 75, 100, 150, 200, 250, 300, 350, 400,
-    450, 500, 600, 700, 800, 900, 1000, 1250, 1500, 2000, 2500
+    450, 500, 600, 700, 800, 900, 1000, 1250, 1500, 2000, 2500,
+    3500, 5000
   ];
 
   var RANK_NAMES = [
@@ -22,21 +23,23 @@
     'Raider', 'Commando', 'Shock Trooper',
     'Second Lieutenant', 'First Lieutenant', 'Captain', 'Major',
     'Lieutenant Colonel', 'Colonel', '1 Star General', '2 Star General',
-    '3 Star General', '4 Star General', '5 Star General'
+    '3 Star General', '4 Star General', '5 Star General',
+    'Warlord', 'God of War'
   ];
 
   var LEAGUES = [
-    { key: 'lumber',     name: 'Lumber',     lo: -Infinity },
+    { key: 'clay',       name: 'Clay',       lo: -Infinity },
+    { key: 'lumber',     name: 'Lumber',     lo: 600 },
     { key: 'stone',      name: 'Stone',      lo: 700 },
     { key: 'iron',       name: 'Iron',       lo: 800 },
     { key: 'steel',      name: 'Steel',      lo: 900 },
     { key: 'cobalt',     name: 'Cobalt',     lo: 1000 },
     { key: 'silver',     name: 'Silver',     lo: 1100 },
     { key: 'gold',       name: 'Gold',       lo: 1200 },
-    { key: 'obsidian',   name: 'Obsidian',   lo: 1300 },
+    { key: 'orichalcum', name: 'Orichalcum', lo: 1300 },
     { key: 'bloodsteel', name: 'Bloodsteel', lo: 1400 },
-    { key: 'warlord',    name: 'Warlord',    lo: 1500 },
-    { key: 'god',        name: 'God of War', lo: 1600 }
+    { key: 'magma',      name: 'Magma',      lo: 1500 },
+    { key: 'plasma',     name: 'Plasma',     lo: 1600 }
   ];
 
   var VOID_NOTES = { 'Timed Out (Lobby)': true, 'Declined': true, 'Terminated': true };

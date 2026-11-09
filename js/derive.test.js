@@ -302,7 +302,7 @@ globalThis.LadderData.load().then((data) => {
     Number.isInteger(p.winRate) && p.winRate >= 0 && p.winRate <= 100 &&
     Number.isInteger(p.gamesPlayed) && Number.isInteger(p.peak) &&
     typeof p.rankName === 'string' && Number.isInteger(p.rankIndex) &&
-    p.rankIndex >= 0 && p.rankIndex <= 22 &&
+    p.rankIndex >= 0 && p.rankIndex <= 24 &&
     typeof p.league === 'string' && typeof p.leagueName === 'string' &&
     (p.winsToNextRank === null || Number.isInteger(p.winsToNextRank)) &&
     typeof p.freshHonor === 'boolean' && Number.isInteger(p.liveCount) &&

@@ -22,7 +22,8 @@
 
   var RANK_THRESHOLDS = [
     0, 10, 25, 50, 75, 100, 150, 200, 250, 300, 350, 400,
-    450, 500, 600, 700, 800, 900, 1000, 1250, 1500, 2000, 2500
+    450, 500, 600, 700, 800, 900, 1000, 1250, 1500, 2000, 2500,
+    3500, 5000
   ];
 
   var RANK_NAMES = [
@@ -31,21 +32,22 @@
     'Raider', 'Commando', 'Shock Trooper',
     'Second Lieutenant', 'First Lieutenant', 'Captain', 'Major',
     'Lieutenant Colonel', 'Colonel', '1 Star General', '2 Star General',
-    '3 Star General', '4 Star General', '5 Star General'
+    '3 Star General', '4 Star General', '5 Star General',
+    'Warlord', 'God of War'
   ];
 
   var LEAGUE_KEYS = [
-    'lumber', 'stone', 'iron', 'steel', 'cobalt', 'silver',
-    'gold', 'obsidian', 'bloodsteel', 'warlord', 'god'
+    'clay', 'lumber', 'stone', 'iron', 'steel', 'cobalt', 'silver',
+    'gold', 'orichalcum', 'bloodsteel', 'magma', 'plasma'
   ];
 
   var LEAGUE_NAMES = [
-    'Lumber', 'Stone', 'Iron', 'Steel', 'Cobalt', 'Silver',
-    'Gold', 'Obsidian', 'Bloodsteel', 'Warlord', 'God of War'
+    'Clay', 'Lumber', 'Stone', 'Iron', 'Steel', 'Cobalt', 'Silver',
+    'Gold', 'Orichalcum', 'Bloodsteel', 'Magma', 'Plasma'
   ];
 
   var LEAGUE_FLOORS = [
-    -Infinity, 700, 800, 900, 1000, 1100, 1200, 1300, 1400, 1500, 1600
+    -Infinity, 600, 700, 800, 900, 1000, 1100, 1200, 1300, 1400, 1500, 1600
   ];
 
   /* ------------------------------------------------------------
@@ -116,39 +118,40 @@
 
     console.log('rules.js pure-helper self-test');
 
-    eq(rangeLabel(0), 'below 700', 'rangeLabel bottom → below 700');
-    eq(rangeLabel(1), '700–799', 'rangeLabel stone → 700–799');
-    eq(rangeLabel(2), '800–899', 'rangeLabel iron → 800–899');
-    eq(rangeLabel(4), '1000–1099', 'rangeLabel cobalt → 1000–1099');
-    eq(rangeLabel(7), '1300–1399', 'rangeLabel obsidian → 1300–1399');
-    eq(rangeLabel(9), '1500–1599', 'rangeLabel warlord → 1500–1599');
-    eq(rangeLabel(10), '1600+', 'rangeLabel top → 1600+');
+    eq(rangeLabel(0), 'below 600', 'rangeLabel bottom → below 600');
+    eq(rangeLabel(1), '600–699', 'rangeLabel lumber → 600–699');
+    eq(rangeLabel(2), '700–799', 'rangeLabel stone → 700–799');
+    eq(rangeLabel(3), '800–899', 'rangeLabel iron → 800–899');
+    eq(rangeLabel(5), '1000–1099', 'rangeLabel cobalt → 1000–1099');
+    eq(rangeLabel(8), '1300–1399', 'rangeLabel orichalcum → 1300–1399');
+    eq(rangeLabel(10), '1500–1599', 'rangeLabel magma → 1500–1599');
+    eq(rangeLabel(11), '1600+', 'rangeLabel top → 1600+');
     eq(rangeLabel(2, [-Infinity, 10, 20, 30]), '20–29', 'rangeLabel honors custom floors');
 
     var fakePlayers = [
       { rankIndex: 0, league: 'cobalt', elo: 1000 },
       { rankIndex: 0, league: 'stone', elo: 812 },
-      { rankIndex: 4, league: 'obsidian', elo: 1369 },
-      { rankIndex: 22, league: 'warlord', elo: 1520 },
+      { rankIndex: 4, league: 'orichalcum', elo: 1369 },
+      { rankIndex: 24, league: 'magma', elo: 1520 },
       { rankIndex: 99, league: 'nope', elo: 905 },     // clamps + elo fallback
       { rankIndex: 'x' }                               // junk-safe
     ];
     var rc = countByRank(fakePlayers);
-    eq(rc.length, 23, 'countByRank returns 23 buckets');
+    eq(rc.length, 25, 'countByRank returns 25 buckets');
     eq(rc[0], 3, 'countByRank recruit bucket (2 recruits + junk → recruit)');
     eq(rc[4], 1, 'countByRank corporal bucket');
-    eq(rc[22], 2, 'countByRank clamps overflow into top rank');
-    eq(countByRank([]).join(''), '00000000000000000000000', 'countByRank empty → zeros');
-    eq(countByRank(null).length, 23, 'countByRank null-safe');
+    eq(rc[24], 2, 'countByRank clamps overflow into top rank');
+    eq(countByRank([]).join(''), '0000000000000000000000000', 'countByRank empty → zeros');
+    eq(countByRank(null).length, 25, 'countByRank null-safe');
 
     var lc = countByLeague(fakePlayers);
-    eq(lc.length, 11, 'countByLeague returns 11 buckets');
-    eq(lc[4], 2, 'countByLeague cobalt bucket (missing key → start elo 1000)');
-    eq(lc[1], 1, 'countByLeague stone bucket');
-    eq(lc[3], 1, 'countByLeague unknown key falls back to elo (steel 905)');
-    eq(lc[7], 1, 'countByLeague obsidian bucket');
-    eq(lc[9], 1, 'countByLeague warlord bucket');
-    eq(countByLeague([]).join(''), '00000000000', 'countByLeague empty → zeros');
+    eq(lc.length, 12, 'countByLeague returns 12 buckets');
+    eq(lc[5], 2, 'countByLeague cobalt bucket (missing key → start elo 1000)');
+    eq(lc[2], 1, 'countByLeague stone bucket');
+    eq(lc[4], 1, 'countByLeague unknown key falls back to elo (steel 905)');
+    eq(lc[8], 1, 'countByLeague orichalcum bucket');
+    eq(lc[10], 1, 'countByLeague magma bucket');
+    eq(countByLeague([]).join(''), '000000000000', 'countByLeague empty → zeros');
 
     console.log(failures === 0
       ? 'ALL ' + checks + ' CHECKS PASSED'
@@ -194,12 +197,12 @@
 
   function chipGradient(key) {
     if (!window.Insignia || typeof window.Insignia.leagueColor !== 'function') return '#65696F';
-    // god of war: white-hot core igniting into crimson fire (insignia ramp twin)
-    if (key === 'god') return 'linear-gradient(120deg, #FFF3C4, #FF7B2E 45%, #C6160D)';
+    // plasma: white-hot core igniting into crimson fire (insignia ramp twin)
+    if (key === 'plasma') return 'linear-gradient(120deg, #FFF3C4, #FF7B2E 45%, #C6160D)';
     // bloodsteel: silver bleeding into red (matches the insignia ramp)
     if (key === 'bloodsteel') return 'linear-gradient(120deg, #C4CAD2, #B56A6E 55%, #96343B)';
     var base = window.Insignia.leagueColor(key);
-    var hi = mixHex(base, '#FFFFFF', key === 'obsidian' ? 0.28 : 0.32);
+    var hi = mixHex(base, '#FFFFFF', 0.32);
     var lo = mixHex(base, '#000000', 0.34);
     return 'linear-gradient(120deg, ' + hi + ', ' + base + ' 55%, ' + lo + ')';
   }
@@ -219,7 +222,7 @@
     return td;
   }
 
-  /* 23 ranks: shield insignia · name · wins required · current holders */
+  /* 25 ranks: shield insignia · name · wins required · current holders */
   function renderRanks(counts) {
     var body = $('ranks-body');
     if (!body) return;
@@ -270,7 +273,7 @@
       tr.appendChild(ins);
 
       var name = doc.createElement('td');
-      name.className = 'c-name' + (key === 'warlord' ? ' is-warlord' : '');
+      name.className = 'c-name' + (key === 'magma' ? ' is-magma' : '');
       name.textContent = LEAGUE_NAMES[li];
       if (key === 'cobalt') {
         var tag = doc.createElement('span');

@@ -46,8 +46,26 @@
 
 #hero-insignia {
   flex: none;
-  width: 72px;
-  height: 72px;
+  width: 88px;
+  height: 88px;
+  filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.45));
+}
+
+/* league metal: a rule along the top edge and a soft wash behind the crest.
+   The .lg-<key> class (styles.css) supplies --lg-a/b/c. */
+#hero-section.hero--league { position: relative; }
+#hero-section.hero--league::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--lg-a), var(--lg-b) 55%, var(--lg-c));
+}
+#hero-section.hero--league #hero {
+  background:
+    radial-gradient(120% 140% at 0% 0%,
+      color-mix(in srgb, var(--lg-b) 30%, transparent) 0%,
+      transparent 60%);
 }
 #hero-insignia svg { display: block; width: 100%; height: 100%; }
 
@@ -126,12 +144,10 @@
 }
 #hero-league:empty { display: none; }
 
-/* obsidian keeps its signature red rim */
-#hero-league.lg-obsidian { border-color: #D22730; }
 /* bloodsteel coloring always ships with a red border */
 #hero-league.lg-bloodsteel { border-color: #D22730; }
-/* god of war badge burns with its crimson saiyan aura */
-#hero-league.lg-god {
+/* plasma badge burns with a crimson aura */
+#hero-league.lg-plasma {
   border-color: #FF7B2E;
   box-shadow: 0 0 14px rgba(255, 70, 20, 0.6), inset 0 0 12px rgba(255, 214, 140, 0.4);
 }
@@ -905,7 +921,7 @@
   .profile-layout { gap: 13px; }
 
   #hero { gap: 14px; padding: 16px 14px 12px; }
-  #hero-insignia { width: 56px; height: 56px; }
+  #hero-insignia { width: 64px; height: 64px; }
   .sk--shield { width: 56px; height: 56px; border-radius: 9px; }
   #hero-name { font-size: 26px; }
   #hero-rank { font-size: 13.5px; letter-spacing: 0.12em; }
