@@ -288,18 +288,20 @@ main {
 /* ----------------------------- table base ----------------------------- */
 /* Horizontally scrollable when the table outgrows the viewport (narrow
    screens): the trailing columns scroll while player names stay untruncated.
-   Edge shadows (attachment scroll) appear only on the overflowing side;
-   panel-colored covers (attachment local) hide them at rest. */
+   js/scrollhint.js adds fade-left / fade-right so the edge hiding more
+   columns softly fades out. */
 .table-wrap {
   overflow-x: auto;
-  background:
-    linear-gradient(to right, var(--panel) 35%, rgba(23, 24, 28, 0)) left / 28px 100%,
-    linear-gradient(to left, var(--panel) 35%, rgba(23, 24, 28, 0)) right / 28px 100%,
-    radial-gradient(farthest-side at 0 50%, rgba(0, 0, 0, 0.55), transparent) left / 16px 100%,
-    radial-gradient(farthest-side at 100% 50%, rgba(0, 0, 0, 0.55), transparent) right / 16px 100%;
-  background-repeat: no-repeat;
-  background-attachment: local, local, scroll, scroll;
+  --fade-l: 0px;
+  --fade-r: 0px;
+  -webkit-mask-image: linear-gradient(to right,
+    rgba(0, 0, 0, 0.2) 0, #000 var(--fade-l), #000 calc(100% - var(--fade-r)), rgba(0, 0, 0, 0.2) 100%);
+  mask-image: linear-gradient(to right,
+    rgba(0, 0, 0, 0.2) 0, #000 var(--fade-l), #000 calc(100% - var(--fade-r)), rgba(0, 0, 0, 0.2) 100%);
 }
+.table-wrap:not(.fade-left):not(.fade-right) { -webkit-mask-image: none; mask-image: none; }
+.table-wrap.fade-left { --fade-l: 28px; }
+.table-wrap.fade-right { --fade-r: 36px; }
 
 .standings-table {
   width: 100%;
