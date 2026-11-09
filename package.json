@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "node --test"
+    "test": "node --test",
+    "stamp": "node scripts/stamp_assets.js"
   },
   "keywords": [],
   "author": "",
