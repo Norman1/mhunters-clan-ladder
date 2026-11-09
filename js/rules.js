@@ -177,8 +177,8 @@
 
   function renderMasthead(meta) {
     meta = meta || {};
-    setText('stat-active', (meta.activeCount || 0) + ' ACTIVE');
-    setText('stat-games', fmtInt(meta.gamesPlayed) + ' GAMES');
+    setText('stat-active', (meta.liveCount || 0) + ' ACTIVE');
+    setText('stat-games', fmtInt(meta.gamesPlayed) + ' TOTAL');
     setText('stat-updated', 'Last Update ' + String(meta.lastUpdatedText || '—').toLowerCase());
   }
 

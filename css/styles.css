@@ -183,6 +183,10 @@ main, .site-footer { position: relative; z-index: 1; }
 .stat { color: var(--muted); }
 .stat--live { color: var(--red); animation: live-glow 2.6s ease-in-out infinite; }
 .stat--updated { color: var(--dim); }
+/* GAMES  23 ACTIVE · 1,660 TOTAL */
+.stat--group { display: inline-flex; align-items: center; gap: 7px; }
+.stat__label { color: var(--dim); }
+.stat__sep { color: var(--dim); }
 
 @keyframes live-glow {
   0%, 100% { text-shadow: none; }
@@ -1255,7 +1259,7 @@ tr.row--hit td { animation: row-flash 1.6s ease-out 1; }
   .masthead__right { gap: 0; }
   .mainnav { display: none; }           /* tab bar takes over */
   .stats { gap: 10px; font-size: 9.5px; letter-spacing: 0.08em; }
-  .stat--games { display: none; }       /* collapse to ACTIVE + LIVE + UPDATED */
+  .stat--group { gap: 5px; }
 
   main { padding: 16px 10px 32px; gap: 14px; }
 

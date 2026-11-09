@@ -105,8 +105,8 @@
   function mastheadTexts(meta) {
     meta = meta || {};
     return {
-      active: (meta.activeCount || 0) + ' ACTIVE',
-      games: Number(meta.gamesPlayed || 0).toLocaleString('en-US') + ' GAMES',
+      active: (meta.liveCount || 0) + ' ACTIVE',   // games in progress
+      games: Number(meta.gamesPlayed || 0).toLocaleString('en-US') + ' TOTAL',
       updated: 'Last Update ' + String(meta.lastUpdatedText || '—').toLowerCase()
     };
   }
@@ -164,7 +164,7 @@
     eq(reserveCountText({ pausedCount: 2, inactiveCount: 59 }), '2 PAUSED · 59 INACTIVE', 'reserve count');
 
     eq(mastheadTexts({ activeCount: 21, liveCount: 17, gamesPlayed: 1220, lastUpdatedText: '2H AGO' }),
-      { active: '21 ACTIVE', games: '1,220 GAMES', updated: 'Last Update 2h ago' },
+      { active: '17 ACTIVE', games: '1,220 TOTAL', updated: 'Last Update 2h ago' },
       'masthead texts');
 
     console.log(failures === 0

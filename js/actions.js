@@ -648,8 +648,8 @@
   }
 
   function fillStats(meta) {
-    setText('stat-active', (meta.activeCount || 0) + ' ACTIVE');
-    setText('stat-games', Number(meta.gamesPlayed || 0).toLocaleString('en-US') + ' GAMES');
+    setText('stat-active', (meta.liveCount || 0) + ' ACTIVE');
+    setText('stat-games', Number(meta.gamesPlayed || 0).toLocaleString('en-US') + ' TOTAL');
     setText('stat-updated', 'Last Update ' + String(meta.lastUpdatedText || '—').toLowerCase());
   }
 
