@@ -2,7 +2,7 @@
    M'Hunters Clan Ladder — Rules page wiring (Track C)
    Plain vanilla script (no modules). Depends on:
      window.LadderData (js/derive.js) — LadderData.load()
-       → { active, reserve, meta } (counts aggregate active+reserve)
+       → { active, reserve, meta } (rank counts: active+reserve; league counts: active)
      window.Insignia (js/insignia.js) — Insignia.svg(ri,'steel',22),
        Insignia.leagueColor(key) for the league metal chips
    DOM contract (rules.html):
@@ -311,7 +311,8 @@
       renderMasthead(data.meta);
       var entries = (data.active || []).concat(data.reserve || []);
       renderRanks(countByRank(entries));
-      renderLeagues(countByLeague(entries));
+      // league counts show active players only
+      renderLeagues(countByLeague(data.active || []));
     }).catch(function (err) {
       // keep the '—' counts — the rulebook still reads fine without data
       console.warn('[rules] ladder data load failed', err);
