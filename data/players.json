@@ -814,5 +814,13 @@
     "name": "weus",
     "game_cap": 2,
     "guest": true
+  },
+  "57143563837": {
+    "elo": 1000,
+    "missed_games": 0,
+    "in_clan": false,
+    "name": "slack",
+    "game_cap": 2,
+    "guest": true
   }
 }
