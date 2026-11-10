@@ -17,11 +17,11 @@
   },
   "28867016": {
     "name": "Swisster",
-    "elo": 1163,
+    "elo": 1168,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "79105823914",
-    "last_assigned_at": "2026-11-10T02:05:53.698Z"
+    "last_opponent": "7992098821",
+    "last_assigned_at": "2026-11-10T14:13:34.010Z"
   },
   "81598466": {
     "name": "Tim 🍌",
@@ -69,7 +69,7 @@
       "name": "Undisputed",
       "icon_v": "439519665.png"
     },
-    "last_assigned_at": "2026-11-10T12:18:18.770Z",
+    "last_assigned_at": "2026-11-10T14:13:34.732Z",
     "last_opponent": "84143567121"
   },
   "1822261234": {
@@ -98,11 +98,11 @@
   },
   "3346775331": {
     "name": "Gatsu12",
-    "elo": 1438,
+    "elo": 1442,
     "game_cap": 3,
     "missed_games": 0,
-    "last_opponent": "8222729424",
-    "last_assigned_at": "2026-11-06T21:03:13.905Z"
+    "last_opponent": "71148639731",
+    "last_assigned_at": "2026-11-10T14:13:35.882Z"
   },
   "3428471447": {
     "name": "AyanM",
@@ -138,11 +138,11 @@
   },
   "4155523061": {
     "name": "AGEHNT SMITH",
-    "elo": 713,
+    "elo": 710,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-11-05T18:43:49.643Z",
-    "last_opponent": "9313400553"
+    "last_assigned_at": "2026-11-10T14:13:34.732Z",
+    "last_opponent": "65112512029"
   },
   "4180490094": {
     "name": "Woololo",
@@ -170,11 +170,11 @@
   },
   "84143567121": {
     "name": "Poldi",
-    "elo": 1265,
+    "elo": 1269,
     "game_cap": 2,
-    "missed_games": 1,
-    "last_opponent": "1477223682",
-    "last_assigned_at": "2026-11-10T12:18:18.770Z"
+    "missed_games": 0,
+    "last_opponent": "65112512029",
+    "last_assigned_at": "2026-11-10T14:13:36.444Z"
   },
   "23154545458": {
     "name": "Light",
@@ -396,11 +396,11 @@
   },
   "71148639731": {
     "name": "Nick",
-    "elo": 1185,
+    "elo": 1181,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-11-04T21:19:22.195Z",
-    "last_opponent": "9780712014"
+    "last_assigned_at": "2026-11-10T14:13:35.294Z",
+    "last_opponent": "3346775331"
   },
   "71155120841": {
     "name": "Ventura",
@@ -753,7 +753,7 @@
     "last_opponent": "28867016"
   },
   "65112512029": {
-    "elo": 1000,
+    "elo": 999,
     "missed_games": 0,
     "in_clan": false,
     "name": "Loup Duk",
@@ -764,7 +764,8 @@
       "name": "Undisputed",
       "icon_v": "439519665.png"
     },
-    "last_assigned_at": "2026-11-05T18:43:50.190Z"
+    "last_assigned_at": "2026-11-10T14:13:35.882Z",
+    "last_opponent": "84143567121"
   },
   "95151481274": {
     "elo": 1000,
@@ -811,7 +812,7 @@
     "last_assigned_at": "2026-11-09T17:22:23.981Z"
   },
   "7992098821": {
-    "elo": 961,
+    "elo": 952,
     "missed_games": 0,
     "in_clan": false,
     "name": "5p4c3m4n",
@@ -822,8 +823,8 @@
       "name": "Undisputed",
       "icon_v": "439519665.png"
     },
-    "last_assigned_at": "2026-11-10T02:05:53.698Z",
-    "last_opponent": "4957355558"
+    "last_assigned_at": "2026-11-10T14:13:36.444Z",
+    "last_opponent": "28867016"
   },
   "38118104339": {
     "elo": 1000,
