@@ -17,11 +17,11 @@
   },
   "28867016": {
     "name": "Swisster",
-    "elo": 1158,
+    "elo": 1163,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "9780712014",
-    "last_assigned_at": "2026-11-09T00:52:34.720Z"
+    "last_opponent": "79105823914",
+    "last_assigned_at": "2026-11-10T02:05:53.698Z"
   },
   "81598466": {
     "name": "Tim 🍌",
@@ -154,11 +154,11 @@
   },
   "79105823914": {
     "name": "krinid",
-    "elo": 954,
+    "elo": 949,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "71155120841",
-    "last_assigned_at": "2026-11-09T17:22:19.833Z"
+    "last_opponent": "28867016",
+    "last_assigned_at": "2026-11-10T02:05:53.093Z"
   },
   "88110265403": {
     "name": "Crouton",
@@ -822,7 +822,7 @@
       "name": "Undisputed",
       "icon_v": "439519665.png"
     },
-    "last_assigned_at": "2026-11-09T20:12:29.483Z",
+    "last_assigned_at": "2026-11-10T02:05:53.698Z",
     "last_opponent": "4957355558"
   },
   "38118104339": {
