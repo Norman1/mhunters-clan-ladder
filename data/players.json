@@ -172,9 +172,9 @@
     "name": "Poldi",
     "elo": 1265,
     "game_cap": 2,
-    "missed_games": 1,
+    "missed_games": 0,
     "last_opponent": "4957355558",
-    "last_assigned_at": "2026-11-09T23:12:34.415Z"
+    "last_assigned_at": "2026-11-10T07:14:18.661Z"
   },
   "23154545458": {
     "name": "Light",
@@ -644,11 +644,11 @@
   },
   "53134900057": {
     "name": "extelon",
-    "elo": 992,
+    "elo": 1003,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-11-09T20:12:30.114Z",
-    "last_opponent": "84143567121",
+    "last_assigned_at": "2026-11-10T07:14:18.661Z",
+    "last_opponent": "55103688501",
     "in_clan": false,
     "departed_at": "2026-07-09T17:55:01.762Z",
     "guest": true,
@@ -793,7 +793,7 @@
       "name": "Undisputed",
       "icon_v": "439519665.png"
     },
-    "last_assigned_at": "2026-11-09T23:12:34.415Z",
+    "last_assigned_at": "2026-11-10T07:14:17.922Z",
     "last_opponent": "84143567121"
   },
   "94113453772": {
@@ -840,7 +840,7 @@
     "last_assigned_at": "2026-11-09T17:22:22.794Z"
   },
   "55103688501": {
-    "elo": 1020,
+    "elo": 999,
     "missed_games": 0,
     "in_clan": false,
     "name": "weus",
@@ -851,8 +851,8 @@
       "name": "Undisputed",
       "icon_v": "439519665.png"
     },
-    "last_assigned_at": "2026-11-09T20:12:30.114Z",
-    "last_opponent": "7992098821"
+    "last_assigned_at": "2026-11-10T07:14:17.922Z",
+    "last_opponent": "53134900057"
   },
   "57143563837": {
     "elo": 1000,
