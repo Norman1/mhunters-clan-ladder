@@ -20,8 +20,8 @@
     "elo": 1168,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "7992098821",
-    "last_assigned_at": "2026-11-10T14:13:34.010Z"
+    "last_opponent": "84143567121",
+    "last_assigned_at": "2026-11-10T15:13:43.089Z"
   },
   "81598466": {
     "name": "Tim 🍌",
@@ -172,8 +172,8 @@
     "name": "Poldi",
     "elo": 1269,
     "game_cap": 2,
-    "missed_games": 0,
-    "last_opponent": "65112512029",
+    "missed_games": 2,
+    "last_opponent": "7992098821",
     "last_assigned_at": "2026-11-10T14:13:36.444Z"
   },
   "23154545458": {
@@ -823,8 +823,8 @@
       "name": "Undisputed",
       "icon_v": "439519665.png"
     },
-    "last_assigned_at": "2026-11-10T14:13:36.444Z",
-    "last_opponent": "28867016"
+    "last_assigned_at": "2026-11-10T15:13:43.089Z",
+    "last_opponent": "84143567121"
   },
   "38118104339": {
     "elo": 1000,
