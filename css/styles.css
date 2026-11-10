@@ -990,10 +990,10 @@ tr.row--hit td { animation: row-flash 1.6s ease-out 1; }
 
 /* the nine tiers — a/b/c = banner gradient stops · t = text · sub = secondary
    text · hi = engraving bevel under the big word · time = timestamp color */
-.lg-clay       { --lg-a: #7E5544; --lg-b: #66402F; --lg-c: #4A2C20; --lg-t: #F3E6DE; --lg-sub: rgba(255,244,236,.55); --lg-time: rgba(255,244,236,.48); --lg-hi: rgba(0,0,0,.4); }
-.lg-lumber     { --lg-a: #84674A; --lg-b: #6E5439; --lg-c: #513C27; --lg-t: #F1E9DE; --lg-sub: rgba(255,248,238,.55); --lg-time: rgba(255,248,238,.48); --lg-hi: rgba(0,0,0,.38); }
-.lg-stone      { --lg-a: #565A61; --lg-b: #4A4E55; --lg-c: #34383E; --lg-t: #E3E6EA; --lg-sub: rgba(255,255,255,.52); --lg-time: rgba(255,255,255,.45); --lg-hi: rgba(0,0,0,.4); }
-.lg-iron       { --lg-a: #75797F; --lg-b: #65696F; --lg-c: #4D5157; --lg-t: #F0F2F4; --lg-sub: rgba(255,255,255,.55); --lg-time: rgba(255,255,255,.48); --lg-hi: rgba(0,0,0,.35); }
+.lg-clay       { --lg-a: #A0604A; --lg-b: #7E412D; --lg-c: #55281A; --lg-t: #F6E8E0; --lg-sub: rgba(255,240,232,.6); --lg-time: rgba(255,240,232,.52); --lg-hi: rgba(0,0,0,.4); }
+.lg-lumber     { --lg-a: #A88A5C; --lg-b: #866A42; --lg-c: #5B472B; --lg-t: #F6EEDF; --lg-sub: rgba(255,248,232,.6); --lg-time: rgba(255,248,232,.52); --lg-hi: rgba(0,0,0,.38); }
+.lg-stone      { --lg-a: #5C6168; --lg-b: #4C5158; --lg-c: #33373D; --lg-t: #E3E6EA; --lg-sub: rgba(255,255,255,.52); --lg-time: rgba(255,255,255,.45); --lg-hi: rgba(0,0,0,.4); }
+.lg-iron       { --lg-a: #929CA8; --lg-b: #76818D; --lg-c: #5A6571; --lg-t: #F4F6F8; --lg-sub: rgba(255,255,255,.62); --lg-time: rgba(255,255,255,.55); --lg-hi: rgba(0,0,0,.35); }
 .lg-silver     { --lg-a: #E4E9EF; --lg-b: #C6CFD9; --lg-c: #AAB3BE; --lg-t: #14181D; --lg-sub: rgba(12,16,21,.58); --lg-time: rgba(12,16,21,.52); --lg-hi: rgba(255,255,255,.5); }
 .lg-gold       { --lg-a: #F2DC8E; --lg-b: #E0C167; --lg-c: #CBA23F; --lg-t: #241C06; --lg-sub: rgba(32,25,7,.6);   --lg-time: rgba(32,25,7,.55);  --lg-hi: rgba(255,255,255,.4); }
 .lg-bloodsteel { --lg-a: #D8DDE3; --lg-b: #B56A6E; --lg-c: #96343B; --lg-t: #16090B; --lg-sub: rgba(20,8,10,.62);  --lg-time: rgba(255,255,255,.55); --lg-hi: rgba(255,255,255,.3); }

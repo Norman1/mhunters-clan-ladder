@@ -23,10 +23,10 @@
   ];
 
   var LEAGUES = {
-    clay:       { name: 'Clay',       color: '#6B4433', lo: -Infinity },
-    lumber:     { name: 'Lumber',     color: '#74573B', lo: 600 },
-    stone:      { name: 'Stone',      color: '#4A4E55', lo: 750 },
-    iron:       { name: 'Iron',       color: '#65696F', lo: 900 },
+    clay:       { name: 'Clay',       color: '#7E412D', lo: -Infinity },
+    lumber:     { name: 'Lumber',     color: '#866A42', lo: 600 },
+    stone:      { name: 'Stone',      color: '#4C5158', lo: 750 },
+    iron:       { name: 'Iron',       color: '#76818D', lo: 900 },
     silver:     { name: 'Silver',     color: '#BEC7D1', lo: 1050 },
     gold:       { name: 'Gold',       color: '#DCBB5C', lo: 1150 },
     bloodsteel: { name: 'Bloodsteel', color: '#B56A6E', lo: 1250 },

@@ -138,8 +138,8 @@
   border: 1px solid var(--lg-c, var(--line));
   border-radius: 3px;
   background: linear-gradient(100deg,
-    var(--lg-a, #565A61) 0%,
-    var(--lg-b, #4A4E55) 48%,
+    var(--lg-a, #5C6168) 0%,
+    var(--lg-b, #4C5158) 48%,
     var(--lg-c, #34383E) 100%);
 }
 #hero-league:empty { display: none; }

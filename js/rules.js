@@ -196,7 +196,7 @@
   }
 
   function chipGradient(key) {
-    if (!window.Insignia || typeof window.Insignia.leagueColor !== 'function') return '#65696F';
+    if (!window.Insignia || typeof window.Insignia.leagueColor !== 'function') return '#76818D';
     // plasma: white-hot core igniting into crimson fire (insignia ramp twin)
     if (key === 'plasma') return 'linear-gradient(120deg, #FFF3C4, #FF7B2E 45%, #C6160D)';
     // bloodsteel: silver bleeding into red (matches the insignia ramp)
