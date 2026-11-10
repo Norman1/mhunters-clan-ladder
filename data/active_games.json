@@ -187,14 +187,6 @@
     "current_turn": 3
   },
   {
-    "game_id": "45662503",
-    "created_at": "2026-11-09T23:12:34.415Z",
-    "p1_id": "4957355558",
-    "p2_id": "84143567121",
-    "template_id": 1587198,
-    "game_state": "WaitingForPlayers"
-  },
-  {
     "game_id": "45663273",
     "created_at": "2026-11-10T02:05:53.093Z",
     "p1_id": "79105823914",

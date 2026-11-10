@@ -172,8 +172,8 @@
     "name": "Poldi",
     "elo": 1265,
     "game_cap": 2,
-    "missed_games": 0,
-    "last_opponent": "7992098821",
+    "missed_games": 1,
+    "last_opponent": "4957355558",
     "last_assigned_at": "2026-11-09T23:12:34.415Z"
   },
   "23154545458": {
@@ -794,7 +794,7 @@
       "icon_v": "439519665.png"
     },
     "last_assigned_at": "2026-11-09T23:12:34.415Z",
-    "last_opponent": "7992098821"
+    "last_opponent": "84143567121"
   },
   "94113453772": {
     "elo": 1000,
