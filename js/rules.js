@@ -3,7 +3,7 @@
    Plain vanilla script (no modules). Depends on:
      window.LadderData (js/derive.js) — LadderData.load()
        → { active, reserve, meta } (rank counts: active+reserve; league counts: active)
-     window.Insignia (js/insignia.js) — Insignia.svg(ri,'steel',22),
+     window.Insignia (js/insignia.js) — Insignia.svg(ri,'iron',22),
        Insignia.leagueColor(key) for the league metal chips
    DOM contract (rules.html):
      #ranks-body · #leagues-body ·
@@ -37,17 +37,17 @@
   ];
 
   var LEAGUE_KEYS = [
-    'clay', 'lumber', 'stone', 'iron', 'steel', 'cobalt', 'silver',
-    'gold', 'orichalcum', 'bloodsteel', 'magma', 'plasma'
+    'clay', 'lumber', 'stone', 'iron', 'silver',
+    'gold', 'bloodsteel', 'magma', 'plasma'
   ];
 
   var LEAGUE_NAMES = [
-    'Clay', 'Lumber', 'Stone', 'Iron', 'Steel', 'Cobalt', 'Silver',
-    'Gold', 'Orichalcum', 'Bloodsteel', 'Magma', 'Plasma'
+    'Clay', 'Lumber', 'Stone', 'Iron', 'Silver',
+    'Gold', 'Bloodsteel', 'Magma', 'Plasma'
   ];
 
   var LEAGUE_FLOORS = [
-    -Infinity, 600, 700, 800, 900, 1000, 1100, 1200, 1300, 1400, 1500, 1600
+    -Infinity, 600, 750, 900, 1050, 1150, 1250, 1400, 1600
   ];
 
   /* ------------------------------------------------------------
@@ -119,21 +119,21 @@
     console.log('rules.js pure-helper self-test');
 
     eq(rangeLabel(0), 'below 600', 'rangeLabel bottom → below 600');
-    eq(rangeLabel(1), '600–699', 'rangeLabel lumber → 600–699');
-    eq(rangeLabel(2), '700–799', 'rangeLabel stone → 700–799');
-    eq(rangeLabel(3), '800–899', 'rangeLabel iron → 800–899');
-    eq(rangeLabel(5), '1000–1099', 'rangeLabel cobalt → 1000–1099');
-    eq(rangeLabel(8), '1300–1399', 'rangeLabel orichalcum → 1300–1399');
-    eq(rangeLabel(10), '1500–1599', 'rangeLabel magma → 1500–1599');
-    eq(rangeLabel(11), '1600+', 'rangeLabel top → 1600+');
+    eq(rangeLabel(1), '600–749', 'rangeLabel lumber → 600–749');
+    eq(rangeLabel(2), '750–899', 'rangeLabel stone → 750–899');
+    eq(rangeLabel(3), '900–1049', 'rangeLabel iron → 900–1049');
+    eq(rangeLabel(4), '1050–1149', 'rangeLabel silver → 1050–1149');
+    eq(rangeLabel(6), '1250–1399', 'rangeLabel bloodsteel → 1250–1399');
+    eq(rangeLabel(7), '1400–1599', 'rangeLabel magma → 1400–1599');
+    eq(rangeLabel(8), '1600+', 'rangeLabel top → 1600+');
     eq(rangeLabel(2, [-Infinity, 10, 20, 30]), '20–29', 'rangeLabel honors custom floors');
 
     var fakePlayers = [
-      { rankIndex: 0, league: 'cobalt', elo: 1000 },
+      { rankIndex: 0, league: 'iron', elo: 1000 },
       { rankIndex: 0, league: 'stone', elo: 812 },
-      { rankIndex: 4, league: 'orichalcum', elo: 1369 },
+      { rankIndex: 4, league: 'bloodsteel', elo: 1369 },
       { rankIndex: 24, league: 'magma', elo: 1520 },
-      { rankIndex: 99, league: 'nope', elo: 905 },     // clamps + elo fallback
+      { rankIndex: 99, league: 'nope', elo: 1100 },    // clamps + elo fallback
       { rankIndex: 'x' }                               // junk-safe
     ];
     var rc = countByRank(fakePlayers);
@@ -145,13 +145,13 @@
     eq(countByRank(null).length, 25, 'countByRank null-safe');
 
     var lc = countByLeague(fakePlayers);
-    eq(lc.length, 12, 'countByLeague returns 12 buckets');
-    eq(lc[5], 2, 'countByLeague cobalt bucket (missing key → start elo 1000)');
+    eq(lc.length, 9, 'countByLeague returns 9 buckets');
+    eq(lc[3], 2, 'countByLeague iron bucket (missing key → start elo 1000)');
     eq(lc[2], 1, 'countByLeague stone bucket');
-    eq(lc[4], 1, 'countByLeague unknown key falls back to elo (steel 905)');
-    eq(lc[8], 1, 'countByLeague orichalcum bucket');
-    eq(lc[10], 1, 'countByLeague magma bucket');
-    eq(countByLeague([]).join(''), '000000000000', 'countByLeague empty → zeros');
+    eq(lc[4], 1, 'countByLeague unknown key falls back to elo (silver 1100)');
+    eq(lc[6], 1, 'countByLeague bloodsteel bucket');
+    eq(lc[7], 1, 'countByLeague magma bucket');
+    eq(countByLeague([]).join(''), '000000000', 'countByLeague empty → zeros');
 
     console.log(failures === 0
       ? 'ALL ' + checks + ' CHECKS PASSED'
@@ -234,7 +234,7 @@
       var ins = doc.createElement('td');
       ins.className = 'c-ins';
       if (window.Insignia && typeof window.Insignia.svg === 'function') {
-        ins.innerHTML = window.Insignia.svg(ri, 'steel', 22);
+        ins.innerHTML = window.Insignia.svg(ri, 'iron', 22);
       }
       tr.appendChild(ins);
 
@@ -254,7 +254,7 @@
     body.appendChild(frag);
   }
 
-  /* 12 leagues: metal chip · name · elo band · current players */
+  /* 9 leagues: metal chip · name · elo band · current players */
   function renderLeagues(counts) {
     var body = $('leagues-body');
     if (!body) return;
@@ -275,7 +275,7 @@
       var name = doc.createElement('td');
       name.className = 'c-name' + (key === 'magma' ? ' is-magma' : '');
       name.textContent = LEAGUE_NAMES[li];
-      if (key === 'cobalt') {
+      if (key === 'iron') {
         var tag = doc.createElement('span');
         tag.className = 'start-tag';
         tag.textContent = 'START';

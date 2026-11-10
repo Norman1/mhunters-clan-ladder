@@ -30,15 +30,12 @@
   var LEAGUES = [
     { key: 'clay',       name: 'Clay',       lo: -Infinity },
     { key: 'lumber',     name: 'Lumber',     lo: 600 },
-    { key: 'stone',      name: 'Stone',      lo: 700 },
-    { key: 'iron',       name: 'Iron',       lo: 800 },
-    { key: 'steel',      name: 'Steel',      lo: 900 },
-    { key: 'cobalt',     name: 'Cobalt',     lo: 1000 },
-    { key: 'silver',     name: 'Silver',     lo: 1100 },
-    { key: 'gold',       name: 'Gold',       lo: 1200 },
-    { key: 'orichalcum', name: 'Orichalcum', lo: 1300 },
-    { key: 'bloodsteel', name: 'Bloodsteel', lo: 1400 },
-    { key: 'magma',      name: 'Magma',      lo: 1500 },
+    { key: 'stone',      name: 'Stone',      lo: 750 },
+    { key: 'iron',       name: 'Iron',       lo: 900 },
+    { key: 'silver',     name: 'Silver',     lo: 1050 },
+    { key: 'gold',       name: 'Gold',       lo: 1150 },
+    { key: 'bloodsteel', name: 'Bloodsteel', lo: 1250 },
+    { key: 'magma',      name: 'Magma',      lo: 1400 },
     { key: 'plasma',     name: 'Plasma',     lo: 1600 }
   ];
 

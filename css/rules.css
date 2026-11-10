@@ -276,7 +276,7 @@ html { scroll-behavior: smooth; }
   .lg-chip--plasma { animation: none; }
 }
 
-/* 'START' tag on the Cobalt row */
+/* 'START' tag on the Iron row */
 .start-tag {
   display: inline-block;
   font-family: var(--font-mono);

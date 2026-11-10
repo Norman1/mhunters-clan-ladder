@@ -25,15 +25,12 @@
   var LEAGUES = {
     clay:       { name: 'Clay',       color: '#6B4433', lo: -Infinity },
     lumber:     { name: 'Lumber',     color: '#74573B', lo: 600 },
-    stone:      { name: 'Stone',      color: '#4A4E55', lo: 700 },
-    iron:       { name: 'Iron',       color: '#65696F', lo: 800 },
-    steel:      { name: 'Steel',      color: '#7E8B9B', lo: 900 },
-    cobalt:     { name: 'Cobalt',     color: '#91A8C4', lo: 1000 },
-    silver:     { name: 'Silver',     color: '#BEC7D1', lo: 1100 },
-    gold:       { name: 'Gold',       color: '#DCBB5C', lo: 1200 },
-    orichalcum: { name: 'Orichalcum', color: '#D08A4E', lo: 1300 },
-    bloodsteel: { name: 'Bloodsteel', color: '#B56A6E', lo: 1400 },
-    magma:      { name: 'Magma',      color: '#D22730', lo: 1500 },
+    stone:      { name: 'Stone',      color: '#4A4E55', lo: 750 },
+    iron:       { name: 'Iron',       color: '#65696F', lo: 900 },
+    silver:     { name: 'Silver',     color: '#BEC7D1', lo: 1050 },
+    gold:       { name: 'Gold',       color: '#DCBB5C', lo: 1150 },
+    bloodsteel: { name: 'Bloodsteel', color: '#B56A6E', lo: 1250 },
+    magma:      { name: 'Magma',      color: '#D22730', lo: 1400 },
     plasma:     { name: 'Plasma',     color: '#FF6229', lo: 1600 }
   };
 
@@ -79,8 +76,6 @@
     if (key === 'plasma') return ['#FFF3C4', '#FF7B2E', '#C6160D'];
     if (key === 'bloodsteel') return ['#C4CAD2', '#B56A6E', '#96343B']; // silver bleeding into red
     var base = leagueColor(key);
-    // Orichalcum: red-gold, bright gold top cooling to copper.
-    if (key === 'orichalcum') return ['#F0C98A', '#D08A4E', '#9A5A2C'];
     // Magma: glowing crust over dark red.
     if (key === 'magma') return ['#F07A6E', '#D22730', '#7E1218'];
     return [lighten(base, 0.34), base, darken(base, 0.34)];
@@ -469,7 +464,7 @@
     var count = 0;
 
     if (RANKS.length !== 25) fails.push('RANKS length ' + RANKS.length + ' !== 25');
-    if (leagues.length !== 12) fails.push('LEAGUES length ' + leagues.length + ' !== 12');
+    if (leagues.length !== 9) fails.push('LEAGUES length ' + leagues.length + ' !== 9');
     leagues.forEach(function (k) {
       if (!/^#[0-9A-F]{6}$/i.test(leagueColor(k))) fails.push('leagueColor(' + k + ') not hex: ' + leagueColor(k));
     });

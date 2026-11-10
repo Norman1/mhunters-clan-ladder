@@ -422,7 +422,7 @@
     div.title = g.text || '';
 
     if (g.kind === 'ascension' || g.kind === 'demotion') {
-      div.className = 'feed-item feed-item--honor feed-item--league lg-' + (g.leagueKey || 'steel') +
+      div.className = 'feed-item feed-item--honor feed-item--league lg-' + (g.leagueKey || 'iron') +
         (g.kind === 'ascension' ? ' feed-item--up' : ' feed-item--down');
 
       div.appendChild(cardTitle(doc, g.kind === 'ascension' ? '▲' : '▼',
@@ -430,7 +430,7 @@
       div.appendChild(clanTagImg(doc));
       div.appendChild(nameLink(g.playerName, 'fh-name', g.playerId, ctx));
       div.appendChild(fromTo(doc, g.prevLeagueName, (g.leagueName || '').toUpperCase(),
-        '', g.prevLeagueKey, g.leagueKey || 'steel'));
+        '', g.prevLeagueKey, g.leagueKey || 'iron'));
       attachFeedTime(div, g.date, doc);
       return div;
     }
@@ -443,7 +443,7 @@
     var badge = doc.createElement('span');
     badge.className = 'fh-badge fh-badge--cert';
     try {
-      var tint = (ctx && ctx.leagueById && ctx.leagueById[String(g.playerId)]) || 'steel';
+      var tint = (ctx && ctx.leagueById && ctx.leagueById[String(g.playerId)]) || 'iron';
       badge.innerHTML = window.Insignia.svg(g.rankIndex, tint, 34);
     } catch (err) { /* badge optional */ }
     div.appendChild(badge);

@@ -40,15 +40,12 @@
   var LEAGUES = [
     { key: 'clay',       name: 'Clay',       lo: -Infinity },
     { key: 'lumber',     name: 'Lumber',     lo: 600 },
-    { key: 'stone',      name: 'Stone',      lo: 700 },
-    { key: 'iron',       name: 'Iron',       lo: 800 },
-    { key: 'steel',      name: 'Steel',      lo: 900 },
-    { key: 'cobalt',     name: 'Cobalt',     lo: 1000 },
-    { key: 'silver',     name: 'Silver',     lo: 1100 },
-    { key: 'gold',       name: 'Gold',       lo: 1200 },
-    { key: 'orichalcum', name: 'Orichalcum', lo: 1300 },
-    { key: 'bloodsteel', name: 'Bloodsteel', lo: 1400 },
-    { key: 'magma',      name: 'Magma',      lo: 1500 },
+    { key: 'stone',      name: 'Stone',      lo: 750 },
+    { key: 'iron',       name: 'Iron',       lo: 900 },
+    { key: 'silver',     name: 'Silver',     lo: 1050 },
+    { key: 'gold',       name: 'Gold',       lo: 1150 },
+    { key: 'bloodsteel', name: 'Bloodsteel', lo: 1250 },
+    { key: 'magma',      name: 'Magma',      lo: 1400 },
     { key: 'plasma',     name: 'Plasma',     lo: 1600 }
   ];
 
@@ -500,24 +497,24 @@
       'rankProgress exactly at threshold');
 
     /* league progress */
-    eq(leagueProgress(1152), { label: '48 PTS TO GOLD LEAGUE', frac: (1152 - 1100) / 100 },
+    eq(leagueProgress(1102), { label: '48 PTS TO GOLD LEAGUE', frac: (1102 - 1050) / 100 },
       'leagueProgress silver → gold');
-    eq(leagueProgress(1500), { label: '100 PTS TO PLASMA LEAGUE', frac: 0 },
+    eq(leagueProgress(1400), { label: '200 PTS TO PLASMA LEAGUE', frac: 0 },
       'leagueProgress magma climbs toward plasma');
     eq(leagueProgress(1600), { label: 'TOP LEAGUE', frac: 1 }, 'leagueProgress plasma');
     eq(leagueProgress(1650), { label: 'TOP LEAGUE', frac: 1 }, 'leagueProgress above plasma');
-    eq(leagueProgress(800), { label: '100 PTS TO STEEL LEAGUE', frac: 0 },
+    eq(leagueProgress(900), { label: '150 PTS TO SILVER LEAGUE', frac: 0 },
       'leagueProgress exactly at iron floor');
-    eq(leagueProgress(650), { label: '50 PTS TO STONE LEAGUE', frac: 50 / 100 },
-      'leagueProgress lumber 600–699');
+    eq(leagueProgress(650), { label: '100 PTS TO STONE LEAGUE', frac: 50 / 150 },
+      'leagueProgress lumber 600–749');
     eq(leagueProgress(500), { label: '100 PTS TO LUMBER LEAGUE', frac: 50 / 150 },
       'leagueProgress clay uses nominal window');
     eq(leagueProgress(400), { label: '200 PTS TO LUMBER LEAGUE', frac: 0 },
       'leagueProgress deep clay clamps to 0');
-    eq(leagueProgress(899), { label: '1 PT TO STEEL LEAGUE', frac: 99 / 100 },
+    eq(leagueProgress(899), { label: '1 PT TO IRON LEAGUE', frac: 149 / 150 },
       'leagueProgress singular PT');
-    eq(leagueProgress(1000), { label: '100 PTS TO SILVER LEAGUE', frac: 0 },
-      'leagueProgress exactly at cobalt floor');
+    eq(leagueProgress(1000), { label: '50 PTS TO SILVER LEAGUE', frac: 100 / 150 },
+      'leagueProgress start rating sits inside iron');
 
     /* smooth path (monotone cubic) */
     eq(smoothPathD([0, 10], [5, 8]), 'M0.0 5.0L10.0 8.0', 'smoothPathD 2 pts → straight segment');
@@ -596,9 +593,9 @@
 
     /* league floors in domain */
     eq(floorsInDomain(930, 1080).map(function (l) { return l.key; }),
-      ['cobalt'], 'floorsInDomain 930–1080');
-    eq(floorsInDomain(1290, 1550).map(function (l) { return l.key; }),
-      ['orichalcum', 'bloodsteel', 'magma'], 'floorsInDomain top end');
+      ['silver'], 'floorsInDomain 930–1080');
+    eq(floorsInDomain(1200, 1620).map(function (l) { return l.key; }),
+      ['bloodsteel', 'magma', 'plasma'], 'floorsInDomain top end');
     eq(floorsInDomain(-2000, 500), [], 'floorsInDomain none (clay has no floor)');
 
     /* y-axis ticks (round values inside the domain, at most 5) */
@@ -644,8 +641,8 @@
 
     /* league bands in domain (chart zone fills) */
     eq(leagueBandsInDomain(930, 1080),
-      [{ key: 'steel', lo: 930, hi: 1000 },
-       { key: 'cobalt', lo: 1000, hi: 1080 }],
+      [{ key: 'iron', lo: 930, hi: 1050 },
+       { key: 'silver', lo: 1050, hi: 1080 }],
       'leagueBandsInDomain clips bands to the domain');
     eq(leagueBandsInDomain(1520, 1600),
       [{ key: 'magma', lo: 1520, hi: 1600 }],
