@@ -548,8 +548,15 @@
       img.alt = '';
       img.loading = 'lazy';
       img.decoding = 'async';
-      img.onerror = function () { art.classList.add('lv-art--none'); img.remove(); };
-      img.src = 'assets/maps/thumb/' + encodeURIComponent(g.templateId) + '.jpg';
+      var file = encodeURIComponent(g.templateId) + '.jpg';
+      // small copy first; full-size art if its thumbnail isn't made yet;
+      // plain panel when the template has no art at all
+      img.onerror = function () {
+        if (img.dataset.full) { art.classList.add('lv-art--none'); img.remove(); return; }
+        img.dataset.full = '1';
+        img.src = 'assets/maps/' + file;
+      };
+      img.src = 'assets/maps/thumb/' + file;
       art.appendChild(img);
     } else {
       art.classList.add('lv-art--none');

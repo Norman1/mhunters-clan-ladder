@@ -416,7 +416,7 @@
 /* ----------------------------- live: map cards ----------------------------- */
 /* one card per live game: the template's board art labelled with its name,
    both players with ratings, then turn / phase and how long it has run.
-   Grouped IN PLAY → PICKING → NOT STARTED. */
+   Grouped IN PLAY → PICKING → NOT STARTED, each with a status colour. */
 #live-list.lv { padding: 4px 0 8px; }
 
 #live-list .lv-group + .lv-group { margin-top: 22px; }
@@ -434,19 +434,32 @@
   color: var(--muted);
 }
 #live-list .lv-count { color: var(--dim); font-weight: 500; }
-#live-list .lv-group--play .lv-head::before {
+/* status colours: green in play, yellow picking, red not started */
+#live-list.lv {
+  --st-play: #43B06A;
+  --st-picks: var(--warn);
+  --st-lobby: var(--red);
+}
+#live-list .lv-group--play,
+#live-list .lv-card--play { --st: var(--st-play); }
+#live-list .lv-group--picks,
+#live-list .lv-card--picks { --st: var(--st-picks); }
+#live-list .lv-group--lobby,
+#live-list .lv-card--lobby { --st: var(--st-lobby); }
+
+#live-list .lv-head::before {
   content: '';
   width: 7px;
   height: 7px;
   border-radius: 50%;
-  background: var(--red);
+  background: var(--st);
   align-self: center;
-  box-shadow: 0 0 0 3px color-mix(in srgb, var(--red) 22%, transparent);
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--st) 22%, transparent);
 }
 
 #live-list .lv-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(232px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(264px, 1fr));
   gap: 12px;
 }
 
@@ -529,7 +542,8 @@
   font-size: 17px;
   letter-spacing: 0.02em;
   color: var(--white);
-  overflow-wrap: anywhere;
+  overflow-wrap: break-word;
+  min-width: 0;
 }
 #live-list a.lv-name:hover { color: var(--red-hover); }
 #live-list .lv-rating {
@@ -552,9 +566,23 @@
   letter-spacing: 0.08em;
   color: var(--silver);
 }
+#live-list .lv-phase {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+/* small status dot before TURN 16 / PICKS / NOT STARTED */
+#live-list .lv-phase::before {
+  content: '';
+  flex: 0 0 auto;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--st);
+}
 #live-list .lv-card--play .lv-phase { color: var(--white); }
 #live-list .lv-card--picks .lv-phase { color: var(--warn); }
-#live-list .lv-card--lobby .lv-phase { color: var(--dim); }
+#live-list .lv-card--lobby .lv-phase { color: var(--muted); }
 #live-list .lv-age { font-size: 10.5px; letter-spacing: 0.06em; color: var(--dim); }
 
 /* not-started games read quieter */
@@ -566,6 +594,22 @@
   #live-list .lv-card[role="link"] { flex-direction: row; align-items: stretch; }
   #live-list .lv-art { flex: 0 0 128px; aspect-ratio: auto; min-height: 76px; }
   #live-list .lv-map { font-size: 13px; left: 8px; right: 8px; bottom: 6px; }
-  #live-list .lv-body { flex: 1 1 auto; min-width: 0; padding: 8px 12px; }
+  #live-list .lv-body {
+    flex: 1 1 auto;
+    min-width: 0;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+    gap: 3px;
+    padding: 8px 12px;
+  }
+  /* status on its own line above the players, so names get the full width */
+  #live-list .lv-status {
+    order: -1;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+  }
   #live-list .lv-name { font-size: 15.5px; }
 }
