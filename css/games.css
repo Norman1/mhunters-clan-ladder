@@ -459,7 +459,7 @@
 
 #live-list .lv-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(264px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(288px, 1fr));
   gap: 12px;
 }
 
@@ -592,7 +592,7 @@
 @media (max-width: 600px) {
   #live-list .lv-grid { grid-template-columns: 1fr; gap: 8px; }
   #live-list .lv-card[role="link"] { flex-direction: row; align-items: stretch; }
-  #live-list .lv-art { flex: 0 0 128px; aspect-ratio: auto; min-height: 76px; }
+  #live-list .lv-art { flex: 0 0 120px; aspect-ratio: auto; min-height: 76px; }
   #live-list .lv-map { font-size: 13px; left: 8px; right: 8px; bottom: 6px; }
   #live-list .lv-body {
     flex: 1 1 auto;
@@ -609,7 +609,10 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    gap: 8px;
+    flex-wrap: wrap; /* very narrow phones: the age drops under the status */
+    gap: 1px 8px;
   }
   #live-list .lv-name { font-size: 15.5px; }
+  #live-list .lv-phase { letter-spacing: 0.05em; }
+  #live-list .lv-age { letter-spacing: 0.03em; }
 }

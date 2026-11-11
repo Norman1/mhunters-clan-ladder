@@ -592,8 +592,10 @@
     if (age) {
       var ag = doc.createElement('span');
       ag.className = 'lv-age';
-      ag.textContent = age + ' AGO';
-      ag.title = 'Started ' + formatDate(g.started);
+      // not-started games only have a creation time
+      var verb = liveGroup(g.phase) === 'lobby' ? 'CREATED' : 'STARTED';
+      ag.textContent = verb + ' ' + age + ' AGO';
+      ag.title = (verb === 'CREATED' ? 'Created ' : 'Started ') + formatDate(g.started);
       status.appendChild(ag);
     }
     body.appendChild(status);
