@@ -17,11 +17,11 @@
   },
   "28867016": {
     "name": "Swisster",
-    "elo": 1152,
+    "elo": 1158,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "7992098821",
-    "last_assigned_at": "2026-11-10T17:48:46.723Z"
+    "last_opponent": "38118104339",
+    "last_assigned_at": "2026-11-11T17:15:50.933Z"
   },
   "81598466": {
     "name": "Tim 🍌",
@@ -138,11 +138,11 @@
   },
   "4155523061": {
     "name": "AGEHNT SMITH",
-    "elo": 710,
+    "elo": 727,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-11-10T14:13:34.732Z",
-    "last_opponent": "65112512029"
+    "last_assigned_at": "2026-11-11T17:15:52.975Z",
+    "last_opponent": "33160357416"
   },
   "4180490094": {
     "name": "Woololo",
@@ -399,7 +399,7 @@
     "elo": 1175,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-11-10T23:14:15.679Z",
+    "last_assigned_at": "2026-11-11T17:15:51.745Z",
     "last_opponent": "71155120841"
   },
   "71155120841": {
@@ -407,7 +407,7 @@
     "elo": 1344,
     "game_cap": 3,
     "missed_games": 0,
-    "last_assigned_at": "2026-11-10T17:48:47.391Z",
+    "last_assigned_at": "2026-11-11T17:15:52.975Z",
     "last_opponent": "94113453772"
   },
   "6411877352": {
@@ -644,11 +644,11 @@
   },
   "53134900057": {
     "name": "extelon",
-    "elo": 1003,
+    "elo": 993,
     "game_cap": 2,
     "missed_games": 0,
     "last_assigned_at": "2026-11-10T12:18:18.018Z",
-    "last_opponent": "84143567121",
+    "last_opponent": "38118104339",
     "in_clan": false,
     "departed_at": "2026-07-09T17:55:01.762Z",
     "guest": true,
@@ -739,18 +739,18 @@
   },
   "33160357416": {
     "name": "Marcus Aurelius",
-    "elo": 987,
+    "elo": 954,
     "game_cap": 2,
     "missed_games": 0,
     "in_clan": false,
     "guest": true,
-    "last_assigned_at": "2026-11-06T15:12:12.742Z",
+    "last_assigned_at": "2026-11-11T17:15:50.933Z",
     "clan": {
       "id": "962",
       "name": "Stackers",
       "icon_v": "626818011.png"
     },
-    "last_opponent": "28867016"
+    "last_opponent": "4155523061"
   },
   "65112512029": {
     "elo": 999,
@@ -828,7 +828,7 @@
     "last_opponent": "28867016"
   },
   "38118104339": {
-    "elo": 995,
+    "elo": 1003,
     "missed_games": 0,
     "in_clan": false,
     "name": "ouchudied",
@@ -839,8 +839,8 @@
       "name": "Undisputed",
       "icon_v": "439519665.png"
     },
-    "last_assigned_at": "2026-11-10T17:48:46.723Z",
-    "last_opponent": "71155120841"
+    "last_assigned_at": "2026-11-11T17:15:52.348Z",
+    "last_opponent": "28867016"
   },
   "55103688501": {
     "elo": 999,

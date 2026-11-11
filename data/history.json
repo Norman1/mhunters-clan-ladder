@@ -27161,5 +27161,44 @@
     "elo_change": 2,
     "elo_loss": 5,
     "turns": 2
+  },
+  {
+    "game_id": "45632428",
+    "created_at": "2026-11-05T18:43:49.643Z",
+    "p1_id": "4155523061",
+    "p2_id": "33160357416",
+    "winner_id": "4155523061",
+    "loser_id": "33160357416",
+    "finished_at": "2026-11-11T16:10:52.000Z",
+    "template_id": 1579662,
+    "elo_change": 17,
+    "elo_loss": 33,
+    "turns": 12
+  },
+  {
+    "game_id": "45659864",
+    "created_at": "2026-11-09T17:22:22.794Z",
+    "p1_id": "38118104339",
+    "p2_id": "53134900057",
+    "winner_id": "38118104339",
+    "loser_id": "53134900057",
+    "finished_at": "2026-11-11T15:51:07.000Z",
+    "template_id": 1579657,
+    "elo_change": 20,
+    "elo_loss": 10,
+    "turns": 5
+  },
+  {
+    "game_id": "45667618",
+    "created_at": "2026-11-10T17:48:46.723Z",
+    "p1_id": "38118104339",
+    "p2_id": "28867016",
+    "winner_id": "28867016",
+    "loser_id": "38118104339",
+    "finished_at": "2026-11-11T14:51:17.000Z",
+    "template_id": 1587200,
+    "elo_change": 6,
+    "elo_loss": 12,
+    "turns": 2
   }
 ]
