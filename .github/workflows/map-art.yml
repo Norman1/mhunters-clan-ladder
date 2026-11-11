@@ -1,8 +1,8 @@
 name: Map Art Sweep
 
 # Capture card art for pool templates that don't have it yet.
-# Art can only be captured from a rendered game board, so brand-new
-# templates are picked up on the first run after their first game starts.
+# Art comes from a clean game board (a finished game, or one still in its
+# picks stage), so brand-new templates are picked up once a game reaches picks.
 
 on:
   push:

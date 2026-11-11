@@ -61,8 +61,9 @@ function buildResolver(templates) {
   const missing = templates.filter(t => !fs.existsSync(path.join(OUT_DIR, t.id + '.jpg')));
   if (!missing.length) { console.log('all pool templates have art — nothing to do'); return; }
 
-  // one renderable game per artless template: finished first, else active
-  // games that are past the lobby (game_state present = joined/playing)
+  // one clean board per artless template: a finished game first, else a
+  // game still in its picks stage. Never a game being played — that board
+  // shows one side's territories and fog, not the template itself.
   const gameFor = {};
   for (const g of history) {
     if (g.p1_id && g.winner_id) {
@@ -72,13 +73,13 @@ function buildResolver(templates) {
   }
   for (const g of active) {
     const tid = resolve(g.template_id);
-    if (!gameFor[tid] && g.game_state != null) gameFor[tid] = g.game_id;
+    if (!gameFor[tid] && g.game_state === 'DistributingTerritories') gameFor[tid] = g.game_id;
   }
 
   const targets = missing
     .map(t => ({ id: String(t.id), name: t.name, gameId: gameFor[String(t.id)] }))
     .filter(t => {
-      if (!t.gameId) console.log('no renderable game yet for', t.id, t.name, '— will retry on a later run');
+      if (!t.gameId) console.log('no finished or picking game yet for', t.id, t.name, '— will retry on a later run');
       return !!t.gameId;
     });
   if (!targets.length) { console.log('no capturable templates this run'); return; }
