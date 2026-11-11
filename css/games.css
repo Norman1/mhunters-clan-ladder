@@ -412,3 +412,160 @@
 
   .grow-skel { padding: 12px 12px 13px; }
 }
+
+/* ----------------------------- live: map cards ----------------------------- */
+/* one card per live game: the template's board art labelled with its name,
+   both players with ratings, then turn / phase and how long it has run.
+   Grouped IN PLAY → PICKING → NOT STARTED. */
+#live-list.lv { padding: 4px 0 8px; }
+
+#live-list .lv-group + .lv-group { margin-top: 22px; }
+
+#live-list .lv-head {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  margin: 0 0 10px;
+  padding: 0 2px;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  color: var(--muted);
+}
+#live-list .lv-count { color: var(--dim); font-weight: 500; }
+#live-list .lv-group--play .lv-head::before {
+  content: '';
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--red);
+  align-self: center;
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--red) 22%, transparent);
+}
+
+#live-list .lv-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(232px, 1fr));
+  gap: 12px;
+}
+
+#live-list .lv-card[role="link"] {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  overflow: hidden;
+  background: var(--card);
+  transition: border-color var(--speed) ease, background-color var(--speed) ease;
+}
+#live-list .lv-card[role="link"]:hover {
+  background: #1F2126;
+  border-color: #3A3E46;
+}
+#live-list .lv-card[role="link"]:focus-visible { outline-offset: 2px; }
+
+/* board art with the template name across its foot */
+#live-list .lv-art {
+  position: relative;
+  aspect-ratio: 2 / 1;
+  background: #0F1013;
+  overflow: hidden;
+}
+#live-list .lv-art img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: saturate(0.85) brightness(0.92);
+  transition: transform 400ms ease, filter var(--speed) ease;
+}
+#live-list .lv-card:hover .lv-art img { transform: scale(1.04); filter: saturate(1) brightness(1); }
+#live-list .lv-art::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(10, 11, 13, 0.92) 0%, rgba(10, 11, 13, 0.45) 38%, transparent 64%);
+  pointer-events: none;
+}
+#live-list .lv-art--none {
+  background:
+    repeating-linear-gradient(135deg, rgba(255, 255, 255, 0.025) 0 8px, transparent 8px 16px),
+    #121317;
+}
+#live-list .lv-map {
+  position: absolute;
+  z-index: 1;
+  left: 12px;
+  right: 12px;
+  bottom: 8px;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 1.05;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--white);
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.8);
+}
+
+#live-list .lv-body {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 12px 11px;
+}
+#live-list .lv-players { flex: 1 1 auto; min-width: 0; }
+#live-list .lv-p {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  line-height: 1.35;
+}
+#live-list .lv-name {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 17px;
+  letter-spacing: 0.02em;
+  color: var(--white);
+  overflow-wrap: anywhere;
+}
+#live-list a.lv-name:hover { color: var(--red-hover); }
+#live-list .lv-rating {
+  font-size: 11px;
+  color: var(--dim);
+  font-variant-numeric: tabular-nums;
+}
+
+#live-list .lv-status {
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 2px;
+  text-align: right;
+}
+#live-list .lv-phase {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  color: var(--silver);
+}
+#live-list .lv-card--play .lv-phase { color: var(--white); }
+#live-list .lv-card--picks .lv-phase { color: var(--warn); }
+#live-list .lv-card--lobby .lv-phase { color: var(--dim); }
+#live-list .lv-age { font-size: 10.5px; letter-spacing: 0.06em; color: var(--dim); }
+
+/* not-started games read quieter */
+#live-list .lv-card--lobby .lv-art img { filter: grayscale(0.6) brightness(0.7); }
+
+/* phones: compact rows — thumbnail left, players + status right */
+@media (max-width: 600px) {
+  #live-list .lv-grid { grid-template-columns: 1fr; gap: 8px; }
+  #live-list .lv-card[role="link"] { flex-direction: row; align-items: stretch; }
+  #live-list .lv-art { flex: 0 0 128px; aspect-ratio: auto; min-height: 76px; }
+  #live-list .lv-map { font-size: 13px; left: 8px; right: 8px; bottom: 6px; }
+  #live-list .lv-body { flex: 1 1 auto; min-width: 0; padding: 8px 12px; }
+  #live-list .lv-name { font-size: 15.5px; }
+}

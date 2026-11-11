@@ -1,4 +1,5 @@
-/* Capture card art for pool templates that are missing assets/maps/<id>.jpg.
+/* Capture card art for pool templates that are missing assets/maps/<id>.jpg,
+   plus a small thumb/<id>.jpg copy of each.
    Logs into war.app (WZ_EMAIL / WZ_PASSWORD env vars), opens one rendered
    game per artless template (finished games from history, or active games
    already past the lobby), hides the game UI, clip-shoots the board canvas,
@@ -13,6 +14,24 @@ const sharp = require('sharp');
 
 const ROOT = path.join(__dirname, '..');
 const OUT_DIR = path.join(ROOT, 'assets', 'maps');
+const THUMB_DIR = path.join(OUT_DIR, 'thumb');
+const THUMB_WIDTH = 560; // live-game cards: ~280px wide at 2x
+
+/* small copy of each map for the live-games list (assets/maps/thumb/<id>.jpg) */
+async function makeThumbs() {
+  fs.mkdirSync(THUMB_DIR, { recursive: true });
+  let made = 0;
+  for (const f of fs.readdirSync(OUT_DIR)) {
+    if (!/^\d+\.jpg$/.test(f) || fs.existsSync(path.join(THUMB_DIR, f))) continue;
+    const buf = await sharp(path.join(OUT_DIR, f))
+      .resize({ width: THUMB_WIDTH, withoutEnlargement: true })
+      .jpeg({ quality: 62, mozjpeg: true })
+      .toBuffer();
+    fs.writeFileSync(path.join(THUMB_DIR, f), buf);
+    made++;
+  }
+  if (made) console.log('made', made, 'thumbnail(s)');
+}
 
 function loadJSON(p) {
   return JSON.parse(fs.readFileSync(path.join(ROOT, p), 'utf8'));
@@ -38,6 +57,7 @@ function buildResolver(templates) {
   const resolve = buildResolver(templates);
 
   fs.mkdirSync(OUT_DIR, { recursive: true });
+  await makeThumbs();
   const missing = templates.filter(t => !fs.existsSync(path.join(OUT_DIR, t.id + '.jpg')));
   if (!missing.length) { console.log('all pool templates have art — nothing to do'); return; }
 
@@ -150,5 +170,6 @@ function buildResolver(templates) {
   }
 
   await browser.close();
+  await makeThumbs();
   console.log('done —', captured, 'new map art file(s)');
 })();

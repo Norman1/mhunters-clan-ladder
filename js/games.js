@@ -242,6 +242,13 @@
     eq(phaseText('lobby'), 'NOT STARTED', 'phase lobby → NOT STARTED');
     eq(phaseText('picks'), 'PICKS', 'phase picks → PICKS');
     eq(phaseText('T6'), 'T6', 'phase T6 passes through');
+    eq(liveStatus('T16'), 'TURN 16', 'live status: turn spelled out');
+    eq(liveStatus('picks'), 'PICKS', 'live status: picks');
+    eq(liveGroup('T1'), 'play', 'live group: turn → play');
+    eq(liveGroup('lobby'), 'lobby', 'live group: lobby');
+    eq(liveAge('2026-11-10T12:00:00Z', Date.parse('2026-11-10T17:30:00Z')), '5H', 'live age: hours');
+    eq(liveAge('2026-11-10T17:00:00Z', Date.parse('2026-11-10T17:10:00Z')), '1H', 'live age: under an hour → 1H');
+    eq(liveAge('2026-11-02T12:00:00Z', Date.parse('2026-11-10T13:00:00Z')), '8D', 'live age: days');
 
     // combined filters (AND)
     var fx = [
@@ -498,47 +505,100 @@
 
   /* ---------- live rows ---------- */
 
-  /* '● ANAME 1342 vs BNAME 1262' + map tag · T6 · STARTED JUN 26 2026 */
-  function buildLiveRow(g) {
-    var item = rowShell(g.gameId, 'g-row--live');
+  /* live phase → which group a game sits in */
+  function liveGroup(phase) {
+    if (phase === 'lobby') return 'lobby';
+    if (phase === 'picks') return 'picks';
+    return 'play';
+  }
 
-    var line = doc.createElement('div');
-    line.className = 'feed-result__line';
-    var dot = doc.createElement('span');
-    dot.className = 'g-live-dot';
-    dot.textContent = '●';
-    dot.setAttribute('aria-hidden', 'true');
-    line.appendChild(dot);
-    line.appendChild(nameLink(g.aName, 'fr-winner g-name', g.aId));
-    line.appendChild(ratingSpan(g.aRating));
-    var vs = doc.createElement('span');
-    vs.className = 'fr-mid';
-    vs.textContent = ' vs ';
-    line.appendChild(vs);
-    line.appendChild(nameLink(g.bName, 'fr-winner g-name', g.bId));
-    line.appendChild(ratingSpan(g.bRating));
-    item.appendChild(line);
+  /* 'T16' → 16 (0 when not a turn) */
+  function turnNum(phase) {
+    var m = /^T(\d+)$/.exec(String(phase || ''));
+    return m ? parseInt(m[1], 10) : 0;
+  }
 
-    var sub = doc.createElement('div');
-    sub.className = 'feed-result__sub';
-    var mapTag = doc.createElement('span');
-    mapTag.className = 'fr-map';
-    mapTag.textContent = g.map;
-    sub.appendChild(mapTag);
-    var phase = doc.createElement('span');
-    phase.className = 'g-phase';
-    phase.textContent = phaseText(g.phase);
-    sub.appendChild(phase);
-    var go = doc.createElement('span');
-    go.className = 'fr-go';
-    go.textContent = '↗';
-    go.setAttribute('aria-hidden', 'true');
-    sub.appendChild(go);
-    item.appendChild(sub);
+  /* status line on a live card: 'TURN 16' / 'PICKS' / 'NOT STARTED' */
+  function liveStatus(phase) {
+    var n = turnNum(phase);
+    return n ? 'TURN ' + n : phaseText(phase);
+  }
 
-    item.appendChild(dateSpan('STARTED ' + formatDate(g.started)));
+  /* how long a game has been open: '5H' / '8D' (null when unknown) */
+  function liveAge(iso, nowMs) {
+    var t = Date.parse(iso || '');
+    if (isNaN(t)) return null;
+    var h = Math.max(0, Math.floor((nowMs - t) / 3600000));
+    return h < 24 ? Math.max(1, h) + 'H' : Math.floor(h / 24) + 'D';
+  }
+
+  /* map card: board art + template name, both players, status */
+  function buildLiveCard(g, nowMs) {
+    var item = doc.createElement('div');
+    item.className = 'g-row lv-card lv-card--' + liveGroup(g.phase);
+    item.setAttribute('role', 'link');
+    item.tabIndex = 0;
+    item.title = 'View this game on warzone.com';
+    item.dataset.url = gameUrl(g.gameId);
+
+    var art = doc.createElement('div');
+    art.className = 'lv-art';
+    if (g.templateId != null) {
+      var img = doc.createElement('img');
+      img.alt = '';
+      img.loading = 'lazy';
+      img.decoding = 'async';
+      img.onerror = function () { art.classList.add('lv-art--none'); img.remove(); };
+      img.src = 'assets/maps/thumb/' + encodeURIComponent(g.templateId) + '.jpg';
+      art.appendChild(img);
+    } else {
+      art.classList.add('lv-art--none');
+    }
+    var map = doc.createElement('span');
+    map.className = 'lv-map';
+    map.textContent = g.map;
+    art.appendChild(map);
+    item.appendChild(art);
+
+    var body = doc.createElement('div');
+    body.className = 'lv-body';
+    var players = doc.createElement('div');
+    players.className = 'lv-players';
+    [[g.aName, g.aId, g.aRating], [g.bName, g.bId, g.bRating]].forEach(function (p) {
+      var row = doc.createElement('div');
+      row.className = 'lv-p';
+      row.appendChild(nameLink(p[0], 'lv-name', p[1]));
+      var r = ratingSpan(p[2]);
+      r.className = 'lv-rating';
+      row.appendChild(r);
+      players.appendChild(row);
+    });
+    body.appendChild(players);
+
+    var status = doc.createElement('div');
+    status.className = 'lv-status';
+    var ph = doc.createElement('span');
+    ph.className = 'lv-phase';
+    ph.textContent = liveStatus(g.phase);
+    status.appendChild(ph);
+    var age = liveAge(g.started, nowMs);
+    if (age) {
+      var ag = doc.createElement('span');
+      ag.className = 'lv-age';
+      ag.textContent = age + ' AGO';
+      ag.title = 'Started ' + formatDate(g.started);
+      status.appendChild(ag);
+    }
+    body.appendChild(status);
+    item.appendChild(body);
     return item;
   }
+
+  var LIVE_GROUPS = [
+    { key: 'play', label: 'IN PLAY' },
+    { key: 'picks', label: 'PICKING' },
+    { key: 'lobby', label: 'NOT STARTED' }
+  ];
 
   function renderLive() {
     var list = $('live-list');
@@ -546,13 +606,38 @@
     if (empty) empty.textContent = 'NO LIVE GAMES — NORMAN RUNS EVERY 2 HOURS';
     if (!list) return;
     list.textContent = '';
+    list.className = 'lv';
     if (!state.live.length) {
       if (empty) empty.hidden = false;
       return;
     }
     if (empty) empty.hidden = true;
-    state.live.forEach(function (g) {
-      list.appendChild(buildLiveRow(g));
+    var now = Date.now();
+    LIVE_GROUPS.forEach(function (grp) {
+      var games = state.live.filter(function (g) { return liveGroup(g.phase) === grp.key; });
+      if (!games.length) return;
+      // furthest-along games first; newest first otherwise
+      games.sort(function (x, y) {
+        return (turnNum(y.phase) - turnNum(x.phase)) ||
+          (Date.parse(y.started || '') - Date.parse(x.started || ''));
+      });
+      var sec = doc.createElement('section');
+      sec.className = 'lv-group lv-group--' + grp.key;
+      var head = doc.createElement('h2');
+      head.className = 'lv-head';
+      var lab = doc.createElement('span');
+      lab.textContent = grp.label;
+      var cnt = doc.createElement('span');
+      cnt.className = 'lv-count';
+      cnt.textContent = String(games.length);
+      head.appendChild(lab);
+      head.appendChild(cnt);
+      sec.appendChild(head);
+      var grid = doc.createElement('div');
+      grid.className = 'lv-grid';
+      games.forEach(function (g) { grid.appendChild(buildLiveCard(g, now)); });
+      sec.appendChild(grid);
+      list.appendChild(sec);
     });
   }
 
