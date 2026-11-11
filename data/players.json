@@ -20,8 +20,8 @@
     "elo": 1158,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "38118104339",
-    "last_assigned_at": "2026-11-11T17:15:50.933Z"
+    "last_opponent": "33160357416",
+    "last_assigned_at": "2026-11-11T18:15:07.513Z"
   },
   "81598466": {
     "name": "Tim 🍌",
@@ -647,7 +647,7 @@
     "elo": 993,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-11-10T12:18:18.018Z",
+    "last_assigned_at": "2026-11-11T18:15:07.513Z",
     "last_opponent": "38118104339",
     "in_clan": false,
     "departed_at": "2026-07-09T17:55:01.762Z",
@@ -741,7 +741,7 @@
     "name": "Marcus Aurelius",
     "elo": 954,
     "game_cap": 2,
-    "missed_games": 0,
+    "missed_games": 1,
     "in_clan": false,
     "guest": true,
     "last_assigned_at": "2026-11-11T17:15:50.933Z",
@@ -750,7 +750,7 @@
       "name": "Stackers",
       "icon_v": "626818011.png"
     },
-    "last_opponent": "4155523061"
+    "last_opponent": "28867016"
   },
   "65112512029": {
     "elo": 999,
