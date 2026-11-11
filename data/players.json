@@ -58,7 +58,7 @@
     "last_opponent": "71148639731"
   },
   "1477223682": {
-    "elo": 975,
+    "elo": 990,
     "missed_games": 0,
     "in_clan": false,
     "name": "koning",
@@ -69,8 +69,8 @@
       "name": "Undisputed",
       "icon_v": "439519665.png"
     },
-    "last_assigned_at": "2026-11-10T14:13:34.732Z",
-    "last_opponent": "84143567121"
+    "last_assigned_at": "2026-11-11T20:15:20.555Z",
+    "last_opponent": "8222729424"
   },
   "1822261234": {
     "name": "fifi",
@@ -612,11 +612,11 @@
   },
   "8222729424": {
     "name": "Al AssAff",
-    "elo": 884,
+    "elo": 877,
     "game_cap": 2,
     "missed_games": 0,
     "last_assigned_at": "2026-11-08T16:42:37.796Z",
-    "last_opponent": "28867016"
+    "last_opponent": "1477223682"
   },
   "88117806994": {
     "name": "RameurA",
@@ -744,7 +744,7 @@
     "missed_games": 0,
     "in_clan": false,
     "guest": true,
-    "last_assigned_at": "2026-11-11T17:15:50.933Z",
+    "last_assigned_at": "2026-11-11T20:15:20.555Z",
     "clan": {
       "id": "962",
       "name": "Stackers",
