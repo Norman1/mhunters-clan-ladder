@@ -1347,3 +1347,152 @@ img.clan-tag {
 }
 .page-title img.clan-tag { vertical-align: 0; }
 #feed-list .fh-line img.clan-tag { flex: none; align-self: center; }
+
+/* ----------------------------- scoreboard rows (Games → Results, template page) ----------------------------- */
+/* same anatomy as the standings feed: winner on top with a red bar, loser
+   dimmed beneath, pre-game rating after each name and the swing at the far
+   right; then map over turns, then the date. Names wrap, never truncate. */
+:is(#results-list, #map-games-list, #map-live-list) .sb-row[role="link"] {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 9px 16px;
+}
+:is(#results-list, #map-games-list, #map-live-list) .sb-row .fr-board {
+  flex: 1 1 auto;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+:is(#results-list, #map-games-list, #map-live-list) .sb-row .fr-side {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 10px;
+  padding-left: 9px;
+  color: var(--white);
+}
+:is(#results-list, #map-games-list) .sb-row .fr-side--win { font-weight: 700; box-shadow: inset 2px 0 0 var(--red); }
+:is(#results-list, #map-games-list) .sb-row .fr-side--lose { color: var(--muted); }
+:is(#results-list, #map-games-list, #map-live-list) .sb-row .sb-who {
+  min-width: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  column-gap: 7px;
+}
+:is(#results-list, #map-games-list, #map-live-list) .sb-row .fr-name {
+  overflow-wrap: break-word;
+  min-width: 0;
+  color: inherit;
+}
+:is(#results-list, #map-games-list, #map-live-list) .sb-row a.fr-name:hover { color: var(--red-hover); }
+:is(#results-list, #map-games-list, #map-live-list) .sb-row .sb-rating {
+  font-family: var(--font-mono);
+  font-size: 10.5px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  color: var(--dim);
+  font-variant-numeric: tabular-nums;
+}
+:is(#results-list, #map-games-list) .sb-row .fr-swing {
+  flex: none;
+  font-family: var(--font-mono);
+  font-size: 11.5px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  font-variant-numeric: tabular-nums;
+}
+:is(#results-list, #map-games-list) .sb-row .fr-side--win .fr-swing { color: var(--red); }
+:is(#results-list, #map-games-list) .sb-row .fr-side--lose .fr-swing { color: #7E8B9B; }
+
+/* right side: fixed width so every row's swings line up */
+:is(#results-list, #map-games-list) .sb-row .fr-meta {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 12px;
+}
+#results-list .sb-row .fr-meta { flex-basis: clamp(150px, 34%, 240px); max-width: clamp(150px, 34%, 240px); }
+#map-games-list .sb-row .fr-meta { flex-basis: 128px; }
+:is(#results-list, #map-games-list) .sb-row .fr-where {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3px;
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.06em;
+  line-height: 1.2;
+}
+:is(#results-list, #map-games-list) .sb-row .fr-map {
+  margin: 0;
+  max-width: 100%;
+  text-align: center;
+  white-space: normal; /* long template names wrap inside the fixed column */
+  overflow-wrap: break-word;
+  line-height: 1.3;
+}
+:is(#results-list, #map-games-list) .sb-row .fr-turns {
+  font-size: 9px;
+  letter-spacing: 0.12em;
+  color: var(--dim);
+  white-space: nowrap;
+}
+:is(#results-list, #map-games-list) .sb-row .fr-when { flex: 0 0 6.5ch; text-align: right; }
+:is(#results-list, #map-games-list) .sb-row .fr-when .feed-time {
+  position: static;
+  display: inline;
+  transform: none;
+  margin: 0;
+  white-space: nowrap;
+}
+
+/* template-page live rows: status dot + TURN 22 over STARTED 6D AGO */
+#map-live-list .sb-row--play { --st: #43B06A; }
+#map-live-list .sb-row--picks { --st: var(--warn); }
+#map-live-list .sb-row--lobby { --st: var(--red); }
+#map-live-list .sb-status {
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 2px;
+  font-family: var(--font-mono);
+  text-align: right;
+}
+#map-live-list .sb-phase {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  color: var(--white);
+}
+#map-live-list .sb-phase::before {
+  content: '';
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--st);
+}
+#map-live-list .sb-row--picks .sb-phase { color: var(--warn); }
+#map-live-list .sb-row--lobby .sb-phase { color: var(--muted); }
+#map-live-list .sb-age { font-size: 10.5px; letter-spacing: 0.06em; color: var(--dim); }
+
+@media (max-width: 600px) {
+  :is(#results-list, #map-games-list, #map-live-list) .sb-row[role="link"] { gap: 10px; padding: 9px 12px; }
+  #results-list .sb-row .fr-meta { flex-basis: 46%; max-width: 46%; gap: 8px; }
+  #map-games-list .sb-row .fr-meta { flex-basis: 116px; gap: 8px; }
+  :is(#results-list, #map-games-list, #map-live-list) .sb-row .fr-board { font-size: 14.5px; }
+}

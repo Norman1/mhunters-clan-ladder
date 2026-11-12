@@ -77,6 +77,27 @@
     return phase ? String(phase).toUpperCase() : '—';
   }
 
+  /* live phase → status group: 'play' / 'picks' / 'lobby' */
+  function liveGroup(phase) {
+    if (phase === 'lobby') return 'lobby';
+    if (phase === 'picks') return 'picks';
+    return 'play';
+  }
+
+  /* 'T16' → 'TURN 16'; picks / lobby → PICKS / NOT STARTED */
+  function liveStatus(phase) {
+    var m = /^T(\d+)$/.exec(String(phase || ''));
+    return m ? 'TURN ' + parseInt(m[1], 10) : phaseText(phase);
+  }
+
+  /* how long a game has been open: '5H' / '8D' (null when unknown) */
+  function liveAge(iso, nowMs) {
+    var t = Date.parse(iso || '');
+    if (isNaN(t)) return null;
+    var h = Math.max(0, Math.floor((nowMs - t) / 3600000));
+    return h < 24 ? Math.max(1, h) + 'H' : Math.floor(h / 24) + 'D';
+  }
+
   function fmtInt(n) {
     return Number(n || 0).toLocaleString('en-US');
   }
@@ -188,6 +209,10 @@
     eq(phaseText('lobby'), 'NOT STARTED', 'phase lobby → NOT STARTED');
     eq(phaseText('picks'), 'PICKS', 'phase picks → PICKS');
     eq(phaseText('T6'), 'T6', 'phase T6 passes through');
+    eq(liveStatus('T22'), 'TURN 22', 'live status: turn spelled out');
+    eq(liveStatus('lobby'), 'NOT STARTED', 'live status: lobby');
+    eq(liveGroup('picks'), 'picks', 'live group: picks');
+    eq(liveAge('2026-11-06T12:00:00Z', Date.parse('2026-11-12T13:00:00Z')), '6D', 'live age: days');
 
     // number / stat formatting
     eq(fmtInt(1220), '1,220', 'fmtInt groups thousands');
@@ -447,51 +472,70 @@
 
   /* ---------- result rows (same anatomy as games.html) ---------- */
 
-  /* 'WINNER 1342 +12 def. LOSER 1262 −12' + map tag · T9 · JUL 9 2026 */
+  /* ISO date → 'NOV 11' (the month marker above carries the year) */
+  function shortDate(iso) {
+    var full = formatDate(iso);
+    return full ? full.replace(/ \d{4}$/, '') : '';
+  }
+
+  /* scoreboard result row (same anatomy as the standings feed): winner on
+     top with a red bar, loser dimmed beneath, rating swings in a column;
+     right side = turns, then the date */
   function buildResultRow(r) {
-    var item = rowShell(r.gameId);
+    var item = rowShell(r.gameId, 'sb-row');
+    var lost = r.loss != null ? r.loss : r.change;
+    item.setAttribute('aria-label', r.winner + ' beat ' + r.loser + ', +' + r.change +
+      ' / −' + lost + ' points' + '' +
+      (r.turns != null ? ', ' + r.turns + ' turns' : '') + ', ' + formatDate(r.date));
 
-    var line = doc.createElement('div');
-    line.className = 'feed-result__line';
-    line.appendChild(nameLink(r.winner, 'fr-winner', r.winnerId));
-    line.appendChild(ratingSpan(r.wRating));
-    var up = doc.createElement('span');
-    up.className = 'fr-up';
-    up.textContent = '+' + r.change;
-    line.appendChild(up);
-    var mid = doc.createElement('span');
-    mid.className = 'fr-mid';
-    mid.textContent = ' def. ';
-    line.appendChild(mid);
-    line.appendChild(nameLink(r.loser, 'fr-loser', r.loserId));
-    line.appendChild(ratingSpan(r.lRating));
-    var down = doc.createElement('span');
-    down.className = 'fr-down';
-    down.textContent = '−' + (r.loss != null ? r.loss : r.change);
-    line.appendChild(down);
-    item.appendChild(line);
+    var board = doc.createElement('div');
+    board.className = 'fr-board';
+    board.appendChild(scoreSide(r.winner, r.winnerId, r.wRating, '+' + r.change, 'fr-side fr-side--win'));
+    board.appendChild(scoreSide(r.loser, r.loserId, r.lRating, '−' + lost, 'fr-side fr-side--lose'));
+    item.appendChild(board);
 
-    var sub = doc.createElement('div');
-    sub.className = 'feed-result__sub';
-    var mapTag = doc.createElement('span');
-    mapTag.className = 'fr-map';
-    mapTag.textContent = r.map;
-    sub.appendChild(mapTag);
+    var meta = doc.createElement('div');
+    meta.className = 'fr-meta';
+    var where = doc.createElement('span');
+    where.className = 'fr-where';
+    // every game here is on this template, so no map tag — just turns
     if (r.turns != null) {
       var turns = doc.createElement('span');
-      turns.className = 'g-turns';
-      turns.textContent = 'T' + r.turns;
-      sub.appendChild(turns);
+      turns.className = 'fr-turns';
+      turns.textContent = r.turns + (r.turns === 1 ? ' TURN' : ' TURNS');
+      where.appendChild(turns);
     }
-    var go = doc.createElement('span');
-    go.className = 'fr-go';
-    go.textContent = '↗';
-    go.setAttribute('aria-hidden', 'true');
-    sub.appendChild(go);
-    item.appendChild(sub);
-
-    item.appendChild(dateSpan(formatDate(r.date)));
+    meta.appendChild(where);
+    var when = doc.createElement('span');
+    when.className = 'fr-when';
+    var time = doc.createElement('span');
+    time.className = 'feed-time';
+    time.textContent = shortDate(r.date);
+    time.title = formatDate(r.date);
+    when.appendChild(time);
+    meta.appendChild(when);
+    item.appendChild(meta);
     return item;
+  }
+
+  /* one scoreboard line: name + pre-game rating, swing at the far right */
+  function scoreSide(name, id, rating, swing, cls) {
+    var row = doc.createElement('div');
+    row.className = cls;
+    var who = doc.createElement('span');
+    who.className = 'sb-who';
+    who.appendChild(nameLink(name, 'fr-name', id));
+    var rt = ratingSpan(rating);
+    rt.className = 'sb-rating';
+    who.appendChild(rt);
+    row.appendChild(who);
+    if (swing != null) {
+      var sw = doc.createElement('span');
+      sw.className = 'fr-swing';
+      sw.textContent = swing;
+      row.appendChild(sw);
+    }
+    return row;
   }
 
   function buildMonthMarker(iso) {
@@ -504,45 +548,35 @@
 
   /* ---------- live rows ---------- */
 
-  /* '● ANAME 1342 vs BNAME 1262' + map tag · NOT STARTED · STARTED JUN 26 2026 */
-  function buildLiveRow(g) {
-    var item = rowShell(g.gameId, 'g-row--live');
+  /* live row: both players (name + rating) stacked, then a status column —
+     coloured dot + TURN 22 / PICKS / NOT STARTED over STARTED 6D AGO */
+  function buildLiveRow(g, nowMs) {
+    var grp = liveGroup(g.phase);
+    var item = rowShell(g.gameId, 'sb-row sb-row--live sb-row--' + grp);
 
-    var line = doc.createElement('div');
-    line.className = 'feed-result__line';
-    var dot = doc.createElement('span');
-    dot.className = 'g-live-dot';
-    dot.textContent = '●';
-    dot.setAttribute('aria-hidden', 'true');
-    line.appendChild(dot);
-    line.appendChild(nameLink(g.aName, 'fr-winner g-name', g.aId));
-    line.appendChild(ratingSpan(g.aRating));
-    var vs = doc.createElement('span');
-    vs.className = 'fr-mid';
-    vs.textContent = ' vs ';
-    line.appendChild(vs);
-    line.appendChild(nameLink(g.bName, 'fr-winner g-name', g.bId));
-    line.appendChild(ratingSpan(g.bRating));
-    item.appendChild(line);
+    var board = doc.createElement('div');
+    board.className = 'fr-board';
+    board.appendChild(scoreSide(g.aName, g.aId, g.aRating, null, 'fr-side'));
+    board.appendChild(scoreSide(g.bName, g.bId, g.bRating, null, 'fr-side'));
+    item.appendChild(board);
 
-    var sub = doc.createElement('div');
-    sub.className = 'feed-result__sub';
-    var mapTag = doc.createElement('span');
-    mapTag.className = 'fr-map';
-    mapTag.textContent = g.map;
-    sub.appendChild(mapTag);
-    var phase = doc.createElement('span');
-    phase.className = 'g-phase';
-    phase.textContent = phaseText(g.phase);
-    sub.appendChild(phase);
-    var go = doc.createElement('span');
-    go.className = 'fr-go';
-    go.textContent = '↗';
-    go.setAttribute('aria-hidden', 'true');
-    sub.appendChild(go);
-    item.appendChild(sub);
-
-    item.appendChild(dateSpan('STARTED ' + formatDate(g.started)));
+    var status = doc.createElement('div');
+    status.className = 'sb-status';
+    var ph = doc.createElement('span');
+    ph.className = 'sb-phase';
+    ph.textContent = liveStatus(g.phase);
+    status.appendChild(ph);
+    var age = liveAge(g.started, nowMs);
+    if (age) {
+      // not-started games only have a creation time
+      var verb = grp === 'lobby' ? 'CREATED' : 'STARTED';
+      var ag = doc.createElement('span');
+      ag.className = 'sb-age';
+      ag.textContent = verb + ' ' + age + ' AGO';
+      ag.title = (verb === 'CREATED' ? 'Created ' : 'Started ') + formatDate(g.started);
+      status.appendChild(ag);
+    }
+    item.appendChild(status);
     return item;
   }
 
@@ -559,8 +593,9 @@
       return;
     }
     if (empty) empty.hidden = true;
+    var now = Date.now();
     liveOnMap.forEach(function (g) {
-      list.appendChild(buildLiveRow(g));
+      list.appendChild(buildLiveRow(g, now));
     });
   }
 

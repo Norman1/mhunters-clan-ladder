@@ -448,51 +448,73 @@
 
   /* ---------- results rows ---------- */
 
-  /* 'WINNER 1342 +12 def. LOSER 1262 −12' + map tag · T9 · JUL 9 2026 */
+  /* ISO date → 'NOV 11' (the month marker above carries the year) */
+  function shortDate(iso) {
+    var full = formatDate(iso);
+    return full ? full.replace(/ \d{4}$/, '') : '';
+  }
+
+  /* scoreboard result row (same anatomy as the standings feed): winner on
+     top with a red bar, loser dimmed beneath, rating swings in a column;
+     right side = map over turns, then the date */
   function buildResultRow(r) {
-    var item = rowShell(r.gameId);
+    var item = rowShell(r.gameId, 'sb-row');
+    var lost = r.loss != null ? r.loss : r.change;
+    item.setAttribute('aria-label', r.winner + ' beat ' + r.loser + ', +' + r.change +
+      ' / −' + lost + ' points' + ', on ' + r.map +
+      (r.turns != null ? ', ' + r.turns + ' turns' : '') + ', ' + formatDate(r.date));
 
-    var line = doc.createElement('div');
-    line.className = 'feed-result__line';
-    line.appendChild(nameLink(r.winner, 'fr-winner', r.winnerId));
-    line.appendChild(ratingSpan(r.wRating));
-    var up = doc.createElement('span');
-    up.className = 'fr-up';
-    up.textContent = '+' + r.change;
-    line.appendChild(up);
-    var mid = doc.createElement('span');
-    mid.className = 'fr-mid';
-    mid.textContent = ' def. ';
-    line.appendChild(mid);
-    line.appendChild(nameLink(r.loser, 'fr-loser', r.loserId));
-    line.appendChild(ratingSpan(r.lRating));
-    var down = doc.createElement('span');
-    down.className = 'fr-down';
-    down.textContent = '−' + (r.loss != null ? r.loss : r.change);
-    line.appendChild(down);
-    item.appendChild(line);
+    var board = doc.createElement('div');
+    board.className = 'fr-board';
+    board.appendChild(scoreSide(r.winner, r.winnerId, r.wRating, '+' + r.change, 'fr-side fr-side--win'));
+    board.appendChild(scoreSide(r.loser, r.loserId, r.lRating, '−' + lost, 'fr-side fr-side--lose'));
+    item.appendChild(board);
 
-    var sub = doc.createElement('div');
-    sub.className = 'feed-result__sub';
+    var meta = doc.createElement('div');
+    meta.className = 'fr-meta';
+    var where = doc.createElement('span');
+    where.className = 'fr-where';
     var mapTag = doc.createElement('span');
     mapTag.className = 'fr-map';
     mapTag.textContent = r.map;
-    sub.appendChild(mapTag);
+    where.appendChild(mapTag);
     if (r.turns != null) {
       var turns = doc.createElement('span');
-      turns.className = 'g-turns';
-      turns.textContent = 'T' + r.turns;
-      sub.appendChild(turns);
+      turns.className = 'fr-turns';
+      turns.textContent = r.turns + (r.turns === 1 ? ' TURN' : ' TURNS');
+      where.appendChild(turns);
     }
-    var go = doc.createElement('span');
-    go.className = 'fr-go';
-    go.textContent = '↗';
-    go.setAttribute('aria-hidden', 'true');
-    sub.appendChild(go);
-    item.appendChild(sub);
-
-    item.appendChild(dateSpan(formatDate(r.date)));
+    meta.appendChild(where);
+    var when = doc.createElement('span');
+    when.className = 'fr-when';
+    var time = doc.createElement('span');
+    time.className = 'feed-time';
+    time.textContent = shortDate(r.date);
+    time.title = formatDate(r.date);
+    when.appendChild(time);
+    meta.appendChild(when);
+    item.appendChild(meta);
     return item;
+  }
+
+  /* one scoreboard line: name + pre-game rating, swing at the far right */
+  function scoreSide(name, id, rating, swing, cls) {
+    var row = doc.createElement('div');
+    row.className = cls;
+    var who = doc.createElement('span');
+    who.className = 'sb-who';
+    who.appendChild(nameLink(name, 'fr-name', id));
+    var rt = ratingSpan(rating);
+    rt.className = 'sb-rating';
+    who.appendChild(rt);
+    row.appendChild(who);
+    if (swing != null) {
+      var sw = doc.createElement('span');
+      sw.className = 'fr-swing';
+      sw.textContent = swing;
+      row.appendChild(sw);
+    }
+    return row;
   }
 
   function buildMonthMarker(iso) {
