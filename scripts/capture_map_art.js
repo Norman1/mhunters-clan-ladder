@@ -58,8 +58,26 @@ function buildResolver(templates) {
 
   fs.mkdirSync(OUT_DIR, { recursive: true });
   await makeThumbs();
+
+  // manual run: capture one template from a game chosen by hand (any finished
+  // game on the same map and settings) — for templates whose own games never
+  // show a clean board, e.g. auto-distribution templates with no picks stage
+  const pinTemplate = (process.env.ART_TEMPLATE || '').trim();
+  const pinGame = (process.env.ART_GAME || '').trim();
+  let targets;
+  if (pinTemplate || pinGame) {
+    if (!/^\d+$/.test(pinTemplate) || !/^\d+$/.test(pinGame)) {
+      console.error('manual capture needs both a numeric template_id and game_id');
+      process.exit(1);
+    }
+    const t = templates.find(x => String(x.id) === pinTemplate);
+    if (!t) { console.error('template', pinTemplate, 'is not in the pool'); process.exit(1); }
+    targets = [{ id: pinTemplate, name: t.name, gameId: pinGame }];
+    console.log('manual capture:', t.name, 'from game', pinGame);
+  }
+
   const missing = templates.filter(t => !fs.existsSync(path.join(OUT_DIR, t.id + '.jpg')));
-  if (!missing.length) { console.log('all pool templates have art — nothing to do'); return; }
+  if (!targets && !missing.length) { console.log('all pool templates have art — nothing to do'); return; }
 
   // one clean board per artless template: a finished game first, else a
   // game still in its picks stage. Never a game being played — that board
@@ -76,7 +94,7 @@ function buildResolver(templates) {
     if (!gameFor[tid] && g.game_state === 'DistributingTerritories') gameFor[tid] = g.game_id;
   }
 
-  const targets = missing
+  if (!targets) targets = missing
     .map(t => ({ id: String(t.id), name: t.name, gameId: gameFor[String(t.id)] }))
     .filter(t => {
       if (!t.gameId) console.log('no finished or picking game yet for', t.id, t.name, '— will retry on a later run');
@@ -163,6 +181,8 @@ function buildResolver(templates) {
       await page.screenshot({ path: out, type: 'jpeg', quality: 82, clip: box });
       const buf = await sharp(out).trim({ threshold: 25 }).jpeg({ quality: 82 }).toBuffer();
       fs.writeFileSync(out, buf);
+      // a replaced board needs a fresh thumbnail
+      fs.rmSync(path.join(THUMB_DIR, t.id + '.jpg'), { force: true });
       captured++;
       console.log('captured', t.id, t.name);
     } catch (err) {
