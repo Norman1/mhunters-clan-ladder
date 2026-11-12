@@ -2,15 +2,17 @@ name: Map Art Sweep
 
 # Capture card art for pool templates that don't have it yet.
 # Art comes from a clean game board (a finished game, or one still in its
-# picks stage), so brand-new templates are picked up once a game reaches picks.
+# picks stage). Runs weekly, when templates.json is pushed by hand, or by
+# hand with a template_id + game_id for templates with no picks stage.
+# (The engine's own data pushes don't start workflows, so history.json
+# commits never trigger this.)
 
 on:
   push:
     paths:
       - data/templates.json # new template added to the pool
-      - data/history.json   # new results — an artless template may just have had its first game
   schedule:
-    - cron: "0 6 * * *" # daily 06:00 UTC backstop
+    - cron: "0 6 * * 1" # weekly, Monday 06:00 UTC
   workflow_dispatch:
     inputs:
       template_id:
