@@ -198,6 +198,8 @@
     "created_at": "2026-11-12T18:25:03.328Z",
     "p1_id": "57143563837",
     "p2_id": "53134900057",
-    "template_id": 1587198
+    "template_id": 1587198,
+    "game_state": "DistributingTerritories",
+    "current_turn": -1
   }
 ]
