@@ -1496,3 +1496,16 @@ img.clan-tag {
   #map-games-list .sb-row .fr-meta { flex-basis: 116px; gap: 8px; }
   :is(#results-list, #map-games-list, #map-live-list) .sb-row .fr-board { font-size: 14.5px; }
 }
+
+/* Games → Results: map + turns share one left edge in the fixed column,
+   so pills and turn counts line up row to row whatever the map name length */
+#results-list .sb-row .fr-where {
+  flex: 1 1 auto;
+  align-items: flex-start;
+  padding-left: 18px; /* breathing room after the swing column */
+}
+@media (max-width: 600px) {
+  #results-list .sb-row .fr-where { padding-left: 0; }
+}
+#results-list .sb-row .fr-map { text-align: left; }
+#results-list .sb-row .fr-turns { padding-left: 1px; }
