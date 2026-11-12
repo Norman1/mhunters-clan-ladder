@@ -17,10 +17,10 @@
   },
   "28867016": {
     "name": "Swisster",
-    "elo": 1162,
+    "elo": 1168,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "56133341636",
+    "last_opponent": "53134900057",
     "last_assigned_at": "2026-11-11T18:15:07.513Z"
   },
   "81598466": {
@@ -644,11 +644,11 @@
   },
   "53134900057": {
     "name": "extelon",
-    "elo": 1001,
+    "elo": 995,
     "game_cap": 2,
     "missed_games": 0,
     "last_assigned_at": "2026-11-12T18:25:03.328Z",
-    "last_opponent": "88110265403",
+    "last_opponent": "28867016",
     "in_clan": false,
     "departed_at": "2026-07-09T17:55:01.762Z",
     "guest": true,
