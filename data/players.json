@@ -162,11 +162,11 @@
   },
   "88110265403": {
     "name": "Crouton",
-    "elo": 1342,
+    "elo": 1345,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "95151481274",
-    "last_assigned_at": "2026-11-10T21:10:25.807Z"
+    "last_opponent": "4957355558",
+    "last_assigned_at": "2026-11-12T17:37:48.417Z"
   },
   "84143567121": {
     "name": "Poldi",
@@ -647,7 +647,7 @@
     "elo": 1003,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-11-11T18:15:07.513Z",
+    "last_assigned_at": "2026-11-12T17:37:48.417Z",
     "last_opponent": "55103688501",
     "in_clan": false,
     "departed_at": "2026-07-09T17:55:01.762Z",
@@ -783,7 +783,7 @@
     "last_opponent": "88110265403"
   },
   "4957355558": {
-    "elo": 1039,
+    "elo": 1033,
     "missed_games": 0,
     "in_clan": false,
     "name": "tjerk",
@@ -795,7 +795,7 @@
       "icon_v": "439519665.png"
     },
     "last_assigned_at": "2026-11-10T21:10:25.807Z",
-    "last_opponent": "55103688501"
+    "last_opponent": "88110265403"
   },
   "94113453772": {
     "elo": 995,
