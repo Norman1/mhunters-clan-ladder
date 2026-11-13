@@ -21,7 +21,7 @@
     "game_cap": 2,
     "missed_games": 0,
     "last_opponent": "53134900057",
-    "last_assigned_at": "2026-11-11T18:15:07.513Z"
+    "last_assigned_at": "2026-11-13T20:52:45.188Z"
   },
   "81598466": {
     "name": "Tim 🍌",
@@ -396,11 +396,11 @@
   },
   "71148639731": {
     "name": "Nick",
-    "elo": 1175,
+    "elo": 1180,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-11-11T17:15:51.745Z",
-    "last_opponent": "71155120841"
+    "last_assigned_at": "2026-11-13T20:52:44.554Z",
+    "last_opponent": "38118104339"
   },
   "71155120841": {
     "name": "Ventura",
@@ -828,7 +828,7 @@
     "last_opponent": "71155120841"
   },
   "38118104339": {
-    "elo": 1003,
+    "elo": 992,
     "missed_games": 0,
     "in_clan": false,
     "name": "ouchudied",
@@ -839,8 +839,8 @@
       "name": "Undisputed",
       "icon_v": "439519665.png"
     },
-    "last_assigned_at": "2026-11-11T17:15:52.348Z",
-    "last_opponent": "28867016"
+    "last_assigned_at": "2026-11-13T20:52:45.188Z",
+    "last_opponent": "71148639731"
   },
   "55103688501": {
     "elo": 979,
