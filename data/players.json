@@ -19,8 +19,8 @@
     "name": "Swisster",
     "elo": 1168,
     "game_cap": 2,
-    "missed_games": 0,
-    "last_opponent": "53134900057",
+    "missed_games": 1,
+    "last_opponent": "38118104339",
     "last_assigned_at": "2026-11-13T20:52:45.188Z"
   },
   "81598466": {
@@ -840,7 +840,7 @@
       "icon_v": "439519665.png"
     },
     "last_assigned_at": "2026-11-13T20:52:45.188Z",
-    "last_opponent": "71148639731"
+    "last_opponent": "28867016"
   },
   "55103688501": {
     "elo": 979,
