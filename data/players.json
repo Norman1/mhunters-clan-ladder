@@ -19,8 +19,8 @@
     "name": "Swisster",
     "elo": 1168,
     "game_cap": 2,
-    "missed_games": 1,
-    "last_opponent": "38118104339",
+    "missed_games": 0,
+    "last_opponent": "71148639731",
     "last_assigned_at": "2026-11-13T23:52:45.276Z"
   },
   "81598466": {
@@ -398,9 +398,9 @@
     "name": "Nick",
     "elo": 1180,
     "game_cap": 2,
-    "missed_games": 0,
-    "last_assigned_at": "2026-11-13T23:52:45.276Z",
-    "last_opponent": "3591948853"
+    "missed_games": 1,
+    "last_assigned_at": "2026-11-14T00:53:01.662Z",
+    "last_opponent": "28867016"
   },
   "71155120841": {
     "name": "Ventura",
@@ -839,7 +839,7 @@
       "name": "Undisputed",
       "icon_v": "439519665.png"
     },
-    "last_assigned_at": "2026-11-13T20:52:45.188Z",
+    "last_assigned_at": "2026-11-14T00:53:01.662Z",
     "last_opponent": "28867016"
   },
   "55103688501": {
