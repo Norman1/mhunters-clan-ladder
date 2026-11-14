@@ -210,11 +210,11 @@
   },
   "8294358602": {
     "name": "Wolkenstern",
-    "elo": 1006,
+    "elo": 985,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "9313400553",
-    "last_assigned_at": "2026-11-06T21:03:13.905Z"
+    "last_opponent": "8222729424",
+    "last_assigned_at": "2026-11-14T14:53:48.351Z"
   },
   "58134761580": {
     "name": "ExFailures",
@@ -671,11 +671,11 @@
   },
   "8222729424": {
     "name": "Al AssAff",
-    "elo": 877,
+    "elo": 891,
     "game_cap": 2,
     "missed_games": 0,
     "last_assigned_at": "2026-11-11T22:50:12.574Z",
-    "last_opponent": "1477223682"
+    "last_opponent": "8294358602"
   },
   "88117806994": {
     "name": "RameurA",
@@ -815,7 +815,7 @@
     "missed_games": 0,
     "in_clan": false,
     "guest": true,
-    "last_assigned_at": "2026-11-11T20:15:20.555Z",
+    "last_assigned_at": "2026-11-14T14:53:48.351Z",
     "clan": {
       "id": "962",
       "name": "Stackers",
