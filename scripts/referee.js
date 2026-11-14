@@ -77,6 +77,7 @@ async function runReferee() {
                     const pId = declinedPlayer.ID || declinedPlayer.id; // Handle case sensitivity
                     if (players[pId]) {
                         players[pId].missed_games = (players[pId].missed_games || 0) + 1;
+                        players[pId].last_missed_at = now.toISOString();
                         console.log(`Strike for ${players[pId].name} (Declined). Strikes: ${players[pId].missed_games}`);
                     }
 
@@ -125,6 +126,7 @@ async function runReferee() {
                             if (pState === 'Invited' || pState === 'Declined') {
                                 if (players[pId]) {
                                     players[pId].missed_games = (players[pId].missed_games || 0) + 1;
+                                    players[pId].last_missed_at = now.toISOString();
                                     console.log(`Strike for ${players[pId].name} (Failed to join). Strikes: ${players[pId].missed_games}`);
                                 }
                             }
@@ -175,6 +177,7 @@ async function runReferee() {
                         if (pState === 'Declined') {
                             if (players[pId]) {
                                 players[pId].missed_games = (players[pId].missed_games || 0) + 1;
+                                players[pId].last_missed_at = now.toISOString();
                                 console.log(`Strike for ${players[pId].name} (Declined). Strikes: ${players[pId].missed_games}`);
                             }
                         }

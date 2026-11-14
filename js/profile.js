@@ -404,11 +404,27 @@
   }
 
   /* 'ACTIVE' / 'PAUSED' / 'INACTIVE · 3 MISSED' */
-  function statusVal(p) {
+  /* ISO → 'OCT 2' (same year as now) or 'DEC 22 \'25'; null when unparseable. */
+  var MISSED_MONTHS = ['JAN','FEB','MAR','APR','MAY','JUN','JUL','AUG','SEP','OCT','NOV','DEC'];
+  function missedDateText(iso, now) {
+    var d = iso ? new Date(iso) : null;
+    if (!d || isNaN(d.getTime())) return null;
+    var ref = now ? new Date(now) : new Date();
+    var s = MISSED_MONTHS[d.getMonth()] + ' ' + d.getDate();
+    return d.getFullYear() === ref.getFullYear() ? s : s + " '" + String(d.getFullYear()).slice(2);
+  }
+
+  /* Strike suffix: 'LAST MISSED OCT 2' when the date is known, else '3 MISSED'. */
+  function missedText(p, now) {
+    var date = missedDateText(p.lastMissedAt, now);
+    return date ? 'LAST MISSED ' + date : p.missed + ' MISSED';
+  }
+
+  function statusVal(p, now) {
     p = p || {};
     var s = p.status || 'ACTIVE';
     var missed = p.missed || 0;
-    return missed > 0 ? s + ' · ' + missed + ' MISSED' : s;
+    return missed > 0 ? s + ' · ' + missedText({ missed: missed, lastMissedAt: p.lastMissedAt }, now) : s;
   }
 
   /* Hero meta line: '#3' (active position) or the status text for
@@ -703,6 +719,8 @@
     eq(statusVal({ status: 'ACTIVE', missed: 0 }), 'ACTIVE', 'statusVal active clean');
     eq(statusVal({ status: 'ACTIVE', missed: 1 }), 'ACTIVE · 1 MISSED', 'statusVal active strike');
     eq(statusVal({ status: 'INACTIVE', missed: 3 }), 'INACTIVE · 3 MISSED', 'statusVal inactive');
+    eq(statusVal({ status: 'INACTIVE', missed: 9, lastMissedAt: '2026-09-09T12:00:00Z' }, '2026-11-14T12:00:00Z'),
+      'INACTIVE · LAST MISSED SEP 9', 'statusVal shows last-missed date');
     eq(statusVal({}), 'ACTIVE', 'statusVal default');
     eq(capText(2), '2 CONCURRENT', 'capText 2');
     eq(capText(0), '0 CONCURRENT', 'capText 0');

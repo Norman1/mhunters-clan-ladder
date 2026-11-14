@@ -548,6 +548,7 @@
           : { total: 0, timeouts: 0, declines: 0 },
         cap: p.game_cap,
         missed: p.missed_games,
+        lastMissedAt: p.last_missed_at || null,
         traj: (s.traj || [START_RATING]).slice(),
         firstGameAt: s.games.length ? new Date(s.games[0].at).toISOString() : null,
         bestMap: extremes.best,

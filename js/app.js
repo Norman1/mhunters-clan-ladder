@@ -89,11 +89,27 @@
   }
 
   /* Reserve status badge text: 'PAUSED' / 'INACTIVE · 3 MISSED' */
-  function statusText(p) {
+  /* ISO → 'OCT 2' (same year as now) or 'DEC 22 \'25'; null when unparseable. */
+  var MISSED_MONTHS = ['JAN','FEB','MAR','APR','MAY','JUN','JUL','AUG','SEP','OCT','NOV','DEC'];
+  function missedDateText(iso, now) {
+    var d = iso ? new Date(iso) : null;
+    if (!d || isNaN(d.getTime())) return null;
+    var ref = now ? new Date(now) : new Date();
+    var s = MISSED_MONTHS[d.getMonth()] + ' ' + d.getDate();
+    return d.getFullYear() === ref.getFullYear() ? s : s + " '" + String(d.getFullYear()).slice(2);
+  }
+
+  /* Strike suffix: 'LAST MISSED OCT 2' when the date is known, else '3 MISSED'. */
+  function missedText(p, now) {
+    var date = missedDateText(p.lastMissedAt, now);
+    return date ? 'LAST MISSED ' + date : p.missed + ' MISSED';
+  }
+
+  function statusText(p, now) {
     p = p || {};
     var s = p.status === 'PAUSED' ? 'PAUSED' : (p.status || 'INACTIVE');
     var missed = p.missed || 0;
-    return missed > 0 ? s + ' · ' + missed + ' MISSED' : s;
+    return missed > 0 ? s + ' · ' + missedText({ missed: missed, lastMissedAt: p.lastMissedAt }, now) : s;
   }
 
   function reserveCountText(meta) {
@@ -160,6 +176,12 @@
     eq(statusText({ status: 'PAUSED', missed: 0 }), 'PAUSED', 'status paused clean');
     eq(statusText({ status: 'PAUSED', missed: 1 }), 'PAUSED · 1 MISSED', 'status paused with strike');
     eq(statusText({ status: 'INACTIVE', missed: 3 }), 'INACTIVE · 3 MISSED', 'status inactive');
+    eq(statusText({ status: 'INACTIVE', missed: 22, lastMissedAt: '2026-10-02T12:00:00Z' }, '2026-11-14T12:00:00Z'),
+      'INACTIVE · LAST MISSED OCT 2', 'status inactive shows last-missed date');
+    eq(statusText({ status: 'INACTIVE', missed: 5, lastMissedAt: '2025-12-22T12:00:00Z' }, '2026-11-14T12:00:00Z'),
+      "INACTIVE · LAST MISSED DEC 22 '25", 'last-missed date from a prior year carries the year');
+    eq(statusText({ status: 'ACTIVE', missed: 0, lastMissedAt: '2026-10-02T12:00:00Z' }), 'ACTIVE',
+      'cleared strikes hide a stale last-missed date');
 
     eq(reserveCountText({ pausedCount: 2, inactiveCount: 59 }), '2 PAUSED · 59 INACTIVE', 'reserve count');
 
@@ -336,6 +358,7 @@
       var badge = doc.createElement('span');
       badge.className = 'p-status p-status--' + String(p.status || 'inactive').toLowerCase();
       badge.textContent = statusText(p);
+      if (p.missed > 0) badge.title = p.missed + ' missed in a row';
       td.appendChild(badge);
     }
     return td;
