@@ -674,7 +674,7 @@
     "elo": 891,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-11-11T22:50:12.574Z",
+    "last_assigned_at": "2026-11-14T16:53:52.685Z",
     "last_opponent": "8294358602"
   },
   "88117806994": {
@@ -884,7 +884,7 @@
     "last_opponent": "65112512029"
   },
   "7992098821": {
-    "elo": 978,
+    "elo": 996,
     "missed_games": 0,
     "in_clan": false,
     "name": "5p4c3m4n",
@@ -895,8 +895,8 @@
       "name": "Undisputed",
       "icon_v": "439519665.png"
     },
-    "last_assigned_at": "2026-11-12T06:50:32.261Z",
-    "last_opponent": "71155120841"
+    "last_assigned_at": "2026-11-14T16:53:52.685Z",
+    "last_opponent": "55103688501"
   },
   "38118104339": {
     "elo": 992,
@@ -914,7 +914,7 @@
     "last_opponent": "28867016"
   },
   "55103688501": {
-    "elo": 961,
+    "elo": 943,
     "missed_games": 0,
     "in_clan": false,
     "name": "weus",
@@ -926,7 +926,7 @@
       "icon_v": "439519665.png"
     },
     "last_assigned_at": "2026-11-14T13:53:31.579Z",
-    "last_opponent": "95151481274"
+    "last_opponent": "7992098821"
   },
   "57143563837": {
     "elo": 958,
