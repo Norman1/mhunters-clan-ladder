@@ -839,7 +839,7 @@
     "last_opponent": "94113453772"
   },
   "95151481274": {
-    "elo": 995,
+    "elo": 1014,
     "missed_games": 0,
     "in_clan": false,
     "name": "rivancaleb",
@@ -850,8 +850,8 @@
       "name": "Undisputed",
       "icon_v": "439519665.png"
     },
-    "last_assigned_at": "2026-11-10T21:10:26.428Z",
-    "last_opponent": "88110265403"
+    "last_assigned_at": "2026-11-14T11:53:32.778Z",
+    "last_opponent": "55103688501"
   },
   "4957355558": {
     "elo": 1033,
@@ -914,7 +914,7 @@
     "last_opponent": "28867016"
   },
   "55103688501": {
-    "elo": 979,
+    "elo": 961,
     "missed_games": 0,
     "in_clan": false,
     "name": "weus",
@@ -926,7 +926,7 @@
       "icon_v": "439519665.png"
     },
     "last_assigned_at": "2026-11-12T06:50:32.261Z",
-    "last_opponent": "53134900057"
+    "last_opponent": "95151481274"
   },
   "57143563837": {
     "elo": 958,
@@ -940,7 +940,7 @@
       "name": "Undisputed",
       "icon_v": "439519665.png"
     },
-    "last_assigned_at": "2026-11-12T18:25:03.328Z",
+    "last_assigned_at": "2026-11-14T11:53:32.778Z",
     "last_opponent": "79105823914"
   }
 }
