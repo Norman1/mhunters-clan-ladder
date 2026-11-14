@@ -173,11 +173,11 @@
   },
   "88110265403": {
     "name": "Crouton",
-    "elo": 1347,
+    "elo": 1349,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "53134900057",
-    "last_assigned_at": "2026-11-12T19:51:23.671Z"
+    "last_opponent": "33160357416",
+    "last_assigned_at": "2026-11-14T13:53:31.579Z"
   },
   "84143567121": {
     "name": "Poldi",
@@ -810,7 +810,7 @@
   },
   "33160357416": {
     "name": "Marcus Aurelius",
-    "elo": 954,
+    "elo": 950,
     "game_cap": 2,
     "missed_games": 0,
     "in_clan": false,
@@ -821,7 +821,7 @@
       "name": "Stackers",
       "icon_v": "626818011.png"
     },
-    "last_opponent": "28867016"
+    "last_opponent": "88110265403"
   },
   "65112512029": {
     "elo": 980,
@@ -925,7 +925,7 @@
       "name": "Undisputed",
       "icon_v": "439519665.png"
     },
-    "last_assigned_at": "2026-11-12T06:50:32.261Z",
+    "last_assigned_at": "2026-11-14T13:53:31.579Z",
     "last_opponent": "95151481274"
   },
   "57143563837": {
