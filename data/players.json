@@ -165,11 +165,11 @@
   },
   "79105823914": {
     "name": "krinid",
-    "elo": 949,
+    "elo": 960,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "28867016",
-    "last_assigned_at": "2026-11-10T02:05:53.093Z"
+    "last_opponent": "57143563837",
+    "last_assigned_at": "2026-11-14T09:53:32.124Z"
   },
   "88110265403": {
     "name": "Crouton",
@@ -880,7 +880,7 @@
       "name": "Undisputed",
       "icon_v": "439519665.png"
     },
-    "last_assigned_at": "2026-11-12T18:18:33.070Z",
+    "last_assigned_at": "2026-11-14T09:53:32.124Z",
     "last_opponent": "65112512029"
   },
   "7992098821": {
@@ -929,7 +929,7 @@
     "last_opponent": "53134900057"
   },
   "57143563837": {
-    "elo": 980,
+    "elo": 958,
     "missed_games": 0,
     "in_clan": false,
     "name": "slack",
@@ -941,6 +941,6 @@
       "icon_v": "439519665.png"
     },
     "last_assigned_at": "2026-11-12T18:25:03.328Z",
-    "last_opponent": "94113453772"
+    "last_opponent": "79105823914"
   }
 }
