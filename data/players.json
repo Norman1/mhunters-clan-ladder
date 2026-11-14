@@ -173,10 +173,10 @@
   },
   "88110265403": {
     "name": "Crouton",
-    "elo": 1349,
+    "elo": 1351,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "33160357416",
+    "last_opponent": "55103688501",
     "last_assigned_at": "2026-11-14T13:53:31.579Z"
   },
   "84143567121": {
@@ -914,7 +914,7 @@
     "last_opponent": "28867016"
   },
   "55103688501": {
-    "elo": 943,
+    "elo": 940,
     "missed_games": 0,
     "in_clan": false,
     "name": "weus",
@@ -926,7 +926,7 @@
       "icon_v": "439519665.png"
     },
     "last_assigned_at": "2026-11-14T13:53:31.579Z",
-    "last_opponent": "7992098821"
+    "last_opponent": "88110265403"
   },
   "57143563837": {
     "elo": 958,
