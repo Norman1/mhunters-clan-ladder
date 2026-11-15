@@ -213,7 +213,7 @@
     "elo": 1013,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "3346775331",
+    "last_opponent": "33160357416",
     "last_assigned_at": "2026-11-14T14:53:48.351Z"
   },
   "58134761580": {
@@ -812,7 +812,7 @@
     "name": "Marcus Aurelius",
     "elo": 950,
     "game_cap": 2,
-    "missed_games": 0,
+    "missed_games": 1,
     "in_clan": false,
     "guest": true,
     "last_assigned_at": "2026-11-14T14:53:48.351Z",
@@ -821,7 +821,8 @@
       "name": "Stackers",
       "icon_v": "626818011.png"
     },
-    "last_opponent": "88110265403"
+    "last_opponent": "8294358602",
+    "last_missed_at": "2026-11-15T08:54:36.954Z"
   },
   "65112512029": {
     "elo": 977,
