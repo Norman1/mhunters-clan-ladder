@@ -104,11 +104,11 @@
   },
   "3346775331": {
     "name": "Gatsu12",
-    "elo": 1424,
+    "elo": 1425,
     "game_cap": 3,
     "missed_games": 0,
-    "last_opponent": "8294358602",
-    "last_assigned_at": "2026-11-15T02:54:24.732Z"
+    "last_opponent": "55103688501",
+    "last_assigned_at": "2026-11-16T06:55:37.244Z"
   },
   "3428471447": {
     "name": "AyanM",
@@ -214,7 +214,7 @@
     "game_cap": 2,
     "missed_games": 0,
     "last_opponent": "33160357416",
-    "last_assigned_at": "2026-11-16T04:55:38.570Z"
+    "last_assigned_at": "2026-11-16T06:55:37.809Z"
   },
   "58134761580": {
     "name": "ExFailures",
@@ -815,7 +815,7 @@
     "missed_games": 0,
     "in_clan": false,
     "guest": true,
-    "last_assigned_at": "2026-11-14T14:53:48.351Z",
+    "last_assigned_at": "2026-11-16T06:55:37.244Z",
     "clan": {
       "id": "962",
       "name": "Stackers",
@@ -915,7 +915,7 @@
     "last_opponent": "28867016"
   },
   "55103688501": {
-    "elo": 940,
+    "elo": 938,
     "missed_games": 0,
     "in_clan": false,
     "name": "weus",
@@ -926,8 +926,8 @@
       "name": "Undisputed",
       "icon_v": "439519665.png"
     },
-    "last_assigned_at": "2026-11-15T02:54:24.732Z",
-    "last_opponent": "88110265403"
+    "last_assigned_at": "2026-11-16T06:55:37.809Z",
+    "last_opponent": "3346775331"
   },
   "57143563837": {
     "elo": 958,
