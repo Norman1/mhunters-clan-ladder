@@ -210,11 +210,11 @@
   },
   "8294358602": {
     "name": "Wolkenstern",
-    "elo": 1013,
+    "elo": 1025,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "33160357416",
-    "last_assigned_at": "2026-11-16T06:55:37.809Z"
+    "last_opponent": "55103688501",
+    "last_assigned_at": "2026-11-16T19:56:30.195Z"
   },
   "58134761580": {
     "name": "ExFailures",
@@ -866,7 +866,7 @@
       "name": "Undisputed",
       "icon_v": "439519665.png"
     },
-    "last_assigned_at": "2026-11-12T18:18:33.070Z",
+    "last_assigned_at": "2026-11-16T19:56:30.195Z",
     "last_opponent": "94113453772"
   },
   "94113453772": {
@@ -915,7 +915,7 @@
     "last_opponent": "28867016"
   },
   "55103688501": {
-    "elo": 936,
+    "elo": 922,
     "missed_games": 0,
     "in_clan": false,
     "name": "weus",
@@ -927,7 +927,7 @@
       "icon_v": "439519665.png"
     },
     "last_assigned_at": "2026-11-16T14:56:24.872Z",
-    "last_opponent": "3346775331"
+    "last_opponent": "8294358602"
   },
   "57143563837": {
     "elo": 941,
