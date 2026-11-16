@@ -709,7 +709,7 @@
     "elo": 995,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-11-13T15:52:19.227Z",
+    "last_assigned_at": "2026-11-16T16:56:22.792Z",
     "last_opponent": "89133991720",
     "in_clan": false,
     "departed_at": "2026-07-09T17:55:01.762Z",
@@ -855,7 +855,7 @@
     "last_opponent": "57143563837"
   },
   "4957355558": {
-    "elo": 1033,
+    "elo": 1014,
     "missed_games": 0,
     "in_clan": false,
     "name": "tjerk",
@@ -867,10 +867,10 @@
       "icon_v": "439519665.png"
     },
     "last_assigned_at": "2026-11-12T18:18:33.070Z",
-    "last_opponent": "88110265403"
+    "last_opponent": "94113453772"
   },
   "94113453772": {
-    "elo": 1034,
+    "elo": 1053,
     "missed_games": 0,
     "in_clan": false,
     "name": "doopadoo",
@@ -881,8 +881,8 @@
       "name": "Undisputed",
       "icon_v": "439519665.png"
     },
-    "last_assigned_at": "2026-11-14T09:53:32.124Z",
-    "last_opponent": "65112512029"
+    "last_assigned_at": "2026-11-16T16:56:22.792Z",
+    "last_opponent": "4957355558"
   },
   "7992098821": {
     "elo": 996,
