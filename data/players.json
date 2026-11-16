@@ -840,7 +840,7 @@
     "last_opponent": "3346775331"
   },
   "95151481274": {
-    "elo": 1014,
+    "elo": 1031,
     "missed_games": 0,
     "in_clan": false,
     "name": "rivancaleb",
@@ -852,7 +852,7 @@
       "icon_v": "439519665.png"
     },
     "last_assigned_at": "2026-11-14T11:53:32.778Z",
-    "last_opponent": "55103688501"
+    "last_opponent": "57143563837"
   },
   "4957355558": {
     "elo": 1033,
@@ -930,7 +930,7 @@
     "last_opponent": "3346775331"
   },
   "57143563837": {
-    "elo": 958,
+    "elo": 941,
     "missed_games": 0,
     "in_clan": false,
     "name": "slack",
@@ -942,6 +942,6 @@
       "icon_v": "439519665.png"
     },
     "last_assigned_at": "2026-11-14T11:53:32.778Z",
-    "last_opponent": "79105823914"
+    "last_opponent": "95151481274"
   }
 }
