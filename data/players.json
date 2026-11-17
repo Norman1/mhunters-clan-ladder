@@ -583,11 +583,11 @@
   },
   "16127869941": {
     "name": "gg",
-    "elo": 1163,
+    "elo": 1169,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-11-17T02:56:53.758Z",
-    "last_opponent": "56133341636"
+    "last_assigned_at": "2026-11-17T14:57:51.738Z",
+    "last_opponent": "7992098821"
   },
   "4353717389": {
     "name": "Krys",
@@ -867,7 +867,7 @@
       "name": "Undisputed",
       "icon_v": "439519665.png"
     },
-    "last_assigned_at": "2026-11-17T08:57:33.079Z",
+    "last_assigned_at": "2026-11-17T14:57:51.738Z",
     "last_opponent": "95151481274"
   },
   "94113453772": {
@@ -886,7 +886,7 @@
     "last_opponent": "4957355558"
   },
   "7992098821": {
-    "elo": 1013,
+    "elo": 1002,
     "missed_games": 0,
     "in_clan": false,
     "name": "5p4c3m4n",
@@ -898,7 +898,7 @@
       "icon_v": "439519665.png"
     },
     "last_assigned_at": "2026-11-17T02:56:53.758Z",
-    "last_opponent": "79105823914"
+    "last_opponent": "16127869941"
   },
   "38118104339": {
     "elo": 982,
