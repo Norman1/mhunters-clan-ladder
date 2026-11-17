@@ -61,7 +61,7 @@
     "last_missed_at": "2026-11-01T09:15:08.000Z"
   },
   "1477223682": {
-    "elo": 990,
+    "elo": 1007,
     "missed_games": 0,
     "in_clan": false,
     "name": "koning",
@@ -73,7 +73,7 @@
       "icon_v": "439519665.png"
     },
     "last_assigned_at": "2026-11-11T20:15:20.555Z",
-    "last_opponent": "8222729424"
+    "last_opponent": "33160357416"
   },
   "1822261234": {
     "name": "fifi",
@@ -811,18 +811,18 @@
   },
   "33160357416": {
     "name": "Marcus Aurelius",
-    "elo": 950,
+    "elo": 933,
     "game_cap": 2,
     "missed_games": 0,
     "in_clan": false,
     "guest": true,
-    "last_assigned_at": "2026-11-16T06:55:37.244Z",
+    "last_assigned_at": "2026-11-17T08:57:33.079Z",
     "clan": {
       "id": "962",
       "name": "Stackers",
       "icon_v": "626818011.png"
     },
-    "last_opponent": "8294358602",
+    "last_opponent": "1477223682",
     "last_missed_at": "2026-11-15T08:54:36.954Z"
   },
   "65112512029": {
@@ -867,7 +867,7 @@
       "name": "Undisputed",
       "icon_v": "439519665.png"
     },
-    "last_assigned_at": "2026-11-16T19:56:30.195Z",
+    "last_assigned_at": "2026-11-17T08:57:33.079Z",
     "last_opponent": "8294358602"
   },
   "94113453772": {

@@ -24,7 +24,7 @@
     "p2_id": "4155523061",
     "template_id": 1594267,
     "game_state": "Playing",
-    "current_turn": 14
+    "current_turn": 15
   },
   {
     "game_id": "45674900",
@@ -45,22 +45,13 @@
     "current_turn": 13
   },
   {
-    "game_id": "45676324",
-    "created_at": "2026-11-11T20:15:20.555Z",
-    "p1_id": "1477223682",
-    "p2_id": "33160357416",
-    "template_id": 1573495,
-    "game_state": "Playing",
-    "current_turn": 4
-  },
-  {
     "game_id": "45677344",
     "created_at": "2026-11-11T22:50:12.574Z",
     "p1_id": "71155120841",
     "p2_id": "8222729424",
     "template_id": 1579656,
     "game_state": "Playing",
-    "current_turn": 6
+    "current_turn": 7
   },
   {
     "game_id": "45683716",
@@ -130,8 +121,8 @@
     "p1_id": "3346775331",
     "p2_id": "33160357416",
     "template_id": 1587200,
-    "game_state": "DistributingTerritories",
-    "current_turn": -1
+    "game_state": "Playing",
+    "current_turn": 0
   },
   {
     "game_id": "45710076",
@@ -198,6 +189,15 @@
     "created_at": "2026-11-17T07:57:33.873Z",
     "p1_id": "57143563837",
     "p2_id": "8294358602",
-    "template_id": 1594270
+    "template_id": 1594270,
+    "game_state": "DistributingTerritories",
+    "current_turn": -1
+  },
+  {
+    "game_id": "45716062",
+    "created_at": "2026-11-17T08:57:33.079Z",
+    "p1_id": "33160357416",
+    "p2_id": "4957355558",
+    "template_id": 1573495
   }
 ]
