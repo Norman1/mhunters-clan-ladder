@@ -148,11 +148,11 @@
   },
   "4155523061": {
     "name": "AGEHNT SMITH",
-    "elo": 727,
+    "elo": 726,
     "game_cap": 2,
     "missed_games": 0,
     "last_assigned_at": "2026-11-11T17:15:52.975Z",
-    "last_opponent": "33160357416"
+    "last_opponent": "71155120841"
   },
   "4180490094": {
     "name": "Woololo",
@@ -441,11 +441,11 @@
   },
   "71155120841": {
     "name": "Ventura",
-    "elo": 1329,
+    "elo": 1330,
     "game_cap": 3,
     "missed_games": 0,
-    "last_assigned_at": "2026-11-17T22:20:21.213Z",
-    "last_opponent": "8222729424"
+    "last_assigned_at": "2026-11-17T22:58:14.379Z",
+    "last_opponent": "4155523061"
   },
   "6411877352": {
     "name": "Kratos",
@@ -837,7 +837,7 @@
       "name": "Undisputed",
       "icon_v": "439519665.png"
     },
-    "last_assigned_at": "2026-11-17T22:20:21.213Z",
+    "last_assigned_at": "2026-11-17T22:58:14.379Z",
     "last_opponent": "88110265403"
   },
   "95151481274": {
