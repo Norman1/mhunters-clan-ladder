@@ -436,16 +436,16 @@
     "elo": 1198,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-11-17T10:57:28.821Z",
+    "last_assigned_at": "2026-11-17T19:57:55.738Z",
     "last_opponent": "55103688501"
   },
   "71155120841": {
     "name": "Ventura",
-    "elo": 1346,
+    "elo": 1329,
     "game_cap": 3,
     "missed_games": 0,
-    "last_assigned_at": "2026-11-11T22:50:12.574Z",
-    "last_opponent": "7992098821"
+    "last_assigned_at": "2026-11-17T19:57:55.179Z",
+    "last_opponent": "8222729424"
   },
   "6411877352": {
     "name": "Kratos",
@@ -672,11 +672,11 @@
   },
   "8222729424": {
     "name": "Al AssAff",
-    "elo": 891,
+    "elo": 883,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-11-14T16:53:52.685Z",
-    "last_opponent": "8294358602"
+    "last_assigned_at": "2026-11-17T19:57:55.738Z",
+    "last_opponent": "7992098821"
   },
   "88117806994": {
     "name": "RameurA",
@@ -886,7 +886,7 @@
     "last_opponent": "4957355558"
   },
   "7992098821": {
-    "elo": 1002,
+    "elo": 1015,
     "missed_games": 0,
     "in_clan": false,
     "name": "5p4c3m4n",
@@ -897,11 +897,11 @@
       "name": "Undisputed",
       "icon_v": "439519665.png"
     },
-    "last_assigned_at": "2026-11-17T15:57:50.910Z",
-    "last_opponent": "16127869941"
+    "last_assigned_at": "2026-11-17T19:57:55.179Z",
+    "last_opponent": "8222729424"
   },
   "38118104339": {
-    "elo": 982,
+    "elo": 1016,
     "missed_games": 0,
     "in_clan": false,
     "name": "ouchudied",
@@ -912,8 +912,8 @@
       "name": "Undisputed",
       "icon_v": "439519665.png"
     },
-    "last_assigned_at": "2026-11-17T02:56:53.027Z",
-    "last_opponent": "71148639731"
+    "last_assigned_at": "2026-11-17T19:57:54.560Z",
+    "last_opponent": "71155120841"
   },
   "55103688501": {
     "elo": 916,
