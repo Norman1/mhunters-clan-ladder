@@ -17,11 +17,11 @@
   },
   "28867016": {
     "name": "Swisster",
-    "elo": 1158,
+    "elo": 1163,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "71148639731",
-    "last_assigned_at": "2026-11-17T09:57:16.480Z"
+    "last_opponent": "65112512029",
+    "last_assigned_at": "2026-11-17T22:20:21.852Z"
   },
   "81598466": {
     "name": "Tim 🍌",
@@ -173,11 +173,11 @@
   },
   "88110265403": {
     "name": "Crouton",
-    "elo": 1351,
+    "elo": 1353,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "55103688501",
-    "last_assigned_at": "2026-11-15T01:53:40.484Z"
+    "last_opponent": "65112512029",
+    "last_assigned_at": "2026-11-17T22:20:21.852Z"
   },
   "84143567121": {
     "name": "Poldi",
@@ -444,7 +444,7 @@
     "elo": 1329,
     "game_cap": 3,
     "missed_games": 0,
-    "last_assigned_at": "2026-11-17T19:57:55.179Z",
+    "last_assigned_at": "2026-11-17T22:20:21.213Z",
     "last_opponent": "8222729424"
   },
   "6411877352": {
@@ -826,7 +826,7 @@
     "last_missed_at": "2026-11-15T08:54:36.954Z"
   },
   "65112512029": {
-    "elo": 977,
+    "elo": 963,
     "missed_games": 0,
     "in_clan": false,
     "name": "Loup Duk",
@@ -837,8 +837,8 @@
       "name": "Undisputed",
       "icon_v": "439519665.png"
     },
-    "last_assigned_at": "2026-11-15T01:53:40.484Z",
-    "last_opponent": "3346775331"
+    "last_assigned_at": "2026-11-17T22:20:21.213Z",
+    "last_opponent": "88110265403"
   },
   "95151481274": {
     "elo": 1011,
