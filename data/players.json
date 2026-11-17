@@ -212,9 +212,10 @@
     "name": "Wolkenstern",
     "elo": 1025,
     "game_cap": 2,
-    "missed_games": 0,
-    "last_opponent": "55103688501",
-    "last_assigned_at": "2026-11-16T19:56:30.195Z"
+    "missed_games": 1,
+    "last_opponent": "4957355558",
+    "last_assigned_at": "2026-11-17T07:57:33.873Z",
+    "last_missed_at": "2026-11-17T07:57:32.490Z"
   },
   "58134761580": {
     "name": "ExFailures",
@@ -867,7 +868,7 @@
       "icon_v": "439519665.png"
     },
     "last_assigned_at": "2026-11-16T19:56:30.195Z",
-    "last_opponent": "94113453772"
+    "last_opponent": "8294358602"
   },
   "94113453772": {
     "elo": 1053,
@@ -941,7 +942,7 @@
       "name": "Undisputed",
       "icon_v": "439519665.png"
     },
-    "last_assigned_at": "2026-11-16T14:56:25.434Z",
+    "last_assigned_at": "2026-11-17T07:57:33.873Z",
     "last_opponent": "53134900057"
   }
 }
