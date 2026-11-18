@@ -11,14 +11,19 @@ permissions:
 concurrency:
   group: ladder-engine
   cancel-in-progress: false
+  queue: max # IssueOps uses the same group for changes to player state.
 
 jobs:
   engine:
+    if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
     
     steps:
       - name: Checkout Repo
         uses: actions/checkout@v7
+        with:
+          # The previous run may have published games while this run was queued.
+          ref: main
 
       - name: Setup Node
         uses: actions/setup-node@v7

@@ -4,6 +4,11 @@ on:
   issues:
     types: [opened, edited]
 
+concurrency:
+  group: ladder-engine
+  cancel-in-progress: false
+  queue: max # Keep distinct issue commands queued while the engine writes player state.
+
 jobs:
   issue-ops:
     runs-on: ubuntu-latest
@@ -65,6 +70,8 @@ jobs:
       - name: Checkout Repo
         if: steps.authorize.outputs.allowed == 'true'
         uses: actions/checkout@v7
+        with:
+          ref: main
 
       - name: Setup Node
         if: steps.authorize.outputs.allowed == 'true'
