@@ -226,14 +226,17 @@ test('guests do not dilute the enrollment breaker or bypass empty-scrape protect
     assert.equal(shouldAbortSync(guests, players), null);
 });
 
-test('matchmaker fills guest slots up to cap and includes the guest in rank labels', async () => {
-    const run = sandbox('matchmaker.js', { 123: guest, 456: member });
+test('matchmaker fills guest slots with distinct opponents and includes the guest in rank labels', async () => {
+    const run = sandbox('matchmaker.js', { 123: guest, 456: member, 789: member });
     await run.exports.runMatchmaker();
-    assert.equal(run.games.length, 2);
+    const opponents = [];
     for (const [, participants, , description] of run.games) {
-        assert.deepEqual(Array.from(participants, p => p.token).sort(), ['123', '456']);
+        const ids = Array.from(participants, p => p.token);
+        if (!ids.includes('123')) continue;
+        opponents.push(ids.find(id => id !== '123'));
         assert.match(description, /Guest, Rank 1 with 1200 Elo/);
     }
+    assert.deepEqual(opponents.sort(), ['456', '789']);
 });
 for (const [label, player] of [
     ['paused', { ...guest, game_cap: 0 }],

@@ -62,31 +62,38 @@ function getLastAssignedAt(id, players, activeGames) {
     return latest;
 }
 
-function popDistinctPair(slots, players) {
-    if (slots.length < 2) return null;
+function pairKey(first, second) {
+    return [String(first), String(second)].sort().join(':');
+}
 
-    const first = slots.pop();
-
-    // Helper to check if two players were each other's last opponent
-    const wereLastOpponents = (id1, id2) => {
-        const p1 = players[id1];
-        const p2 = players[id2];
-        return (p1 && String(p1.last_opponent) === String(id2)) ||
-            (p2 && String(p2.last_opponent) === String(id1));
-    };
-
-    // Try to find a valid opponent (not same player, not last opponent)
-    for (let i = slots.length - 1; i >= 0; i--) {
-        const candidate = slots[i];
-        if (candidate !== first && !wereLastOpponents(first, candidate)) {
-            slots.splice(i, 1);
-            return [first, candidate];
-        }
+function planPairs(activeSlots, inactiveSlots, players, activeGames) {
+    const blockedPairs = new Set(activeGames.map(game => pairKey(game.p1_id, game.p2_id)));
+    for (const [id, player] of Object.entries(players)) {
+        if (player?.last_opponent != null) blockedPairs.add(pairKey(id, player.last_opponent));
     }
 
-    // No valid opponent found; restore first and stop pairing.
-    slots.push(first);
-    return null;
+    const pairs = [];
+    function matchSlots(slots, opponents) {
+        const waiting = [];
+        while (slots.length && opponents.length) {
+            const first = slots.pop();
+            const index = opponents.findIndex(second => first !== second && !blockedPairs.has(pairKey(first, second)));
+            if (index === -1) {
+                // Keep this slot for the mixed tier and try the other players.
+                waiting.push(first);
+                continue;
+            }
+            const [second] = opponents.splice(index, 1);
+            blockedPairs.add(pairKey(first, second));
+            pairs.push([first, second]);
+        }
+        slots.push(...waiting);
+    }
+
+    matchSlots(activeSlots, activeSlots);
+    matchSlots(inactiveSlots, inactiveSlots);
+    matchSlots(activeSlots, inactiveSlots);
+    return pairs;
 }
 
 // --- Main Matchmaker Logic ---
@@ -157,58 +164,10 @@ async function runMatchmaker() {
 
     console.log(`Found ${activePlayers.size} Active (${activeSlots.length} slots) and ${inactivePlayers.size} Inactive (${inactiveSlots.length} slots).`);
 
-    // 3. Pairing Logic (Tiered)
-    // Priority 1: Active vs Active
-    // Priority 2: Inactive vs Inactive
-    // Priority 3: Active vs Inactive (Fillers - optional, user said "PREFER" pairing inactives with inactives)
-
+    // 3. Prefer opponents in the same reliability tier, then pair remaining slots.
     shuffle(activeSlots);
     shuffle(inactiveSlots);
-
-    const pairs = [];
-
-    // Match Actives (fill their open slots)
-    let pair = null;
-    while ((pair = popDistinctPair(activeSlots, players))) {
-        pairs.push(pair);
-    }
-
-    // Match Inactives (fill their open slots)
-    while ((pair = popDistinctPair(inactiveSlots, players))) {
-        pairs.push(pair);
-    }
-
-    // If we have leftovers from both, maybe match them?
-    // User said: "active players don't get annoyed by geting paired too often with inactives"
-    // implies it's okay sometimes.
-    // Helper to check if two players were each other's last opponent
-    const wereLastOpponents = (id1, id2) => {
-        const p1 = players[id1];
-        const p2 = players[id2];
-        return (p1 && String(p1.last_opponent) === String(id2)) ||
-            (p2 && String(p2.last_opponent) === String(id1));
-    };
-
-    while (activeSlots.length > 0 && inactiveSlots.length > 0) {
-        const activePlayer = activeSlots.pop();
-        // Find an inactive player who isn't the last opponent
-        let matchedIndex = -1;
-        for (let i = inactiveSlots.length - 1; i >= 0; i--) {
-            if (!wereLastOpponents(activePlayer, inactiveSlots[i])) {
-                matchedIndex = i;
-                break;
-            }
-        }
-        if (matchedIndex >= 0) {
-            const inactivePlayer = inactiveSlots.splice(matchedIndex, 1)[0];
-            console.log("Matching leftover Active vs Inactive...");
-            pairs.push([activePlayer, inactivePlayer]);
-        } else {
-            // No valid match, put active player back and stop
-            activeSlots.push(activePlayer);
-            break;
-        }
-    }
+    const pairs = planPairs(activeSlots, inactiveSlots, players, activeGames);
 
     console.log(`Created ${pairs.length} pairs.`);
 
@@ -288,4 +247,4 @@ Ask a ladder maintainer to change your settings via https://norman1.github.io/mh
 
 if (require.main === module) runMatchmaker();
 
-module.exports = { runMatchmaker };
+module.exports = { runMatchmaker, planPairs };

@@ -104,7 +104,7 @@
   },
   "3346775331": {
     "name": "Gatsu12",
-    "elo": 1426,
+    "elo": 1427,
     "game_cap": 3,
     "missed_games": 0,
     "last_opponent": "55103688501",
@@ -173,7 +173,7 @@
   },
   "88110265403": {
     "name": "Crouton",
-    "elo": 1353,
+    "elo": 1355,
     "game_cap": 2,
     "missed_games": 0,
     "last_opponent": "65112512029",
@@ -826,7 +826,7 @@
     "last_missed_at": "2026-11-15T08:54:36.954Z"
   },
   "65112512029": {
-    "elo": 963,
+    "elo": 959,
     "missed_games": 0,
     "in_clan": false,
     "name": "Loup Duk",
@@ -916,7 +916,7 @@
     "last_opponent": "71155120841"
   },
   "55103688501": {
-    "elo": 916,
+    "elo": 914,
     "missed_games": 0,
     "in_clan": false,
     "name": "weus",
