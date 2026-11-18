@@ -444,7 +444,7 @@
     "elo": 1333,
     "game_cap": 3,
     "missed_games": 0,
-    "last_assigned_at": "2026-11-17T22:58:14.379Z",
+    "last_assigned_at": "2026-11-18T13:58:49.664Z",
     "last_opponent": "7992098821"
   },
   "6411877352": {
@@ -707,11 +707,11 @@
   },
   "53134900057": {
     "name": "extelon",
-    "elo": 1003,
+    "elo": 1014,
     "game_cap": 2,
     "missed_games": 0,
     "last_assigned_at": "2026-11-17T05:56:53.678Z",
-    "last_opponent": "57143563837",
+    "last_opponent": "94113453772",
     "in_clan": false,
     "departed_at": "2026-07-09T17:55:01.762Z",
     "guest": true,
@@ -871,7 +871,7 @@
     "last_opponent": "95151481274"
   },
   "94113453772": {
-    "elo": 1053,
+    "elo": 1031,
     "missed_games": 0,
     "in_clan": false,
     "name": "doopadoo",
@@ -882,8 +882,8 @@
       "name": "Undisputed",
       "icon_v": "439519665.png"
     },
-    "last_assigned_at": "2026-11-16T16:56:22.792Z",
-    "last_opponent": "4957355558"
+    "last_assigned_at": "2026-11-18T13:58:49.664Z",
+    "last_opponent": "53134900057"
   },
   "7992098821": {
     "elo": 1010,
