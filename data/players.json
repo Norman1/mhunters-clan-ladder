@@ -17,10 +17,10 @@
   },
   "28867016": {
     "name": "Swisster",
-    "elo": 1163,
+    "elo": 1149,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "65112512029",
+    "last_opponent": "1477223682",
     "last_assigned_at": "2026-11-17T22:20:21.852Z"
   },
   "81598466": {
@@ -61,7 +61,7 @@
     "last_missed_at": "2026-11-01T09:15:08.000Z"
   },
   "1477223682": {
-    "elo": 1007,
+    "elo": 1034,
     "missed_games": 0,
     "in_clan": false,
     "name": "koning",
@@ -72,8 +72,8 @@
       "name": "Undisputed",
       "icon_v": "439519665.png"
     },
-    "last_assigned_at": "2026-11-17T09:57:16.480Z",
-    "last_opponent": "33160357416"
+    "last_assigned_at": "2026-11-18T20:59:14.984Z",
+    "last_opponent": "28867016"
   },
   "1822261234": {
     "name": "fifi",
@@ -710,7 +710,7 @@
     "elo": 1014,
     "game_cap": 2,
     "missed_games": 0,
-    "last_assigned_at": "2026-11-17T05:56:53.678Z",
+    "last_assigned_at": "2026-11-18T20:59:14.984Z",
     "last_opponent": "94113453772",
     "in_clan": false,
     "departed_at": "2026-07-09T17:55:01.762Z",

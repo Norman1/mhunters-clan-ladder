@@ -27783,5 +27783,18 @@
     "elo_change": 11,
     "elo_loss": 22,
     "turns": 5
+  },
+  {
+    "game_id": "45716296",
+    "created_at": "2026-11-17T09:57:16.480Z",
+    "p1_id": "28867016",
+    "p2_id": "1477223682",
+    "winner_id": "1477223682",
+    "loser_id": "28867016",
+    "finished_at": "2026-11-18T20:45:21.000Z",
+    "template_id": 1579665,
+    "elo_change": 27,
+    "elo_loss": 14,
+    "turns": 11
   }
 ]
