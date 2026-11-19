@@ -25,10 +25,10 @@
   },
   "81598466": {
     "name": "Tim 🍌",
-    "elo": 733,
+    "elo": 727,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "28867016",
+    "last_opponent": "3428471447",
     "last_assigned_at": "2026-11-19T04:59:43.163Z",
     "last_missed_at": "2026-10-24T00:43:37.000Z"
   },
@@ -112,11 +112,11 @@
   },
   "3428471447": {
     "name": "AyanM",
-    "elo": 904,
+    "elo": 912,
     "game_cap": 2,
-    "missed_games": 6,
-    "last_assigned_at": "2026-11-19T00:59:34.444Z",
-    "last_opponent": "84143567121",
+    "missed_games": 0,
+    "last_assigned_at": "2026-11-19T17:00:16.798Z",
+    "last_opponent": "81598466",
     "last_missed_at": "2026-07-04T17:03:42.000Z"
   },
   "3591948853": {
@@ -897,7 +897,7 @@
       "name": "Undisputed",
       "icon_v": "439519665.png"
     },
-    "last_assigned_at": "2026-11-18T22:59:18.374Z",
+    "last_assigned_at": "2026-11-19T17:00:16.798Z",
     "last_opponent": "88110265403"
   },
   "38118104339": {
