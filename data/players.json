@@ -27,9 +27,9 @@
     "name": "Tim 🍌",
     "elo": 735,
     "game_cap": 2,
-    "missed_games": 3,
+    "missed_games": 0,
     "last_opponent": "56133341636",
-    "last_assigned_at": "2026-11-18T22:59:18.921Z",
+    "last_assigned_at": "2026-11-19T00:59:34.444Z",
     "last_missed_at": "2026-10-24T00:43:37.000Z"
   },
   "266160220": {
@@ -115,7 +115,7 @@
     "elo": 904,
     "game_cap": 2,
     "missed_games": 6,
-    "last_assigned_at": "2026-09-10T00:14:19.371Z",
+    "last_assigned_at": "2026-11-19T00:59:34.444Z",
     "last_opponent": "84143567121",
     "last_missed_at": "2026-07-04T17:03:42.000Z"
   },
