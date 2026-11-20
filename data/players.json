@@ -236,11 +236,11 @@
   },
   "9313400553": {
     "name": "Word Walker",
-    "elo": 818,
+    "elo": 837,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "9780712014",
-    "last_assigned_at": "2026-11-20T17:02:17.398Z",
+    "last_opponent": "71155120841",
+    "last_assigned_at": "2026-11-20T23:02:36.165Z",
     "last_missed_at": "2026-11-06T06:46:07.000Z"
   },
   "4543063534": {
@@ -441,11 +441,11 @@
   },
   "71155120841": {
     "name": "Ventura",
-    "elo": 1316,
+    "elo": 1297,
     "game_cap": 3,
     "missed_games": 0,
     "last_assigned_at": "2026-11-20T06:00:53.727Z",
-    "last_opponent": "3428471447"
+    "last_opponent": "9313400553"
   },
   "6411877352": {
     "name": "Kratos",
@@ -827,7 +827,7 @@
   },
   "65112512029": {
     "elo": 963,
-    "missed_games": 0,
+    "missed_games": 1,
     "in_clan": false,
     "name": "Loup Duk",
     "game_cap": 2,
@@ -837,8 +837,9 @@
       "name": "Undisputed",
       "icon_v": "439519665.png"
     },
-    "last_assigned_at": "2026-11-17T22:58:14.379Z",
-    "last_opponent": "88110265403"
+    "last_assigned_at": "2026-11-20T23:02:36.165Z",
+    "last_opponent": "71155120841",
+    "last_missed_at": "2026-11-20T23:02:34.258Z"
   },
   "95151481274": {
     "elo": 1011,
