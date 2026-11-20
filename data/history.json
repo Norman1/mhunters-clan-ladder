@@ -27896,5 +27896,14 @@
     "elo_change": 33,
     "elo_loss": 17,
     "turns": 6
+  },
+  {
+    "game_id": "45735558",
+    "created_at": "2026-11-19T23:01:03.606Z",
+    "p1_id": "71155120841",
+    "p2_id": "3428471447",
+    "template_id": 1574451,
+    "finished_at": "2026-11-20T02:00:44.070Z",
+    "note": "Declined"
   }
 ]
