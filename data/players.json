@@ -212,7 +212,7 @@
     "name": "Wolkenstern",
     "elo": 1025,
     "game_cap": 2,
-    "missed_games": 1,
+    "missed_games": 0,
     "last_opponent": "20125423673",
     "last_assigned_at": "2026-11-19T04:59:43.163Z",
     "last_missed_at": "2026-11-17T07:57:32.490Z"
