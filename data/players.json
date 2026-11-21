@@ -104,10 +104,10 @@
   },
   "3346775331": {
     "name": "Gatsu12",
-    "elo": 1410,
+    "elo": 1411,
     "game_cap": 3,
     "missed_games": 0,
-    "last_opponent": "16127869941",
+    "last_opponent": "55103688501",
     "last_assigned_at": "2026-11-18T22:59:17.825Z"
   },
   "3428471447": {
@@ -917,7 +917,7 @@
     "last_opponent": "71155120841"
   },
   "55103688501": {
-    "elo": 903,
+    "elo": 901,
     "missed_games": 0,
     "in_clan": false,
     "name": "weus",
@@ -929,7 +929,7 @@
       "icon_v": "439519665.png"
     },
     "last_assigned_at": "2026-11-18T22:59:17.825Z",
-    "last_opponent": "7992098821"
+    "last_opponent": "3346775331"
   },
   "57143563837": {
     "elo": 925,
