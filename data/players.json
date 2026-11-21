@@ -17,11 +17,11 @@
   },
   "28867016": {
     "name": "Swisster",
-    "elo": 1162,
+    "elo": 1165,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "88110265403",
-    "last_assigned_at": "2026-11-20T17:02:17.398Z"
+    "last_opponent": "9313400553",
+    "last_assigned_at": "2026-11-21T15:03:47.353Z"
   },
   "81598466": {
     "name": "Tim 🍌",
@@ -108,16 +108,16 @@
     "game_cap": 3,
     "missed_games": 0,
     "last_opponent": "55103688501",
-    "last_assigned_at": "2026-11-18T22:59:17.825Z"
+    "last_assigned_at": "2026-11-21T15:03:47.353Z"
   },
   "3428471447": {
     "name": "AyanM",
     "elo": 912,
     "game_cap": 2,
-    "missed_games": 0,
+    "missed_games": 1,
     "last_assigned_at": "2026-11-20T15:01:27.842Z",
-    "last_opponent": "71155120841",
-    "last_missed_at": "2026-11-20T02:00:44.070Z"
+    "last_opponent": "88110265403",
+    "last_missed_at": "2026-11-21T15:03:45.797Z"
   },
   "3591948853": {
     "name": "jdg5201",
@@ -176,7 +176,7 @@
     "elo": 1347,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "56133341636",
+    "last_opponent": "3428471447",
     "last_assigned_at": "2026-11-21T04:03:15.757Z"
   },
   "84143567121": {
@@ -236,11 +236,11 @@
   },
   "9313400553": {
     "name": "Word Walker",
-    "elo": 837,
+    "elo": 834,
     "game_cap": 2,
     "missed_games": 0,
-    "last_opponent": "71155120841",
-    "last_assigned_at": "2026-11-20T23:02:36.165Z",
+    "last_opponent": "28867016",
+    "last_assigned_at": "2026-11-21T15:03:46.791Z",
     "last_missed_at": "2026-11-06T06:46:07.000Z"
   },
   "4543063534": {
@@ -928,7 +928,7 @@
       "name": "Undisputed",
       "icon_v": "439519665.png"
     },
-    "last_assigned_at": "2026-11-18T22:59:17.825Z",
+    "last_assigned_at": "2026-11-21T15:03:46.791Z",
     "last_opponent": "3346775331"
   },
   "57143563837": {
